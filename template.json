@@ -58,7 +58,7 @@
   },
   "Item": {
     "types": [
-      "item",
+      "gear",
       "weapon",
       "edge",
       "focus",
@@ -68,7 +68,7 @@
       "base": {
         "description": ""
       },
-      "gear": {
+      "item": {
         "cost": 0,
         "encumberance": 0
       },
@@ -76,17 +76,17 @@
         "attribute": "@str"
       }
     },
-    "item": {
+    "gear": {
       "templates": [
         "base",
-        "gear"
+        "item"
       ],
       "quantity": 1
     },
     "weapon": {
       "templates": [
         "base",
-        "gear",
+        "item",
         "attributeBased"
       ],
       "damageFormula": "1d6",
