@@ -22,7 +22,44 @@
     "css/cwn.css"
   ],
   "scripts": [],
-  "packs": [],
+  "packs": [
+    {
+      "name": "edges",
+      "label": "Edges",
+      "system": "cities-without-number",
+      "path": "packs/edges.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "foci",
+      "label": "Foci",
+      "system": "cities-without-number",
+      "path": "packs/foci.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "cities-without-number",
+      "path": "packs/items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "skills",
+      "label": "Skills",
+      "system": "cities-without-number",
+      "path": "packs/skills.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    }
+  ],
   "languages": [
     {
       "lang": "en",

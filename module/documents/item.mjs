@@ -16,7 +16,7 @@ export class CitiesWithoutNumberItem extends Item {
    * Prepare a data object which is passed to any Roll formulas which are created related to this Item
    * @private
    */
-   getRollData() {
+  getRollData() {
     // If present, return the actor's roll data.
     if ( !this.actor ) return null;
     const rollData = this.actor.getRollData();
@@ -36,7 +36,7 @@ export class CitiesWithoutNumberItem extends Item {
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get('core', 'rollMode');
+    const rollMode = game.settings.get("core", "rollMode");
     const label = `[${item.type}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
@@ -45,7 +45,7 @@ export class CitiesWithoutNumberItem extends Item {
         speaker: speaker,
         rollMode: rollMode,
         flavor: label,
-        content: item.system.description ?? ''
+        content: item.system.description ?? ""
       });
     }
     // Otherwise, create a roll and send a chat message from it.
@@ -60,7 +60,7 @@ export class CitiesWithoutNumberItem extends Item {
       roll.toMessage({
         speaker: speaker,
         rollMode: rollMode,
-        flavor: label,
+        flavor: label
       });
       return roll;
     }

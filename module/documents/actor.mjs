@@ -41,9 +41,10 @@ export class CitiesWithoutNumberActor extends Actor {
 
   /**
    * Prepare Character type specific data
+   * @param actorData
    */
   _prepareCharacterData(actorData) {
-    if (actorData.type !== 'character') return;
+    if (actorData.type !== "character") return;
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
@@ -54,7 +55,7 @@ export class CitiesWithoutNumberActor extends Actor {
       ability.mod = 0;
       for (let [modifier, range] of Object.entries(CONFIG.CWN.abilityModifiers)) {
         if (range.includes(ability.value)) {
-          ability.mod = +modifier;
+          ability.mod = Number(modifier);
         }
       }
     }
@@ -62,9 +63,10 @@ export class CitiesWithoutNumberActor extends Actor {
 
   /**
    * Prepare NPC type specific data.
+   * @param actorData
    */
   _prepareNpcData(actorData) {
-    if (actorData.type !== 'npc') return;
+    if (actorData.type !== "npc") return;
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
@@ -86,9 +88,10 @@ export class CitiesWithoutNumberActor extends Actor {
 
   /**
    * Prepare character roll data.
+   * @param data
    */
   _getCharacterRollData(data) {
-    if (this.type !== 'character') return;
+    if (this.type !== "character") return;
 
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
@@ -106,9 +109,10 @@ export class CitiesWithoutNumberActor extends Actor {
 
   /**
    * Prepare NPC roll data.
+   * @param data
    */
   _getNpcRollData(data) {
-    if (this.type !== 'npc') return;
+    if (this.type !== "npc") return;
 
     // Process additional NPC data here.
   }

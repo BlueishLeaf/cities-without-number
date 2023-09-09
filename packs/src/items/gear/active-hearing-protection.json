@@ -1,0 +1,25 @@
+{
+    "_id": "active-hearing-protection",
+    "name": "Active Hearing Protection",
+    "type": "gear",
+    "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+    "system": {
+      "description": "This headset protects the wearer from disorientation due to loud noises. It passes along conversational-level speech without difficulty."
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "cities-without-number",
+      "systemVersion": "0.0.1",
+      "coreVersion": 11,
+      "createdTime": 1694265254,
+      "modifiedTime": 1694265254,
+      "lastModifiedBy": "cwnBuilder0000"
+    }
+  }
+  

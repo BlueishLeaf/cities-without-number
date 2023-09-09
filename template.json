@@ -92,7 +92,7 @@
       "damageFormula": "1d6",
       "range": "10/20",
       "magazineSize": "10",
-      "traumaFormula": "1d8",
+      "traumaDie": "1d8",
       "traumaRating": 2
     },
     "edge": {
@@ -103,7 +103,9 @@
     "focus": {
       "templates": [
         "base"
-      ]
+      ],
+      "level1Benefit": "",
+      "level2Benefit": ""
     },
     "skill": {
       "templates": [
