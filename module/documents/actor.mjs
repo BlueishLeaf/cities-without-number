@@ -50,8 +50,13 @@ export class CitiesWithoutNumberActor extends Actor {
 
     // Loop through ability scores, and add their modifiers to our sheet output.
     for (let [key, ability] of Object.entries(systemData.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
+      // Calculate the modifier using CWN rules.
+      ability.mod = 0;
+      for (let [modifier, range] of Object.entries(CONFIG.CWN.abilityModifiers)) {
+        if (range.includes(ability.value)) {
+          ability.mod = +modifier;
+        }
+      }
     }
   }
 

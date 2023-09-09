@@ -21,3 +21,11 @@ CWN.abilityAbbreviations = {
   "wis": "CWN.AbilityWisAbbr",
   "cha": "CWN.AbilityChaAbbr"
 };
+
+CWN.abilityModifiers = {
+  "-2": [3],
+  "-1": [4, 5, 6, 7],
+  "0": [8, 9, 10, 11, 12, 13],
+  "1": [14, 15, 16, 17],
+  "2": [18]
+};
