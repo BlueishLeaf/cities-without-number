@@ -1,0 +1,19 @@
+{
+  "CWN.AbilityStr": "Strength",
+  "CWN.AbilityCon": "Constitution",
+  "CWN.AbilityDex": "Dexterity",
+  "CWN.AbilityInt": "Intelligence",
+  "CWN.AbilityWis": "Wisdom",
+  "CWN.AbilityCha": "Charisma",
+  "CWN.AbilityStrAbbr": "str",
+  "CWN.AbilityConAbbr": "con",
+  "CWN.AbilityDexAbbr": "dex",
+  "CWN.AbilityIntAbbr": "int",
+  "CWN.AbilityWisAbbr": "wis",
+  "CWN.AbilityChaAbbr": "cha",
+  "CWN.EffectCreate": "Create Effect",
+  "CWN.EffectToggle": "Toggle Effect",
+  "CWN.EffectEdit": "Edit Effect",
+  "CWN.EffectDelete": "Delete Effect",
+  "CWN.Add": "Add"
+}
