@@ -7,9 +7,9 @@ export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
 
     // Actor partials.
-    "systems/cities-without-number/templates/actor/parts/actor-features.html",
-    "systems/cities-without-number/templates/actor/parts/actor-items.html",
-    "systems/cities-without-number/templates/actor/parts/actor-spells.html",
-    "systems/cities-without-number/templates/actor/parts/actor-effects.html"
+    "systems/cities-without-number/templates/actor/parts/actor-skills.html",
+    "systems/cities-without-number/templates/actor/parts/actor-inventory.html",
+    "systems/cities-without-number/templates/actor/parts/actor-edges.html",
+    "systems/cities-without-number/templates/actor/parts/actor-foci.html"
   ]);
 };

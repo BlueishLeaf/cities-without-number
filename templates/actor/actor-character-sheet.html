@@ -45,18 +45,18 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="features">Features</a>
+    <a class="item" data-tab="skills">Skills</a>
+    <a class="item" data-tab="inventory">Inventory</a>
+    <a class="item" data-tab="edges">Edges</a>
+    <a class="item" data-tab="foci">Foci</a>
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="spells">Spells</a>
-    <a class="item" data-tab="effects">Effects</a>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
 
     {{!-- Owned Features Tab --}}
-    <div class="tab features" data-group="primary" data-tab="features">
+    <div class="tab features" data-group="primary" data-tab="skills">
       <section class="grid grid-3col">
         <aside class="sidebar">
 
@@ -74,10 +74,10 @@
           </div>
         </aside>
 
-        {{!-- For the main features list, span the right two columns --}}
+        {{!-- For the main skills list, span the right two columns --}}
         <section class="main grid-span-2">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-          {{> "systems/cities-without-number/templates/actor/parts/actor-features.html"}}
+          {{> "systems/cities-without-number/templates/actor/parts/actor-skills.html"}}
         </section>
 
       </section>
@@ -89,19 +89,19 @@
       {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
-       {{> "systems/cities-without-number/templates/actor/parts/actor-items.html"}}
+    {{!-- Inventory Tab --}}
+    <div class="tab items" data-group="primary" data-tab="inventory">
+       {{> "systems/cities-without-number/templates/actor/parts/actor-inventory.html"}}
     </div>
 
-    {{!-- Owned Spells Tab --}}
-    <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/cities-without-number/templates/actor/parts/actor-spells.html"}}
+    {{!-- Edges Tab --}}
+    <div class="tab spells" data-group="primary" data-tab="edges">
+      {{> "systems/cities-without-number/templates/actor/parts/actor-edges.html"}}
     </div>
 
-    {{!-- Active Effects Tab --}}
-    <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-      {{> "systems/cities-without-number/templates/actor/parts/actor-effects.html"}}
+    {{!-- Foci Tab --}}
+    <div class="tab effects flexcol" data-group="primary" data-tab="foci">
+      {{> "systems/cities-without-number/templates/actor/parts/actor-foci.html"}}
     </div>
 
   </section>
