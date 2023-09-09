@@ -59,32 +59,59 @@
   "Item": {
     "types": [
       "item",
-      "feature",
-      "spell"
+      "weapon",
+      "edge",
+      "focus",
+      "skill"
     ],
     "templates": {
       "base": {
         "description": ""
+      },
+      "gear": {
+        "cost": 0,
+        "encumberance": 0
+      },
+      "attributeBased": {
+        "attribute": "@str"
       }
     },
     "item": {
       "templates": [
-        "base"
+        "base",
+        "gear"
       ],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "quantity": 1
     },
-    "feature": {
+    "weapon": {
+      "templates": [
+        "base",
+        "gear",
+        "attributeBased"
+      ],
+      "damageFormula": "1d6",
+      "range": "10/20",
+      "magazineSize": "10",
+      "traumaFormula": "1d8",
+      "traumaRating": 2
+    },
+    "edge": {
       "templates": [
         "base"
       ]
     },
-    "spell": {
+    "focus": {
       "templates": [
         "base"
+      ]
+    },
+    "skill": {
+      "templates": [
+        "base",
+        "attributeBased"
       ],
-      "spellLevel": 1
+      "level": -1,
+      "rollFormula": "2d6 + @level + @attribute.mod"
     }
   }
 }
