@@ -102,8 +102,8 @@ export class CitiesWithoutNumberActor extends Actor {
     }
 
     // Add level for easier access, or fall back to 0.
-    if (data.attributes.level) {
-      data.lvl = data.attributes.level.value ?? 0;
+    if (data.level) {
+      data.lvl = data.level ?? 0;
     }
   }
 

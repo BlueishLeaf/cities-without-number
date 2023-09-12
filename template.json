@@ -2,7 +2,9 @@
   "Actor": {
     "types": [
       "character",
-      "npc"
+      "npc",
+      "drone",
+      "vehicle"
     ],
     "templates": {
       "base": {
@@ -11,18 +13,27 @@
           "min": 0,
           "max": 10
         },
-        "biography": ""
+        "biography": "",
+        "traumaTarget": 6,
+        "movementSpeed": 10,
+        "movementType": "ground"
+      },
+      "machine": {
+        "hardpoints": 0,
+        "armorClass": 10
+      },
+      "humanoid": {
+        "armorClass": {
+          "melee": 10,
+          "ranged": 10
+        }
       }
     },
     "character": {
       "templates": [
-        "base"
+        "base",
+        "humanoid"
       ],
-      "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
       "abilities": {
         "str": {
           "value": 10
@@ -43,18 +54,47 @@
           "value": 10
         }
       },
-      "xp": 0,
       "systemStrain": {
-        "current": 0,
+        "value": 0,
         "max": 10,
         "permanant": 0
-      }
+      },
+      "level": 1,
+      "xp": 0,
+      "attackBonus": 0 
     },
     "npc": {
       "templates": [
-        "base"
+        "base",
+        "humanoid"
       ],
-      "cr": 0
+      "hitDice": 1,
+      "skillBonus": 0,
+      "saveTarget": 10,
+      "attackBonus": {
+        "melee": 0,
+        "ranged": 0
+      },
+      "moraleTarget": 8
+    },
+    "drone": {
+      "templates": [
+        "base",
+        "machine"
+      ],
+      "maxFittings": 0,
+      "encumberance": 0
+    },
+    "vehicle": {
+      "templates": [
+        "base",
+        "machine"
+      ],
+      "armour": 0,
+      "maxCrew": 0,
+      "power": 0,
+      "mass": 0,
+      "size": "S"
     }
   },
   "Item": {
