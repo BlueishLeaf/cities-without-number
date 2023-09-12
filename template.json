@@ -101,6 +101,7 @@
     "types": [
       "gear",
       "weapon",
+      "armor",
       "edge",
       "focus",
       "skill"
@@ -111,26 +112,43 @@
       },
       "item": {
         "cost": 0,
-        "encumberance": 0
+        "encumberance": 0,
+        "quantity": 1
+      },
+      "rollable": {
+        "rollFormula": "1d20"
       }
     },
     "gear": {
       "templates": [
         "base",
         "item"
-      ],
-      "quantity": 1
+      ]
     },
     "weapon": {
       "templates": [
         "base",
-        "item"
+        "item",
+        "rollable"
       ],
       "damageFormula": "1d6",
       "range": "10/20",
       "magazineSize": "10",
       "traumaDie": "1d8",
       "traumaRating": 2
+    },
+    "armor": {
+      "templates": [
+        "base",
+        "item"
+      ],
+      "armorClass": {
+        "melee": 0,
+        "ranged": 0
+      },
+      "damageSoak": 0,
+      "traumaTargetMod": 0,
+      "subtlety": "Subtle"
     },
     "edge": {
       "templates": [
@@ -146,10 +164,10 @@
     },
     "skill": {
       "templates": [
-        "base"
+        "base",
+        "rollable"
       ],
-      "level": -1,
-      "rollFormula": "2d6 + @level + @attributeMod + @bonus"
+      "level": -1
     }
   }
 }
