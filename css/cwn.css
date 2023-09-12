@@ -210,6 +210,9 @@
   /* ----------------------------------------- */
   /* Example style for Cities Without Number (can be removed if not needed) */
 }
+.cwn .ability {
+  margin-top: 15px;
+}
 .cwn .item-form {
   font-family: "Roboto", sans-serif;
 }
@@ -369,4 +372,16 @@
 }
 .cwn .effects .item .effect-controls {
   border: none;
+}
+.cwn .skill-pill {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }

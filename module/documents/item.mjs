@@ -40,7 +40,8 @@ export class CitiesWithoutNumberItem extends Item {
     const label = `[${item.type}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
-    if (!this.system.formula) {
+    console.log(this.system)
+    if (!this.system.rollFormula) {
       ChatMessage.create({
         speaker: speaker,
         rollMode: rollMode,
@@ -54,7 +55,7 @@ export class CitiesWithoutNumberItem extends Item {
       const rollData = this.getRollData();
 
       // Invoke the roll and submit it to chat.
-      const roll = new Roll(rollData.item.formula, rollData);
+      const roll = new Roll(rollData.item.rollFormula, rollData);
       // If you need to store the value first, uncomment the next line.
       // let result = await roll.roll({async: true});
       roll.toMessage({

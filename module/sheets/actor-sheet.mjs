@@ -72,6 +72,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.system.abilities)) {
       v.label = game.i18n.localize(CONFIG.CWN.abilities[k]) ?? k;
     }
+
+    // Set max system strain
+    context.system.systemStrain.max = context.system.abilities["con"].value;
   }
 
   /**
@@ -151,6 +154,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
 
+    // Skill pill
+    html.find(".skill-level").change(ev => this.updateSkillLevel(ev, this.actor));
+
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
@@ -160,6 +166,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         li.addEventListener("dragstart", handler, false);
       });
     }
+  }
+
+  updateSkillLevel(event, actor) {
+    const newSkillLevel = event.target.value;
+    const skillId = event.currentTarget.dataset.skillId;
+    const skill = actor.items.get(skillId);
+    console.log(`Updating skill level of ${skill.name} (${skill._id}) to ${newSkillLevel}`);
+    skill.system.level = newSkillLevel;
   }
 
   /**
@@ -205,6 +219,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
         if (item) return item.roll();
+      } else if (dataset.rollType == "skill") {
+        const skillId = element.closest(".skill").dataset.itemId;
+        const skill = this.actor.items.get(skillId);
+        this.openSkillDialog(skill);       
       }
     }
 
@@ -221,4 +239,57 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
   }
 
+  openSkillDialog(skill) {
+    this._prepareCharacterData(this.actor); // Assign localised labels
+    const options = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[1].mod}">${k[1].label}</option>\n`);
+    const skillDialog = new Dialog({
+      title: `Roll ${skill.name}`,
+      content: `
+        <div class="form-group">
+          <label for="attributeSelect">Choose an attribute for this skill: </label>
+          <select name="attributeSelect">
+              ${options}
+          </select>
+          <br>
+          <label for "bonusInput">Bonus: </label>
+          <input type="number" name="bonusInput" value="0"/>
+        </div>
+        <br>
+      `,
+      buttons: {
+       roll: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Roll",
+        callback: (html) => {
+          const attributeMod = html.find('[name="attributeSelect"]').val();
+          const bonus = html.find('[name="bonusInput"]').val();
+          this.rollSkill(skill, attributeMod, bonus);
+        }
+       },
+       cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Cancel",
+        callback: () => console.log("Cancelled skill dialog")
+       }
+      },
+      default: "roll"
+     });
+     skillDialog.render(true);  
+  }
+
+  rollSkill(skill, attributeMod, bonus) {
+    console.log(`Rolling Skill: ${skill.name}, Attribute Modifier: ${attributeMod}, Bonus: ${bonus}`);
+    console.log(skill.system.rollFormula)
+    const roll = new Roll(skill.system.rollFormula, {level: skill.system.level, attributeMod: +attributeMod, bonus: +bonus});
+    console.log(roll);
+    // Initialize chat data.
+    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    const rollMode = game.settings.get("core", "rollMode");
+    const label = `[${skill.type}] ${skill.name}`;
+    roll.toMessage({
+      speaker: speaker,
+      rollMode: rollMode,
+      flavor: label
+    });
+  }
 }
