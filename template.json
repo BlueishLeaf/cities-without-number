@@ -59,6 +59,12 @@
         "max": 10,
         "permanant": 0
       },
+      "saveTargets": {
+        "physical": 10,
+        "evasion": 10,
+        "mental": 10,
+        "luck": 10
+      },
       "level": 1,
       "xp": 0,
       "attackBonus": 0 
@@ -148,7 +154,8 @@
       },
       "damageSoak": 0,
       "traumaTargetMod": 0,
-      "subtlety": "Subtle"
+      "subtlety": "Subtle",
+      "notes": ""
     },
     "edge": {
       "templates": [

@@ -1,5 +1,3 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
-
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -29,7 +27,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Retrieve the data structure from the base sheet. You can inspect or log
     // the context variable to see the structure, but some key properties for
     // sheets are the actor object, the data object, whether or not it's
-    // editable, the items array, and the effects array.
+    // editable, and the items array.
     const context = super.getData();
 
     // Use a safe clone of the actor data for further operations.
@@ -52,9 +50,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
-
-    // Prepare active effects
-    context.effects = prepareActiveEffectCategories(this.actor.effects);
 
     return context;
   }
@@ -89,6 +84,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Initialize containers.
     const skills = [];
     const inventory = [];
+    const weapons = [];
+    const armory = [];
     const foci = [];
     const edges = [];
 
@@ -103,6 +100,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       else if (i.type === "gear") {
         inventory.push(i);
       }
+      // Append to weapons.
+      else if (i.type === "weapon") {
+        weapons.push(i);
+      }
+      // Append to armory.
+      else if (i.type === "armor") {
+        armory.push(i);
+      }
       // Append to foci.
       else if (i.type === "focus") {
         foci.push(i);
@@ -116,6 +121,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Assign and return
     context.skills = skills;
     context.inventory = inventory;
+    context.weapons = weapons;
+    context.armory = armory;
     context.foci = foci;
     context.edges = edges;
   }
@@ -147,9 +154,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       item.delete();
       li.slideUp(200, () => this.render(false));
     });
-
-    // Active Effect management
-    html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
@@ -215,7 +219,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Handle item rolls.
     if (dataset.rollType) {
-      if (dataset.rollType == "item") {
+      if (dataset.rollType == "gear" || dataset.rollType == "armor") {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
         if (item) return item.roll();
@@ -223,6 +227,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         const skillId = element.closest(".skill").dataset.itemId;
         const skill = this.actor.items.get(skillId);
         this.openSkillDialog(skill);       
+      } else if (dataset.rollType == "weapon") {
+        const weaponId = element.closest(".item").dataset.itemId;
+        const weapon = this.actor.items.get(weaponId);
+        this.openWeaponDialog(weapon);       
       }
     }
 
@@ -237,6 +245,54 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       });
       return roll;
     }
+  }
+
+  openWeaponDialog(weapon) {
+    this._prepareCharacterData(this.actor); // Assign localised labels
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[1].mod}">${k[1].label}</option>\n`);
+    console.log(this.actor.items);
+    const skills = this.actor.items.filter(item => item.type === "skill");
+    const skillOptions = skills.map(skill => `<option value="${skill.system.level}">${skill.name}</option>\n`);
+    const weaponDialog = new Dialog({
+      title: `Roll ${weapon.name}`,
+      content: `
+        <div class="form-group">
+          <label for="attributeSelect">Choose an attribute for this weapon: </label>
+          <select name="attributeSelect">
+              ${abilityOptions}
+          </select>
+          <br>
+          <label for="skillSelect">Choose a skill for this weapon: </label>
+          <select name="skillSelect">
+              ${skillOptions}
+          </select>
+          <br>
+          <label for "bonusInput">Bonus: </label>
+          <input type="number" name="bonusInput" value="0"/>
+        </div>
+        <br>
+      `,
+      buttons: {
+       roll: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Roll",
+        callback: (html) => {
+          const attributeMod = html.find('[name="attributeSelect"]').val();
+          const skillMod = html.find('[name="skillSelect"]').val();
+          const attackBonus = this.actor.system.attackBonus;
+          const bonus = html.find('[name="bonusInput"]').val();
+          this.rollItem(weapon, { attributeMod, skillMod, attackBonus, bonus });
+        }
+       },
+       cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Cancel",
+        callback: () => console.log("Cancelled weapon dialog")
+       }
+      },
+      default: "roll"
+     });
+     weaponDialog.render(true);  
   }
 
   openSkillDialog(skill) {
@@ -263,13 +319,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         callback: (html) => {
           const attributeMod = html.find('[name="attributeSelect"]').val();
           const bonus = html.find('[name="bonusInput"]').val();
-          this.rollSkill(skill, attributeMod, bonus);
+          this.rollItem(skill, { attributeMod, bonus });
         }
        },
        cancel: {
         icon: '<i class="fas fa-times"></i>',
         label: "Cancel",
-        callback: () => console.log("Cancelled skill dialog")
+        callback: () => console.log("Cancelled dialog")
        }
       },
       default: "roll"
@@ -277,15 +333,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
      skillDialog.render(true);  
   }
 
-  rollSkill(skill, attributeMod, bonus) {
-    console.log(`Rolling Skill: ${skill.name}, Attribute Modifier: ${attributeMod}, Bonus: ${bonus}`);
-    console.log(skill.system.rollFormula)
-    const roll = new Roll(skill.system.rollFormula, {level: skill.system.level, attributeMod: +attributeMod, bonus: +bonus});
-    console.log(roll);
+  rollItem(item, rollData) {
+    console.log(`Rolling [${item.type}] ${item.name}`);
+    console.log(rollData);
+    const roll = new Roll(item.system.rollFormula, rollData);
+
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    const label = `[${skill.type}] ${skill.name}`;
+    const label = `[${item.type}] ${item.name}`;
     roll.toMessage({
       speaker: speaker,
       rollMode: rollMode,

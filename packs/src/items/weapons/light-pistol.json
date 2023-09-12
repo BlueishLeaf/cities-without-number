@@ -12,7 +12,8 @@
     "range": "10/20",
     "magazineSize": 10,
     "traumaDie": "1d8",
-    "traumaRating": 2
+    "traumaRating": 2,
+    "rollFormula": "1d20 + @attributeMod + @skillMod + @attackBonus + @bonus"
   },
   "effects": [],
   "folder": null,
