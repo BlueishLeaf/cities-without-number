@@ -67,6 +67,14 @@ Handlebars.registerHelper("toLowerCase", function(str) {
   return str.toLowerCase();
 });
 
+Handlebars.registerHelper("isChecked", function(condition) {
+  return condition ? 'checked' : '';
+});
+
+Handlebars.registerHelper("isSelected", function(condition) {
+  return condition ? 'selected' : '';
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

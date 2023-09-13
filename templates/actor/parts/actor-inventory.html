@@ -1,3 +1,23 @@
+<div class="resources grid grid-3col">
+  <div class="resource flex-group-center">
+    <label for="system.encumberance.currentStowed" class="resource-label">Stowed Items</label>
+    <div class="resource-content flexrow flex-center flex-between">
+    <input type="text" name="system.encumberance.currentStowed" value="{{system.encumberance.currentStowed}}" data-dtype="Number"/>
+    <span> / </span>
+    <input type="text" name="system.encumberance.maxStowed" value="{{system.encumberance.maxStowed}}" data-dtype="Number"/>
+    </div>
+  </div>
+
+  <div class="resource flex-group-center">
+    <label for="system.encumberance.currentReadied" class="resource-label">Readied Items</label>
+    <div class="resource-content flexrow flex-center flex-between">
+    <input type="text" name="system.encumberance.currentReadied" value="{{system.encumberance.currentReadied}}" data-dtype="Number"/>
+    <span> / </span>
+    <input type="text" name="system.encumberance.maxReadied" value="{{system.encumberance.maxReadied}}" data-dtype="Number"/>
+    </div>
+  </div>
+</div>
+
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Weapons</div>
@@ -37,6 +57,7 @@
         <h4>{{armor.name}}</h4>
       </div>
       <div class="item-controls">
+        <input class="readiable" data-item-id="{{armor._id}}" type="checkbox" {{isChecked armor.system.readied}}/>
         <a class="item-control item-edit" title="Edit armor"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete armor"><i class="fas fa-trash"></i></a>
       </div>

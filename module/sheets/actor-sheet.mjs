@@ -161,6 +161,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Skill pill level changes.
     html.find(".skill-level").change(ev => this.updateSkillLevel(ev, this.actor));
 
+    // Readied checkbox changes.
+    html.find(".readiable").change(ev => this.updateReadiedFlag(ev, this.actor));
+
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
@@ -170,6 +173,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         li.addEventListener("dragstart", handler, false);
       });
     }
+  }
+
+  updateReadiedFlag(event, actor) {
+    console.log('event', event);
+    const newReadiedState = event.target.checked;
+    const itemId = event.target.dataset.itemId;
+    const item = actor.items.get(itemId);
+    item.system.readied = true;
+    Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: actor}).then(updatedItem => console.log("Updated item", updatedItem));
   }
 
   updateSkillLevel(event, actor) {

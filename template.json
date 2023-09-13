@@ -80,6 +80,12 @@
           }
         }
       },
+      "encumberance": {
+        "currentStowed": 0,
+        "maxStowed": 10,
+        "currentReadied": 0,
+        "maxReadied": 5
+      },
       "level": 1,
       "xp": 0,
       "attackBonus": 0 
@@ -134,6 +140,7 @@
       "item": {
         "cost": 0,
         "encumberance": 0,
+        "readied": false,
         "quantity": 1
       },
       "rollable": {
