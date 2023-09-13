@@ -158,7 +158,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
 
-    // Skill pill
+    // Skill pill level changes.
     html.find(".skill-level").change(ev => this.updateSkillLevel(ev, this.actor));
 
     // Drag events for macros.
@@ -176,8 +176,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const newSkillLevel = event.target.value;
     const skillId = event.currentTarget.dataset.skillId;
     const skill = actor.items.get(skillId);
-    console.log(`Updating skill level of ${skill.name} (${skill._id}) to ${newSkillLevel}`);
     skill.system.level = newSkillLevel;
+    Item.updateDocuments([{_id: skill._id, system: { level: newSkillLevel }}], {parent: actor}).then(updatedSkill => console.log("Updated skill", updatedSkill));
   }
 
   /**
@@ -292,6 +292,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           // Update default attribute and skill for this weapon for next time
           weapon.system.attribute = selectedAttributeCode;
           weapon.system.skill = selectedSkill._id;
+          Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill._id }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
           this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDamageBonus });
         }
@@ -305,6 +306,33 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       default: "roll"
      });
      weaponDialog.render(true);  
+  }
+
+  rollWeapon(weapon, rollData) {
+    console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
+    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
+    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
+
+    // Initialize chat data.
+    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    const rollMode = game.settings.get("core", "rollMode");
+    const flavor = `[${weapon.type}] ${weapon.name}`;
+    const sound = 'sounds/dice.wav';
+
+    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => 
+      ChatMessage.create({
+        speaker,
+        rollMode,
+        flavor,
+        sound,
+        content: `
+          <h4>Attack Roll</h4>
+          ${attackRollRender}
+          <h4>Damage Roll</h4>
+          ${damageRollRender}
+        `
+      }).then(message => console.log(message))
+    );
   }
 
   openSkillDialog(skill) {
@@ -336,6 +364,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
           // Update default attribute for this skill for next time
           skill.system.attribute = selectedAttributeCode;
+          Item.updateDocuments([{_id: skill._id, system: { attribute: selectedAttributeCode }}], {parent: this.actor}).then(updates => console.log("Updated skill", updates));
 
           this.rollSkill(skill, { attributeMod, situationalBonus });
         }
@@ -352,8 +381,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   rollSkill(skill, rollData) {
-    console.log(`Rolling [${skill.type}] ${skill.name}`);
-    console.log(rollData);
+    console.log(`Rolling [${skill.type}] ${skill.name}`, rollData);
     const roll = new Roll(skill.system.rollFormula, rollData);
 
     // Initialize chat data.
@@ -365,33 +393,5 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       rollMode: rollMode,
       flavor: label
     }).then(message => console.log(message));
-  }
-
-  rollWeapon(weapon, rollData) {
-    console.log(`Rolling [${weapon.type}] ${weapon.name}`);
-    console.log(`Rolling [${skill.type}] ${skill.name}`);
-    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
-    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
-
-    // Initialize chat data.
-    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get("core", "rollMode");
-    const flavor = `[${weapon.type}] ${weapon.name}`;
-    const sound = 'sounds/dice.wav';
-
-    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => 
-      ChatMessage.create({
-        speaker,
-        rollMode,
-        flavor,
-        sound,
-        content: `
-          <h4>Attack Roll</h4>
-          ${attackRollRender}
-          <h4>Damage Roll</h4>
-          ${damageRollRender}
-        `
-      }).then(message => console.log(message))
-    );
   }
 }
