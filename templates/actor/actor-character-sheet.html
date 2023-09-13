@@ -89,8 +89,7 @@
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="skills">Skills</a>
     <a class="item" data-tab="inventory">Inventory</a>
-    <a class="item" data-tab="edges">Edges</a>
-    <a class="item" data-tab="foci">Foci</a>
+    <a class="item" data-tab="features">Features</a>
     <a class="item" data-tab="description">Description</a>
   </nav>
 
@@ -123,6 +122,20 @@
         </section>
 
       </section>
+
+      <!-- Saves -->
+      <section class="grid grid-3col">
+        <aside class="sidebar">
+          <div class="abilities flexcol">
+            {{#each system.savingThrows.saveTargets as |save key|}}
+            <div class="ability flexrow flex-group-center">
+              <label for="system.savingThrows.saveTargets.{{key}}.value" class="resource-label flexlarge align-left rollable" data-roll-type="save" data-save="{{key}}" data-label="{{save.label}}">{{save.label}}</label>
+              <input type="text" name="system.savingThrows.saveTargets.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
+            </div>
+            {{/each}}
+          </div>
+        </aside>
+      </section>
     </div>
 
     {{!-- Biography Tab --}}
@@ -136,16 +149,10 @@
        {{> "systems/cities-without-number/templates/actor/parts/actor-inventory.html"}}
     </div>
 
-    {{!-- Edges Tab --}}
-    <div class="tab spells" data-group="primary" data-tab="edges">
-      {{> "systems/cities-without-number/templates/actor/parts/actor-edges.html"}}
+    {{!-- Features Tab --}}
+    <div class="tab spells" data-group="primary" data-tab="features">
+      {{> "systems/cities-without-number/templates/actor/parts/actor-features.html"}}
     </div>
-
-    {{!-- Foci Tab --}}
-    <div class="tab effects flexcol" data-group="primary" data-tab="foci">
-      {{> "systems/cities-without-number/templates/actor/parts/actor-foci.html"}}
-    </div>
-
   </section>
 </form>
 

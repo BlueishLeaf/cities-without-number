@@ -59,11 +59,26 @@
         "max": 10,
         "permanant": 0
       },
-      "saveTargets": {
-        "physical": 10,
-        "evasion": 10,
-        "mental": 10,
-        "luck": 10
+      "savingThrows": {
+        "rollFormula": "1d20 + @situationalBonus",
+        "saveTargets": {
+          "physical": {
+            "label": "Physical",
+            "value": 10
+          },
+          "evasion": {
+            "label": "Evasion",
+            "value": 10
+          },
+          "mental": {
+            "label": "Mental",
+            "value": 10
+          },
+          "luck": {
+            "label": "Luck",
+            "value": 10
+          }
+        }
       },
       "level": 1,
       "xp": 0,

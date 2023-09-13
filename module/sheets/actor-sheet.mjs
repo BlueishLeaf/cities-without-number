@@ -231,6 +231,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
         this.openWeaponDialog(weapon);       
+      } else if (dataset.rollType == "save") {
+        this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
       }
     }
 
@@ -393,5 +395,65 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       rollMode: rollMode,
       flavor: label
     }).then(message => console.log(message));
+  }
+
+  openSaveDialog(save) {
+    const saveDialog = new Dialog({
+      title: `Roll ${save.label}`,
+      content: `
+        <div class="form-group">
+          <label for "situationalBonusInput">Situational Bonus: </label>
+          <input type="text" name="situationalBonusInput" value="0"/>
+        </div>
+        <br>
+      `,
+      buttons: {
+       roll: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Roll",
+        callback: (html) => {
+          const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+          this.rollSave(save, { situationalBonus });
+        }
+       },
+       cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Cancel",
+        callback: () => console.log("Cancelled dialog")
+       }
+      },
+      default: "roll"
+     });
+     saveDialog.render(true);  
+  }
+
+  rollSave(save, rollData) {
+    console.log(`Rolling [save] ${save.label}`, rollData);
+    const roll = new Roll(this.actor.system.savingThrows.rollFormula, rollData);
+
+    // Initialize chat data.
+    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    const rollMode = game.settings.get("core", "rollMode");
+    const flavor = `[save] ${save.label}`;
+    const sound = 'sounds/dice.wav';
+
+    roll.render().then(rollRender => {
+      const savePassed = roll.total >= save.value;
+      ChatMessage.create({
+        speaker,
+        rollMode,
+        flavor,
+        sound,
+        content: `
+            ${rollRender}
+            <div class="dice-roll">
+              <div class="dice-result">
+                <h4 class="dice-total" style="color:${savePassed ? 'green' : 'red'}">${savePassed ? 'PASSED' : 'FAILED'}</h4>
+              </div>
+            </div>
+        `
+      }).then(message => console.log(message))
+    });
   }
 }
