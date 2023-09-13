@@ -324,9 +324,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => 
       ChatMessage.create({
         speaker,
-        rollMode,
         flavor,
         sound,
+        blind: rollMode === 'blindroll' ? true : false,
+        whisper: this.getWhisperRecipients(rollMode),
         content: `
           <h4>Attack Roll</h4>
           ${attackRollRender}
@@ -435,6 +436,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
+    console.log(game)
     const flavor = `[save] ${save.label}`;
     const sound = 'sounds/dice.wav';
 
@@ -442,9 +444,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       const savePassed = roll.total >= save.value;
       ChatMessage.create({
         speaker,
-        rollMode,
         flavor,
         sound,
+        blind: rollMode === 'blindroll' ? true : false,
+        whisper: this.getWhisperRecipients(rollMode),
         content: `
             ${rollRender}
             <div class="dice-roll">
@@ -455,5 +458,18 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         `
       }).then(message => console.log(message))
     });
+  }
+
+  getWhisperRecipients(rollMode) {
+    switch (rollMode) {
+      case 'selfroll':
+        return [game.userId];
+      case 'gmroll':
+      case 'blindroll':
+        return ChatMessage.getWhisperRecipients('GM');
+      case 'publicroll':
+      default:
+        return [];
+    }
   }
 }
