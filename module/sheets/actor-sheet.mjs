@@ -249,10 +249,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openWeaponDialog(weapon) {
     this._prepareCharacterData(this.actor); // Assign localised labels
-    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[1].mod}">${k[1].label}</option>\n`);
-    console.log(this.actor.items);
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
-    const skillOptions = skills.map(skill => `<option value="${skill.system.level}">${skill.name}</option>\n`);
+    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill._id ? 'selected' : ''}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: `
@@ -267,8 +266,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
               ${skillOptions}
           </select>
           <br>
-          <label for "bonusInput">Bonus: </label>
-          <input type="number" name="bonusInput" value="0"/>
+          <label for "situationalABInput">Situational Attack Bonus: </label>
+          <input type="text" name="situationalABInput" value="0"/>
+          <br>
+          <label for "situationalDamageInput">Situational Damage Bonus: </label>
+          <input type="text" name="situationalDamageInput" value="0"/>
         </div>
         <br>
       `,
@@ -277,11 +279,21 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         icon: '<i class="fas fa-check"></i>',
         label: "Roll",
         callback: (html) => {
-          const attributeMod = html.find('[name="attributeSelect"]').val();
-          const skillMod = html.find('[name="skillSelect"]').val();
-          const attackBonus = this.actor.system.attackBonus;
-          const bonus = html.find('[name="bonusInput"]').val();
-          this.rollItem(weapon, { attributeMod, skillMod, attackBonus, bonus });
+          const baseAB = this.actor.system.attackBonus;
+          const situationalAB = html.find('[name="situationalABInput"]').val();
+          const situationalDamageBonus = html.find('[name="situationalABInput"]').val();
+
+          const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
+          const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
+
+          const selectedSkill = this.actor.items.get(html.find('[name="skillSelect"]').val());
+          const skillMod = selectedSkill.system.level;
+
+          // Update default attribute and skill for this weapon for next time
+          weapon.system.attribute = selectedAttributeCode;
+          weapon.system.skill = selectedSkill._id;
+
+          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDamageBonus });
         }
        },
        cancel: {
@@ -297,7 +309,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openSkillDialog(skill) {
     this._prepareCharacterData(this.actor); // Assign localised labels
-    const options = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[1].mod}">${k[1].label}</option>\n`);
+    const options = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skillDialog = new Dialog({
       title: `Roll ${skill.name}`,
       content: `
@@ -307,8 +319,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
               ${options}
           </select>
           <br>
-          <label for "bonusInput">Bonus: </label>
-          <input type="number" name="bonusInput" value="0"/>
+          <label for "situationalBonusInput">Situational Bonus: </label>
+          <input type="text" name="situationalBonusInput" value="0"/>
         </div>
         <br>
       `,
@@ -317,9 +329,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         icon: '<i class="fas fa-check"></i>',
         label: "Roll",
         callback: (html) => {
-          const attributeMod = html.find('[name="attributeSelect"]').val();
-          const bonus = html.find('[name="bonusInput"]').val();
-          this.rollItem(skill, { attributeMod, bonus });
+          const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+          const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
+          const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
+
+          // Update default attribute for this skill for next time
+          skill.system.attribute = selectedAttributeCode;
+
+          this.rollSkill(skill, { attributeMod, situationalBonus });
         }
        },
        cancel: {
@@ -333,19 +351,47 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
      skillDialog.render(true);  
   }
 
-  rollItem(item, rollData) {
-    console.log(`Rolling [${item.type}] ${item.name}`);
+  rollSkill(skill, rollData) {
+    console.log(`Rolling [${skill.type}] ${skill.name}`);
     console.log(rollData);
-    const roll = new Roll(item.system.rollFormula, rollData);
+    const roll = new Roll(skill.system.rollFormula, rollData);
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    const label = `[${item.type}] ${item.name}`;
+    const label = `[${skill.type}] ${skill.name}`;
     roll.toMessage({
       speaker: speaker,
       rollMode: rollMode,
       flavor: label
-    });
+    }).then(message => console.log(message));
+  }
+
+  rollWeapon(weapon, rollData) {
+    console.log(`Rolling [${weapon.type}] ${weapon.name}`);
+    console.log(`Rolling [${skill.type}] ${skill.name}`);
+    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
+    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
+
+    // Initialize chat data.
+    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    const rollMode = game.settings.get("core", "rollMode");
+    const flavor = `[${weapon.type}] ${weapon.name}`;
+    const sound = 'sounds/dice.wav';
+
+    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => 
+      ChatMessage.create({
+        speaker,
+        rollMode,
+        flavor,
+        sound,
+        content: `
+          <h4>Attack Roll</h4>
+          ${attackRollRender}
+          <h4>Damage Roll</h4>
+          ${damageRollRender}
+        `
+      }).then(message => console.log(message))
+    );
   }
 }

@@ -122,7 +122,13 @@
         "quantity": 1
       },
       "rollable": {
-        "rollFormula": "1d20"
+        "attribute": "str"
+      },
+      "skillRoll": {
+        "rollFormula": "2d6 + @level + @attributeMod + @situationalBonus"
+      },
+      "attackRoll": {
+        "rollFormula": "1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB"
       }
     },
     "gear": {
@@ -135,13 +141,22 @@
       "templates": [
         "base",
         "item",
-        "rollable"
+        "rollable",
+        "attackRoll"
       ],
       "damageFormula": "1d6",
       "range": "10/20",
       "magazineSize": "10",
       "traumaDie": "1d8",
       "traumaRating": 2
+    },
+    "skill": {
+      "templates": [
+        "base",
+        "rollable",
+        "skillRoll"
+      ],
+      "level": -1
     },
     "armor": {
       "templates": [
@@ -168,13 +183,6 @@
       ],
       "level1Benefit": "",
       "level2Benefit": ""
-    },
-    "skill": {
-      "templates": [
-        "base",
-        "rollable"
-      ],
-      "level": -1
     }
   }
 }
