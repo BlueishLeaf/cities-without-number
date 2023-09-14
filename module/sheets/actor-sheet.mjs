@@ -396,7 +396,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           skill.system.attribute = selectedAttributeCode;
           Item.updateDocuments([{_id: skill._id, system: { attribute: selectedAttributeCode }}], {parent: this.actor}).then(updates => console.log("Updated skill", updates));
 
-          this.rollSkill(skill, { attributeMod, situationalBonus });
+          this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus });
         }
        },
        cancel: {
