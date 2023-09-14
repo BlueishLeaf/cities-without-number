@@ -280,7 +280,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this._prepareCharacterData(this.actor); // Assign localised labels
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
-    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill._id ? 'selected' : ''}>${skill.name}</option>\n`);
+    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? 'selected' : ''}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: `
