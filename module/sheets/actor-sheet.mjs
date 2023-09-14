@@ -280,6 +280,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this._prepareCharacterData(this.actor); // Assign localised labels
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
+    console.log('weapon', weapon)
+    console.log('skills', skills)
     const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? 'selected' : ''}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
@@ -321,7 +323,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           // Update default attribute and skill for this weapon for next time
           weapon.system.attribute = selectedAttributeCode;
           weapon.system.skill = selectedSkill._id;
-          Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill._id }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+          Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
           this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDamageBonus });
         }
