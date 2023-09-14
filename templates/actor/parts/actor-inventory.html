@@ -34,6 +34,7 @@
         <h4>{{weapon.name}}</h4>
       </div>
       <div class="item-controls">
+        <input class="readiable" data-item-id="{{weapon._id}}" type="checkbox" {{isChecked weapon.system.readied}}/>
         <a class="item-control item-edit" title="Edit weapon"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete weapon"><i class="fas fa-trash"></i></a>
       </div>
@@ -81,6 +82,7 @@
         <h4>{{gear.name}}</h4>
       </div>
       <div class="item-controls">
+        <input class="readiable" data-item-id="{{gear._id}}" type="checkbox" {{isChecked gear.system.readied}}/>
         <a class="item-control item-edit" title="Edit gear"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete gear"><i class="fas fa-trash"></i></a>
       </div>

@@ -70,6 +70,21 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Set max system strain
     context.system.systemStrain.max = context.system.abilities["con"].value;
+
+    // Set stowed and readied items
+    context.system.encumberance.maxStowed = context.system.abilities["str"].value;
+    context.system.encumberance.maxReadied = Math.floor(context.system.abilities["str"].value / 2);
+    context.system.encumberance.currentStowed = 0;
+    context.system.encumberance.currentReadied = 0;
+    context.items.forEach(item => {
+      if (item.system.readied !== undefined) {
+        if (item.system.readied) {
+          context.system.encumberance.currentReadied += 1;
+        } else {
+          context.system.encumberance.currentStowed += 1;
+        }
+      }
+    });
   }
 
   /**
