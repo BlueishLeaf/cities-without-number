@@ -79,9 +79,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.items.forEach(item => {
       if (item.system.readied !== undefined) {
         if (item.system.readied) {
-          context.system.encumberance.currentReadied += 1;
+          context.system.encumberance.currentReadied += item.system.encumberance;
         } else {
-          context.system.encumberance.currentStowed += 1;
+          context.system.encumberance.currentStowed += item.system.encumberance;
         }
       }
     });
@@ -195,7 +195,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const newReadiedState = event.target.checked;
     const itemId = event.target.dataset.itemId;
     const item = actor.items.get(itemId);
-    item.system.readied = true;
+    item.system.readied = newReadiedState;
     Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: actor}).then(updatedItem => console.log("Updated item", updatedItem));
   }
 

@@ -4,7 +4,9 @@
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "This headset protects the wearer from disorientation due to loud noises. It passes along conversational-level speech without difficulty."
+    "description": "This headset protects the wearer from disorientation due to loud noises. It passes along conversational-level speech without difficulty.",
+    "cost": 250,
+    "encumberance": 1
   },
   "effects": [],
   "folder": null,
