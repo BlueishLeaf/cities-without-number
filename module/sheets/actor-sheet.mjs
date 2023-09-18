@@ -300,8 +300,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           <label for "situationalABInput">Situational Attack Bonus: </label>
           <input type="text" name="situationalABInput" value="0"/>
           <br>
-          <label for "situationalDamageInput">Situational Damage Bonus: </label>
-          <input type="text" name="situationalDamageInput" value="0"/>
+          <label for "situationalDBInput">Situational Damage Bonus: </label>
+          <input type="text" name="situationalDBInput" value="0"/>
         </div>
         <br>
       `,
@@ -312,7 +312,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         callback: (html) => {
           const baseAB = this.actor.system.attackBonus;
           const situationalAB = html.find('[name="situationalABInput"]').val();
-          const situationalDamageBonus = html.find('[name="situationalABInput"]').val();
+          const situationalDB = html.find('[name="situationalDBInput"]').val();
 
           const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
           const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
@@ -325,7 +325,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           weapon.system.skill = selectedSkill._id;
           Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
-          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDamageBonus });
+          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDB });
         }
        },
        cancel: {
