@@ -343,6 +343,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
     const attackRoll = new Roll(weapon.system.rollFormula, rollData);
     const damageRoll = new Roll(weapon.system.damageFormula, rollData);
+    const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
@@ -350,7 +351,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const flavor = `[${weapon.type}] ${weapon.name}`;
     const sound = 'sounds/dice.wav';
 
-    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => 
+    Promise.all([attackRoll.render(), damageRoll.render(), traumaRoll.render()]).then(([attackRollRender, damageRollRender, traumaRollRender]) => 
       ChatMessage.create({
         speaker,
         flavor,
@@ -359,7 +360,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         whisper: this.getWhisperRecipients(rollMode),
         content: `
           <h4>Attack Roll</h4>
-          ${attackRollRender}
+          ${attackRollRender}<br>
+          <h4>Trauma Roll</h4>
+          ${traumaRollRender}<br>
           <h4>Damage Roll</h4>
           ${damageRollRender}
         `
