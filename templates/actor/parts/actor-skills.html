@@ -1,6 +1,6 @@
 {{#each skills as |skill id|}}
 <div class="skill-pill">
   <span class="rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}</span>
-  <input type="number" value="{{skill.system.level}}" class="skill-level" data-skill-id="{{skill._id}}"/>
+  <input type="text" data-dtype="Number" value="{{skill.system.level}}" class="skill-level" data-skill-id="{{skill._id}}"/>
 </div>
 {{/each}}

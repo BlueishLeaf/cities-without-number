@@ -1,0 +1,35 @@
+{
+    "_id": "knife",
+    "name": "Knife",
+    "type": "weapon",
+    "img": "icons/weapons/guns/gun-purple.webp",
+    "system": {
+      "description": "<b>Knives, clubs, swords,</b> and other simple melee weapons are available almost anywhere on the street. Particularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
+      "cost": 20,
+      "encumberance": 1,
+      "damageFormula": "1d6 + @attributeMod + @situationalDB",
+      "range": "10/20",
+      "traumaDie": "1d6",
+      "traumaRating": 3,
+      "attribute": "str",
+      "skill": "Stab",
+      "shockDamage": 1,
+      "shockThreshold": 15
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+      "default": 0
+    },
+    "flags": {},
+    "_stats": {
+      "systemId": "cities-without-number",
+      "systemVersion": "0.0.1",
+      "coreVersion": 11,
+      "createdTime": 1694265254,
+      "modifiedTime": 1694265254,
+      "lastModifiedBy": "cwnBuilder0000"
+    }
+  }
+  

@@ -167,11 +167,14 @@
         "rollable",
         "attackRoll"
       ],
-      "damageFormula": "1d6",
-      "range": "10/20",
-      "magazineSize": "10",
-      "traumaDie": "1d8",
-      "traumaRating": 2
+      "skill": null,
+      "damageFormula": null,
+      "range": null,
+      "magazineSize": null,
+      "traumaDie": null,
+      "traumaRating": null,
+      "shockDamage": null,
+      "shockThreshold": null
     },
     "skill": {
       "templates": [

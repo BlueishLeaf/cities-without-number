@@ -340,34 +340,62 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   rollWeapon(weapon, rollData) {
-    console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
-    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
-    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
-    const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
-
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
     const flavor = `[${weapon.type}] ${weapon.name}`;
     const sound = 'sounds/dice.wav';
+    const blind = rollMode === 'blindroll' ? true : false;
+    const whisper = this.getWhisperRecipients(rollMode);
 
-    Promise.all([attackRoll.render(), damageRoll.render(), traumaRoll.render()]).then(([attackRollRender, damageRollRender, traumaRollRender]) => 
-      ChatMessage.create({
-        speaker,
-        flavor,
-        sound,
-        blind: rollMode === 'blindroll' ? true : false,
-        whisper: this.getWhisperRecipients(rollMode),
+    console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
+    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
+    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
+    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => {
+      if (weapon.system.traumaDie && weapon.system.traumaRating) {
+        const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
+        traumaRoll.render().then(traumaRollRender => {
+          const damageRenderWithTrauma = `
+            <h4>Trauma Roll (x${weapon.system.traumaRating} Damage on Traumatic Hit)</h4>
+            ${traumaRollRender}<br>
+            <div class="grid grid-2col">
+              <div class="flex-group-left">
+                <h4>Damage (Normal)</h4>
+                ${damageRollRender}
+              </div>
+              <div class="flex-group-left">
+                <h4>Damage (Traumatic)</h4>
+                <div class="dice-roll">
+                  <div class="dice-formula">${weapon.system.traumaRating} * ${damageRoll.total}</div>
+                  <div class="dice-result">
+                    <h4 class="dice-total">${weapon.system.traumaRating * damageRoll.total}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          ChatMessage.create({speaker, flavor, sound, blind, whisper,
+            content: `
+              <h4>Attack Roll</h4>
+              ${attackRollRender}<br>
+              ${damageRenderWithTrauma}
+            `
+          }).then(message => console.log(message));
+        });
+      }
+
+      const damageRenderWithoutTrauma = `
+        <h4>Damage Roll</h4>
+        ${damageRollRender}
+      `;
+      ChatMessage.create({speaker, flavor, sound, blind, whisper,
         content: `
           <h4>Attack Roll</h4>
           ${attackRollRender}<br>
-          <h4>Trauma Roll</h4>
-          ${traumaRollRender}<br>
-          <h4>Damage Roll</h4>
-          ${damageRollRender}
+          ${damageRenderWithoutTrauma}
         `
-      }).then(message => console.log(message))
-    );
+      }).then(message => console.log(message));
+    });
   }
 
   openSkillDialog(skill) {
