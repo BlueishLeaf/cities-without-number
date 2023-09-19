@@ -347,13 +347,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const attackRoll = new Roll(weapon.system.rollFormula, rollData);
     const damageRoll = new Roll(weapon.system.damageFormula, rollData);
     Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => {
-      // Initialize chat data.
-      const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-      const rollMode = game.settings.get("core", "rollMode");
-      const flavor = `[${weapon.type}] ${weapon.name}`;
-      const sound = 'sounds/dice.wav';
-      const blind = rollMode === 'blindroll' ? true : false;
-      const whisper = ChatUtils.getWhisperRecipients(rollMode);
+      const messageData = ChatUtils.initializeChatData(this.actor, weapon);
 
       // Only roll trauma die if the weapon has one and the attack isn't non-lethal
       if (weapon.system.traumaDie && weapon.system.traumaRating) {
@@ -363,14 +357,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
             ${Renders.attackRender(attackRollRender)}
             ${Renders.damageRenderWithTrauma(traumaRollRender, damageRollRender, weapon.system.traumaRating, damageRoll.total)}
           `;
-          ChatMessage.create({speaker, flavor, sound, blind, whisper, content}).then(message => console.log(message));
+          ChatMessage.create({...messageData, content}).then(message => console.log(message));
         });
       } else {
         const content = `
           ${Renders.attackRender(attackRollRender)}
           ${Renders.damageRenderWithoutTrauma(damageRollRender)}
         `;
-        ChatMessage.create({speaker, flavor, sound, blind, whisper, content}).then(message => console.log(message));
+        ChatMessage.create({...messageData, content}).then(message => console.log(message));
       }
     });
   }
