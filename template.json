@@ -81,15 +81,21 @@
         }
       },
       "encumberance": {
-        "currentStowed": 0,
-        "maxStowed": 10,
-        "currentReadied": 0,
-        "maxReadied": 5
+        "stowed": {
+          "value": 0,
+          "max": 0
+        },
+        "readied": {
+          "value": 0,
+          "max": 0
+        }
       },
       "level": 1,
       "xp": 0,
       "attackBonus": 0,
-      "money": 0
+      "money": 0,
+      "goals": [],
+      "contacts": []
     },
     "npc": {
       "templates": [
