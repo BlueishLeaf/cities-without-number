@@ -1,4 +1,4 @@
-import * as Renders from "../helpers/renders.mjs";
+import * as ChatRenders from "../helpers/chat-renders.mjs";
 import * as ChatUtils from "../helpers/chat-utils.mjs";
 
 /**
@@ -346,26 +346,18 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
     const attackRoll = new Roll(weapon.system.rollFormula, rollData);
     const damageRoll = new Roll(weapon.system.damageFormula, rollData);
-    Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => {
-      const messageData = ChatUtils.initializeChatData(this.actor, weapon);
+    const rollRenderPromises = [attackRoll.render(), damageRoll.render()];
 
-      // Only roll trauma die if the weapon has one and the attack isn't non-lethal
-      if (weapon.system.traumaDie && weapon.system.traumaRating) {
-        const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
-        traumaRoll.render().then(traumaRollRender => {
-          const content = `
-            ${Renders.attackRender(attackRollRender)}
-            ${Renders.damageRenderWithTrauma(traumaRollRender, damageRollRender, weapon.system.traumaRating, damageRoll.total)}
-          `;
-          ChatMessage.create({...messageData, content}).then(message => console.log(message));
-        });
-      } else {
-        const content = `
-          ${Renders.attackRender(attackRollRender)}
-          ${Renders.damageRenderWithoutTrauma(damageRollRender)}
-        `;
-        ChatMessage.create({...messageData, content}).then(message => console.log(message));
-      }
+    // Only roll trauma die if the weapon has one and the attack isn't non-lethal
+    if (weapon.system.traumaDie && weapon.system.traumaRating) {
+      const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
+      rollRenderPromises.push(traumaRoll.render());
+    }
+
+    Promise.all(rollRenderPromises).then(rollRenders => {
+      const messageData = ChatUtils.initializeChatData(this.actor, weapon);
+      const content = ChatRenders.buildChatContentForAttackRoll(weapon, damageRoll, rollRenders);
+      ChatMessage.create({...messageData, content}).then(message => console.log(message));
     });
   }
 
