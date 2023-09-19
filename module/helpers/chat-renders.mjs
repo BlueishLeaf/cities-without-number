@@ -1,8 +1,8 @@
-export const buildChatContentForAttackRoll = (weapon, damageRoll, rollRenders) => {
+export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, rollRenders) => {
     let content = attackRender(rollRenders[0]);
 
     // Add trauma and shock renders if applicable
-    content += rollRenders[2] ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.traumaRating, damageRoll.total) : damageRenderWithoutTrauma(rollRenders[1]);
+    content += rollRenders[2] ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.traumaRating, damageRoll.total) : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
     
     if (weapon.system.shockDamage && weapon.system.shockThreshold) {
         content += shockDamageRender(weapon);
@@ -41,8 +41,8 @@ export const damageRenderWithTrauma = (traumaRollRender, damageRollRender, traum
     </div>
 `;
 
-export const damageRenderWithoutTrauma = (damageRollRender) => `
-    <h4>Damage Roll</h4>
+export const damageRenderWithoutTrauma = (isNonLethal, damageRollRender) => `
+    <h4>Damage Roll ${isNonLethal ? '(Non-Lethal)' : ''}</h4>
     ${damageRollRender}
 `;
 

@@ -361,7 +361,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     Promise.all(rollRenderPromises).then(rollRenders => {
       const messageData = ChatUtils.initializeChatData(this.actor, weapon);
-      const content = ChatRenders.buildChatContentForAttackRoll(weapon, damageRoll, rollRenders);
+      const content = ChatRenders.buildChatContentForAttackRoll(weapon, isNonLethal, damageRoll, rollRenders);
       ChatMessage.create({...messageData, content}).then(message => console.log(message));
     });
   }
