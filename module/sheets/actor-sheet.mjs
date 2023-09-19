@@ -305,6 +305,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           <br>
           <label for "equipmentDBInput">Equipment Damage Bonus: </label>
           <input type="text" name="equipmentDBInput" value="0"/>
+          <br>
+          <label for "nonLethalInput">Non-Lethal?: </label>
+          <input type="checkbox" name="nonLethalInput"/>
         </div>
         <br>
       `,
@@ -323,12 +326,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           const selectedSkill = this.actor.items.get(html.find('[name="skillSelect"]').val());
           const skillMod = selectedSkill.system.level;
 
+          const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+
           // Update default attribute and skill for this weapon for next time
           weapon.system.attribute = selectedAttributeCode;
           weapon.system.skill = selectedSkill._id;
           Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
-          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
+          this.rollWeapon(weapon, isNonLethal, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
         }
        },
        cancel: {
@@ -342,14 +347,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
      weaponDialog.render(true);  
   }
 
-  rollWeapon(weapon, rollData) {
+  rollWeapon(weapon, isNonLethal, rollData) {
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
     const attackRoll = new Roll(weapon.system.rollFormula, rollData);
     const damageRoll = new Roll(weapon.system.damageFormula, rollData);
     const rollRenderPromises = [attackRoll.render(), damageRoll.render()];
 
     // Only roll trauma die if the weapon has one and the attack isn't non-lethal
-    if (weapon.system.traumaDie && weapon.system.traumaRating) {
+    if (!isNonLethal && weapon.system.traumaDie && weapon.system.traumaRating) {
       const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
       rollRenderPromises.push(traumaRoll.render());
     }
