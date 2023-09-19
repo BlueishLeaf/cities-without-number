@@ -7,7 +7,7 @@
     "description": "<b>Light and heavy pistols</b> are categorized by the caliber of the bullet they fire. Some operators prefer the low recoil and high mag capacity possible with a low-caliber round, while others like to have a little more certainty in dropping the targets they hit.",
     "cost": 200,
     "encumberance": 1,
-    "damageFormula": "1d6 + @attributeMod + @situationalDB",
+    "damageFormula": "1d6 + @attributeMod + @equipmentDB",
     "range": "10/20",
     "magazineSize": 10,
     "traumaDie": "1d8",

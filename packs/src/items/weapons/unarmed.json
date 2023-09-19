@@ -5,7 +5,7 @@
     "img": "icons/weapons/guns/gun-purple.webp",
     "system": {
       "description": "",
-      "damageFormula": "1d2 + @attributeMod + @situationalDB",
+      "damageFormula": "1d2 + @attributeMod + @equipmentDB",
       "traumaDie": "1d6",
       "traumaRating": 1,
       "attribute": "str",

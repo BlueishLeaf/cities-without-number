@@ -1,3 +1,6 @@
+import * as Renders from "../helpers/renders.mjs";
+import * as ChatUtils from "../helpers/chat-utils.mjs";
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -300,8 +303,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           <label for "situationalABInput">Situational Attack Bonus: </label>
           <input type="text" name="situationalABInput" value="0"/>
           <br>
-          <label for "situationalDBInput">Situational Damage Bonus: </label>
-          <input type="text" name="situationalDBInput" value="0"/>
+          <label for "equipmentDBInput">Equipment Damage Bonus: </label>
+          <input type="text" name="equipmentDBInput" value="0"/>
         </div>
         <br>
       `,
@@ -312,7 +315,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         callback: (html) => {
           const baseAB = this.actor.system.attackBonus;
           const situationalAB = html.find('[name="situationalABInput"]').val();
-          const situationalDB = html.find('[name="situationalDBInput"]').val();
+          const equipmentDB = html.find('[name="equipmentDBInput"]').val();
 
           const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
           const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
@@ -325,7 +328,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           weapon.system.skill = selectedSkill._id;
           Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
-          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, situationalDB });
+          this.rollWeapon(weapon, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
         }
        },
        cancel: {
@@ -340,61 +343,35 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   rollWeapon(weapon, rollData) {
-    // Initialize chat data.
-    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get("core", "rollMode");
-    const flavor = `[${weapon.type}] ${weapon.name}`;
-    const sound = 'sounds/dice.wav';
-    const blind = rollMode === 'blindroll' ? true : false;
-    const whisper = this.getWhisperRecipients(rollMode);
-
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
     const attackRoll = new Roll(weapon.system.rollFormula, rollData);
     const damageRoll = new Roll(weapon.system.damageFormula, rollData);
     Promise.all([attackRoll.render(), damageRoll.render()]).then(([attackRollRender, damageRollRender]) => {
+      // Initialize chat data.
+      const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+      const rollMode = game.settings.get("core", "rollMode");
+      const flavor = `[${weapon.type}] ${weapon.name}`;
+      const sound = 'sounds/dice.wav';
+      const blind = rollMode === 'blindroll' ? true : false;
+      const whisper = ChatUtils.getWhisperRecipients(rollMode);
+
+      // Only roll trauma die if the weapon has one and the attack isn't non-lethal
       if (weapon.system.traumaDie && weapon.system.traumaRating) {
         const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
         traumaRoll.render().then(traumaRollRender => {
-          const damageRenderWithTrauma = `
-            <h4>Trauma Roll (x${weapon.system.traumaRating} Damage on Traumatic Hit)</h4>
-            ${traumaRollRender}<br>
-            <div class="grid grid-2col">
-              <div class="flex-group-left">
-                <h4>Damage (Normal)</h4>
-                ${damageRollRender}
-              </div>
-              <div class="flex-group-left">
-                <h4>Damage (Traumatic)</h4>
-                <div class="dice-roll">
-                  <div class="dice-formula">${weapon.system.traumaRating} * ${damageRoll.total}</div>
-                  <div class="dice-result">
-                    <h4 class="dice-total">${weapon.system.traumaRating * damageRoll.total}</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+          const content = `
+            ${Renders.attackRender(attackRollRender)}
+            ${Renders.damageRenderWithTrauma(traumaRollRender, damageRollRender, weapon.system.traumaRating, damageRoll.total)}
           `;
-          ChatMessage.create({speaker, flavor, sound, blind, whisper,
-            content: `
-              <h4>Attack Roll</h4>
-              ${attackRollRender}<br>
-              ${damageRenderWithTrauma}
-            `
-          }).then(message => console.log(message));
+          ChatMessage.create({speaker, flavor, sound, blind, whisper, content}).then(message => console.log(message));
         });
+      } else {
+        const content = `
+          ${Renders.attackRender(attackRollRender)}
+          ${Renders.damageRenderWithoutTrauma(damageRollRender)}
+        `;
+        ChatMessage.create({speaker, flavor, sound, blind, whisper, content}).then(message => console.log(message));
       }
-
-      const damageRenderWithoutTrauma = `
-        <h4>Damage Roll</h4>
-        ${damageRollRender}
-      `;
-      ChatMessage.create({speaker, flavor, sound, blind, whisper,
-        content: `
-          <h4>Attack Roll</h4>
-          ${attackRollRender}<br>
-          ${damageRenderWithoutTrauma}
-        `
-      }).then(message => console.log(message));
     });
   }
 
@@ -450,12 +427,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    const label = `[${skill.type}] ${skill.name}`;
-    roll.toMessage({
-      speaker: speaker,
-      rollMode: rollMode,
-      flavor: label
-    }).then(message => console.log(message));
+    const flavor = `[${skill.type}] ${skill.name}`;
+    roll.toMessage({speaker, rollMode, flavor}).then(message => console.log(message));
   }
 
   openSaveDialog(save) {
@@ -496,7 +469,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    console.log(game)
     const flavor = `[save] ${save.label}`;
     const sound = 'sounds/dice.wav';
 
@@ -507,7 +479,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         flavor,
         sound,
         blind: rollMode === 'blindroll' ? true : false,
-        whisper: this.getWhisperRecipients(rollMode),
+        whisper: ChatUtils.getWhisperRecipients(rollMode),
         content: `
             ${rollRender}
             <div class="dice-roll">
@@ -518,18 +490,5 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         `
       }).then(message => console.log(message))
     });
-  }
-
-  getWhisperRecipients(rollMode) {
-    switch (rollMode) {
-      case 'selfroll':
-        return [game.userId];
-      case 'gmroll':
-      case 'blindroll':
-        return ChatMessage.getWhisperRecipients('GM');
-      case 'publicroll':
-      default:
-        return [];
-    }
   }
 }
