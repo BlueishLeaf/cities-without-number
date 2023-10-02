@@ -424,6 +424,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const roll = new Roll(this.actor.system.savingThrows.rollFormula, rollData);
 
     roll.render().then(rollRender => {
+      save.type = "save";
+      save.name = save.label;
       const messageData = ChatUtils.initializeChatData(this.actor, save);
       const savePassed = roll.total >= save.value;
       const content = ChatRenders.saveRender(rollRender, savePassed);
