@@ -46,9 +46,12 @@ export class CitiesWithoutNumberActor extends Actor {
   _prepareCharacterData(actorData) {
     if (actorData.type !== "character") return;
 
-    // Make modifications to data here. For example:
-    const systemData = actorData.system;
+    // Make modifications to data here
+    this.prepareAbilityModifiers(actorData.system);
+    this.prepareArmorClass(actorData);
+  }
 
+  prepareAbilityModifiers(systemData) {
     // Loop through ability scores, and add their modifiers to our sheet output.
     for (let [key, ability] of Object.entries(systemData.abilities)) {
       // Calculate the modifier using CWN rules.
@@ -59,6 +62,16 @@ export class CitiesWithoutNumberActor extends Actor {
         }
       }
     }
+  }
+
+  prepareArmorClass(actorData) {
+    // Find a readied armor item if one exists
+    const armor = actorData.items.filter(item => item.type === "armor" && item.system.readied)[0];
+    const baseMeleeAC = armor ? armor.system.armorClass.melee : 10;
+    const baseRangedAC = armor ? armor.system.armorClass.ranged : 10;
+    // Add dexterity modifier to total AC bonus
+    actorData.system.armorClass.melee = baseMeleeAC + actorData.system.abilities.dex.mod;
+    actorData.system.armorClass.ranged = baseRangedAC + actorData.system.abilities.dex.mod;
   }
 
   /**
