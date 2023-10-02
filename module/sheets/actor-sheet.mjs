@@ -1,5 +1,6 @@
 import * as ChatRenders from "../helpers/chat-renders.mjs";
 import * as ChatUtils from "../helpers/chat-utils.mjs";
+import * as DialogTemplates from "../helpers/dialog-templates.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -283,58 +284,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this._prepareCharacterData(this.actor); // Assign localised labels
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
-    console.log('weapon', weapon)
-    console.log('skills', skills)
     const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? 'selected' : ''}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
-      content: `
-        <div class="form-group">
-          <label for="attributeSelect">Choose an attribute for this weapon: </label>
-          <select name="attributeSelect">
-              ${abilityOptions}
-          </select>
-          <br>
-          <label for="skillSelect">Choose a skill for this weapon: </label>
-          <select name="skillSelect">
-              ${skillOptions}
-          </select>
-          <br>
-          <label for "situationalABInput">Situational Attack Bonus: </label>
-          <input type="text" name="situationalABInput" value="0"/>
-          <br>
-          <label for "equipmentDBInput">Equipment Damage Bonus: </label>
-          <input type="text" name="equipmentDBInput" value="0"/>
-          <br>
-          <label for "nonLethalInput">Non-Lethal?: </label>
-          <input type="checkbox" name="nonLethalInput"/>
-        </div>
-        <br>
-      `,
+      content: DialogTemplates.weaponRollDialog(abilityOptions, skillOptions),
       buttons: {
        roll: {
         icon: '<i class="fas fa-check"></i>',
         label: "Roll",
-        callback: (html) => {
-          const baseAB = this.actor.system.attackBonus;
-          const situationalAB = html.find('[name="situationalABInput"]').val();
-          const equipmentDB = html.find('[name="equipmentDBInput"]').val();
-
-          const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
-          const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
-
-          const selectedSkill = this.actor.items.get(html.find('[name="skillSelect"]').val());
-          const skillMod = selectedSkill.system.level;
-
-          const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
-
-          // Update default attribute and skill for this weapon for next time
-          weapon.system.attribute = selectedAttributeCode;
-          weapon.system.skill = selectedSkill._id;
-          Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
-
-          this.rollWeapon(weapon, isNonLethal, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
-        }
+        callback: (html) => this.handleWeaponRoll(weapon, html)
        },
        cancel: {
         icon: '<i class="fas fa-times"></i>',
@@ -344,7 +302,28 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       },
       default: "roll"
      });
-     weaponDialog.render(true);  
+    weaponDialog.render(true);  
+  }
+
+  handleWeaponRoll(weapon, html) {
+    const baseAB = this.actor.system.attackBonus;
+    const situationalAB = html.find('[name="situationalABInput"]').val();
+    const equipmentDB = html.find('[name="equipmentDBInput"]').val();
+
+    const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
+    const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
+
+    const selectedSkill = this.actor.items.get(html.find('[name="skillSelect"]').val());
+    const skillMod = selectedSkill.system.level;
+
+    const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+
+    // Update default attribute and skill for this weapon for next time
+    weapon.system.attribute = selectedAttributeCode;
+    weapon.system.skill = selectedSkill._id;
+    Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+
+    this.rollWeapon(weapon, isNonLethal, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
   }
 
   rollWeapon(weapon, isNonLethal, rollData) {
@@ -368,37 +347,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openSkillDialog(skill) {
     this._prepareCharacterData(this.actor); // Assign localised labels
-    const options = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
     const skillDialog = new Dialog({
       title: `Roll ${skill.name}`,
-      content: `
-        <div class="form-group">
-          <label for="attributeSelect">Choose an attribute for this skill: </label>
-          <select name="attributeSelect">
-              ${options}
-          </select>
-          <br>
-          <label for "situationalBonusInput">Situational Bonus: </label>
-          <input type="text" name="situationalBonusInput" value="0"/>
-        </div>
-        <br>
-      `,
+      content: DialogTemplates.skillRollDialog(abilityOptions),
       buttons: {
        roll: {
         icon: '<i class="fas fa-check"></i>',
         label: "Roll",
-        callback: (html) => {
-          const situationalBonus = html.find('[name="situationalBonusInput"]').val();
-
-          const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
-          const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
-
-          // Update default attribute for this skill for next time
-          skill.system.attribute = selectedAttributeCode;
-          Item.updateDocuments([{_id: skill._id, system: { attribute: selectedAttributeCode }}], {parent: this.actor}).then(updates => console.log("Updated skill", updates));
-
-          this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus });
-        }
+        callback: (html) => this.handleSkillRoll(skill, html)
        },
        cancel: {
         icon: '<i class="fas fa-times"></i>',
@@ -408,7 +365,20 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       },
       default: "roll"
      });
-     skillDialog.render(true);  
+    skillDialog.render(true);  
+  }
+
+  handleSkillRoll(skill, html) {
+    const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+    const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
+    const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
+
+    // Update default attribute for this skill for next time
+    skill.system.attribute = selectedAttributeCode;
+    Item.updateDocuments([{_id: skill._id, system: { attribute: selectedAttributeCode }}], {parent: this.actor}).then(updates => console.log("Updated skill", updates));
+
+    this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus });
   }
 
   rollSkill(skill, rollData) {
@@ -425,22 +395,12 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   openSaveDialog(save) {
     const saveDialog = new Dialog({
       title: `Roll ${save.label}`,
-      content: `
-        <div class="form-group">
-          <label for "situationalBonusInput">Situational Bonus: </label>
-          <input type="text" name="situationalBonusInput" value="0"/>
-        </div>
-        <br>
-      `,
+      content: DialogTemplates.saveRollDialog(),
       buttons: {
        roll: {
         icon: '<i class="fas fa-check"></i>',
         label: "Roll",
-        callback: (html) => {
-          const situationalBonus = html.find('[name="situationalBonusInput"]').val();
-
-          this.rollSave(save, { situationalBonus });
-        }
+        callback: (html) => this.handleSaveRoll(save, html)
        },
        cancel: {
         icon: '<i class="fas fa-times"></i>',
@@ -451,6 +411,12 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       default: "roll"
      });
      saveDialog.render(true);  
+  }
+
+  handleSaveRoll(save, html) {
+    const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+    this.rollSave(save, { situationalBonus });
   }
 
   rollSave(save, rollData) {
