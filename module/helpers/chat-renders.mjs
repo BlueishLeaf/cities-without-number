@@ -1,17 +1,19 @@
 export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, rollRenders) => {
-    let content = attackRender(rollRenders[0]);
+  let content = attackRender(rollRenders[0]);
 
-    // Add trauma and shock renders if applicable
-    content += rollRenders[2] ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.traumaRating, damageRoll.total) : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
-    
-    if (weapon.system.shockDamage && weapon.system.shockThreshold) {
-        content += shockDamageRender(weapon);
-    }
+  // Add trauma and shock renders if applicable
+  content += rollRenders[2]
+    ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.traumaRating, damageRoll.total)
+    : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
 
-    return content;
-}
+  if (weapon.system.shockDamage && weapon.system.shockThreshold) {
+    content += shockDamageRender(weapon);
+  }
 
-export const shockDamageRender = (weapon) => `
+  return content;
+};
+
+export const shockDamageRender = weapon => `
     <h4>Shock Damage</h4>
     <div class="dice-roll">
         <div class="dice-formula">AC <= ${weapon.system.shockThreshold}</div>
@@ -42,13 +44,22 @@ export const damageRenderWithTrauma = (traumaRollRender, damageRollRender, traum
 `;
 
 export const damageRenderWithoutTrauma = (isNonLethal, damageRollRender) => `
-    <h4>Damage Roll ${isNonLethal ? '(Non-Lethal)' : ''}</h4>
+    <h4>Damage Roll ${isNonLethal ? "(Non-Lethal)" : ""}</h4>
     ${damageRollRender}
 `;
 
-export const attackRender = (attackRollRender) =>`
+export const attackRender = attackRollRender => `
     <div style="margin: 10px 0;">
         <h4>Attack Roll</h4>
         ${attackRollRender}
+    </div>
+`;
+
+export const saveRender = (rollRender, savePassed) => `
+    ${rollRender}
+    <div class="dice-roll">
+        <div class="dice-result">
+            <h4 class="dice-total" style="color:${savePassed ? "green" : "red"}">${savePassed ? "PASSED" : "FAILED"}</h4>
+        </div>
     </div>
 `;

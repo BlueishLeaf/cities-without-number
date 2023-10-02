@@ -5,7 +5,6 @@
  */
 export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
-
     // Actor partials.
     "systems/cities-without-number/templates/actor/parts/actor-skills.html",
     "systems/cities-without-number/templates/actor/parts/actor-inventory.html",

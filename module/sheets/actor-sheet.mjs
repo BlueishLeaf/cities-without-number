@@ -73,11 +73,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
 
     // Set max system strain
-    context.system.systemStrain.max = context.system.abilities["con"].value;
+    context.system.systemStrain.max = context.system.abilities.con.value;
 
     // Set stowed and readied items
-    context.system.encumberance.stowed.max = context.system.abilities["str"].value;
-    context.system.encumberance.readied.max = Math.floor(context.system.abilities["str"].value / 2);
+    context.system.encumberance.stowed.max = context.system.abilities.str.value;
+    context.system.encumberance.readied.max = Math.floor(context.system.abilities.str.value / 2);
     context.system.encumberance.stowed.value = 0;
     context.system.encumberance.readied.value = 0;
     context.items.forEach(item => {
@@ -195,7 +195,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   updateReadiedFlag(event, actor) {
-    console.log('event', event);
+    console.log("event", event);
     const newReadiedState = event.target.checked;
     const itemId = event.target.dataset.itemId;
     const item = actor.items.get(itemId);
@@ -257,11 +257,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       } else if (dataset.rollType == "skill") {
         const skillId = element.closest(".skill").dataset.itemId;
         const skill = this.actor.items.get(skillId);
-        this.openSkillDialog(skill);       
+        this.openSkillDialog(skill);
       } else if (dataset.rollType == "weapon") {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
-        this.openWeaponDialog(weapon);       
+        this.openWeaponDialog(weapon);
       } else if (dataset.rollType == "save") {
         this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
       }
@@ -282,27 +282,27 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openWeaponDialog(weapon) {
     this._prepareCharacterData(this.actor); // Assign localised labels
-    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
-    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? 'selected' : ''}>${skill.name}</option>\n`);
+    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? "selected" : ""}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.weaponRollDialog(abilityOptions, skillOptions),
       buttons: {
-       roll: {
-        icon: '<i class="fas fa-check"></i>',
-        label: "Roll",
-        callback: (html) => this.handleWeaponRoll(weapon, html)
-       },
-       cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: "Cancel",
-        callback: () => console.log("Cancelled weapon dialog")
-       }
+        roll: {
+          icon: '<i class="fas fa-check"></i>',
+          label: "Roll",
+          callback: html => this.handleWeaponRoll(weapon, html)
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Cancel",
+          callback: () => console.log("Cancelled weapon dialog")
+        }
       },
       default: "roll"
-     });
-    weaponDialog.render(true);  
+    });
+    weaponDialog.render(true);
   }
 
   handleWeaponRoll(weapon, html) {
@@ -347,25 +347,25 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openSkillDialog(skill) {
     this._prepareCharacterData(this.actor); // Assign localised labels
-    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? 'selected' : ''}>${k[1].label}</option>\n`);
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skillDialog = new Dialog({
       title: `Roll ${skill.name}`,
       content: DialogTemplates.skillRollDialog(abilityOptions),
       buttons: {
-       roll: {
-        icon: '<i class="fas fa-check"></i>',
-        label: "Roll",
-        callback: (html) => this.handleSkillRoll(skill, html)
-       },
-       cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: "Cancel",
-        callback: () => console.log("Cancelled dialog")
-       }
+        roll: {
+          icon: '<i class="fas fa-check"></i>',
+          label: "Roll",
+          callback: html => this.handleSkillRoll(skill, html)
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Cancel",
+          callback: () => console.log("Cancelled dialog")
+        }
       },
       default: "roll"
-     });
-    skillDialog.render(true);  
+    });
+    skillDialog.render(true);
   }
 
   handleSkillRoll(skill, html) {
@@ -397,20 +397,20 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${save.label}`,
       content: DialogTemplates.saveRollDialog(),
       buttons: {
-       roll: {
-        icon: '<i class="fas fa-check"></i>',
-        label: "Roll",
-        callback: (html) => this.handleSaveRoll(save, html)
-       },
-       cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: "Cancel",
-        callback: () => console.log("Cancelled dialog")
-       }
+        roll: {
+          icon: '<i class="fas fa-check"></i>',
+          label: "Roll",
+          callback: html => this.handleSaveRoll(save, html)
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Cancel",
+          callback: () => console.log("Cancelled dialog")
+        }
       },
       default: "roll"
-     });
-     saveDialog.render(true);  
+    });
+    saveDialog.render(true);
   }
 
   handleSaveRoll(save, html) {
@@ -423,29 +423,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     console.log(`Rolling [save] ${save.label}`, rollData);
     const roll = new Roll(this.actor.system.savingThrows.rollFormula, rollData);
 
-    // Initialize chat data.
-    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get("core", "rollMode");
-    const flavor = `[save] ${save.label}`;
-    const sound = 'sounds/dice.wav';
-
     roll.render().then(rollRender => {
+      const messageData = ChatUtils.initializeChatData(this.actor, save);
       const savePassed = roll.total >= save.value;
-      ChatMessage.create({
-        speaker,
-        flavor,
-        sound,
-        blind: rollMode === 'blindroll' ? true : false,
-        whisper: ChatUtils.getWhisperRecipients(rollMode),
-        content: `
-            ${rollRender}
-            <div class="dice-roll">
-              <div class="dice-result">
-                <h4 class="dice-total" style="color:${savePassed ? 'green' : 'red'}">${savePassed ? 'PASSED' : 'FAILED'}</h4>
-              </div>
-            </div>
-        `
-      }).then(message => console.log(message))
+      const content = ChatRenders.saveRender(rollRender, savePassed);
+      ChatMessage.create({...messageData, content}).then(message => console.log(message));
     });
   }
 }

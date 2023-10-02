@@ -68,11 +68,11 @@ Handlebars.registerHelper("toLowerCase", function(str) {
 });
 
 Handlebars.registerHelper("isChecked", function(condition) {
-  return condition ? 'checked' : '';
+  return condition ? "checked" : "";
 });
 
 Handlebars.registerHelper("isSelected", function(condition) {
-  return condition ? 'selected' : '';
+  return condition ? "selected" : "";
 });
 
 /* -------------------------------------------- */

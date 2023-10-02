@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import gulpSass from "gulp-sass";
-import * as dartSass from 'sass';
+import * as dartSass from "sass";
 
 const sass = gulpSass(dartSass);
 const SASS_DEST = "./css";
