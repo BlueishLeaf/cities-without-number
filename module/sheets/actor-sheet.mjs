@@ -13,7 +13,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["cwn", "sheet", "actor"],
-      template: "systems/cities-without-number/templates/actor/actor-sheet.html",
+      template: "systems/cities-without-number/templates/actor/actor-sheet.hbs",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
@@ -22,7 +22,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/cities-without-number/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/cities-without-number/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
