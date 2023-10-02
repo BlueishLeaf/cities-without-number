@@ -1,6 +1,7 @@
 import * as ChatRenders from "../helpers/chat-renders.mjs";
 import * as ChatUtils from "../helpers/chat-utils.mjs";
 import * as DialogTemplates from "../helpers/dialog-templates.mjs";
+import * as DialogUtils from "../helpers/dialog-utils.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -67,11 +68,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
    * @returns {undefined}
    */
   _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.CWN.abilities[k]) ?? k;
-    }
-
     // Set max system strain
     context.system.systemStrain.max = context.system.abilities.con.value;
 
@@ -281,25 +277,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   openWeaponDialog(weapon) {
-    this._prepareCharacterData(this.actor); // Assign localised labels
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
     const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? "selected" : ""}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.weaponRollDialog(abilityOptions, skillOptions),
-      buttons: {
-        roll: {
-          icon: '<i class="fas fa-check"></i>',
-          label: "Roll",
-          callback: html => this.handleWeaponRoll(weapon, html)
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: "Cancel",
-          callback: () => console.log("Cancelled weapon dialog")
-        }
-      },
+      buttons: DialogUtils.rollButtons(html => this.handleWeaponRoll(weapon, html)),
       default: "roll"
     });
     weaponDialog.render(true);
@@ -346,23 +330,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   openSkillDialog(skill) {
-    this._prepareCharacterData(this.actor); // Assign localised labels
-    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
+    const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skillDialog = new Dialog({
       title: `Roll ${skill.name}`,
       content: DialogTemplates.skillRollDialog(abilityOptions),
-      buttons: {
-        roll: {
-          icon: '<i class="fas fa-check"></i>',
-          label: "Roll",
-          callback: html => this.handleSkillRoll(skill, html)
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: "Cancel",
-          callback: () => console.log("Cancelled dialog")
-        }
-      },
+      buttons: DialogUtils.rollButtons(html => this.handleSkillRoll(skill, html)),
       default: "roll"
     });
     skillDialog.render(true);
@@ -396,18 +368,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const saveDialog = new Dialog({
       title: `Roll ${save.label}`,
       content: DialogTemplates.saveRollDialog(),
-      buttons: {
-        roll: {
-          icon: '<i class="fas fa-check"></i>',
-          label: "Roll",
-          callback: html => this.handleSaveRoll(save, html)
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: "Cancel",
-          callback: () => console.log("Cancelled dialog")
-        }
-      },
+      buttons: DialogUtils.rollButtons(html => this.handleSaveRoll(save, html)),
       default: "roll"
     });
     saveDialog.render(true);
