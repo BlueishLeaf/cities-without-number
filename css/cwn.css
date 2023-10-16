@@ -244,11 +244,6 @@
 .cwn .sheet-tabs {
   flex: 0;
 }
-.cwn .sheet-body,
-.cwn .sheet-body .tab,
-.cwn .sheet-body .tab .editor {
-  height: 100%;
-}
 .cwn .tox .tox-editor-container {
   background: #fff;
 }

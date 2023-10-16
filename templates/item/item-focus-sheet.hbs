@@ -18,6 +18,16 @@
     {{!-- Description Tab --}}
     <div class="tab" data-group="primary" data-tab="description">
       {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+      
+      {{!-- Attributes --}}
+      <div class="resource">
+        <label class="resource-label">Level 1 Benefit</label>
+        {{editor system.level1Benefit target="system.level1Benefit" rollData=rollData button=true owner=owner editable=editable}}
+      </div>
+      <div class="resource">
+        <label class="resource-label">Level 2 Benefit</label>
+        {{editor system.level2Benefit target="system.level2Benefit" rollData=rollData button=true owner=owner editable=editable}}
+      </div>
     </div>
   </section>
 </form>
