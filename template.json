@@ -226,6 +226,7 @@
       "templates": [
         "base"
       ],
+      "level": 1,
       "level1Benefit": "",
       "level2Benefit": ""
     }
