@@ -3,10 +3,10 @@ export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, r
 
   // Add trauma and shock renders if applicable
   content += rollRenders[2]
-    ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.traumaRating, damageRoll.total)
+    ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.trauma.rating, damageRoll.total)
     : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
 
-  if (weapon.system.shockDamage && weapon.system.shockThreshold) {
+  if (weapon.system.shock) {
     content += shockDamageRender(weapon);
   }
 
@@ -16,9 +16,9 @@ export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, r
 export const shockDamageRender = weapon => `
     <h4>Shock Damage</h4>
     <div class="dice-roll">
-        <div class="dice-formula">AC <= ${weapon.system.shockThreshold}</div>
+        <div class="dice-formula">AC <= ${weapon.system.shock.threshold}</div>
         <div class="dice-result">
-            <h4 class="dice-total">${weapon.system.shockDamage}</h4>
+            <h4 class="dice-total">${weapon.system.shock.damage}</h4>
         </div>
     </div>
 `;

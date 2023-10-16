@@ -9,11 +9,17 @@
     "encumberance": 1,
     "damageFormula": "1d6 + @attributeMod + @equipmentDB",
     "range": "10/20",
-    "magazineSize": 10,
-    "traumaDie": "1d8",
-    "traumaRating": 2,
     "attribute": "dex",
-    "skill": "Shoot"
+    "skill": "Shoot",
+    "trauma": {
+      "die": "1d8",
+      "rating": 2
+    },
+    "magazine": {
+      "value": 0,
+      "max": 10
+    },
+    "shock": null
   },
   "effects": [],
   "folder": null,

@@ -5,26 +5,59 @@
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <div class="grid grid-3col">
+        <div class="resource">
+          <label class="resource-label">Quantity</label>
+          <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Encumberance</label>
+          <input type="text" name="system.encumberance" value="{{system.encumberance}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Cost</label>
+          <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+        </div>
+      </div>
     </div>
   </header>
+
+  {{!-- Attributes --}}
+  <div class="grid grid-2col">
+    <div class="resource">
+      <label class="resource-label">Melee AC</label>
+      <input type="text" name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+      <label class="resource-label">Ranged AC</label>
+      <input type="text" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+    </div>
+  </div>
+  <div class="grid grid-3col">
+    <div class="resource">
+      <label class="resource-label">Trauma Target Modifier</label>
+      <input type="text" name="system.traumaTargetMod" value="{{system.traumaTargetMod}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+      <label class="resource-label">Damage Soak</label>
+      <input type="text" name="system.damageSoak" value="{{system.damageSoak}}" data-dtype="Number"/>
+    </div>
+    <div class="resource">
+      <label class="resource-label">Subtlety</label>
+      <input type="text" name="system.subtlety" value="{{system.subtlety}}" data-dtype="String"/>
+    </div>
+  </div>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-
     {{!-- Description Tab --}}
     <div class="tab" data-group="primary" data-tab="description">
       {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-    </div>
-
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
     </div>
   </section>
 </form>

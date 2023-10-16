@@ -6,10 +6,15 @@
     "system": {
       "description": "",
       "damageFormula": "1d2 + @attributeMod + @equipmentDB",
-      "traumaDie": "1d6",
-      "traumaRating": 1,
       "attribute": "str",
-      "skill": "Punch"
+      "skill": "Punch",
+      "range": "None",
+      "trauma": {
+        "die": "1d6",
+        "rating": 1
+      },
+      "shock": null,
+      "magazine": null
     },
     "effects": [],
     "folder": null,

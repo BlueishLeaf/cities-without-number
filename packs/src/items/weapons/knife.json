@@ -9,12 +9,17 @@
       "encumberance": 1,
       "damageFormula": "1d6 + @attributeMod + @situationalDB",
       "range": "10/20",
-      "traumaDie": "1d6",
-      "traumaRating": 3,
       "attribute": "str",
       "skill": "Stab",
-      "shockDamage": 1,
-      "shockThreshold": 15
+      "trauma": {
+        "die": "1d6",
+        "rating": 3
+      },
+      "shock": {
+        "damage": 1,
+        "threshold": 15
+      },
+      "magazine": null
     },
     "effects": [],
     "folder": null,

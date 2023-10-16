@@ -183,11 +183,18 @@
       "skill": null,
       "damageFormula": null,
       "range": null,
-      "magazineSize": null,
-      "traumaDie": null,
-      "traumaRating": null,
-      "shockDamage": null,
-      "shockThreshold": null
+      "magazine": {
+        "value": 0,
+        "max": 0
+      },
+      "trauma": {
+        "die": null,
+        "rating": null
+      },
+      "shock": {
+        "damage": null,
+        "threshold": null
+      }
     },
     "skill": {
       "templates": [
@@ -208,8 +215,7 @@
       },
       "damageSoak": 0,
       "traumaTargetMod": 0,
-      "subtlety": "Subtle",
-      "notes": ""
+      "subtlety": "Subtle"
     },
     "edge": {
       "templates": [

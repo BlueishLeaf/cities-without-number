@@ -317,8 +317,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const rollRenderPromises = [attackRoll.render(), damageRoll.render()];
 
     // Only roll trauma die if the weapon has one and the attack isn't non-lethal
-    if (!isNonLethal && weapon.system.traumaDie && weapon.system.traumaRating) {
-      const traumaRoll = new Roll(weapon.system.traumaDie, rollData);
+    if (!isNonLethal && weapon.system.trauma) {
+      const traumaRoll = new Roll(weapon.system.trauma.die, rollData);
       rollRenderPromises.push(traumaRoll.render());
     }
 
