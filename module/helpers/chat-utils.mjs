@@ -22,3 +22,5 @@ export const getWhisperRecipients = rollMode => {
       return [];
   }
 };
+
+export const getReloadMessage = weapon => `You're ${weapon.name} doesn't have enough ammo, you need to reload!`;

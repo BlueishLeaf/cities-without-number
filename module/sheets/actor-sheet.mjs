@@ -306,9 +306,33 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Update default attribute and skill for this weapon for next time
     weapon.system.attribute = selectedAttributeCode;
     weapon.system.skill = selectedSkill._id;
-    Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
-    this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
+    if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
+      this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
+      const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
+      Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+    } else {
+      this.sendReloadMessage(weapon);
+    }
+  }
+
+  sendReloadMessage(weapon) {
+    const messageData = ChatUtils.initializeChatData(this.actor, weapon);
+    const content = ChatUtils.getReloadMessage(weapon);
+    ChatMessage.create({...messageData, content}).then(message => console.log(message));
+  }
+
+  magazineHasEnoughAmmo(magazine, isBurstFire) {
+    const bulletsToFire = isBurstFire ? 3 : 1;
+    return magazine.value >= bulletsToFire;
+  }
+
+  getUpdatedMagazine(isBurstFire, magazine) {
+    if (!magazine) return null;
+
+    const bulletsFired = isBurstFire ? 3 : 1;
+    magazine.value -= bulletsFired;
+    return magazine;
   }
 
   rollWeapon(weapon, isNonLethal, isBurstFire, rollData) {
