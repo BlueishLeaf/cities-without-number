@@ -43,13 +43,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.flags = actorData.flags;
 
     // Prepare character data and items.
-    if (actorData.type == "character") {
+    if (actorData.type === "character") {
       this._prepareItems(context);
       this._prepareCharacterData(context);
     }
 
     // Prepare NPC data and items.
-    if (actorData.type == "npc") {
+    if (actorData.type === "npc") {
       this._prepareItems(context);
     }
 
@@ -246,19 +246,19 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Handle item rolls.
     if (dataset.rollType) {
-      if (dataset.rollType == "gear" || dataset.rollType == "armor") {
+      if (dataset.rollType === "gear" || dataset.rollType === "armor") {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
         if (item) return item.roll();
-      } else if (dataset.rollType == "skill") {
+      } else if (dataset.rollType === "skill") {
         const skillId = element.closest(".skill").dataset.itemId;
         const skill = this.actor.items.get(skillId);
         this.openSkillDialog(skill);
-      } else if (dataset.rollType == "weapon") {
+      } else if (dataset.rollType === "weapon") {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
         this.openWeaponDialog(weapon);
-      } else if (dataset.rollType == "save") {
+      } else if (dataset.rollType === "save") {
         this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
       }
     }

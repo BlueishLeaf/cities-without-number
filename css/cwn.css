@@ -255,6 +255,9 @@
 .cwn .tox .tox-edit-area {
   padding: 0 8px;
 }
+.cwn .bio-text {
+  resize: vertical;
+}
 .cwn .resource-label {
   font-weight: bold;
 }
