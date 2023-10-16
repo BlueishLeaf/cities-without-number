@@ -282,7 +282,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? "selected" : ""}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
-      content: DialogTemplates.weaponRollDialog(abilityOptions, skillOptions),
+      content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, abilityOptions, skillOptions),
       buttons: DialogUtils.rollButtons(html => this.handleWeaponRoll(weapon, html)),
       default: "roll"
     });
@@ -292,7 +292,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   handleWeaponRoll(weapon, html) {
     const baseAB = this.actor.system.attackBonus;
     const situationalAB = html.find('[name="situationalABInput"]').val();
-    const equipmentDB = html.find('[name="equipmentDBInput"]').val();
 
     const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
     const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
@@ -301,19 +300,27 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const skillMod = selectedSkill.system.level;
 
     const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+    const burstFireElements = html.find('[name="burstFireInput"]');
+    const isBurstFire = burstFireElements.length > 0 ? burstFireElements[0].checked : false;
 
     // Update default attribute and skill for this weapon for next time
     weapon.system.attribute = selectedAttributeCode;
     weapon.system.skill = selectedSkill._id;
     Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
 
-    this.rollWeapon(weapon, isNonLethal, { attributeMod, skillMod, baseAB, situationalAB, equipmentDB });
+    this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
   }
 
-  rollWeapon(weapon, isNonLethal, rollData) {
+  rollWeapon(weapon, isNonLethal, isBurstFire, rollData) {
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
-    const attackRoll = new Roll(weapon.system.rollFormula, rollData);
-    const damageRoll = new Roll(weapon.system.damageFormula, rollData);
+    const finalAttackRollFormula = isBurstFire
+      ? `${weapon.system.rollFormula} + ${CONFIG.CWN.system.burstFireBonus}`
+      : weapon.system.rollFormula;
+    const attackRoll = new Roll(finalAttackRollFormula, rollData);
+    const finalDamageFormula = isBurstFire
+      ? `${weapon.system.damageFormula} + ${CONFIG.CWN.system.burstFireBonus}`
+      : weapon.system.damageFormula;
+    const damageRoll = new Roll(finalDamageFormula, rollData);
     const rollRenderPromises = [attackRoll.render(), damageRoll.render()];
 
     // Only roll trauma die if the weapon has one and the attack isn't non-lethal

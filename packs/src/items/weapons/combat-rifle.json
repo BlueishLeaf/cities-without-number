@@ -1,24 +1,24 @@
 {
-  "_id": "light-pistol",
-  "name": "Light Pistol",
+  "_id": "combat-rifle",
+  "name": "Combat Rifle",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-purple.webp",
   "system": {
-    "description": "<b>Light and heavy pistols</b> are categorized by the caliber of the bullet they fire. Some operators prefer the low recoil and high mag capacity possible with a low-caliber round, while others like to have a little more certainty in dropping the targets they hit.",
-    "cost": 200,
-    "encumberance": 1,
-    "damageFormula": "1d6 + @attributeMod",
-    "range": "10/20",
+    "description": "<b>Rifles and combat rifles</b> are similar semi-automatic tech, though the latter is equipped with a burst-fire selector and usually trades the range of a heavier caliber for the ability to carry more ammunition.",
+    "cost": 2500,
+    "encumberance": 2,
+    "damageFormula": "1d12 + @attributeMod",
+    "range": "100/300",
     "attribute": "dex",
     "skill": "Shoot",
-    "isBurstFireable": false,
+    "isBurstFireable": true,
     "trauma": {
       "die": "1d8",
-      "rating": 2
+      "rating": 3
     },
     "magazine": {
-      "value": 10,
-      "max": 10
+      "value": 30,
+      "max": 30
     },
     "shock": null
   },

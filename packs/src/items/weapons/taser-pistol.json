@@ -7,12 +7,13 @@
       "description": "<b>Taser pistols</b> cover a family of ranged non-lethal weapons small and light enough to carry concealed. Most rely on tried-and-true electrical shocks to drop a target; they inflict non-lethal hit point damage and cannot make Traumatic Hits.",
       "cost": 500,
       "encumberance": 1,
-      "damageFormula": "1d8 + @attributeMod + @equipmentDB",
+      "damageFormula": "1d8 + @attributeMod",
       "range": "10/15",
       "attribute": "dex",
       "skill": "Shoot",
+      "isBurstFireable": false,
       "magazine": {
-        "value": 0,
+        "value": 2,
         "max": 2
       },
       "shock": null,

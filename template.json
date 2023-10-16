@@ -183,6 +183,7 @@
       "skill": null,
       "damageFormula": null,
       "range": null,
+      "isBurstFireable": false,
       "magazine": {
         "value": 0,
         "max": 0

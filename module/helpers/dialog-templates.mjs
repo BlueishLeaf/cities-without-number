@@ -1,4 +1,4 @@
-export const weaponRollDialog = (abilityOptions, skillOptions) => `
+export const weaponRollDialog = (isBurstFireable, abilityOptions, skillOptions) => `
   <div class="form-group">
     <label for="attributeSelect">Choose an attribute for this weapon: </label>
     <select name="attributeSelect">
@@ -13,14 +13,18 @@ export const weaponRollDialog = (abilityOptions, skillOptions) => `
     <label for "situationalABInput">Situational Attack Bonus: </label>
     <input type="text" name="situationalABInput" value="0"/>
     <br>
-    <label for "equipmentDBInput">Equipment Damage Bonus: </label>
-    <input type="text" name="equipmentDBInput" value="0"/>
-    <br>
     <label for "nonLethalInput">Non-Lethal?: </label>
     <input type="checkbox" name="nonLethalInput"/>
+    ${addBurstFire(isBurstFireable)}
   </div>
   <br>
 `;
+
+const addBurstFire = isBurstFireable => isBurstFireable ? `
+  <br>
+  <label for "burstFireInput">Burst-Fire?: </label>
+  <input type="checkbox" name="burstFireInput"/>
+` : "";
 
 export const skillRollDialog = abilityOptions => `
   <div class="form-group">

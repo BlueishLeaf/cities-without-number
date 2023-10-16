@@ -5,10 +5,11 @@
     "img": "icons/weapons/guns/gun-purple.webp",
     "system": {
       "description": "",
-      "damageFormula": "1d2 + @attributeMod + @equipmentDB",
+      "damageFormula": "1d2 + @attributeMod",
       "attribute": "str",
       "skill": "Punch",
       "range": "None",
+      "isBurstFireable": false,
       "trauma": {
         "die": "1d6",
         "rating": 1

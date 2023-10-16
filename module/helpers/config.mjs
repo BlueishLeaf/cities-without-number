@@ -29,3 +29,7 @@ CWN.abilityModifiers = {
   1: [14, 15, 16, 17],
   2: [18]
 };
+
+CWN.system = {
+  burstFireBonus: 2
+};
