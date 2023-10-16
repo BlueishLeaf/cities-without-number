@@ -1,7 +1,9 @@
+import * as StringUtils from "../helpers/string-utils.mjs";
+
 export const initializeChatData = (actor, item) => {
   const speaker = ChatMessage.getSpeaker({ actor });
   const rollMode = game.settings.get("core", "rollMode");
-  const flavor = `[${item.type}] ${item.name}`;
+  const flavor = `[${StringUtils.titleCase(item.type)}] ${item.name}`;
   const sound = "sounds/dice.wav";
   const blind = rollMode === "blindroll";
   const whisper = getWhisperRecipients(rollMode);

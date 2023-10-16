@@ -246,11 +246,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Handle item rolls.
     if (dataset.rollType) {
-      if (dataset.rollType === "gear" || dataset.rollType === "armor") {
-        const itemId = element.closest(".item").dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        if (item) return item.roll();
-      } else if (dataset.rollType === "skill") {
+      if (dataset.rollType === "skill") {
         const skillId = element.closest(".skill").dataset.itemId;
         const skill = this.actor.items.get(skillId);
         this.openSkillDialog(skill);
@@ -260,6 +256,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this.openWeaponDialog(weapon);
       } else if (dataset.rollType === "save") {
         this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
+      } else {
+        const itemId = element.closest(".item").dataset.itemId;
+        const item = this.actor.items.get(itemId);
+        if (item) return item.roll();
       }
     }
 
