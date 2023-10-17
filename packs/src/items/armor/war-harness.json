@@ -1,35 +1,34 @@
 {
-    "_id": "war-harness",
-    "name": "War Harness",
-    "type": "armor",
-    "img": "icons/equipment/chest/breastplate-banded-blue.webp",
-    "system": {
-        "description": "An upgraded form of street leathers, these outfits have sacrificed all discretion for whatever spare ballistic plates and advanced polymer weaves its owner can sew or bolt on. It’s usually the best armor that local gangs or common thugs can afford.",
-        "quantity": 1,
-        "cost": 200,
-        "encumberance": 1,
-        "armorClass": {
-            "melee": 14,
-            "ranged": 13
-        },
-        "damageSoak": 5,
-        "traumaTargetMod": 0,
-        "subtlety": "Obvious"
+  "_id": "war-harness",
+  "name": "War Harness",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "system": {
+    "description": "An upgraded form of street leathers, these outfits have sacrificed all discretion for whatever spare ballistic plates and advanced polymer weaves its owner can sew or bolt on. It's usually the best armor that local gangs or common thugs can afford.",
+    "quantity": 1,
+    "cost": 200,
+    "encumberance": 1,
+    "armorClass": {
+      "melee": 14,
+      "ranged": 13
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-      "default": 0
-    },
-    "flags": {},
-    "_stats": {
-      "systemId": "cities-without-number",
-      "systemVersion": "0.0.1",
-      "coreVersion": 11,
-      "createdTime": 1694265254,
-      "modifiedTime": 1694265254,
-      "lastModifiedBy": "cwnBuilder0000"
-    }
+    "damageSoak": 5,
+    "traumaTargetMod": 0,
+    "subtlety": "Obvious"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
   }
-  
+}

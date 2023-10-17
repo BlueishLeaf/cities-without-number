@@ -1,38 +1,37 @@
 {
-    "_id": "taser-pistol",
-    "name": "Taser Pistol",
-    "type": "weapon",
-    "img": "icons/weapons/guns/gun-purple.webp",
-    "system": {
-      "description": "<b>Taser pistols</b> cover a family of ranged non-lethal weapons small and light enough to carry concealed. Most rely on tried-and-true electrical shocks to drop a target; they inflict non-lethal hit point damage and cannot make Traumatic Hits.",
-      "cost": 500,
-      "encumberance": 1,
-      "damageFormula": "1d8 + @attributeMod",
-      "range": "10/15",
-      "attribute": "dex",
-      "skill": "Shoot",
-      "isBurstFireable": false,
-      "magazine": {
-        "value": 2,
-        "max": 2
-      },
-      "shock": null,
-      "trauma": null
+  "_id": "taser-pistol",
+  "name": "Taser Pistol",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-purple.webp",
+  "system": {
+    "description": "<b>Taser pistols</b> cover a family of ranged non-lethal weapons small and light enough to carry concealed. Most rely on tried-and-true electrical shocks to drop a target; they inflict non-lethal hit point damage and cannot make Traumatic Hits.",
+    "cost": 500,
+    "encumberance": 1,
+    "damageFormula": "1d8 + @attributeMod",
+    "range": "10/15",
+    "attribute": "dex",
+    "skill": "Shoot",
+    "isBurstFireable": false,
+    "magazine": {
+      "value": 2,
+      "max": 2
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-      "default": 0
-    },
-    "flags": {},
-    "_stats": {
-      "systemId": "cities-without-number",
-      "systemVersion": "0.0.1",
-      "coreVersion": 11,
-      "createdTime": 1694265254,
-      "modifiedTime": 1694265254,
-      "lastModifiedBy": "cwnBuilder0000"
-    }
+    "shock": null,
+    "trauma": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
   }
-  
+}
