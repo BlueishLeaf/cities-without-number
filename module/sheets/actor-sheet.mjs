@@ -305,7 +305,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Update default attribute and skill for this weapon for next time
     weapon.system.attribute = selectedAttributeCode;
-    weapon.system.skill = selectedSkill._id;
+    weapon.system.skill = selectedSkill.name;
 
     if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
