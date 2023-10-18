@@ -46,7 +46,13 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = itemData.system;
     context.flags = itemData.flags;
-    context.mods = itemData.system.mods;
+
+    // Populate mods if applicable
+    if (itemData.system.mods) {
+      context.mods = itemData.system.mods
+        .map(id => this.actor.items.get(id))
+        .sort((a, b) => a.sort - b.sort);
+    }
 
     return context;
   }
@@ -77,8 +83,15 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("itemId"));
       item.delete();
-      this.item.system.mods.splice(this.item.system.mods.indexOf(item), 1);
-      Item.updateDocuments([{_id: this.item._id, system: { mods: this.item.system.mods }}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+
+      let childCollection; let systemUpdate;
+      if (this.item.system.mods && item.type === "mod") {
+        childCollection = this.item.system.mods;
+        systemUpdate = { mods: childCollection };
+      } else return;
+
+      childCollection.splice(childCollection.indexOf(item._id), 1);
+      Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
     });
 
     // Drag events for macros.
@@ -143,23 +156,25 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
   async _onDropItemCreate(itemData) {
     itemData = itemData instanceof Array ? itemData : [itemData];
+    let childCollection; let systemUpdate;
+    if (this.item.system.mods && itemData[0].type === "mod") {
+      childCollection = this.item.system.mods;
+      systemUpdate = { mods: this.item.system.mods };
+    } else return;
+
     const newItems = await this.actor.createEmbeddedDocuments("Item", itemData);
-    this.item.system.mods.push(newItems[0]);
-    Item.updateDocuments([{_id: this.item._id, system: { mods: this.item.system.mods }}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+    childCollection.push(newItems[0]._id);
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
     return newItems;
   }
 
   _onSortItem(event, itemData) {
-    console.info("sorting", event, itemData);
     // Get the drag source and drop target
     const items = this.actor.items;
     const source = items.get(itemData._id);
     const dropTarget = event.target.closest("[data-item-id]");
     if ( !dropTarget ) return;
-    console.info("dropTarget", dropTarget);
-    console.info("items", items);
     const target = items.get(dropTarget.dataset.itemId);
-    console.info("target", target);
 
     // Don't sort on yourself
     if ( source.id === target.id ) return;
@@ -179,8 +194,20 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       return update;
     });
 
-    // Perform the update
-    return this.actor.updateEmbeddedDocuments("Item", updateData);
+    let childCollection; let systemUpdate;
+    if (this.item.system.mods && source.type === "mod" && target.type === "mod") {
+      childCollection = this.item.system.mods;
+      systemUpdate = { mods: childCollection };
+    } else return;
+
+    this.actor.updateEmbeddedDocuments("Item", updateData).then(() => {
+      this.swapElements(childCollection, childCollection.indexOf(source.id), childCollection.indexOf(target.id));
+      Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+    });
+  }
+
+  swapElements(array, index1, index2) {
+    return [array[index1], array[index2]] = [array[index2], array[index1]];
   }
 
   /**
@@ -208,7 +235,14 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     // Finally, create the item!
     const createdItem = await Item.create(itemData, {parent: this.actor});
-    this.item.system.mods.push(createdItem);
-    Item.updateDocuments([{_id: this.item._id, system: { mods: this.item.system.mods }}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+
+    let childCollection; let systemUpdate;
+    if (this.item.system.mods && createdItem.type === "mod") {
+      childCollection = this.item.system.mods;
+      systemUpdate = { mods: childCollection };
+    } else return;
+
+    childCollection.push(createdItem._id);
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 }
