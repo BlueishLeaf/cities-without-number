@@ -145,7 +145,9 @@
       "armor",
       "edge",
       "focus",
-      "skill"
+      "skill",
+      "cyberware",
+      "mod"
     ],
     "templates": {
       "base": {
@@ -165,6 +167,9 @@
       },
       "attackRoll": {
         "rollFormula": "1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB"
+      },
+      "moddable": {
+        "mods": []
       }
     },
     "gear": {
@@ -178,7 +183,8 @@
         "base",
         "item",
         "rollable",
-        "attackRoll"
+        "attackRoll",
+        "moddable"
       ],
       "skill": null,
       "damageFormula": null,
@@ -208,7 +214,8 @@
     "armor": {
       "templates": [
         "base",
-        "item"
+        "item",
+        "moddable"
       ],
       "armorClass": {
         "melee": 0,
@@ -230,6 +237,28 @@
       "level": 1,
       "level1Benefit": "",
       "level2Benefit": ""
+    },
+    "cyberware": {
+      "templates": [
+        "base",
+        "moddable"
+      ],
+      "cost": 0,
+      "type": "",
+      "systemStrain": 0
+    },
+    "mod": {
+      "templates": [
+        "base"
+      ],
+      "cost": 0,
+      "costPercentage": 0,
+      "specialTechRequired": 0,
+      "moddableItemType": "Armor",
+      "skill": {
+        "name": "Fix",
+        "minLevel": 1
+      }
     }
   }
 }
