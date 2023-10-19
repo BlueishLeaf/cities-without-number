@@ -1,16 +1,16 @@
 {
-  "_id": "absorption-pads",
-  "name": "Absorption Pads",
+  "_id": "autotargeting",
+  "name": "Autotargeting",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Kinetic padding is added to the armor, granting it 5 more hit points of damage soak per fight.",
-    "cost": 2000,
+    "description": "The weapon has kinetic sensors embedded in it that synchronize with onboard targeting chips. The user gains a +1 bonus to all hit rolls with the weapon, but needs to connect with it via either a Gunlink or a Cranial Jack.",
+    "cost": 5000,
     "specialTechRequired": 0,
-    "moddableItemType": "armor",
+    "moddableItemType": "weapon",
     "skill": {
       "name": "Fix",
-      "minLevel": 2
+      "minLevel": 1
     }
   },
   "effects": [],
