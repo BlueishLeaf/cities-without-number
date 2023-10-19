@@ -58,6 +58,15 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "cyberware",
+      "label": "Cyberware",
+      "system": "cities-without-number",
+      "path": "packs/cyberware.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "languages": [

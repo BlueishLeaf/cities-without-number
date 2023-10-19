@@ -245,7 +245,8 @@
       ],
       "cost": 0,
       "type": "",
-      "systemStrain": 0
+      "systemStrain": 0,
+      "concealment": ""
     },
     "mod": {
       "templates": [
