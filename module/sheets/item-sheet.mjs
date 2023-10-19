@@ -78,6 +78,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     // Add Inventory Item
     html.find(".item-create").click(this._onItemCreate.bind(this));
 
+    // Rollable abilities.
+    html.find(".rollable").click(this._onRoll.bind(this));
+
     // Delete Inventory Item
     html.find(".item-delete").click(ev => {
       const li = $(ev.currentTarget).parents(".item");
@@ -235,5 +238,20 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     childCollection.push(createdItem._id);
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
+
+  /**
+   * Handle clickable rolls.
+   * @param {Event} event   The originating click event
+   * @private
+   */
+  _onRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+
+    // Handle item rolls.
+    const itemId = element.closest(".item").dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (item) return item.roll();
   }
 }
