@@ -223,7 +223,7 @@
       },
       "damageSoak": 0,
       "traumaTargetMod": 0,
-      "subtlety": "Subtle"
+      "subtlety": ""
     },
     "edge": {
       "templates": [
@@ -255,10 +255,10 @@
       "cost": 0,
       "costPercentage": 0,
       "specialTechRequired": 0,
-      "moddableItemType": "Armor",
+      "moddableItemType": "",
       "skill": {
-        "name": "Fix",
-        "minLevel": 1
+        "name": "",
+        "minLevel": 0
       }
     }
   }

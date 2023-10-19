@@ -1,0 +1,161 @@
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Body Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Body Ware" data-type="cyberware" data-subtype="body"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each body as |bodyWare id|}}
+    <li class="item flexrow" data-item-id="{{bodyWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{bodyWare.img}}" title="{{bodyWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{bodyWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Body Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Body Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Head Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Head Ware" data-type="cyberware" data-subtype="head"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each head as |headWare id|}}
+    <li class="item flexrow" data-item-id="{{headWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{headWare.img}}" title="{{headWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{headWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Head Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Head Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Skin Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Skin Ware" data-type="cyberware" data-subtype="skin"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each skin as |skinWare id|}}
+    <li class="item flexrow" data-item-id="{{skinWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{skinWare.img}}" title="{{skinWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{skinWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Skin Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Skin Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Limb Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Limb Ware" data-type="cyberware" data-subtype="limb"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each limb as |limbWare id|}}
+    <li class="item flexrow" data-item-id="{{limbWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{limbWare.img}}" title="{{limbWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{limbWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Limb Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Limb Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Sensory Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Sensory Ware" data-type="cyberware" data-subtype="sensory"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each sensory as |sensoryWare id|}}
+    <li class="item flexrow" data-item-id="{{sensoryWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{sensoryWare.img}}" title="{{sensoryWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{sensoryWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Sensory Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Sensory Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Medical Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Medical Ware" data-type="cyberware" data-subtype="medical"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each medical as |medicalWare id|}}
+    <li class="item flexrow" data-item-id="{{medicalWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{medicalWare.img}}" title="{{medicalWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{medicalWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Medical Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Medical Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>
+
+<ol class="items-list">
+  <li class="item flexrow items-header">
+    <div class="item-name">Nerve Ware</div>
+    <div class="item-controls">
+      <a class="item-control item-create" title="Create Nerve Ware" data-type="cyberware" data-subtype="nerve"><i class="fas fa-plus"></i> Add</a>
+    </div>
+  </li>
+  {{#each nerve as |nerveWare id|}}
+    <li class="item flexrow" data-item-id="{{nerveWare._id}}">
+      <div class="item-name">
+        <div class="item-image">
+          <a class="rollable" data-roll-type="cyberware"><img src="{{nerveWare.img}}" title="{{nerveWare.name}}" width="24" height="24"/></a>
+        </div>
+        <h4>{{nerveWare.name}}</h4>
+      </div>
+      <div class="item-controls">
+        <a class="item-control item-edit" title="Edit Nerve Ware"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Nerve Ware"><i class="fas fa-trash"></i></a>
+      </div>
+    </li>
+  {{/each}}
+</ol>

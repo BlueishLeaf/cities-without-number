@@ -45,6 +45,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Prepare character data and items.
     if (actorData.type === "character") {
       this._prepareItems(context);
+      this._prepareCyberware(context);
       this._prepareCharacterData(context);
     }
 
@@ -146,6 +147,59 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.edges = edges;
   }
 
+  _prepareCyberware(context) {
+    // Initialize containers.
+    const body = [];
+    const head = [];
+    const skin = [];
+    const limb = [];
+    const sensory = [];
+    const medical = [];
+    const nerve = [];
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items.filter(item => item.type === "cyberware")) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to body ware.
+      if (i.system.type === "body") {
+        body.push(i);
+      }
+      // Append to head ware.
+      else if (i.system.type === "head") {
+        head.push(i);
+      }
+      // Append to skin ware.
+      else if (i.system.type === "skin") {
+        skin.push(i);
+      }
+      // Append to limb ware.
+      else if (i.system.type === "limb") {
+        limb.push(i);
+      }
+      // Append to sensory ware.
+      else if (i.system.type === "sensory") {
+        sensory.push(i);
+      }
+      // Append to medical ware.
+      else if (i.system.type === "medical") {
+        medical.push(i);
+      }
+      // Append to nerve ware.
+      else if (i.system.type === "nerve") {
+        nerve.push(i);
+      }
+    }
+
+    // Assign and return
+    context.body = body;
+    context.head = head;
+    context.skin = skin;
+    context.limb = limb;
+    context.sensory = sensory;
+    context.medical = medical;
+    context.nerve = nerve;
+  }
+
   /* -------------------------------------------- */
 
   /** @override */
@@ -231,8 +285,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       type: type,
       system: data
     };
-    // Remove the type from the dataset since it's in the itemData.type prop.
-    delete itemData.system.type;
+
+    // Add cyberware sub-type
+    if (type === "cyberware" && data.subtype) {
+      itemData.system.type = data.subtype;
+    }
 
     // Finally, create the item!
     return await Item.create(itemData, {parent: this.actor});

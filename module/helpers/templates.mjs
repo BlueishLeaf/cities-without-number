@@ -8,6 +8,7 @@ export const preloadHandlebarsTemplates = async function() {
     // Actor partials.
     "systems/cities-without-number/templates/actor/parts/actor-skills.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-inventory.hbs",
+    "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-features.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-biography.hbs"
   ]);
