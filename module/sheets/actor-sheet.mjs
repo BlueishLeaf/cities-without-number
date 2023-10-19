@@ -22,7 +22,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    console.info("fetching actor");
     return `systems/cities-without-number/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
