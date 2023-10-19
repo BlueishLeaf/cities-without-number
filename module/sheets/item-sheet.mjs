@@ -194,16 +194,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       return update;
     });
 
-    let childCollection; let systemUpdate;
-    if (this.item.system.mods && source.type === "mod" && target.type === "mod") {
-      childCollection = this.item.system.mods;
-      systemUpdate = { mods: childCollection };
-    } else return;
-
-    this.actor.updateEmbeddedDocuments("Item", updateData).then(() => {
-      this.swapElements(childCollection, childCollection.indexOf(source.id), childCollection.indexOf(target.id));
-      Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
-    });
+    this.actor.updateEmbeddedDocuments("Item", updateData).then(() => this.item.sheet.render(this.item));
   }
 
   swapElements(array, index1, index2) {

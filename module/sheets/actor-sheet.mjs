@@ -22,6 +22,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
+    console.info("fetching actor");
     return `systems/cities-without-number/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
@@ -52,6 +53,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     if (actorData.type === "npc") {
       this._prepareItems(context);
     }
+
+    // Update open item renders
+    this.actor.items.filter(item => item._sheet && item._sheet.rendered)
+      .forEach(openItem => openItem.sheet._render(openItem));
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
