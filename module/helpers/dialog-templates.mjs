@@ -39,6 +39,16 @@ export const skillRollDialog = abilityOptions => `
   <br>
 `;
 
+export const itemTypeDialog = itemTypeOptions => `
+  <div class="form-group">
+    <label for="itemTypeSelect">Choose an item type: </label>
+    <select name="itemTypeSelect">
+      ${itemTypeOptions}
+    </select>
+  </div>
+  <br>
+`;
+
 export const saveRollDialog = () => `
 <div class="form-group">
   <label for "situationalBonusInput">Situational Bonus: </label>

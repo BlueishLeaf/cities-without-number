@@ -39,3 +39,25 @@ CWN.inventoryItemTypes = [
   "cyberdeck",
   "drug"
 ];
+
+CWN.startingSkills = [
+  "Administer",
+  "Connect",
+  "Drive",
+  "Exert",
+  "Fix",
+  "Heal",
+  "Know",
+  "Lead",
+  "Notice",
+  "Perform",
+  "Program",
+  "Punch",
+  "Shoot",
+  "Sneak",
+  "Stab",
+  "Survive",
+  "Talk",
+  "Trade",
+  "Work"
+];

@@ -291,8 +291,34 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       itemData.system.type = data.subtype;
     }
 
+    // Open dialog to let user specify which inventory item type to use
+    if (CONFIG.CWN.inventoryItemTypes.includes(type)) {
+      this.openCreateItemDialog(itemData);
+      return;
+    }
+
     // Finally, create the item!
     return await Item.create(itemData, {parent: this.actor});
+  }
+
+  openCreateItemDialog(itemData) {
+    const itemTypeOptions = CONFIG.CWN.inventoryItemTypes.map((k, _v) => `<option value="${k}"}>${k}</option>\n`);
+    const createItemDialog = new Dialog({
+      title: "Create new item",
+      content: DialogTemplates.itemTypeDialog(itemTypeOptions),
+      buttons: DialogUtils.createButtons(html => this.handleCreateCustomItem(itemData, html)),
+      default: "Create"
+    });
+    createItemDialog.render(true);
+  }
+
+  handleCreateCustomItem(itemData, html) {
+    const selectedItemType = html.find('[name="itemTypeSelect"]').val();
+    console.info("selectedItemType", selectedItemType);
+    itemData.type = selectedItemType;
+    itemData.name = `New ${selectedItemType.capitalize()}`;
+
+    return Item.create(itemData, {parent: this.actor});
   }
 
   /**
@@ -345,7 +371,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, abilityOptions, skillOptions),
       buttons: DialogUtils.rollButtons(html => this.handleWeaponRoll(weapon, html)),
-      default: "roll"
+      default: "Roll"
     });
     weaponDialog.render(true);
   }
@@ -427,7 +453,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${skill.name}`,
       content: DialogTemplates.skillRollDialog(abilityOptions),
       buttons: DialogUtils.rollButtons(html => this.handleSkillRoll(skill, html)),
-      default: "roll"
+      default: "Roll"
     });
     skillDialog.render(true);
   }
@@ -461,7 +487,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${save.label}`,
       content: DialogTemplates.saveRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleSaveRoll(save, html)),
-      default: "roll"
+      default: "Roll"
     });
     saveDialog.render(true);
   }
