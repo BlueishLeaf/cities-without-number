@@ -8,10 +8,7 @@
     "cost": 5000,
     "specialTechRequired": 0,
     "moddableItemType": "weapon",
-    "skill": {
-      "name": "Fix",
-      "minLevel": 1
-    }
+    "requiredSkills": "Fix-1"
   },
   "effects": [],
   "folder": null,

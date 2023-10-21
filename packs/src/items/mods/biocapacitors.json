@@ -8,10 +8,7 @@
     "costPercentage": 30,
     "specialTechRequired": 1,
     "moddableItemType": "cyberware",
-    "skill": {
-      "name": "Fix",
-      "minLevel": 1
-    }
+    "requiredSkills": "Fix-1/Heal-2"
   },
   "effects": [],
   "folder": null,

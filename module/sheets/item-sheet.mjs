@@ -232,6 +232,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     let childCollection; let systemUpdate;
     if (this.item.system.mods && createdItem.type === "mod") {
+      createdItem.system.moddableItemType = this.item.type;
       childCollection = this.item.system.mods;
       systemUpdate = { mods: childCollection };
     } else return;

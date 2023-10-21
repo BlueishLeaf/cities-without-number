@@ -8,10 +8,7 @@
     "cost": 2000,
     "specialTechRequired": 0,
     "moddableItemType": "armor",
-    "skill": {
-      "name": "Fix",
-      "minLevel": 2
-    }
+    "requiredSkills": "Fix-2"
   },
   "effects": [],
   "folder": null,

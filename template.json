@@ -154,7 +154,6 @@
         "description": ""
       },
       "item": {
-        "cost": 0,
         "encumberance": 0,
         "readied": false,
         "quantity": 1
@@ -170,18 +169,26 @@
       },
       "moddable": {
         "mods": []
+      },
+      "buyable": {
+        "cost": 0
+      },
+      "requiresSkills": {
+        "requiredSkills": ""
       }
     },
     "gear": {
       "templates": [
         "base",
-        "item"
+        "item",
+        "buyable"
       ]
     },
     "weapon": {
       "templates": [
         "base",
         "item",
+        "buyable",
         "rollable",
         "attackRoll",
         "moddable"
@@ -215,6 +222,7 @@
       "templates": [
         "base",
         "item",
+        "buyable",
         "moddable"
       ],
       "armorClass": {
@@ -241,25 +249,30 @@
     "cyberware": {
       "templates": [
         "base",
-        "moddable"
+        "moddable",
+        "buyable"
       ],
-      "cost": 0,
       "type": "",
       "systemStrain": 0,
       "concealment": ""
     },
     "mod": {
       "templates": [
-        "base"
+        "base",
+        "buyable",
+        "requiresSkills"
       ],
-      "cost": 0,
       "costPercentage": 0,
       "specialTechRequired": 0,
-      "moddableItemType": "",
-      "skill": {
-        "name": "",
-        "minLevel": 0
-      }
+      "moddableItemType": ""
+    },
+    "drug": {
+      "templates": [
+        "base",
+        "item",
+        "buyable",
+        "requiresSkills"
+      ]
     }
   }
 }
