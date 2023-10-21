@@ -33,3 +33,9 @@ CWN.abilityModifiers = {
 CWN.system = {
   burstFireBonus: 2
 };
+
+CWN.inventoryItemTypes = [
+  "gear",
+  "cyberdeck",
+  "drug"
+];

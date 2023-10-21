@@ -117,7 +117,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         skills.push(i);
       }
       // Append to inventory.
-      else if (i.type === "gear") {
+      else if (CONFIG.CWN.inventoryItemTypes.includes(i.type)) {
         inventory.push(i);
       }
       // Append to weapons.
