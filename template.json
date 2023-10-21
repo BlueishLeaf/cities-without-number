@@ -147,7 +147,9 @@
       "focus",
       "skill",
       "cyberware",
-      "mod"
+      "mod",
+      "drug",
+      "cyberdeck"
     ],
     "templates": {
       "base": {
@@ -273,6 +275,18 @@
         "buyable",
         "requiresSkills"
       ]
+    },
+    "cyberdeck": {
+      "templates": [
+        "base",
+        "item",
+        "buyable",
+        "moddable"
+      ],
+      "bonusAccess": 0,
+      "memory": 0,
+      "shielding": 0,
+      "cpu": 0
     }
   }
 }

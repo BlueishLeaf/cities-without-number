@@ -1,0 +1,26 @@
+{
+  "_id": "avalanche",
+  "name": "Avalanche",
+  "type": "drug",
+  "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
+  "system": {
+    "description": "A somewhat pricey combat drug favored by shock troops and those first out of the trenches, Avalanche numbs sensations of pain or exhaustion for one hour, granting the user an effective +10 to their current hit points, even if it takes them above their maximum. This numbness tends to make it harder to notice serious harms, however, and the d12 roll for any Major Injury suffered while under its effects takes a -1 penalty.",
+    "cost": 100,
+    "requiredSkills": "Heal-0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
