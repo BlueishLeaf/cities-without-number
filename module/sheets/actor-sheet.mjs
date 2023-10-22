@@ -42,16 +42,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
 
-    // Prepare character data and items.
+    // Prepare actor data and items.
     if (actorData.type === "character") {
       this._prepareItems(context);
       this._prepareCyberware(context);
       this._prepareCharacterData(context);
-    }
-
-    // Prepare NPC data and items.
-    if (actorData.type === "npc") {
+    } else if (actorData.type === "npc") {
       this._prepareItems(context);
+      this._prepareCyberware(context);
     }
 
     // Update open item renders

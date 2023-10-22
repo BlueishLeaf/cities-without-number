@@ -51,6 +51,17 @@ export class CitiesWithoutNumberActor extends Actor {
     this.prepareArmor(actorData);
   }
 
+  /**
+   * Prepare NPC type specific data
+   * @param actorData
+   */
+  _prepareNpcData(actorData) {
+    if (actorData.type !== "npc") return;
+
+    // Make modifications to data here
+    this.prepareArmor(actorData);
+  }
+
   prepareAbilityModifiers(systemData) {
     // Loop through ability scores, and add their modifiers to our sheet output.
     for (let [key, ability] of Object.entries(systemData.abilities)) {
@@ -70,12 +81,14 @@ export class CitiesWithoutNumberActor extends Actor {
     const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.subType === "accessory");
 
     const baseAC = 10;
-    const meleeAC = equippedArmor ? equippedArmor.system.armorClass.melee : baseAC;
-    const rangedAC = equippedArmor ? equippedArmor.system.armorClass.ranged : baseAC;
+    actorData.system.armorClass.melee = equippedArmor ? equippedArmor.system.armorClass.melee : baseAC;
+    actorData.system.armorClass.ranged = equippedArmor ? equippedArmor.system.armorClass.ranged : baseAC;
 
     // Apply dexterity modifier to total AC bonus
-    actorData.system.armorClass.melee = meleeAC + actorData.system.abilities.dex.mod;
-    actorData.system.armorClass.ranged = rangedAC + actorData.system.abilities.dex.mod;
+    if (actorData.type === "character") {
+      actorData.system.armorClass.melee += actorData.system.abilities.dex.mod;
+      actorData.system.armorClass.ranged += actorData.system.abilities.dex.mod;
+    }
 
     // Calculate damage soak
     const baseDamageSoak = 0;
@@ -94,18 +107,7 @@ export class CitiesWithoutNumberActor extends Actor {
       actorData.system.damageSoak.max += accessory.system.damageSoak;
       actorData.system.traumaTarget += accessory.system.traumaTargetMod;
     });
-  }
-
-  /**
-   * Prepare NPC type specific data.
-   * @param actorData
-   */
-  _prepareNpcData(actorData) {
-    if (actorData.type !== "npc") return;
-
-    // Make modifications to data here. For example:
-    const systemData = actorData.system;
-    systemData.xp = (systemData.cr * systemData.cr) * 100;
+    console.info("actorData 3", actorData);
   }
 
   /**

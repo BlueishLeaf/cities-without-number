@@ -112,14 +112,15 @@
         "base",
         "humanoid"
       ],
-      "hitDice": 1,
+      "hitDice": 0,
       "skillBonus": 0,
-      "saveTarget": 10,
+      "saveTarget": 0,
       "attackBonus": {
         "melee": 0,
         "ranged": 0
       },
-      "moraleTarget": 8
+      "moraleTarget": 0,
+      "dangerValue": 0
     },
     "drone": {
       "templates": [
