@@ -228,7 +228,8 @@
         "base",
         "item",
         "buyable",
-        "moddable"
+        "moddable",
+        "hasSubtype"
       ],
       "armorClass": {
         "melee": 0,
@@ -236,8 +237,8 @@
       },
       "damageSoak": 0,
       "traumaTargetMod": 0,
-      "subtlety": "",
-      "isAccessory": false
+      "concealment": "",
+      "subType": ""
     },
     "edge": {
       "templates": [

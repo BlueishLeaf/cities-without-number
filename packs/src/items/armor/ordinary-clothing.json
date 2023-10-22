@@ -14,8 +14,8 @@
     },
     "damageSoak": 0,
     "traumaTargetMod": 0,
-    "subtlety": "Subtle",
-    "isAccessory": false
+    "concealment": "subtle",
+    "subType": "armor"
   },
   "effects": [],
   "folder": null,

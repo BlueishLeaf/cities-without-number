@@ -37,6 +37,8 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     // Use a safe clone of the item data for further operations.
     const itemData = context.item;
 
+    const config = CONFIG;
+
     // Retrieve the roll data for TinyMCE editors.
     context.rollData = {};
     let actor = this.object?.parent ?? null;
@@ -47,6 +49,8 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = itemData.system;
     context.flags = itemData.flags;
+    context.config = config;
+    context.flags.isAccessory = itemData.system.subType === "accessory";
 
     // Populate mods if applicable
     if (itemData.system.mods) {

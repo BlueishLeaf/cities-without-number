@@ -66,8 +66,8 @@ export class CitiesWithoutNumberActor extends Actor {
 
   prepareArmor(actorData) {
     // Find a readied armor item if one exists
-    const equippedArmor = actorData.items.find(item => item.type === "armor" && item.system.readied && !item.system.isAccessory);
-    const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.isAccessory);
+    const equippedArmor = actorData.items.find(item => item.type === "armor" && item.system.readied && item.system.subType === "armor");
+    const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.subType === "accessory");
 
     const baseAC = 10;
     const meleeAC = equippedArmor ? equippedArmor.system.armorClass.melee : baseAC;

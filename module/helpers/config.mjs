@@ -40,6 +40,17 @@ CWN.inventoryItemTypes = [
   "drug"
 ];
 
+CWN.armor = {
+  subTypes: {
+    armor: "Armor",
+    accessory: "Accessory"
+  },
+  concealmentTypes: {
+    subtle: "Subtle",
+    obvious: "Obvious"
+  }
+};
+
 CWN.startingSkills = [
   "Administer",
   "Connect",

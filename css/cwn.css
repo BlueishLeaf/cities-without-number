@@ -253,6 +253,10 @@
 .cwn .bio-text {
   resize: vertical;
 }
+.cwn .block-select {
+  display: block;
+  width: 100%;
+}
 .cwn .resource-label {
   font-weight: bold;
 }

@@ -14,8 +14,8 @@
     },
     "damageSoak": 0,
     "traumaTargetMod": 0,
-    "subtlety": "Obvious",
-    "isAccessory": true
+    "concealment": "obvious",
+    "subType": "accessory"
   },
   "effects": [],
   "folder": null,
