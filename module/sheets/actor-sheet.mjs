@@ -305,7 +305,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = {
       name: name,
       type: type,
-      system: data
+      system: data,
+      sort: -1
     };
 
     // Add cyberware sub-type

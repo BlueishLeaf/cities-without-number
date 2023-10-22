@@ -223,7 +223,8 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     const itemData = {
       name: name,
       type: type,
-      system: data
+      system: data,
+      sort: -1
     };
     // Remove the type from the dataset since it's in the itemData.type prop.
     delete itemData.system.type;
