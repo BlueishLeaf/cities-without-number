@@ -275,6 +275,12 @@
   text-align: left;
   display: flex;
 }
+.cwn .items-header .item-status {
+  font-weight: bold;
+  padding-left: 5px;
+  text-align: center;
+  display: flex;
+}
 .cwn .items-list {
   list-style: none;
   margin: 0;
@@ -302,9 +308,19 @@
   white-space: nowrap;
   overflow-x: hidden;
 }
+.cwn .items-list .item-stats {
+  display: flex;
+  flex: 0 0 70px;
+  justify-content: center;
+}
+.cwn .items-list .item-stats h3, .cwn .items-list .item-stats h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
 .cwn .items-list .item-controls {
   display: flex;
-  flex: 0 0 100px;
+  flex: 0 0 50px;
   justify-content: flex-end;
 }
 .cwn .items-list .item-controls a {

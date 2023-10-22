@@ -21,8 +21,7 @@
           <label class="resource-label">Cost</label>
           <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
         </div>
-        {{/if}}
-        {{#if system.costPercentage}}
+        {{else}}
         <div class="resource">
           <label class="resource-label">Cost %</label>
           <input type="text" name="system.costPercentage" value="{{system.costPercentage}}" data-dtype="Number"/>

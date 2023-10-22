@@ -18,6 +18,14 @@
     display: flex;
     // font-size: 16px;
   }
+
+  .item-status {
+    font-weight: bold;
+    padding-left: 5px;
+    text-align: center;
+    display: flex;
+    // font-size: 16px;
+  }
 }
 
 /* ----------------------------------------- */
@@ -55,10 +63,22 @@
     }
   }
 
+  // Item Stats
+  .item-stats {
+    display: flex;
+    flex: 0 0 70px;
+    justify-content: center;
+    h3, h4 {
+      margin: 0;
+      white-space: nowrap;
+      overflow-x: hidden;
+    }
+  }
+
   // Control Buttons
   .item-controls {
     display: flex;
-    flex: 0 0 100px;
+    flex: 0 0 50px;
     justify-content: flex-end;
     a {
       font-size: 12px;
