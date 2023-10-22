@@ -51,6 +51,24 @@ CWN.armor = {
   }
 };
 
+CWN.cyberwear = {
+  subTypes: {
+    body: "Body",
+    head: "Head",
+    limb: "Limb",
+    medical: "Medical",
+    nerve: "Nerve",
+    sensory: "Sensory",
+    skin: "Skin"
+  },
+  concealmentTypes: {
+    sight: "Sight",
+    medical: "Medical",
+    touch: "Touch",
+    obvious: "Obvious"
+  }
+};
+
 CWN.startingSkills = [
   "Administer",
   "Connect",

@@ -7,8 +7,10 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
       <div class="grid grid-4col">
         <div class="resource">
-          <label class="resource-label">Type</label>
-          <input type="text" name="system.type" value="{{system.type}}" data-dtype="String"/>
+          <label class="resource-label">Sub-Type</label>
+          <select class="block-select" name="system.subType">
+            {{selectOptions config.CWN.cyberwear.subTypes selected=system.subType}}
+          </select>
         </div>
         <div class="resource">
           <label class="resource-label">Cost</label>
@@ -20,7 +22,9 @@
         </div>
         <div class="resource">
           <label class="resource-label">Concealment</label>
-          <input type="text" name="system.concealment" value="{{system.concealment}}" data-dtype="String"/>
+          <select class="block-select" name="system.concealment">
+            {{selectOptions config.CWN.cyberwear.concealmentTypes selected=system.concealment}}
+          </select>
         </div>
       </div>
     </div>

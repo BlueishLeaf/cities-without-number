@@ -176,31 +176,31 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     for (let i of context.items.filter(item => item.type === "cyberware")) {
       i.img = i.img || DEFAULT_TOKEN;
       // Append to body ware.
-      if (i.system.type === "body") {
+      if (i.system.subType === "body") {
         body.push(i);
       }
       // Append to head ware.
-      else if (i.system.type === "head") {
+      else if (i.system.subType === "head") {
         head.push(i);
       }
       // Append to skin ware.
-      else if (i.system.type === "skin") {
+      else if (i.system.subType === "skin") {
         skin.push(i);
       }
       // Append to limb ware.
-      else if (i.system.type === "limb") {
+      else if (i.system.subType === "limb") {
         limb.push(i);
       }
       // Append to sensory ware.
-      else if (i.system.type === "sensory") {
+      else if (i.system.subType === "sensory") {
         sensory.push(i);
       }
       // Append to medical ware.
-      else if (i.system.type === "medical") {
+      else if (i.system.subType === "medical") {
         medical.push(i);
       }
       // Append to nerve ware.
-      else if (i.system.type === "nerve") {
+      else if (i.system.subType === "nerve") {
         nerve.push(i);
       }
     }
@@ -271,7 +271,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   updateReadiedFlag(event, actor) {
-    console.log("event", event);
     const newReadiedState = event.target.checked;
     const itemId = event.target.dataset.itemId;
     const item = actor.items.get(itemId);
@@ -311,7 +310,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Add cyberware sub-type
     if (type === "cyberware" && data.subtype) {
-      itemData.system.type = data.subtype;
+      itemData.system.subType = data.subtype;
     }
 
     // Open dialog to let user specify which inventory item type to use

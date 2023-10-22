@@ -180,6 +180,10 @@
       },
       "requiresSkills": {
         "requiredSkills": ""
+      },
+      "wearable": {
+        "concealment": "",
+        "subType": ""
       }
     },
     "gear": {
@@ -229,16 +233,14 @@
         "item",
         "buyable",
         "moddable",
-        "hasSubtype"
+        "wearable"
       ],
       "armorClass": {
         "melee": 0,
         "ranged": 0
       },
       "damageSoak": 0,
-      "traumaTargetMod": 0,
-      "concealment": "",
-      "subType": ""
+      "traumaTargetMod": 0
     },
     "edge": {
       "templates": [
@@ -257,9 +259,9 @@
       "templates": [
         "base",
         "moddable",
-        "buyable"
+        "buyable",
+        "wearable"
       ],
-      "type": "",
       "systemStrain": 0,
       "concealment": ""
     },

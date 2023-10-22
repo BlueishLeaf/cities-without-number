@@ -6,8 +6,8 @@
   "system": {
     "description": "One unit of cranial Memory is installed with a subdermal upload pad. The person uploading the data can set a passphrase; while the implant user can erase the data, they can't download it again without the passphrase, which is usually told only to the data's intended recipient. Courier memory is exceptionally well-hidden and even medical scans take a -2 penalty to find it.",
     "cost": 10000,
-    "type": "head",
-    "concealment": "Medical",
+    "subType": "head",
+    "concealment": "medical",
     "systemStrain": 0.25
   },
   "effects": [],

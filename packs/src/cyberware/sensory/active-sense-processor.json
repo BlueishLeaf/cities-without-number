@@ -6,8 +6,8 @@
   "system": {
     "description": "Augmented sensory processing grants a +1 Wisdom modifier for all skill checks involving sensing or noticing things, up to a +2 modifier maximum.",
     "cost": 50000,
-    "type": "sensory",
-    "concealment": "Medical",
+    "subType": "sensory",
+    "concealment": "medical",
     "systemStrain": 1
   },
   "effects": [],

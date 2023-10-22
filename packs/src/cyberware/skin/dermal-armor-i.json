@@ -6,8 +6,8 @@
   "system": {
     "description": "Subtle dermal weave reinforcement grants a base ranged and melee AC of 16 and a +1 bonus to the user's Trauma Target.",
     "cost": 40000,
-    "type": "skin",
-    "concealment": "Medical",
+    "subType": "skin",
+    "concealment": "medical",
     "systemStrain": 1
   },
   "effects": [],
