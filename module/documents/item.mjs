@@ -42,7 +42,6 @@ export class CitiesWithoutNumberItem extends Item {
     const label = `[${StringUtils.titleCase(item.type)}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
-    console.log(this.system)
     if (!this.system.rollFormula) {
       ChatMessage.create({
         speaker: speaker,
