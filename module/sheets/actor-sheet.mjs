@@ -64,6 +64,21 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     return context;
   }
 
+  async _onDropItem(event, data) {
+    if ( !this.actor.isOwner ) return false;
+    const item = await Item.implementation.fromDropData(data);
+    const itemData = item.toObject();
+
+    // Ignore mods and other items that are supposed to be attached to a child item
+    if (itemData.type === "mod") return;
+
+    // Handle item sorting within the same Actor
+    if ( this.actor.uuid === item.parent?.uuid ) return this._onSortItem(event, itemData);
+
+    // Create the owned item
+    return this._onDropItemCreate(itemData);
+  }
+
   /**
    * Organize and classify Items for Character sheets.
    *
