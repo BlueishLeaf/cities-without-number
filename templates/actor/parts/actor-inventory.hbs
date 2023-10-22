@@ -112,6 +112,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Gear</div>
+    <div class="item-stats">Quantity</div>
     <div class="item-stats" title="Encumberance">Enc.</div>
     <div class="item-stats">Readied?</div>
     <div class="item-controls">
@@ -125,6 +126,9 @@
           <a class="rollable" data-roll-type="gear"><img src="{{gear.img}}" title="{{gear.name}}" width="24" height="24"/></a>
         </div>
         <h4>{{gear.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{gear.system.quantity}}</h4>
       </div>
       <div class="item-stats">
         <h4>{{gear.system.encumberance}}</h4>

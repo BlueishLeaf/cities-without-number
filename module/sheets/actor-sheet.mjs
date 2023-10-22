@@ -99,9 +99,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.items.forEach(item => {
       if (item.system.readied !== undefined) {
         if (item.system.readied) {
-          context.system.encumberance.readied.value += item.system.encumberance;
+          context.system.encumberance.readied.value += item.system.encumberance * item.system.quantity;
         } else {
-          context.system.encumberance.stowed.value += item.system.encumberance;
+          context.system.encumberance.stowed.value += item.system.encumberance * item.system.quantity;
         }
       }
     });
