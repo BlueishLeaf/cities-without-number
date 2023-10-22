@@ -48,7 +48,7 @@ export class CitiesWithoutNumberActor extends Actor {
 
     // Make modifications to data here
     this.prepareAbilityModifiers(actorData.system);
-    this.prepareArmorClass(actorData);
+    this.prepareArmorClassAndMaxDamageSoak(actorData);
   }
 
   prepareAbilityModifiers(systemData) {
@@ -64,7 +64,7 @@ export class CitiesWithoutNumberActor extends Actor {
     }
   }
 
-  prepareArmorClass(actorData) {
+  prepareArmorClassAndMaxDamageSoak(actorData) {
     // Find a readied armor item if one exists
     const armor = actorData.items.filter(item => item.type === "armor" && item.system.readied)[0];
     const baseMeleeAC = armor ? armor.system.armorClass.melee : 10;
@@ -72,6 +72,8 @@ export class CitiesWithoutNumberActor extends Actor {
     // Add dexterity modifier to total AC bonus
     actorData.system.armorClass.melee = baseMeleeAC + actorData.system.abilities.dex.mod;
     actorData.system.armorClass.ranged = baseRangedAC + actorData.system.abilities.dex.mod;
+
+    actorData.system.damageSoak.max = armor ? armor.system.damageSoak : 0;
   }
 
   /**

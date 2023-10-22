@@ -23,6 +23,15 @@
         </div>
 
         <div class="resource flex-group-center">
+          <label for="system.damageSoak.value" class="resource-label">Damage Soak</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.damageSoak.max" disabled value="{{system.damageSoak.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
           <label for="system.systemStrain.value" class="resource-label">System Strain</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.systemStrain.value" value="{{system.systemStrain.value}}" data-dtype="Number"/>
@@ -60,16 +69,11 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.armorClass.melee" class="resource-label">AC (Melee)</label>
+          <label class="resource-label">AC (Melee/Ranged)</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" disabled name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.armorClass.ranged" class="resource-label">AC (Ranged)</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" disabled name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+          <input type="text" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.armorClass.ranged" disabled value="{{system.armorClass.ranged}}" data-dtype="Number"/>
           </div>
         </div>
 
