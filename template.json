@@ -231,7 +231,10 @@
         "melee": 0,
         "ranged": 0
       },
-      "damageSoak": 0,
+      "damageSoak": {
+        "value": 0,
+        "max": 0
+      },
       "traumaTargetMod": 0,
       "subtlety": ""
     },

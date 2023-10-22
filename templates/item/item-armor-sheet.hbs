@@ -38,9 +38,13 @@
       <label class="resource-label">Trauma Target Modifier</label>
       <input type="text" name="system.traumaTargetMod" value="{{system.traumaTargetMod}}" data-dtype="Number"/>
     </div>
-    <div class="resource">
+    <div class="resource flex-group-center">
       <label class="resource-label">Damage Soak</label>
-      <input type="text" name="system.damageSoak" value="{{system.damageSoak}}" data-dtype="Number"/>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
+        <span> / </span>
+        <input type="text" name="system.damageSoak.max" value="{{system.damageSoak.max}}" data-dtype="Number"/>
+      </div>
     </div>
     <div class="resource">
       <label class="resource-label">Subtlety</label>
