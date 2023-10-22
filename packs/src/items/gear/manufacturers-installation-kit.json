@@ -1,0 +1,26 @@
+{
+  "_id": "manufacturers-installation-kit",
+  "name": "Manufacturers Installation Kit",
+  "type": "gear",
+  "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+  "system": {
+    "description": "These tools and technical resources are usually restricted to licensed installation vendors of a given cyberware company. They grant a +1 skill check bonus when installing or removing cyberware made by that manufacturer. They are closely tracked, and it can be difficult to find a corp doc willing to sell them under the table.",
+    "cost": 10000,
+    "encumberance": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

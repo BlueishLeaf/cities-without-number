@@ -1,0 +1,26 @@
+{
+  "_id": "surgical-theater-tools-level-1",
+  "name": "Surgical Theater Tools/Level-1",
+  "type": "gear",
+  "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+  "system": {
+    "description": "A basic collection of medical tools, phar- maceuticals, scanners, technical manuals, and software subscriptions. Most ordinary street docs command this level of hardware. Laying it out for use requires at least a semi-clean room's worth of working space.",
+    "cost": 10000,
+    "encumberance": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

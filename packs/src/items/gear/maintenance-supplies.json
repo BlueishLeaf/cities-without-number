@@ -1,0 +1,26 @@
+{
+  "_id": "maintenance-supplies",
+  "name": "Maintenance Supplies",
+  "type": "gear",
+  "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+  "system": {
+    "description": "A collection of consumable parts, lubri- cants, medications, faked subscription keys, and pirated firmware updates. Any reasonable dollar value of supplies can be carried as 1 point of Encumbrance.",
+    "cost": 0,
+    "encumberance": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

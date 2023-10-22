@@ -1,0 +1,26 @@
+{
+  "_id": "surgical-theater-tools-level-2",
+  "name": "Surgical Theater Tools/Level-2",
+  "type": "gear",
+  "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+  "system": {
+    "description": " A more sophisticated, extensive, and advanced operating theater than the level 1 version. High-grade street docs and standard corporate employee clinics would use this tech, which requires the same amount of space as the level 1 array.",
+    "cost": 500000,
+    "encumberance": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
