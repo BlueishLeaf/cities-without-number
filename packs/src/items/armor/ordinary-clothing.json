@@ -14,7 +14,8 @@
     },
     "damageSoak": 0,
     "traumaTargetMod": 0,
-    "subtlety": "Subtle"
+    "subtlety": "Subtle",
+    "isAccessory": false
   },
   "effects": [],
   "folder": null,

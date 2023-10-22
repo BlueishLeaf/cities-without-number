@@ -146,7 +146,6 @@
       "gear",
       "weapon",
       "armor",
-      "armorAccessory",
       "edge",
       "focus",
       "skill",
@@ -237,19 +236,8 @@
       },
       "damageSoak": 0,
       "traumaTargetMod": 0,
-      "subtlety": ""
-    },
-    "armorAccessory": {
-      "templates": [
-        "base",
-        "item",
-        "buyable"
-      ],
-      "armorClassMod": {
-        "melee": 0,
-        "ranged": 0
-      },
-      "damageSoakMod": 0
+      "subtlety": "",
+      "isAccessory": false
     },
     "edge": {
       "templates": [
