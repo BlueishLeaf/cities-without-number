@@ -1,6 +1,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Body Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Body Ware" data-type="cyberware" data-subtype="body"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -13,6 +14,9 @@
         </div>
         <h4>{{bodyWare.name}}</h4>
       </div>
+      <div class="item-stats">
+        <h4>{{bodyWare.system.systemStrain}}</h4>
+      </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Body Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Body Ware"><i class="fas fa-trash"></i></a>
@@ -24,6 +28,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Head Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Head Ware" data-type="cyberware" data-subtype="head"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -36,6 +41,9 @@
         </div>
         <h4>{{headWare.name}}</h4>
       </div>
+      <div class="item-stats">
+        <h4>{{headWare.system.systemStrain}}</h4>
+      </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Head Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Head Ware"><i class="fas fa-trash"></i></a>
@@ -47,6 +55,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Skin Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Skin Ware" data-type="cyberware" data-subtype="skin"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -59,6 +68,9 @@
         </div>
         <h4>{{skinWare.name}}</h4>
       </div>
+      <div class="item-stats">
+        <h4>{{skinWare.system.systemStrain}}</h4>
+      </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Skin Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Skin Ware"><i class="fas fa-trash"></i></a>
@@ -70,6 +82,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Limb Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Limb Ware" data-type="cyberware" data-subtype="limb"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -81,6 +94,9 @@
           <a class="rollable" data-roll-type="cyberware"><img src="{{limbWare.img}}" title="{{limbWare.name}}" width="24" height="24"/></a>
         </div>
         <h4>{{limbWare.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{limbWare.system.systemStrain}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Limb Ware"><i class="fas fa-edit"></i></a>
@@ -94,6 +110,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Sensory Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Sensory Ware" data-type="cyberware" data-subtype="sensory"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -106,6 +123,9 @@
         </div>
         <h4>{{sensoryWare.name}}</h4>
       </div>
+      <div class="item-stats">
+        <h4>{{sensoryWare.system.systemStrain}}</h4>
+      </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Sensory Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Sensory Ware"><i class="fas fa-trash"></i></a>
@@ -117,6 +137,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Medical Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Medical Ware" data-type="cyberware" data-subtype="medical"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -129,6 +150,9 @@
         </div>
         <h4>{{medicalWare.name}}</h4>
       </div>
+      <div class="item-stats">
+        <h4>{{medicalWare.system.systemStrain}}</h4>
+      </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Medical Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Medical Ware"><i class="fas fa-trash"></i></a>
@@ -140,6 +164,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Nerve Ware</div>
+    <div class="item-stats" title="System Strain">Sys. Strain</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Nerve Ware" data-type="cyberware" data-subtype="nerve"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -151,6 +176,9 @@
           <a class="rollable" data-roll-type="cyberware"><img src="{{nerveWare.img}}" title="{{nerveWare.name}}" width="24" height="24"/></a>
         </div>
         <h4>{{nerveWare.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{nerveWare.system.systemStrain}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Nerve Ware"><i class="fas fa-edit"></i></a>
