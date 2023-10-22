@@ -24,6 +24,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Foci</div>
+    <div class="item-stats" title="Current Level">Cur. Level</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create foci" data-type="foci"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -35,6 +36,9 @@
           <a class="rollable" data-roll-type="focus"><img src="{{focus.img}}" title="{{focus.name}}" width="24" height="24"/></a>
         </div>
         <h4>{{focus.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{focus.system.level}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit focus"><i class="fas fa-edit"></i></a>
