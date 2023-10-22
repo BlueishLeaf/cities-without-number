@@ -19,7 +19,7 @@
     // font-size: 16px;
   }
 
-  .item-status {
+  .item-stats {
     font-weight: bold;
     padding-left: 5px;
     text-align: center;
@@ -73,12 +73,15 @@
       white-space: nowrap;
       overflow-x: hidden;
     }
+    .item-text-warning {
+      color: red;
+    }
   }
 
   // Control Buttons
   .item-controls {
     display: flex;
-    flex: 0 0 50px;
+    flex: 0 0 80px;
     justify-content: flex-end;
     a {
       font-size: 12px;

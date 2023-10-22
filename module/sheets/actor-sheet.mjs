@@ -235,6 +235,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Add Inventory Item
     html.find(".item-create").click(this._onItemCreate.bind(this));
 
+    // Refresh Item
+    html.find(".item-refresh").click(ev => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("itemId"));
+      item.refresh();
+    });
+
     // Delete Inventory Item
     html.find(".item-delete").click(ev => {
       const li = $(ev.currentTarget).parents(".item");

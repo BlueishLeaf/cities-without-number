@@ -68,4 +68,15 @@ export class CitiesWithoutNumberItem extends Item {
       return roll;
     }
   }
+
+  refresh() {
+    if (this.type === "weapon") {
+      if (!this.system.magazine) return;
+      this.system.magazine.value = this.system.magazine.max;
+    } else if (this.type === "armor") {
+      if (!this.system.damageSoak) return;
+      this.system.damageSoak.value = this.system.damageSoak.max;
+    }
+    Item.updateDocuments([{_id: this._id, system: this.system}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
 }
