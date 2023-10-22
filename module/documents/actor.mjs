@@ -66,19 +66,34 @@ export class CitiesWithoutNumberActor extends Actor {
 
   prepareArmor(actorData) {
     // Find a readied armor item if one exists
-    const armor = actorData.items.filter(item => item.type === "armor" && item.system.readied)[0];
-    const baseMeleeAC = armor ? armor.system.armorClass.melee : 10;
-    const baseRangedAC = armor ? armor.system.armorClass.ranged : 10;
-    // Add dexterity modifier to total AC bonus
-    actorData.system.armorClass.melee = baseMeleeAC + actorData.system.abilities.dex.mod;
-    actorData.system.armorClass.ranged = baseRangedAC + actorData.system.abilities.dex.mod;
+    const equippedArmor = actorData.items.find(item => item.type === "armor" && item.system.readied && !item.system.isAccessory);
+    const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.isAccessory);
+
+    const baseAC = 10;
+    const meleeAC = equippedArmor ? equippedArmor.system.armorClass.melee : baseAC;
+    const rangedAC = equippedArmor ? equippedArmor.system.armorClass.ranged : baseAC;
+
+    // Apply dexterity modifier to total AC bonus
+    actorData.system.armorClass.melee = meleeAC + actorData.system.abilities.dex.mod;
+    actorData.system.armorClass.ranged = rangedAC + actorData.system.abilities.dex.mod;
 
     // Calculate damage soak
-    actorData.system.damageSoak.max = armor ? armor.system.damageSoak : 0;
+    const baseDamageSoak = 0;
+    actorData.system.damageSoak.max = equippedArmor ? equippedArmor.system.damageSoak : baseDamageSoak;
 
     // Calculate trauma target
     const baseTraumaTarget = 6;
-    actorData.system.traumaTarget = armor ? baseTraumaTarget + armor.system.traumaTargetMod : baseTraumaTarget;
+    actorData.system.traumaTarget = equippedArmor
+      ? baseTraumaTarget + equippedArmor.system.traumaTargetMod
+      : baseTraumaTarget;
+
+    // Apply accessory modifiers
+    equippedAccessories.forEach(accessory => {
+      actorData.system.armorClass.melee += accessory.system.armorClass.melee;
+      actorData.system.armorClass.ranged += accessory.system.armorClass.ranged;
+      actorData.system.damageSoak.max += accessory.system.damageSoak;
+      actorData.system.traumaTarget += accessory.system.traumaTargetMod;
+    });
   }
 
   /**
