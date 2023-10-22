@@ -7,7 +7,7 @@
     "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
     "quantity": 1,
     "cost": 25,
-    "encumberance": 0,
+    "encumbrance": 0,
     "armorClass": {
       "melee": 10,
       "ranged": 10

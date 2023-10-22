@@ -6,7 +6,7 @@
   "system": {
     "description": "These tools and technical resources are usually restricted to licensed installation vendors of a given cyberware company. They grant a +1 skill check bonus when installing or removing cyberware made by that manufacturer. They are closely tracked, and it can be difficult to find a corp doc willing to sell them under the table.",
     "cost": 10000,
-    "encumberance": 1
+    "encumbrance": 1
   },
   "effects": [],
   "folder": null,

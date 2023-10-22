@@ -6,7 +6,7 @@
   "system": {
     "description": "A collection of consumable parts, lubri- cants, medications, faked subscription keys, and pirated firmware updates. Any reasonable dollar value of supplies can be carried as 1 point of Encumbrance.",
     "cost": 0,
-    "encumberance": 1
+    "encumbrance": 1
   },
   "effects": [],
   "folder": null,

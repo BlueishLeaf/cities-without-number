@@ -6,7 +6,7 @@
   "system": {
     "description": "<b>Rifles and combat rifles</b> are similar semi-automatic tech, though the latter is equipped with a burst-fire selector and usually trades the range of a heavier caliber for the ability to carry more ammunition.",
     "cost": 2500,
-    "encumberance": 2,
+    "encumbrance": 2,
     "damageFormula": "1d12 + @attributeMod",
     "range": "100/300",
     "attribute": "dex",

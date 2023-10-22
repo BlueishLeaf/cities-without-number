@@ -6,7 +6,7 @@
   "system": {
     "description": " A more sophisticated, extensive, and advanced operating theater than the level 1 version. High-grade street docs and standard corporate employee clinics would use this tech, which requires the same amount of space as the level 1 array.",
     "cost": 500000,
-    "encumberance": 10
+    "encumbrance": 10
   },
   "effects": [],
   "folder": null,

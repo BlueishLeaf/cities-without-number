@@ -6,7 +6,7 @@
   "system": {
     "description": "A portable kit with all the tools needed for maintaining cyberware, albeit the maintenance supplies cost extra. In a pinch, this kit can be used to implant or remove cyberware, though few would want to risk using such rudimentary tools. The kit can serve as a medkit at need.",
     "cost": 500,
-    "encumberance": 2
+    "encumbrance": 2
   },
   "effects": [],
   "folder": null,

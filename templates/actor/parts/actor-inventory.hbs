@@ -1,24 +1,24 @@
 <div class="resources grid grid-3col">
   <div class="resource flex-group-center">
-    <label for="system.encumberance.stowed.value" class="resource-label">Stowed Items</label>
+    <label for="system.encumbrance.stowed.value" class="resource-label">Stowed Items</label>
     <div class="resource-content flexrow flex-center flex-between">
-    <input type="text" name="system.encumberance.stowed.value" disabled value="{{system.encumberance.stowed.value}}" data-dtype="Number"/>
+    <input type="text" name="system.encumbrance.stowed.value" disabled value="{{system.encumbrance.stowed.value}}" data-dtype="Number"/>
     <span> / </span>
-    <input type="text" name="system.encumberance.stowed.max" disabled value="{{system.encumberance.stowed.max}}" data-dtype="Number"/>
+    <input type="text" name="system.encumbrance.stowed.max" disabled value="{{system.encumbrance.stowed.max}}" data-dtype="Number"/>
     </div>
   </div>
 
   <div class="resource flex-group-center">
-    <label for="system.encumberance.readied.value" class="resource-label">Readied Items</label>
+    <label for="system.encumbrance.readied.value" class="resource-label">Readied Items</label>
     <div class="resource-content flexrow flex-center flex-between">
-    <input type="text" name="system.encumberance.readied.value" disabled value="{{system.encumberance.readied.value}}" data-dtype="Number"/>
+    <input type="text" name="system.encumbrance.readied.value" disabled value="{{system.encumbrance.readied.value}}" data-dtype="Number"/>
     <span> / </span>
-    <input type="text" name="system.encumberance.readied.max" disabled value="{{system.encumberance.readied.max}}" data-dtype="Number"/>
+    <input type="text" name="system.encumbrance.readied.max" disabled value="{{system.encumbrance.readied.max}}" data-dtype="Number"/>
     </div>
   </div>
 
   <div class="resource flex-group-center">
-    <label for="system.encumberance.currentReadied" class="resource-label">Money</label>
+    <label for="system.encumbrance.currentReadied" class="resource-label">Money</label>
     <div class="resource-content flexrow flex-center flex-between">
       <input type="text" name="system.money" value="{{system.money}}" data-dtype="Number"/>
     </div>
@@ -30,7 +30,7 @@
     <div class="item-name">Weapons</div>
     <div class="item-stats">Range</div>
     <div class="item-stats">Magazine</div>
-    <div class="item-stats" title="Encumberance">Enc.</div>
+    <div class="item-stats" title="Encumbrance">Enc.</div>
     <div class="item-stats">Readied?</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create weapon" data-type="weapon"><i class="fas fa-plus"></i> Add</a>
@@ -55,7 +55,7 @@
         {{/if}}
       </div>
       <div class="item-stats">
-        <h4>{{weapon.system.encumberance}}</h4>
+        <h4>{{weapon.system.encumbrance}}</h4>
       </div>
       <div class="item-stats">
         <input class="readiable" data-item-id="{{weapon._id}}" type="checkbox" {{isChecked weapon.system.readied}}/>
@@ -74,7 +74,7 @@
     <div class="item-name">Armor</div>
     <div class="item-stats" title="Armor Class (Melee/Ranged)">AC (M/R)</div>
     <div class="item-stats" title="Damage Soak">Dam. Soak</div>
-    <div class="item-stats" title="Encumberance">Enc.</div>
+    <div class="item-stats" title="Encumbrance">Enc.</div>
     <div class="item-stats">Readied?</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create armor" data-type="armor"><i class="fas fa-plus"></i> Add</a>
@@ -95,7 +95,7 @@
         <h4 class="{{#ifEquals armor.system.damageSoak.value 0}}item-text-warning{{/ifEquals}}">{{armor.system.damageSoak.value}}/{{armor.system.damageSoak.max}}</h4>
       </div>
       <div class="item-stats">
-        <h4>{{armor.system.encumberance}}</h4>
+        <h4>{{armor.system.encumbrance}}</h4>
       </div>
       <div class="item-stats">
         <input class="readiable" data-item-id="{{armor._id}}" type="checkbox" {{isChecked armor.system.readied}}/>
@@ -113,7 +113,7 @@
   <li class="item flexrow items-header">
     <div class="item-name">Gear</div>
     <div class="item-stats">Quantity</div>
-    <div class="item-stats" title="Encumberance">Enc.</div>
+    <div class="item-stats" title="Encumbrance">Enc.</div>
     <div class="item-stats">Readied?</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Gear" data-type="gear"><i class="fas fa-plus"></i> Add</a>
@@ -131,7 +131,7 @@
         <h4>{{gear.system.quantity}}</h4>
       </div>
       <div class="item-stats">
-        <h4>{{gear.system.encumberance}}</h4>
+        <h4>{{gear.system.encumbrance}}</h4>
       </div>
       <div class="item-stats">
         <input class="readiable" data-item-id="{{gear._id}}" type="checkbox" {{isChecked gear.system.readied}}/>

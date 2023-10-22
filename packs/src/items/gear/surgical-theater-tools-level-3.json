@@ -6,7 +6,7 @@
   "system": {
     "description": "  Some of the most advanced medical tech commonly available on the market, this grade of surgical assistance is usually found only in corporate clinics for high-level employees or in the private clinics of top-end street docs. It requires a half-dozen rooms to support all its functionality.",
     "cost": 5000000,
-    "encumberance": 60
+    "encumbrance": 60
   },
   "effects": [],
   "folder": null,

@@ -6,7 +6,7 @@
   "system": {
     "description": "These laptop-sized computers range from scrap-built makeshifts to cutting edge hardware stolen from the very best corps.",
     "cost": 500,
-    "encumberance": 1,
+    "encumbrance": 1,
     "bonusAccess": 1,
     "memory": 8,
     "shielding": 5,

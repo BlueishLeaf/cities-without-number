@@ -86,7 +86,7 @@
           }
         }
       },
-      "encumberance": {
+      "encumbrance": {
         "stowed": {
           "value": 0,
           "max": 0
@@ -124,7 +124,7 @@
         "machine"
       ],
       "maxFittings": 0,
-      "encumberance": 0
+      "encumbrance": 0
     },
     "vehicle": {
       "templates": [
@@ -156,7 +156,7 @@
         "description": ""
       },
       "item": {
-        "encumberance": 0,
+        "encumbrance": 0,
         "readied": false,
         "quantity": 1
       },

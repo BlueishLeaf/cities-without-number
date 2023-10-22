@@ -6,7 +6,7 @@
   "system": {
     "description": "A basic collection of medical tools, phar- maceuticals, scanners, technical manuals, and software subscriptions. Most ordinary street docs command this level of hardware. Laying it out for use requires at least a semi-clean room's worth of working space.",
     "cost": 10000,
-    "encumberance": 10
+    "encumbrance": 10
   },
   "effects": [],
   "folder": null,
