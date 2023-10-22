@@ -1,11 +1,11 @@
 {
-  "_id": "level-3-mental-skillplug",
-  "name": "Level-3 Mental Skillplug",
+  "_id": "physical-skillplug-level-0",
+  "name": "Physical Skillplug/Level-0",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
     "description": "Commonly-available skillplugs can be found for any skill at level-0 or level-1. A basic Skillplug Jack I system can only interface with intellectual skills that require only modest physical expertise; Know, Fix, or Heal could qualify for this, but Shoot, Exert, or most forms of Perform would not. Such physical skills require an upgraded Skillplug Jack II unit.",
-    "cost": 0,
+    "cost": 2000,
     "specialTechRequired": 0,
     "moddableItemType": "cyberware",
     "requiredSkills": "N/A"
