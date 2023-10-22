@@ -323,7 +323,7 @@
 }
 .cwn .items-list .item-controls {
   display: flex;
-  flex: 0 0 80px;
+  flex: 0 0 70px;
   justify-content: flex-end;
 }
 .cwn .items-list .item-controls a {
