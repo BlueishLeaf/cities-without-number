@@ -107,7 +107,6 @@ export class CitiesWithoutNumberActor extends Actor {
       actorData.system.damageSoak.max += accessory.system.damageSoak;
       actorData.system.traumaTarget += accessory.system.traumaTargetMod;
     });
-    console.info("actorData 3", actorData);
   }
 
   /**
