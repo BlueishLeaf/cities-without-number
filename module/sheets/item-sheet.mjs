@@ -85,6 +85,10 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
+    html.find(".rollable-img").hover(this._onRollableItemHover.bind(this));
+
+    // Expandable items
+    html.find(".expandable").click(this._toggleItemExpand.bind(this));
 
     // Delete Inventory Item
     html.find(".item-delete").click(ev => {
@@ -110,6 +114,21 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
         li.setAttribute("draggable", true);
         li.addEventListener("dragstart", handler, false);
       });
+    }
+  }
+
+  _toggleItemExpand(event) {
+    const descriptionElement = event.target.parentElement.parentElement.nextElementSibling;
+    $(descriptionElement).toggleClass("hidden");
+  }
+
+  _onRollableItemHover(event) {
+    if (event.type === "mouseenter") {
+      event.target.src = "/icons/svg/d20-black.svg";
+    } else if (event.type === "mouseleave") {
+      const itemId = event.target.parentElement.parentElement.parentElement.parentElement.dataset.itemId;
+      const item = this.actor.items.get(itemId);
+      event.target.src = item.img;
     }
   }
 

@@ -2,7 +2,7 @@
   font-family: $font-primary;
 }
 
-.rollable {
+.rollable, .expandable {
   &:hover,
   &:focus {
     color: #000;

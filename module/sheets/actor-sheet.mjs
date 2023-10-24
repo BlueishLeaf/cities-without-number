@@ -252,6 +252,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     html.find(".rollable").click(this._onRoll.bind(this));
     html.find(".rollable-img").hover(this._onRollableItemHover.bind(this));
 
+    // Expandable items
+    html.find(".expandable").click(this._toggleItemExpand.bind(this));
+
     // Skill pill level changes.
     html.find(".skill-level").change(this.updateSkillLevel.bind(this));
 
@@ -267,6 +270,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         li.addEventListener("dragstart", handler, false);
       });
     }
+  }
+
+  _toggleItemExpand(event) {
+    const descriptionElement = event.target.parentElement.parentElement.nextElementSibling;
+    $(descriptionElement).toggleClass("hidden");
   }
 
   _onRollableItemHover(event) {

@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.rollable:hover, .rollable:focus {
+.rollable:hover, .rollable:focus, .expandable:hover, .expandable:focus {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
@@ -379,6 +379,12 @@
 .cwn .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;
+}
+.cwn .item-description {
+  padding: 10px;
+}
+.cwn .hidden {
+  display: none;
 }
 .cwn .effects .item .effect-source,
 .cwn .effects .item .effect-duration,
