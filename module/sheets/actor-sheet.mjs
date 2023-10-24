@@ -284,7 +284,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemId = event.target.dataset.itemId;
     const item = this.actor.items.get(itemId);
     item.system.readied = newReadiedState;
-    Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: actor}).then(updatedItem => console.log("Updated item", updatedItem));
+    Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: this.actor}).then(updatedItem => console.log("Updated item", updatedItem));
   }
 
   updateSkillLevel(event) {
@@ -292,7 +292,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const skillId = event.currentTarget.dataset.skillId;
     const skill = this.actor.items.get(skillId);
     skill.system.level = newSkillLevel;
-    Item.updateDocuments([{_id: skill._id, system: { level: newSkillLevel }}], {parent: actor}).then(updatedSkill => console.log("Updated skill", updatedSkill));
+    Item.updateDocuments([{_id: skill._id, system: { level: newSkillLevel }}], {parent: this.actor}).then(updatedSkill => console.log("Updated skill", updatedSkill));
   }
 
   /**
