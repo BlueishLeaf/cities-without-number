@@ -250,12 +250,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
+    html.find(".rollable-img").hover(this._onRollableItemHover.bind(this));
 
     // Skill pill level changes.
-    html.find(".skill-level").change(ev => this.updateSkillLevel(ev, this.actor));
+    html.find(".skill-level").change(this.updateSkillLevel.bind(this));
 
     // Readied checkbox changes.
-    html.find(".readiable").change(ev => this.updateReadiedFlag(ev, this.actor));
+    html.find(".readiable").change(this.updateReadiedFlag.bind(this));
 
     // Drag events for macros.
     if (this.actor.isOwner) {
@@ -268,18 +269,28 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
   }
 
-  updateReadiedFlag(event, actor) {
+  _onRollableItemHover(event) {
+    if (event.type === "mouseenter") {
+      event.target.src = "/icons/svg/d20-black.svg";
+    } else if (event.type === "mouseleave") {
+      const itemId = event.target.parentElement.parentElement.parentElement.parentElement.dataset.itemId;
+      const item = this.actor.items.get(itemId);
+      event.target.src = item.img;
+    }
+  }
+
+  updateReadiedFlag(event) {
     const newReadiedState = event.target.checked;
     const itemId = event.target.dataset.itemId;
-    const item = actor.items.get(itemId);
+    const item = this.actor.items.get(itemId);
     item.system.readied = newReadiedState;
     Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: actor}).then(updatedItem => console.log("Updated item", updatedItem));
   }
 
-  updateSkillLevel(event, actor) {
+  updateSkillLevel(event) {
     const newSkillLevel = event.target.value;
     const skillId = event.currentTarget.dataset.skillId;
-    const skill = actor.items.get(skillId);
+    const skill = this.actor.items.get(skillId);
     skill.system.level = newSkillLevel;
     Item.updateDocuments([{_id: skill._id, system: { level: newSkillLevel }}], {parent: actor}).then(updatedSkill => console.log("Updated skill", updatedSkill));
   }
