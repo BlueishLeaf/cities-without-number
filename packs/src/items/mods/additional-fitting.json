@@ -1,0 +1,26 @@
+{
+  "_id": "additional-fitting",
+  "name": "Additional Fitting",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "Careful optimization of power lines and chassis reinforcement allows for adding an additional fitting to the drone. Man-portable drones add one point of Encumbrance, though this doesn't affect their maximum hardpoint weapon size.",
+    "moddableItemType": "drone",
+    "requiredSkills": "Fix-1 & Drive-1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

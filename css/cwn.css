@@ -241,6 +241,9 @@
   height: 100%;
   margin: 0;
 }
+.cwn .sheet-header #operator-select {
+  margin: 10px 0 0 0;
+}
 .cwn .sheet-tabs {
   flex: 0;
 }
@@ -256,6 +259,15 @@
 .cwn .block-select {
   display: block;
   width: 100%;
+}
+.cwn select {
+  height: var(--form-field-height);
+}
+.cwn .between-left {
+  margin-right: 5px;
+}
+.cwn .between-right {
+  margin-left: 5px;
 }
 .cwn .resource-label {
   font-weight: bold;

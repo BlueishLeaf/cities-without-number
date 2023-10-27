@@ -4,7 +4,18 @@
   <header class="sheet-header">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+      <div class="resources grid grid-2col">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+        <div id="operator-select" class="resource flex-group-left">
+          <label for="system.operator" class="resource-label">Operated by</label>
+          <div class="resource-content flexrow flex-left flex-between">
+            <select class="block-select" name="system.operator">
+              {{selectOptions operators selected=system.operator}}
+            </select>
+          </div>
+        </div>
+      </div>
+
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
@@ -23,67 +34,44 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.damageSoak.value" class="resource-label">Damage Soak</label>
+          <label class="resource-label" title="Armor Class (Melee/Ranged)">AC (Melee/Ranged)</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
+          <input type="text" name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
           <span> / </span>
-          <input type="text" name="system.damageSoak.max" disabled value="{{system.damageSoak.max}}" data-dtype="Number"/>
+          <input type="text" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.systemStrain.value" class="resource-label">System Strain</label>
+          <label class="resource-label">Movement</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.systemStrain.value" value="{{system.systemStrain.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.systemStrain.max" disabled value="{{system.systemStrain.max}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.xp" class="resource-label">XP</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.level" class="resource-label">Level</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.level" value="{{system.level}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.attackBonus" class="resource-label">Attack Bonus</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.attackBonus" value="{{system.attackBonus}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.movementSpeed" class="resource-label">Movement Speed</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.movementSpeed" value="{{system.movementSpeed}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">AC (Melee/Ranged)</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.armorClass.ranged" disabled value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+          <input class="between-left" type="text" name="system.movement.speed" value="{{system.movement.speed}}" data-dtype="Number"/>
+          <select class="block-select between-right" name="system.movement.type">
+            {{selectOptions config.CWN.movementTypes selected=system.movement.type}}
+          </select>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.traumaTarget" class="resource-label">Trauma Target</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.traumaTarget" disabled value="{{system.traumaTarget}}" data-dtype="Number"/>
+          <input type="text" name="system.traumaTarget" value="{{system.traumaTarget}}" data-dtype="Number"/>
           </div>
         </div>
 
+        <div class="resource flex-group-center">
+          <label for="system.encumbrance" class="resource-label">Encumbrance</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.cost" class="resource-label">Cost</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -92,9 +80,7 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="skills">Skills</a>
-    <a class="item" data-tab="inventory">Inventory</a>
-    <a class="item" data-tab="cyberware">Cyberware</a>
-    <a class="item" data-tab="features">Features</a>
+    <a class="item" data-tab="inventory">Fittings & Cargo</a>
     <a class="item" data-tab="description">Description</a>
   </nav>
 
@@ -150,17 +136,7 @@
 
     {{!-- Inventory Tab --}}
     <div class="tab items" data-group="primary" data-tab="inventory">
-       {{> "systems/cities-without-number/templates/actor/parts/actor-character-inventory.hbs"}}
-    </div>
-
-    {{!-- Cyberware Tab --}}
-    <div class="tab items" data-group="primary" data-tab="cyberware">
-       {{> "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs"}}
-    </div>
-
-    {{!-- Features Tab --}}
-    <div class="tab features" data-group="primary" data-tab="features">
-      {{> "systems/cities-without-number/templates/actor/parts/actor-features.hbs"}}
+       {{> "systems/cities-without-number/templates/actor/parts/actor-machine-inventory.hbs"}}
     </div>
   </section>
 </form>

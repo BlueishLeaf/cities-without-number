@@ -40,6 +40,12 @@ CWN.inventoryItemTypes = [
   "drug"
 ];
 
+CWN.movementTypes = {
+  ground: "Ground",
+  fly: "Fly",
+  swim: "Swim"
+};
+
 CWN.armor = {
   subTypes: {
     armor: "Armor",

@@ -42,14 +42,27 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
 
+    context.config = CONFIG;
+
     // Prepare actor data and items.
-    if (actorData.type === "character") {
-      this._prepareItems(context);
-      this._prepareCyberware(context);
-      this._prepareCharacterData(context);
-    } else if (actorData.type === "npc") {
-      this._prepareItems(context);
-      this._prepareCyberware(context);
+    switch (actorData.type) {
+      case "character":
+        this._prepareItems(context);
+        this._prepareCyberware(context);
+        this._prepareCharacterData(context);
+        break;
+      case "npc":
+        this._prepareItems(context);
+        this._prepareCyberware(context);
+        break;
+      case "drone":
+        this._prepareItems(context);
+        this._prepareFittingsAndMods(context);
+        this._prepareOperators(context);
+        this._prepareDroneData(context);
+        break;
+      case "vehicle":
+        break;
     }
 
     // Update open item renders
@@ -68,13 +81,41 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (itemData.type === "mod") return;
+    if ((this.actor.type !== "drone" && this.actor.type !== "vehicle") && itemData.type === "mod") return;
 
     // Handle item sorting within the same Actor
     if ( this.actor.uuid === item.parent?.uuid ) return this._onSortItem(event, itemData);
 
     // Create the owned item
     return this._onDropItemCreate(itemData);
+  }
+
+  _prepareFittingsAndMods(context) {
+    // Initialize containers.
+    const fittings = [];
+    const mods = [];
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to skills.
+      if (i.type === "fitting") {
+        fittings.push(i);
+      }
+      // Append to weapons.
+      else if (i.type === "mod") {
+        mods.push(i);
+      }
+    }
+
+    // Assign and return
+    context.fittings = fittings;
+    context.mods = mods;
+  }
+
+  _prepareOperators(context) {
+    context.operators = {};
+    game.actors.filter(actor => actor.type === "character").forEach(character => context.operators[character._id] = character.name);
   }
 
   /**
@@ -101,6 +142,22 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         } else {
           context.system.encumbrance.stowed.value += item.system.encumbrance * item.system.quantity;
         }
+      }
+    });
+  }
+
+  _prepareDroneData(context) {
+    // Set stowed cargo and hardpoints/fittings
+    context.system.hardpoints.value = 0;
+    context.system.fittings.value = 0;
+    context.system.cargoEncumbrance.stowed.value = 0;
+    context.items.forEach(item => {
+      if (CONFIG.CWN.inventoryItemTypes.includes(item.type)) {
+        context.system.cargoEncumbrance.stowed.value += item.system.encumbrance * item.system.quantity;
+      } else if (item.type === "fitting") {
+        context.system.fittings.value++;
+      } else if (item.type === "weapon") {
+        context.system.hardpoints.value++;
       }
     });
   }

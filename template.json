@@ -14,12 +14,27 @@
         },
         "biography": "",
         "traumaTarget": 6,
-        "movementSpeed": 10,
-        "movementType": "ground"
+        "movement": {
+          "speed": 10,
+          "type": "ground"
+        }
       },
       "machine": {
-        "hardpoints": 0,
-        "armorClass": 10
+        "operator": "",
+        "hardpoints": {
+          "value": 0,
+          "max": 0
+        },
+        "armorClass": {
+          "melee": 10,
+          "ranged": 10
+        },
+        "cargoEncumbrance": {
+          "stowed": {
+            "value": 0,
+            "max": 0
+          }
+        }
       },
       "humanoid": {
         "armorClass": {
@@ -127,7 +142,11 @@
         "base",
         "machine"
       ],
-      "maxFittings": 0,
+      "fittings": {
+        "value": 0,
+        "max": 0
+      },
+      "cost": 0,
       "encumbrance": 0
     },
     "vehicle": {
@@ -152,6 +171,7 @@
       "skill",
       "cyberware",
       "mod",
+      "fitting",
       "drug",
       "cyberdeck"
     ],
@@ -275,6 +295,12 @@
       "costPercentage": 0,
       "specialTechRequired": 0,
       "moddableItemType": ""
+    },
+    "fitting": {
+      "templates": [
+        "base"
+      ],
+      "costPercentage": 0
     },
     "drug": {
       "templates": [
