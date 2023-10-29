@@ -1,58 +1,71 @@
 export const weaponRollDialog = (isBurstFireable, abilityOptions, skillOptions) => `
   <div class="form-group">
-    <label for="attributeSelect">Choose an attribute for this weapon: </label>
-    <select name="attributeSelect">
-      ${abilityOptions}
-    </select>
-    <br>
-    <label for="skillSelect">Choose a skill for this weapon: </label>
-    <select name="skillSelect">
-      ${skillOptions}
-    </select>
-    <br>
-    <label for "situationalABInput">Situational Attack Bonus: </label>
-    <input type="text" name="situationalABInput" value="0"/>
-    <br>
-    <label for "nonLethalInput">Non-Lethal?: </label>
-    <input type="checkbox" name="nonLethalInput"/>
+    <div class="dialog-row grid grid-2col">
+      <label for="attributeSelect">Choose an attribute: </label>
+      <select name="attributeSelect">
+        ${abilityOptions}
+      </select>
+    </div>
+
+    <div class="dialog-row grid grid-2col">
+      <label for="skillSelect">Choose a skill: </label>
+      <select name="skillSelect">
+        ${skillOptions}
+      </select>
+    </div>
+
+    <div class="dialog-row grid grid-2col">
+      <label for="situationalABInput">Situational Attack Bonus: </label>
+      <input type="text" name="situationalABInput" value="0"/>
+    </div>
+
+    <div class="dialog-row grid grid-2col">
+      <label for="nonLethalInput">Non-Lethal?: </label>
+      <input type="checkbox" name="nonLethalInput"/>
+    </div>
+
     ${addBurstFire(isBurstFireable)}
   </div>
-  <br>
 `;
 
 const addBurstFire = isBurstFireable => isBurstFireable ? `
-  <br>
-  <label for "burstFireInput">Burst-Fire?: </label>
-  <input type="checkbox" name="burstFireInput"/>
+  <div class="dialog-row grid grid-2col">
+    <label for="burstFireInput">Burst-Fire?: </label>
+    <input type="checkbox" name="burstFireInput"/>
+  </div>
 ` : "";
 
 export const skillRollDialog = abilityOptions => `
   <div class="form-group">
-    <label for="attributeSelect">Choose an attribute for this skill: </label>
-    <select name="attributeSelect">
-      ${abilityOptions}
-    </select>
-    <br>
-    <label for "situationalBonusInput">Situational Bonus: </label>
-    <input type="text" name="situationalBonusInput" value="0"/>
+    <div class="dialog-row grid grid-2col">
+      <label for="attributeSelect">Choose an attribute: </label>
+      <select name="attributeSelect">
+        ${abilityOptions}
+      </select>
+    </div>
+    <div class="dialog-row grid grid-2col">
+      <label for="situationalBonusInput">Situational Bonus: </label>
+      <input type="text" name="situationalBonusInput" value="0"/>
+    </div>
   </div>
-  <br>
 `;
 
 export const itemTypeDialog = itemTypeOptions => `
   <div class="form-group">
-    <label for="itemTypeSelect">Choose an item type: </label>
-    <select name="itemTypeSelect">
-      ${itemTypeOptions}
-    </select>
+    <div class="dialog-row grid grid-2col">
+      <label for="itemTypeSelect">Choose an item type: </label>
+      <select name="itemTypeSelect">
+        ${itemTypeOptions}
+      </select>
+    </div>
   </div>
-  <br>
 `;
 
 export const saveRollDialog = () => `
 <div class="form-group">
-  <label for "situationalBonusInput">Situational Bonus: </label>
-  <input type="text" name="situationalBonusInput" value="0"/>
+  <div class="dialog-row grid grid-2col">
+    <label for="situationalBonusInput">Situational Bonus: </label>
+    <input type="text" name="situationalBonusInput" value="0"/>
+  </div>
 </div>
-<br>
 `;

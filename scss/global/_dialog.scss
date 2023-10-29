@@ -1,0 +1,12 @@
+.dialog-row {
+  margin: 5px;
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  select {
+    width: calc(100% - 2px);
+  }
+}

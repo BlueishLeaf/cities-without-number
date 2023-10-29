@@ -203,6 +203,17 @@
   text-align: center;
 }
 
+.dialog-row {
+  margin: 5px;
+}
+.dialog-row label {
+  display: flex;
+  align-items: center;
+}
+.dialog-row select {
+  width: calc(100% - 2px);
+}
+
 /* Styles limited to cwn sheets */
 .cwn {
   /* ----------------------------------------- */
