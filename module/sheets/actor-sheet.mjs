@@ -69,9 +69,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this.actor.items.filter(item => item._sheet && item._sheet.rendered)
       .forEach(openItem => openItem.sheet._render(openItem));
 
-    // Add roll data for TinyMCE editors.
-    context.rollData = context.actor.getRollData();
-
     return context;
   }
 

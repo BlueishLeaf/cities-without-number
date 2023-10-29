@@ -1,6 +1,6 @@
 {{!-- This template is a fallback for when items don't have more specific templates. --}}
 {{!-- Generally, you'll want to make more specific templates when possible. --}}
-<form class="{{cssClass}}" autocomplete="off">
+<form class="{{cssClass}} flexcol" autocomplete="off">
   <header class="sheet-header">
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
@@ -22,57 +22,61 @@
     </div>
   </header>
 
-  {{!-- Attributes --}}
-  <div class="grid grid-2col">
-    <div class="resource">
-      <label class="resource-label">Attack Roll Formula</label>
-      <input type="text" name="system.rollFormula" value="{{system.rollFormula}}" data-dtype="String"/>
-    </div>
-    <div class="resource">
-      <label class="resource-label">Damage Roll Formula</label>
-      <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" data-dtype="String"/>
-    </div>
-  </div>
-  {{#if system.trauma}}
-  <div class="grid grid-2col">
-    <div class="resource">
-      <label class="resource-label">Trauma Die</label>
-      <input type="text" name="system.trauma.die" value="{{system.trauma.die}}" data-dtype="String"/>
-    </div>
-    <div class="resource">
-      <label class="resource-label">Trauma Rating</label>
-      <input type="text" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
-    </div>
-  </div>
-  {{/if}}
-  {{#if system.shock}}
-  <div class="grid grid-2col">
-    <div class="resource">
-      <label class="resource-label">Shock Damage</label>
-      <input type="text" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
-    </div>
-    <div class="resource">
-      <label class="resource-label">Shock AC Threshold</label>
-      <input type="text" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
-    </div>
-  </div>
-  {{/if}}
-  <div class="grid grid-2col">
-    <div class="resource">
-      <label class="resource-label">Range</label>
-      <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
-    </div>
-    {{#if system.magazine}}
-    <div class="resource flex-group-center">
-      <label class="resource-label">Magazine</label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="text" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
-        <span> / </span>
-        <input type="text" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+  {{!-- Other Header Attributes --}}
+  <header class="sheet-header">
+    <div class="header-fields">
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">Attack Roll Formula</label>
+          <input type="text" name="system.rollFormula" value="{{system.rollFormula}}" data-dtype="String"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Damage Roll Formula</label>
+          <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" data-dtype="String"/>
+        </div>
+      </div>
+      {{#if system.trauma}}
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">Trauma Die</label>
+          <input type="text" name="system.trauma.die" value="{{system.trauma.die}}" data-dtype="String"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Trauma Rating</label>
+          <input type="text" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
+        </div>
+      </div>
+      {{/if}}
+      {{#if system.shock}}
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">Shock Damage</label>
+          <input type="text" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Shock AC Threshold</label>
+          <input type="text" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
+        </div>
+      </div>
+      {{/if}}
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">Range</label>
+          <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
+        </div>
+        {{#if system.magazine}}
+        <div class="resource flex-group-center">
+          <label class="resource-label">Magazine</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+        {{/if}}
       </div>
     </div>
-    {{/if}}
-  </div>
+  </header>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
@@ -83,8 +87,8 @@
   {{!-- Sheet Body --}}
   <section class="sheet-body">
     {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+    <div class="tab max-height" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
     </div>
 
     {{!-- Mods Tab --}}
