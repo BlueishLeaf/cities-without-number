@@ -13,6 +13,21 @@ export const rollButtons = rollCallback => {
   };
 };
 
+export const attackModeButtons = (manualCallback, autoCallback) => {
+  return {
+    roll: {
+      icon: '<i class="fas fa-bullseye"></i>',
+      label: "Manual",
+      callback: manualCallback
+    },
+    cancel: {
+      icon: '<i class="fas fa-robot"></i>',
+      label: "Auto",
+      callback: autoCallback
+    }
+  };
+};
+
 export const createButtons = createCallback => {
   return {
     roll: {

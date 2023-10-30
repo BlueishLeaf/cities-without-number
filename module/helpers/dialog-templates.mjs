@@ -35,6 +35,16 @@ const addBurstFire = isBurstFireable => isBurstFireable ? `
   </div>
 ` : "";
 
+export const autoWeaponRollDialog = isBurstFireable => `
+  <div class="form-group">
+    <div class="dialog-row grid grid-2col">
+      <label for="situationalABInput">Situational Attack Bonus: </label>
+      <input type="text" name="situationalABInput" value="0"/>
+    </div>
+    ${addBurstFire(isBurstFireable)}
+  </div>
+`;
+
 export const skillRollDialog = abilityOptions => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">

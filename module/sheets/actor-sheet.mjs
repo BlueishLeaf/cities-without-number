@@ -456,7 +456,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       } else if (dataset.rollType === "weapon") {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
-        this.openWeaponDialog(weapon);
+        if (this.actor.type === "drone") {
+          this.openDroneWeaponDialog(weapon);
+        } else {
+          this.openWeaponDialog(weapon);
+        }
       } else if (dataset.rollType === "save") {
         this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
       } else {
@@ -479,6 +483,28 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
   }
 
+  openDroneWeaponDialog(weapon) {
+    const droneAttackTypeDialog = new Dialog({
+      title: "Choose an attack mode",
+      buttons: DialogUtils.attackModeButtons(
+        _html => this.openWeaponDialog(weapon),
+        _html => this.openAutoWeaponDialog(weapon)
+      ),
+      default: "Manual"
+    });
+    droneAttackTypeDialog.render(true);
+  }
+
+  openAutoWeaponDialog(weapon) {
+    const weaponDialog = new Dialog({
+      title: `Roll ${weapon.name}`,
+      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable),
+      buttons: DialogUtils.rollButtons(html => this.handleAutoWeaponRoll(weapon, html)),
+      default: "Roll"
+    });
+    weaponDialog.render(true);
+  }
+
   openWeaponDialog(weapon) {
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skills = this.actor.items.filter(item => item.type === "skill");
@@ -493,7 +519,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   handleWeaponRoll(weapon, html) {
-    const baseAB = this.getBaseAttackBonusByActorType();
+    const baseAB = this.getBaseAttackBonusByActorType(false);
     const situationalAB = html.find('[name="situationalABInput"]').val();
 
     const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
@@ -519,9 +545,27 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
   }
 
-  getBaseAttackBonusByActorType() {
+  handleAutoWeaponRoll(weapon, html) {
+    const baseAB = this.getBaseAttackBonusByActorType(true);
+    const situationalAB = html.find('[name="situationalABInput"]').val();
+
+    const burstFireElements = html.find('[name="burstFireInput"]');
+    const isBurstFire = burstFireElements.length > 0 ? burstFireElements[0].checked : false;
+
+    if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
+      this.rollWeapon(weapon, false, isBurstFire, { baseAB, situationalAB });
+      const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
+      Item.updateDocuments([{_id: weapon._id, system: { magazine: updatedMagazine }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+    } else {
+      this.sendReloadMessage(weapon);
+    }
+  }
+
+  getBaseAttackBonusByActorType(isAuto) {
     if (this.actor.type === "drone") {
-      return game.actors.find(actor => actor._id === this.actor.system.operator).system.attackBonus;
+      return isAuto
+        ? CONFIG.CWN.system.droneNativeBonus
+        : game.actors.find(actor => actor._id === this.actor.system.operator).system.attackBonus;
     }
     return this.actor.system.attackBonus;
   }
