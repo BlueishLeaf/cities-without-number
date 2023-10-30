@@ -493,7 +493,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   handleWeaponRoll(weapon, html) {
-    const baseAB = this.actor.system.attackBonus;
+    const baseAB = this.getBaseAttackBonusByActorType();
     const situationalAB = html.find('[name="situationalABInput"]').val();
 
     const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
@@ -517,6 +517,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     } else {
       this.sendReloadMessage(weapon);
     }
+  }
+
+  getBaseAttackBonusByActorType() {
+    if (this.actor.type === "drone") {
+      return game.actors.find(actor => actor._id === this.actor.system.operator).system.attackBonus;
+    }
+    return this.actor.system.attackBonus;
   }
 
   sendReloadMessage(weapon) {
