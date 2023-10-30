@@ -147,7 +147,33 @@
         "max": 0
       },
       "cost": 0,
-      "encumbrance": 0
+      "encumbrance": 0,
+      "abilities": {
+        "str": {
+          "label": "Strength",
+          "value": 10
+        },
+        "dex": {
+          "label": "Dexterity",
+          "value": 10
+        },
+        "con": {
+          "label": "Constitution",
+          "value": 10
+        },
+        "int": {
+          "label": "Intelligence",
+          "value": 10
+        },
+        "wis": {
+          "label": "Wisdom",
+          "value": 10
+        },
+        "cha": {
+          "label": "Charisma",
+          "value": 10
+        }
+      }
     },
     "vehicle": {
       "templates": [

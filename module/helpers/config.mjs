@@ -31,7 +31,8 @@ CWN.abilityModifiers = {
 };
 
 CWN.system = {
-  burstFireBonus: 2
+  burstFireBonus: 2,
+  droneNativeBonus: 2
 };
 
 CWN.inventoryItemTypes = [
@@ -74,6 +75,11 @@ CWN.cyberwear = {
     obvious: "Obvious"
   }
 };
+
+CWN.actorsWithSkills = [
+  "character",
+  "drone"
+];
 
 CWN.startingSkills = [
   "Administer",

@@ -56,6 +56,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this._prepareCyberware(context);
         break;
       case "drone":
+        this._prepareOperatorData(context);
         this._prepareItems(context);
         this._prepareFittingsAndMods(context);
         this._prepareOperators(context);
@@ -87,6 +88,27 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     return this._onDropItemCreate(itemData);
   }
 
+  _prepareOperatorData(context) {
+    if (!this.actor.system.operator || this.actor.system.operator === "undefined") return;
+
+    const operator = game.actors.find(actor => actor._id === this.actor.system.operator).toObject(false); // Use safe clone
+    const operatorSkills = operator.items.filter(item => item.type === "skill");
+    const operatorDriveSkill = operatorSkills.find(skill => skill.name === "Drive");
+    operatorSkills.forEach(operatorSkill => {
+      this._setSkillCap(this.actor.items, operatorDriveSkill, operatorSkill);
+      this._setSkillCap(context.items, operatorDriveSkill, operatorSkill);
+    });
+    context.driveSkill = operatorDriveSkill;
+    this.actor.system.abilities = operator.system.abilities;
+  }
+
+  _setSkillCap(itemCollection, capSkill, sourceSkill) {
+    const cappedSkill = itemCollection.find(item => item.type === "skill" && item.name === sourceSkill.name);
+    cappedSkill.system.level = capSkill.system.level < sourceSkill.system.level
+      ? capSkill.system.level
+      : sourceSkill.system.level;
+  }
+
   _prepareFittingsAndMods(context) {
     // Initialize containers.
     const fittings = [];
@@ -112,6 +134,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   _prepareOperators(context) {
     context.operators = {};
+    context.operators[undefined] = "No one";
     game.actors.filter(actor => actor.type === "character").forEach(character => context.operators[character._id] = character.name);
   }
 

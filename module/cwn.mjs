@@ -152,7 +152,7 @@ function rollItemMacro(itemUuid) {
 /*  Create Actor Hook                                  */
 /* -------------------------------------------- */
 Hooks.on("createActor", async (actor, _options, _userId) => {
-  if (actor.type !== "character") return;
+  if (!CONFIG.CWN.actorsWithSkills.includes(actor.type)) return;
   const skillPack = game.packs.get("cities-without-number.skills");
   const skills = await skillPack.getDocuments({ _id__in: CONFIG.CWN.startingSkills.map(skill => skill.toLowerCase()) });
   actor.createEmbeddedDocuments("Item", skills);
