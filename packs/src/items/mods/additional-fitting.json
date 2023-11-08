@@ -5,7 +5,6 @@
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
     "description": "Careful optimization of power lines and chassis reinforcement allows for adding an additional fitting to the drone. Man-portable drones add one point of Encumbrance, though this doesn't affect their maximum hardpoint weapon size.",
-    "moddableItemType": "drone",
     "requiredSkills": "Fix-1 & Drive-1"
   },
   "effects": [],

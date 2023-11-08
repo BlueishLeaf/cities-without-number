@@ -7,7 +7,6 @@
     "description": "The weapon has kinetic sensors embedded in it that synchronize with onboard targeting chips. The user gains a +1 bonus to all hit rolls with the weapon, but needs to connect with it via either a Gunlink or a Cranial Jack.",
     "cost": 5000,
     "specialTechRequired": 0,
-    "moddableItemType": "weapon",
     "requiredSkills": "Fix-1"
   },
   "effects": [],

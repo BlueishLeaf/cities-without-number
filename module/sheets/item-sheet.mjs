@@ -177,7 +177,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
   async _onDropItemCreate(itemData) {
     itemData = itemData instanceof Array ? itemData : [itemData];
     let childCollection; let systemUpdate;
-    if (this.item.system.mods && itemData[0].type === "mod" && itemData[0].system.moddableItemType === this.item.type) {
+    if (this.item.system.mods && itemData[0].type === "mod") {
       childCollection = this.item.system.mods;
       systemUpdate = { mods: this.item.system.mods };
     } else return;
@@ -250,7 +250,6 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     let childCollection; let systemUpdate;
     if (this.item.system.mods && createdItem.type === "mod") {
-      createdItem.system.moddableItemType = this.item.type;
       childCollection = this.item.system.mods;
       systemUpdate = { mods: childCollection };
     } else return;

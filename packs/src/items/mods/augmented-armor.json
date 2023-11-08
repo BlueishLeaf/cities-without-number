@@ -1,13 +1,13 @@
 {
-  "_id": "absorption-pads",
-  "name": "Absorption Pads",
+  "_id": "augmented-armor",
+  "name": "Augmented Armor",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Kinetic padding is added to the armor, granting it 5 more hit points of damage soak per fight.",
-    "cost": 2000,
-    "specialTechRequired": 0,
-    "requiredSkills": "Fix-2"
+    "description": "Increase the vehicle's Armor rating by 3 points.",
+    "costPercentage": 25,
+    "specialTechRequired": 1,
+    "requiredSkills": "Fix-3/Drive-1"
   },
   "effects": [],
   "folder": null,

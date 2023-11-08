@@ -63,6 +63,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this._prepareDroneData(context);
         break;
       case "vehicle":
+        this._prepareItems(context);
+        this._prepareFittingsAndMods(context);
+        this._prepareVehicleData(context);
         break;
     }
 
@@ -74,7 +77,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   async _onDropItem(event, data) {
-    if ( !this.actor.isOwner ) return false;
+    if (!this.actor.isOwner) return false;
     const item = await Item.implementation.fromDropData(data);
     const itemData = item.toObject();
 
@@ -82,7 +85,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     if ((this.actor.type !== "drone" && this.actor.type !== "vehicle") && itemData.type === "mod") return;
 
     // Handle item sorting within the same Actor
-    if ( this.actor.uuid === item.parent?.uuid ) return this._onSortItem(event, itemData);
+    if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
 
     // Create the owned item
     return this._onDropItemCreate(itemData);
@@ -117,11 +120,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
-      // Append to skills.
-      if (i.type === "fitting") {
+      // Append to fittings.
+      if (i.type === "fitting" || i.type === "vehicleFitting") {
         fittings.push(i);
       }
-      // Append to weapons.
+      // Append to mods.
       else if (i.type === "mod") {
         mods.push(i);
       }
@@ -178,6 +181,23 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         context.system.fittings.value++;
       } else if (item.type === "weapon") {
         context.system.hardpoints.value++;
+      }
+    });
+  }
+
+  _prepareVehicleData(context) {
+    // Set stowed cargo and hardpoints/fittings
+    context.system.hardpoints.value = 0;
+    context.system.power.value = 0;
+    context.system.mass.value = 0;
+    context.items.forEach(item => {
+      if (item.type === "vehicleFitting") {
+        context.system.power.value += item.system.power;
+        context.system.mass.value += item.system.mass;
+      } else if (item.type === "weapon") {
+        context.system.hardpoints.value++;
+        context.system.power.value += item.system.mounted.power;
+        context.system.mass.value += item.system.mounted.mass;
       }
     });
   }
@@ -369,7 +389,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemId = event.target.dataset.itemId;
     const item = this.actor.items.get(itemId);
     item.system.readied = newReadiedState;
-    Item.updateDocuments([{_id: item._id, system: { readied: newReadiedState }}], {parent: this.actor}).then(updatedItem => console.log("Updated item", updatedItem));
+    Item.updateDocuments([{ _id: item._id, system: { readied: newReadiedState } }], { parent: this.actor }).then(updatedItem => console.log("Updated item", updatedItem));
   }
 
   updateSkillLevel(event) {
@@ -377,7 +397,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const skillId = event.currentTarget.dataset.skillId;
     const skill = this.actor.items.get(skillId);
     skill.system.level = newSkillLevel;
-    Item.updateDocuments([{_id: skill._id, system: { level: newSkillLevel }}], {parent: this.actor}).then(updatedSkill => console.log("Updated skill", updatedSkill));
+    Item.updateDocuments([{ _id: skill._id, system: { level: newSkillLevel } }], { parent: this.actor }).then(updatedSkill => console.log("Updated skill", updatedSkill));
   }
 
   /**
@@ -414,7 +434,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
 
     // Finally, create the item!
-    return await Item.create(itemData, {parent: this.actor});
+    return await Item.create(itemData, { parent: this.actor });
   }
 
   openCreateItemDialog(itemData) {
@@ -434,7 +454,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     itemData.type = selectedItemType;
     itemData.name = `New ${selectedItemType.capitalize()}`;
 
-    return Item.create(itemData, {parent: this.actor});
+    return Item.create(itemData, { parent: this.actor });
   }
 
   /**
@@ -539,7 +559,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
-      Item.updateDocuments([{_id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+      Item.updateDocuments([{ _id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine } }], { parent: this.actor }).then(updates => console.log("Updated weapon", updates));
     } else {
       this.sendReloadMessage(weapon);
     }
@@ -555,7 +575,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, false, isBurstFire, { baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
-      Item.updateDocuments([{_id: weapon._id, system: { magazine: updatedMagazine }}], {parent: this.actor}).then(updates => console.log("Updated weapon", updates));
+      Item.updateDocuments([{ _id: weapon._id, system: { magazine: updatedMagazine } }], { parent: this.actor }).then(updates => console.log("Updated weapon", updates));
     } else {
       this.sendReloadMessage(weapon);
     }
@@ -573,7 +593,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   sendReloadMessage(weapon) {
     const messageData = ChatUtils.initializeChatData(this.actor, weapon);
     const content = ChatUtils.getReloadMessage(weapon);
-    ChatMessage.create({...messageData, content}).then(message => console.log(message));
+    ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
   }
 
   magazineHasEnoughAmmo(magazine, isBurstFire) {
@@ -610,7 +630,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     Promise.all(rollRenderPromises).then(rollRenders => {
       const messageData = ChatUtils.initializeChatData(this.actor, weapon);
       const content = ChatRenders.buildChatContentForAttackRoll(weapon, isNonLethal, damageRoll, rollRenders);
-      ChatMessage.create({...messageData, content}).then(message => console.log(message));
+      ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
     });
   }
 
@@ -633,7 +653,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Update default attribute for this skill for next time
     skill.system.attribute = selectedAttributeCode;
-    Item.updateDocuments([{_id: skill._id, system: { attribute: selectedAttributeCode }}], {parent: this.actor}).then(updates => console.log("Updated skill", updates));
+    Item.updateDocuments([{ _id: skill._id, system: { attribute: selectedAttributeCode } }], { parent: this.actor }).then(updates => console.log("Updated skill", updates));
 
     this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus });
   }
@@ -646,7 +666,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
     const flavor = `[${skill.type}] ${skill.name}`;
-    roll.toMessage({speaker, rollMode, flavor}).then(message => console.log(message));
+    roll.toMessage({ speaker, rollMode, flavor }).then(message => console.log(message));
   }
 
   openSaveDialog(save) {
@@ -675,7 +695,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       const messageData = ChatUtils.initializeChatData(this.actor, save);
       const savePassed = roll.total >= save.value;
       const content = ChatRenders.saveRender(rollRender, savePassed);
-      ChatMessage.create({...messageData, content}).then(message => console.log(message));
+      ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
     });
   }
 }

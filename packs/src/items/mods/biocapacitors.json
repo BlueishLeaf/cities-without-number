@@ -7,7 +7,6 @@
     "description": "The first System Strain cost that the cyber would normally exact in a day is ignored. Thus, the first time an Enhanced Reflexes system is triggered, it would not add System Strain to the modded user.",
     "costPercentage": 30,
     "specialTechRequired": 1,
-    "moddableItemType": "cyberware",
     "requiredSkills": "Fix-1/Heal-2"
   },
   "effects": [],

@@ -20,7 +20,6 @@
         }
       },
       "machine": {
-        "operator": "",
         "hardpoints": {
           "value": 0,
           "max": 0
@@ -148,6 +147,7 @@
       },
       "cost": 0,
       "encumbrance": 0,
+      "operator": "",
       "abilities": {
         "str": {
           "label": "Strength",
@@ -182,9 +182,15 @@
       ],
       "armour": 0,
       "maxCrew": 0,
-      "power": 0,
-      "mass": 0,
-      "size": "S"
+      "power": {
+        "value": 0,
+        "max": 0
+      },
+      "mass": {
+        "value": 0,
+        "max": 0
+      },
+      "size": ""
     }
   },
   "Item": {
@@ -198,6 +204,7 @@
       "cyberware",
       "mod",
       "fitting",
+      "vehicleFitting",
       "drug",
       "cyberdeck"
     ],
@@ -264,6 +271,11 @@
       "shock": {
         "damage": null,
         "threshold": null
+      },
+      "mounted": {
+        "power": 0,
+        "mass": 0,
+        "minimumSize": "Medium"
       }
     },
     "skill": {
@@ -319,14 +331,22 @@
         "requiresSkills"
       ],
       "costPercentage": 0,
-      "specialTechRequired": 0,
-      "moddableItemType": ""
+      "specialTechRequired": 0
     },
     "fitting": {
       "templates": [
         "base"
       ],
       "costPercentage": 0
+    },
+    "vehicleFitting": {
+      "templates": [
+        "base"
+      ],
+      "cost": 0,
+      "power": 0,
+      "mass": 0,
+      "minimumSize": ""
     },
     "drug": {
       "templates": [

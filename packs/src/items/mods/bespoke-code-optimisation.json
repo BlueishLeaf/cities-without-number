@@ -7,7 +7,6 @@
     "description": "Pick one Verb and one Subject when installing this mod; those utilities occupy no Memory and one instance of that Verb-Subject program doesn't count against its CPU burden.",
     "costPercentage": 20,
     "specialTechRequired": 0,
-    "moddableItemType": "cyberdeck",
     "requiredSkills": "Fix-1"
   },
   "effects": [],
