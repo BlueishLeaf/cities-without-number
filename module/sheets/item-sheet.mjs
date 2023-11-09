@@ -100,7 +100,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     });
 
     // Drag events for macros.
-    if (this.actor.isOwner) {
+    if (this.actor && this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
       html.find("li.item").each((i, li) => {
         if (li.classList.contains("inventory-header")) return;
