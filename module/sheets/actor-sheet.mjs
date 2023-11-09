@@ -485,7 +485,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         }
       } else if (dataset.rollType === "save") {
         let save;
-        if (this.actor === "character") {
+        if (this.actor.type === "character") {
           save = this.actor.system.savingThrows.saveTargets[dataset.save];
         } else {
           // Build general NPC save
