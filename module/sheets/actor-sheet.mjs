@@ -491,7 +491,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           // Build general NPC save
           save = {
             name: "Save",
-            label: "Save",
+            label: "Generic Save",
             value: this.actor.system.saveTarget
           };
         }
