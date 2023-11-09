@@ -83,7 +83,6 @@
         "permanant": 0
       },
       "savingThrows": {
-        "rollFormula": "1d20 + @situationalBonus",
         "saveTargets": {
           "physical": {
             "label": "Physical",

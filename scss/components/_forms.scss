@@ -72,3 +72,8 @@ select {
 .between-right {
   margin-left: 5px;
 }
+
+.form-button {
+  height: var(--form-field-height);
+  line-height: 0;
+}

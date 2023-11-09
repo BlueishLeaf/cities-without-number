@@ -219,7 +219,6 @@ export class CitiesWithoutNumberActor extends Actor {
     if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
-      console.info(weapon);
       Item.updateDocuments([{ _id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine } }], { parent: weapon.actor }).then(updates => console.log("Updated weapon", updates));
     } else {
       this.sendReloadMessage(weapon);

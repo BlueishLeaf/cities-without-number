@@ -484,7 +484,18 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           this.actor.openWeaponDialog(weapon);
         }
       } else if (dataset.rollType === "save") {
-        this.openSaveDialog(this.actor.system.savingThrows.saveTargets[dataset.save]);
+        let save;
+        if (this.actor === "character") {
+          save = this.actor.system.savingThrows.saveTargets[dataset.save];
+        } else {
+          // Build general NPC save
+          save = {
+            name: "Save",
+            label: "Save",
+            value: this.actor.system.saveTarget
+          };
+        }
+        this.openSaveDialog(save);
       } else {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
@@ -595,7 +606,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   rollSave(save, rollData) {
     console.log(`Rolling [save] ${save.label}`, rollData);
-    const roll = new Roll(this.actor.system.savingThrows.rollFormula, rollData);
+    const roll = new Roll(CONFIG.CWN.system.savingThrowFormula, rollData);
 
     roll.render().then(rollRender => {
       save.type = "save";

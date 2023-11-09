@@ -289,6 +289,10 @@
 .cwn .between-right {
   margin-left: 5px;
 }
+.cwn .form-button {
+  height: var(--form-field-height);
+  line-height: 0;
+}
 .cwn .resource-label {
   font-weight: bold;
 }
