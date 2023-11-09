@@ -72,10 +72,21 @@ export const itemTypeDialog = itemTypeOptions => `
 `;
 
 export const saveRollDialog = () => `
-<div class="form-group">
-  <div class="dialog-row grid grid-2col">
-    <label for="situationalBonusInput">Situational Bonus: </label>
-    <input type="text" name="situationalBonusInput" value="0"/>
+  <div class="form-group">
+    <div class="dialog-row grid grid-2col">
+      <label for="situationalBonusInput">Situational Bonus: </label>
+      <input type="text" name="situationalBonusInput" value="0"/>
+    </div>
   </div>
-</div>
+`;
+
+export const gunnerSelectDialog = gunnerOptions => `
+  <div class="form-group">
+    <div class="dialog-row grid grid-2col">
+      <label for="gunnerSelect">Choose a gunner: </label>
+      <select name="gunnerSelect">
+        ${gunnerOptions}
+      </select>
+    </div>
+  </div>
 `;

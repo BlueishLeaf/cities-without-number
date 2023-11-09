@@ -13,6 +13,21 @@ export const rollButtons = rollCallback => {
   };
 };
 
+export const gunnerButtons = confirmCallback => {
+  return {
+    roll: {
+      icon: '<i class="fas fa-check"></i>',
+      label: "Confirm",
+      callback: confirmCallback
+    },
+    cancel: {
+      icon: '<i class="fas fa-times"></i>',
+      label: "Cancel",
+      callback: () => console.log("Cancelled gunner dialog")
+    }
+  };
+};
+
 export const attackModeButtons = (manualCallback, autoCallback) => {
   return {
     roll: {
@@ -24,6 +39,21 @@ export const attackModeButtons = (manualCallback, autoCallback) => {
       icon: '<i class="fas fa-robot"></i>',
       label: "Auto",
       callback: autoCallback
+    }
+  };
+};
+
+export const gunnerModeButtons = (otherGunnerCallback, currentGunnerCallback) => {
+  return {
+    roll: {
+      icon: '<i class="fas fa-people-arrows"></i>',
+      label: "Other",
+      callback: otherGunnerCallback
+    },
+    cancel: {
+      icon: '<i class="fas fa-person-rifle"></i>',
+      label: "Myself",
+      callback: currentGunnerCallback
     }
   };
 };
