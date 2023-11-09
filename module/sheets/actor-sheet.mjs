@@ -478,6 +478,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         const weapon = this.actor.items.get(weaponId);
         if (this.actor.type === "drone") {
           this.openDroneWeaponDialog(weapon);
+        } else if (this.actor.type === "vehicle") {
+          this.openVehicleWeaponDialog(weapon);
         } else {
           this.openWeaponDialog(weapon);
         }
@@ -501,6 +503,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       });
       return roll;
     }
+  }
+
+  openVehicleWeaponDialog(weapon) {
+    console.info("wa wa wee wah");
   }
 
   openDroneWeaponDialog(weapon) {
