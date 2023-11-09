@@ -470,9 +470,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Handle item rolls.
     if (dataset.rollType) {
       if (dataset.rollType === "skill") {
-        const skillId = element.closest(".skill").dataset.itemId;
-        const skill = this.actor.items.get(skillId);
-        this.openSkillDialog(skill);
+        if (this.actor.type === "character") {
+          const skillId = element.closest(".skill").dataset.itemId;
+          const skill = this.actor.items.get(skillId);
+          this.openSkillDialog(skill);
+        } else {
+          this.openBasicSkillDialog(this.actor.system.skillBonus);
+        }
       } else if (dataset.rollType === "weapon") {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
@@ -491,11 +495,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           // Build general NPC save
           save = {
             name: "Save",
-            label: "Generic Save",
+            label: "Generic Saving Throw",
             value: this.actor.system.saveTarget
           };
         }
         this.openSaveDialog(save);
+      } else if (dataset.rollType === "morale") {
+        this.openMoraleDialog(this.actor.system.moraleTarget);
       } else {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
@@ -514,6 +520,63 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       });
       return roll;
     }
+  }
+
+  openBasicSkillDialog(skillBonus) {
+    const skillDialog = new Dialog({
+      title: "Roll Skill",
+      content: DialogTemplates.basicRollDialog(),
+      buttons: DialogUtils.rollButtons(html => this.handleBasicSkillRoll(skillBonus, html)),
+      default: "Roll"
+    });
+    skillDialog.render(true);
+  }
+
+  handleBasicSkillRoll(skillBonus, html) {
+    const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+    this.rollBasicSkill({ skillBonus, situationalBonus });
+  }
+
+  rollBasicSkill(rollData) {
+    console.log("Rolling [skill]", rollData);
+    const roll = new Roll(CONFIG.CWN.system.basicSkillCheckFormula, rollData);
+
+    // Initialize chat data.
+    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    const rollMode = game.settings.get("core", "rollMode");
+    const flavor = "[skill] Generic Skill Check";
+    roll.toMessage({ speaker, rollMode, flavor }).then(message => console.log(message));
+  }
+
+  openMoraleDialog(moraleTarget) {
+    const moraleDialog = new Dialog({
+      title: "Roll Morale",
+      content: DialogTemplates.basicRollDialog(),
+      buttons: DialogUtils.rollButtons(html => this.handleMoraleRoll(moraleTarget, html)),
+      default: "Roll"
+    });
+    moraleDialog.render(true);
+  }
+
+  handleMoraleRoll(moraleTarget, html) {
+    const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+    this.rollMorale({value: moraleTarget}, { situationalBonus });
+  }
+
+  rollMorale(moraleCheck, rollData) {
+    console.log("Rolling [morale]", rollData);
+    const roll = new Roll(CONFIG.CWN.system.moraleFormula, rollData);
+
+    roll.render().then(rollRender => {
+      moraleCheck.type = "morale";
+      moraleCheck.name = "Morale Check";
+      const messageData = ChatUtils.initializeChatData(this.actor, moraleCheck);
+      const moraleCheckPassed = roll.total < moraleCheck.value;
+      const content = ChatRenders.passOrFailRender(rollRender, moraleCheckPassed);
+      ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
+    });
   }
 
   openVehicleWeaponDialog(weapon) {
@@ -591,7 +654,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   openSaveDialog(save) {
     const saveDialog = new Dialog({
       title: `Roll ${save.label}`,
-      content: DialogTemplates.saveRollDialog(),
+      content: DialogTemplates.basicRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleSaveRoll(save, html)),
       default: "Roll"
     });
@@ -613,7 +676,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       save.name = save.label;
       const messageData = ChatUtils.initializeChatData(this.actor, save);
       const savePassed = roll.total >= save.value;
-      const content = ChatRenders.saveRender(rollRender, savePassed);
+      const content = ChatRenders.passOrFailRender(rollRender, savePassed);
       ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
     });
   }

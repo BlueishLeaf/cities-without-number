@@ -71,7 +71,7 @@ export const itemTypeDialog = itemTypeOptions => `
   </div>
 `;
 
-export const saveRollDialog = () => `
+export const basicRollDialog = () => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="situationalBonusInput">Situational Bonus: </label>

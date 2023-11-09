@@ -55,7 +55,7 @@ export const attackRender = attackRollRender => `
     </div>
 `;
 
-export const saveRender = (rollRender, savePassed) => `
+export const passOrFailRender = (rollRender, savePassed) => `
     ${rollRender}
     <div class="dice-roll">
         <div class="dice-result">

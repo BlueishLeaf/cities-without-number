@@ -33,7 +33,9 @@ CWN.abilityModifiers = {
 CWN.system = {
   burstFireBonus: 2,
   droneNativeBonus: 2,
-  savingThrowFormula: "1d20 + @situationalBonus"
+  savingThrowFormula: "1d20 + @situationalBonus",
+  moraleFormula: "2d6 + @situationalBonus",
+  basicSkillCheckFormula: "2d6 + @skillBonus + @situationalBonus"
 };
 
 CWN.inventoryItemTypes = [
