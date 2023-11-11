@@ -480,7 +480,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       } else if (dataset.rollType === "weapon") {
         const weaponId = element.closest(".item").dataset.itemId;
         const weapon = this.actor.items.get(weaponId);
-        if (this.actor.type === "drone") {
+        if (this.actor.type === "npc") {
+          this.actor.openNpcAttackTypeDialog(weapon);
+        } else if (this.actor.type === "drone") {
           this.actor.openDroneWeaponDialog(weapon);
         } else if (this.actor.type === "vehicle") {
           this.openVehicleWeaponDialog(weapon);

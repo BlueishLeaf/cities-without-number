@@ -10,6 +10,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/cities-without-number/templates/actor/parts/actor-drone-skills.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-character-inventory.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-inventory.hbs",
+    "systems/cities-without-number/templates/actor/parts/actor-npc-inventory.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-drone-inventory.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-vehicle-inventory.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs",

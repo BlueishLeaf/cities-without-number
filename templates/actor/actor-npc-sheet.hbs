@@ -34,7 +34,23 @@
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
           <span> / </span>
-          <input type="text" name="system.damageSoak.max" disabled value="{{system.damageSoak.max}}" data-dtype="Number"/>
+          <input type="text" name="system.damageSoak.max" value="{{system.damageSoak.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label class="resource-label" title="Armor Class (Melee/Ranged)">AC (M/R)</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.traumaTarget" class="resource-label">Trauma Target</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.traumaTarget" value="{{system.traumaTarget}}" data-dtype="Number"/>
           </div>
         </div>
 
@@ -44,22 +60,6 @@
           <input type="text" name="system.attackBonus.melee" value="{{system.attackBonus.melee}}" data-dtype="Number"/>
           <span> / </span>
           <input type="text" name="system.attackBonus.ranged" value="{{system.attackBonus.ranged}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label" title="Armor Class (Melee/Ranged)">AC (M/R)</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.armorClass.ranged" disabled value="{{system.armorClass.ranged}}" data-dtype="Number"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label for="system.traumaTarget" class="resource-label">Trauma Target</label>
-          <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.traumaTarget" disabled value="{{system.traumaTarget}}" data-dtype="Number"/>
           </div>
         </div>
 
@@ -125,7 +125,7 @@
 
     {{!-- Inventory Tab --}}
     <div class="tab items" data-group="primary" data-tab="inventory">
-       {{> "systems/cities-without-number/templates/actor/parts/actor-inventory.hbs"}}
+       {{> "systems/cities-without-number/templates/actor/parts/actor-npc-inventory.hbs"}}
     </div>
 
     {{!-- Cyberware Tab --}}

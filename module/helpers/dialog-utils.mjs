@@ -43,6 +43,21 @@ export const attackModeButtons = (manualCallback, autoCallback) => {
   };
 };
 
+export const attackBonusButtons = (meleeCallback, rangedCallback) => {
+  return {
+    roll: {
+      icon: '<i class="fas fa-knife"></i>',
+      label: "Melee",
+      callback: meleeCallback
+    },
+    cancel: {
+      icon: '<i class="fas fa-gun"></i>',
+      label: "Ranged",
+      callback: rangedCallback
+    }
+  };
+};
+
 export const gunnerModeButtons = (otherGunnerCallback, currentGunnerCallback) => {
   return {
     roll: {

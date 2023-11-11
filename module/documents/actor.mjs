@@ -64,7 +64,6 @@ export class CitiesWithoutNumberActor extends Actor {
     if (actorData.type !== "npc") return;
 
     // Make modifications to data here
-    this.prepareArmor(actorData);
   }
 
   prepareAbilityModifiers(systemData) {
@@ -158,9 +157,27 @@ export class CitiesWithoutNumberActor extends Actor {
     // Process additional NPC data here.
   }
 
-  openVehicleWeaponDialog(weapon) {
-    console.info("wa wa wee wah");
-    
+  openNpcAttackTypeDialog(weapon) {
+    const attackBonusDialog = new Dialog({
+      title: "Choose which attack bonus to use",
+      buttons: DialogUtils.attackBonusButtons(
+        _html => this.openNpcWeaponDialog(weapon, false),
+        _html => this.openNpcWeaponDialog(weapon, true)
+      ),
+      default: "Roll"
+    });
+    attackBonusDialog.render(true);
+  }
+
+  openNpcWeaponDialog(weapon, useRangedBonus) {
+    const weaponDialog = new Dialog({
+      title: `Roll ${weapon.name}`,
+      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable),
+      buttons: DialogUtils.rollButtons(html =>
+        this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(useRangedBonus, false), html)),
+      default: "Roll"
+    });
+    weaponDialog.render(true);
   }
 
   openDroneWeaponDialog(weapon) {
@@ -179,7 +196,8 @@ export class CitiesWithoutNumberActor extends Actor {
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable),
-      buttons: DialogUtils.rollButtons(html => this.handleAutoWeaponRoll(weapon, html)),
+      buttons: DialogUtils.rollButtons(html =>
+        this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(false, true), html)),
       default: "Roll"
     });
     weaponDialog.render(true);
@@ -225,15 +243,16 @@ export class CitiesWithoutNumberActor extends Actor {
     }
   }
 
-  handleAutoWeaponRoll(weapon, html) {
-    const baseAB = this.getBaseAttackBonusByActorType(true);
+  handleAutoWeaponRoll(weapon, baseAB, html) {
     const situationalAB = html.find('[name="situationalABInput"]').val();
 
     const burstFireElements = html.find('[name="burstFireInput"]');
     const isBurstFire = burstFireElements.length > 0 ? burstFireElements[0].checked : false;
 
+    const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+
     if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
-      this.rollWeapon(weapon, false, isBurstFire, { baseAB, situationalAB });
+      this.rollWeapon(weapon, isNonLethal, isBurstFire, { baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
       Item.updateDocuments([{ _id: weapon._id, system: { magazine: updatedMagazine } }], { parent: this }).then(updates => console.log("Updated weapon", updates));
     } else {
@@ -241,11 +260,13 @@ export class CitiesWithoutNumberActor extends Actor {
     }
   }
 
-  getBaseAttackBonusByActorType(isAuto) {
+  getBaseAttackBonusByActorType(useRangedBonus, isAutoFire) {
     if (this.type === "drone") {
-      return isAuto
+      return isAutoFire
         ? CONFIG.CWN.system.droneNativeBonus
         : game.actors.find(actor => actor._id === this.system.operator).system.attackBonus;
+    } else if (this.type === "npc") {
+      return useRangedBonus ? this.system.attackBonus.ranged : this.system.attackBonus.melee;
     }
     return this.system.attackBonus;
   }
