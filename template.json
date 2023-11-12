@@ -125,7 +125,7 @@
         "base",
         "humanoid"
       ],
-      "hitDice": 0,
+      "hitDice": "1d6",
       "skillBonus": 0,
       "saveTarget": 0,
       "attackBonus": {

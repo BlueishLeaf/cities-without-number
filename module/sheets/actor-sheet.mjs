@@ -504,6 +504,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this.openSaveDialog(save);
       } else if (dataset.rollType === "morale") {
         this.openMoraleDialog(this.actor.system.moraleTarget);
+      } else if (dataset.rollType === "hitdice") {
+        this.rollHitDice();
       } else {
         const itemId = element.closest(".item").dataset.itemId;
         const item = this.actor.items.get(itemId);
@@ -522,6 +524,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       });
       return roll;
     }
+  }
+
+  rollHitDice() {
+    const roll = new Roll(this.actor.system.hitDice);
+    roll.evaluate({async: false});
+    this.actor.system.health.max = roll.total;
+    this._render();
   }
 
   openBasicSkillDialog(skillBonus) {

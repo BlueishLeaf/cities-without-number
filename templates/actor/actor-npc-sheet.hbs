@@ -25,7 +25,8 @@
         <div class="resource flex-group-center">
           <label for="system.hitDice" class="resource-label">Hit Dice</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.hitDice" value="{{system.hitDice}}" data-dtype="Number"/>
+            <input class="between-left" type="text" name="system.hitDice" value="{{system.hitDice}}" data-dtype="String"/>
+            <button class="between-right form-button rollable" data-roll-type="hitdice" title="Roll for HP"><i class="fas fa-dice-d20"></i></button>
           </div>
         </div>
 
