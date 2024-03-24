@@ -293,6 +293,9 @@
   height: var(--form-field-height);
   line-height: 0;
 }
+.cwn .bio-section {
+  min-height: 200px;
+}
 .cwn .resource-label {
   font-weight: bold;
 }

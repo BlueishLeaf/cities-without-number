@@ -1,6 +1,7 @@
 # Build Artifacts
 cwn-compiled*
 cwn.lock
+lib/
 
 # IDE
 .idea/

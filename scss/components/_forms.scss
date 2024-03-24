@@ -77,3 +77,8 @@ select {
   height: var(--form-field-height);
   line-height: 0;
 }
+
+.bio-section {
+  min-height: 200px;
+  margin: 10px;
+}
