@@ -1,0 +1,25 @@
+{
+  "_id": "avatar",
+  "name": "Avatar",
+  "type": "subject",
+  "img": "icons/sundries/misc/lock-steel-blue.webp",
+  "system": {
+    "description": "A cyberspace avatar, whether one adopted by a hacker who’s jacked into the network or a Demon program standing guard there.",
+    "type": "Avatar"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "activate",
+  "name": "Activate",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "Turn a device or piece of cyberware on. You can’t control it or direct its function, but if it’s programmed to do something when activated, such as grant a bonus action in exchange for System Strain, it does it for one round or one action. The spasmodic activation of cyber outside of the wearer’s turn is unlikely to do anything useful, but it eats System Strain as usual if relevant.",
+    "targetTypes": [
+      "Device",
+      "Cyber"
+    ],
+    "accessCost": 1,
+    "skillCheckMod": 1,
+    "selfTerminating": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
