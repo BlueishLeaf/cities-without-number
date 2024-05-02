@@ -67,6 +67,24 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "actors",
+      "label": "Actors",
+      "system": "cities-without-number",
+      "path": "packs/actors.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "hacking",
+      "label": "Hacking",
+      "system": "cities-without-number",
+      "path": "packs/hacking.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "languages": [

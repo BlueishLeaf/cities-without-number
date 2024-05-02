@@ -4,7 +4,8 @@
       "character",
       "npc",
       "drone",
-      "vehicle"
+      "vehicle",
+      "demon"
     ],
     "templates": {
       "base": {
@@ -12,7 +13,9 @@
           "value": 10,
           "max": 10
         },
-        "biography": "",
+        "biography": ""
+      },
+      "physical": {
         "traumaTarget": 6,
         "movement": {
           "speed": 10,
@@ -44,11 +47,15 @@
           "value": 0,
           "max": 0
         }
+      },
+      "buyable": {
+        "cost": 0
       }
     },
     "character": {
       "templates": [
         "base",
+        "physical",
         "humanoid"
       ],
       "abilities": {
@@ -123,6 +130,7 @@
     "npc": {
       "templates": [
         "base",
+        "physical",
         "humanoid"
       ],
       "hitDice": "1d6",
@@ -138,13 +146,14 @@
     "drone": {
       "templates": [
         "base",
-        "machine"
+        "physical",
+        "machine",
+        "buyable"
       ],
       "fittings": {
         "value": 0,
         "max": 0
       },
-      "cost": 0,
       "encumbrance": 0,
       "operator": "",
       "abilities": {
@@ -177,9 +186,11 @@
     "vehicle": {
       "templates": [
         "base",
-        "machine"
+        "physical",
+        "machine",
+        "buyable"
       ],
-      "armour": 0,
+      "armor": 0,
       "maxCrew": 0,
       "power": {
         "value": 0,
@@ -190,6 +201,16 @@
         "max": 0
       },
       "size": ""
+    },
+    "demon": {
+      "templates": [
+        "base",
+        "buyable"
+      ],
+      "maxCommandLines": 0,
+      "skillMod": 0,
+      "verbs": [],
+      "subjects": []
     }
   },
   "Item": {
@@ -367,7 +388,9 @@
       "bonusAccess": 0,
       "memory": 0,
       "shielding": 0,
-      "cpu": 0
+      "cpu": 0,
+      "verbs": [],
+      "subjects": []
     },
     "verb": {
       "templates":[

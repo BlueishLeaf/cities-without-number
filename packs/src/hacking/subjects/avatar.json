@@ -4,8 +4,8 @@
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who’s jacked into the network or a Demon program standing guard there.",
-    "type": "Avatar"
+    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
+    "type": "avatar"
   },
   "effects": [],
   "folder": null,
