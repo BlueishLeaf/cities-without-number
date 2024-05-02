@@ -228,7 +228,8 @@
       "drug",
       "cyberdeck",
       "verb",
-      "subject"
+      "subject",
+      "server"
     ],
     "templates": {
       "base": {
@@ -260,6 +261,10 @@
       "wearable": {
         "concealment": "",
         "subType": ""
+      },
+      "programmable": {
+        "verbs": [],
+        "subjects": []
       }
     },
     "gear": {
@@ -383,14 +388,13 @@
         "base",
         "item",
         "buyable",
-        "moddable"
+        "moddable",
+        "programmable"
       ],
       "bonusAccess": 0,
       "memory": 0,
       "shielding": 0,
-      "cpu": 0,
-      "verbs": [],
-      "subjects": []
+      "cpu": 0
     },
     "verb": {
       "templates":[
@@ -408,6 +412,16 @@
         "buyable"
       ],
       "type": ""
+    },
+    "server": {
+      "templates":[
+        "base",
+        "buyable",
+        "programmable"
+      ],
+      "maxNodes": 0,
+      "maxBarriers": 0,
+      "maxDemons": 0
     }
   }
 }
