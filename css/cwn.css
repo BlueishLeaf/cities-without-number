@@ -295,6 +295,7 @@
 }
 .cwn .bio-section {
   min-height: 200px;
+  margin: 10px;
 }
 .cwn .resource-label {
   font-weight: bold;
