@@ -51,6 +51,18 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
         .map(id => this.actor.items.get(id))
         .sort((a, b) => a.sort - b.sort);
     }
+    // Populate verbs/subjects for servers/cyberdecks
+    if (itemData.system.verbs) {
+      context.verbs = itemData.system.verbs
+          .map(id => this.actor.items.get(id))
+          .sort((a, b) => a.sort - b.sort);
+    }
+    if (itemData.system.subjects) {
+      context.subjects = itemData.system.subjects
+          .map(id => this.actor.items.get(id))
+          .sort((a, b) => a.sort - b.sort);
+    }
+    console.info(context)
 
     return context;
   }
@@ -93,6 +105,12 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       if (this.item.system.mods && item.type === "mod") {
         childCollection = this.item.system.mods;
         systemUpdate = { mods: childCollection };
+      } else if (this.item.system.verbs && item.type === "verb") {
+        childCollection = this.item.system.verbs;
+        systemUpdate = { verbs: childCollection };
+      } else if (this.item.system.subjects && item.type === "subject") {
+        childCollection = this.item.system.subjects;
+        systemUpdate = { subjects: childCollection };
       } else return;
 
       childCollection.splice(childCollection.indexOf(item._id), 1);
@@ -180,6 +198,12 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     if (this.item.system.mods && itemData[0].type === "mod") {
       childCollection = this.item.system.mods;
       systemUpdate = { mods: this.item.system.mods };
+    } else if (this.item.system.verbs && itemData[0].type === "verb") {
+      childCollection = this.item.system.verbs;
+      systemUpdate = { verbs: this.item.system.verbs };
+    } else if (this.item.system.subjects && itemData[0].type === "subject") {
+      childCollection = this.item.system.subjects;
+      systemUpdate = { subjects: this.item.system.subjects };
     } else return;
 
     const newItems = await this.actor.createEmbeddedDocuments("Item", itemData);
@@ -252,6 +276,12 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     if (this.item.system.mods && createdItem.type === "mod") {
       childCollection = this.item.system.mods;
       systemUpdate = { mods: childCollection };
+    } else if (this.item.system.verbs && createdItem.type === "verb") {
+      childCollection = this.item.system.verbs;
+      systemUpdate = { verbs: childCollection };
+    } else if (this.item.system.subjects && createdItem.type === "subject") {
+      childCollection = this.item.system.subjects;
+      systemUpdate = { subjects: childCollection };
     } else return;
 
     childCollection.push(createdItem._id);
