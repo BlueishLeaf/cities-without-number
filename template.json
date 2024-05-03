@@ -5,7 +5,8 @@
       "npc",
       "drone",
       "vehicle",
-      "demon"
+      "demon",
+      "server"
     ],
     "templates": {
       "base": {
@@ -50,6 +51,10 @@
       },
       "buyable": {
         "cost": 0
+      },
+      "programmable": {
+        "verbs": [],
+        "subjects": []
       }
     },
     "character": {
@@ -205,12 +210,34 @@
     "demon": {
       "templates": [
         "base",
-        "buyable"
+        "buyable",
+        "programmable"
       ],
-      "maxCommandLines": 0,
-      "skillMod": 0,
-      "verbs": [],
-      "subjects": []
+      "commandLines": {
+        "value": 0,
+        "max": 0
+      },
+      "commandLineDetails": [],
+      "skillMod": 0
+    },
+    "server": {
+      "templates":[
+        "buyable",
+        "programmable"
+      ],
+      "nodes": {
+        "value": 0,
+        "max": 0
+      },
+      "barriers": {
+        "value": 0,
+        "max": 0
+      },
+      "demons": {
+        "value": 0,
+        "max": 0
+      },
+      "nodeDetails": []
     }
   },
   "Item": {
@@ -228,8 +255,7 @@
       "drug",
       "cyberdeck",
       "verb",
-      "subject",
-      "server"
+      "subject"
     ],
     "templates": {
       "base": {
@@ -412,16 +438,6 @@
         "buyable"
       ],
       "type": ""
-    },
-    "server": {
-      "templates":[
-        "base",
-        "buyable",
-        "programmable"
-      ],
-      "maxNodes": 0,
-      "maxBarriers": 0,
-      "maxDemons": 0
     }
   }
 }

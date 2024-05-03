@@ -4,11 +4,20 @@
   "type": "server",
   "img": "icons/magic/symbols/triangle-glow-purple.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
+    "biography": "There can only be one primary server on a single network; others might be connected to it, but only the primary server counts for determining node connection limits, barriers, or active demons.",
     "cost": 2000,
-    "maxNodes": 0,
-    "maxBarriers": 0,
-    "maxDemons": 0
+    "nodes": {
+      "value": 0,
+      "max": 0
+    },
+    "barriers": {
+      "value": 0,
+      "max": 0
+    },
+    "demons": {
+      "value": 0,
+      "max": 0
+    }
   },
   "effects": [],
   "folder": null,

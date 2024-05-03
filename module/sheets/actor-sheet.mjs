@@ -67,6 +67,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this._prepareFittingsAndMods(context);
         this._prepareVehicleData(context);
         break;
+      case "server":
+        this._prepareVerbsAndSubjects(context);
+        this._prepareServerData(context);
     }
 
     // Update open item renders
@@ -82,7 +85,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if ((this.actor.type !== "drone" && this.actor.type !== "vehicle") && ["mod", "verb", "subject"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
@@ -185,6 +188,29 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     });
   }
 
+  _prepareVerbsAndSubjects(context) {
+    // Initialize containers.
+    const verbs = [];
+    const subjects = [];
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to verbs.
+      if (i.type === "verb") {
+        verbs.push(i);
+      }
+      // Append to subjects.
+      else if (i.type === "subject") {
+        subjects.push(i);
+      }
+    }
+
+    // Assign and return
+    context.verbs = verbs;
+    context.subjects = subjects;
+  }
+
   _prepareVehicleData(context) {
     // Set stowed cargo and hardpoints/fittings
     context.system.hardpoints.value = 0;
@@ -200,6 +226,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         context.system.mass.value += item.system.mounted.mass;
       }
     });
+  }
+
+  _prepareServerData(context) {
+    context.system.nodes.value = context.system.nodeDetails.length;
+    context.system.demons.value = 0;
   }
 
   /**

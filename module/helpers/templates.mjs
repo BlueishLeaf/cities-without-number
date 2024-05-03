@@ -16,6 +16,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-features.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-biography.hbs",
-    "systems/cities-without-number/templates/actor/parts/actor-character-biography.hbs"
+    "systems/cities-without-number/templates/actor/parts/actor-character-biography.hbs",
+    "systems/cities-without-number/templates/actor/parts/actor-server-programs.hbs"
   ]);
 };
