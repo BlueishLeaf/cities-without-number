@@ -68,7 +68,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this._prepareVehicleData(context);
         break;
       case "server":
-        this._prepareVerbsAndSubjects(context);
+        this._prepareNetworkItems(context);
         this._prepareServerData(context);
     }
 
@@ -85,7 +85,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject", "node"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
@@ -188,10 +188,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     });
   }
 
-  _prepareVerbsAndSubjects(context) {
+  _prepareNetworkItems(context) {
     // Initialize containers.
     const verbs = [];
     const subjects = [];
+    const nodeDetails = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -204,11 +205,16 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       else if (i.type === "subject") {
         subjects.push(i);
       }
+      // Append to nodeDetails.
+      else if (i.type === "node") {
+        nodeDetails.push(i);
+      }
     }
 
     // Assign and return
     context.verbs = verbs;
     context.subjects = subjects;
+    context.nodeDetails = nodeDetails;
   }
 
   _prepareVehicleData(context) {

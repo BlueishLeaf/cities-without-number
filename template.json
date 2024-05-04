@@ -255,7 +255,8 @@
       "drug",
       "cyberdeck",
       "verb",
-      "subject"
+      "subject",
+      "node"
     ],
     "templates": {
       "base": {
@@ -438,6 +439,13 @@
         "buyable"
       ],
       "type": ""
+    },
+    "node": {
+      "templates":[
+        "base"
+      ],
+      "unblockedConnections": "",
+      "blockedConnections": ""
     }
   }
 }
