@@ -297,6 +297,18 @@
   min-height: 200px;
   margin: 10px;
 }
+.cwn .command-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.cwn .command-container .command-line-delete {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cwn .command-container .command-line-delete i {
+  vertical-align: sub;
+}
 .cwn .resource-label {
   font-weight: bold;
 }

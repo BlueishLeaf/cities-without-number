@@ -1,0 +1,65 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+
+      {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+      use both the "grid" and "grid-Ncol" class where "N" can be any number
+      from 1 to 12 and will create that number of columns.  --}}
+      <div class="resources grid grid-3col">
+
+        {{!-- "flex-group-center" is also defined in the _grid.scss file
+        and it will add a small amount of padding, a border, and will
+        center all of its child elements content and text. --}}
+        <div class="resource flex-group-center">
+          <label class="resource-label">Health</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.maxCommandLines" class="resource-label">Max Cmd. Lines</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.maxCommandLines" value="{{system.maxCommandLines}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.skillMod" class="resource-label">Skill Mod.</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.skillMod" value="{{system.skillMod}}" data-dtype="Number"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="commandLines">Command Lines</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    <div class="tab max-height" data-group="primary" data-tab="commandLines">
+      <button class="command-line-create">Add Command Line</button>
+      {{#each commandLines as |commandLine|}}
+        <div class="command-container">
+          <input type="text" name="system.commandLines" value="{{commandLine}}" data-dtype="String"/>
+          <a class="item-control command-line-delete" title="Delete Command"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
+    </div>
+
+    {{!-- Description Tab --}}
+    <div class="tab max-height" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+  </section>
+</form>

@@ -5,7 +5,6 @@
       "npc",
       "drone",
       "vehicle",
-      "demon",
       "server"
     ],
     "templates": {
@@ -207,16 +206,6 @@
       },
       "size": ""
     },
-    "demon": {
-      "templates": [
-        "base",
-        "buyable",
-        "programmable"
-      ],
-      "maxCommandLines": 0,
-      "commandLines": [],
-      "skillMod": 0
-    },
     "server": {
       "templates":[
         "buyable",
@@ -228,7 +217,8 @@
         "total": 0,
         "perNode": 0
       },
-      "nodes": []
+      "nodes": [],
+      "demons": []
     }
   },
   "Item": {
@@ -247,7 +237,8 @@
       "cyberdeck",
       "verb",
       "subject",
-      "node"
+      "node",
+      "demon"
     ],
     "templates": {
       "base": {
@@ -437,6 +428,19 @@
       ],
       "unblockedConnections": "",
       "blockedConnections": ""
+    },
+    "demon": {
+      "templates": [
+        "base",
+        "buyable"
+      ],
+      "health": {
+        "value": 0,
+        "max": 0
+      },
+      "maxCommandLines": 0,
+      "commandLines": [],
+      "skillMod": 0
     }
   }
 }

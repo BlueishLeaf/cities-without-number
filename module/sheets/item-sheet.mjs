@@ -62,6 +62,8 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
           .map(id => this.actor.items.get(id))
           .sort((a, b) => a.sort - b.sort);
     }
+    context.commandLines = itemData.system.commandLines;
+
     console.info(context)
 
     return context;
@@ -87,6 +89,12 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     // Add Inventory Item
     html.find(".item-create").click(this._onItemCreate.bind(this));
+
+    // Add Command
+    html.find(".command-line-create").click(this._onCommandLineCreate.bind(this));
+
+    // Delete Command
+    html.find(".command-line-delete").click(this._onCommandLineDelete.bind(this));
 
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
@@ -114,6 +122,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       } else if (this.item.system.nodes && item.type === "node") {
         childCollection = this.item.system.nodes;
         systemUpdate = { nodes: childCollection };
+      } else if (this.item.system.demons && item.type === "demon") {
+        childCollection = this.item.system.demons;
+        systemUpdate = { demons: childCollection };
       } else return;
 
       childCollection.splice(childCollection.indexOf(item._id), 1);
@@ -210,6 +221,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     } else if (this.item.system.nodes && itemData[0].type === "node") {
       childCollection = this.item.system.nodes;
       systemUpdate = { nodes: this.item.system.nodes };
+    } else if (this.item.system.demons && itemData[0].type === "demon") {
+      childCollection = this.item.system.demons;
+      systemUpdate = { demons: this.item.system.demons };
     } else return;
 
     const newItems = await this.actor.createEmbeddedDocuments("Item", itemData);
@@ -291,9 +305,34 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     } else if (this.item.system.nodes && createdItem.type === "node") {
       childCollection = this.item.system.nodes;
       systemUpdate = {nodes: childCollection};
+    } else if (this.item.system.demons && createdItem.type === "demon") {
+      childCollection = this.item.system.demons;
+      systemUpdate = {demons: childCollection};
     } else return;
 
     childCollection.push(createdItem._id);
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
+
+  async _onCommandLineCreate(event) {
+    event.preventDefault();
+
+    this.item.system.commandLines.push('');
+
+    const systemUpdate = {commandLines: this.item.system.commandLines}
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
+
+  async _onCommandLineDelete(event) {
+    event.preventDefault();
+
+    console.info(event);
+    console.info(event.currentTarget.parentNode.children[0].value);
+
+    const idx = this.item.system.commandLines.indexOf(event.currentTarget.parentNode.children[0].value);
+    this.item.system.commandLines.splice(idx, 1);
+
+    const systemUpdate = {commandLines: this.item.system.commandLines}
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 

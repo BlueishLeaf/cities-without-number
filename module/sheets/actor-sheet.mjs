@@ -84,7 +84,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject", "node"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
@@ -192,6 +192,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const verbs = [];
     const subjects = [];
     const nodes = [];
+    const demons = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -208,12 +209,17 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       else if (i.type === "node") {
         nodes.push(i);
       }
+      // Append to demons.
+      else if (i.type === "demon") {
+        demons.push(i);
+      }
     }
 
     // Assign and return
     context.verbs = verbs;
     context.subjects = subjects;
     context.nodes = nodes;
+    context.demons = demons;
   }
 
   _prepareVehicleData(context) {
