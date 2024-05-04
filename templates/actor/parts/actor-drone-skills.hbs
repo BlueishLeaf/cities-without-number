@@ -1,8 +1,8 @@
-<h4>All drone skills are limited by their operator's Drive skill level <b>({{driveSkill.system.level}})</b></h3>
+<h4>All drone skills are limited by their operator's Drive skill level <b>({{driveSkill.system.level}})</b></h4>
 <div class="grid grid-3col">
   {{#each skills as |skill id|}}
-  <div class="skill-pill">
-    <span class="rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}: {{skill.system.level}}</span>
-  </div>
+    <div class="skill-pill">
+      <span class="rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}: {{skill.system.level}}</span>
+    </div>
   {{/each}}
 </div>

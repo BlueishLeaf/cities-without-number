@@ -507,7 +507,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Handle item rolls.
     if (dataset.rollType) {
       if (dataset.rollType === "skill") {
-        if (this.actor.type === "character") {
+        if (this.actor.type === "character" || this.actor.type === "drone") {
           const skillId = element.closest(".skill").dataset.itemId;
           const skill = this.actor.items.get(skillId);
           this.openSkillDialog(skill);
