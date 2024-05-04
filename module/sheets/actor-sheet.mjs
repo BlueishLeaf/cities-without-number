@@ -69,7 +69,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         break;
       case "server":
         this._prepareNetworkItems(context);
-        this._prepareServerData(context);
     }
 
     // Update open item renders
@@ -192,7 +191,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Initialize containers.
     const verbs = [];
     const subjects = [];
-    const nodeDetails = [];
+    const nodes = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -205,16 +204,16 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       else if (i.type === "subject") {
         subjects.push(i);
       }
-      // Append to nodeDetails.
+      // Append to nodes.
       else if (i.type === "node") {
-        nodeDetails.push(i);
+        nodes.push(i);
       }
     }
 
     // Assign and return
     context.verbs = verbs;
     context.subjects = subjects;
-    context.nodeDetails = nodeDetails;
+    context.nodes = nodes;
   }
 
   _prepareVehicleData(context) {
@@ -232,11 +231,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         context.system.mass.value += item.system.mounted.mass;
       }
     });
-  }
-
-  _prepareServerData(context) {
-    context.system.nodes.value = context.system.nodeDetails.length;
-    context.system.demons.value = 0;
   }
 
   /**

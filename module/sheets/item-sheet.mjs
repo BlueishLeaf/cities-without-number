@@ -111,9 +111,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       } else if (this.item.system.subjects && item.type === "subject") {
         childCollection = this.item.system.subjects;
         systemUpdate = { subjects: childCollection };
-      } else if (this.item.system.nodeDetails && item.type === "node") {
-        childCollection = this.item.system.nodeDetails;
-        systemUpdate = { nodeDetails: childCollection };
+      } else if (this.item.system.nodes && item.type === "node") {
+        childCollection = this.item.system.nodes;
+        systemUpdate = { nodes: childCollection };
       } else return;
 
       childCollection.splice(childCollection.indexOf(item._id), 1);
@@ -207,9 +207,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     } else if (this.item.system.subjects && itemData[0].type === "subject") {
       childCollection = this.item.system.subjects;
       systemUpdate = { subjects: this.item.system.subjects };
-    } else if (this.item.system.nodeDetails && itemData[0].type === "node") {
-      childCollection = this.item.system.nodeDetails;
-      systemUpdate = { nodeDetails: this.item.system.nodeDetails };
+    } else if (this.item.system.nodes && itemData[0].type === "node") {
+      childCollection = this.item.system.nodes;
+      systemUpdate = { nodes: this.item.system.nodes };
     } else return;
 
     const newItems = await this.actor.createEmbeddedDocuments("Item", itemData);
@@ -288,9 +288,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     } else if (this.item.system.subjects && createdItem.type === "subject") {
       childCollection = this.item.system.subjects;
       systemUpdate = { subjects: childCollection };
-    } else if (this.item.system.nodeDetails && createdItem.type === "node") {
-      childCollection = this.item.system.nodeDetails;
-      systemUpdate = {nodeDetails: childCollection};
+    } else if (this.item.system.nodes && createdItem.type === "node") {
+      childCollection = this.item.system.nodes;
+      systemUpdate = {nodes: childCollection};
     } else return;
 
     childCollection.push(createdItem._id);

@@ -213,11 +213,8 @@
         "buyable",
         "programmable"
       ],
-      "commandLines": {
-        "value": 0,
-        "max": 0
-      },
-      "commandLineDetails": [],
+      "maxCommandLines": 0,
+      "commandLines": [],
       "skillMod": 0
     },
     "server": {
@@ -225,19 +222,13 @@
         "buyable",
         "programmable"
       ],
-      "nodes": {
-        "value": 0,
-        "max": 0
+      "maxNodes": 0,
+      "maxBarriers": 0,
+      "maxDemons": {
+        "total": 0,
+        "perNode": 0
       },
-      "barriers": {
-        "value": 0,
-        "max": 0
-      },
-      "demons": {
-        "value": 0,
-        "max": 0
-      },
-      "nodeDetails": []
+      "nodes": []
     }
   },
   "Item": {

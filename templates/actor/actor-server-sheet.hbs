@@ -15,29 +15,25 @@
         and it will add a small amount of padding, a border, and will
         center all of its child elements content and text. --}}
         <div class="resource flex-group-center">
-          <label for="system.barriers.value" class="resource-label">Active Barriers</label>
+          <label for="system.maxNodes" class="resource-label">Max Nodes</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.barriers.value" value="{{system.barriers.value}}" data-dtype="Number"/>
-            <span> / </span>
-            <input type="text" name="system.barriers.max" value="{{system.barriers.max}}" data-dtype="Number"/>
+            <input type="text" name="system.maxNodes" value="{{system.maxNodes}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label">Active Nodes</label>
+          <label for="system.cost" class="resource-label">Max Barriers</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.nodes.value" value="{{system.nodes.value}}" data-dtype="Number"/>
-            <span> / </span>
-            <input type="text" name="system.nodes.max" value="{{system.nodes.max}}" data-dtype="Number"/>
+            <input type="text" name="system.maxBarriers" value="{{system.maxBarriers}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label">Active Demons</label>
+          <label class="resource-label" title="Max Demons (Total/Per Node)">Max Demons (T/N)</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.demons.value" value="{{system.demons.value}}" data-dtype="Number"/>
+            <input type="text" name="system.maxDemons.total" value="{{system.maxDemons.total}}" data-dtype="Number"/>
             <span> / </span>
-            <input type="text" name="system.demons.max" value="{{system.demons.max}}" data-dtype="Number"/>
+            <input type="text" name="system.maxDemons.perNode" value="{{system.maxDemons.perNode}}" data-dtype="Number"/>
           </div>
         </div>
 
