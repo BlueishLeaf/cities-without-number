@@ -8,7 +8,10 @@
     "cost": 2500,
     "encumbrance": 2,
     "damageFormula": "1d12 + @attributeMod",
-    "range": "100/300",
+    "range": {
+      "effective": 100,
+      "max": 300
+    },
     "attribute": "dex",
     "skill": "Shoot",
     "isBurstFireable": true,

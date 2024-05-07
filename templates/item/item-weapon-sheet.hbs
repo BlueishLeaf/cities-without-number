@@ -60,9 +60,13 @@
       </div>
       {{/if}}
       <div class="grid grid-2col">
-        <div class="resource">
-          <label class="resource-label">Range</label>
-          <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
+        <div class="resource flex-group-center">
+          <label class="resource-label" title="Range (Effective/Maximum)">Range (Eff./Max)</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.range.effective" value="{{system.range.effective}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="text" name="system.range.max" value="{{system.range.max}}" data-dtype="Number"/>
+          </div>
         </div>
         {{#if system.magazine}}
         <div class="resource flex-group-center">

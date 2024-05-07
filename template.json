@@ -310,7 +310,10 @@
       ],
       "skill": null,
       "damageFormula": null,
-      "range": null,
+      "range": {
+        "effective": 0,
+        "max": 0
+      },
       "isBurstFireable": false,
       "magazine": {
         "value": 0,
