@@ -331,6 +331,9 @@
   width: 5%;
   margin-left: 5px;
 }
+.cwn .resource-content.flexrow.flex-center.flex-between {
+  align-items: center;
+}
 .cwn .resource-label {
   font-weight: bold;
 }

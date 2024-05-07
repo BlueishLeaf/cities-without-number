@@ -17,7 +17,7 @@
           <label for="system.health.value" class="resource-label">Health</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
-            <span> / </span>
+            <i class="fas fa-slash-forward"></i>
             <input type="text" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
           </div>
         </div>
@@ -25,65 +25,66 @@
         <div class="resource flex-group-center">
           <label for="system.damageSoak.value" class="resource-label">Damage Soak</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.damageSoak.max" disabled value="{{system.damageSoak.max}}" data-dtype="Number"/>
+            <input type="text" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="text" name="system.damageSoak.max" disabled value="{{system.damageSoak.max}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.systemStrain.value" class="resource-label">System Strain</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.systemStrain.value" value="{{system.systemStrain.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.systemStrain.max" disabled value="{{system.systemStrain.max}}" data-dtype="Number"/>
+            <input type="text" name="system.systemStrain.value" value="{{system.systemStrain.value}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="text" name="system.systemStrain.max" disabled value="{{system.systemStrain.max}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.xp" class="resource-label">XP</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
+            <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="text" name="system.xp.nextLevel" disabled value="{{system.xp.nextLevel}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.level" class="resource-label">Level</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.level" value="{{system.level}}" data-dtype="Number"/>
+            <input type="text" name="system.level" value="{{system.level}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.attackBonus" class="resource-label">Attack Bonus</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.attackBonus" value="{{system.attackBonus}}" data-dtype="Number"/>
+            <input type="text" name="system.attackBonus" value="{{system.attackBonus}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.movement.speed" class="resource-label">Movement Speed</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.movement.speed" value="{{system.movement.speed}}" data-dtype="Number"/>
+            <input type="text" name="system.movement.speed" value="{{system.movement.speed}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label class="resource-label">AC (Melee/Ranged)</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.armorClass.ranged" disabled value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+            <input type="text" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="text" name="system.armorClass.ranged" disabled value="{{system.armorClass.ranged}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.traumaTarget" class="resource-label">Trauma Target</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.traumaTarget" disabled value="{{system.traumaTarget}}" data-dtype="Number"/>
+            <input type="text" name="system.traumaTarget" disabled value="{{system.traumaTarget}}" data-dtype="Number"/>
           </div>
         </div>
-
       </div>
     </div>
   </header>

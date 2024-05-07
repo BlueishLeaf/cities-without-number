@@ -1,0 +1,26 @@
+{
+  "_id": "notice",
+  "name": "Notice",
+  "type": "skill",
+  "img": "icons/sundries/documents/blueprint-magical.webp",
+  "system": {
+    "description": "Spot anomalies or interesting facts about your environment. Roll it for searching places, detecting ambushes, spotting things, and reading the emotional state of other people.",
+    "level": -1,
+    "attribute": "wis"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

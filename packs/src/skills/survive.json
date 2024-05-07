@@ -1,0 +1,26 @@
+{
+  "_id": "survive",
+  "name": "Survive",
+  "type": "skill",
+  "img": "icons/sundries/documents/blueprint-magical.webp",
+  "system": {
+    "description": "Depending on the character's background, this might be more a matter of street smarts and urban survival or it might be directed towards outlands bushcraft and wilderness living. Regardless of the original focus, some time and practice can allow it to be generalized by a PC.",
+    "level": -1,
+    "attribute": "wis"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
