@@ -30,7 +30,9 @@ const addBurstFire = isBurstFireable => isBurstFireable ? `
 const addNonLethal = `
   <div class="dialog-row grid grid-2col">
     <label for="nonLethalInput">Non-Lethal?: </label>
-    <input type="checkbox" name="nonLethalInput"/>
+    <div style="text-align: center">
+      <input type="checkbox" name="nonLethalInput"/>
+    </div>
   </div>
 `;
 

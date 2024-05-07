@@ -1,13 +1,13 @@
 <div class="skill-points">
-  <label for="system.availableSkillPoints">Available skill points:</label>
+  <label class="resource-label" for="system.availableSkillPoints">Available skill points</label>
   <input type="text" name="system.availableSkillPoints" value="{{system.availableSkillPoints}}"  data-dtype="Number"/>
 </div>
 
 <div class="grid grid-5col">
   {{#each skills as |skill id|}}
-  <div class="skill-pill">
-    <label class="rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}</label>
-    <input type="text" data-dtype="Number" value="{{skill.system.level}}" class="skill-level" data-skill-id="{{skill._id}}"/>
-  </div>
+    <div class="skill">
+      <label class="resource-label rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}</label>
+      <input type="text" data-dtype="Number" value="{{skill.system.level}}" class="skill-level" data-skill-id="{{skill._id}}"/>
+    </div>
   {{/each}}
 </div>

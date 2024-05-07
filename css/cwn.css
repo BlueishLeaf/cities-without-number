@@ -334,6 +334,9 @@
 .cwn .resource-content.flexrow.flex-center.flex-between {
   align-items: center;
 }
+.cwn .checkbox-container {
+  text-align: center;
+}
 .cwn .resource-label {
   font-weight: bold;
 }
@@ -473,16 +476,4 @@
 }
 .cwn .effects .item .effect-controls {
   border: none;
-}
-.cwn .skill-pill {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
 }
