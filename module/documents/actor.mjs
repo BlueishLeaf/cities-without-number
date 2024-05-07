@@ -73,7 +73,7 @@ export class CitiesWithoutNumberActor extends Actor {
       ability.mod = 0;
       for (let [modifier, range] of Object.entries(CONFIG.CWN.abilityModifiers)) {
         if (range.includes(ability.value)) {
-          ability.mod = Number(modifier);
+          ability.mod = Number(modifier) + ability.bonusMod;
         }
       }
     }

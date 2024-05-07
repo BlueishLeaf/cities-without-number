@@ -65,26 +65,32 @@
       "abilities": {
         "str": {
           "label": "Strength",
+          "bonusMod": 0,
           "value": 10
         },
         "dex": {
           "label": "Dexterity",
+          "bonusMod": 0,
           "value": 10
         },
         "con": {
           "label": "Constitution",
+          "bonusMod": 0,
           "value": 10
         },
         "int": {
           "label": "Intelligence",
+          "bonusMod": 0,
           "value": 10
         },
         "wis": {
           "label": "Wisdom",
+          "bonusMod": 0,
           "value": 10
         },
         "cha": {
           "label": "Charisma",
+          "bonusMod": 0,
           "value": 10
         }
       },
@@ -125,6 +131,7 @@
       },
       "level": 1,
       "xp": 0,
+      "availableSkillPoints": 0,
       "attackBonus": 0,
       "money": 0,
       "languages": "",
@@ -163,26 +170,32 @@
       "abilities": {
         "str": {
           "label": "Strength",
+          "bonusMod": 0,
           "value": 10
         },
         "dex": {
           "label": "Dexterity",
+          "bonusMod": 0,
           "value": 10
         },
         "con": {
           "label": "Constitution",
+          "bonusMod": 0,
           "value": 10
         },
         "int": {
           "label": "Intelligence",
+          "bonusMod": 0,
           "value": 10
         },
         "wis": {
           "label": "Wisdom",
+          "bonusMod": 0,
           "value": 10
         },
         "cha": {
           "label": "Charisma",
+          "bonusMod": 0,
           "value": 10
         }
       }

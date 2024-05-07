@@ -16,7 +16,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       template: "systems/cities-without-number/templates/actor/actor-sheet.hbs",
       width: 600,
       height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
+      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats" }]
     });
   }
 

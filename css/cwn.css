@@ -309,6 +309,28 @@
 .cwn .command-container .command-line-delete i {
   vertical-align: sub;
 }
+.cwn .abilities {
+  align-items: center;
+}
+.cwn .abilities h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cwn .ability input {
+  margin: 5px;
+}
+.cwn .right-divider {
+  box-shadow: 1px 0 0 #191813;
+}
+.cwn .skill-points {
+  display: flow-root;
+  margin-top: 10px;
+  text-align: center;
+}
+.cwn .skill-points input {
+  width: 5%;
+  margin-left: 5px;
+}
 .cwn .resource-label {
   font-weight: bold;
 }

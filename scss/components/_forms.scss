@@ -97,3 +97,31 @@ select {
     }
   }
 }
+
+.abilities {
+  align-items: center;
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.ability input {
+  margin: 5px;
+}
+
+.right-divider {
+  box-shadow: 1px 0 0 #191813;
+}
+
+.skill-points {
+  display: flow-root;
+  margin-top: 10px;
+  text-align: center;
+
+  input {
+    width: 5%;
+    margin-left: 5px;
+  }
+}
