@@ -23,7 +23,9 @@ export const weaponRollDialog = (isBurstFireable, abilityOptions, skillOptions) 
 const addBurstFire = isBurstFireable => isBurstFireable ? `
   <div class="dialog-row grid grid-2col">
     <label for="burstFireInput">Burst-Fire?: </label>
-    <input type="checkbox" name="burstFireInput"/>
+    <div style="text-align: center">
+      <input type="checkbox" name="burstFireInput"/>
+    </div>
   </div>
 ` : "";
 
