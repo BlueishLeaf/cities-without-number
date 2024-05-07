@@ -334,8 +334,9 @@
 .cwn .resource-content.flexrow.flex-center.flex-between {
   align-items: center;
 }
-.cwn .checkbox-container {
-  text-align: center;
+.cwn .skill-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .cwn .resource-label {
   font-weight: bold;

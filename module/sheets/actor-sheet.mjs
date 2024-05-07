@@ -96,7 +96,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   _prepareOperatorData(context) {
     if (!this.actor.system.operator || this.actor.system.operator === "undefined") return;
 
-    const operator = game.actors.find(actor => actor._id === this.actor.system.operator).toObject(false); // Use safe clone
+    const operatorFound = game.actors.find(actor => actor._id === this.actor.system.operator);
+    if (!operatorFound) return;
+
+    const operator = operatorFound.toObject(false); // Use safe clone
     const operatorSkills = operator.items.filter(item => item.type === "skill");
     const operatorDriveSkill = operatorSkills.find(skill => skill.name === "Drive");
     operatorSkills.forEach(operatorSkill => {
