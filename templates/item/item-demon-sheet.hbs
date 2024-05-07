@@ -51,7 +51,7 @@
       <button class="command-line-create">Add Command Line</button>
       {{#each commandLines as |commandLine|}}
         <div class="command-container">
-          <input type="text" name="system.commandLines" value="{{commandLine}}" data-dtype="String"/>
+          <input type="text" name="system.commandLines" value="{{commandLine}}" data-dtype="Array"/>
           <a class="item-control command-line-delete" title="Delete Command"><i class="fas fa-trash"></i></a>
         </div>
       {{/each}}

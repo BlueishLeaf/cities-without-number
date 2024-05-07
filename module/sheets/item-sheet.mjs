@@ -316,7 +316,6 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
   async _onCommandLineCreate(event) {
     event.preventDefault();
-
     this.item.system.commandLines.push('');
 
     const systemUpdate = {commandLines: this.item.system.commandLines}
