@@ -13,7 +13,7 @@ export const rollButtons = rollCallback => {
   };
 };
 
-export const gunnerButtons = confirmCallback => {
+export const confirmButtons = confirmCallback => {
   return {
     roll: {
       icon: '<i class="fas fa-check"></i>',
@@ -23,7 +23,7 @@ export const gunnerButtons = confirmCallback => {
     cancel: {
       icon: '<i class="fas fa-times"></i>',
       label: "Cancel",
-      callback: () => console.log("Cancelled gunner dialog")
+      callback: () => console.log("Cancelled confirm dialog")
     }
   };
 };

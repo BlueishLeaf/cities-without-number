@@ -84,9 +84,14 @@ export class CitiesWithoutNumberActor extends Actor {
     const equippedArmor = actorData.items.find(item => item.type === "armor" && item.system.readied && item.system.subType === "armor");
     const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.subType === "accessory");
 
-    const baseAC = 10;
-    actorData.system.armorClass.melee = equippedArmor ? equippedArmor.system.armorClass.melee : baseAC;
-    actorData.system.armorClass.ranged = equippedArmor ? equippedArmor.system.armorClass.ranged : baseAC;
+    const baseMeleeAC = Number(actorData.system.armorClass.baseMelee);
+    if (equippedArmor && equippedArmor.system.armorClass.melee > baseMeleeAC) {
+      actorData.system.armorClass.melee = equippedArmor ? equippedArmor.system.armorClass.melee : baseMeleeAC;
+    }
+    const baseRangedAC = Number(actorData.system.armorClass.baseRanged);
+    if (equippedArmor && equippedArmor.system.armorClass.ranged > baseRangedAC) {
+      actorData.system.armorClass.ranged = equippedArmor ? equippedArmor.system.armorClass.ranged : baseRangedAC;
+    }
 
     // Apply dexterity modifier to total AC bonus
     if (actorData.type === "character") {
@@ -95,12 +100,12 @@ export class CitiesWithoutNumberActor extends Actor {
     }
 
     // Calculate damage soak
-    const baseDamageSoak = 0;
-    actorData.system.damageSoak.max = equippedArmor ? equippedArmor.system.damageSoak : baseDamageSoak;
+    const baseDamageSoak = Number(actorData.system.damageSoak.base);
+    actorData.system.damageSoak.max = equippedArmor ? Number(equippedArmor.system.damageSoak) + baseDamageSoak : baseDamageSoak;
 
     // Calculate trauma target
-    const baseTraumaTarget = 6;
-    actorData.system.traumaTarget = equippedArmor
+    const baseTraumaTarget = Number(actorData.system.traumaTarget.base);
+    actorData.system.traumaTarget.total = equippedArmor
       ? baseTraumaTarget + equippedArmor.system.traumaTargetMod
       : baseTraumaTarget;
 
@@ -109,7 +114,7 @@ export class CitiesWithoutNumberActor extends Actor {
       actorData.system.armorClass.melee += accessory.system.armorClass.melee;
       actorData.system.armorClass.ranged += accessory.system.armorClass.ranged;
       actorData.system.damageSoak.max += accessory.system.damageSoak;
-      actorData.system.traumaTarget += accessory.system.traumaTargetMod;
+      actorData.system.traumaTarget.total += accessory.system.traumaTargetMod;
     });
   }
 

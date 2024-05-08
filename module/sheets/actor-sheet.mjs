@@ -155,14 +155,22 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
    * @returns {undefined}
    */
   _prepareCharacterData(context) {
-    // Set max system strain
-    context.system.systemStrain.max = context.system.abilities.con.value;
+    // Set max and permanent system strain
+    context.system.systemStrain.max = context.system.abilities.con.value
+    if (context.system.systemStrain.maxModifier) {
+      context.system.systemStrain.max += Number(context.system.systemStrain.maxModifier);
+    }
+    context.system.systemStrain.permanent = 0;
+    if (context.system.systemStrain.permanentModifier) {
+      context.system.systemStrain.permanent += Number(context.system.systemStrain.permanentModifier);
+    }
 
     // Set stowed and readied items
     context.system.encumbrance.stowed.max = context.system.abilities.str.value;
     context.system.encumbrance.readied.max = Math.floor(context.system.abilities.str.value / 2);
     context.system.encumbrance.stowed.value = 0;
     context.system.encumbrance.readied.value = 0;
+
     context.items.forEach(item => {
       if (item.system.readied !== undefined) {
         if (item.system.readied) {
@@ -171,7 +179,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           context.system.encumbrance.stowed.value += item.system.encumbrance * item.system.quantity;
         }
       }
+      // Calculate permanent system strain based on the cyberware equipped
+      if (item.type === "cyberware" && item.system.systemStrain) {
+        context.system.systemStrain.permanent += item.system.systemStrain;
+      }
     });
+
+    context.system.systemStrain.value = context.system.systemStrain.permanent + context.system.systemStrain.temporary;
   }
 
   _prepareDroneData(context) {
@@ -389,6 +403,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     html.find(".rollable").click(this._onRoll.bind(this));
     html.find(".rollable-img").hover(this._onRollableItemHover.bind(this));
 
+    // Configurable buttons
+    html.find(".configurable").click(this._onConfig.bind(this));
+
     // Expandable items
     html.find(".expandable").click(this._toggleItemExpand.bind(this));
 
@@ -566,6 +583,105 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
   }
 
+  _onConfig(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+
+    switch (dataset.configType){
+      case "damageSoak":
+        this.openDamageSoakConfigDialog();
+        break;
+      case "systemStrain":
+        this.openSystemStrainConfigDialog();
+        break;
+      case "armorClass":
+        this.openArmorClassConfigDialog();
+        break;
+      case "traumaTarget":
+        this.openTraumaTargetConfigDialog();
+        break;
+      default:
+        break;
+    }
+  }
+
+  openDamageSoakConfigDialog() {
+    const configDialog = new Dialog({
+      title: "Configure Base Damage Soak",
+      content: DialogTemplates.configDialogDamageSoak(this.actor.system.damageSoak.base),
+      buttons: DialogUtils.confirmButtons(html => this.handleDamageSoakConfig(html)),
+      default: "roll"
+    });
+    configDialog.render(true);
+  }
+
+  handleDamageSoakConfig(html) {
+    const newBaseDamageSoak = html.find('[name="damageSoakInput"]').val();
+    const damageSoak = {
+      base: newBaseDamageSoak
+    }
+    Actor.updateDocuments([{ _id: this.actor._id, system: { damageSoak } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  }
+
+  openSystemStrainConfigDialog() {
+    const configDialog = new Dialog({
+      title: "Configure System Strain",
+      content: DialogTemplates.configDialogSystemStrain(this.actor.system.systemStrain),
+      buttons: DialogUtils.confirmButtons(html => this.handleSystemStrainConfig(html)),
+      default: "roll"
+    });
+    configDialog.render(true);
+  }
+
+  handleSystemStrainConfig(html) {
+    const maxModifier = html.find('[name="maxModInput"]').val();
+    const permanentModifier = html.find('[name="permanentModInput"]').val();
+    const systemStrain = {
+      maxModifier: maxModifier,
+      permanentModifier: permanentModifier
+    }
+    Actor.updateDocuments([{ _id: this.actor._id, system: { systemStrain } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  }
+
+  openArmorClassConfigDialog() {
+    const configDialog = new Dialog({
+      title: "Configure Base Armor Class",
+      content: DialogTemplates.configDialogArmorClass(this.actor.system.armorClass),
+      buttons: DialogUtils.confirmButtons(html => this.handleArmorClassConfig(html)),
+      default: "roll"
+    });
+    configDialog.render(true);
+  }
+
+  handleArmorClassConfig(html) {
+    const baseMelee = html.find('[name="baseMeleeInput"]').val();
+    const baseRanged = html.find('[name="baseRangedInput"]').val();
+    const armorClass = {
+      baseMelee,
+      baseRanged
+    }
+    Actor.updateDocuments([{ _id: this.actor._id, system: { armorClass } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  }
+
+  openTraumaTargetConfigDialog() {
+    const configDialog = new Dialog({
+      title: "Configure Base Trauma Target",
+      content: DialogTemplates.configDialogTraumaTarget(this.actor.system.traumaTarget.base),
+      buttons: DialogUtils.confirmButtons(html => this.handleTraumaTargetConfig(html)),
+      default: "roll"
+    });
+    configDialog.render(true);
+  }
+
+  handleTraumaTargetConfig(html) {
+    const newBaseTraumaTarget = html.find('[name="traumaTargetInput"]').val();
+    const traumaTarget = {
+      base: newBaseTraumaTarget
+    }
+    Actor.updateDocuments([{ _id: this.actor._id, system: { traumaTarget } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  }
+
   rollHitDice() {
     const roll = new Roll(this.actor.system.hitDice);
     roll.evaluate({async: false});
@@ -655,7 +771,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const vehicleGunnerDialog = new Dialog({
       title: "Choose a gunner",
       content: DialogTemplates.gunnerSelectDialog(gunnerOptions),
-      buttons: DialogUtils.gunnerButtons(html => this.handleGunnerConfirmation(html, weapon)),
+      buttons: DialogUtils.confirmButtons(html => this.handleGunnerConfirmation(html, weapon)),
       default: "Confirm"
     });
     vehicleGunnerDialog.render(true);

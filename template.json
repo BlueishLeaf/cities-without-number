@@ -16,7 +16,10 @@
         "biography": ""
       },
       "physical": {
-        "traumaTarget": 6,
+        "traumaTarget": {
+          "base": 6,
+          "total": 6
+        },
         "movement": {
           "speed": 10,
           "type": "ground"
@@ -40,12 +43,15 @@
       },
       "humanoid": {
         "armorClass": {
+          "baseMelee": 10,
           "melee": 10,
+          "baseRanged": 10,
           "ranged": 10
         },
         "damageSoak": {
           "value": 0,
-          "max": 0
+          "max": 0,
+          "base": 0
         }
       },
       "buyable": {
@@ -97,7 +103,10 @@
       "systemStrain": {
         "value": 0,
         "max": 10,
-        "permanent": 0
+        "permanent": 0,
+        "temporary": 0,
+        "maxModifier": 0,
+        "permanentModifier": 0
       },
       "savingThrows": {
         "saveTargets": {

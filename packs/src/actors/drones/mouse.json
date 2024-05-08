@@ -9,7 +9,10 @@
       "max": 1
     },
     "biography": "Little more than a fist-sized drive core with wheels, Shintetsu’s Mouse is about as small as a functional drone can get with its low-cost technology. Incapable of supporting more than its basic functionality, it still provides eyes and ears for a pilot in a cheap, portable format.",
-    "traumaTarget": 6,
+    "traumaTarget": {
+      "base": 6,
+      "total": 6
+    },
     "movement": {
       "speed": 5,
       "type": "ground"

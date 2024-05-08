@@ -9,7 +9,10 @@
       "max": 5
     },
     "biography": "Guards of this quality usually have no useful combat cyber installed in them, as skinmod tattoos and gang-related dental implants don’t count.",
-    "traumaTarget": 6,
+    "traumaTarget": {
+      "base": 6,
+      "total": 6
+    },
     "movement": {
       "speed": 10,
       "type": "ground"
@@ -20,7 +23,8 @@
     },
     "damageSoak": {
       "value": 2,
-      "max": 2
+      "max": 2,
+      "base": 2
     },
     "hitDice": "1d6",
     "skillBonus": 1,
