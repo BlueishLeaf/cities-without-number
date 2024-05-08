@@ -90,11 +90,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     // Add Inventory Item
     html.find(".item-create").click(this._onItemCreate.bind(this));
 
-    // Add Command
-    html.find(".command-line-create").click(this._onCommandLineCreate.bind(this));
-
-    // Delete Command
-    html.find(".command-line-delete").click(this._onCommandLineDelete.bind(this));
+    // Manipulate list items
+    html.find(".list-item-create").click(this._onListItemCreate.bind(this));
+    html.find(".list-item-delete").click(this._onListItemDelete.bind(this));
 
     // Rollable abilities.
     html.find(".rollable").click(this._onRoll.bind(this));
@@ -314,21 +312,41 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 
-  async _onCommandLineCreate(event) {
+  async _onListItemCreate(event) {
     event.preventDefault();
+    const listType = event.currentTarget.dataset.listType;
+
+    switch (listType) {
+      case "commandLines":
+        this.createCommandLine();
+        break;
+      default:
+        break;
+    }
+  }
+
+  async _onListItemDelete(event) {
+    event.preventDefault();
+    const listType = event.currentTarget.dataset.listType;
+
+    switch (listType) {
+      case "commandLines":
+        this.deleteCommandLine(event);
+        break;
+      default:
+        break;
+    }
+  }
+
+  createCommandLine() {
     this.item.system.commandLines.push('');
 
     const systemUpdate = {commandLines: this.item.system.commandLines}
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 
-  async _onCommandLineDelete(event) {
-    event.preventDefault();
-
-    console.info(event);
-    console.info(event.currentTarget.parentNode.children[0].value);
-
-    const idx = this.item.system.commandLines.indexOf(event.currentTarget.parentNode.children[0].value);
+  deleteCommandLine(event) {
+    const idx = this.item.system.commandLines.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
     this.item.system.commandLines.splice(idx, 1);
 
     const systemUpdate = {commandLines: this.item.system.commandLines}

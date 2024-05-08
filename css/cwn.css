@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.rollable:hover, .rollable:focus, .expandable:hover, .expandable:focus, .configurable:hover, .configurable:focus {
+.rollable:hover, .rollable:focus, .expandable:hover, .expandable:focus, .configurable:hover, .configurable:focus, .list-item-create:hover, .list-item-create:focus {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
@@ -297,16 +297,16 @@
   min-height: 200px;
   margin: 10px;
 }
-.cwn .command-container {
+.cwn .list-item-container {
   margin-top: 5px;
   margin-bottom: 5px;
   display: flex;
 }
-.cwn .command-container .command-line-delete {
+.cwn .list-item-container .list-item-delete {
   margin-left: 10px;
   margin-right: 10px;
 }
-.cwn .command-container .command-line-delete i {
+.cwn .list-item-container .list-item-delete i {
   vertical-align: sub;
 }
 .cwn .abilities {

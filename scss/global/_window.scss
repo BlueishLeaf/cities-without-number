@@ -2,7 +2,7 @@
   font-family: $font-primary;
 }
 
-.rollable, .expandable, .configurable {
+.rollable, .expandable, .configurable, .list-item-create {
   &:hover,
   &:focus {
     color: #000;

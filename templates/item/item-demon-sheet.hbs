@@ -48,11 +48,11 @@
   <section class="sheet-body">
     {{!-- Description Tab --}}
     <div class="tab max-height" data-group="primary" data-tab="commandLines">
-      <button class="command-line-create">Add Command Line</button>
+      <button class="list-item-create" data-list-type="commandLines">Add Command Line</button>
       {{#each commandLines as |commandLine|}}
-        <div class="command-container">
+        <div class="list-item-container">
           <input type="text" name="system.commandLines" value="{{commandLine}}" data-dtype="Array"/>
-          <a class="item-control command-line-delete" title="Delete Command"><i class="fas fa-trash"></i></a>
+          <a class="item-control list-item-delete" title="Delete Command" data-list-type="commandLines"><i class="fas fa-trash"></i></a>
         </div>
       {{/each}}
     </div>

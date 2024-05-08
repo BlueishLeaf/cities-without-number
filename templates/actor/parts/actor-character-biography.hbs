@@ -1,19 +1,28 @@
-<div class="resources grid grid-2col">
-    <div class="bio-section">
-        <label for="system.goals" class="resource-label">Goals</label>
-        {{editor system.goals target="system.goals" engine="prosemirror" button=true editable=editable}}
+<div class="resources grid grid-5col">
+  <div class="grid-span-2 bio-section">
+    <div class="list-container">
+      <label for="system.goals" class="resource-label">Goals <span title="Add a Goal" class="list-item-create fas fa-plus" data-list-type="goals"></span></label>
+      {{#each goals as |goal|}}
+        <div class="list-item-container">
+          <input type="text" name="system.goals" value="{{goal}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Goal" data-list-type="goals"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
     </div>
-    <div class="bio-section">
-        <label for="system.contacts" class="resource-label">Contacts</label>
-        {{editor system.contacts target="system.contacts" engine="prosemirror" button=true editable=editable}}
+
+    <div class="list-container">
+      <label for="system.languages" class="resource-label">Languages <span title="Add a Language" class="list-item-create fas fa-plus" data-list-type="languages"></span></label>
+      {{#each languages as |language|}}
+        <div class="list-item-container">
+          <input type="text" name="system.languages" value="{{language}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Language" data-list-type="languages"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
     </div>
-    <div class="bio-section">
-        <label for="system.languages" class="resource-label">Languages</label>
-        {{editor system.languages target="system.languages" engine="prosemirror" button=true editable=editable}}
-    </div>
-    <div class="bio-section">
-        <label for="system.biography" class="resource-label">Description</label>
-        {{editor system.biography target="system.biography" engine="prosemirror" button=true editable=editable}}
-    </div>
+  </div>
+  <div class="grid-span-3 bio-section">
+    <label for="system.biography" class="resource-label">Description</label>
+    {{editor system.biography target="system.biography" engine="prosemirror" button=true editable=editable}}
+  </div>
 </div>
 

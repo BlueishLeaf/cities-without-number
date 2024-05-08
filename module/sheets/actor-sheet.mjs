@@ -50,6 +50,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this._prepareItems(context);
         this._prepareCyberware(context);
         this._prepareCharacterData(context);
+        this._prepareBiographyData(context);
         break;
       case "npc":
         this._prepareItems(context);
@@ -364,6 +365,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.nerve = nerve;
   }
 
+  _prepareBiographyData(context) {
+    context.goals = context.system.goals;
+    context.languages = context.system.languages;
+  }
+
   /* -------------------------------------------- */
 
   /** @override */
@@ -403,6 +409,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     html.find(".rollable").click(this._onRoll.bind(this));
     html.find(".rollable-img").hover(this._onRollableItemHover.bind(this));
 
+    // Manipulate list items
+    html.find(".list-item-create").click(this._onListItemCreate.bind(this));
+    html.find(".list-item-delete").click(this._onListItemDelete.bind(this));
+
     // Configurable buttons
     html.find(".configurable").click(this._onConfig.bind(this));
 
@@ -424,6 +434,68 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         li.addEventListener("dragstart", handler, false);
       });
     }
+  }
+
+  async _onListItemCreate(event) {
+    event.preventDefault();
+    const listType = event.currentTarget.dataset.listType;
+
+    switch (listType) {
+      case "goals":
+        this.createGoal();
+        break;
+      case "languages":
+        this.createLanguage();
+        break;
+      default:
+        break;
+    }
+  }
+
+  async _onListItemDelete(event) {
+    event.preventDefault();
+    const listType = event.currentTarget.dataset.listType;
+
+    switch (listType) {
+      case "goals":
+        this.deleteGoal(event);
+        break;
+      case "languages":
+        this.deleteLanguage(event);
+        break;
+      default:
+        break;
+    }
+  }
+
+  createGoal() {
+    this.actor.system.goals.push('');
+
+    const systemUpdate = {goals: this.actor.system.goals}
+    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
+  }
+
+  deleteGoal(event) {
+    const idx = this.actor.system.goals.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
+    this.actor.system.goals.splice(idx, 1);
+
+    const systemUpdate = {goals: this.actor.system.goals}
+    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
+  }
+
+  createLanguage() {
+    this.actor.system.languages.push('');
+
+    const systemUpdate = {languages: this.actor.system.languages}
+    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
+  }
+
+  deleteLanguage(event) {
+    const idx = this.actor.system.languages.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
+    this.actor.system.languages.splice(idx, 1);
+
+    const systemUpdate = {languages: this.actor.system.languages}
+    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
   }
 
   _toggleItemExpand(event) {

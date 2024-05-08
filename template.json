@@ -146,9 +146,8 @@
       "availableSkillPoints": 0,
       "attackBonus": 0,
       "money": 0,
-      "languages": "",
-      "goals": "",
-      "contacts": "",
+      "languages": ["", "", ""],
+      "goals": ["", "", ""],
       "cyberwareMaintenanceCost": 0
     },
     "npc": {
