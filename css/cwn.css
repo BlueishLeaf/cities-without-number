@@ -322,13 +322,13 @@
 .cwn .right-divider {
   box-shadow: 1px 0 0 #191813;
 }
-.cwn .skill-points {
+.cwn .heading-resource {
   display: flow-root;
   margin-top: 10px;
   text-align: center;
 }
-.cwn .skill-points input {
-  width: 5%;
+.cwn .heading-resource input {
+  width: 15%;
   margin-left: 5px;
 }
 .cwn .resource-content.flexrow.flex-center.flex-between {

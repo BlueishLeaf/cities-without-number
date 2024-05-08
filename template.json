@@ -148,7 +148,8 @@
       "money": 0,
       "languages": "",
       "goals": "",
-      "contacts": ""
+      "contacts": "",
+      "cyberwareMaintenanceCost": 0
     },
     "npc": {
       "templates": [
