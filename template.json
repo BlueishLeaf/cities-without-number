@@ -263,7 +263,8 @@
       "verb",
       "subject",
       "node",
-      "demon"
+      "demon",
+      "contact"
     ],
     "templates": {
       "base": {
@@ -469,6 +470,13 @@
       "maxCommandLines": 0,
       "commandLines": [],
       "skillMod": 0
+    },
+    "contact": {
+      "templates": [
+        "base"
+      ],
+      "relationship": "acquaintance",
+      "summary": ""
     }
   }
 }

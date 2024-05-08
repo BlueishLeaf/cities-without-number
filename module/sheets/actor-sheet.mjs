@@ -273,6 +273,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const armory = [];
     const foci = [];
     const edges = [];
+    const contacts = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -301,6 +302,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       else if (i.type === "edge") {
         edges.push(i);
       }
+      else if (i.type === "contact") {
+        contacts.push(i);
+      }
     }
 
     // Assign and return
@@ -310,6 +314,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.armory = armory;
     context.foci = foci;
     context.edges = edges;
+    context.contacts = contacts;
   }
 
   _prepareCyberware(context) {
@@ -554,6 +559,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Add cyberware sub-type
     if (type === "cyberware" && data.subtype) {
       itemData.system.subType = data.subtype;
+    } else if (type === "contact") {
+      itemData.img = 'icons/svg/mystery-man.svg';
     }
 
     // Open dialog to let user specify which inventory item type to use
