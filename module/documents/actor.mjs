@@ -85,10 +85,13 @@ export class CitiesWithoutNumberActor extends Actor {
     const equippedAccessories = actorData.items.filter(item => item.type === "armor" && item.system.readied && item.system.subType === "accessory");
 
     const baseMeleeAC = Number(actorData.system.armorClass.baseMelee);
+    actorData.system.armorClass.melee = baseMeleeAC;
     if (equippedArmor && equippedArmor.system.armorClass.melee > baseMeleeAC) {
       actorData.system.armorClass.melee = equippedArmor ? equippedArmor.system.armorClass.melee : baseMeleeAC;
     }
+
     const baseRangedAC = Number(actorData.system.armorClass.baseRanged);
+    actorData.system.armorClass.ranged = baseRangedAC;
     if (equippedArmor && equippedArmor.system.armorClass.ranged > baseRangedAC) {
       actorData.system.armorClass.ranged = equippedArmor ? equippedArmor.system.armorClass.ranged : baseRangedAC;
     }

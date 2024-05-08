@@ -124,11 +124,11 @@ export const configDialogSystemStrain = systemStrain => `
 export const configDialogArmorClass = armorClass => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
-      <label for="baseMeleeInput">Perm. Sys. Strain Modifier: </label>
+      <label for="baseMeleeInput">Base Melee AC: </label>
       <input type="text" name="baseMeleeInput" data-dtype="Number" value="${armorClass.baseMelee}"/>
     </div>
     <div class="dialog-row grid grid-2col">
-      <label for="baseRangedInput">Max Sys. Strain Modifier: </label>
+      <label for="baseRangedInput">Base Ranged AC: </label>
       <input type="text" name="baseRangedInput" data-dtype="Number" value="${armorClass.baseRanged}"/>
     </div>
   </div>
