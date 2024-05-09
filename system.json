@@ -24,6 +24,42 @@
   "scripts": [],
   "packs": [
     {
+      "name": "servers",
+      "label": "Servers",
+      "system": "cities-without-number",
+      "path": "packs/servers.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "vehicles",
+      "label": "Vehicles",
+      "system": "cities-without-number",
+      "path": "packs/vehicles.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "npcs",
+      "label": "Common NPCs",
+      "system": "cities-without-number",
+      "path": "packs/npcs.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "drones",
+      "label": "Drones",
+      "system": "cities-without-number",
+      "path": "packs/drones.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "edges",
       "label": "Edges",
       "system": "cities-without-number",
@@ -42,10 +78,73 @@
       "flags": {}
     },
     {
-      "name": "items",
+      "name": "armor",
+      "label": "Armor",
+      "system": "cities-without-number",
+      "path": "packs/armor.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberdecks",
+      "label": "Cyberdecks",
+      "system": "cities-without-number",
+      "path": "packs/cyberdecks.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "drugs",
+      "label": "Drugs",
+      "system": "cities-without-number",
+      "path": "packs/drugs.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "drone-fittings",
+      "label": "Drone Fittings",
+      "system": "cities-without-number",
+      "path": "packs/drone-fittings.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "vehicle-fittings",
       "label": "Items",
       "system": "cities-without-number",
-      "path": "packs/items.db",
+      "path": "packs/vehicle-fittings.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "gear",
+      "label": "Gear",
+      "system": "cities-without-number",
+      "path": "packs/gear.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "mods",
+      "label": "Mods",
+      "system": "cities-without-number",
+      "path": "packs/mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "cities-without-number",
+      "path": "packs/weapons.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -69,19 +168,28 @@
       "flags": {}
     },
     {
-      "name": "actors",
-      "label": "Actors",
+      "name": "demons",
+      "label": "Network Demons",
       "system": "cities-without-number",
-      "path": "packs/actors.db",
-      "type": "Actor",
+      "path": "packs/demons.db",
+      "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "hacking",
-      "label": "Hacking",
+      "name": "subjects",
+      "label": "Hacking Subjects",
       "system": "cities-without-number",
-      "path": "packs/hacking.db",
+      "path": "packs/subjects.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "verbs",
+      "label": "Hacking Verbs",
+      "system": "cities-without-number",
+      "path": "packs/verbs.db",
       "type": "Item",
       "private": false,
       "flags": {}
