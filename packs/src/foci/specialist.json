@@ -1,0 +1,26 @@
+{
+  "_id": "specialist",
+  "name": "Specialist",
+  "type": "focus",
+  "img": "icons/sundries/books/book-backed-silver-gold.webp",
+  "system": {
+    "description": "You are remarkably talented at a particular skill. Whether a marvelous cat burglar, a natural athlete, a brilliant engineer, or some other savant, your expertise is extremely reliable. You may take this Focus more than once for different skills.",
+    "level1Benefit": "Gain a non-combat skill as a bonus. Roll 3d6 and drop the lowest die for all skill checks in this skill.",
+    "level2Benefit": "Roll 4d6 and drop the two lowest dice for all skill checks in this skill."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

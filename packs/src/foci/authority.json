@@ -1,0 +1,26 @@
+{
+  "_id": "authority",
+  "name": "Authority",
+  "type": "focus",
+  "img": "icons/sundries/books/book-backed-silver-gold.webp",
+  "system": {
+    "description": "You have an uncanny kind of charisma about you, one that makes others instinctively follow your instructions and further your causes. Where this Focus refers to followers, it means NPCs who have voluntarily chosen to be in your service. PCs never count as followers.",
+    "level1Benefit": "Gain Lead as a bonus skill. Once per day, you can make a request from an NPC who is not openly hostile to you, rolling a Cha/Lead skill check at a difficulty of the NPC's Morale score. If you succeed, they will comply with the request, provided it is not harmful or very uncharacteristic.",
+    "level2Benefit": "Those who follow you are fired with confidence. Any NPC being directly led by you gains a Morale and hit roll bonus equal to your Lead skill and a +1 bonus on all skill checks. Your followers will not act against your interests unless under extreme pressure."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -4,7 +4,7 @@
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "A collection of consumable parts, lubri- cants, medications, faked subscription keys, and pirated firmware updates. Any reasonable dollar value of supplies can be carried as 1 point of Encumbrance.",
+    "description": "A collection of consumable parts, lubricants, medications, faked subscription keys, and pirated firmware updates. Any reasonable dollar value of supplies can be carried as 1 point of Encumbrance.",
     "cost": 0,
     "encumbrance": 1
   },

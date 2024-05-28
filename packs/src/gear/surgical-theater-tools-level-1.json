@@ -4,7 +4,7 @@
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "A basic collection of medical tools, phar- maceuticals, scanners, technical manuals, and software subscriptions. Most ordinary street docs command this level of hardware. Laying it out for use requires at least a semi-clean room's worth of working space.",
+    "description": "A basic collection of medical tools, pharmaceuticals, scanners, technical manuals, and software subscriptions. Most ordinary street docs command this level of hardware. Laying it out for use requires at least a semi-clean room's worth of working space.",
     "cost": 10000,
     "encumbrance": 10
   },

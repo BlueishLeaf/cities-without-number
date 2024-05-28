@@ -1,0 +1,26 @@
+{
+  "_id": "roamer",
+  "name": "Roamer",
+  "type": "focus",
+  "img": "icons/sundries/books/book-backed-silver-gold.webp",
+  "system": {
+    "description": "You might be a footloose bum with a knack for stowing aboard cargo shipments, a hard-bitten outlander smuggler, or a restless seeker of the horizon. Either way, you've seen more of the world with your own two eyes than any common corper ever will.",
+    "level1Benefit": "Gain Survive and Drive as bonus skills. You have conversational skill in all common languages spoken in the region or city, and you never get lost. You have \"acquired\" one or more vehicles worth no more than the budget given on page 18. You can replace lost or damaged vehicles at a rate of $10,000 per week.",
+    "level2Benefit": "Once per scene, as an Instant action, you can reroll a failed skill check related to safe traveling or vehicle operation, whether to fix a blown engine or talk down a ganger who doesn't like strangers crossing his turf."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
