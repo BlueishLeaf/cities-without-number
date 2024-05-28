@@ -528,13 +528,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Un-equip other armor if readied item is also armor
     if (selectedItem.type === "armor" && selectedItem.system.subType === "armor" && selectedItem.system.readied) {
       const otherEquippedArmorItems = this.actor.items.filter(actorItem => actorItem.type === "armor" && actorItem.system.subType === "armor" && actorItem.system.readied && actorItem.id !== selectedItem.id);
-      console.info("Deselecting other equipped armors", otherEquippedArmorItems);
       otherEquippedArmorItems.forEach(equippedArmorItem => itemUpdates.push({ _id: equippedArmorItem._id, system: { readied: false } }));
 
       // If newly equipped armor is a suit, disable any accessories that are incompatible with suit armors
       if (selectedItem.system.isSuit) {
         const incompatibleAccessories = this.actor.items.filter(actorItem => actorItem.type === "armor" && actorItem.system.subType === "accessory" && !actorItem.system.canEquipWithSuit && actorItem.system.readied);
-        console.info("Deselecting incompatible accessories", incompatibleAccessories);
         incompatibleAccessories.forEach(incompatibleAccessory => itemUpdates.push({ _id: incompatibleAccessory._id, system: { readied: false } }))
       }
     }
