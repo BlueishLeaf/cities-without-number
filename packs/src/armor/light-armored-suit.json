@@ -1,20 +1,21 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "light-armored-suit",
+  "name": "Light Armored Suit",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
-    "encumbrance": 0,
+    "description": "Ordinary law enforcement and security guards will be wearing suits like this, usually brightly emblazoned with their corpo- rate affiliation.",
+    "cost": 5000,
+    "encumbrance": 2,
     "armorClass": {
-      "melee": 10,
-      "ranged": 10
+      "melee": 13,
+      "ranged": 16
     },
-    "damageSoak": 0,
-    "traumaTargetMod": 0,
-    "concealment": "subtle",
-    "subType": "armor"
+    "damageSoak": 5,
+    "traumaTargetMod": 2,
+    "concealment": "obvious",
+    "subType": "armor",
+    "isSuit": true
   },
   "effects": [],
   "folder": null,

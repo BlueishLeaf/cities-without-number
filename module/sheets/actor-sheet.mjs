@@ -521,9 +521,25 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   updateReadiedFlag(event) {
     const newReadiedState = event.target.checked;
     const itemId = event.target.dataset.itemId;
-    const item = this.actor.items.get(itemId);
-    item.system.readied = newReadiedState;
-    Item.updateDocuments([{ _id: item._id, system: { readied: newReadiedState } }], { parent: this.actor }).then(updatedItem => console.log("Updated item", updatedItem));
+    const selectedItem = this.actor.items.get(itemId);
+    selectedItem.system.readied = newReadiedState;
+
+    let itemUpdates = [{ _id: selectedItem._id, system: { readied: newReadiedState } }];
+    // Un-equip other armor if readied item is also armor
+    if (selectedItem.type === "armor" && selectedItem.system.subType === "armor" && selectedItem.system.readied) {
+      const otherEquippedArmorItems = this.actor.items.filter(actorItem => actorItem.type === "armor" && actorItem.system.subType === "armor" && actorItem.system.readied && actorItem.id !== selectedItem.id);
+      console.info("Deselecting other equipped armors", otherEquippedArmorItems);
+      otherEquippedArmorItems.forEach(equippedArmorItem => itemUpdates.push({ _id: equippedArmorItem._id, system: { readied: false } }));
+
+      // If newly equipped armor is a suit, disable any accessories that are incompatible with suit armors
+      if (selectedItem.system.isSuit) {
+        const incompatibleAccessories = this.actor.items.filter(actorItem => actorItem.type === "armor" && actorItem.system.subType === "accessory" && !actorItem.system.canEquipWithSuit && actorItem.system.readied);
+        console.info("Deselecting incompatible accessories", incompatibleAccessories);
+        incompatibleAccessories.forEach(incompatibleAccessory => itemUpdates.push({ _id: incompatibleAccessory._id, system: { readied: false } }))
+      }
+    }
+    console.info(itemUpdates)
+    Item.updateDocuments(itemUpdates, { parent: this.actor }).then(updatedItems => console.log("Updated items", updatedItems));
   }
 
   updateSkillLevel(event) {
@@ -883,7 +899,14 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     skill.system.attribute = selectedAttributeCode;
     Item.updateDocuments([{ _id: skill._id, system: { attribute: selectedAttributeCode } }], { parent: this.actor }).then(updates => console.log("Updated skill", updates));
 
-    this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus });
+    // Apply armor penalty if applicable to this skill
+    let armorPenalty = 0;
+    const equippedHeavyArmorItems = this.actor.items.filter(item => item.type === "armor" && item.system.readied && item.system.isHeavy);
+    if (['exert', 'sneak'].includes(skill.name.toLowerCase()) && equippedHeavyArmorItems.length > 0) {
+      armorPenalty = -equippedHeavyArmorItems.length;
+    }
+
+    this.rollSkill(skill, { attributeMod, level: skill.system.level, situationalBonus, armorPenalty });
   }
 
   rollSkill(skill, rollData) {

@@ -1,18 +1,18 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "reinforced-longcoat",
+  "name": "Reinforced Longcoat",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
-    "encumbrance": 0,
+    "description": "Long, draping clothing is bolstered with advanced fabrics and discreet- ly-placed absorption plates, the whole remaining deniable as armor.",
+    "cost": 500,
+    "encumbrance": 1,
     "armorClass": {
-      "melee": 10,
-      "ranged": 10
+      "melee": 13,
+      "ranged": 15
     },
-    "damageSoak": 0,
-    "traumaTargetMod": 0,
+    "damageSoak": 5,
+    "traumaTargetMod": 1,
     "concealment": "subtle",
     "subType": "armor"
   },

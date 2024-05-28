@@ -1,17 +1,17 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "reinforced-clothing",
+  "name": "Reinforced Clothing",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
+    "description": "Subtle polymer sheets and re - inforced weaves are used to provide a modicum of protection in this clothing without sacrificing taste.",
+    "cost": 100,
     "encumbrance": 0,
     "armorClass": {
       "melee": 10,
-      "ranged": 10
+      "ranged": 13
     },
-    "damageSoak": 0,
+    "damageSoak": 2,
     "traumaTargetMod": 0,
     "concealment": "subtle",
     "subType": "armor"

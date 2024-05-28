@@ -1,21 +1,22 @@
 {
-  "_id": "riot-shield",
-  "name": "Riot Shield",
+  "_id": "absorption-plates",
+  "name": "Absorption Plates",
   "type": "armor",
   "img": "icons/equipment/chest/collar-steel.webp",
   "system": {
-    "description": "These bulky, transparent shields are most effective in fending off melee attackers. They must be Readied in one hand; users with multiple cyberarms can benefit from only one shield at a time. A shield negates the first melee Shock damage a bearer takes in a round.",
-    "cost": 1000,
-    "encumbrance": 2,
+    "description": "Additional impact-absorbing buffer plates are added to the armor. Their bulk inflicts a -1 penalty to the user's Sneak and Exert checks",
+    "cost": 500,
+    "encumbrance": 1,
     "armorClass": {
       "melee": 2,
-      "ranged": 4
+      "ranged": 2
     },
-    "damageSoak": 0,
+    "damageSoak": 3,
     "traumaTargetMod": 0,
     "concealment": "obvious",
     "subType": "accessory",
-    "canEquipWithSuit": true
+    "isHeavy": true,
+    "canEquipWithSuit": false
   },
   "effects": [],
   "folder": null,

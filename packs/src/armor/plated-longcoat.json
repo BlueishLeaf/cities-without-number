@@ -1,19 +1,19 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "plated-longcoat",
+  "name": "Plated Longcoat",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
-    "encumbrance": 0,
+    "description": "An ankle-length coat, robe, or man- tle is used as a substrate for numerous reinforced plates and swaths of ballistic weave. It's heavy, bulky, and blatant, but it can absorb a lot of pun- ishment.",
+    "cost": 2000,
+    "encumbrance": 1,
     "armorClass": {
-      "melee": 10,
-      "ranged": 10
+      "melee": 15,
+      "ranged": 17
     },
-    "damageSoak": 0,
-    "traumaTargetMod": 0,
-    "concealment": "subtle",
+    "damageSoak": 5,
+    "traumaTargetMod": 1,
+    "concealment": "obvious",
     "subType": "armor"
   },
   "effects": [],

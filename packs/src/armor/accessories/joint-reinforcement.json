@@ -1,21 +1,22 @@
 {
-  "_id": "riot-shield",
-  "name": "Riot Shield",
+  "_id": "joint-reinforcement",
+  "name": "Joint Reinforcement",
   "type": "armor",
   "img": "icons/equipment/chest/collar-steel.webp",
   "system": {
-    "description": "These bulky, transparent shields are most effective in fending off melee attackers. They must be Readied in one hand; users with multiple cyberarms can benefit from only one shield at a time. A shield negates the first melee Shock damage a bearer takes in a round.",
-    "cost": 1000,
-    "encumbrance": 2,
+    "description": "The weak points around limb joints are reinforced with extra layers of weave. The extra weave hinders movement, and applies a -1 penalty to the wearer's Sneak and Exert checks.",
+    "cost": 250,
+    "encumbrance": 0,
     "armorClass": {
-      "melee": 2,
-      "ranged": 4
+      "melee": 1,
+      "ranged": 1
     },
     "damageSoak": 0,
     "traumaTargetMod": 0,
-    "concealment": "obvious",
+    "concealment": "subtle",
     "subType": "accessory",
-    "canEquipWithSuit": true
+    "isHeavy": true,
+    "canEquipWithSuit": false
   },
   "effects": [],
   "folder": null,

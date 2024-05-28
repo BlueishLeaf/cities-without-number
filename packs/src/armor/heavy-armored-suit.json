@@ -1,20 +1,22 @@
 {
-  "_id": "war-harness",
-  "name": "War Harness",
+  "_id": "heavy-armored-suit",
+  "name": "Heavy Armored Suit",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "An upgraded form of street leathers, these outfits have sacrificed all discretion for whatever spare ballistic plates and advanced polymer weaves its owner can sew or bolt on. It's usually the best armor that local gangs or common thugs can afford.",
-    "cost": 200,
-    "encumbrance": 1,
+    "description": "A head-to-toe suit of interlock- ing plates and impact absorption units, these suits are reserved for high-end response teams and military operations.",
+    "cost": 15000,
+    "encumbrance": 3,
     "armorClass": {
-      "melee": 14,
-      "ranged": 13
+      "melee": 18,
+      "ranged": 20
     },
-    "damageSoak": 5,
-    "traumaTargetMod": 0,
+    "damageSoak": 15,
+    "traumaTargetMod": 3,
     "concealment": "obvious",
-    "subType": "armor"
+    "subType": "armor",
+    "isHeavy": true,
+    "isSuit": true
   },
   "effects": [],
   "folder": null,

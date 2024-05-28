@@ -1,17 +1,17 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "street-leathers",
+  "name": "Street Leathers",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
+    "description": "Fashionable, aggressive, and often mismatched, \"street leathers\" seldom have any non-synthetic leather in their makeup, but are light and comfortable enough to wear as a habit.",
+    "cost": 250,
     "encumbrance": 0,
     "armorClass": {
-      "melee": 10,
-      "ranged": 10
+      "melee": 12,
+      "ranged": 13
     },
-    "damageSoak": 0,
+    "damageSoak": 3,
     "traumaTargetMod": 0,
     "concealment": "subtle",
     "subType": "armor"

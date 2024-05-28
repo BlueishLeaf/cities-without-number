@@ -280,7 +280,7 @@
         "attribute": "str"
       },
       "skillRoll": {
-        "rollFormula": "2d6 + @level + @attributeMod + @situationalBonus"
+        "rollFormula": "2d6 + @level + @attributeMod + @situationalBonus + @armorPenalty"
       },
       "attackRoll": {
         "rollFormula": "1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB"
@@ -365,6 +365,9 @@
         "melee": 0,
         "ranged": 0
       },
+      "canEquipWithSuit": true,
+      "isHeavy": false,
+      "isSuit": false,
       "damageSoak": 0,
       "traumaTargetMod": 0
     },

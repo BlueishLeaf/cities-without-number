@@ -71,6 +71,14 @@ Handlebars.registerHelper("isChecked", function(condition) {
   return condition ? "checked" : "";
 });
 
+Handlebars.registerHelper("isArmorReadiable", function(selectedArmor, allArmor) {
+  let readiable = true;
+  if (selectedArmor.system.subType === 'accessory' && !selectedArmor.system.canEquipWithSuit && allArmor.find(armorItem => armorItem.system.subType === 'armor' && armorItem.system.readied && armorItem.system.isSuit)) {
+    readiable = false;
+  }
+  return readiable ? "" : "disabled title=\"Cannot equip this accessory while wearing an armored suit\"";
+});
+
 Handlebars.registerHelper("isSelected", function(condition) {
   return condition ? "selected" : "";
 });

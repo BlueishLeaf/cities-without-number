@@ -1,18 +1,18 @@
 {
-  "_id": "ordinary-clothing",
-  "name": "Ordinary Clothing",
+  "_id": "armored-clothing",
+  "name": "Armored Clothing",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Some bold, impoverished, or highly fashionable people still insist on wearing clothing that has no functional use as armor.",
-    "cost": 25,
-    "encumbrance": 0,
+    "description": "The bulky plates and heavy ballis- tic weaves of this outfit are disguised as drapes and fashion elements.",
+    "cost": 1000,
+    "encumbrance": 2,
     "armorClass": {
-      "melee": 10,
-      "ranged": 10
+      "melee": 14,
+      "ranged": 16
     },
-    "damageSoak": 0,
-    "traumaTargetMod": 0,
+    "damageSoak": 5,
+    "traumaTargetMod": 1,
     "concealment": "subtle",
     "subType": "armor"
   },
