@@ -68,6 +68,7 @@
         "physical",
         "humanoid"
       ],
+      "background": "",
       "abilities": {
         "str": {
           "label": "Strength",
