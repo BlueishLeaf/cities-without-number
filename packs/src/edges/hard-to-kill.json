@@ -1,0 +1,24 @@
+{
+  "_id": "hard-to-kill",
+  "name": "Hard to Kill",
+  "type": "edge",
+  "img": "icons/sundries/books/book-backed-blue-gold.webp",
+  "system": {
+    "description": "Instead of rolling 1d6 per level for your hit points, you roll 1d6+2. Your base Trauma Target increases by +1, turning the base 6 into 7."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

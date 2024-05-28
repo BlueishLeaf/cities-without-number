@@ -1,0 +1,24 @@
+{
+  "_id": "veterans-luck",
+  "name": "Veteran's Luck",
+  "type": "edge",
+  "img": "icons/sundries/books/book-backed-blue-gold.webp",
+  "system": {
+    "description": "Once per scene, as an Instant action, trigger this ability to gain one of two effects: an attack roll that just hit you is instead treated as a miss, or an attack roll you just made that missed is instead treated as a hit. This ability can be applied to vehicle weapons used by the operator, but it cannot protect against environmental damage, vehicle crashes, falls, or other harm that doesn't involve an attack roll."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
