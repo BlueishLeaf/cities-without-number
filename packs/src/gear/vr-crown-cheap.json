@@ -1,12 +1,12 @@
 {
-  "_id": "cyberdoc-kit",
-  "name": "Cyberdoc Kit",
+  "_id": "vr-crown-cheap",
+  "name": "VR crown, cheap",
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "A portable kit with all the tools needed for maintaining cyberware, albeit the maintenance supplies cost extra. In a pinch, this kit can be used to implant or remove cyberware, though few would want to risk using such rudimentary tools. The kit can serve as a medkit at need.",
-    "cost": 500,
-    "encumbrance": 2
+    "description": "A cheap headset for a VR addict or a hacker too poor for a cranial jack",
+    "cost": 50,
+    "encumbrance": 1
   },
   "effects": [],
   "folder": null,

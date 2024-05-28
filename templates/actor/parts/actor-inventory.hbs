@@ -109,7 +109,11 @@
       <h4>{{gear.system.quantity}}</h4>
     </div>
     <div class="item-stats">
-      <h4>{{gear.system.encumbrance}}</h4>
+      {{#if gear.system.wearable}}
+        <h4 title="This item has no encumbrance while worn">{{gear.system.encumbrance}}/0</h4>
+      {{else}}
+        <h4>{{gear.system.encumbrance}}</h4>
+      {{/if}}
     </div>
     <div class="item-stats">
       <input class="readiable" data-item-id="{{gear._id}}" type="checkbox" {{isChecked gear.system.readied}}/>

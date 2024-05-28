@@ -1,0 +1,26 @@
+{
+  "_id": "kit-basic-tools",
+  "name": "Kit, Basic Tools",
+  "type": "gear",
+  "img": "icons/equipment/hand/gauntlet-armored-black.webp",
+  "system": {
+    "description": "These bundles of gear are carefully packed for minimal weight. Toolkits give a tech the gear they need for basic repairs and construction, while medical kits provide first aid implements. Cyberdoc kits contain everything medical kits do, as well as gear for cyber maintenance or even emergency implantation. Survival kits are for badlands operations, with water filtration, fire- making tools, and other such gear for extended wilderness stays.",
+    "cost": 100,
+    "encumbrance": 2
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -174,7 +174,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     context.items.forEach(item => {
       if (item.system.readied !== undefined) {
-        if (item.system.readied) {
+        if (item.system.readied && !item.system.wearable) {
           context.system.encumbrance.readied.value += item.system.encumbrance * item.system.quantity;
         } else {
           context.system.encumbrance.stowed.value += item.system.encumbrance * item.system.quantity;

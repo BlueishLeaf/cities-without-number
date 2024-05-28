@@ -308,7 +308,8 @@
         "base",
         "item",
         "buyable"
-      ]
+      ],
+      "wearable": false
     },
     "weapon": {
       "templates": [
