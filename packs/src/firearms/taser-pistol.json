@@ -2,7 +2,7 @@
   "_id": "taser-pistol",
   "name": "Taser Pistol",
   "type": "weapon",
-  "img": "icons/weapons/guns/gun-purple.webp",
+  "img": "icons/weapons/guns/gun-red.webp",
   "system": {
     "description": "<b>Taser pistols</b> cover a family of ranged non-lethal weapons small and light enough to carry concealed. Most rely on tried-and-true electrical shocks to drop a target; they inflict non-lethal hit point damage and cannot make Traumatic Hits.",
     "cost": 500,
@@ -13,7 +13,7 @@
       "max": 15
     },
     "attribute": "dex",
-    "skill": "Shoot",
+    "skill": "shoot",
     "isBurstFireable": false,
     "magazine": {
       "value": 2,

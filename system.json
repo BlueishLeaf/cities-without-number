@@ -87,6 +87,15 @@
       "flags": {}
     },
     {
+      "name": "armor-accessories",
+      "label": "Armor Accessories",
+      "system": "cities-without-number",
+      "path": "packs/armor-accessories.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "cyberdecks",
       "label": "Cyberdecks",
       "system": "cities-without-number",
@@ -132,19 +141,91 @@
       "flags": {}
     },
     {
-      "name": "mods",
-      "label": "Mods",
+      "name": "armor-mods",
+      "label": "Armor Mods",
       "system": "cities-without-number",
-      "path": "packs/mods.db",
+      "path": "packs/armor-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "weapons",
-      "label": "Weapons",
+      "name": "weapon-mods",
+      "label": "Weapon Mods",
       "system": "cities-without-number",
-      "path": "packs/weapons.db",
+      "path": "packs/weapon-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyber-mods",
+      "label": "Cyber Mods",
+      "system": "cities-without-number",
+      "path": "packs/cyber-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "drone-mods",
+      "label": "Drone Mods",
+      "system": "cities-without-number",
+      "path": "packs/drone-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "vehicle-mods",
+      "label": "Vehicle Mods",
+      "system": "cities-without-number",
+      "path": "packs/vehicle-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberdeck-mods",
+      "label": "Cyberdeck Mods",
+      "system": "cities-without-number",
+      "path": "packs/cyberdeck-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-mods",
+      "label": "Cyberware Mods",
+      "system": "cities-without-number",
+      "path": "packs/cyberware-mods.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "firearms",
+      "label": "Firearms",
+      "system": "cities-without-number",
+      "path": "packs/firearms.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "melee-and-thrown-weapons",
+      "label": "Melee & Thrown Weapons",
+      "system": "cities-without-number",
+      "path": "packs/melee-and-thrown-weapons.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "heavy-weapons",
+      "label": "Heavy Weapons",
+      "system": "cities-without-number",
+      "path": "packs/heavy-weapons.db",
       "type": "Item",
       "private": false,
       "flags": {}

@@ -2,7 +2,7 @@
   "_id": "combat-rifle",
   "name": "Combat Rifle",
   "type": "weapon",
-  "img": "icons/weapons/guns/gun-purple.webp",
+  "img": "icons/weapons/guns/gun-red.webp",
   "system": {
     "description": "<b>Rifles and combat rifles</b> are similar semi-automatic tech, though the latter is equipped with a burst-fire selector and usually trades the range of a heavier caliber for the ability to carry more ammunition.",
     "cost": 2500,
@@ -13,7 +13,7 @@
       "max": 300
     },
     "attribute": "dex",
-    "skill": "Shoot",
+    "skill": "shoot",
     "isBurstFireable": true,
     "trauma": {
       "die": "1d8",

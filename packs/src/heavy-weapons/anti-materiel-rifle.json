@@ -1,0 +1,48 @@
+{
+  "_id": "anti-materiel-rifle",
+  "name": "Anti Materiel Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
+  "system": {
+    "description": "<b>Anti-materiel rifles</b> have encountered something of a renaissance with the ubiquity of armored drones and heavily cybered combatants. While not suitable for downing tanks or other heavily armored vehicles, their 20mm rounds are more than sufficient to punch through lighter armor plating, concrete walls, and full body conversion cyborgs. Use of a secure firing rest is recommended for best results.",
+    "cost": 8000,
+    "encumbrance": 3,
+    "damageFormula": "3d8 + @attributeMod",
+    "range": {
+      "effective": 1000,
+      "max": 2000
+    },
+    "attribute": "dex",
+    "skill": "Shoot",
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d12",
+      "rating": 3
+    },
+    "magazine": {
+      "value": 5,
+      "max": 5
+    },
+    "shock": null,
+    "mounted": {
+      "power": 0,
+      "mass": 1,
+      "minimumSize": "Medium"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "sniper-rifle",
+  "name": "Sniper Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-red.webp",
+  "system": {
+    "description": "<b>Sniper rifles</b> are often nothing more than bolt-ac- tion rifles with expensive tuning and optics. If not fired from a rest in a prepared position, a sniper rifle's statistics are the same as a normal rifle.",
+    "cost": 3000,
+    "encumbrance": 2,
+    "damageFormula": "2d8 + @attributeMod",
+    "range": {
+      "effective": 1000,
+      "max": 2000
+    },
+    "attribute": "dex",
+    "skill": "shoot",
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d10",
+      "rating": 4
+    },
+    "magazine": {
+      "value": 1,
+      "max": 1
+    },
+    "shock": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

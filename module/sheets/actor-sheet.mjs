@@ -536,7 +536,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         incompatibleAccessories.forEach(incompatibleAccessory => itemUpdates.push({ _id: incompatibleAccessory._id, system: { readied: false } }))
       }
     }
-    console.info(itemUpdates)
     Item.updateDocuments(itemUpdates, { parent: this.actor }).then(updatedItems => console.log("Updated items", updatedItems));
   }
 

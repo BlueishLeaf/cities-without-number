@@ -300,26 +300,40 @@ export class CitiesWithoutNumberActor extends Actor {
 
   rollWeapon(weapon, isNonLethal, isBurstFire, rollData) {
     console.log(`Rolling [${weapon.type}] ${weapon.name}`, rollData);
-    const finalAttackRollFormula = isBurstFire
-      ? `${weapon.system.rollFormula} + ${CONFIG.CWN.system.burstFireBonus}`
-      : weapon.system.rollFormula;
-    const attackRoll = new Roll(finalAttackRollFormula, rollData);
-    const finalDamageFormula = isBurstFire
-      ? `${weapon.system.damageFormula} + ${CONFIG.CWN.system.burstFireBonus}`
-      : weapon.system.damageFormula;
-    const damageRoll = new Roll(finalDamageFormula, rollData);
-    const rollRenderPromises = [attackRoll.render(), damageRoll.render()];
+    const rollRenderPromises = [];
 
-    // Only roll trauma die if the weapon has one and the attack isn't non-lethal
-    if (!isNonLethal && weapon.system.trauma) {
-      const traumaRoll = new Roll(weapon.system.trauma.die, rollData);
-      rollRenderPromises.push(traumaRoll.render());
+    if (weapon.system.rollFormula) {
+      const finalAttackRollFormula = isBurstFire
+        ? `${weapon.system.rollFormula} + ${CONFIG.CWN.system.burstFireBonus}`
+        : weapon.system.rollFormula;
+      const attackRoll = new Roll(finalAttackRollFormula, rollData);
+      rollRenderPromises[0] = attackRoll.render();
     }
 
-    Promise.all(rollRenderPromises).then(rollRenders => {
-      const messageData = ChatUtils.initializeChatData(this, weapon);
-      const content = ChatRenders.buildChatContentForAttackRoll(weapon, isNonLethal, damageRoll, rollRenders);
-      ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
-    });
+    let damageRoll;
+    if (weapon.system.damageFormula) {
+      const finalDamageFormula = isBurstFire
+        ? `${weapon.system.damageFormula} + ${CONFIG.CWN.system.burstFireBonus}`
+        : weapon.system.damageFormula;
+      damageRoll = new Roll(finalDamageFormula, rollData);
+      rollRenderPromises[1] = damageRoll.render();
+    }
+
+    // Only roll trauma die if the weapon has one and the attack isn't non-lethal
+    if (!isNonLethal && weapon.system.trauma && weapon.system.damageFormula) {
+      const traumaRoll = new Roll(weapon.system.trauma.die, rollData);
+      rollRenderPromises[2] = traumaRoll.render();
+    }
+
+    if (rollRenderPromises.length > 0) {
+      Promise.all(rollRenderPromises).then(rollRenders => {
+        const messageData = ChatUtils.initializeChatData(this, weapon);
+        const content = ChatRenders.buildChatContentForAttackRoll(weapon, isNonLethal, damageRoll, rollRenders);
+        ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
+      });
+    } else {
+      // If there is no roll to be made, simply output the weapon description
+      weapon.roll();
+    }
   }
 }

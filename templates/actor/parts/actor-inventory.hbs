@@ -31,7 +31,7 @@
       <h4>{{weapon.system.encumbrance}}</h4>
     </div>
     <div class="item-stats">
-      <input type="checkbox" name="weapon.system.readied"/>
+      <input class="readiable" data-item-id="{{weapon._id}}" type="checkbox" {{isChecked weapon.system.readied}}/>
     </div>
     <div class="item-controls">
       <a class="item-control item-refresh" title="Reload Magazine"><i class="fas fa-arrows-rotate"></i></a>

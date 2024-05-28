@@ -2,12 +2,12 @@
   "_id": "unarmed",
   "name": "Unarmed",
   "type": "weapon",
-  "img": "icons/weapons/guns/gun-purple.webp",
+  "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
   "system": {
     "description": "",
     "damageFormula": "1d2 + @attributeMod",
     "attribute": "str",
-    "skill": "Punch",
+    "skill": "punch",
     "range": {
       "effective": 1,
       "max": 1

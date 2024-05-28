@@ -1,27 +1,27 @@
 {
-  "_id": "light-pistol",
-  "name": "Light Pistol",
+  "_id": "heavy-pistol",
+  "name": "Heavy Pistol",
   "type": "weapon",
-  "img": "icons/weapons/guns/gun-purple.webp",
+  "img": "icons/weapons/guns/gun-red.webp",
   "system": {
     "description": "<b>Light and heavy pistols</b> are categorized by the caliber of the bullet they fire. Some operators prefer the low recoil and high mag capacity possible with a low-caliber round, while others like to have a little more certainty in dropping the targets they hit.",
     "cost": 200,
     "encumbrance": 1,
-    "damageFormula": "1d6 + @attributeMod",
+    "damageFormula": "1d8 + @attributeMod",
     "range": {
       "effective": 10,
-      "max": 20
+      "max": 100
     },
     "attribute": "dex",
-    "skill": "Shoot",
+    "skill": "shoot",
     "isBurstFireable": false,
     "trauma": {
-      "die": "1d8",
-      "rating": 2
+      "die": "1d6",
+      "rating": 3
     },
     "magazine": {
-      "value": 10,
-      "max": 10
+      "value": 8,
+      "max": 8
     },
     "shock": null
   },

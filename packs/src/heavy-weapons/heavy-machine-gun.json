@@ -1,15 +1,15 @@
 {
-  "_id": "anti-materiel-rifle",
-  "name": "Anti Materiel Rifle",
+  "_id": "heavy-machine-gun",
+  "name": "Heavy Machine Gun",
   "type": "weapon",
-  "img": "icons/weapons/guns/gun-purple.webp",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
   "system": {
-    "description": "<b>Anti-materiel rifles</b> have encountered something of a renaissance with the ubiquity of armored drones and heavily cybered combatants. While not suitable for downing tanks or other heavily armored vehicles, their 20mm rounds are more than sufficient to punch through lighter armor plating, concrete walls, and full body conversion cyborgs. Use of a secure firing rest is recommended for best results.",
-    "cost": 8000,
+    "description": "<b>Heavy machine guns</b> are old tech, but reliable. Without a fixed firing position or vehicle mount, how- ever, their recoil makes them almost uncontrollable. Due to the mass of lead involved in firing an HMG, each \"round\" of its ammunition costs $100 and counts as a full item of encumbrance.",
+    "cost": 10000,
     "encumbrance": 3,
-    "damageFormula": "3d8 + @attributeMod",
+    "damageFormula": "3d6 + @attributeMod",
     "range": {
-      "effective": 1000,
+      "effective": 500,
       "max": 2000
     },
     "attribute": "dex",
@@ -20,8 +20,8 @@
       "rating": 3
     },
     "magazine": {
-      "value": 5,
-      "max": 5
+      "value": 10,
+      "max": 10
     },
     "shock": null,
     "mounted": {

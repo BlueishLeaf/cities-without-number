@@ -1,0 +1,43 @@
+{
+  "_id": "big-sword",
+  "name": "Big Sword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard.webp",
+  "system": {
+    "description": "<b>Knives, clubs, swords, and other simple melee weapons</b> are available almost anywhere on the street. Par - ticularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
+    "cost": 500,
+    "encumbrance": 2,
+    "damageFormula": "2d6 + @attributeMod",
+    "attribute": "str",
+    "skill": "stab",
+    "range": {
+      "effective": 1,
+      "max": 1
+    },
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d8",
+      "rating": 3
+    },
+    "shock": {
+      "damage": 2,
+      "threshold": 15
+    },
+    "magazine": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

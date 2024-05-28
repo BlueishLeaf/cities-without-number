@@ -1,0 +1,40 @@
+{
+  "_id": "grenade-frag",
+  "name": "Grenade, Frag",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/grenade-round.webp",
+  "system": {
+    "description": "<b>Frag grenades</b> inflict 2d6 damage on all victims in range, plus the chance for a Traumatic Hit. An Evasion save can halve a frag grenade's damage, and each point of melee AC the target has above 14 reduces the final damage total by one point, possibly down to zero.",
+    "cost": 100,
+    "encumbrance": 1,
+    "damageFormula": "2d6 + @attributeMod",
+    "attribute": "dex",
+    "skill": "stab",
+    "range": {
+      "effective": 10,
+      "max": 30
+    },
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d8",
+      "rating": 2
+    },
+    "shock": null,
+    "magazine": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
