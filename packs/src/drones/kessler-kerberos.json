@@ -1,0 +1,56 @@
+{
+  "_id": "GPLTl3Q6gNFbKwVX",
+  "name": "Kessler Kerberos",
+  "type": "drone",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "health": {
+      "value": 25,
+      "max": 25
+    },
+    "biography": "Built on a large motorized tricycle chassis, the Kessler Kerberos is one of the largest ground drones in general production. Most serve as urban patrol units for municipal governments, though their heavy armor and sturdy construction have endeared them to operators in need of a heavy gun platform.",
+    "traumaTarget": {
+      "base": 8,
+      "total": 8
+    },
+    "movement": {
+      "speed": 20,
+      "type": "ground"
+    },
+    "hardpoints": {
+      "value": 0,
+      "max": 3
+    },
+    "armorClass": {
+      "melee": 18,
+      "ranged": 18
+    },
+    "cargoEncumbrance": {
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "cost": 15000,
+    "fittings": {
+      "value": 0,
+      "max": 6
+    },
+    "encumbrance": 99
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "_id": "DSHWEDyBxfgKu6Ge",
-  "name": "Additional Fitting",
+  "_id": "4qCLm4D9yyntpPzF",
+  "name": "Additional Hardpoint",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Careful optimization of power lines and chassis reinforcement allows for adding an additional fitting to the drone. Man-portable drones add one point of Encumbrance, though this doesn't affect their maximum hardpoint weapon size. The cost is 50% of the drone's base cost.",
+    "description": "By rearranging wiring, adding mass, and overriding safety protocols, an additional hardpoint can be added to a drone. This mod adds one point of Encumbrance to portable drones, though this doesn't affect their maximum weapon size. The cost is 50% of the drone's base cost plus the weapon.",
     "costPercentage": 50,
     "requiredSkills": "Fix-1 & Drive-1"
   },

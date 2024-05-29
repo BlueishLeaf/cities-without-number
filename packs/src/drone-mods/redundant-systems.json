@@ -1,12 +1,12 @@
 {
-  "_id": "DSHWEDyBxfgKu6Ge",
-  "name": "Additional Fitting",
+  "_id": "Pfh4kpvtHBEKbPem",
+  "name": "Redundant Systems",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Careful optimization of power lines and chassis reinforcement allows for adding an additional fitting to the drone. Man-portable drones add one point of Encumbrance, though this doesn't affect their maximum hardpoint weapon size. The cost is 50% of the drone's base cost.",
+    "description": "Careful duplication of critical systems increases the drone's hit points by 25% of its unmodified base score, rounded up. The extra mass increases the Encumbrance of man-portable drones by 1. The cost is 50% of the drone's base cost.",
     "costPercentage": 50,
-    "requiredSkills": "Fix-1 & Drive-1"
+    "requiredSkills": "Fix-2 & Drive-2"
   },
   "effects": [],
   "folder": null,

@@ -1,29 +1,29 @@
 {
-  "_id": "KrRdILbweQC0zIiD",
-  "name": "Mouse",
+  "_id": "xT8seaBQiJvZO3Rj",
+  "name": "BanTech Sunfish",
   "type": "drone",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "health": {
-      "value": 1,
-      "max": 1
+      "value": 8,
+      "max": 8
     },
-    "biography": "Little more than a fist-sized drive core with wheels, Shintetsu's Mouse is about as small as a functional drone can get with its low-cost technology. Incapable of supporting more than its basic functionality, it still provides eyes and ears for a pilot in a cheap, portable format.",
+    "biography": "BanTech has tried to make an opening in the aquatic drone market with the Sunfish, an easily-portable swimming drone that can still mount a few useful loadout options.",
     "traumaTarget": {
       "base": 6,
       "total": 6
     },
     "movement": {
-      "speed": 5,
-      "type": "ground"
+      "speed": 10,
+      "type": "swim"
     },
     "hardpoints": {
       "value": 0,
       "max": 0
     },
     "armorClass": {
-      "melee": 13,
-      "ranged": 13
+      "melee": 15,
+      "ranged": 15
     },
     "cargoEncumbrance": {
       "stowed": {
@@ -31,12 +31,12 @@
         "max": 0
       }
     },
-    "cost": 500,
+    "cost": 1000,
     "fittings": {
       "value": 0,
-      "max": 0
+      "max": 3
     },
-    "encumbrance": 1
+    "encumbrance": 3
   },
   "effects": [],
   "folder": null,

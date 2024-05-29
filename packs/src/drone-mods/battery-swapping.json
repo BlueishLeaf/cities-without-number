@@ -1,11 +1,11 @@
 {
-  "_id": "DSHWEDyBxfgKu6Ge",
-  "name": "Additional Fitting",
+  "_id": "npMIlGflhPz452ZD",
+  "name": "Battery Swapping",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Careful optimization of power lines and chassis reinforcement allows for adding an additional fitting to the drone. Man-portable drones add one point of Encumbrance, though this doesn't affect their maximum hardpoint weapon size. The cost is 50% of the drone's base cost.",
-    "costPercentage": 50,
+    "description": "Replacing proprietary battery systems with off-the-shelf models allows man-portable drones to have their battery swapped with a minute of work. Backup batteries cost 10% of the drone's base cost and count as Enc 1 items, and this mod itself costs 10% of the drone's base cost.",
+    "costPercentage": 10,
     "requiredSkills": "Fix-1 & Drive-1"
   },
   "effects": [],
