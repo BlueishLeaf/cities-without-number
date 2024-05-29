@@ -1,0 +1,25 @@
+{
+  "_id": "CZKaUuMZAPZ3r2z0",
+  "name": "Ammo Supply",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "An automated ammo feeder is added to the drone. Two full magazines are added to one mounted weapon's allotment, or one magazine to two weapons. This fitting can be added more than once.",
+    "costPercentage": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -20,7 +20,12 @@
       "max": 2
     },
     "shock": null,
-    "trauma": null
+    "trauma": null,
+    "mounted": {
+      "power": 0,
+      "mass": 1,
+      "minimumSize": "medium"
+    }
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,25 @@
+{
+  "_id": "IGbvjI2MPz1aIUwz",
+  "name": "Assisted Boost Burner",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "The drone is equipped with reactive chemical booster that can be ignited to give it a very brief burst of tremendous speed. When activated as a Move action, the burner launches the drone up to 500 meters in a straight line. The boost is not precise enough to use as an aimed weapon, but solid obstacles in front of the drone will suffer half the drone's HP in damage and inflict all of theirs on the drone. The burner functions only once before it require a scene to regenerate its charge.",
+    "costPercentage": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

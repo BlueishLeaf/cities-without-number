@@ -1,0 +1,25 @@
+{
+  "_id": "p33tIsxS2Azju7p7",
+  "name": "Manipulator Tendrils",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "One set of manipulators is added to the drone, whether a mechanical claw, an articulated metal tendril, or some other device. With a Main Action command from the pilot, it can function as a single human hand with an effective Strength of 12, but it cannot effectively be used for an attack or to lift anything heavier than the drone itself. The fitting can carry things for short distances, but to haul weight any real distance the Cargo Space fitting is required. This fitting can be added more than once if a pair of \"hands\" are needed.",
+    "costPercentage": 20
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -24,8 +24,8 @@
     "shock": null,
     "mounted": {
       "power": 0,
-      "mass": 2,
-      "minimumSize": "Medium"
+      "mass": 1,
+      "minimumSize": "medium"
     }
   },
   "effects": [],

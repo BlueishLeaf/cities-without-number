@@ -1,0 +1,25 @@
+{
+  "_id": "lcLvXmtLaHl68yQa",
+  "name": "Enhanced Structure",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "The drone's maximum hit points increase by 25% of its unmodified base, rounded up. As with Improved Armor, this fitting is ineffective on drones that aren't man-portable.",
+    "costPercentage": 25
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

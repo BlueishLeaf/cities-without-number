@@ -13,7 +13,7 @@
       "max": 4000
     },
     "attribute": "dex",
-    "skill": "Shoot",
+    "skill": "shoot",
     "isBurstFireable": false,
     "trauma": {
       "die": "1d10",
@@ -25,9 +25,9 @@
     },
     "shock": null,
     "mounted": {
-      "power": 0,
+      "power": 1,
       "mass": 1,
-      "minimumSize": "Medium"
+      "minimumSize": "medium"
     }
   },
   "effects": [],

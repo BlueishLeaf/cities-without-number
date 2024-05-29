@@ -1,0 +1,25 @@
+{
+  "_id": "Y1ygdyF2Hk0DyTZK",
+  "name": "Ammo Caddy",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "A specialized form of cargo space, this drone is able to carry and dispense substantial amounts of ammunition to adjacent allies. It can hold up to 6 fully-loaded magazines in quick-release clips that can be grabbed as On Turn actions by an ally. The clips remain locked for strangers. This fitting can be taken up to once per two points of the drone's Encumbrance, rounded up.",
+    "costPercentage": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

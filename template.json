@@ -342,7 +342,7 @@
       "mounted": {
         "power": 0,
         "mass": 0,
-        "minimumSize": "Medium"
+        "minimumSize": "medium"
       }
     },
     "skill": {

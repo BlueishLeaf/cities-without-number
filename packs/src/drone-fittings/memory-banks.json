@@ -1,0 +1,25 @@
+{
+  "_id": "uhLcpWQldQMNvnyH",
+  "name": "Memory Banks",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "The drone has two units of cyberdeck Memory added to it. While this Memory can be used to store hacker programs or datafiles, it also has room to record up to a week of audiovisual data per unit used. This fitting can be added more than once.",
+    "costPercentage": 10
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "6gJFpvo1WxzLDCWQ",
+  "name": "Improved Targeting Logic",
+  "type": "fitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "This unit allows a skilled drone pilot to tweak the combat logic of its onboard weaponry. The drone's attack gains a hit bonus equal to the pilot's Drive or Program skill level when firing autonomously; no bonus is given if the pilot is in direct control.",
+    "costPercentage": 20
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

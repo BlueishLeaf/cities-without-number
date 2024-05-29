@@ -23,7 +23,12 @@
       "value": 15,
       "max": 15
     },
-    "shock": null
+    "shock": null,
+    "mounted": {
+      "power": 0,
+      "mass": 1,
+      "minimumSize": "medium"
+    }
   },
   "effects": [],
   "folder": null,
