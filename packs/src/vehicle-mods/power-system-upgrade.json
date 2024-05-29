@@ -1,0 +1,27 @@
+{
+  "_id": "fhUHtmHFlyC8LZlr",
+  "name": "Power System Upgrade",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "Increase the Power rating of the vehicle by 2 points for Small vehicles, 3 for Medium, and 4 for Large.",
+    "costPercentage": 25,
+    "specialTechRequired": 1,
+    "requiredSkills": "Fix-2/Drive-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

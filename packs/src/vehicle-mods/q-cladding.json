@@ -1,0 +1,27 @@
+{
+  "_id": "zosDb29D0vAtD2MQ",
+  "name": "Q-Cladding",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "Disguise the vehicle as another vehicle of the same general type, and hide its mounted weaponry. Replacing the disguise after weapons are deployed takes five minutes.",
+    "costPercentage": 20,
+    "specialTechRequired": 0,
+    "requiredSkills": "Fix-1/Drive-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

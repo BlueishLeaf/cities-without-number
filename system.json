@@ -42,10 +42,19 @@
       "flags": {}
     },
     {
-      "name": "npcs",
-      "label": "Common NPCs",
+      "name": "sample vehicles",
+      "label": "Sample Vehicles",
       "system": "cities-without-number",
-      "path": "packs/npcs.db",
+      "path": "packs/sample-vehicles.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "sample-npcs",
+      "label": "Sample NPCs",
+      "system": "cities-without-number",
+      "path": "packs/sample-npcs.db",
       "type": "Actor",
       "private": false,
       "flags": {}

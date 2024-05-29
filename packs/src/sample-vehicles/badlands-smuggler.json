@@ -1,0 +1,176 @@
+{
+  "_id": "2fCNLl748BwZaFp3",
+  "name": "Badlands Smuggler",
+  "type": "vehicle",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "health": {
+      "value": 30,
+      "max": 30
+    },
+    "biography": "Pieced together from one of a variety of common light truck frames, this smuggler’s buggy is cheap and tough. Weapons are forsaken for cargo space, but night vision sensors allow for dark running past contested borders.",
+    "traumaTarget": {
+      "base": 12,
+      "total": 12
+    },
+    "movement": {
+      "speed": 0,
+      "type": "ground"
+    },
+    "hardpoints": {
+      "value": 0,
+      "max": 1
+    },
+    "armorClass": {
+      "melee": 11,
+      "ranged": 11
+    },
+    "cargoEncumbrance": {
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "cost": 14000,
+    "armor": 6,
+    "maxCrew": 5,
+    "power": {
+      "value": 2,
+      "max": 3
+    },
+    "mass": {
+      "value": 7,
+      "max": 7
+    },
+    "size": "M"
+  },
+  "items": [
+    {
+      "name": "Advanced Sensors",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
+        "cost": 8000,
+        "power": 1,
+        "mass": 0,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Cargo Space",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken multiple times. Each time it adds 50 kg of protected cargo space for Small vehicles, 500 kg for Medium ones, and 2 metric tons for Large ones.",
+        "cost": 0,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    },
+    {
+      "name": "Smuggler's Hold",
+      "type": "vehicleFitting",
+      "img": "icons/tools/smithing/tongs-steel-grey.webp",
+      "system": {
+        "description": "This fitting can be taken more than once, and adds 10 kg of concealed cargo space in Small vehicles, 100 kg in Medium ones, and 400 kg in Large ones. It can be detected only by taking the vehicle apart or by an acute, careful inspection with a difficulty 12 Wis/Notice or Wis/ Drive skill check.",
+        "cost": 1000,
+        "power": 0,
+        "mass": 1,
+        "minimumSize": "small"
+      },
+      "flags": {},
+      "sort": 0
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -5,8 +5,8 @@
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "health": {
-      "value": 36,
-      "max": 36
+      "value": 35,
+      "max": 35
     },
     "biography": "The \"Close Air Support Rotorwing Aircraft\" of corporate R&D comes in a half-dozen different configurations, from multirotor helicopters to rotor-in-wing strike craft. Light and vicious, they're favored by city SWAT teams who need military-grade firepower capable of maneuvering through city airspace. When a CASRA shows up, minigun rounds are seldom far behind.",
     "traumaTarget": {
