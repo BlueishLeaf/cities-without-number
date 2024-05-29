@@ -1,0 +1,28 @@
+{
+  "_id": "titan-gun-system",
+  "name": "Titan Gun System",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "Usable only by full body conver- sion cyborgs or subjects with a Strength score of 18, this mount allows the installation of any man-portable Heavy weapon such as those on page 57. The user counts as a stable firing rest, and the weapon has two integral magazines of ammo, though it can be loaded by hand as well. The specific weapon mounted can be swapped during maintenance.",
+    "cost": 100000,
+    "subType": "body",
+    "concealment": "sight",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

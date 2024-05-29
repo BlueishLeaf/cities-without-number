@@ -1,0 +1,28 @@
+{
+  "_id": "skillplug-jack-ii",
+  "name": "Skillplug Jack II",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "This improved plug jack allows use of either an intellectual skillplug or one requiring physical expertise, up to level-1.",
+    "cost": 25000,
+    "subType": "nerve",
+    "concealment": "touch",
+    "systemStrain": 0.5
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

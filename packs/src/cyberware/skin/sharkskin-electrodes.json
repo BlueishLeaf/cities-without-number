@@ -1,0 +1,28 @@
+{
+  "_id": "sharkskin-electrodes",
+  "name": "Sharkskin Electrodes",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "An implanted mesh of elec - trodes beneath the user's skin allows them to deliver debilitating shocks while grappling a target, even if both are heavily clothed. At the end of each round of grappling, the user inflicts 2d6 non-lethal electrical damage on anyone they grapple or who is grappling them. The shielding built into the cyber automatically negates non-le- thal electrical damage for the user and halves le- thal shocks.",
+    "cost": 20000,
+    "subType": "skin",
+    "concealment": "touch",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

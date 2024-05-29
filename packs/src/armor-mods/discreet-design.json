@@ -1,0 +1,27 @@
+{
+  "_id": "discreet-design",
+  "name": "Discreet Design",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "The armor is carefully tailored and adjusted to be less imposing. Obvious armor is made Subtle by this mod, though it suffers a -2 penalty to its ranged and melee AC. The armor retains its original bulk, but its lines, drapes, and fabrics now appear to be particularly voluminous fashion couture rather than protective equipment.",
+    "cost": 5000,
+    "specialTechRequired": 1,
+    "requiredSkills": "Fix-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

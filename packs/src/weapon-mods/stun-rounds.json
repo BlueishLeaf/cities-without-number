@@ -1,0 +1,27 @@
+{
+  "_id": "stun-rounds",
+  "name": "Stun Rounds",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "Usable only on firearms, the weapon's barrel and firing mechanism is altered to accept soft, electrically-charged stun rounds. The fire- arm's range is halved, it takes a -2 penalty to dam- age, and it loses its Trauma Die, but all damage it inflicts is treated as non-lethal. Stun rounds do no significant harm to inanimate objects.",
+    "cost": 5000,
+    "specialTechRequired": 0,
+    "requiredSkills": "Fix-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

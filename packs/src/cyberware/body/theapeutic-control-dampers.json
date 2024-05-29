@@ -1,0 +1,28 @@
+{
+  "_id": "therapeutic-control-dampers",
+  "name": "Therapeutic Control Dampers",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "A set of customized medical and therapeutic implants are used to control the side-effects of a partially-successful cyberware implant. For each implantation of this system, the user can choose to ignore one implant side-effect they currently suffer. The skill check to implant this system can fail, but it never induc- es any side effects on its own.",
+    "cost": 25000,
+    "subType": "body",
+    "concealment": "medical",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

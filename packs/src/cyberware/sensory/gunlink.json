@@ -1,0 +1,28 @@
+{
+  "_id": "gunlink",
+  "name": "Gunlink",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "Hardwired control points interface with the onboard targeting systems of most modern firearms. When using a modern firearm, the PC ignores range penalties and negates up to 2 points of hit penalties for cover, concealment, or prone targets. Once per scene, as an Instant action, they can reroll a missed attack roll with a gun.",
+    "cost": 25000,
+    "subType": "sensory",
+    "concealment": "touch",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

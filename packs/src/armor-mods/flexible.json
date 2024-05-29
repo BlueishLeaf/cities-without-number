@@ -1,0 +1,27 @@
+{
+  "_id": "flexible",
+  "name": "Flexible",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "Bulky armor is carefully cut and tailored to allow a wearer the optimal range of movement. The Heavy quality of a suit of armor is removed.",
+    "cost": 10000,
+    "specialTechRequired": 1,
+    "requiredSkills": "Fix-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

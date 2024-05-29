@@ -1,0 +1,28 @@
+{
+  "_id": "omnihand",
+  "name": "Omnihand",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "A full array of small mechanical and elec- tronic tools are folded into this cybernetic hand. The user is never without the tools for relevant skill checks, and once per day as an Instant action can gain +1 on any skill check involving the om - nihand's tool use. As an improvised weapon, the tools do damage as a knife.",
+    "cost": 10000,
+    "subType": "limb",
+    "concealment": "touch",
+    "systemStrain": 0.25
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "olympus",
+  "name": "Olympus",
+  "type": "drug",
+  "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
+  "system": {
+    "description": "A \"respectable\" combat chem used by certain units of corporate security, Olympus numbs pain, sharpens mental focus, and slows down instinc- tive panic or rush instincts, allowing a calm ob- servation of the battlefield. Users can reroll their first failed Morale check in a fight and gain a +2 bonus to hit rolls. One dose of Olympus lasts for one scene, and adds one System Strain at its end.",
+    "cost": 100,
+    "requiredSkills": "Heal-0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

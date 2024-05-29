@@ -214,7 +214,7 @@ export class CitiesWithoutNumberActor extends Actor {
   openWeaponDialog(weapon) {
     const abilityOptions = Object.entries(this.system.abilities).map((k, _v) => `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
     const skills = this.items.filter(item => item.type === "skill");
-    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name ? "selected" : ""}>${skill.name}</option>\n`);
+    const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name.toLowerCase() ? "selected" : ""}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, abilityOptions, skillOptions),

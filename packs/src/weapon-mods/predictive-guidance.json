@@ -1,0 +1,27 @@
+{
+  "_id": "predictive-guidance",
+  "name": "Predictive Guidance",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "An entire onboard computing core is augmented by advanced materials and cutting-edge kinetic analysis to increase the odds of landing a lethal blow. The weapon gains a +1 bonus to hit rolls, damage, and Shock. The user must be connected via a Gunlink or a Cranial Jack cybersystem.",
+    "cost": 15000,
+    "specialTechRequired": 2,
+    "requiredSkills": "Fix-3"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

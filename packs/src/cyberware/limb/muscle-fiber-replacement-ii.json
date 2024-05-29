@@ -1,0 +1,28 @@
+{
+  "_id": "muscle-fiber-replacement-II",
+  "name": "Muscle Fiber Replacement II",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "The subject gains a Strength score of 18, and can smash through standard interior doors or equivalent barriers as a Move action.",
+    "cost": 200000,
+    "subType": "limb",
+    "concealment": "sight",
+    "systemStrain": 2
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

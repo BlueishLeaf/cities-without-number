@@ -1,0 +1,28 @@
+{
+  "_id": "iron-hand-aegis",
+  "name": "Iron Hand Aegis",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "Absorption plates and kinetic abla- tion units are implanted in the user's arms and linked with a reactive ballistic calculator. Once per scene, as an Instant action, the user can de- flect a successful ranged bullet, arrow, or thrown weapon attack, including burst or suppressive fire. Surprise attacks cannot be deflected this way, nor can melee attacks or explosives.",
+    "cost": 40000,
+    "subType": "limb",
+    "concealment": "touch",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "eye-mod-dazzler",
+  "name": "Eye Mod/Dazzler",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "This mod can emit a dazzling strobe of intense light, dazing and disorient- ing those standing up to five meters in front of the user. The strobe is triggered up to once per round as an On Turn action and adds one Sys- tem Strain. Victims without eye protection must make a Physical saving throw or take a -4 penalty to their AC and hit rolls for the next 1d6 rounds. A victim can be targeted by this dazzling only once per scene.",
+    "cost": 15000,
+    "subType": "head",
+    "concealment": "medical",
+    "systemStrain": 0.5
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

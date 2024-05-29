@@ -1,0 +1,28 @@
+{
+  "_id": "funes-complex",
+  "name": "Funes Complex",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "A synthetic eidetic memory is grant- ed by this implant, with formalized bodies of knowledge easily cross-referenced and recollect- ed. Once per day, as an Instant action, reroll any failed Int-based skill check. This memory can be difficult to control, however, and unwanted allusions can overwhelm the desired datum. If the user rolls a natural 2 on any Int skill check, it automatically fails and cannot be recovered by any rerolling ability.",
+    "cost": 40000,
+    "subType": "head",
+    "concealment": "medical",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "cyberears-pair",
+  "name": "Cyberears (pair)",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "While normal in appearance, touch re- veals the synthetic nature of these ears. Some owners prefer to style them in fanciful or unnat- ural ways. While the base model provides only normal human hearing, all are equipped with ear protection against loud noises. A pair of cy- berears or synthears halves the System Strain cost of ear implants.",
+    "cost": 10000,
+    "subType": "sensory",
+    "concealment": "touch",
+    "systemStrain": 0.25
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

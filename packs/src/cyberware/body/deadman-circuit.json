@@ -1,0 +1,28 @@
+{
+  "_id": "deadman-circuit",
+  "name": "Deadman Circuit",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "A common corporate implant to discourage kidnapping and warelegging. Any attempt to remove any of the user's cyber with- out the right access codes will fry that hardware unless a difficulty 13 Int/Heal skill check is made.",
+    "cost": 10000,
+    "subType": "body",
+    "concealment": "sight",
+    "systemStrain": 0.25
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

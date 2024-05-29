@@ -1,0 +1,28 @@
+{
+  "_id": "trajectory-optimization-node",
+  "name": "Trajectory Optimization Node",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "This cyber can calcu- late the optimal path for bypassing defenses and striking a target. Once per scene, as an Instant action, turn a missed hit roll into a success. Melee and unarmed attacks can be used as-is, but using this unit with a ranged attack requires an active Gunlink with the weapon.",
+    "cost": 50000,
+    "subType": "nerve",
+    "concealment": "medical",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

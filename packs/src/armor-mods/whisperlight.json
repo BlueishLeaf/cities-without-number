@@ -1,0 +1,27 @@
+{
+  "_id": "whisperlight",
+  "name": "Whisperlight",
+  "type": "mod",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "The armor's bulk is cut down and con- ventional materials are replaced with more ad- vanced composites. The armor's Encumbrance decreases by 1 point.",
+    "cost": 10000,
+    "specialTechRequired": 1,
+    "requiredSkills": "Fix-2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

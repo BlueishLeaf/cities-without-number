@@ -124,7 +124,7 @@
     },
     {
       "name": "vehicle-fittings",
-      "label": "Items",
+      "label": "Vehicle Fittings",
       "system": "cities-without-number",
       "path": "packs/vehicle-fittings.db",
       "type": "Item",
@@ -154,15 +154,6 @@
       "label": "Weapon Mods",
       "system": "cities-without-number",
       "path": "packs/weapon-mods.db",
-      "type": "Item",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "name": "cyber-mods",
-      "label": "Cyber Mods",
-      "system": "cities-without-number",
-      "path": "packs/cyber-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}

@@ -1,0 +1,28 @@
+{
+  "_id": "holdout-cavity",
+  "name": "Holdout Cavity",
+  "type": "cyberware",
+  "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+  "system": {
+    "description": "A biosculpted torso pocket allows for the air-tight, climate-controlled concealment of 2 Encumbrance worth of items inside the user's body and their easy access with a Main Action. Any given object stored can't be larger than a pis- tol or a tightly-folded suit of clothing, and the pocket's contents don't count against the user's Encumbrance limit. The pocket's signature is dis- guised against conventional scanning technology, and it cannot be detected without a manual strip search by a trained examiner.",
+    "cost": 10000,
+    "subType": "body",
+    "concealment": "medical",
+    "systemStrain": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
