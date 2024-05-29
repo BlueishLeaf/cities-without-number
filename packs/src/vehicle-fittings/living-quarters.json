@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "gJfUrL8aDTVfAJF1",
+  "name": "Living Quarters",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
+    "description": "Basic, cramped quarters are provided for sleeping, sanitation, and cooking for all crew. Permanent living in a vehicle costs and counts as a slum lifestyle, though occupants with the Ace Driver or Roamer Focus can treat it as middle-class for the same price.",
     "cost": 8000,
-    "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "power": 0,
+    "mass": 4,
+    "minimumSize": "large"
   },
   "effects": [],
   "folder": null,

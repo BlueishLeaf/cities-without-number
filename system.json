@@ -177,6 +177,15 @@
       "flags": {}
     },
     {
+      "name": "vehicle-weapons",
+      "label": "Vehicle Weapons",
+      "system": "cities-without-number",
+      "path": "packs/vehicle-weapons.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "cyberdeck-mods",
       "label": "Cyberdeck Mods",
       "system": "cities-without-number",

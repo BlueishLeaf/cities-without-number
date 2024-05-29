@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "7MBw4TWJlOCNEcyn",
+  "name": "Hardpoint Support",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "Additional power and structural support enable the addition of a hardpoint.",
+    "cost": 5000,
     "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "mass": 1,
+    "minimumSize": "medium"
   },
   "effects": [],
   "folder": null,

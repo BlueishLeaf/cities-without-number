@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "7uD78B6N0UXz8Gki",
+  "name": "Offroad Package",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "While any modern vehicle can handle abandoned roads and mostly-flat terrain, this package includes winches, tire armor, chassis reinforcement, and other upgrades needed to go through all but the most impassible terrain.",
+    "cost": 5000,
     "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "mass": 3,
+    "minimumSize": "large"
   },
   "effects": [],
   "folder": null,

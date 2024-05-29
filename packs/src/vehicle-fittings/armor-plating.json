@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "Q534Uw7jqxdwJdng",
+  "name": "Armor Plating",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
-    "mass": 0,
+    "description": "Increase the vehicle's Armor rating by 3 points. Medium vehicles can apply this fitting twice, and Large ones can apply it three times.",
+    "cost": 5000,
+    "power": 0,
+    "mass": 3,
     "minimumSize": "small"
   },
   "effects": [],

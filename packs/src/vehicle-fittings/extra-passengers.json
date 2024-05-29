@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "w3hLGxxf4dEZQm51",
+  "name": "Extra Passengers",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
-    "mass": 0,
+    "description": "Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This fitting can be taken multiple times, and any vehicle amenities such as crash pods or living quarters extend to these additional Crew as well.",
+    "cost": 2500,
+    "power": 0,
+    "mass": 2,
     "minimumSize": "small"
   },
   "effects": [],

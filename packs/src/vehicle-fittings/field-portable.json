@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "nfQZDtdgZImKKYiA",
+  "name": "Field Portable",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
-    "mass": 0,
+    "description": "Only Small or Medium vehicles can take this option, allowing them to be broken down into easily-portable parts packages. Small vehicles turn into 30 items of Encumbrance and Medium ones into 150. Disassembly takes 30 minutes for a Small vehicle and 3 hours for a Medium one, with reassembly taking four times as long.",
+    "cost": 1000,
+    "power": 0,
+    "mass": 2,
     "minimumSize": "small"
   },
   "effects": [],

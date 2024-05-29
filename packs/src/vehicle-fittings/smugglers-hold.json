@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "DM5J1KKqGXDf89S5",
+  "name": "Smuggler's Hold",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
-    "mass": 0,
+    "description": "This fitting can be taken more than once, and adds 10 kg of concealed cargo space in Small vehicles, 100 kg in Medium ones, and 400 kg in Large ones. It can be detected only by taking the vehicle apart or by an acute, careful inspection with a difficulty 12 Wis/Notice or Wis/ Drive skill check.",
+    "cost": 1000,
+    "power": 0,
+    "mass": 1,
     "minimumSize": "small"
   },
   "effects": [],

@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "tvvtCa4sJW3rMKaP",
+  "name": "Medbay",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "Surgical tools and medical support are provided for up to one critically-injured patient at a time. A medbay counts as an emergency clinic for purposes of treating Major Injuries, if someone with at least Heal-0 is available to tend to the patient.",
+    "cost": 10000,
     "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "mass": 2,
+    "minimumSize": "medium"
   },
   "effects": [],
   "folder": null,

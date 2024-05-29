@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "pQoqASelz9xQ6TYw",
+  "name": "Emissions Cloaking",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "Once per day, for one hour, the vehicle can become almost invisible to infrared or radar. This cloak becomes useless if the vehicle is visually spotted by defenders.",
+    "cost": 10000,
     "power": 1,
-    "mass": 0,
+    "mass": 2,
     "minimumSize": "small"
   },
   "effects": [],

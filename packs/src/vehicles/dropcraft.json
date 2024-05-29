@@ -1,0 +1,62 @@
+{
+  "_id": "6OSuRq0YyzSWLXrQ",
+  "name": "Dropcraft",
+  "type": "vehicle",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "health": {
+      "value": 40,
+      "max": 40
+    },
+    "biography": "One of a family of armored military air transports, dropcraft are used when a squad needs to be inserted under heavy fire. Thick armor, a heavy gun, and VTOL engines combine with considerable loitering ability to make an excellent tool for pacifying corporate enemies.",
+    "traumaTarget": {
+      "base": 12,
+      "total": 12
+    },
+    "movement": {
+      "speed": 3,
+      "type": "fly"
+    },
+    "hardpoints": {
+      "value": 0,
+      "max": 2
+    },
+    "armorClass": {
+      "melee": 16,
+      "ranged": 16
+    },
+    "cargoEncumbrance": {
+      "stowed": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "cost": 1000000,
+    "armor": 12,
+    "maxCrew": 13,
+    "power": {
+      "value": 0,
+      "max": 8
+    },
+    "mass": {
+      "value": 0,
+      "max": 12
+    },
+    "size": "L"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

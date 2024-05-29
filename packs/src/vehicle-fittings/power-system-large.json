@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "GsrJv0a8c8RbFvM5",
+  "name": "Power System, Large",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "description": "These fittings add extra Power in battery capacity and computing support at the cost of an additional Mass burden.",
+    "cost": 10000,
+    "power": -8,
+    "mass": 5,
+    "minimumSize": "large"
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,48 @@
+{
+  "_id": "vAuOLApYVKjTilzK",
+  "name": "Headshot Pod",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
+  "system": {
+    "description": "<b>Headshot pods</b> are a family of guided missiles meant for mounted deployment on vehicles or large drones. They always target AC 10 to hit, but require two full consecutive rounds of aiming at a visible target to get a target lock on them and prime for firing on the third round. Any bystanders within 5 meters of the impact take damage as if from a frag grenade. A headshot pod missile costs $2,000.",
+    "cost": 20000,
+    "encumbrance": 99,
+    "damageFormula": "4d6 + @attributeMod",
+    "range": {
+      "effective": 1000,
+      "max": 2000
+    },
+    "attribute": "dex",
+    "skill": "shoot",
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d20",
+      "rating": 4
+    },
+    "magazine": {
+      "value": 1,
+      "max": 1
+    },
+    "shock": null,
+    "mounted": {
+      "power": 3,
+      "mass": 2,
+      "minimumSize": "large"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

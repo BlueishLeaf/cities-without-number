@@ -1,0 +1,28 @@
+{
+  "_id": "SibDcpD78HpDWm3k",
+  "name": "Limpet Mount",
+  "type": "vehicleFitting",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": "An entire second vehicle can be mounted with this fitting, Medium vehicles taking Small parasites and Large ones taking Small or Medium. Adding a mount for a Small vehicle takes up 3 Mass while a Medium one takes 6. Modifying a vehicle to be mounted adds 10% to its base cost, but it can be launched even while the parent vehicle is underway. These parasite vehicles are destroyed if the parent is; otherwise, they take only half the damage the parent takes.",
+    "cost": 5000,
+    "power": 0,
+    "mass": 3,
+    "minimumSize": "medium"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

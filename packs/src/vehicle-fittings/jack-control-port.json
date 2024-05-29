@@ -1,12 +1,12 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "fx3f4mFLKruxqPBw",
+  "name": "Jack Control Port",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
+    "description": "The vehicle is wired to be controlled through a plugged-in cranial jack as well as a conventional wheel. While jacked in, the driver need only use a Move Action to control the vehicle rather than a Main Action.",
+    "cost": 5000,
+    "power": 2,
     "mass": 0,
     "minimumSize": "small"
   },

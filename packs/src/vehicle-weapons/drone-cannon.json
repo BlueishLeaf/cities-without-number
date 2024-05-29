@@ -1,0 +1,48 @@
+{
+  "_id": "Qx3oGd8pWWHhODgk",
+  "name": "Drone Cannon",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
+  "system": {
+    "description": "<b>Drone cannons</b> are heavy semi-automatic weapons too bulky for human portability. A round of firing costs $100 worth of ammunition.",
+    "cost": 5000,
+    "encumbrance": 99,
+    "damageFormula": "2d8 + @attributeMod",
+    "range": {
+      "effective": 200,
+      "max": 1000
+    },
+    "attribute": "dex",
+    "skill": "shoot",
+    "isBurstFireable": false,
+    "trauma": {
+      "die": "1d10",
+      "rating": 3
+    },
+    "magazine": {
+      "value": 10,
+      "max": 10
+    },
+    "shock": null,
+    "mounted": {
+      "power": 1,
+      "mass": 1,
+      "minimumSize": "medium"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "EqbrigiLUalpjzBu",
+  "name": "ECM Emitter",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
-    "power": 1,
+    "description": "On a successful hit roll by a headshot pod, rocket launcher, or other long-range guided projectile, the driver can make an opposed Int or Dex/Drive skill check against the attacker's combat skill. On a success, the attacker must reroll their hit roll and take the worst result.",
+    "cost": 10000,
+    "power": 2,
     "mass": 0,
-    "minimumSize": "small"
+    "minimumSize": "medium"
   },
   "effects": [],
   "folder": null,

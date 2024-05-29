@@ -1,14 +1,14 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "lDTKPzSHvs4D35aI",
+  "name": "Targeting Board",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "A single unified targeting board allows one gunner to manage up to three vehicle weapons instead of the one gun per gunner that would usually be allowed.",
+    "cost": 2500,
     "power": 1,
-    "mass": 0,
-    "minimumSize": "small"
+    "mass": 1,
+    "minimumSize": "medium"
   },
   "effects": [],
   "folder": null,

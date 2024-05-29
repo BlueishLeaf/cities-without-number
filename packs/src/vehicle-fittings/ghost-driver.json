@@ -1,13 +1,13 @@
 {
-  "_id": "vA2ht7lRfFrMXHQF",
-  "name": "Advanced Sensors",
+  "_id": "rUqNLJxXoyXUyixM",
+  "name": "Ghost Driver",
   "type": "vehicleFitting",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle is equipped with night vision, infrared sensors, and short-range radar good up to twenty kilometers of airspace. It can be driven safely even in pitch darkness.",
-    "cost": 8000,
+    "description": "The driver can order the vehicle directly or by radio or phone to go to particular places at particular times or perform other simple, direct actions on a given schedule. The onboard expert system can handle traffic-related challenges, but has no real intelligence to process more complicated problems.",
+    "cost": 2500,
     "power": 1,
-    "mass": 0,
+    "mass": 1,
     "minimumSize": "small"
   },
   "effects": [],
