@@ -1,10 +1,10 @@
 {
-  "_id": "sniper-rifle",
+  "_id": "Zd43hAtjrmJOA5uE",
   "name": "Sniper Rifle",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-red.webp",
   "system": {
-    "description": "<b>Sniper rifles</b> are often nothing more than bolt-ac- tion rifles with expensive tuning and optics. If not fired from a rest in a prepared position, a sniper rifle's statistics are the same as a normal rifle.",
+    "description": "<b>Sniper rifles</b> are often nothing more than bolt-action rifles with expensive tuning and optics. If not fired from a rest in a prepared position, a sniper rifle's statistics are the same as a normal rifle.",
     "cost": 3000,
     "encumbrance": 2,
     "damageFormula": "2d8 + @attributeMod",

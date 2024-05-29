@@ -1,10 +1,10 @@
 {
-  "_id": "psycho",
+  "_id": "Ak40LPJM0pCkAS7w",
   "name": "Psycho",
   "type": "drug",
   "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
   "system": {
-    "description": "Ingesting one of these small pills rapidly flattens a user's capacity for emotional distress while heavily increasing their aggressiveness. For roughly one hour, users gain a +2 bonus to Morale checks and experience no immediate emotional trauma from performing even the most heinous and violent actions. The drug is a favorite pre- fight dose among gangers, and used as self-med- ication among many of them who would other- wise be incapacitated by the emotional scars of what they've done.",
+    "description": "Ingesting one of these small pills rapidly flattens a user's capacity for emotional distress while heavily increasing their aggressiveness. For roughly one hour, users gain a +2 bonus to Morale checks and experience no immediate emotional trauma from performing even the most heinous and violent actions. The drug is a favorite prefight dose among gangers, and used as self-medication among many of them who would otherwise be incapacitated by the emotional scars of what they've done.",
     "cost": 10,
     "requiredSkills": "None"
   },

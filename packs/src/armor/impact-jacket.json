@@ -1,10 +1,10 @@
 {
-  "_id": "impact-jacket",
+  "_id": "3WXsjG0x6pNASxYI",
   "name": "Impact Jacket",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Built to absorb the impact of various contact sports, extreme athletic pursuits, and un- guided vehicle races, these jackets usually come as part of a full-body protective outfit.",
+    "description": "Built to absorb the impact of various contact sports, extreme athletic pursuits, and unguided vehicle races, these jackets usually come as part of a full-body protective outfit.",
     "cost": 1000,
     "encumbrance": 1,
     "armorClass": {

@@ -1,10 +1,10 @@
 {
-  "_id": "sensory-recorder",
+  "_id": "ysIdB6K5ASyFFhdc",
   "name": "Sensory Recorder",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "The user can record up to 180 min- utes of sensory input. If they have a jack line into a transmitter or cyberware capable of transmitting data, they can share these recordings in real time or afterwards.",
+    "description": "The user can record up to 180 minutes of sensory input. If they have a jack line into a transmitter or cyberware capable of transmitting data, they can share these recordings in real time or afterwards.",
     "cost": 10000,
     "subType": "sensory",
     "concealment": "medical",

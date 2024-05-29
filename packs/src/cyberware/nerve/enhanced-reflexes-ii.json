@@ -1,10 +1,10 @@
 {
-  "_id": "enhanced-reflexes-ii",
+  "_id": "85A9Gx8zeOLYICuQ",
   "name": "Ehanced Reflexes II",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "Once per scene, as an On Turn action, the user gains a bonus non-cyberspace Main Action and Move action. By accepting one System Strain, this ability can be used as an In- stant action, potentially interrupting incoming attacks if the user moves out of reach.",
+    "description": "Once per scene, as an On Turn action, the user gains a bonus non-cyberspace Main Action and Move action. By accepting one System Strain, this ability can be used as an Instant action, potentially interrupting incoming attacks if the user moves out of reach.",
     "cost": 250000,
     "subType": "nerve",
     "concealment": "medical",

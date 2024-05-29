@@ -1,10 +1,10 @@
 {
-  "_id": "sand",
+  "_id": "y4iKv7PFmFsEYTaC",
   "name": "Sand",
   "type": "drug",
   "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
   "system": {
-    "description": "A gritty powder trafficked to those addicts too poor to afford anything better, a snorted dose of Sand will put its user into a euphoric haze for as long as an hour, depending on tolerance. Beauti- ful visions and dreamy contentment give way to shooting pains and intense light sensitivity after- wards, with most heavy users dying within six to twelve months of picking up the habit.",
+    "description": "A gritty powder trafficked to those addicts too poor to afford anything better, a snorted dose of Sand will put its user into a euphoric haze for as long as an hour, depending on tolerance. Beautiful visions and dreamy contentment give way to shooting pains and intense light sensitivity afterwards, with most heavy users dying within six to twelve months of picking up the habit.",
     "cost": 2,
     "requiredSkills": "None"
   },

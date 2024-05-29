@@ -1,10 +1,10 @@
 {
-  "_id": "radio-handheld",
+  "_id": "vIKCzAL8BposnRyA",
   "name": "Radio, handheld",
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "Both conventional handheld radios and ul- tra-convenient headset or collar-tab radios can be had. Ranges are one kilometer in the city and six in an open, flat area.",
+    "description": "Both conventional handheld radios and ultra-convenient headset or collar-tab radios can be had. Ranges are one kilometer in the city and six in an open, flat area.",
     "cost": 50,
     "encumbrance": 1
   },

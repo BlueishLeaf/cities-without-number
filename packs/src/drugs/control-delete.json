@@ -1,10 +1,10 @@
 {
-  "_id": "control-delete",
+  "_id": "WJnrioaEffwGKMf1",
   "name": "Control-Delete",
   "type": "drug",
   "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
   "system": {
-    "description": "A chemical that temporarily destroys a person's ability to form long-term memories, Control-Delete must be ingested in food or drink. Toxin-filtering cyber can fend it off, but it other- wise grants no saving throw. Once affected, the target will continue to act normally, but anything that happens to them between then and their next sleep or unconsciousness will be completely for- gotten by the time they awake.",
+    "description": "A chemical that temporarily destroys a person's ability to form long-term memories, Control-Delete must be ingested in food or drink. Toxin-filtering cyber can fend it off, but it otherwise grants no saving throw. Once affected, the target will continue to act normally, but anything that happens to them between then and their next sleep or unconsciousness will be completely forgotten by the time they awake.",
     "cost": 25,
     "requiredSkills": "None"
   },

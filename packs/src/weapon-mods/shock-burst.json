@@ -1,10 +1,10 @@
 {
-  "_id": "shock-burst",
+  "_id": "oWom1lTnD8p5bKMH",
   "name": "Shock Burst",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Once per fight, as an On Turn action, the weapon can imbue itself or a round of am- munition with an electrical charge, inflicting an additional 2d6 damage on a hit, or +2 damage to melee Shock on the next attack. This damage is not affected by the +3 cap to mod hit and damage.",
+    "description": "Once per fight, as an On Turn action, the weapon can imbue itself or a round of ammunition with an electrical charge, inflicting an additional 2d6 damage on a hit, or +2 damage to melee Shock on the next attack. This damage is not affected by the +3 cap to mod hit and damage.",
     "cost": 5000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-2"

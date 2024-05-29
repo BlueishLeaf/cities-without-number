@@ -1,10 +1,10 @@
 {
-  "_id": "mortar",
+  "_id": "EkaSk50xo8XXJtcu",
   "name": "Mortar",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-topbarrel.webp",
   "system": {
-    "description": "<b>Mortars</b> are rare, but have their uses amid the tall buildings of an urban sprawl. They have a minimum range of 20 meters, but can lob indirect fire over build- ings and obstacles. Mortars always target AC 20 at first, but each round of fire at the same target grants a +1 hit bonus if there's a forward spotter to adjust the aim. Mortar rounds act as frag grenades on the target point, but do 3d6 damage at base with a 10-meter radius. Ar- mor doesn't lessen harm from mortar rounds. Relatively simple as they are, a mortar round costs $50 and counts as one item of encumbrance.",
+    "description": "<b>Mortars</b> are rare, but have their uses amid the tall buildings of an urban sprawl. They have a minimum range of 20 meters, but can lob indirect fire over buildings and obstacles. Mortars always target AC 20 at first, but each round of fire at the same target grants a +1 hit bonus if there's a forward spotter to adjust the aim. Mortar rounds act as frag grenades on the target point, but do 3d6 damage at base with a 10-meter radius. Armor doesn't lessen harm from mortar rounds. Relatively simple as they are, a mortar round costs $50 and counts as one item of encumbrance.",
     "cost": 5000,
     "encumbrance": 3,
     "damageFormula": "3d6 + @attributeMod",

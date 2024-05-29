@@ -1,10 +1,10 @@
 {
-  "_id": "light-armored-suit",
+  "_id": "xYgeQNnvKjHGwMJz",
   "name": "Light Armored Suit",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Ordinary law enforcement and security guards will be wearing suits like this, usually brightly emblazoned with their corpo- rate affiliation.",
+    "description": "Ordinary law enforcement and security guards will be wearing suits like this, usually brightly emblazoned with their corporate affiliation.",
     "cost": 5000,
     "encumbrance": 2,
     "armorClass": {

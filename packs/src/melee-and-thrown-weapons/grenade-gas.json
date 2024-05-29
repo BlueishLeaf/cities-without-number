@@ -1,10 +1,10 @@
 {
-  "_id": "grenade-gas",
+  "_id": "8aOIZuWQQAJt2GLY",
   "name": "Grenade, Gas",
   "type": "weapon",
   "img": "icons/weapons/thrown/grenade-round.webp",
   "system": {
-    "description": "<b>Gas grenades</b> create a 10-meter-diameter cloud of opaque, choking, irritating gas that disperses in one round. They inflict non-lethal damage, halved on a successful Physical save, and are useless against targets with breathing protection. They provide full concealment for those within the gas. <b>Smoke grenades</b> are harmless, but provide the same 10-meter dome of concealment where it's necessary. Gas and smoke ar- en't enough to defeat IR or augmented visuals.",
+    "description": "<b>Gas grenades</b> create a 10-meter-diameter cloud of opaque, choking, irritating gas that disperses in one round. They inflict non-lethal damage, halved on a successful Physical save, and are useless against targets with breathing protection. They provide full concealment for those within the gas. <b>Smoke grenades</b> are harmless, but provide the same 10-meter dome of concealment where it's necessary. Gas and smoke aren't enough to defeat IR or augmented visuals.",
     "cost": 50,
     "encumbrance": 1,
     "damageFormula": "1d10 + @attributeMod",

@@ -1,10 +1,10 @@
 {
-  "_id": "cranial-jack",
+  "_id": "huifue2xxgC7TJPO",
   "name": "Cranial Jack",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyber- decks and gear equipped with a jack line.",
+    "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
     "cost": 1000,
     "subType": "head",
     "concealment": "touch",

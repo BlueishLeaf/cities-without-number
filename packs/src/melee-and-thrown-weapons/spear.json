@@ -1,10 +1,10 @@
 {
-  "_id": "spear",
+  "_id": "tWqcj9gszTy4ZkXX",
   "name": "Spear",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
-    "description": "<b>Knives, clubs, swords, and other simple melee weapons</b> are available almost anywhere on the street. Par - ticularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
+    "description": "<b>Knives, clubs, swords, and other simple melee weapons</b> are available almost anywhere on the street. Particularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
     "cost": 50,
     "encumbrance": 1,
     "damageFormula": "1d6 + @attributeMod",

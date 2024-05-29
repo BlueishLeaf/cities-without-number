@@ -1,10 +1,10 @@
 {
-  "_id": "tailored-interface",
+  "_id": "O60D3edjpnNj9PR1",
   "name": "Tailored Interface",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "A demanding cyber system is adjusted to specifically match the biochemistry of the user rather than using a factory-set best approximation. This mod only functions on cy- ber that inflicts 2+ points of permanent System Strain, but lowers the strain cost by 1 point.",
+    "description": "A demanding cyber system is adjusted to specifically match the biochemistry of the user rather than using a factory-set best approximation. This mod only functions on cyber that inflicts 2+ points of permanent System Strain, but lowers the strain cost by 1 point.",
     "costPercentage": 30,
     "specialTechRequired": 1,
     "requiredSkills": "Fix-1/Heal-3"

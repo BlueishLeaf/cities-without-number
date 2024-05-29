@@ -1,10 +1,10 @@
 {
-  "_id": "concealed",
+  "_id": "090FelZhHUfUtYMk",
   "name": "Concealed",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Materials are replaced, outlines are al- tered, and appearances are adjusted. Pistol-sized and smaller weapons now cannot be detected without a full minute of patting down the bear- er, while anything no larger than a rifle can be concealed as if it were a pistol, unfolding to full size upon use.",
+    "description": "Materials are replaced, outlines are altered, and appearances are adjusted. Pistol-sized and smaller weapons now cannot be detected without a full minute of patting down the bearer, while anything no larger than a rifle can be concealed as if it were a pistol, unfolding to full size upon use.",
     "cost": 5000,
     "specialTechRequired": 1,
     "requiredSkills": "Fix-2"

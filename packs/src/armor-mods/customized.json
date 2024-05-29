@@ -1,10 +1,10 @@
 {
-  "_id": "customized",
+  "_id": "FVuoQWEDf9zdtcbj",
   "name": "Customized",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The armor is tailored to a specific wear - er, granting them a +1 bonus to both ranged and melee AC while it's worn.",
+    "description": "The armor is tailored to a specific wearer, granting them a +1 bonus to both ranged and melee AC while it's worn.",
     "cost": 1000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

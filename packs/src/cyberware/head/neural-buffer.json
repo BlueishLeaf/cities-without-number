@@ -1,10 +1,10 @@
 {
-  "_id": "neural-buffer",
+  "_id": "ivO3EjD85TqRLyDA",
   "name": "Neural Buffer",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A system favored by hackers, a Neu- ral Buffer rearranges the user's brain topography, making it more difficult to harm the user with neural feedback. The user gains an additional 3 hit points per level that can only absorb cyber- space damage from Stun or Kill Verbs. These phantom hit points refresh completely each hour.",
+    "description": "A system favored by hackers, a Neural Buffer rearranges the user's brain topography, making it more difficult to harm the user with neural feedback. The user gains an additional 3 hit points per level that can only absorb cyberspace damage from Stun or Kill Verbs. These phantom hit points refresh completely each hour.",
     "cost": 40000,
     "subType": "head",
     "concealment": "medical",

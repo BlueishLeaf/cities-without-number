@@ -1,10 +1,10 @@
 {
-  "_id": "reaction-booster-ii",
+  "_id": "ZMTyA1G1JUgL1WST",
   "name": "Reaction Booster II",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "As level one, but the user auto- matically wins initiative against targets that don't also automatically win initiative; if both have this ability, initiative is rolled without modifications. The user can act normally during surprise round",
+    "description": "As level one, but the user automatically wins initiative against targets that don't also automatically win initiative; if both have this ability, initiative is rolled without modifications. The user can act normally during surprise round",
     "cost": 100000,
     "subType": "nerve",
     "concealment": "medical",

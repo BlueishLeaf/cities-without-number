@@ -1,10 +1,10 @@
 {
-  "_id": "monoblade",
+  "_id": "pcK8BzbYjXPMl6so",
   "name": "Monoblade",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "A bladed cyber system has advanced monomolecular cutting elements installed. The edge is difficult to maintain but inflicts horrif- ic injuries when it strikes cleanly. The weapon's Trauma Die gets a +1 bonus, but its base damage die and Shock is decreased by -2.",
+    "description": "A bladed cyber system has advanced monomolecular cutting elements installed. The edge is difficult to maintain but inflicts horrific injuries when it strikes cleanly. The weapon's Trauma Die gets a +1 bonus, but its base damage die and Shock is decreased by -2.",
     "costPercentage": 20,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-2/Heal-1"

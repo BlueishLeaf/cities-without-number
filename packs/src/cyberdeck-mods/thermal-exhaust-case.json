@@ -1,10 +1,10 @@
 {
-  "_id": "thermal-exhaust-case",
+  "_id": "AnFSLh3kAnXQZuMX",
   "name": "Thermal Exhaust Case",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The deck's Encum - brance value is increased by 1, but its CPU value increases by 1 as well. Costs 30% of the base deck cost.",
+    "description": "The deck's Encumbrance value is increased by 1, but its CPU value increases by 1 as well. Costs 30% of the base deck cost.",
     "costPercentage": 30,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-2"

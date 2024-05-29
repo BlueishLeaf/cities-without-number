@@ -1,10 +1,10 @@
 {
-  "_id": "skeletal-case",
+  "_id": "7X6isMlifjUr6Yol",
   "name": "Skeletal Case",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The deck's Encumbrance value is decreased by 1, but its Memory suffers a -2 pen- alty. Costs 10% of the base deck cost.",
+    "description": "The deck's Encumbrance value is decreased by 1, but its Memory suffers a -2 penalty. Costs 10% of the base deck cost.",
     "costPercentage": 10,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

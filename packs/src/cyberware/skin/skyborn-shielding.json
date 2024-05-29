@@ -1,10 +1,10 @@
 {
-  "_id": "skyborn-shielding",
+  "_id": "U6J4ipMi2Oox3to4",
   "name": "Skyborn Shielding",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A set of implants and skin treat- ments meant for those who spend extended pe- riods in hard vacuum, this implant can be trig- gered as an Instant action. When deployed, the user gains the benefits of a Sealed Systems Implant and low-G microjets that allow 30m/round flight in microgravity conditions. Skyborn Shielding can operate for up to 72 hours before needing an hour of downtime to regenerate.",
+    "description": "A set of implants and skin treatments meant for those who spend extended periods in hard vacuum, this implant can be triggered as an Instant action. When deployed, the user gains the benefits of a Sealed Systems Implant and low-G microjets that allow 30m/round flight in microgravity conditions. Skyborn Shielding can operate for up to 72 hours before needing an hour of downtime to regenerate.",
     "cost": 40000,
     "subType": "skin",
     "concealment": "sight",

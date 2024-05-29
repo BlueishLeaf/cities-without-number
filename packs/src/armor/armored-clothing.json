@@ -1,10 +1,10 @@
 {
-  "_id": "armored-clothing",
+  "_id": "u7p2N9JtUq3CRe0C",
   "name": "Armored Clothing",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "The bulky plates and heavy ballis- tic weaves of this outfit are disguised as drapes and fashion elements.",
+    "description": "The bulky plates and heavy ballistic weaves of this outfit are disguised as drapes and fashion elements.",
     "cost": 1000,
     "encumbrance": 2,
     "armorClass": {

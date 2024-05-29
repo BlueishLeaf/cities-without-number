@@ -1,10 +1,10 @@
 {
-  "_id": "omnihand",
+  "_id": "HicXkAmXf0PMAiFh",
   "name": "Omnihand",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A full array of small mechanical and elec- tronic tools are folded into this cybernetic hand. The user is never without the tools for relevant skill checks, and once per day as an Instant action can gain +1 on any skill check involving the om - nihand's tool use. As an improvised weapon, the tools do damage as a knife.",
+    "description": "A full array of small mechanical and electronic tools are folded into this cybernetic hand. The user is never without the tools for relevant skill checks, and once per day as an Instant action can gain +1 on any skill check involving the omnihand's tool use. As an improvised weapon, the tools do damage as a knife.",
     "cost": 10000,
     "subType": "limb",
     "concealment": "touch",

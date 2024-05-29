@@ -1,10 +1,10 @@
 {
-  "_id": "automatic-rifle",
+  "_id": "fKDelMlUwRN4x1zP",
   "name": "Automatic Rifle",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-red.webp",
   "system": {
-    "description": "<b>Automatic rifles</b> include a large range of barely man-portable firearms designed to hurl vast amounts of lead through the air, and unlike smaller firearms, they can use suppressive fire if properly braced. Am- munition for these guns comes in belts or boxes. The mag rating reflects how many rounds the weapon can fire before needing a refill, with each \"round\" cost- ing $50 worth of ammunition. The compactness of their loaded magazines still only counts as one item, however.",
+    "description": "<b>Automatic rifles</b> include a large range of barely man-portable firearms designed to hurl vast amounts of lead through the air, and unlike smaller firearms, they can use suppressive fire if properly braced. Ammunition for these guns comes in belts or boxes. The mag rating reflects how many rounds the weapon can fire before needing a refill, with each \"round\" costing $50 worth of ammunition. The compactness of their loaded magazines still only counts as one item, however.",
     "cost": 10000,
     "encumbrance": 4,
     "damageFormula": "2d8 + @attributeMod",

@@ -1,10 +1,10 @@
 {
-  "_id": "demo-charge",
+  "_id": "CyBPK6ygtOKxuu38",
   "name": "Demo Charge",
   "type": "weapon",
   "img": "icons/weapons/thrown/dynamite-red.webp",
   "system": {
-    "description": "<b>Demo charges</b> are shaped explosive charges usu- ally meant to knock human-sized holes in anything short of fortified defensive walls. While ineffective as thrown weapons, when used as part of a trap or ambush they inflict their listed damage in a cone out to normal range, with an Evasion save for half damage. If applied carefully to a vehicle target, the following explosion will inevitably destroy it. Like frag grenades, use of demo charges tends to be very exciting to se- curity forces and can provoke more heat than many operators like to draw.",
+    "description": "<b>Demo charges</b> are shaped explosive charges usually meant to knock human-sized holes in anything short of fortified defensive walls. While ineffective as thrown weapons, when used as part of a trap or ambush they inflict their listed damage in a cone out to normal range, with an Evasion save for half damage. If applied carefully to a vehicle target, the following explosion will inevitably destroy it. Like frag grenades, use of demo charges tends to be very exciting to security forces and can provoke more heat than many operators like to draw.",
     "cost": 1000,
     "encumbrance": 1,
     "rollFormula": null,

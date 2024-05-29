@@ -1,10 +1,10 @@
 {
-  "_id": "targeting-processor",
+  "_id": "6MjEwqfFHFH9Gjqh",
   "name": "Targeting Processor",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "This mod must be installed in Gunlink, or in a weapon system such as Body Blades or Eye Mod/Flechette. Improved targeting calcula- tions grant a +1 bonus to hit with the cyber-weap- on or with guns aimed with the Gunlink system. An attack can only ever benefit from one instance of this mod.",
+    "description": "This mod must be installed in Gunlink, or in a weapon system such as Body Blades or Eye Mod/Flechette. Improved targeting calculations grant a +1 bonus to hit with the cyber-weapon or with guns aimed with the Gunlink system. An attack can only ever benefit from one instance of this mod.",
     "costPercentage": 30,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-2/Heal-1"

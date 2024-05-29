@@ -1,10 +1,10 @@
 {
-  "_id": "advanced-knife",
+  "_id": "UahYnVkt3wVlbkDY",
   "name": "Advanced Knife",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
-    "description": "<b>Advanced weapons</b> employ modern polymers, so- phisticated metallurgy, fractal edges, electro-stun tech, and a small legion of marketers to sell products that are distinctly superior to the plain steel edges of a prior age. An advanced micro-edged butcher knife can go through bone like bamboo and keep an edge for weeks between sharpenings. The more martial offerings go to even greater lengths in their marketing, with some enterprising serial killers and gang enforcers inking exclusivity deals with particular knife manufacturers. Due to the sheer ubiquity and availability of melee weapons, they're often treated with less suspicion than firearms. A corp cop might bring somebody in for an \"illegal knife\", but only if he already wanted them for a different and better reason. Nightclubs and bars might expect firearms to go in the locker at the entrance, but they're often disinclined to go combing their patrons for every suspiciously-sharp hair ornament or multi- purpose fashion accessory they might carry.",
+    "description": "<b>Advanced weapons</b> employ modern polymers, sophisticated metallurgy, fractal edges, electro-stun tech, and a small legion of marketers to sell products that are distinctly superior to the plain steel edges of a prior age. An advanced micro-edged butcher knife can go through bone like bamboo and keep an edge for weeks between sharpenings. The more martial offerings go to even greater lengths in their marketing, with some enterprising serial killers and gang enforcers inking exclusivity deals with particular knife manufacturers. Due to the sheer ubiquity and availability of melee weapons, they're often treated with less suspicion than firearms. A corp cop might bring somebody in for an \"illegal knife\", but only if he already wanted them for a different and better reason. Nightclubs and bars might expect firearms to go in the locker at the entrance, but they're often disinclined to go combing their patrons for every suspiciously-sharp hair ornament or multipurpose fashion accessory they might carry.",
     "cost": 200,
     "encumbrance": 1,
     "damageFormula": "1d6 + @attributeMod",

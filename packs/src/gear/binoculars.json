@@ -1,10 +1,10 @@
 {
-  "_id": "binoculars",
+  "_id": "ixMS9DUoEdN4VYm8",
   "name": "Binoculars",
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "Most modern binocs have low-light func- tionality and magnification sufficient to bring targets as much as a kilometer distant into view.",
+    "description": "Most modern binocs have low-light functionality and magnification sufficient to bring targets as much as a kilometer distant into view.",
     "cost": 100,
     "encumbrance": 1
   },

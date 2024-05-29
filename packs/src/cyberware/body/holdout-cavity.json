@@ -1,10 +1,10 @@
 {
-  "_id": "holdout-cavity",
+  "_id": "mVgsI0MNw4RbYtoF",
   "name": "Holdout Cavity",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A biosculpted torso pocket allows for the air-tight, climate-controlled concealment of 2 Encumbrance worth of items inside the user's body and their easy access with a Main Action. Any given object stored can't be larger than a pis- tol or a tightly-folded suit of clothing, and the pocket's contents don't count against the user's Encumbrance limit. The pocket's signature is dis- guised against conventional scanning technology, and it cannot be detected without a manual strip search by a trained examiner.",
+    "description": "A biosculpted torso pocket allows for the air-tight, climate-controlled concealment of 2 Encumbrance worth of items inside the user's body and their easy access with a Main Action. Any given object stored can't be larger than a pistol or a tightly-folded suit of clothing, and the pocket's contents don't count against the user's Encumbrance limit. The pocket's signature is disguised against conventional scanning technology, and it cannot be detected without a manual strip search by a trained examiner.",
     "cost": 10000,
     "subType": "body",
     "concealment": "medical",

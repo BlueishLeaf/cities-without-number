@@ -1,10 +1,10 @@
 {
-  "_id": "trauma-patch",
+  "_id": "CQLo6HffDu393YR0",
   "name": "Trauma Patch",
   "type": "drug",
   "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
   "system": {
-    "description": "A theoretically foolproof cocktail of coagulants, stimulants, and painkillers, a trauma patch can be applied to a Mortally Wounded ally to stabilize them on a successful Int or Dex/Heal skill check against difficulty 6, with a +1 diffi- culty penalty for each full round since the subject went down. The patch is useless after six rounds. Trauma patches cannot revive victims downed by poisons or diseases, or those dismem- bered by explosives or heavy weapons.",
+    "description": "A theoretically foolproof cocktail of coagulants, stimulants, and painkillers, a trauma patch can be applied to a Mortally Wounded ally to stabilize them on a successful Int or Dex/Heal skill check against difficulty 6, with a +1 difficulty penalty for each full round since the subject went down. The patch is useless after six rounds. Trauma patches cannot revive victims downed by poisons or diseases, or those dismembered by explosives or heavy weapons.",
     "cost": 50,
     "requiredSkills": "Null"
   },

@@ -1,10 +1,10 @@
 {
-  "_id": "active-response",
+  "_id": "JQdoCXSxtq4dxZv2",
   "name": "Active Response",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The armor has hyper-advanced reactive defenses that deflect and mitigate oth- erwise-critical injuries. Increase the wearer's Trauma Target by 1. This stacks with any exist- ing Trauma Target bonus the armor may already confer on the wearer.",
+    "description": "The armor has hyper-advanced reactive defenses that deflect and mitigate otherwise-critical injuries. Increase the wearer's Trauma Target by 1. This stacks with any existing Trauma Target bonus the armor may already confer on the wearer.",
     "cost": 20000,
     "specialTechRequired": 2,
     "requiredSkills": "Fix-3"

@@ -1,10 +1,10 @@
 {
-  "_id": "profile-adjustment",
+  "_id": "z8Ak2CPes8LqakFt",
   "name": "Profile Adjustment",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The system's obviousness is low - ered by one step, from Sight to Touch, or Touch to Medical. It has no benefit for a system that is already at a Medical grade of concealment.",
+    "description": "The system's obviousness is lowered by one step, from Sight to Touch, or Touch to Medical. It has no benefit for a system that is already at a Medical grade of concealment.",
     "costPercentage": 20,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1/Heal-2"

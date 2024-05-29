@@ -1,10 +1,10 @@
 {
-  "_id": "ear-mod-positional-detection",
+  "_id": "qpUJhjY7hbn9Y5IE",
   "name": "Ear Mod/Positional Detection",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "his ear mod con - structs a spatial map of significant surrounding sounds, allowing the user to know the exact loca- tion of anything making audible noise. The pre- cise location of distant shooters, the location of targets in visual concealment, and the positions of moving creatures in darkness are all clear.",
+    "description": "his ear mod constructs a spatial map of significant surrounding sounds, allowing the user to know the exact location of anything making audible noise. The precise location of distant shooters, the location of targets in visual concealment, and the positions of moving creatures in darkness are all clear.",
     "cost": 15000,
     "subType": "sensory",
     "concealment": "medical",

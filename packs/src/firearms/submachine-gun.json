@@ -1,10 +1,10 @@
 {
-  "_id": "submachine-gun",
+  "_id": "KrretTfMIShJNV5C",
   "name": "Submachine Gun",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-red.webp",
   "system": {
-    "description": "<b>Submachine guns</b> are popular for their small form factor and convenient burst fire, though like other burst-fire weaponry the corps frown heavily on ci- vilian possession.",
+    "description": "<b>Submachine guns</b> are popular for their small form factor and convenient burst fire, though like other burst-fire weaponry the corps frown heavily on civilian possession.",
     "cost": 2000,
     "encumbrance": 1,
     "damageFormula": "1d8 + @attributeMod",

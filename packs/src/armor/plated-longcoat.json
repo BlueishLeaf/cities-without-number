@@ -1,10 +1,10 @@
 {
-  "_id": "plated-longcoat",
+  "_id": "01zpXrF8824SZSZn",
   "name": "Plated Longcoat",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "An ankle-length coat, robe, or man- tle is used as a substrate for numerous reinforced plates and swaths of ballistic weave. It's heavy, bulky, and blatant, but it can absorb a lot of pun- ishment.",
+    "description": "An ankle-length coat, robe, or mantle is used as a substrate for numerous reinforced plates and swaths of ballistic weave. It's heavy, bulky, and blatant, but it can absorb a lot of punishment.",
     "cost": 2000,
     "encumbrance": 1,
     "armorClass": {

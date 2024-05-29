@@ -1,10 +1,10 @@
 {
-  "_id": "cranial-jack",
+  "_id": "1j57IyShM9ROT6p3",
   "name": "Cranial Jack",
   "type": "cyberdeck",
   "img": "icons/tools/navigation/sextant-steel-blue.webp",
   "system": {
-    "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyber- decks and gear equipped with a jack line.",
+    "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
     "cost": 1000,
     "encumbrance": 0,
     "bonusAccess": 0,

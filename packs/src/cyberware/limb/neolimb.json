@@ -1,10 +1,10 @@
 {
-  "_id": "neolimb",
+  "_id": "c5seGzdSZN9d3LzZ",
   "name": "Neolimb",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "The user gains an additional limb that normal humans lack. Usual choices involve an additional pair of arms or manipulatory mech- ano-tentacles, though functional prehensile tails are popular too. One installation of the cyber cov- ers paired limbs or a single tail or body-mounted tendril up to 3 meters long. Neolimbs can support up to one Encumbrance point of non-weapon- ry built-in tech and add two items to the user's Readied encumbrance allowance. Neolimbs can hold or grip objects, but cannot employ additional shields or grant extra actions.",
+    "description": "The user gains an additional limb that normal humans lack. Usual choices involve an additional pair of arms or manipulatory mechano-tentacles, though functional prehensile tails are popular too. One installation of the cyber covers paired limbs or a single tail or body-mounted tendril up to 3 meters long. Neolimbs can support up to one Encumbrance point of non-weaponry built-in tech and add two items to the user's Readied encumbrance allowance. Neolimbs can hold or grip objects, but cannot employ additional shields or grant extra actions.",
     "cost": 25000,
     "subType": "limb",
     "concealment": "sight",

@@ -1,10 +1,10 @@
 {
-  "_id": "heavy-armored-suit",
+  "_id": "W2Vr0ReXPLKmaJOO",
   "name": "Heavy Armored Suit",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "A head-to-toe suit of interlock- ing plates and impact absorption units, these suits are reserved for high-end response teams and military operations.",
+    "description": "A head-to-toe suit of interlocking plates and impact absorption units, these suits are reserved for high-end response teams and military operations.",
     "cost": 15000,
     "encumbrance": 3,
     "armorClass": {

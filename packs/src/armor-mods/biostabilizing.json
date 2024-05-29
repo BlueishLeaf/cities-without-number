@@ -1,10 +1,10 @@
 {
-  "_id": "biostabilizing",
+  "_id": "gqB9pesFChidBSjC",
   "name": "Biostabilizing",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "An integral biostatus monitor trig- gers emergency trauma drugs when the wearer is Mortally Wounded. As an Instant action, they roll 2d6+2 versus difficulty 8 to stabilize. Only one such attempt can be made before the suit needs an hour to recalibrate.",
+    "description": "An integral biostatus monitor triggers emergency trauma drugs when the wearer is Mortally Wounded. As an Instant action, they roll 2d6+2 versus difficulty 8 to stabilize. Only one such attempt can be made before the suit needs an hour to recalibrate.",
     "cost": 2500,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

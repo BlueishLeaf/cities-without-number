@@ -1,10 +1,10 @@
 {
-  "_id": "syntheyes-pair",
+  "_id": "nyMsJk9OebrJtpbP",
   "name": "Syntheyes (pair)",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "These high-end cybereyes are designed to be indistinguishable from normal eyes under anything short of a medical examination. Any ad- ditional mods made to the eyes share this subtlety.",
+    "description": "These high-end cybereyes are designed to be indistinguishable from normal eyes under anything short of a medical examination. Any additional mods made to the eyes share this subtlety.",
     "cost": 25000,
     "subType": "sensory",
     "concealment": "medical",

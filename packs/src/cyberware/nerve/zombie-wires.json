@@ -1,10 +1,10 @@
 {
-  "_id": "zombie-wires",
+  "_id": "vUi9YEVw8HUKFLKX",
   "name": "Zombie Wires",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "Functioning only for a user with at least one Body cybersystem to serve as a motor substrate, \"zombie wires\" allow a user to keep functioning even at zero hit points. As an In- stant action at zero hit points, the user can give their body a one-sentence command involving physical action. Their insensate flesh will blindly carry out that action for up to six rounds until it is complete or they take up to one quarter of their maximum hit points in further damage, which will kill them instantly. Time spent under Zom - bie Wires counts against a user's stabilization time limit. Triggering this cyber adds 2 System Strain",
+    "description": "Functioning only for a user with at least one Body cybersystem to serve as a motor substrate, \"zombie wires\" allow a user to keep functioning even at zero hit points. As an Instant action at zero hit points, the user can give their body a one-sentence command involving physical action. Their insensate flesh will blindly carry out that action for up to six rounds until it is complete or they take up to one quarter of their maximum hit points in further damage, which will kill them instantly. Time spent under Zombie Wires counts against a user's stabilization time limit. Triggering this cyber adds 2 System Strain",
     "cost": 60000,
     "subType": "nerve",
     "concealment": "medical",

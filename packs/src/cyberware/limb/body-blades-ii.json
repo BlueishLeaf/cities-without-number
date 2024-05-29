@@ -1,10 +1,10 @@
 {
-  "_id": "body-blades-ii",
+  "_id": "U2aJw0BO8PaejjJU",
   "name": "Body Blades II",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "As level one, but the user's body arma- ment includes not only conventional blades, but assorted improvements such as monomolecular edges, cutting vibrations, or thermal augmenta- tion. Their unarmed attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3. Any- one who sees or touches their arms can detect signs of the cyber, however.",
+    "description": "As level one, but the user's body armament includes not only conventional blades, but assorted improvements such as monomolecular edges, cutting vibrations, or thermal augmentation. Their unarmed attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3. Anyone who sees or touches their arms can detect signs of the cyber, however.",
     "cost": 25000,
     "subType": "limb",
     "concealment": "sight",

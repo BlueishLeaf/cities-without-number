@@ -1,10 +1,10 @@
 {
-  "_id": "advanced-bow",
+  "_id": "tXg2DI2ZMxV7dt2m",
   "name": "Advanced Bow",
   "type": "weapon",
   "img": "icons/weapons/guns/gun-red.webp",
   "system": {
-    "description": "<b>Advanced bows</b> are used by a few specialists who prefer the near-silence that modern composites pro- vide or the massive blood loss induced by a modern fractal broadhead carried on a fifty-gram arrow.",
+    "description": "<b>Advanced bows</b> are used by a few specialists who prefer the near-silence that modern composites provide or the massive blood loss induced by a modern fractal broadhead carried on a fifty-gram arrow.",
     "cost": 500,
     "encumbrance": 2,
     "damageFormula": "1d8 + @attributeMod",

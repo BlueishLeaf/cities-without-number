@@ -1,10 +1,10 @@
 {
-  "_id": "ear-mod-filter",
+  "_id": "Vsa16vlLFUFiWsHc",
   "name": "Ear Mod/Filter",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "The user's sense of hearing is sharp- ened remarkably, allowing them to follow indi- vidual conversations in a noisy crowd, eavesdrop on whispers up to twenty meters distant, and gain a +2 bonus on all hearing-related Notice checks.",
+    "description": "The user's sense of hearing is sharpened remarkably, allowing them to follow individual conversations in a noisy crowd, eavesdrop on whispers up to twenty meters distant, and gain a +2 bonus on all hearing-related Notice checks.",
     "cost": 10000,
     "subType": "sensory",
     "concealment": "medical",

@@ -1,10 +1,10 @@
 {
-  "_id": "prosthetic-cyber-ii",
+  "_id": "O1DdNYjBUbTin713",
   "name": "Prosthetic Cyber II",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A more sophisticated and expen- sive version of basic prosthetic cyber, inobvious to anything but a medical scan and far less bur- densome on the user's system.",
+    "description": "A more sophisticated and expensive version of basic prosthetic cyber, inobvious to anything but a medical scan and far less burdensome on the user's system.",
     "cost": 15000,
     "subType": "medical",
     "concealment": "medical",

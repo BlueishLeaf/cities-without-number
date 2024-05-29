@@ -1,10 +1,10 @@
 {
-  "_id": "quickchange",
+  "_id": "ysoF3dZDoYwqWS8f",
   "name": "Quickchange",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The armor or clothing is designed with chroma-shifting fabrics, bi-facial texture panels, and removable accessories. As a Main Action, the wearer can shift its appearance to that of a dif- ferent type of clothing or armor with the same level of obviousness. The details of this alternate appearance can be set with an hour of adjustment.",
+    "description": "The armor or clothing is designed with chroma-shifting fabrics, bi-facial texture panels, and removable accessories. As a Main Action, the wearer can shift its appearance to that of a different type of clothing or armor with the same level of obviousness. The details of this alternate appearance can be set with an hour of adjustment.",
     "cost": 10000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

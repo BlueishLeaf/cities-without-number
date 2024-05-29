@@ -1,10 +1,10 @@
 {
-  "_id": "discretion-insurance-unit",
+  "_id": "YL5aNZ4eTwf4A3vO",
   "name": "Discretion Insurance Unit",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A small cranial bomb that can be keyed go off when it receives- or does not receive- certain codes or transmissions. Its un- fortunate tendency to misfire its anti-removal protocols makes it an unpopular choice for use in anyone but the most disposable subjects. Re- moving this cyber is done at a +2 difficulty, and failure causes the death of the subject and a Phys- ical save to avoid the death of the physician, with 5d6 damage taken on success.",
+    "description": "A small cranial bomb that can be keyed go off when it receivesor does not receivecertain codes or transmissions. Its unfortunate tendency to misfire its anti-removal protocols makes it an unpopular choice for use in anyone but the most disposable subjects. Removing this cyber is done at a +2 difficulty, and failure causes the death of the subject and a Physical save to avoid the death of the physician, with 5d6 damage taken on success.",
     "cost": 10000,
     "subType": "head",
     "concealment": "medical",

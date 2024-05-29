@@ -1,10 +1,10 @@
 {
-  "_id": "savage-impact",
+  "_id": "3XFlkFoixvS6hwmZ",
   "name": "Savage Impact",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Usable only on melee weapons, pow- ered impact plates, vibrating serrations, or other after-market adjustments increase its damage and Shock by +1.",
+    "description": "Usable only on melee weapons, powered impact plates, vibrating serrations, or other after-market adjustments increase its damage and Shock by +1.",
     "cost": 5000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

@@ -1,10 +1,10 @@
 {
-  "_id": "hellbender",
+  "_id": "91qeGE0zimPHaHto",
   "name": "Hellbender",
   "type": "drug",
   "img": "icons/consumables/potions/bottle-bulb-corked-glowing-red.webp",
   "system": {
-    "description": "A watery black toxin that must be ad- ministered through food or direct injection, Hellbender causes the victim to convulse with bone-cracking force shortly after consumption. A dose of Hellbender has a distinct acrid taste, but if the victim consumes it they must make a Physical saving throw or begin convulsing helplessly for 1d6 rounds, suffering 1d10 damage each round unless restrained by at least two associates. This damage can kill an unfortunate victim.",
+    "description": "A watery black toxin that must be administered through food or direct injection, Hellbender causes the victim to convulse with bone-cracking force shortly after consumption. A dose of Hellbender has a distinct acrid taste, but if the victim consumes it they must make a Physical saving throw or begin convulsing helplessly for 1d6 rounds, suffering 1d10 damage each round unless restrained by at least two associates. This damage can kill an unfortunate victim.",
     "cost": 100,
     "requiredSkills": "None"
   },

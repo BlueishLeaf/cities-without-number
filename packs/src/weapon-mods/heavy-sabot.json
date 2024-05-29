@@ -1,10 +1,10 @@
 {
-  "_id": "heavy-sabot",
+  "_id": "ygwDNB4KCj869csW",
   "name": "Heavy Sabot",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Applicable only to projectile weapons, the gun is modified to fire heavy AP rounds that can plausibly land Traumatic Hits even on ar- mored vehicles or heavy drones.",
+    "description": "Applicable only to projectile weapons, the gun is modified to fire heavy AP rounds that can plausibly land Traumatic Hits even on armored vehicles or heavy drones.",
     "cost": 2000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

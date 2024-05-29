@@ -1,10 +1,10 @@
 {
-  "_id": "cyberlimb",
+  "_id": "QY3Sy02vTNHG0Lr7",
   "name": "Cyberlimb",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A standard medical-grade cyberlimb, albe- it one Encumbrance worth of non-weapon equip- ment or storage can be implanted in each limb and remain Readied without counting against the character's Encumbrance. Add the equipment cost to the limb. The limb provides power to any electronic equipment implanted.",
+    "description": "A standard medical-grade cyberlimb, albeit one Encumbrance worth of non-weapon equipment or storage can be implanted in each limb and remain Readied without counting against the character's Encumbrance. Add the equipment cost to the limb. The limb provides power to any electronic equipment implanted.",
     "cost": 10000,
     "subType": "limb",
     "concealment": "touch",

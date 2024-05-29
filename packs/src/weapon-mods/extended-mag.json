@@ -1,10 +1,10 @@
 {
-  "_id": "extended-mag",
+  "_id": "5VNtXz457MnNTmZg",
   "name": "Extended Mag",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Caliber adjustments, feed as- sists, and magazine dimension alterations double a gun's reliable magazine capacity.",
+    "description": "Caliber adjustments, feed assists, and magazine dimension alterations double a gun's reliable magazine capacity.",
     "cost": 1000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

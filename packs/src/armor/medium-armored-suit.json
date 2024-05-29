@@ -1,10 +1,10 @@
 {
-  "_id": "medium-armored-suit",
+  "_id": "iJOLoJSR3gqRo2YW",
   "name": "Medium Armored Suit",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Heavy security usually sports armor on this level, including police rapid re- sponse teams.",
+    "description": "Heavy security usually sports armor on this level, including police rapid response teams.",
     "cost": 10000,
     "encumbrance": 3,
     "armorClass": {

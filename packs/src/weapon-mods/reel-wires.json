@@ -1,10 +1,10 @@
 {
-  "_id": "reel-wires",
+  "_id": "dPfOSI3ImhE7ELJS",
   "name": "Reel Wires",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "A thrown weapon is linked to a wrist spool with retractable wires that allow its retriev- al as an On Turn action. The wires can be cut by a properly-timed attack with a sharp weapon, but are too thin and sharp to be easily grabbed. The wires can drag up to 20 kilos of mass when retracting. Replacing broken wires takes fifteen minutes.",
+    "description": "A thrown weapon is linked to a wrist spool with retractable wires that allow its retrieval as an On Turn action. The wires can be cut by a properly-timed attack with a sharp weapon, but are too thin and sharp to be easily grabbed. The wires can drag up to 20 kilos of mass when retracting. Replacing broken wires takes fifteen minutes.",
     "cost": 2500,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

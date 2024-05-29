@@ -1,10 +1,10 @@
 {
-  "_id": "hardened-weave",
+  "_id": "lydSvo8S7FOz9HLK",
   "name": "Hardened Weave",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Skin cyber that grants an improved base armor class such as Dermal Armor has any AC it grants improved by +2. The additional armor makes the system Obvious, regardless of its orig- inal subtlety, and counts as one item of Readied encumbrance that cannot be dropped.",
+    "description": "Skin cyber that grants an improved base armor class such as Dermal Armor has any AC it grants improved by +2. The additional armor makes the system Obvious, regardless of its original subtlety, and counts as one item of Readied encumbrance that cannot be dropped.",
     "costPercentage": 30,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-2/Heal-1"

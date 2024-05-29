@@ -1,10 +1,10 @@
 {
-  "_id": "skinmod",
+  "_id": "dTQSBePlVCac7Sz0",
   "name": "Skinmod",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "Various neon tattoos, skin texture and col- or changes, and other superficial physical mods can be performed with no real systemic burden beyond the usual need for regular maintenance.",
+    "description": "Various neon tattoos, skin texture and color changes, and other superficial physical mods can be performed with no real systemic burden beyond the usual need for regular maintenance.",
     "cost": 250,
     "subType": "skin",
     "concealment": "sight",

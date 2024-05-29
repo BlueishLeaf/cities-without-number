@@ -1,10 +1,10 @@
 {
-  "_id": "reinforced-clothing",
+  "_id": "QH4eF1PdMH4X5kkZ",
   "name": "Reinforced Clothing",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Subtle polymer sheets and re - inforced weaves are used to provide a modicum of protection in this clothing without sacrificing taste.",
+    "description": "Subtle polymer sheets and reinforced weaves are used to provide a modicum of protection in this clothing without sacrificing taste.",
     "cost": 100,
     "encumbrance": 0,
     "armorClass": {

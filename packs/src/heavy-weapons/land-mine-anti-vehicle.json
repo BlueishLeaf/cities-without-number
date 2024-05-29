@@ -1,10 +1,10 @@
 {
-  "_id": "land-mine-anti-vehicle",
+  "_id": "3o9VGKrTK08DQKoU",
   "name": "Land Mine, Anti-Vehicle",
   "type": "weapon",
   "img": "icons/weapons/thrown/dynamite-red.webp",
   "system": {
-    "description": "<b>Land mines</b> come in anti-personnel and anti-ve- hicle flavors. The first activates on any human-sized approach within 1 meter, inflicting damage in a 2-me- ter radius with an Evasion save for half. Anti-vehi- cle mines can only be activated by vehicular levels of ground pressure or vehicle-sized proximate metal masses, but do their damage in a 5-meter radius. Hu- mans get an Evasion save for half damage in either case.",
+    "description": "<b>Land mines</b> come in anti-personnel and anti-vehicle flavors. The first activates on any human-sized approach within 1 meter, inflicting damage in a 2-meter radius with an Evasion save for half. Anti-vehicle mines can only be activated by vehicular levels of ground pressure or vehicle-sized proximate metal masses, but do their damage in a 5-meter radius. Humans get an Evasion save for half damage in either case.",
     "cost": 1000,
     "encumbrance": 2,
     "rollFormula": null,

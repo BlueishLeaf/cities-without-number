@@ -1,10 +1,10 @@
 {
-  "_id": "customized",
+  "_id": "szZMYNSPGkWuXyBD",
   "name": "Customized",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The weapon's balance and form are tai - lored to a specific user. That user gains a +1 bonus to all hit rolls with the weapon.",
+    "description": "The weapon's balance and form are tailored to a specific user. That user gains a +1 bonus to all hit rolls with the weapon.",
     "cost": 1000,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1"

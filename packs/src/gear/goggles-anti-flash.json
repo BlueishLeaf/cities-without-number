@@ -1,10 +1,10 @@
 {
-  "_id": "goggles-anti-flash",
+  "_id": "rxhcc3iVByJLO95X",
   "name": "Goggles, Anti-Flash",
   "type": "gear",
   "img": "icons/equipment/hand/gauntlet-armored-black.webp",
   "system": {
-    "description": "Basic anti-flash goggles defuse the visu - al threat of flashbangs and similar dazzlers. IR goggles include anti-flash tech, but also give the user effective IR vision out to 50 meters in most environments.",
+    "description": "Basic anti-flash goggles defuse the visual threat of flashbangs and similar dazzlers. IR goggles include anti-flash tech, but also give the user effective IR vision out to 50 meters in most environments.",
     "cost": 100,
     "encumbrance": 1
   },

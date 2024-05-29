@@ -1,10 +1,10 @@
 {
-  "_id": "reinforced-longcoat",
+  "_id": "JIOv2nI8gLiPV8KO",
   "name": "Reinforced Longcoat",
   "type": "armor",
   "img": "icons/equipment/chest/breastplate-banded-blue.webp",
   "system": {
-    "description": "Long, draping clothing is bolstered with advanced fabrics and discreet- ly-placed absorption plates, the whole remaining deniable as armor.",
+    "description": "Long, draping clothing is bolstered with advanced fabrics and discreetly-placed absorption plates, the whole remaining deniable as armor.",
     "cost": 500,
     "encumbrance": 1,
     "armorClass": {

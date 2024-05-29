@@ -1,10 +1,10 @@
 {
-  "_id": "sealed-systems-implant",
+  "_id": "AmUNlHArhKUYFd2d",
   "name": "Sealed Systems Implant",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "When triggered as an In - stant action, implanted shields deploy and skin- weaves energize to seal the user off from hostile external environments. For the next six hours, the user can operate as if wearing a vacuum suit, ignoring vacuum, contact poisons, non-immedi- ately-lethal levels of radiation, toxic gases, low or high-pressure atmospheres, and environmental temperature hazards short of open flame. After deployment, the implant needs an equal time of recovery before it can be deployed again.",
+    "description": "When triggered as an Instant action, implanted shields deploy and skinweaves energize to seal the user off from hostile external environments. For the next six hours, the user can operate as if wearing a vacuum suit, ignoring vacuum, contact poisons, non-immediately-lethal levels of radiation, toxic gases, low or high-pressure atmospheres, and environmental temperature hazards short of open flame. After deployment, the implant needs an equal time of recovery before it can be deployed again.",
     "cost": 15000,
     "subType": "skin",
     "concealment": "medical",

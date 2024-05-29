@@ -1,10 +1,10 @@
 {
-  "_id": "synthlimb",
+  "_id": "U2zk6uPmuti5Pi16",
   "name": "Synthlimb",
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "A high-grade cyberlimb that's indistin- guishable from an organic body part by anything short of a medical examination. It functions as a Cyberlimb for purposes of implanted equipment.",
+    "description": "A high-grade cyberlimb that's indistinguishable from an organic body part by anything short of a medical examination. It functions as a Cyberlimb for purposes of implanted equipment.",
     "cost": 0,
     "subType": "limb",
     "concealment": "medical",

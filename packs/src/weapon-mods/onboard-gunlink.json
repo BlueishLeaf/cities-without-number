@@ -1,10 +1,10 @@
 {
-  "_id": "onboard-gunlink",
+  "_id": "6R0zIDv1at3Ljgth",
   "name": "Onboard Gunlink",
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Usable only on firearms, the weap- on's onboard targeting hardware emulates the ef- fects of the Gunlink cyber-system. The user must have a Cranial Jack system to plug it in.",
+    "description": "Usable only on firearms, the weapon's onboard targeting hardware emulates the effects of the Gunlink cyber-system. The user must have a Cranial Jack system to plug it in.",
     "cost": 10000,
     "specialTechRequired": 1,
     "requiredSkills": "Fix-2"
