@@ -1,0 +1,31 @@
+{
+  "_id": "AVTTdPEVGLhG6ooB",
+  "name": "Epsilon",
+  "type": "server",
+  "img": "icons/magic/symbols/triangle-glow-purple.webp",
+  "system": {
+    "biography": "There can only be one primary server on a single network; others might be connected to it, but only the primary server counts for determining node connection limits, barriers, or active demons.",
+    "cost": 1000000,
+    "maxNodes": 30,
+    "maxBarriers": 10,
+    "maxDemons": {
+      "total": 12,
+      "perNode": 3
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}
