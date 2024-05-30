@@ -2,7 +2,7 @@
   "id": "cities-without-number",
   "title": "Cities Without Number",
   "description": "An unofficial implementation of Kevin Crawford's Cities Without Number TTRPG for FoundryVTT.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
     "minimum": 11,
     "verified": 11,
@@ -324,8 +324,8 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "systemStrain",
   "url": "https://github.com/BlueishLeaf/cities-without-number",
-  "manifest": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v.0.0.1/system.json",
-  "download": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v.0.0.1/cities-without-number.zip",
+  "manifest": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v.0.0.2/system.json",
+  "download": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v.0.0.2/cities-without-number.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }
