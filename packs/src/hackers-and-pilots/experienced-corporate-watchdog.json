@@ -1,11 +1,11 @@
 {
-  "name": "High-End Corporate IT Talent",
+  "name": "Experienced Corporate Watchdog",
   "type": "npc",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "health": {
-      "value": 30,
-      "max": 30
+      "value": 10,
+      "max": 10
     },
     "biography": "",
     "traumaTarget": {
@@ -27,20 +27,20 @@
       "max": 0,
       "base": 0
     },
-    "hitDice": "6d6",
-    "skillBonus": 5,
-    "saveTarget": 12,
+    "hitDice": "2d6",
+    "skillBonus": 2,
+    "saveTarget": 14,
     "attackBonus": {
-      "melee": 2,
-      "ranged": 2
+      "melee": 1,
+      "ranged": 1
     },
     "moraleTarget": 8,
-    "dangerValue": 9,
+    "dangerValue": 2,
     "cyberwareMaintenanceCost": null
   },
   "items": [
     {
-      "_id": "6sM8RDvHD9t93tJl",
+      "_id": "walu3jZ4vzCn7u3j",
       "name": "Ordinary Clothing",
       "type": "armor",
       "img": "icons/equipment/chest/breastplate-banded-blue.webp",
@@ -79,12 +79,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103206802,
+        "modifiedTime": 1717102270653,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "PzybDCNF3hwLp8Wu",
+      "_id": "uoYFf7t4V3nR7Jdv",
       "name": "Heavy Pistol",
       "type": "weapon",
       "img": "icons/weapons/guns/gun-red.webp",
@@ -135,177 +135,42 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103213661,
+        "modifiedTime": 1717102280836,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "VHHqVD6o42I0v329",
-      "name": "Cranial Jack",
-      "type": "cyberware",
-      "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
-      "system": {
-        "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
-        "mods": [],
-        "cost": 1000,
-        "concealment": "touch",
-        "subType": "head",
-        "systemStrain": 0.25,
-        "effect": "Link to jack-equipped gear"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.cyberware.Item.huifue2xxgC7TJPO"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103225038,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "R2lOFDTJFUzZC2jh",
-      "name": "Neural Buffer",
-      "type": "cyberware",
-      "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
-      "system": {
-        "description": "A system favored by hackers, a Neural Buffer rearranges the user's brain topography, making it more difficult to harm the user with neural feedback. The user gains an additional 3 hit points per level that can only absorb cyberspace damage from Stun or Kill Verbs. These phantom hit points refresh completely each hour.",
-        "mods": [],
-        "cost": 40000,
-        "concealment": "medical",
-        "subType": "head",
-        "systemStrain": 1,
-        "effect": "Gain 3 HP/level vs hacker dmg"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.cyberware.Item.ivO3EjD85TqRLyDA"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103229291,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "fEsw0OQWM23bNPmk",
-      "name": "Reaction Booster II",
-      "type": "cyberware",
-      "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
-      "system": {
-        "description": "As level one, but the user automatically wins initiative against targets that don't also automatically win initiative; if both have this ability, initiative is rolled without modifications. The user can act normally during surprise round",
-        "mods": [],
-        "cost": 100000,
-        "concealment": "medical",
-        "subType": "nerve",
-        "systemStrain": 2,
-        "effect": "Automatically win initiative"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.cyberware.Item.ZMTyA1G1JUgL1WST"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103234780,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "8klPSAs8dKpHxOWI",
-      "name": "Hacker",
-      "type": "edge",
-      "img": "icons/sundries/books/book-backed-blue-gold.webp",
-      "system": {
-        "description": "Gain Program as a bonus skill. You may begin play with an installed Cranial Jack cybersystem, a scrap deck from the cyberdeck equipment section, and eight program elements of your choice among available Verbs and Subjects. Each round, you gain a bonus Main Action that can only be used to perform hacking or cyberspace-related mental actions. This does not include drone piloting or vehicle driving."
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.edges.Item.Oqmi0R95cvKpTfzU"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103246024,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "T0fPj3VuploywhMG",
+      "_id": "o5EvvzmFXXKmJgtK",
       "name": "Cyberdeck",
       "type": "cyberdeck",
       "img": "icons/tools/navigation/sextant-steel-blue.webp",
       "system": {
-        "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
+        "description": "These laptop-sized computers range from scrap-built makeshifts to cutting edge hardware stolen from the very best corps.",
         "encumbrance": 1,
         "readied": false,
         "quantity": 1,
         "cost": 0,
         "mods": [],
         "verbs": [
-          "MUvKklUo4gwJrzgi",
-          "cYxmOAWtXJLEyDDN",
-          "pb1gm6MUajbZCdaU",
-          "KBmWYl2MBR8R7luf",
-          "Qpwj6XKTe1ByHYvA",
-          "lxRMvJkZpkDJIUd7",
-          "BjmRZ5Te9r9rtLk3",
-          "W3aEMi7KyN2K2rrU",
-          "9JBl5pc3DsB5HG3Z",
-          "ZTiE7tq4U6e70kmS"
+          "UuWB07wxUQM5BKdO",
+          "eBHvIsl0veX1xpMk",
+          "7i6GT73A8m2X2KMK",
+          "NQIuPMNv3CTOnHAr",
+          "WgPGnQDZPzFI1rby",
+          "0AmJUIMdA0LJ6WbV",
+          "SLzAsaIAGRJdZsMO"
         ],
         "subjects": [
-          "ADyBmwUZyv3FZ9rh",
-          "ZgpPga6jkgT6RNNE",
-          "IgFYVfiFXB1WqErM",
-          "6zL0O3QCOvyDPEev",
-          "7O0JYppcWzB5cNiz",
-          "VlMEJd5sj25veHos",
-          "tRUzu3s7DCayDCjH"
+          "ekFBgv3wIQVT5gQ0",
+          "4OUlgtVXKLxBrt0a",
+          "5JwzOFiIL1PzwBK5",
+          "BHmIwhENkwKFtKWW",
+          "NIC06E0mHaVLkvbg"
         ],
         "bonusAccess": 0,
-        "memory": 17,
+        "memory": 14,
         "shielding": 10,
-        "cpu": 4
+        "cpu": 3
       },
       "effects": [],
       "folder": null,
@@ -315,7 +180,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.cities-without-number.cyberdecks.Item.1j57IyShM9ROT6p3"
+          "sourceId": "Compendium.cities-without-number.cyberdecks.Item.OY9StwjXQuS44M26"
         }
       },
       "_stats": {
@@ -323,12 +188,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103363753,
+        "modifiedTime": 1717102813626,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "MUvKklUo4gwJrzgi",
+      "_id": "UuWB07wxUQM5BKdO",
       "name": "Defend",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -359,83 +224,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103285773,
+        "modifiedTime": 1717102426466,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "cYxmOAWtXJLEyDDN",
-      "name": "Glitch",
-      "type": "verb",
-      "img": "icons/sundries/misc/key-angular-white.webp",
-      "system": {
-        "description": "Temporarily deactivate a device or cyberware system while the program remains running, for no more than one round per Program skill level plus two. A device can be targeted by a particular hackers Glitch only once a day, successful or not.",
-        "cost": 1000,
-        "targetTypes": [
-          "device",
-          "cyber"
-        ],
-        "accessCost": 0,
-        "skillCheckMod": 2,
-        "selfTerminating": false
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.verbs.Item.OOM2PCIxk6PEnqSH"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103290744,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "pb1gm6MUajbZCdaU",
-      "name": "Kill",
-      "type": "verb",
-      "img": "icons/sundries/misc/key-angular-white.webp",
-      "system": {
-        "description": "Through forced autonomic feedback and outof-bounds electrical current parameters, inflict lethal damage to an enemy avatar equal to 1d10 per Program skill level, to a minimum of 1d10 on a successful opposed Int/Program skill check. This damage has a Trauma Die of 1d8 and a x3 Trauma Rating. The victims Trauma Target is not modified by armor, but it is by cyber or other modifiers. Unconscious hackers cannot resist this Verb and will be instantly killed by it. This Verb has no effect on Demons.",
-        "cost": 5000,
-        "targetTypes": [
-          "avatar"
-        ],
-        "accessCost": 1,
-        "skillCheckMod": 0,
-        "selfTerminating": true
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.verbs.Item.BGiH67BbvN9ZRAOZ"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103294855,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "KBmWYl2MBR8R7luf",
+      "_id": "eBHvIsl0veX1xpMk",
       "name": "Paralyze",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -465,12 +259,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103299335,
+        "modifiedTime": 1717102431127,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "Qpwj6XKTe1ByHYvA",
+      "_id": "7i6GT73A8m2X2KMK",
       "name": "Sense",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -501,48 +295,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103304318,
+        "modifiedTime": 1717102435699,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "lxRMvJkZpkDJIUd7",
-      "name": "Sabotage",
-      "type": "verb",
-      "img": "icons/sundries/misc/key-angular-white.webp",
-      "system": {
-        "description": "Cause a physical device or cyberware system to damage itself through violent movement or self-destructive current surges. Devices smaller than a car will usually be disabled until repaired. Cyberware users do not take damage, but must make two Physical saves to resist the effect; if they fail both, the targeted system is disabled until the next maintenance, and if they fail one, its frozen for one round. A device or cyber can be targeted by this Verb only once per scene.",
-        "cost": 2000,
-        "targetTypes": [
-          "device",
-          "cyber"
-        ],
-        "accessCost": 1,
-        "skillCheckMod": -1,
-        "selfTerminating": true
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.verbs.Item.lrcDrqCz0L6mxgVW"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103307950,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "BjmRZ5Te9r9rtLk3",
+      "_id": "NQIuPMNv3CTOnHAr",
       "name": "Silence",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -572,12 +330,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103310766,
+        "modifiedTime": 1717102440014,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "W3aEMi7KyN2K2rrU",
+      "_id": "WgPGnQDZPzFI1rby",
       "name": "Stun",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -607,12 +365,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103313745,
+        "modifiedTime": 1717102443825,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "9JBl5pc3DsB5HG3Z",
+      "_id": "0AmJUIMdA0LJ6WbV",
       "name": "Lock",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -643,12 +401,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103316413,
+        "modifiedTime": 1717102447786,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "ZTiE7tq4U6e70kmS",
+      "_id": "SLzAsaIAGRJdZsMO",
       "name": "Terminate",
       "type": "verb",
       "img": "icons/sundries/misc/key-angular-white.webp",
@@ -678,12 +436,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103319890,
+        "modifiedTime": 1717102452000,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "ADyBmwUZyv3FZ9rh",
+      "_id": "ekFBgv3wIQVT5gQ0",
       "name": "Avatar",
       "type": "subject",
       "img": "icons/sundries/misc/lock-steel-blue.webp",
@@ -708,12 +466,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103325292,
+        "modifiedTime": 1717102455959,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "ZgpPga6jkgT6RNNE",
+      "_id": "4OUlgtVXKLxBrt0a",
       "name": "Barrier",
       "type": "subject",
       "img": "icons/sundries/misc/lock-steel-blue.webp",
@@ -738,42 +496,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103330488,
+        "modifiedTime": 1717102459578,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "IgFYVfiFXB1WqErM",
-      "name": "Cyber",
-      "type": "subject",
-      "img": "icons/sundries/misc/lock-steel-blue.webp",
-      "system": {
-        "description": "A cybernetic system in a visible subject within 30 meters with no significant obstacles to line of sight. Unlike most Subjects, it's not necessary for a hacker to manifest an avatar inside the target node to affect cyber systems; they can launch their program directly at it, and the system itself need not be visible on the target's body. Given the difficulty of affecting cyber wirelessly, many hackers prefer to use more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb Cyber.",
-        "cost": 1000,
-        "type": "cyber"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103338015,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "6zL0O3QCOvyDPEev",
+      "_id": "5JwzOFiIL1PzwBK5",
       "name": "Camera",
       "type": "subject",
       "img": "icons/sundries/misc/lock-steel-blue.webp",
@@ -798,12 +526,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103341622,
+        "modifiedTime": 1717102463301,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "7O0JYppcWzB5cNiz",
+      "_id": "BHmIwhENkwKFtKWW",
       "name": "Door",
       "type": "subject",
       "img": "icons/sundries/misc/lock-steel-blue.webp",
@@ -828,42 +556,12 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103345677,
+        "modifiedTime": 1717102467368,
         "lastModifiedBy": "cwnBuilder0000"
       }
     },
     {
-      "_id": "VlMEJd5sj25veHos",
-      "name": "Nerve Cyber",
-      "type": "subject",
-      "img": "icons/sundries/misc/lock-steel-blue.webp",
-      "system": {
-        "description": "A cybernetic system in a visible subject within 30 meters with no significant obstacles to line of sight. Unlike most Subjects, it's not necessary for a hacker to manifest an avatar inside the target node to affect cyber systems; they can launch their program directly at it, and the system itself need not be visible on the target's body. Given the difficulty of affecting cyber wirelessly, many hackers prefer to use more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb Cyber.",
-        "cost": 1000,
-        "type": "cyber"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX"
-        }
-      },
-      "_stats": {
-        "systemId": "cities-without-number",
-        "systemVersion": "0.0.1",
-        "coreVersion": "11.315",
-        "createdTime": 1694265254,
-        "modifiedTime": 1717103358923,
-        "lastModifiedBy": "cwnBuilder0000"
-      }
-    },
-    {
-      "_id": "tRUzu3s7DCayDCjH",
+      "_id": "NIC06E0mHaVLkvbg",
       "name": "Program",
       "type": "subject",
       "img": "icons/sundries/misc/lock-steel-blue.webp",
@@ -888,7 +586,41 @@
         "systemVersion": "0.0.1",
         "coreVersion": "11.315",
         "createdTime": 1694265254,
-        "modifiedTime": 1717103363738,
+        "modifiedTime": 1717102471218,
+        "lastModifiedBy": "cwnBuilder0000"
+      }
+    },
+    {
+      "_id": "Djm75LliKKgeXNL9",
+      "name": "Cranial Jack",
+      "type": "cyberware",
+      "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
+      "system": {
+        "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
+        "mods": [],
+        "cost": 1000,
+        "concealment": "touch",
+        "subType": "head",
+        "systemStrain": 0.25,
+        "effect": "Link to jack-equipped gear"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.cities-without-number.cyberware.Item.huifue2xxgC7TJPO"
+        }
+      },
+      "_stats": {
+        "systemId": "cities-without-number",
+        "systemVersion": "0.0.1",
+        "coreVersion": "11.315",
+        "createdTime": 1694265254,
+        "modifiedTime": 1717102539487,
         "lastModifiedBy": "cwnBuilder0000"
       }
     }
@@ -899,10 +631,10 @@
     "systemId": "cities-without-number",
     "systemVersion": "0.0.1",
     "coreVersion": "11.315",
-    "createdTime": 1717103169956,
-    "modifiedTime": 1717103363753,
+    "createdTime": 1717102203823,
+    "modifiedTime": 1717102813626,
     "lastModifiedBy": "cwnBuilder0000"
   },
   "sort": 0,
-  "_id": "rfNbdqsSnvWI3nGb"
+  "_id": "yJwPcZ6jzKL6e2yC"
 }
