@@ -1,17 +1,17 @@
 {
-  "_id": "YFkuPd5Em5rhIguY",
-  "name": "Tripwire",
+  "_id": "nzmexdwXxFqhixJG",
+  "name": "Nemesis",
   "type": "demon",
   "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
   "system": {
     "health": {
-      "value": 3,
-      "max": 3
+      "value": 50,
+      "max": 50
     },
     "description": "Demons are autonomous programs supported by a network's server hardware. Demons have avatars much as human hackers do, but operate based on a list of prioritized command lines, carrying out their duties according to their programmed behavior.",
-    "maxCommandLines": 2,
-    "skillMod": 1,
-    "cost": 5000
+    "maxCommandLines": 5,
+    "skillMod": 5,
+    "cost": 500000
   },
   "effects": [],
   "folder": null,

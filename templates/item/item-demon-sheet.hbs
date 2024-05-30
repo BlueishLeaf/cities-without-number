@@ -7,7 +7,7 @@
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
-      <div class="resources grid grid-3col">
+      <div class="resources grid grid-4col">
 
         {{!-- "flex-group-center" is also defined in the _grid.scss file
         and it will add a small amount of padding, a border, and will
@@ -22,7 +22,7 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.maxCommandLines" class="resource-label">Max Cmd. Lines</label>
+          <label for="system.maxCommandLines" class="resource-label">Cmd. Lines</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.maxCommandLines" value="{{system.maxCommandLines}}" data-dtype="Number"/>
           </div>
@@ -32,6 +32,13 @@
           <label for="system.skillMod" class="resource-label">Skill Mod.</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.skillMod" value="{{system.skillMod}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.cost" class="resource-label">Cost</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
           </div>
         </div>
       </div>

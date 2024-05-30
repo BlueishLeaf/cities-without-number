@@ -1,16 +1,16 @@
 {
-  "_id": "YFkuPd5Em5rhIguY",
-  "name": "Tripwire",
+  "_id": "6SZDUGV6y1sMFjfH",
+  "name": "Headsman",
   "type": "demon",
   "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
   "system": {
     "health": {
-      "value": 3,
-      "max": 3
+      "value": 30,
+      "max": 30
     },
     "description": "Demons are autonomous programs supported by a network's server hardware. Demons have avatars much as human hackers do, but operate based on a list of prioritized command lines, carrying out their duties according to their programmed behavior.",
-    "maxCommandLines": 2,
-    "skillMod": 1,
+    "maxCommandLines": 4,
+    "skillMod": 3,
     "cost": 5000
   },
   "effects": [],
