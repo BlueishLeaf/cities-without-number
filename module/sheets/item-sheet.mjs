@@ -63,6 +63,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
           .sort((a, b) => a.sort - b.sort);
     }
     context.commandLines = itemData.system.commandLines;
+    context.targetTypes = itemData.system.targetTypes;
 
     console.info(context)
 
@@ -320,6 +321,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       case "commandLines":
         this.createCommandLine();
         break;
+      case "targetTypes":
+        this.createTargetType(event);
+        break;
       default:
         break;
     }
@@ -333,6 +337,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       case "commandLines":
         this.deleteCommandLine(event);
         break;
+      case "targetTypes":
+        this.deleteTargetType(event);
+        break;
       default:
         break;
     }
@@ -345,11 +352,26 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 
+  createTargetType() {
+    this.item.system.targetTypes.push('');
+
+    const systemUpdate = {targetTypes: this.item.system.targetTypes}
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
+
   deleteCommandLine(event) {
     const idx = this.item.system.commandLines.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
     this.item.system.commandLines.splice(idx, 1);
 
     const systemUpdate = {commandLines: this.item.system.commandLines}
+    Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
+  }
+
+  deleteTargetType(event) {
+    const idx = this.item.system.targetTypes.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
+    this.item.system.targetTypes.splice(idx, 1);
+
+    const systemUpdate = {targetTypes: this.item.system.targetTypes}
     Item.updateDocuments([{_id: this.item._id, system: systemUpdate}], {parent: this.actor}).then(updates => console.log("Updated item", updates));
   }
 

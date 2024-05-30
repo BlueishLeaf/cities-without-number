@@ -27,6 +27,7 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="targets">Targets</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -34,6 +35,17 @@
     {{!-- Description Tab --}}
     <div class="tab max-height" data-group="primary" data-tab="description">
       {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+
+    {{!-- Targets Tab --}}
+    <div class="tab max-height" data-group="primary" data-tab="targets">
+      <button class="list-item-create" data-list-type="targetTypes">Add Target</button>
+      {{#each targetTypes as |target|}}
+        <div class="list-item-container">
+          <input type="text" name="system.targetTypes" value="{{target}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Target" data-list-type="targetTypes"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
     </div>
   </section>
 </form>
