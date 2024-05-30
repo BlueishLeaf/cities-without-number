@@ -1,26 +1,26 @@
 {
-  "_id": "GrdKLOMDMWxkYTL3",
-  "name": "Knife",
+  "_id": "EpbDNwKGxjkHvLGw",
+  "name": "Body Blades II",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
-    "description": "<b>Knives, clubs, swords,</b> and other simple melee weapons are available almost anywhere on the street. Particularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
-    "cost": 20,
-    "encumbrance": 1,
-    "damageFormula": "1d4 + @attributeMod",
+    "description": "As level one, but the user's body armament includes not only conventional blades, but assorted improvements such as monomolecular edges, cutting vibrations, or thermal augmentation. Their unarmed attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3. Anyone who sees or touches their arms can detect signs of the cyber, however.",
+    "cost": 0,
+    "encumbrance": 0,
+    "damageFormula": "2d6 + @attributeMod",
     "range": {
-      "effective": 10,
-      "max": 20
+      "effective": 1,
+      "max": 1
     },
     "attribute": "str",
     "skill": "stab",
     "isBurstFireable": false,
     "trauma": {
-      "die": "1d6",
+      "die": "1d10",
       "rating": 3
     },
     "shock": {
-      "damage": 1,
+      "damage": 4,
       "threshold": 15
     },
     "magazine": null

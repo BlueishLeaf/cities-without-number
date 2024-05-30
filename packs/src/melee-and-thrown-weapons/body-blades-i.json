@@ -1,26 +1,26 @@
 {
-  "_id": "GrdKLOMDMWxkYTL3",
-  "name": "Knife",
+  "_id": "5cCPU9VqwzAwZLVG",
+  "name": "Body Blades I",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
-    "description": "<b>Knives, clubs, swords,</b> and other simple melee weapons are available almost anywhere on the street. Particularly impoverished gangers sometimes fashion makeshift machetes and improvised shivs when better can't be obtained. Such weapons are effectively free, but have a -1 penalty to hit and damage rolls due to their ungainly make.",
-    "cost": 20,
-    "encumbrance": 1,
-    "damageFormula": "1d4 + @attributeMod",
+    "description": "Assorted retractable blades and spikes are implanted in the user's limbs. Their unarmed attacks do 1d8 damage, Shock of 2/15, Trauma Die 1d8/x3 and can be rolled with either Stab or Punch as the relevant combat skill. The Punch skill does not add damage to Body Blades attacks. When not in use, the blades are perceptible only to a medical scan.",
+    "cost": 0,
+    "encumbrance": 0,
+    "damageFormula": "1d8 + @attributeMod",
     "range": {
-      "effective": 10,
-      "max": 20
+      "effective": 1,
+      "max": 1
     },
     "attribute": "str",
     "skill": "stab",
     "isBurstFireable": false,
     "trauma": {
-      "die": "1d6",
+      "die": "1d8",
       "rating": 3
     },
     "shock": {
-      "damage": 1,
+      "damage": 2,
       "threshold": 15
     },
     "magazine": null
