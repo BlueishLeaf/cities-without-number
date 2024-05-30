@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Silent radio or phone comms",
     "description": "An implanted phone/short-range radio that can directly communicate within 100 meters or use the phone grid, if it's available. For cranial security reasons, only text and voice can be transmitted, but conversations can be held without audible vocalization.",
     "cost": 1000,
     "subType": "sensory",

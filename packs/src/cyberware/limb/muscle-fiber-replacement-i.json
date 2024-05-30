@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Str 14, or +2 if higher",
     "description": "Artificial muscle fibers are implanted as replacements for the user's own flesh. The subject gains a Strength score of 14, or +2 if already 14 or higher.",
     "cost": 50000,
     "subType": "limb",

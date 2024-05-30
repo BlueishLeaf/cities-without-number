@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Eavesdrop on specific targets",
     "description": "As an On Turn action, the user can nominate a target within 20 meters. Until they get more than 100 meters away from the user or pass behind a solid barrier, the implant's hyper-specific hearing can track their motions perfectly and overhear anything they say or that is said to them. The user can listen to one such target at a time.",
     "cost": 10000,
     "subType": "sensory",

@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Use level-1 plugs of any kind",
     "description": "This improved plug jack allows use of either an intellectual skillplug or one requiring physical expertise, up to level-1.",
     "cost": 25000,
     "subType": "nerve",

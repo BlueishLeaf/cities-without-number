@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Lifelike artificial ears",
     "description": "This model of artificial ear is designed to be indistinguishable from normal ears, though they have all the properties of a normal pair of cyberears.",
     "cost": 25000,
     "subType": "sensory",

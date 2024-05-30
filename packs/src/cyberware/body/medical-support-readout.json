@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Gain +2 to Heal checks on you",
     "description": "A diagnostic system is interfaced with the user's biological processes, allowing a realtime analysis of their current health and any significant injuries. Aside from immediately alerting the user when they are poisoned, diseased, or injured, it grants any healing or medical support skill check a +2 bonus thanks to the diagnostic information and increases first aid or drug healing by +2 HP per application.",
     "cost": 10000,
     "subType": "body",

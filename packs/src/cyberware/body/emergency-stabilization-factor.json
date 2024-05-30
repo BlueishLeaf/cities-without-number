@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Automatically stabilize",
     "description": "When brought to zero hit points by an injury that does not instantly kill them, the user automatically stabilizes, gaining one System Strain, and will regain consciousness at the end of the scene with 1 hit point. If they are already at maximum strain, this cyberware does not function.",
     "cost": 30000,
     "subType": "body",

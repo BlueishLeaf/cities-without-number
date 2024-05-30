@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Aquatic adaptation mods",
     "description": "These implants allow the user to function normally while submerged for an indefinite period, drawing any necessary oxygen or drinking water from the surrounding salt or freshwater. Normal temperature extremes are managed without difficulty, and pressure can be handled down to depths of one kilometer. Visual augments and pressure gradient sensors allow the equivalent of normal sight up to 30 meters even in lightless water, and miniaturized support jets allow three-dimensional movement at twice the user's normal Move rating.",
     "cost": 30000,
     "subType": "skin",

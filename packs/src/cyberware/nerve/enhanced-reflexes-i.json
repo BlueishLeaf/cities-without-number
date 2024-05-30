@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "1/scene, bonus Main Action",
     "description": "Neural acceleration matrices can be deployed to briefly boost the user's reaction speed. Once per scene, as an On Turn action, the user gets a bonus non-cyberspace Main Action.",
     "cost": 100000,
     "subType": "nerve",

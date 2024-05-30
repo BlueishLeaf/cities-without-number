@@ -4,7 +4,8 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
-    "description": "This mod grants low-light vision, allowing clear sight to normal distances in any light condition better than pitch blackness",
+    "effect": "Get transmission, search better",
+    "description": "These eyes can receive text or video transmissions and play them on an inset in the user's normal vision. Outline and pattern discrimination is enhanced; when specifically looking for things or keeping watch, gain a +1 bonus to any relevant Notice check.",
     "cost": 10000,
     "subType": "sensory",
     "concealment": "medical",

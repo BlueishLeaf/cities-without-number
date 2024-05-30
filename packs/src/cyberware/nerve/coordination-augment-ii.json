@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Dex 18 and +10m Move",
     "description": "As Coordination Augment I, but the subject gains a Dexterity score of 18, and their base Move rate is increased by 10 meters.",
     "cost": 200000,
     "subType": "nerve",

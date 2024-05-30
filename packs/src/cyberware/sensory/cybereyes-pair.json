@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Flash-protected synthetic eyes",
     "description": "While a single cybernetic eye can be implanted, it is recommended that both be replaced at the same time to improve neural adaptation. These cybereyes are clearly artificial, though most are styled in attractive or striking fashions. They all have perfect 20/20 vision and integral flash protectors, but additional functionality must be implanted separately. A user with a pair of cybereyes or syntheyes halves the System Strain cost of cybernetic eye implants.",
     "cost": 10000,
     "subType": "sensory",

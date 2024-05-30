@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Automatically win initiative",
     "description": "As level one, but the user automatically wins initiative against targets that don't also automatically win initiative; if both have this ability, initiative is rolled without modifications. The user can act normally during surprise round",
     "cost": 100000,
     "subType": "nerve",

@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Noise-filtering synthetic ears",
     "description": "While normal in appearance, touch reveals the synthetic nature of these ears. Some owners prefer to style them in fanciful or unnatural ways. While the base model provides only normal human hearing, all are equipped with ear protection against loud noises. A pair of cyberears or synthears halves the System Strain cost of ear implants.",
     "cost": 10000,
     "subType": "sensory",

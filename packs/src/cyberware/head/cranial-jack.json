@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Link to jack-equipped gear",
     "description": "A discreetly-placed plug socket in the user's head or neck allows interfacing with cyberdecks and gear equipped with a jack line.",
     "cost": 1000,
     "subType": "head",

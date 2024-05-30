@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Suppress an implant side-effect",
     "description": "A set of customized medical and therapeutic implants are used to control the side-effects of a partially-successful cyberware implant. For each implantation of this system, the user can choose to ignore one implant side-effect they currently suffer. The skill check to implant this system can fail, but it never induces any side effects on its own.",
     "cost": 25000,
     "subType": "body",

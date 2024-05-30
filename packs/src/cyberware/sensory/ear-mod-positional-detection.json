@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Map all sound positions nearby",
     "description": "his ear mod constructs a spatial map of significant surrounding sounds, allowing the user to know the exact location of anything making audible noise. The precise location of distant shooters, the location of targets in visual concealment, and the positions of moving creatures in darkness are all clear.",
     "cost": 15000,
     "subType": "sensory",

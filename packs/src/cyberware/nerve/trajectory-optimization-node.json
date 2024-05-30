@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "1/scene turn a miss into a hit",
     "description": "This cyber can calculate the optimal path for bypassing defenses and striking a target. Once per scene, as an Instant action, turn a missed hit roll into a success. Melee and unarmed attacks can be used as-is, but using this unit with a ranged attack requires an active Gunlink with the weapon.",
     "cost": 50000,
     "subType": "nerve",

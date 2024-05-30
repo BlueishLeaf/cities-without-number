@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "+2 Init and Snap Attack benefits",
     "description": "These implants grant a +2 bonus to your Initiative, perhaps making you act before the rest of your team. Once per scene, as an Instant action, ignore Snap Attack hit penalties.",
     "cost": 50000,
     "subType": "nerve",

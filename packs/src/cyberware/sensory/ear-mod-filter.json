@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Get +2 on hearing skill checks",
     "description": "The user's sense of hearing is sharpened remarkably, allowing them to follow individual conversations in a noisy crowd, eavesdrop on whispers up to twenty meters distant, and gain a +2 bonus on all hearing-related Notice checks.",
     "cost": 10000,
     "subType": "sensory",

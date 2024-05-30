@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Climb sheer or vertical surfaces",
     "description": "Macroscale van der Waals generators allow the user's hands and feet to stick to vertical or overhanging surfaces, their full weight supported by one arm. They can climb such surfaces at their full movement rate with one free hand.",
     "cost": 15000,
     "subType": "limb",

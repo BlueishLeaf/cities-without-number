@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "1/scene, bonus Main and Move",
     "description": "Once per scene, as an On Turn action, the user gains a bonus non-cyberspace Main Action and Move action. By accepting one System Strain, this ability can be used as an Instant action, potentially interrupting incoming attacks if the user moves out of reach.",
     "cost": 250000,
     "subType": "nerve",

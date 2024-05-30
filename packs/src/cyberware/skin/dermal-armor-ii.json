@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "As I, but AC 18 and Shock resist",
     "description": "Heavier subcutaneous plating acts as Dermal Armor I with a base ranged and melee AC of 18. In addition, the user can ignore the first instance of Shock in a round.",
     "cost": 80000,
     "subType": "skin",

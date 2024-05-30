@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Boost skillplug max to level-3",
     "description": "A neural wiring connection improves a skillplug jack's limits to allow up to level-3 skill usage. One set of wires can support any number of jacks, but at least one is needed.",
     "cost": 50000,
     "subType": "nerve",

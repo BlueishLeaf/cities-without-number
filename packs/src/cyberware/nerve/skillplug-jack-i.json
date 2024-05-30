@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Use level-1 intellectual plugs",
     "description": "A discreet head-mounted plug port allows use of an intellectual skillplug for a skill requiring minimal physical ability, up to level-1. Once slotted, a skillplug takes fifteen minutes to boot up and integrate properly.",
     "cost": 10000,
     "subType": "nerve",

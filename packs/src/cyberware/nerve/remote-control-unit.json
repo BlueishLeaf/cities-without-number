@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Remote control drones/vehicles",
     "description": "A neurally-integrated control link allows for near-range control of drones or remote-rigged vehicles, as per page 81.",
     "cost": 10000,
     "subType": "nerve",

@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Mitigates a Major Injury",
     "description": "A more sophisticated and expensive version of basic prosthetic cyber, inobvious to anything but a medical scan and far less burdensome on the user's system.",
     "cost": 15000,
     "subType": "medical",

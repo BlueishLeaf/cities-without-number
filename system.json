@@ -47,16 +47,43 @@
       "system": "cities-without-number",
       "path": "packs/sample-vehicles.db",
       "type": "Actor",
-      "private": false,
+      "private": true,
       "flags": {}
     },
     {
-      "name": "sample-npcs",
-      "label": "Sample NPCs",
+      "name": "beasts-and-guard-animals",
+      "label": "Beasts and Guard animals",
       "system": "cities-without-number",
-      "path": "packs/sample-npcs.db",
+      "path": "packs/beasts-and-guard-animals.db",
       "type": "Actor",
-      "private": false,
+      "private": true,
+      "flags": {}
+    },
+    {
+      "name": "corp-guards-and-law-enforcement",
+      "label": "Corp Guards and Law Enforcement",
+      "system": "cities-without-number",
+      "path": "packs/corp-guards-and-law-enforcement.db",
+      "type": "Actor",
+      "private": true,
+      "flags": {}
+    },
+    {
+      "name": "gangers-and-criminals",
+      "label": "Gangers and Criminals",
+      "system": "cities-without-number",
+      "path": "packs/gangers-and-criminals.db",
+      "type": "Actor",
+      "private": true,
+      "flags": {}
+    },
+    {
+      "name": "hackers-and-pilots",
+      "label": "Hackers and Pilots",
+      "system": "cities-without-number",
+      "path": "packs/hackers-and-pilots.db",
+      "type": "Actor",
+      "private": true,
       "flags": {}
     },
     {

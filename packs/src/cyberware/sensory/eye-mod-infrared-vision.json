@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "See heat patterns in the area",
     "description": "The infrared vision this mod allows permits basic navigation in dark areas and makes the presence of heat sources such as humans, engines, and infrared tripwires very obvious. The user gains a +1 bonus on any Notice checks to detect the presence of thermally-unshielded living creatures.",
     "cost": 5000,
     "subType": "sensory",

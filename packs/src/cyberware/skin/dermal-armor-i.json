@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "AC 16, +1 to Trauma Target",
     "description": "Subtle dermal weave reinforcement grants a base ranged and melee AC of 16 and a +1 bonus to the user's Trauma Target.",
     "cost": 40000,
     "subType": "skin",

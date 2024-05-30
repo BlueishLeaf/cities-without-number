@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Mimic voices and stun enemies",
     "description": "Resonant cavities are designed into the user's torso, along with an advanced amplification system. They can reproduce any sound or voice they have heard before, and at maximum volume can be heard clearly up to five hundred meters away. Once per day, as a Main Action, this sound can be used to shatter normal glass in a ten-meter line in front of the user; creatures without ear protection in this area must make a Physical save or take 2d6 non-lethal damage.",
     "cost": 30000,
     "subType": "body",

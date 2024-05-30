@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Deflect one ranged hit per scene",
     "description": "Absorption plates and kinetic ablation units are implanted in the user's arms and linked with a reactive ballistic calculator. Once per scene, as an Instant action, the user can deflect a successful ranged bullet, arrow, or thrown weapon attack, including burst or suppressive fire. Surprise attacks cannot be deflected this way, nor can melee attacks or explosives.",
     "cost": 40000,
     "subType": "limb",

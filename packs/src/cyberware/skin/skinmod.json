@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Make cosmetic-level body mods",
     "description": "Various neon tattoos, skin texture and color changes, and other superficial physical mods can be performed with no real systemic burden beyond the usual need for regular maintenance.",
     "cost": 250,
     "subType": "skin",

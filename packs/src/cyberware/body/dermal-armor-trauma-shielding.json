@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Add +1 to user’s Trauma Target",
     "description": "A system that can only be installed on a user with at least one level of Dermal Armor, the trauma shielding addition adds +1 to the user's Trauma Target. This benefit stacks with any existing Dermal Armor bonus to the roll.",
     "cost": 100000,
     "subType": "body",

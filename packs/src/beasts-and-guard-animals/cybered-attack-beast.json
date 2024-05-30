@@ -1,0 +1,108 @@
+{
+  "name": "Cybered Attack Beast",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "health": {
+      "value": 25,
+      "max": 25
+    },
+    "biography": "<p><em><strong>This creature can makes 2 melee attacks as a Main Action.</strong></em></p><p>A high-end animal guardian usually built out of a great cat or hormonally-modified wolf, these cybered attack beasts get two attacks with each Main action and move with augmented speed. Most are equipped with remote control harnesses for an associated pilot and put through regular patrols of their assigned defensive area.</p>",
+    "traumaTarget": {
+      "base": 6,
+      "total": 7
+    },
+    "movement": {
+      "speed": 20,
+      "type": "ground"
+    },
+    "armorClass": {
+      "baseMelee": 10,
+      "melee": 13,
+      "baseRanged": 10,
+      "ranged": 13
+    },
+    "damageSoak": {
+      "value": 0,
+      "max": 0,
+      "base": 0
+    },
+    "hitDice": "5d6",
+    "skillBonus": 3,
+    "saveTarget": 13,
+    "attackBonus": {
+      "melee": 8,
+      "ranged": 0
+    },
+    "moraleTarget": 10,
+    "dangerValue": 15,
+    "cyberwareMaintenanceCost": null
+  },
+  "items": [
+    {
+      "name": "Cybernetic Claws",
+      "type": "weapon",
+      "system": {
+        "description": "",
+        "encumbrance": 0,
+        "readied": false,
+        "quantity": 1,
+        "cost": 0,
+        "attribute": "str",
+        "rollFormula": "1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB",
+        "mods": [],
+        "skill": null,
+        "damageFormula": "2d6 + 4",
+        "range": {
+          "effective": 1,
+          "max": 1
+        },
+        "isBurstFireable": false,
+        "magazine": null,
+        "trauma": {
+          "die": "1d8",
+          "rating": 3
+        },
+        "shock": {
+          "damage": 4,
+          "threshold": 99
+        },
+        "mounted": {
+          "power": 0,
+          "mass": 0,
+          "minimumSize": "medium"
+        },
+        "type": "weapon"
+      },
+      "sort": 0,
+      "_id": "aiLkn89tPyhZQBjy",
+      "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "cities-without-number",
+        "systemVersion": "0.0.1",
+        "coreVersion": "11.315",
+        "createdTime": 1717095261341,
+        "modifiedTime": 1717095537180,
+        "lastModifiedBy": "cwnBuilder0000"
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": "11.315",
+    "createdTime": 1717095117268,
+    "modifiedTime": 1717095561219,
+    "lastModifiedBy": "cwnBuilder0000"
+  },
+  "sort": 0,
+  "_id": "g92S1R2dHhnWomM5"
+}

@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Immune to normal disease/toxin",
     "description": "A wide-spectrum array of blood scrubbers, intake filters, and microbial barriers grants the user effective immunity to most natural diseases and non-synthetic toxins. Weaponized toxins and certain exotic natural afflictions can still affect the user, but they get a +2 bonus on all saving throws against them. The system automatically alerts the user if they have been exposed to a recognized disease or toxin, whether or not it affects them.",
     "cost": 25000,
     "subType": "body",

@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Body sculpt and Cha bonus",
     "description": "Any standard fleshmod can supply beauty, but an aesthetic augmentation suite provides not only a flesh-mod's versatility, but tailored pheromones, vocal harmonizers, social\rcue triggers, and an absolutely inhuman visual perfection. Subjects gain a Charisma score of 14, or a +2 score bonus if already 14 or greater, up to a maximum of 18.",
     "cost": 50000,
     "subType": "body",

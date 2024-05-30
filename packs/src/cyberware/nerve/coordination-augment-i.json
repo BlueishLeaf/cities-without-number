@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Dex 14, or +2 if higher",
     "description": "The user's natural mind-body interface is tightened. The subject gains a Dexterity score of 14, or +2 if already 14 or higher.",
     "cost": 50000,
     "subType": "nerve",

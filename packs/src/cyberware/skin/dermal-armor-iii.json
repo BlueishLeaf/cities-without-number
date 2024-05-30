@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "As II, but AC 20 and +2 TT",
     "description": "Overt ceramic body plating and double-mesh joint reinforcement acts as Dermal Armor II, but with a base ranged and melee AC of 20 and +2 to the user's Trauma Target.",
     "cost": 200000,
     "subType": "skin",

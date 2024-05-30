@@ -392,7 +392,8 @@
         "wearable"
       ],
       "systemStrain": 0,
-      "concealment": ""
+      "concealment": "",
+      "effect": ""
     },
     "mod": {
       "templates": [

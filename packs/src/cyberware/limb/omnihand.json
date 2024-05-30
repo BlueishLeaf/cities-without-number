@@ -4,6 +4,7 @@
   "type": "cyberware",
   "img": "icons/equipment/shoulder/pauldron-segmented-red.webp",
   "system": {
+    "effect": "Toolkit hand, +1 check 1/day",
     "description": "A full array of small mechanical and electronic tools are folded into this cybernetic hand. The user is never without the tools for relevant skill checks, and once per day as an Instant action can gain +1 on any skill check involving the omnihand's tool use. As an improvised weapon, the tools do damage as a knife.",
     "cost": 10000,
     "subType": "limb",
