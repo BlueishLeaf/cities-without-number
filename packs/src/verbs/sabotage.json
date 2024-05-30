@@ -1,0 +1,32 @@
+{
+  "_id": "lrcDrqCz0L6mxgVW",
+  "name": "Sabotage",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "Cause a physical device or cyberware system to damage itself through violent movement or self-destructive current surges. Devices smaller than a car will usually be disabled until repaired. Cyberware users do not take damage, but must make two Physical saves to resist the effect; if they fail both, the targeted system is disabled until the next maintenance, and if they fail one, its frozen for one round. A device or cyber can be targeted by this Verb only once per scene.",
+    "targetTypes": [
+      "device",
+      "cyber"
+    ],
+    "accessCost": 1,
+    "skillCheckMod": -1,
+    "selfTerminating": true,
+    "cost": 2000
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

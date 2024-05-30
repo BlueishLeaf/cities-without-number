@@ -1,15 +1,14 @@
 {
-  "_id": "PMvfvksTtwCmzczn",
-  "name": "Activate",
+  "_id": "Rym5SDCx4pDrHCkn",
+  "name": "Stun",
   "type": "verb",
   "img": "icons/sundries/misc/key-angular-white.webp",
   "system": {
-    "description": "Turn a device or piece of cyberware on. You can't control it or direct its function, but if it's programmed to do something when activated, such as grant a bonus action in exchange for System Strain, it does it for one round or one action. The spasmodic activation of cyber outside of the wearer's turn is unlikely to do anything useful, but it eats System Strain as usual if relevant.",
+    "description": "Disrupt an avatar or Demon with sensory glitching, non-lethal current surges, and code corruption. Make an Int/Program skill check; beat an opposed Int/Program check for a human target, or a static 8+skill bonus target for a Demon. The target takes 1d10 non-lethal damage per Program level, to a minimum of 1d10.",
     "targetTypes": [
-      "device",
-      "cyber"
+      "avatar"
     ],
-    "accessCost": 1,
+    "accessCost": 0,
     "skillCheckMod": 1,
     "selfTerminating": true,
     "cost": 1000

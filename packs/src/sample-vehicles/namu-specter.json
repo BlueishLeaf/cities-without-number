@@ -8,7 +8,7 @@
       "value": 24,
       "max": 24
     },
-    "biography": "While NAMU is better known for its aircraft offerings, the Specter is a good example of a top-of-the-line exfil vehicle for urban operators who aren’t willing to wrench their own ride. The standard Q-cladding mod allows it to masquerade as an ordinary corper SUV until its occu- pants need to make a violent and rapid withdrawal from the area. The heavy weaponry and enhanced speed comes at a cost, however, and the Specter’s frame is more fragile than standard for its class.",
+    "biography": "While NAMU is better known for its aircraft offerings, the Specter is a good example of a top-of-the-line exfil vehicle for urban operators who arent willing to wrench their own ride. The standard Q-cladding mod allows it to masquerade as an ordinary corper SUV until its occupants need to make a violent and rapid withdrawal from the area. The heavy weaponry and enhanced speed comes at a cost, however, and the Specters frame is more fragile than standard for its class.",
     "traumaTarget": {
       "base": 12,
       "total": 12
@@ -153,7 +153,7 @@
       "type": "mod",
       "img": "icons/tools/smithing/tongs-steel-grey.webp",
       "system": {
-        "description": "Increase the vehicle's maxi- mum Mass by 2 points for Small vehicles, 3 for Medium, or 4 for Large. Its maximum HP de- creases by 20% of its base, rounded up.",
+        "description": "Increase the vehicle's maximum Mass by 2 points for Small vehicles, 3 for Medium, or 4 for Large. Its maximum HP decreases by 20% of its base, rounded up.",
         "costPercentage": 20,
         "specialTechRequired": 1,
         "requiredSkills": "Fix-2/Drive-1"

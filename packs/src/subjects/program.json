@@ -1,11 +1,11 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "uIK4Jlhjab0ywcDf",
+  "name": "Program",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
+    "description": "A hostile program, used most often with the Terminate verb to end the effects of an enemy hacker's programs prematurely.",
+    "type": "program",
     "cost": 500
   },
   "effects": [],

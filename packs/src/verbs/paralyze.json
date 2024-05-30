@@ -1,0 +1,31 @@
+{
+  "_id": "P8IREWPDlgSVO4Fs",
+  "name": "Paralyze",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "On a successful opposed Int/Program skill check against the target, render a Demon or avatar incapable of moving out of a node or using the Alert the Network or Send Message actions while the program is running. Other cyberspace actions can be taken normally. Human hackers are also physically paralyzed while the program runs, incapable of moving in meatspace until the connection is cut or the program ends.",
+    "targetTypes": [
+      "avatar"
+    ],
+    "accessCost": 1,
+    "skillCheckMod": -1,
+    "selfTerminating": false,
+    "cost": 2000
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

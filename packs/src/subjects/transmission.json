@@ -1,12 +1,12 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "3HY095PDLBjQsT60",
+  "name": "Transmission",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
-    "cost": 500
+    "description": "Ambient radio transmissions can be affected with this element, most often for the purpose of tampering with local comms. A hacker need not be jacked into a cyberspace node to target local radio transmissions, but the usual -2 check penalty for wireless hacking applies.",
+    "type": "data",
+    "cost": 1000
   },
   "effects": [],
   "folder": null,

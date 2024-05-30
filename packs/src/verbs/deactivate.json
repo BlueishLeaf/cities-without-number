@@ -1,10 +1,10 @@
 {
-  "_id": "PMvfvksTtwCmzczn",
-  "name": "Activate",
+  "_id": "KVYSc7r9jf0ArvRz",
+  "name": "Deactivate",
   "type": "verb",
   "img": "icons/sundries/misc/key-angular-white.webp",
   "system": {
-    "description": "Turn a device or piece of cyberware on. You can't control it or direct its function, but if it's programmed to do something when activated, such as grant a bonus action in exchange for System Strain, it does it for one round or one action. The spasmodic activation of cyber outside of the wearer's turn is unlikely to do anything useful, but it eats System Strain as usual if relevant.",
+    "description": "Turn a device or piece of cyberware off. Most devices and cyber can be rebooted by the network or the user, but itll take a Main Action and a round to do so. If a network alert hasnt been issued, the network may not notice a deactivated device until someone spots the problem.",
     "targetTypes": [
       "device",
       "cyber"
@@ -12,7 +12,7 @@
     "accessCost": 1,
     "skillCheckMod": 1,
     "selfTerminating": true,
-    "cost": 1000
+    "cost": 2000
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,32 @@
+{
+  "_id": "xKBisKXPQT3uAhni",
+  "name": "Defend",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "A special Verb that can only be targeted at a friendly device or allied cyberware user within range, and costs no Access to use. While the program remains running, any hostile hacking attempts aimed at that device or any of the targets cyber systems must first beat the user in an opposed Int/Program skill check before they can attempt their hack. This Verb cannot negate programs that are already running on the target.",
+    "targetTypes": [
+      "device",
+      "cyber"
+    ],
+    "accessCost": 0,
+    "skillCheckMod": 0,
+    "selfTerminating": true,
+    "cost": 1000
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

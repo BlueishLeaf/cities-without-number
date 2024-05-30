@@ -1,12 +1,12 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "apKMUj4iN29x7l7Z",
+  "name": "Turret",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
-    "cost": 500
+    "description": "A security turret, emplaced gun, or other fixed automated weapon.",
+    "type": "device",
+    "cost": 1000
   },
   "effects": [],
   "folder": null,

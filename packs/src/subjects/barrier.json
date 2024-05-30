@@ -1,12 +1,12 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "2iHGL1OPg1AnR18r",
+  "name": "Barrier",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
-    "cost": 500
+    "description": "A network node barrier that blocks avatars from passing through a network connection.",
+    "type": "data",
+    "cost": 1000
   },
   "effects": [],
   "folder": null,

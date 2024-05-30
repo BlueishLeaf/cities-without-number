@@ -1,11 +1,11 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "6cwNjHcovALFzHII",
+  "name": "Machine",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
+    "description": "Security panels, factory machinery, electronic minefields, or any other hackable device not covered under an existing Subject. Its generality applies a +1 penalty to the security difficulty",
+    "type": "device",
     "cost": 500
   },
   "effects": [],

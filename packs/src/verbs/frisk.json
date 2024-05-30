@@ -1,0 +1,31 @@
+{
+  "_id": "7fisUkFDe6s2hObF",
+  "name": "Frisk",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "A Frisk Cyber program can give a list of all the cyber implanted in a specific human target within 30 meters, assuming the hackers skill check beats the cyber users security difficulty.",
+    "targetTypes": [
+      "cyber"
+    ],
+    "accessCost": 0,
+    "skillCheckMod": 1,
+    "selfTerminating": true,
+    "cost": 500
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

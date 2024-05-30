@@ -1,11 +1,11 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "4MVuoLANQJ5oIHfC",
+  "name": "Sensor",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
+    "description": "Similar to the Cameraelement, this code block handles sensors of any kind, regardless of what they are intended to detect. The generality of the element decreases its efficiency, however, and it applies a +1 security difficulty penalty.",
+    "type": "device",
     "cost": 500
   },
   "effects": [],

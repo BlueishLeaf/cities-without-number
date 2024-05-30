@@ -4,7 +4,7 @@
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The driver's smartphone or head- ware can tap the vehicle's sensors as an On Turn action, getting audio and visual from it if no spe- cial sensors are installed. This signal can reach up to two kilometers.",
+    "description": "The driver's smartphone or headware can tap the vehicle's sensors as an On Turn action, getting audio and visual from it if no special sensors are installed. This signal can reach up to two kilometers.",
     "costPercentage": 10,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1/Drive-0"

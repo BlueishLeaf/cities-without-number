@@ -1,11 +1,11 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "c5XjwKmFsHq6j7L7",
+  "name": "Door",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
+    "description": "A physical door, shutter, hatch, or other barrier with an electronic lock or opening mechanism.",
+    "type": "device",
     "cost": 500
   },
   "effects": [],

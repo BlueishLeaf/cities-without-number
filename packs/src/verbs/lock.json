@@ -1,17 +1,17 @@
 {
-  "_id": "PMvfvksTtwCmzczn",
-  "name": "Activate",
+  "_id": "9CZh7uEorNoovVhx",
+  "name": "Lock",
   "type": "verb",
   "img": "icons/sundries/misc/key-angular-white.webp",
   "system": {
-    "description": "Turn a device or piece of cyberware on. You can't control it or direct its function, but if it's programmed to do something when activated, such as grant a bonus action in exchange for System Strain, it does it for one round or one action. The spasmodic activation of cyber outside of the wearer's turn is unlikely to do anything useful, but it eats System Strain as usual if relevant.",
+    "description": "Lock a physical device that has some sort of electronic locking mechanism or a currently-unlocked cyberspace node barrier.",
     "targetTypes": [
       "device",
-      "cyber"
+      "data"
     ],
     "accessCost": 1,
     "skillCheckMod": 1,
-    "selfTerminating": true,
+    "selfTerminating": false,
     "cost": 1000
   },
   "effects": [],

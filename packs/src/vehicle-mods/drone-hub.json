@@ -4,7 +4,7 @@
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Install a housing that can hold a portable drone on Small vehicles or a non-portable drone on Medium or larger vehicles. The drone can be deployed while the vehicle is in motion. On- board signal encryption adds +2 to the difficulty of hacking any drone controlled by someone in or adjacent to this vehicle. This fitting can be in- stalled twice on Large vehicles.",
+    "description": "Install a housing that can hold a portable drone on Small vehicles or a non-portable drone on Medium or larger vehicles. The drone can be deployed while the vehicle is in motion. Onboard signal encryption adds +2 to the difficulty of hacking any drone controlled by someone in or adjacent to this vehicle. This fitting can be installed twice on Large vehicles.",
     "costPercentage": 10,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1/Drive-0"

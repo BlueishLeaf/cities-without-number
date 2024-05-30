@@ -4,7 +4,7 @@
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "The vehicle's controls are de- signed for the idiosyncrasies of a specific driver. Once per scene, as an Instant action, they can add +1 to a Drive skill check. Anyone else takes -1 to drive the vehicle.",
+    "description": "The vehicle's controls are designed for the idiosyncrasies of a specific driver. Once per scene, as an Instant action, they can add +1 to a Drive skill check. Anyone else takes -1 to drive the vehicle.",
     "costPercentage": 20,
     "specialTechRequired": 0,
     "requiredSkills": "Fix-1/Drive-2"

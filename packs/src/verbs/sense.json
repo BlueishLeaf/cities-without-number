@@ -1,0 +1,32 @@
+{
+  "_id": "sAW2wEgoMXI8uKJy",
+  "name": "Sense",
+  "type": "verb",
+  "img": "icons/sundries/misc/key-angular-white.webp",
+  "system": {
+    "description": "Piggyback on the sensory feed of a device or piece of cyber. Anything the device senses or records, the hacker can sense. Swapping focus from cyberspace to reality is an On Turn action.",
+    "targetTypes": [
+      "device",
+      "cyber"
+    ],
+    "accessCost": 0,
+    "skillCheckMod": 0,
+    "selfTerminating": false,
+    "cost": 1000
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "cities-without-number",
+    "systemVersion": "0.0.1",
+    "coreVersion": 11,
+    "createdTime": 1694265254,
+    "modifiedTime": 1694265254,
+    "lastModifiedBy": "cwnBuilder0000"
+  }
+}

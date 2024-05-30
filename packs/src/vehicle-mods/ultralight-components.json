@@ -4,7 +4,7 @@
   "type": "mod",
   "img": "icons/tools/smithing/tongs-steel-grey.webp",
   "system": {
-    "description": "Increase the vehicle's maxi- mum Mass by 2 points for Small vehicles, 3 for Medium, or 4 for Large. Its maximum HP de- creases by 20% of its base, rounded up.",
+    "description": "Increase the vehicle's maximum Mass by 2 points for Small vehicles, 3 for Medium, or 4 for Large. Its maximum HP decreases by 20% of its base, rounded up.",
     "costPercentage": 20,
     "specialTechRequired": 1,
     "requiredSkills": "Fix-2/Drive-1"

@@ -1,11 +1,11 @@
 {
-  "_id": "QX8yOJ1uZXKoa78h",
-  "name": "Avatar",
+  "_id": "gUUEOMz5Olq5Zn6l",
+  "name": "Camera",
   "type": "subject",
   "img": "icons/sundries/misc/lock-steel-blue.webp",
   "system": {
-    "description": "A cyberspace avatar, whether one adopted by a hacker who's jacked into the network or a Demon program standing guard there.",
-    "type": "avatar",
+    "description": "Any device that transmits audiovisual information. Some defensive hardware has its own onboard camera, which is susceptible to this target, while others rely on a separate device's input.",
+    "type": "device",
     "cost": 500
   },
   "effects": [],
