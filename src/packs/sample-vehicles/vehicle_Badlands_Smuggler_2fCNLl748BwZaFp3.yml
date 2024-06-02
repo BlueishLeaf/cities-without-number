@@ -44,11 +44,316 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.0.1
-  coreVersion: 11
+  systemVersion: 0.1.0
+  coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1694265254
-  lastModifiedBy: cwnBuilder0000
-items: []
+  modifiedTime: 1717338559220
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+items:
+  - _id: 2Cap8qRQyOShSLgt
+    name: Advanced Sensors
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        The vehicle is equipped with night vision, infrared sensors, and
+        short-range radar good up to twenty kilometers of airspace. It can be
+        driven safely even in pitch darkness.
+      cost: 8000
+      power: 1
+      mass: 0
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.vA2ht7lRfFrMXHQF
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338532512
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.2Cap8qRQyOShSLgt'
+  - _id: ybwOl6ADB80iZx4J
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338536973
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.ybwOl6ADB80iZx4J'
+  - _id: ddT4IosZuV9nqoHL
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338541102
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.ddT4IosZuV9nqoHL'
+  - _id: F4ubwQRA3UAWj1dT
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338541887
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.F4ubwQRA3UAWj1dT'
+  - _id: nRrz43TnQfzErPW1
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338542581
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.nRrz43TnQfzErPW1'
+  - _id: rBeJeGrcR4cHMjkU
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338543895
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.rBeJeGrcR4cHMjkU'
+  - _id: JOp9sufg2k9RjQft
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338550168
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.JOp9sufg2k9RjQft'
+  - _id: IRZTIXAtxFfKSYss
+    name: Smuggler's Hold
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken more than once, and adds 10 kg of concealed
+        cargo space in Small vehicles, 100 kg in Medium ones, and 400 kg in
+        Large ones. It can be detected only by taking the vehicle apart or by an
+        acute, careful inspection with a difficulty 12 Wis/Notice or Wis/ Drive
+        skill check.
+      cost: 1000
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.DM5J1KKqGXDf89S5
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338559220
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!2fCNLl748BwZaFp3.IRZTIXAtxFfKSYss'
+prototypeToken:
+  name: Badlands Smuggler
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!2fCNLl748BwZaFp3'
 

@@ -50,11 +50,357 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.0.1
-  coreVersion: 11
+  systemVersion: 0.1.0
+  coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1694265254
-  lastModifiedBy: cwnBuilder0000
-items: []
+  modifiedTime: 1717338727665
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+items:
+  - _id: y5MODTuxNc5eDoRV
+    name: Mounted Autogun
+    type: weapon
+    img: icons/weapons/guns/gun-topbarrel.webp
+    system:
+      description: >-
+        <b>Mounted autoguns</b> are a drone cannon's big brother, for larger
+        platforms. Each round of firing costs $100.
+      encumbrance: 99
+      readied: false
+      quantity: 1
+      cost: 15000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 3d8 + @attributeMod
+      range:
+        effective: 500
+        max: 2000
+      isBurstFireable: false
+      magazine:
+        value: 10
+        max: 10
+      trauma:
+        die: 1d12
+        rating: 2
+      shock: null
+      mounted:
+        power: 1
+        mass: 2
+        minimumSize: large
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-weapons.Item.pT9Q17rdmUs8KqNd
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338674207
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.y5MODTuxNc5eDoRV'
+  - _id: EAsGqko5E8z9Xlsx
+    name: Headshot Pod
+    type: weapon
+    img: icons/weapons/guns/gun-topbarrel.webp
+    system:
+      description: >-
+        <b>Headshot pods</b> are a family of guided missiles meant for mounted
+        deployment on vehicles or large drones. They always target AC 10 to hit,
+        but require two full consecutive rounds of aiming at a visible target to
+        get a target lock on them and prime for firing on the third round. Any
+        bystanders within 5 meters of the impact take damage as if from a frag
+        grenade. A headshot pod missile costs $2,000.
+      encumbrance: 99
+      readied: false
+      quantity: 1
+      cost: 20000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 4d6 + @attributeMod
+      range:
+        effective: 1000
+        max: 2000
+      isBurstFireable: false
+      magazine:
+        value: 1
+        max: 1
+      trauma:
+        die: 1d20
+        rating: 4
+      shock: null
+      mounted:
+        power: 3
+        mass: 2
+        minimumSize: large
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-weapons.Item.vAuOLApYVKjTilzK
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338678546
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.EAsGqko5E8z9Xlsx'
+  - _id: AkZcRNuR6p8jF7Il
+    name: Advanced Sensors
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        The vehicle is equipped with night vision, infrared sensors, and
+        short-range radar good up to twenty kilometers of airspace. It can be
+        driven safely even in pitch darkness.
+      cost: 8000
+      power: 1
+      mass: 0
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.vA2ht7lRfFrMXHQF
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338682510
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.AkZcRNuR6p8jF7Il'
+  - _id: HUf8GDCy1wDIyAJc
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338698459
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.HUf8GDCy1wDIyAJc'
+  - _id: FJVfIdKEVQ1DKcO2
+    name: ECM Emitter
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        On a successful hit roll by a headshot pod, rocket launcher, or other
+        long-range guided projectile, the driver can make an opposed Int or
+        Dex/Drive skill check against the attacker's combat skill. On a success,
+        the attacker must reroll their hit roll and take the worst result.
+      cost: 10000
+      power: 2
+      mass: 0
+      minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.EqbrigiLUalpjzBu
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338714452
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.FJVfIdKEVQ1DKcO2'
+  - _id: 3W9crzEbVZNeE1EE
+    name: Extra Passengers
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
+        fitting can be taken multiple times, and any vehicle amenities such as
+        crash pods or living quarters extend to these additional Crew as well.
+      cost: 2500
+      power: 0
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338718634
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.3W9crzEbVZNeE1EE'
+  - _id: 2CGQtyiR2qWb0ful
+    name: Extra Passengers
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
+        fitting can be taken multiple times, and any vehicle amenities such as
+        crash pods or living quarters extend to these additional Crew as well.
+      cost: 2500
+      power: 0
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338722602
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.2CGQtyiR2qWb0ful'
+  - _id: jxFJCg8tfR66578P
+    name: Sealed Atmosphere
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        For up to two hours per day the vehicle can seal itself entirely from
+        the outside atmosphere, with internal air tanks and positive pressure to
+        keep out external toxins. At all times it can maintain a comfortable
+        interior temperature in any terrestrial climate. Aircraft do not need
+        this fitting to function normally at high altitudes.
+      cost: 5000
+      power: 1
+      mass: 1
+      minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.CZtYlvYJFJmZdW1s
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338727665
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!g7HPBahUABbp7NF2.jxFJCg8tfR66578P'
+prototypeToken:
+  name: Kessler Mjolnir
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!g7HPBahUABbp7NF2'
 

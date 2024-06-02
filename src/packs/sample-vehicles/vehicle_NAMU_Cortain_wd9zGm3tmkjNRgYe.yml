@@ -48,11 +48,318 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.0.1
-  coreVersion: 11
+  systemVersion: 0.1.0
+  coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1694265254
-  lastModifiedBy: cwnBuilder0000
-items: []
+  modifiedTime: 1717338654739
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+items:
+  - _id: 7NYlr1swF50hmvjj
+    name: Mounted Autogun
+    type: weapon
+    img: icons/weapons/guns/gun-topbarrel.webp
+    system:
+      description: >-
+        <b>Mounted autoguns</b> are a drone cannon's big brother, for larger
+        platforms. Each round of firing costs $100.
+      encumbrance: 99
+      readied: false
+      quantity: 1
+      cost: 15000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 3d8 + @attributeMod
+      range:
+        effective: 500
+        max: 2000
+      isBurstFireable: false
+      magazine:
+        value: 10
+        max: 10
+      trauma:
+        die: 1d12
+        rating: 2
+      shock: null
+      mounted:
+        power: 1
+        mass: 2
+        minimumSize: large
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-weapons.Item.pT9Q17rdmUs8KqNd
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338611318
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.7NYlr1swF50hmvjj'
+  - _id: XCZUqCHxCQqnCdya
+    name: Shrieker Gun
+    type: weapon
+    img: icons/weapons/guns/gun-topbarrel.webp
+    system:
+      description: >-
+        <b>Shrieker guns</b> are sonic cannons used for crowd control and
+        non-lethal suppression. While highly effective against unprotected
+        targets, military-grade ear protection or the integral dampers in
+        cyber-ears are sufficient to render the weapon useless.
+      encumbrance: 99
+      readied: false
+      quantity: 1
+      cost: 10000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 2d6 + @attributeMod
+      range:
+        effective: 500
+        max: 2000
+      isBurstFireable: false
+      magazine: null
+      trauma: null
+      shock: null
+      mounted:
+        power: 2
+        mass: 2
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-weapons.Item.lv4y3jAJ5FIWo4Qr
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338619515
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.XCZUqCHxCQqnCdya'
+  - _id: PWSNKsYWHB6qx6Lu
+    name: Advanced Sensors
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        The vehicle is equipped with night vision, infrared sensors, and
+        short-range radar good up to twenty kilometers of airspace. It can be
+        driven safely even in pitch darkness.
+      cost: 8000
+      power: 1
+      mass: 0
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.vA2ht7lRfFrMXHQF
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338626901
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.PWSNKsYWHB6qx6Lu'
+  - _id: xFFaBsxznQPIPhFR
+    name: Armor Plating
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Increase the vehicle's Armor rating by 3 points. Medium vehicles can
+        apply this fitting twice, and Large ones can apply it three times.
+      cost: 5000
+      power: 0
+      mass: 3
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.Q534Uw7jqxdwJdng
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338633084
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.xFFaBsxznQPIPhFR'
+  - _id: TwYNuGnM60ogJXja
+    name: Extra Passengers
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
+        fitting can be taken multiple times, and any vehicle amenities such as
+        crash pods or living quarters extend to these additional Crew as well.
+      cost: 2500
+      power: 0
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338638249
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.TwYNuGnM60ogJXja'
+  - _id: eFpMK8FgQ1Zh4QoB
+    name: Jack Control Port
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        The vehicle is wired to be controlled through a plugged-in cranial jack
+        as well as a conventional wheel. While jacked in, the driver need only
+        use a Move Action to control the vehicle rather than a Main Action.
+      cost: 5000
+      power: 2
+      mass: 0
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.fx3f4mFLKruxqPBw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338648010
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.eFpMK8FgQ1Zh4QoB'
+  - _id: KoaOAZvujBsmLedC
+    name: Sealed Atmosphere
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        For up to two hours per day the vehicle can seal itself entirely from
+        the outside atmosphere, with internal air tanks and positive pressure to
+        keep out external toxins. At all times it can maintain a comfortable
+        interior temperature in any terrestrial climate. Aircraft do not need
+        this fitting to function normally at high altitudes.
+      cost: 5000
+      power: 1
+      mass: 1
+      minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.CZtYlvYJFJmZdW1s
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338654739
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!wd9zGm3tmkjNRgYe.KoaOAZvujBsmLedC'
+prototypeToken:
+  name: NAMU Cortain
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!wd9zGm3tmkjNRgYe'
 

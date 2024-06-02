@@ -48,11 +48,300 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.0.1
-  coreVersion: 11
+  systemVersion: 0.1.0
+  coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1694265254
-  lastModifiedBy: cwnBuilder0000
-items: []
+  modifiedTime: 1717338509848
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+items:
+  - _id: cPDOdk5qoqwAESFD
+    name: Heavy Machine Gun
+    type: weapon
+    img: icons/weapons/guns/gun-topbarrel.webp
+    system:
+      description: >-
+        <b>Heavy machine guns</b> are old tech, but reliable. Without a fixed
+        firing position or vehicle mount, however, their recoil makes them
+        almost uncontrollable. Due to the mass of lead involved in firing an
+        HMG, each "round" of its ammunition costs $100 and counts as a full item
+        of encumbrance.
+      encumbrance: 3
+      readied: false
+      quantity: 1
+      cost: 10000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 3d6 + @attributeMod
+      range:
+        effective: 500
+        max: 2000
+      isBurstFireable: false
+      magazine:
+        value: 10
+        max: 10
+      trauma:
+        die: 1d12
+        rating: 3
+      shock: null
+      mounted:
+        power: 0
+        mass: 2
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.heavy-weapons.Item.2j1HcUClx8QSSNXP
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338471239
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.cPDOdk5qoqwAESFD'
+  - _id: djk9t2tPxkZ0TW8H
+    name: Afterburners
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Once per scene, as an On Turn action, boost the vehicle's Speed by 1 for
+        five rounds.
+      cost: 5000
+      power: 1
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.79kSGAr0Ri7K5bRf
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338476056
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.djk9t2tPxkZ0TW8H'
+  - _id: 6uVuFlHSZK9l4LqX
+    name: Armor Plating
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Increase the vehicle's Armor rating by 3 points. Medium vehicles can
+        apply this fitting twice, and Large ones can apply it three times.
+      cost: 5000
+      power: 0
+      mass: 3
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.Q534Uw7jqxdwJdng
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338482667
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.6uVuFlHSZK9l4LqX'
+  - _id: AGKvFRbNOvU3KF4r
+    name: Extra Passengers
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
+        fitting can be taken multiple times, and any vehicle amenities such as
+        crash pods or living quarters extend to these additional Crew as well.
+      cost: 2500
+      power: 0
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338493624
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.AGKvFRbNOvU3KF4r'
+  - _id: dppjyQW4CXp7xgiA
+    name: Jack Control Port
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        The vehicle is wired to be controlled through a plugged-in cranial jack
+        as well as a conventional wheel. While jacked in, the driver need only
+        use a Move Action to control the vehicle rather than a Main Action.
+      cost: 5000
+      power: 2
+      mass: 0
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.fx3f4mFLKruxqPBw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338499046
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.dppjyQW4CXp7xgiA'
+  - _id: UGnvhxHgEz0R4E7G
+    name: Q-Cladding
+    type: mod
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Disguise the vehicle as another vehicle of the same general type, and
+        hide its mounted weaponry. Replacing the disguise after weapons are
+        deployed takes five minutes.
+      cost: 0
+      requiredSkills: Fix-1/Drive-2
+      costPercentage: 20
+      specialTechRequired: 0
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-mods.Item.zosDb29D0vAtD2MQ
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338504963
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.UGnvhxHgEz0R4E7G'
+  - _id: 0lR7tMAE44KybMmd
+    name: Ultralight Components
+    type: mod
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Increase the vehicle's maximum Mass by 2 points for Small vehicles, 3
+        for Medium, or 4 for Large. Its maximum HP decreases by 20% of its base,
+        rounded up.
+      cost: 0
+      requiredSkills: Fix-2/Drive-1
+      costPercentage: 20
+      specialTechRequired: 1
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.vehicle-mods.Item.A2WeQSrqlStYeg2C
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338509848
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AChHEznwie2eR1yy.0lR7tMAE44KybMmd'
+prototypeToken:
+  name: NAMU Specter
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!AChHEznwie2eR1yy'
 

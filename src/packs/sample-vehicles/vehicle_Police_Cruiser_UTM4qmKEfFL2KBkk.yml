@@ -44,11 +44,188 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.0.1
-  coreVersion: 11
+  systemVersion: 0.1.0
+  coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1694265254
-  lastModifiedBy: cwnBuilder0000
-items: []
+  modifiedTime: 1717338768782
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+items:
+  - _id: Ft0j7WwTKGEM92E3
+    name: Afterburners
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Once per scene, as an On Turn action, boost the vehicle's Speed by 1 for
+        five rounds.
+      cost: 5000
+      power: 1
+      mass: 2
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.79kSGAr0Ri7K5bRf
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338573595
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!UTM4qmKEfFL2KBkk.Ft0j7WwTKGEM92E3'
+  - _id: L6hkEooQ00cFlecb
+    name: Armor Plating
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Increase the vehicle's Armor rating by 3 points. Medium vehicles can
+        apply this fitting twice, and Large ones can apply it three times.
+      cost: 5000
+      power: 0
+      mass: 3
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.Q534Uw7jqxdwJdng
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338578570
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!UTM4qmKEfFL2KBkk.L6hkEooQ00cFlecb'
+  - _id: Naf7IFYIAesRhhxk
+    name: Cargo Space
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        This fitting can be taken multiple times. Each time it adds 50 kg of
+        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
+        metric tons for Large ones.
+      cost: 0
+      power: 0
+      mass: 1
+      minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338582653
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!UTM4qmKEfFL2KBkk.Naf7IFYIAesRhhxk'
+  - _id: HMKw410sB787k1pR
+    name: Crash Pod
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        If the vehicle crashes, the occupants can each reroll one failed crash
+        save. If they make any of their saves, their HP can't be reduced below 1
+        point by the crash.
+      cost: 2500
+      power: 0
+      mass: 2
+      minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.vehicle-fittings.Item.sS0wihdBXSSAHiyP
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717338589102
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!UTM4qmKEfFL2KBkk.HMKw410sB787k1pR'
+prototypeToken:
+  name: Police Cruiser
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!UTM4qmKEfFL2KBkk'
 
