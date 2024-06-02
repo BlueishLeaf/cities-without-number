@@ -7,6 +7,8 @@ import { CitiesWithoutNumberItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { CWN } from "./helpers/config.mjs";
+// Import DataModel classes
+import * as models from './data/module.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -37,6 +39,15 @@ Hooks.once("init", async function() {
   // Define custom Document classes
   CONFIG.Actor.documentClass = CitiesWithoutNumberActor;
   CONFIG.Item.documentClass = CitiesWithoutNumberItem;
+
+  // Declare data models
+  CONFIG.Actor.dataModels = {
+    character: models.CharacterActorData,
+    npc: models.NpcActorData,
+    drone: models.DroneActorData,
+    vehicle: models.VehicleActorData,
+    server: models.ServerActorData
+  }
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);

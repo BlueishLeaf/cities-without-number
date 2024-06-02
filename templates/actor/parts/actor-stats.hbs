@@ -20,9 +20,9 @@
     <div class="abilities flexcol grid grid-2col">
       <h5>Save</h5>
       <h5>Target</h5>
-      {{#each system.savingThrows.saveTargets as |save key|}}
-        <label for="system.savingThrows.saveTargets.{{key}}.value" class="resource-label flexlarge align-left rollable" data-roll-type="save" data-save="{{key}}" data-label="{{save.label}}">{{save.label}}</label>
-        <input type="text" name="system.savingThrows.saveTargets.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
+      {{#each system.savingThrows as |save key|}}
+        <label for="system.savingThrows.{{key}}.value" class="resource-label flexlarge align-left rollable" data-roll-type="save" data-save="{{key}}" data-label="{{save.label}}">{{save.label}}</label>
+        <input type="text" name="system.savingThrows.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
       {{/each}}
     </div>
   </div>
