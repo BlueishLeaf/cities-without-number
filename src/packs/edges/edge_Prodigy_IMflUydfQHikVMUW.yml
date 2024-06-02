@@ -1,0 +1,24 @@
+_id: IMflUydfQHikVMUW
+name: Prodigy
+type: edge
+img: icons/sundries/books/book-backed-blue-gold.webp
+system:
+  description: >-
+    Pick an attribute other than Constitution; its score becomes 18 and it
+    grants a +3 modifier instead of +2. Characters benefiting from the Underdog
+    Rule can't take this Edge.
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!edge!IMflUydfQHikVMUW'
+

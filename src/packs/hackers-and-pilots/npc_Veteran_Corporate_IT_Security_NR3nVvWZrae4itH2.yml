@@ -1,0 +1,240 @@
+name: Veteran Corporate IT Security
+type: npc
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 20
+    max: 20
+  biography: ''
+  traumaTarget:
+    base: 6
+    total: 6
+  movement:
+    speed: 10
+    type: ground
+  armorClass:
+    baseMelee: 10
+    melee: 10
+    baseRanged: 10
+    ranged: 10
+  damageSoak:
+    value: 0
+    max: 0
+    base: 0
+  hitDice: 4d6
+  skillBonus: 2
+  saveTarget: 13
+  attackBonus:
+    melee: 2
+    ranged: 2
+  moraleTarget: 8
+  dangerValue: 4
+  cyberwareMaintenanceCost: null
+items:
+  - _id: oOfODQUtNUOPjSjD
+    name: Ordinary Clothing
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        Some bold, impoverished, or highly fashionable people still insist on
+        wearing clothing that has no functional use as armor.
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      cost: 25
+      mods: []
+      concealment: subtle
+      subType: armor
+      armorClass:
+        melee: 10
+        ranged: 10
+      canEquipWithSuit: true
+      isHeavy: false
+      isSuit: false
+      damageSoak: 0
+      traumaTargetMod: 0
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.3hxao9U3pCliYiFW
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102515046
+      lastModifiedBy: cwnBuilder0000
+  - _id: 1nrUDbB03LzmsRkQ
+    name: Heavy Pistol
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Light and heavy pistols</b> are categorized by the caliber of the
+        bullet they fire. Some operators prefer the low recoil and high mag
+        capacity possible with a low-caliber round, while others like to have a
+        little more certainty in dropping the targets they hit.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 200
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 10
+        max: 100
+      isBurstFireable: false
+      magazine:
+        value: 8
+        max: 8
+      trauma:
+        die: 1d6
+        rating: 3
+      shock: null
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102520644
+      lastModifiedBy: cwnBuilder0000
+  - _id: mG3E2kWFnZlelt27
+    name: Cranial Jack
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        A discreetly-placed plug socket in the user's head or neck allows
+        interfacing with cyberdecks and gear equipped with a jack line.
+      mods: []
+      cost: 1000
+      concealment: touch
+      subType: head
+      systemStrain: 0.25
+      effect: Link to jack-equipped gear
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.huifue2xxgC7TJPO
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102526278
+      lastModifiedBy: cwnBuilder0000
+  - _id: 7URkrbhIQYMawele
+    name: Neural Buffer
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        A system favored by hackers, a Neural Buffer rearranges the user's brain
+        topography, making it more difficult to harm the user with neural
+        feedback. The user gains an additional 3 hit points per level that can
+        only absorb cyberspace damage from Stun or Kill Verbs. These phantom hit
+        points refresh completely each hour.
+      mods: []
+      cost: 40000
+      concealment: medical
+      subType: head
+      systemStrain: 1
+      effect: Gain 3 HP/level vs hacker dmg
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.ivO3EjD85TqRLyDA
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102554694
+      lastModifiedBy: cwnBuilder0000
+  - _id: 40hknO0SJQRIDmjR
+    name: Cyberdeck
+    type: cyberdeck
+    img: icons/tools/navigation/sextant-steel-blue.webp
+    system:
+      description: >-
+        These laptop-sized computers range from scrap-built makeshifts to
+        cutting edge hardware stolen from the very best corps.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 0
+      mods: []
+      verbs:
+        - UuWB07wxUQM5BKdO
+        - eBHvIsl0veX1xpMk
+        - 7i6GT73A8m2X2KMK
+        - NQIuPMNv3CTOnHAr
+        - WgPGnQDZPzFI1rby
+        - 0AmJUIMdA0LJ6WbV
+        - SLzAsaIAGRJdZsMO
+      subjects:
+        - ekFBgv3wIQVT5gQ0
+        - 4OUlgtVXKLxBrt0a
+        - 5JwzOFiIL1PzwBK5
+        - BHmIwhENkwKFtKWW
+        - NIC06E0mHaVLkvbg
+      bonusAccess: 0
+      memory: 14
+      shielding: 10
+      cpu: 3
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberdecks.Item.OY9StwjXQuS44M26
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102822685
+      lastModifiedBy: cwnBuilder0000
+effects: []
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: '11.315'
+  createdTime: 1717102489125
+  modifiedTime: 1717102822685
+  lastModifiedBy: cwnBuilder0000
+sort: 0
+_id: NR3nVvWZrae4itH2
+_key: '!npc!NR3nVvWZrae4itH2'
+

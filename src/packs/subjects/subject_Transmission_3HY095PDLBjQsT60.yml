@@ -1,0 +1,27 @@
+_id: 3HY095PDLBjQsT60
+name: Transmission
+type: subject
+img: icons/sundries/misc/lock-steel-blue.webp
+system:
+  description: >-
+    Ambient radio transmissions can be affected with this element, most often
+    for the purpose of tampering with local comms. A hacker need not be jacked
+    into a cyberspace node to target local radio transmissions, but the usual -2
+    check penalty for wireless hacking applies.
+  type: data
+  cost: 1000
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!subject!3HY095PDLBjQsT60'
+

@@ -1,0 +1,29 @@
+_id: a687XqVcGq1qzOA6
+name: Panacea
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    Not so much a single drug as a pharmaceutical suite in a single injection
+    system, this chem requires a skilled physician to adjust its mix. When used
+    as part of a first aid attempt, this drug doubles the amount of hit points
+    recovered by the attempt, with a minimum healing rate of 6 HP. Rumors of a
+    drastically increased rate of bone cancers among regular users are, of
+    course, mere slander against its manufacturer.
+  cost: 200
+  requiredSkills: Heal-1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!a687XqVcGq1qzOA6'
+

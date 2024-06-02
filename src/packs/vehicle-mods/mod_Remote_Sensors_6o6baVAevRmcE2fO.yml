@@ -1,0 +1,27 @@
+_id: 6o6baVAevRmcE2fO
+name: Remote Sensors
+type: mod
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    The driver's smartphone or headware can tap the vehicle's sensors as an On
+    Turn action, getting audio and visual from it if no special sensors are
+    installed. This signal can reach up to two kilometers.
+  costPercentage: 10
+  specialTechRequired: 0
+  requiredSkills: Fix-1/Drive-0
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!mod!6o6baVAevRmcE2fO'
+

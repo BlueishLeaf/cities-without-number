@@ -1,0 +1,31 @@
+_id: dCE9wzBP0LJVylLc
+name: Pillow
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    A powerful sedative that requires medical expertise to administer properly,
+    Pillow must be injected into a restrained or helpless subject, as vigorous
+    physical action can disrupt the effects. Once injected, the subject falls
+    into a torpor indistinguishable from death that lasts for 24 hours. They
+    require only trace amounts of oxygen while in their trance, and can be
+    identified as alive only through careful medical examination. If Pillow is
+    administered with less than a 24-hour gap between doses, the victim must
+    make a Physical save or die sometime before the dose ends.
+  cost: 10
+  requiredSkills: Heal-0
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!dCE9wzBP0LJVylLc'
+

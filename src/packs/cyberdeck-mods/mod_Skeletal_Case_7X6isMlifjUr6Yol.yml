@@ -1,0 +1,26 @@
+_id: 7X6isMlifjUr6Yol
+name: Skeletal Case
+type: mod
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    The deck's Encumbrance value is decreased by 1, but its Memory suffers a -2
+    penalty. Costs 10% of the base deck cost.
+  costPercentage: 10
+  specialTechRequired: 0
+  requiredSkills: Fix-1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!mod!7X6isMlifjUr6Yol'
+

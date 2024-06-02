@@ -1,0 +1,30 @@
+_id: dzBpRMIJ4ZQgpfaB
+name: Dermal Armor/Trauma Shielding
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Add +1 to user’s Trauma Target
+  description: >-
+    A system that can only be installed on a user with at least one level of
+    Dermal Armor, the trauma shielding addition adds +1 to the user's Trauma
+    Target. This benefit stacks with any existing Dermal Armor bonus to the
+    roll.
+  cost: 100000
+  subType: body
+  concealment: medical
+  systemStrain: 1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!dzBpRMIJ4ZQgpfaB'
+

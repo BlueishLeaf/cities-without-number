@@ -1,0 +1,30 @@
+_id: Umz0gUzEKhPpZQXF
+name: Emergency Stabilization Factor
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Automatically stabilize
+  description: >-
+    When brought to zero hit points by an injury that does not instantly kill
+    them, the user automatically stabilizes, gaining one System Strain, and will
+    regain consciousness at the end of the scene with 1 hit point. If they are
+    already at maximum strain, this cyberware does not function.
+  cost: 30000
+  subType: body
+  concealment: medical
+  systemStrain: 1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!Umz0gUzEKhPpZQXF'
+

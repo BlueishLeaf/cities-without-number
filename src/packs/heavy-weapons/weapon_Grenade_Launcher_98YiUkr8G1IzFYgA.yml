@@ -1,0 +1,49 @@
+_id: 98YiUkr8G1IzFYgA
+name: Grenade Launcher
+type: weapon
+img: icons/weapons/guns/gun-topbarrel.webp
+system:
+  description: >-
+    <b>Grenade launchers</b> are accessories that are mounted on rifle-sized
+    firearms, adding 1 Encumbrance to their bulk. These weapons can launch
+    specially-designed grenades to the listed range, targeting them as if they
+    were thrown normally. These special grenades cost and function the same as
+    their regular equivalents but cannot be thrown by hand. When attacking, the
+    user can choose whether to fire the grenade launcher or the weapon it's
+    mounted to, but both cannot be fired in the same round. Stand-alone grenade
+    launcher models are available for vehicle or drone mounting, counting as 2
+    Encumbrance but otherwise having the same cost and statistics.
+  cost: 3000
+  encumbrance: 1
+  rollFormula: null
+  damageFormula: null
+  range:
+    effective: 150
+    max: 350
+  attribute: null
+  skill: null
+  isBurstFireable: false
+  trauma: null
+  magazine:
+    value: 0
+    max: 3
+  shock: null
+  mounted:
+    power: 0
+    mass: 1
+    minimumSize: medium
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!weapon!98YiUkr8G1IzFYgA'
+

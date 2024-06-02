@@ -1,0 +1,31 @@
+_id: FHXGMSFEcr2xpzQJ
+name: Cybernetic Augmentation Suite
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Gain Con 12 for cyber purposes
+  description: >-
+    A set of standardized support implants provide a baseline degree of
+    cyber-compatibility to a subject. They can ignore System Strain from cyber
+    implants equal to 12 minus their Constitution scoreso a PC with a
+    Constitution of 9 could ignore three points worth of System Strain from
+    cyber implants. PCs with a Con of 12 or more have no use for this system.
+  cost: 20000
+  subType: body
+  concealment: medical
+  systemStrain: 0
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!FHXGMSFEcr2xpzQJ'
+

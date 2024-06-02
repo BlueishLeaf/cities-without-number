@@ -1,0 +1,26 @@
+_id: ew47IhtmN76WGwXv
+name: Weapon Hardpoint
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Drones that are not factory-equipped with weapon hardpoints can have one
+    worked in as an aftermarket addition. The usual hardpoint limits on maximum
+    allowed weapon size still apply, however, and this fitting counts as two for
+    purposes of the drone's maximum fittings.
+  costPercentage: 25
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!ew47IhtmN76WGwXv'
+

@@ -1,0 +1,33 @@
+_id: 7XJjMrOYzvkraVYe
+name: Street Leathers
+type: armor
+img: icons/equipment/chest/breastplate-banded-blue.webp
+system:
+  description: >-
+    Fashionable, aggressive, and often mismatched, "street leathers" seldom have
+    any non-synthetic leather in their makeup, but are light and comfortable
+    enough to wear as a habit.
+  cost: 250
+  encumbrance: 0
+  armorClass:
+    melee: 12
+    ranged: 13
+  damageSoak: 3
+  traumaTargetMod: 0
+  concealment: subtle
+  subType: armor
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!armor!7XJjMrOYzvkraVYe'
+

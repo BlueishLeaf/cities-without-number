@@ -1,0 +1,30 @@
+_id: CVd1Y2oIbfOvJxkX
+name: Eye Mod/Infrared Vision
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: See heat patterns in the area
+  description: >-
+    The infrared vision this mod allows permits basic navigation in dark areas
+    and makes the presence of heat sources such as humans, engines, and infrared
+    tripwires very obvious. The user gains a +1 bonus on any Notice checks to
+    detect the presence of thermally-unshielded living creatures.
+  cost: 5000
+  subType: sensory
+  concealment: medical
+  systemStrain: 0.5
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!CVd1Y2oIbfOvJxkX'
+

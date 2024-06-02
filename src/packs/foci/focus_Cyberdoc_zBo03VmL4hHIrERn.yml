@@ -1,0 +1,37 @@
+_id: zBo03VmL4hHIrERn
+name: Cyberdoc
+type: focus
+img: icons/sundries/books/book-backed-silver-gold.webp
+system:
+  description: >-
+    Any skilled medic can implant and maintain cyber systems, but you have a
+    special aptitude for the work.
+  level1Benefit: >-
+    Gain Fix and Heal as bonus skills. You start play with a cyberdoc kit, and
+    you can implant cyberware even if your Heal skill is level-0. You gain a +2
+    bonus on all cyber implant surgery skill checks. If you perform cyber
+    maintenance for a person, the delicacy of your adjustments decreases the
+    total System Strain cost of their implants by one point until their next
+    maintenance interval.
+  level2Benefit: >-
+    The quality of your cyber maintenance improves; the System Strain decrease
+    is equal to two points now instead of one. You never fail to install
+    cyberware correctly. Once per patient, you can build and install a cyber
+    modification to a system as described on page 74 without any cost in money
+    or special components, assuming you have the requisite skill levels to build
+    it.
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!focus!zBo03VmL4hHIrERn'
+

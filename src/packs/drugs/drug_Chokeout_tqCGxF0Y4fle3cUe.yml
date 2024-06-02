@@ -1,0 +1,30 @@
+_id: tqCGxF0Y4fle3cUe
+name: Chokeout
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    A chem that briefly induces severe swelling of the mucous membranes,
+    Chokeout is odorless and tasteless, but must be consumed in food or drink
+    and naturally degrades after twelve hours. A subject who consumes a dose of
+    Chokeout must make a Physical save; on a failure, they are strangled to
+    unconsciousness for an hour, waking up with one hit point at the end. On a
+    success, they take 1d10 non-lethal damage as they struggle to breathe. On a
+    natural saving throw of 1, the victim chokes to death.
+  cost: 50
+  requiredSkills: None
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!tqCGxF0Y4fle3cUe'
+

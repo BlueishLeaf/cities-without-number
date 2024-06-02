@@ -1,0 +1,27 @@
+_id: Pfh4kpvtHBEKbPem
+name: Redundant Systems
+type: mod
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Careful duplication of critical systems increases the drone's hit points by
+    25% of its unmodified base score, rounded up. The extra mass increases the
+    Encumbrance of man-portable drones by 1. The cost is 50% of the drone's base
+    cost.
+  costPercentage: 50
+  requiredSkills: Fix-2 & Drive-2
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!mod!Pfh4kpvtHBEKbPem'
+

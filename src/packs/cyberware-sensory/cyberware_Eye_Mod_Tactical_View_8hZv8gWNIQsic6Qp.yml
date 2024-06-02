@@ -1,0 +1,30 @@
+_id: 8hZv8gWNIQsic6Qp
+name: Eye Mod/Tactical View
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Get transmission, search better
+  description: >-
+    These eyes can receive text or video transmissions and play them on an inset
+    in the user's normal vision. Outline and pattern discrimination is enhanced;
+    when specifically looking for things or keeping watch, gain a +1 bonus to
+    any relevant Notice check.
+  cost: 10000
+  subType: sensory
+  concealment: medical
+  systemStrain: 0.5
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!8hZv8gWNIQsic6Qp'
+

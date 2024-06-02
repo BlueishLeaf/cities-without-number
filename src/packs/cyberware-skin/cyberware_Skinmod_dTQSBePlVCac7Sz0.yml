@@ -1,0 +1,29 @@
+_id: dTQSBePlVCac7Sz0
+name: Skinmod
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Make cosmetic-level body mods
+  description: >-
+    Various neon tattoos, skin texture and color changes, and other superficial
+    physical mods can be performed with no real systemic burden beyond the usual
+    need for regular maintenance.
+  cost: 250
+  subType: skin
+  concealment: sight
+  systemStrain: 0
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!dTQSBePlVCac7Sz0'
+

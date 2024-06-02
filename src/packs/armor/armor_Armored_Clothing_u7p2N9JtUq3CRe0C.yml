@@ -1,0 +1,32 @@
+_id: u7p2N9JtUq3CRe0C
+name: Armored Clothing
+type: armor
+img: icons/equipment/chest/breastplate-banded-blue.webp
+system:
+  description: >-
+    The bulky plates and heavy ballistic weaves of this outfit are disguised as
+    drapes and fashion elements.
+  cost: 1000
+  encumbrance: 2
+  armorClass:
+    melee: 14
+    ranged: 16
+  damageSoak: 5
+  traumaTargetMod: 1
+  concealment: subtle
+  subType: armor
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!armor!u7p2N9JtUq3CRe0C'
+

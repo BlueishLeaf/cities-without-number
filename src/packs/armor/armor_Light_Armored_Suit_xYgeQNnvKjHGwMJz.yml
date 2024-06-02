@@ -1,0 +1,33 @@
+_id: xYgeQNnvKjHGwMJz
+name: Light Armored Suit
+type: armor
+img: icons/equipment/chest/breastplate-banded-blue.webp
+system:
+  description: >-
+    Ordinary law enforcement and security guards will be wearing suits like
+    this, usually brightly emblazoned with their corporate affiliation.
+  cost: 5000
+  encumbrance: 2
+  armorClass:
+    melee: 13
+    ranged: 16
+  damageSoak: 5
+  traumaTargetMod: 2
+  concealment: obvious
+  subType: armor
+  isSuit: true
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!armor!xYgeQNnvKjHGwMJz'
+

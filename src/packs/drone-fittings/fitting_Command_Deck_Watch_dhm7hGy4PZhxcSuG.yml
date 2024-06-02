@@ -1,0 +1,27 @@
+_id: dhm7hGy4PZhxcSuG
+name: Command Deck/Watch
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    The drone is equipped to monitor its surroundings autonomously and alert its
+    pilot when something of interest is noticed. Its onboard intelligence is
+    limited, however, and it can only handle about a sentence's worth of
+    specific orders or subjects to be watchful for. Putting a drone in Watch
+    mode is a command that takes a Main Action.
+  costPercentage: 10
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!dhm7hGy4PZhxcSuG'
+

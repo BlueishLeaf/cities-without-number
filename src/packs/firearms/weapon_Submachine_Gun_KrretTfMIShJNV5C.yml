@@ -1,0 +1,44 @@
+_id: KrretTfMIShJNV5C
+name: Submachine Gun
+type: weapon
+img: icons/weapons/guns/gun-red.webp
+system:
+  description: >-
+    <b>Submachine guns</b> are popular for their small form factor and
+    convenient burst fire, though like other burst-fire weaponry the corps frown
+    heavily on civilian possession.
+  cost: 2000
+  encumbrance: 1
+  damageFormula: 1d8 + @attributeMod
+  range:
+    effective: 30
+    max: 100
+  attribute: dex
+  skill: shoot
+  isBurstFireable: true
+  trauma:
+    die: 1d6
+    rating: 2
+  magazine:
+    value: 20
+    max: 20
+  shock: null
+  mounted:
+    power: 0
+    mass: 1
+    minimumSize: medium
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!weapon!KrretTfMIShJNV5C'
+

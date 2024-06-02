@@ -1,0 +1,32 @@
+_id: TKHJ3KQky8pZqAO8
+name: Emergency Evac Litter
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Functioning only for groundbased drones of Enc 3 or greater, the drone is
+    equipped with a retractable litter that can fit one human patient, along
+    with manipulators sufficient to get a prone victim onto the litter with a
+    Main Action. Onboard meds allow for remote Heal skill checks to stabilize a
+    Mortally Wounded target, with one attempt allowed as part of the loading
+    action. A loaded patient can't be harmed until the drone is destroyed or
+    opens the litter, but if the drone dies, the patient does too. As a Main
+    Action, the drone can be ordered to autonomously take the patient to a
+    particular location. As an On Turn action, an onboard transmitter can also
+    place a call for medical assistance to a pre-arranged number.
+  costPercentage: 25
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!TKHJ3KQky8pZqAO8'
+

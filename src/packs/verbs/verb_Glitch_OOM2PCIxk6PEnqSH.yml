@@ -1,0 +1,32 @@
+_id: OOM2PCIxk6PEnqSH
+name: Glitch
+type: verb
+img: icons/sundries/misc/key-angular-white.webp
+system:
+  description: >-
+    Temporarily deactivate a device or cyberware system while the program
+    remains running, for no more than one round per Program skill level plus
+    two. A device can be targeted by a particular hackers Glitch only once a
+    day, successful or not.
+  targetTypes:
+    - device
+    - cyber
+  accessCost: 0
+  skillCheckMod: 2
+  selfTerminating: false
+  cost: 1000
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!verb!OOM2PCIxk6PEnqSH'
+

@@ -1,0 +1,30 @@
+_id: 4lp8KINkFVWkVG1R
+name: Connect
+type: skill
+img: icons/sundries/documents/blueprint-magical.webp
+system:
+  description: >-
+    Find people who can be helpful to your purposes and get them to cooperate
+    with you. Roll it to make useful connections with others, find people you
+    know, know where to get illicit goods and services, and be familiar with
+    foreign cultures and languages. You can use it in place of Talk for
+    persuading people you find via this skill. Note that the people you meet via
+    Connect are not necessarily inclined to work with you without a good reason;
+    if you want reliably cooperative allies, you need Contacts.
+  level: -1
+  attribute: cha
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!skill!4lp8KINkFVWkVG1R'
+

@@ -1,0 +1,30 @@
+_id: Z5vJXDfSaQHqpgDe
+name: Regulared Anagathic Substrate
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Prolongs human lifespan
+  description: >-
+    This whole-body network of chem regulators can prolong human lifespans by up
+    to 1d4+2 decades. Maintenance on this cyber costs $50,000 a month, however,
+    and interruptions have catastrophic consequences. Rumors persist of even
+    more effective models existing among the megacorp ultra-elite.
+  cost: 200000
+  subType: medical
+  concealment: medical
+  systemStrain: 1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!Z5vJXDfSaQHqpgDe'
+

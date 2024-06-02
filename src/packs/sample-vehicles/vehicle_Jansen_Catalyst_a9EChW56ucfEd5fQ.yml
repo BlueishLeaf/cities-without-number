@@ -1,0 +1,67 @@
+_id: a9EChW56ucfEd5fQ
+name: Jansen Catalyst
+type: vehicle
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 10
+    max: 10
+  biography: >-
+    A higher-end bike favored by prosperous gangs and corp security patrols, the
+    Catalyst is most widely known for its stock boost system. The extra speed
+    when it counts has saved more than one riders skin.
+  traumaTarget:
+    base: 10
+    total: 10
+  movement:
+    speed: 1
+    type: ground
+  hardpoints:
+    value: 0
+    max: 0
+  armorClass:
+    melee: 13
+    ranged: 13
+  cargoEncumbrance:
+    stowed:
+      value: 0
+      max: 0
+  cost: 6000
+  armor: 4
+  maxCrew: 1
+  power:
+    value: 1
+    max: 1
+  mass:
+    value: 1
+    max: 3
+  size: S
+items:
+  - name: Afterburners
+    type: vehicleFitting
+    img: icons/tools/smithing/tongs-steel-grey.webp
+    system:
+      description: >-
+        Once per scene, as an On Turn action, boost the vehicle's Speed by 1 for
+        five rounds.
+      cost: 5000
+      power: 1
+      mass: 2
+      minimumSize: small
+    flags: {}
+    sort: 0
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!vehicle!a9EChW56ucfEd5fQ'
+

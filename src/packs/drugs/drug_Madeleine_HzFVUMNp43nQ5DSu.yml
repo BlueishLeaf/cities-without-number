@@ -1,0 +1,29 @@
+_id: HzFVUMNp43nQ5DSu
+name: Madeleine
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    A chem that intensely stimulates a subject's memory centers, Madeleine has
+    its dangers. Users normally focus on a particular memory before injecting
+    the drug; for the next 1d6 hours, they relive some portion of that memory
+    with perfect fidelity while remaining oblivious to their physical
+    surroundings. Psychological addiction is a considerable risk for long-term
+    users, as well as choosing a less pleasant memory to recall.
+  cost: 100
+  requiredSkills: None
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!HzFVUMNp43nQ5DSu'
+

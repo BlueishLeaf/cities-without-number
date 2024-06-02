@@ -1,0 +1,28 @@
+_id: lDTKPzSHvs4D35aI
+name: Targeting Board
+type: vehicleFitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    A single unified targeting board allows one gunner to manage up to three
+    vehicle weapons instead of the one gun per gunner that would usually be
+    allowed.
+  cost: 2500
+  power: 1
+  mass: 1
+  minimumSize: medium
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!vehicleFitting!lDTKPzSHvs4D35aI'
+

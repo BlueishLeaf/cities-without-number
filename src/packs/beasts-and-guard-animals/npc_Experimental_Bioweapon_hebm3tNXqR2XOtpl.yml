@@ -1,0 +1,149 @@
+name: Experimental Bioweapon
+type: npc
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 50
+    max: 50
+  biography: >-
+    <p><em><strong>This creature can makes 2 melee attacks as a Main
+    Action.</strong></em></p><p>A bleeding-edge example of cybernetic overreach,
+    attack animals of this grade are found only in corporate black sites or
+    experimental zones. Most are insanely aggressive and all are studded with
+    cybernetic fangs, monomolecular claws, bladed tentacles, and countless other
+    implements of bodily ruin. They attack three times with each Main
+    action.</p>
+  traumaTarget:
+    base: 6
+    total: 9
+  movement:
+    speed: 20
+    type: ground
+  armorClass:
+    baseMelee: 10
+    melee: 13
+    baseRanged: 10
+    ranged: 13
+  damageSoak:
+    value: 0
+    max: 0
+    base: 0
+  hitDice: 8d6
+  skillBonus: 4
+  saveTarget: 11
+  attackBonus:
+    melee: 12
+    ranged: 0
+  moraleTarget: 12
+  dangerValue: 48
+  cyberwareMaintenanceCost: null
+items:
+  - name: Cybernetic Claws
+    type: weapon
+    system:
+      description: ''
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      cost: 0
+      attribute: str
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: null
+      damageFormula: 2d6 + 8
+      range:
+        effective: 1
+        max: 1
+      isBurstFireable: false
+      magazine: null
+      trauma:
+        die: 1d10 + 1
+        rating: 3
+      shock:
+        damage: 8
+        threshold: 99
+      mounted:
+        power: 0
+        mass: 0
+        minimumSize: medium
+      type: weapon
+    sort: 0
+    _id: aiLkn89tPyhZQBjy
+    img: icons/weapons/fist/fist-knuckles-spiked-blue.webp
+    effects: []
+    folder: null
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1717095261341
+      modifiedTime: 1717095845544
+      lastModifiedBy: cwnBuilder0000
+  - _id: Gdsf18TsGXNgtrhL
+    name: Veteran's Luck
+    type: edge
+    img: icons/sundries/books/book-backed-blue-gold.webp
+    system:
+      description: >-
+        Once per scene, as an Instant action, trigger this ability to gain one
+        of two effects: an attack roll that just hit you is instead treated as a
+        miss, or an attack roll you just made that missed is instead treated as
+        a hit. This ability can be applied to vehicle weapons used by the
+        operator, but it cannot protect against environmental damage, vehicle
+        crashes, falls, or other harm that doesn't involve an attack roll.
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717095825499
+      lastModifiedBy: cwnBuilder0000
+  - _id: 86cdBhreoPX0p0OF
+    name: Killing Blow
+    type: edge
+    img: icons/sundries/books/book-backed-blue-gold.webp
+    system:
+      description: >-
+        Gain a combat skill as a bonus skill. Whenever you inflict hit point
+        damage on something, whether by weapon, Shock, special ability, or any
+        other source, the damage is increased by 1 point per two character
+        levels, rounded up. Any Trauma Die you roll gains a +1 bonus.
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.edges.Item.RUs83jpRay5tOVON
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717095827867
+      lastModifiedBy: cwnBuilder0000
+effects: []
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: '11.315'
+  createdTime: 1717095117268
+  modifiedTime: 1717095856404
+  lastModifiedBy: cwnBuilder0000
+sort: 0
+_id: hebm3tNXqR2XOtpl
+_key: '!npc!hebm3tNXqR2XOtpl'
+

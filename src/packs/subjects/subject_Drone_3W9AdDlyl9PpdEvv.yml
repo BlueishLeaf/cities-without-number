@@ -1,0 +1,27 @@
+_id: 3W9AdDlyl9PpdEvv
+name: Drone
+type: subject
+img: icons/sundries/misc/lock-steel-blue.webp
+system:
+  description: >-
+    A remote-controlled drone. The base difficulty is equal to 7 plus the
+    operator's level or HD/3, rounded up, or 8 if it's not actively controlled.
+    Like the Cyber Subject, it is not necessary to manifest in a drone's node to
+    hack it wirelessly.
+  type: device
+  cost: 1000
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!subject!3W9AdDlyl9PpdEvv'
+

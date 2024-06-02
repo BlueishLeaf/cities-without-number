@@ -1,0 +1,51 @@
+_id: JMn9stoitZYfmU1q
+name: Advanced Sword
+type: weapon
+img: icons/weapons/swords/sword-guard.webp
+system:
+  description: >-
+    <b>Advanced weapons</b> employ modern polymers, sophisticated metallurgy,
+    fractal edges, electro-stun tech, and a small legion of marketers to sell
+    products that are distinctly superior to the plain steel edges of a prior
+    age. An advanced micro-edged butcher knife can go through bone like bamboo
+    and keep an edge for weeks between sharpenings. The more martial offerings
+    go to even greater lengths in their marketing, with some enterprising serial
+    killers and gang enforcers inking exclusivity deals with particular knife
+    manufacturers. Due to the sheer ubiquity and availability of melee weapons,
+    they're often treated with less suspicion than firearms. A corp cop might
+    bring somebody in for an "illegal knife", but only if he already wanted them
+    for a different and better reason. Nightclubs and bars might expect firearms
+    to go in the locker at the entrance, but they're often disinclined to go
+    combing their patrons for every suspiciously-sharp hair ornament or
+    multipurpose fashion accessory they might carry.
+  cost: 1000
+  encumbrance: 1
+  damageFormula: 1d10 + @attributeMod
+  attribute: str
+  skill: stab
+  range:
+    effective: 1
+    max: 1
+  isBurstFireable: false
+  trauma:
+    die: 1d8
+    rating: 3
+  shock:
+    damage: 3
+    threshold: 15
+  magazine: null
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!weapon!JMn9stoitZYfmU1q'
+

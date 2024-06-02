@@ -1,0 +1,28 @@
+_id: AK797cDZAi07OwyF
+name: Coordination Augment II
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Dex 18 and +10m Move
+  description: >-
+    As Coordination Augment I, but the subject gains a Dexterity score of 18,
+    and their base Move rate is increased by 10 meters.
+  cost: 200000
+  subType: nerve
+  concealment: touch
+  systemStrain: 3
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!AK797cDZAi07OwyF'
+

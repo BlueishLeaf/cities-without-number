@@ -1,0 +1,41 @@
+_id: lv4y3jAJ5FIWo4Qr
+name: Shrieker Gun
+type: weapon
+img: icons/weapons/guns/gun-topbarrel.webp
+system:
+  description: >-
+    <b>Shrieker guns</b> are sonic cannons used for crowd control and non-lethal
+    suppression. While highly effective against unprotected targets,
+    military-grade ear protection or the integral dampers in cyber-ears are
+    sufficient to render the weapon useless.
+  cost: 10000
+  encumbrance: 99
+  damageFormula: 2d6 + @attributeMod
+  range:
+    effective: 500
+    max: 2000
+  attribute: dex
+  skill: shoot
+  isBurstFireable: false
+  trauma: null
+  magazine: null
+  shock: null
+  mounted:
+    power: 2
+    mass: 2
+    minimumSize: medium
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!weapon!lv4y3jAJ5FIWo4Qr'
+

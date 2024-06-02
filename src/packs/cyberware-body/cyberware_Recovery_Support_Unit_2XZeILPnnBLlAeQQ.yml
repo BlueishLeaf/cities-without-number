@@ -1,0 +1,31 @@
+_id: 2XZeILPnnBLlAeQQ
+name: Recovery Support Unit
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Gain 4 System Strain for heals
+  description: >-
+    A number of support systems and blood purification filters are installed.
+    The user can absorb up to four points of System Strain incurred from healing
+    or wound stabilization effects; this is a separate pool that recovers one
+    point every night at the same time as the user's natural System Strain
+    recovers.
+  cost: 30000
+  subType: body
+  concealment: medical
+  systemStrain: 1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!2XZeILPnnBLlAeQQ'
+

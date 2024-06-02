@@ -1,0 +1,30 @@
+_id: XyLe96w7Dy0Cu4E5
+name: Siege
+type: verb
+img: icons/sundries/misc/key-angular-white.webp
+system:
+  description: >-
+    If a Device is successfully Sieged, its network connections are severed for
+    everyone but the hacker, blocking transit, data, or drone control. Defenders
+    can run Terminate Program against it from any adjacent node.
+  targetTypes:
+    - device
+  accessCost: 1
+  skillCheckMod: -2
+  selfTerminating: false
+  cost: 2500
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!verb!XyLe96w7Dy0Cu4E5'
+

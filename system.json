@@ -1,12 +1,11 @@
 {
   "id": "cities-without-number",
   "title": "Cities Without Number",
-  "description": "An unofficial implementation of Kevin Crawford's Cities Without Number TTRPG for FoundryVTT.",
-  "version": "0.0.2",
+  "description": "An unofficial FoundryVTT implementation of Kevin Crawford's Cities Without Number TTRPG.",
+  "version": "0.0.3",
   "compatibility": {
     "minimum": 11,
-    "verified": 11,
-    "maximum": 11
+    "verified": "11.315"
   },
   "authors": [
     {
@@ -22,12 +21,29 @@
     "css/cwn.css"
   ],
   "scripts": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "systemStrain",
+  "url": "https://github.com/BlueishLeaf/cities-without-number",
+  "manifest": "https://github.com/BlueishLeaf/cities-without-number/releases/download/latest/system.json",
+  "download": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v0.0.3/cities-without-number.zip",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md",
+  "readme": "README.md",
   "packs": [
     {
       "name": "servers",
       "label": "Servers",
       "system": "cities-without-number",
-      "path": "packs/servers.db",
       "type": "Actor",
       "private": false,
       "flags": {}
@@ -36,16 +52,14 @@
       "name": "vehicles",
       "label": "Vehicles",
       "system": "cities-without-number",
-      "path": "packs/vehicles.db",
       "type": "Actor",
       "private": false,
       "flags": {}
     },
     {
-      "name": "sample vehicles",
+      "name": "sample-vehicles",
       "label": "Sample Vehicles",
       "system": "cities-without-number",
-      "path": "packs/sample-vehicles.db",
       "type": "Actor",
       "private": true,
       "flags": {}
@@ -54,7 +68,6 @@
       "name": "beasts-and-guard-animals",
       "label": "Beasts and Guard animals",
       "system": "cities-without-number",
-      "path": "packs/beasts-and-guard-animals.db",
       "type": "Actor",
       "private": true,
       "flags": {}
@@ -63,7 +76,6 @@
       "name": "corp-guards-and-law-enforcement",
       "label": "Corp Guards and Law Enforcement",
       "system": "cities-without-number",
-      "path": "packs/corp-guards-and-law-enforcement.db",
       "type": "Actor",
       "private": true,
       "flags": {}
@@ -72,7 +84,6 @@
       "name": "gangers-and-criminals",
       "label": "Gangers and Criminals",
       "system": "cities-without-number",
-      "path": "packs/gangers-and-criminals.db",
       "type": "Actor",
       "private": true,
       "flags": {}
@@ -81,7 +92,6 @@
       "name": "hackers-and-pilots",
       "label": "Hackers and Pilots",
       "system": "cities-without-number",
-      "path": "packs/hackers-and-pilots.db",
       "type": "Actor",
       "private": true,
       "flags": {}
@@ -90,7 +100,6 @@
       "name": "drones",
       "label": "Drones",
       "system": "cities-without-number",
-      "path": "packs/drones.db",
       "type": "Actor",
       "private": false,
       "flags": {}
@@ -99,7 +108,6 @@
       "name": "edges",
       "label": "Edges",
       "system": "cities-without-number",
-      "path": "packs/edges.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -108,7 +116,6 @@
       "name": "foci",
       "label": "Foci",
       "system": "cities-without-number",
-      "path": "packs/foci.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -117,7 +124,6 @@
       "name": "armor",
       "label": "Armor",
       "system": "cities-without-number",
-      "path": "packs/armor.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -126,7 +132,6 @@
       "name": "armor-accessories",
       "label": "Armor Accessories",
       "system": "cities-without-number",
-      "path": "packs/armor-accessories.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -135,7 +140,6 @@
       "name": "cyberdecks",
       "label": "Cyberdecks",
       "system": "cities-without-number",
-      "path": "packs/cyberdecks.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -144,7 +148,6 @@
       "name": "drugs",
       "label": "Drugs",
       "system": "cities-without-number",
-      "path": "packs/drugs.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -153,7 +156,6 @@
       "name": "drone-fittings",
       "label": "Drone Fittings",
       "system": "cities-without-number",
-      "path": "packs/drone-fittings.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -162,7 +164,6 @@
       "name": "vehicle-fittings",
       "label": "Vehicle Fittings",
       "system": "cities-without-number",
-      "path": "packs/vehicle-fittings.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -171,7 +172,6 @@
       "name": "gear",
       "label": "Gear",
       "system": "cities-without-number",
-      "path": "packs/gear.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -180,7 +180,6 @@
       "name": "armor-mods",
       "label": "Armor Mods",
       "system": "cities-without-number",
-      "path": "packs/armor-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -189,7 +188,6 @@
       "name": "weapon-mods",
       "label": "Weapon Mods",
       "system": "cities-without-number",
-      "path": "packs/weapon-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -198,7 +196,6 @@
       "name": "drone-mods",
       "label": "Drone Mods",
       "system": "cities-without-number",
-      "path": "packs/drone-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -207,7 +204,6 @@
       "name": "vehicle-mods",
       "label": "Vehicle Mods",
       "system": "cities-without-number",
-      "path": "packs/vehicle-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -216,7 +212,6 @@
       "name": "vehicle-weapons",
       "label": "Vehicle Weapons",
       "system": "cities-without-number",
-      "path": "packs/vehicle-weapons.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -225,7 +220,6 @@
       "name": "cyberdeck-mods",
       "label": "Cyberdeck Mods",
       "system": "cities-without-number",
-      "path": "packs/cyberdeck-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -234,7 +228,6 @@
       "name": "cyberware-mods",
       "label": "Cyberware Mods",
       "system": "cities-without-number",
-      "path": "packs/cyberware-mods.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -243,7 +236,6 @@
       "name": "firearms",
       "label": "Firearms",
       "system": "cities-without-number",
-      "path": "packs/firearms.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -252,7 +244,6 @@
       "name": "melee-and-thrown-weapons",
       "label": "Melee & Thrown Weapons",
       "system": "cities-without-number",
-      "path": "packs/melee-and-thrown-weapons.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -261,7 +252,6 @@
       "name": "heavy-weapons",
       "label": "Heavy Weapons",
       "system": "cities-without-number",
-      "path": "packs/heavy-weapons.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -270,16 +260,62 @@
       "name": "skills",
       "label": "Skills",
       "system": "cities-without-number",
-      "path": "packs/skills.db",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "cyberware",
-      "label": "Cyberware",
+      "name": "cyberware-body",
+      "label": "Body Cyberware",
       "system": "cities-without-number",
-      "path": "packs/cyberware.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-head",
+      "label": "Head Cyberware",
+      "system": "cities-without-number",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-limb",
+      "label": "Limb Cyberware",
+      "system": "cities-without-number",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-medical",
+      "label": "Medical Cyberware",
+      "system": "cities-without-number",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-nerve",
+      "label": "Nerve Cyberware",
+      "system": "cities-without-number",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-sensory",
+      "label": "Sensory Cyberware",
+      "system": "cities-without-number",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "cyberware-skin",
+      "label": "Skin Cyberware",
+      "system": "cities-without-number",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -288,7 +324,6 @@
       "name": "demons",
       "label": "Network Demons",
       "system": "cities-without-number",
-      "path": "packs/demons.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -297,7 +332,6 @@
       "name": "subjects",
       "label": "Hacking Subjects",
       "system": "cities-without-number",
-      "path": "packs/subjects.db",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -306,26 +340,66 @@
       "name": "verbs",
       "label": "Hacking Verbs",
       "system": "cities-without-number",
-      "path": "packs/verbs.db",
       "type": "Item",
       "private": false,
       "flags": {}
     }
   ],
-  "languages": [
+  "packFolders": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+      "name": "Cyberware",
+      "sorting": "a",
+      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin"],
+      "folders": []
+    },
+    {
+      "name": "Hacking",
+      "sorting": "a",
+      "packs": ["verbs", "subjects", "demons", "cyberdecks", "cyberdeck-mods", "servers"],
+      "folders": []
+    },
+    {
+      "name": "Vehicles",
+      "sorting": "a",
+      "packs": ["vehicles", "vehicle-weapons", "vehicle-mods", "vehicle-fittings", "sample-vehicles"],
+      "folders": []
+    },
+    {
+      "name": "Drones",
+      "sorting": "a",
+      "packs": ["drones", "drone-mods", "drone-fittings"],
+      "folders": []
+    },
+    {
+      "name": "Operator Features",
+      "sorting": "a",
+      "packs": ["skills", "edges", "foci"],
+      "folders": []
+    },
+    {
+      "name": "Sample NPCs",
+      "sorting": "a",
+      "packs": ["beasts-and-guard-animals", "corp-guards-and-law-enforcement", "gangers-and-criminals", "hackers-and-pilots"],
+      "folders": []
+    },
+    {
+      "name": "Operator Equipment",
+      "sorting": "a",
+      "packs": ["gear", "drugs", "foci"],
+      "folders": [
+        {
+          "name": "Armor",
+          "sorting": "a",
+          "packs": ["armor", "armor-accessories", "armor-mods"],
+          "folders": []
+        },
+        {
+          "name": "Weapons",
+          "sorting": "a",
+          "packs": ["firearms", "melee-and-thrown-weapons", "heavy-weapons", "weapon-mods"],
+          "folders": []
+        }
+      ]
     }
-  ],
-  "gridDistance": 1,
-  "gridUnits": "m",
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "systemStrain",
-  "url": "https://github.com/BlueishLeaf/cities-without-number",
-  "manifest": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v0.0.2/system.json",
-  "download": "https://github.com/BlueishLeaf/cities-without-number/releases/download/v0.0.2/cities-without-number.zip",
-  "license": "LICENSE.txt",
-  "changelog": "CHANGELOG.md"
+  ]
 }

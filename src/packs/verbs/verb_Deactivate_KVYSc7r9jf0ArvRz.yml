@@ -1,0 +1,32 @@
+_id: KVYSc7r9jf0ArvRz
+name: Deactivate
+type: verb
+img: icons/sundries/misc/key-angular-white.webp
+system:
+  description: >-
+    Turn a device or piece of cyberware off. Most devices and cyber can be
+    rebooted by the network or the user, but itll take a Main Action and a round
+    to do so. If a network alert hasnt been issued, the network may not notice a
+    deactivated device until someone spots the problem.
+  targetTypes:
+    - device
+    - cyber
+  accessCost: 1
+  skillCheckMod: 1
+  selfTerminating: true
+  cost: 2000
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!verb!KVYSc7r9jf0ArvRz'
+

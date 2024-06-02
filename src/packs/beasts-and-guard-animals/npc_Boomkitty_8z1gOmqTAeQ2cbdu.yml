@@ -1,0 +1,51 @@
+name: Boomkitty
+type: npc
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 3
+    max: 3
+  biography: >-
+    Fabricated out of common street cats or small dogs, a “boomkitty” has a
+    crude remote control harness spliced into their brain stem and a deposit of
+    plastic explosive implanted into their abdomen. While they serve well as
+    inconspicuous spies and observers, a handler can detonate the animal as a
+    Main action, inflicting damage as per a frag grenade on anything around it.
+  traumaTarget:
+    base: 5
+    total: 5
+  movement:
+    speed: 20
+    type: ground
+  armorClass:
+    melee: 16
+    ranged: 16
+  damageSoak:
+    value: 0
+    max: 0
+    base: 0
+  hitDice: 1d6
+  skillBonus: 3
+  saveTarget: 15
+  attackBonus:
+    melee: 0
+    ranged: 0
+  moraleTarget: 6
+  dangerValue: 0
+items: []
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_id: 8z1gOmqTAeQ2cbdu
+_key: '!npc!8z1gOmqTAeQ2cbdu'
+

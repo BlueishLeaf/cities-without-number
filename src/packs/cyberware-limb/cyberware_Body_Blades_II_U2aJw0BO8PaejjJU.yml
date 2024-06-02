@@ -1,0 +1,31 @@
+_id: U2aJw0BO8PaejjJU
+name: Body Blades II
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Larger body weaponry
+  description: >-
+    As level one, but the user's body armament includes not only conventional
+    blades, but assorted improvements such as monomolecular edges, cutting
+    vibrations, or thermal augmentation. Their unarmed attacks do 2d6 damage
+    with a Shock of 4/15, and a Trauma Die 1d10/x3. Anyone who sees or touches
+    their arms can detect signs of the cyber, however.
+  cost: 25000
+  subType: limb
+  concealment: sight
+  systemStrain: 2
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!U2aJw0BO8PaejjJU'
+

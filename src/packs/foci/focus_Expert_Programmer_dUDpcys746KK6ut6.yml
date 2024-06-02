@@ -1,0 +1,35 @@
+_id: dUDpcys746KK6ut6
+name: Expert Programmer
+type: focus
+img: icons/sundries/books/book-backed-silver-gold.webp
+system:
+  description: >-
+    A skilled hacker can program their own utilities, but you take this
+    expertise far beyond the norm.
+  level1Benefit: >-
+    Gain Program as a bonus skill. You can create and maintain an additional
+    number of program elements equal to your character level + 2, split among
+    Verbs and Subjects as you see fit as explained on page 96. You can change
+    your choices with a week's work. Once per day, as an On Turn action, you can
+    make an on-the-fly edit to a Subject program element to turn it into any
+    other Subject program element you need. The element remains altered until
+    you change it again.
+  level2Benefit: >-
+    Your programs are exceedingly efficient. Any program elements you write take
+    up only half the usual Memory. A cyberdeck you use gains a CPU bonus equal
+    to your Program skill level.
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!focus!dUDpcys746KK6ut6'
+

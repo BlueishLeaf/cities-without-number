@@ -1,0 +1,27 @@
+_id: npMIlGflhPz452ZD
+name: Battery Swapping
+type: mod
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Replacing proprietary battery systems with off-the-shelf models allows
+    man-portable drones to have their battery swapped with a minute of work.
+    Backup batteries cost 10% of the drone's base cost and count as Enc 1 items,
+    and this mod itself costs 10% of the drone's base cost.
+  costPercentage: 10
+  requiredSkills: Fix-1 & Drive-1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!mod!npMIlGflhPz452ZD'
+

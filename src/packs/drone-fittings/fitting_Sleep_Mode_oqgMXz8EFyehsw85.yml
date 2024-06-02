@@ -1,0 +1,27 @@
+_id: oqgMXz8EFyehsw85
+name: Sleep Mode
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Sleep mode can be enabled with a Main Action command or ended with an On
+    Turn command. While in sleep mode, a drone cannot fly, move, or perform
+    actions, but it will continue to communicate with the pilot and observe its
+    surroundings. A day of sleep mode counts as ten minutes of ordinary
+    operation for battery drain purposes.
+  costPercentage: 10
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!oqgMXz8EFyehsw85'
+

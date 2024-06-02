@@ -1,0 +1,29 @@
+_id: xkGCRaNj67X9au7Q
+name: Dermal Armor III
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: As II, but AC 20 and +2 TT
+  description: >-
+    Overt ceramic body plating and double-mesh joint reinforcement acts as
+    Dermal Armor II, but with a base ranged and melee AC of 20 and +2 to the
+    user's Trauma Target.
+  cost: 200000
+  subType: skin
+  concealment: sight
+  systemStrain: 3
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!xkGCRaNj67X9au7Q'
+

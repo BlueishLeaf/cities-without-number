@@ -1,0 +1,26 @@
+_id: GHORfwhHSsqiseXb
+name: Suicide Charge
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    With a Main Action command to detonate, the drone will explode, doing 3d6
+    damage to anyone within ten meters, with an Evasion save for half. Subjects
+    behind solid cover further halve the damage. Drones reduced to zero hit
+    points are too badly damaged to respond to detonation commands.
+  costPercentage: 25
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!GHORfwhHSsqiseXb'
+

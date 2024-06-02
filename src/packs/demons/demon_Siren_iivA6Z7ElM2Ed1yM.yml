@@ -1,0 +1,31 @@
+_id: iivA6Z7ElM2Ed1yM
+name: Siren
+type: demon
+img: icons/magic/unholy/silhouette-robe-evil-glow.webp
+system:
+  health:
+    value: 8
+    max: 8
+  description: >-
+    Demons are autonomous programs supported by a network's server hardware.
+    Demons have avatars much as human hackers do, but operate based on a list of
+    prioritized command lines, carrying out their duties according to their
+    programmed behavior.
+  maxCommandLines: 2
+  skillMod: 3
+  cost: 15000
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!demon!iivA6Z7ElM2Ed1yM'
+

@@ -1,0 +1,28 @@
+_id: AQMhN551ghGnPTzI
+name: Coordination Augment I
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Dex 14, or +2 if higher
+  description: >-
+    The user's natural mind-body interface is tightened. The subject gains a
+    Dexterity score of 14, or +2 if already 14 or higher.
+  cost: 50000
+  subType: nerve
+  concealment: medical
+  systemStrain: 2
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!AQMhN551ghGnPTzI'
+

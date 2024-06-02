@@ -1,0 +1,28 @@
+_id: 80mBx69PMbKGC8KI
+name: Remote Control Unit
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Remote control drones/vehicles
+  description: >-
+    A neurally-integrated control link allows for near-range control of drones
+    or remote-rigged vehicles, as per page 81.
+  cost: 10000
+  subType: nerve
+  concealment: touch
+  systemStrain: 2
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!80mBx69PMbKGC8KI'
+

@@ -1,0 +1,45 @@
+_id: QFdmbNcOJzQAETA1
+name: Main Tank Gun
+type: weapon
+img: icons/weapons/guns/gun-topbarrel.webp
+system:
+  description: >-
+    <b>Main tank gun</b> attacks always target AC 10, and anyone within 10
+    meters of impact takes 1d20 damage if not behind heavy cover. They cannot be
+    mounted on aircraft or anything smaller than a tank. Each round costs
+    $1,000.
+  cost: 100000
+  encumbrance: 99
+  damageFormula: 4d12 + @attributeMod
+  range:
+    effective: 1000
+    max: 3000
+  attribute: dex
+  skill: shoot
+  isBurstFireable: false
+  trauma:
+    die: 1d20
+    rating: 3
+  magazine:
+    value: 1
+    max: 1
+  shock: null
+  mounted:
+    power: 1
+    mass: 4
+    minimumSize: large
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!weapon!QFdmbNcOJzQAETA1'
+

@@ -1,0 +1,953 @@
+name: Corporate Breach Team Anti-Cyber Operator
+type: npc
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 20
+    max: 20
+  biography: ''
+  traumaTarget:
+    base: 6
+    total: 9
+  movement:
+    speed: 10
+    type: ground
+  armorClass:
+    baseMelee: 10
+    melee: 18
+    baseRanged: 10
+    ranged: 20
+  damageSoak:
+    value: 15
+    max: 15
+    base: 0
+  hitDice: 4d6
+  skillBonus: 4
+  saveTarget: 13
+  attackBonus:
+    melee: 6
+    ranged: 6
+  moraleTarget: 9
+  dangerValue: 0
+  cyberwareMaintenanceCost: null
+items:
+  - _id: C9NiYa3baIK4QO8o
+    name: Heavy Armored Suit
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        A head-to-toe suit of interlocking plates and impact absorption units,
+        these suits are reserved for high-end response teams and military
+        operations.
+      encumbrance: 3
+      readied: false
+      quantity: 1
+      cost: 15000
+      mods: []
+      concealment: obvious
+      subType: armor
+      armorClass:
+        melee: 18
+        ranged: 20
+      canEquipWithSuit: true
+      isHeavy: true
+      isSuit: true
+      damageSoak: 15
+      traumaTargetMod: 3
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.W2Vr0ReXPLKmaJOO
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102689399
+      lastModifiedBy: cwnBuilder0000
+  - _id: XUxaB8SFskvFWc3U
+    name: Combat Shotgun
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Shotguns</b> of various stripes can be found under the counter of
+        practically every bar and shop in a slum. Simple double-barrel models
+        can be made by any home gunsmith with a pulse, but the finer tolerances
+        and more elaborate machining of a burst-fire capable combat shotgun
+        leaves them as a more selective product. Ranges and damages given are
+        for shot shells; slugs double their normal and extreme ranges but apply
+        a -1 penalty to hit rolls.
+      encumbrance: 2
+      readied: false
+      quantity: 1
+      cost: 3000
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: shoot
+      damageFormula: 3d4 + @attributeMod
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: true
+      magazine:
+        value: 12
+        max: 12
+      trauma:
+        die: 1d10
+        rating: 3
+      shock: null
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.EA8Ct4TndRPSHIoo
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102694184
+      lastModifiedBy: cwnBuilder0000
+  - _id: A0Mi4VSxxhhzBIGN
+    name: Grenade, Flash
+    type: weapon
+    img: icons/weapons/thrown/grenade-round.webp
+    system:
+      description: >-
+        <b>Flash grenades</b> force victims without eye and ear protection to
+        make a Physical save; on a failure, the victim loses their next Main
+        Action and takes a -2 penalty to hit rolls and AC for the next 1d6
+        rounds. Flashbang effects don't stack, and a target who makes their save
+        cannot be flashbanged again that same round.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 50
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: stab
+      damageFormula: null
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      magazine: null
+      trauma: null
+      shock: null
+      mounted:
+        power: 0
+        mass: 0
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102702719
+      lastModifiedBy: cwnBuilder0000
+  - _id: E77HnzSNtcZDNAQO
+    name: Grenade, Flash
+    type: weapon
+    img: icons/weapons/thrown/grenade-round.webp
+    system:
+      description: >-
+        <b>Flash grenades</b> force victims without eye and ear protection to
+        make a Physical save; on a failure, the victim loses their next Main
+        Action and takes a -2 penalty to hit rolls and AC for the next 1d6
+        rounds. Flashbang effects don't stack, and a target who makes their save
+        cannot be flashbanged again that same round.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 50
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: stab
+      damageFormula: null
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      magazine: null
+      trauma: null
+      shock: null
+      mounted:
+        power: 0
+        mass: 0
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102709022
+      lastModifiedBy: cwnBuilder0000
+  - _id: oXj2lH5ByL5w1b4k
+    name: Grenade, Flash
+    type: weapon
+    img: icons/weapons/thrown/grenade-round.webp
+    system:
+      description: >-
+        <b>Flash grenades</b> force victims without eye and ear protection to
+        make a Physical save; on a failure, the victim loses their next Main
+        Action and takes a -2 penalty to hit rolls and AC for the next 1d6
+        rounds. Flashbang effects don't stack, and a target who makes their save
+        cannot be flashbanged again that same round.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 50
+      attribute: dex
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      mods: []
+      skill: stab
+      damageFormula: null
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      magazine: null
+      trauma: null
+      shock: null
+      mounted:
+        power: 0
+        mass: 0
+        minimumSize: medium
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102712276
+      lastModifiedBy: cwnBuilder0000
+  - _id: GY4EdvwvSABi5ur9
+    name: Cranial Jack
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        A discreetly-placed plug socket in the user's head or neck allows
+        interfacing with cyberdecks and gear equipped with a jack line.
+      mods: []
+      cost: 1000
+      concealment: touch
+      subType: head
+      systemStrain: 0.25
+      effect: Link to jack-equipped gear
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.huifue2xxgC7TJPO
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102717853
+      lastModifiedBy: cwnBuilder0000
+  - _id: MxvQYu2wo3F6ldfn
+    name: Cybereyes (pair)
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        While a single cybernetic eye can be implanted, it is recommended that
+        both be replaced at the same time to improve neural adaptation. These
+        cybereyes are clearly artificial, though most are styled in attractive
+        or striking fashions. They all have perfect 20/20 vision and integral
+        flash protectors, but additional functionality must be implanted
+        separately. A user with a pair of cybereyes or syntheyes halves the
+        System Strain cost of cybernetic eye implants.
+      mods: []
+      cost: 10000
+      concealment: sight
+      subType: sensory
+      systemStrain: 0.25
+      effect: Flash-protected synthetic eyes
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.AfBFaINGPyMiVBhE
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102726049
+      lastModifiedBy: cwnBuilder0000
+  - _id: WsFslNBqIgOid5Jc
+    name: Eye Mod/Low Light Vision
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        This mod grants low-light vision, allowing clear sight to normal
+        distances in any light condition better than pitch blackness.
+      mods: []
+      cost: 5000
+      concealment: medical
+      subType: sensory
+      systemStrain: 0.5
+      effect: See in low-light conditions
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.719NAbN2y1yqPKQD
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102732039
+      lastModifiedBy: cwnBuilder0000
+  - _id: JjOBTiRKhjJCfhla
+    name: Enhanced Reflexes I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        Neural acceleration matrices can be deployed to briefly boost the user's
+        reaction speed. Once per scene, as an On Turn action, the user gets a
+        bonus non-cyberspace Main Action.
+      mods: []
+      cost: 100000
+      concealment: medical
+      subType: nerve
+      systemStrain: 2
+      effect: 1/scene, bonus Main Action
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.dq0CMXahwxEY9DvN
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102738018
+      lastModifiedBy: cwnBuilder0000
+  - _id: dlv2XxmicxaHgV7o
+    name: Stick Pads
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      description: >-
+        Macroscale van der Waals generators allow the user's hands and feet to
+        stick to vertical or overhanging surfaces, their full weight supported
+        by one arm. They can climb such surfaces at their full movement rate
+        with one free hand.
+      mods: []
+      cost: 15000
+      concealment: touch
+      subType: limb
+      systemStrain: 0.5
+      effect: Climb sheer or vertical surfaces
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware.Item.FbZxnN2mCGqPdIqv
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102743294
+      lastModifiedBy: cwnBuilder0000
+  - _id: Fl87fEgkbA9rQKRW
+    name: Cyberdeck
+    type: cyberdeck
+    img: icons/tools/navigation/sextant-steel-blue.webp
+    system:
+      description: >-
+        These laptop-sized computers range from scrap-built makeshifts to
+        cutting edge hardware stolen from the very best corps.
+      encumbrance: 1
+      readied: false
+      quantity: 1
+      cost: 0
+      mods: []
+      verbs:
+        - NwXfywjUX8sPRBKT
+        - 2ZYrOWfun9o8O7Hd
+        - Znw8G0JhrF43c2Me
+        - BHZH22WW2v6zGtVX
+        - 935sjp1yqePZFiM2
+        - RuuAGcFoW6871fyX
+      subjects:
+        - putWQXXvk07sl2sa
+        - p8hQwgo8R7SBJuCD
+        - DNytAdkR9OncxVdi
+        - zXlZ2GFg6VYx7eTF
+        - 9ikXdQoAUKu9RWq7
+        - iHsk7cMTbAST46Zt
+        - fNbpyVtSTlq2mEVm
+        - eU3585Yas84bjzrF
+        - ECOlxtPPkqtTN0lk
+      bonusAccess: 0
+      memory: 15
+      shielding: 0
+      cpu: 5
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberdecks.Item.OY9StwjXQuS44M26
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102958170
+      lastModifiedBy: cwnBuilder0000
+  - _id: NwXfywjUX8sPRBKT
+    name: Blind
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Deactivate a devices sensory input or make cyberware temporarily unable
+        to get any input from anything but the wearers nervous system. Cybereyes
+        are blind, cameras sense nothing, and laser tripwires dont register the
+        beam. Blind characters cant effectively attack at range, their movement
+        rate is halved, and they suffer a -4 penalty to both AC and melee hit
+        rolls.
+      cost: 2000
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 1
+      skillCheckMod: 0
+      selfTerminating: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.aFrcnD7FXi1I88FX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102844682
+      lastModifiedBy: cwnBuilder0000
+  - _id: 2ZYrOWfun9o8O7Hd
+    name: Deactivate
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Turn a device or piece of cyberware off. Most devices and cyber can be
+        rebooted by the network or the user, but itll take a Main Action and a
+        round to do so. If a network alert hasnt been issued, the network may
+        not notice a deactivated device until someone spots the problem.
+      cost: 2000
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 1
+      skillCheckMod: 1
+      selfTerminating: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.KVYSc7r9jf0ArvRz
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102847650
+      lastModifiedBy: cwnBuilder0000
+  - _id: Znw8G0JhrF43c2Me
+    name: Frisk
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        A Frisk Cyber program can give a list of all the cyber implanted in a
+        specific human target within 30 meters, assuming the hackers skill check
+        beats the cyber users security difficulty.
+      cost: 500
+      targetTypes:
+        - cyber
+      accessCost: 0
+      skillCheckMod: 1
+      selfTerminating: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.7fisUkFDe6s2hObF
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102850512
+      lastModifiedBy: cwnBuilder0000
+  - _id: BHZH22WW2v6zGtVX
+    name: Glitch
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Temporarily deactivate a device or cyberware system while the program
+        remains running, for no more than one round per Program skill level plus
+        two. A device can be targeted by a particular hackers Glitch only once a
+        day, successful or not.
+      cost: 1000
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 0
+      skillCheckMod: 2
+      selfTerminating: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.OOM2PCIxk6PEnqSH
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102853666
+      lastModifiedBy: cwnBuilder0000
+  - _id: 935sjp1yqePZFiM2
+    name: Sabotage
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Cause a physical device or cyberware system to damage itself through
+        violent movement or self-destructive current surges. Devices smaller
+        than a car will usually be disabled until repaired. Cyberware users do
+        not take damage, but must make two Physical saves to resist the effect;
+        if they fail both, the targeted system is disabled until the next
+        maintenance, and if they fail one, its frozen for one round. A device or
+        cyber can be targeted by this Verb only once per scene.
+      cost: 2000
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 1
+      skillCheckMod: -1
+      selfTerminating: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.lrcDrqCz0L6mxgVW
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102856421
+      lastModifiedBy: cwnBuilder0000
+  - _id: RuuAGcFoW6871fyX
+    name: Sense
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Piggyback on the sensory feed of a device or piece of cyber. Anything
+        the device senses or records, the hacker can sense. Swapping focus from
+        cyberspace to reality is an On Turn action.
+      cost: 1000
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 0
+      skillCheckMod: 0
+      selfTerminating: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.sAW2wEgoMXI8uKJy
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102859967
+      lastModifiedBy: cwnBuilder0000
+  - _id: putWQXXvk07sl2sa
+    name: Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102865147
+      lastModifiedBy: cwnBuilder0000
+  - _id: p8hQwgo8R7SBJuCD
+    name: Body Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102898741
+      lastModifiedBy: cwnBuilder0000
+  - _id: DNytAdkR9OncxVdi
+    name: Nerve Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102904934
+      lastModifiedBy: cwnBuilder0000
+  - _id: zXlZ2GFg6VYx7eTF
+    name: Limb Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102914192
+      lastModifiedBy: cwnBuilder0000
+  - _id: 9ikXdQoAUKu9RWq7
+    name: Sensory Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102930084
+      lastModifiedBy: cwnBuilder0000
+  - _id: iHsk7cMTbAST46Zt
+    name: Skin Cyber
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102936716
+      lastModifiedBy: cwnBuilder0000
+  - _id: fNbpyVtSTlq2mEVm
+    name: Enhanced Reflexes I
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102977287
+      lastModifiedBy: cwnBuilder0000
+  - _id: eU3585Yas84bjzrF
+    name: Enhanced Reflexes II
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102982496
+      lastModifiedBy: cwnBuilder0000
+  - _id: ECOlxtPPkqtTN0lk
+    name: Enhanced Reflexes III
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cybernetic system in a visible subject within 30 meters with no
+        significant obstacles to line of sight. Unlike most Subjects, it's not
+        necessary for a hacker to manifest an avatar inside the target node to
+        affect cyber systems; they can launch their program directly at it, and
+        the system itself need not be visible on the target's body. Given the
+        difficulty of affecting cyber wirelessly, many hackers prefer to use
+        more specific Subjects for a +1 bonus, such as Nerve Cyber or Limb
+        Cyber.
+      cost: 1000
+      type: cyber
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.0.1
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717102993873
+      lastModifiedBy: cwnBuilder0000
+effects: []
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: '11.315'
+  createdTime: 1717102620802
+  modifiedTime: 1717102993873
+  lastModifiedBy: cwnBuilder0000
+sort: 0
+_id: jb4wFqMNuw6934cz
+_key: '!npc!jb4wFqMNuw6934cz'
+

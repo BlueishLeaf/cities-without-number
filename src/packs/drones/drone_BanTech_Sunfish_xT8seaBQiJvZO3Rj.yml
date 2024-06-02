@@ -1,0 +1,48 @@
+_id: xT8seaBQiJvZO3Rj
+name: BanTech Sunfish
+type: drone
+img: icons/svg/mystery-man.svg
+system:
+  health:
+    value: 8
+    max: 8
+  biography: >-
+    BanTech has tried to make an opening in the aquatic drone market with the
+    Sunfish, an easily-portable swimming drone that can still mount a few useful
+    loadout options.
+  traumaTarget:
+    base: 6
+    total: 6
+  movement:
+    speed: 10
+    type: swim
+  hardpoints:
+    value: 0
+    max: 0
+  armorClass:
+    melee: 15
+    ranged: 15
+  cargoEncumbrance:
+    stowed:
+      value: 0
+      max: 0
+  cost: 1000
+  fittings:
+    value: 0
+    max: 3
+  encumbrance: 3
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drone!xT8seaBQiJvZO3Rj'
+

@@ -1,0 +1,27 @@
+_id: A2WeQSrqlStYeg2C
+name: Ultralight Components
+type: mod
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Increase the vehicle's maximum Mass by 2 points for Small vehicles, 3 for
+    Medium, or 4 for Large. Its maximum HP decreases by 20% of its base, rounded
+    up.
+  costPercentage: 20
+  specialTechRequired: 1
+  requiredSkills: Fix-2/Drive-1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!mod!A2WeQSrqlStYeg2C'
+

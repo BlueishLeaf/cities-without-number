@@ -1,0 +1,35 @@
+_id: pRTtHMoXiPVjCcfu
+name: Joint Reinforcement
+type: armor
+img: icons/equipment/chest/collar-steel.webp
+system:
+  description: >-
+    The weak points around limb joints are reinforced with extra layers of
+    weave. The extra weave hinders movement, and applies a -1 penalty to the
+    wearer's Sneak and Exert checks.
+  cost: 250
+  encumbrance: 0
+  armorClass:
+    melee: 1
+    ranged: 1
+  damageSoak: 0
+  traumaTargetMod: 0
+  concealment: subtle
+  subType: accessory
+  isHeavy: true
+  canEquipWithSuit: false
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!armor!pRTtHMoXiPVjCcfu'
+

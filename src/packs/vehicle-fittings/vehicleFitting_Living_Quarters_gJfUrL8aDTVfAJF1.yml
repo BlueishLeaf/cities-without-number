@@ -1,0 +1,29 @@
+_id: gJfUrL8aDTVfAJF1
+name: Living Quarters
+type: vehicleFitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Basic, cramped quarters are provided for sleeping, sanitation, and cooking
+    for all crew. Permanent living in a vehicle costs and counts as a slum
+    lifestyle, though occupants with the Ace Driver or Roamer Focus can treat it
+    as middle-class for the same price.
+  cost: 8000
+  power: 0
+  mass: 4
+  minimumSize: large
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!vehicleFitting!gJfUrL8aDTVfAJF1'
+

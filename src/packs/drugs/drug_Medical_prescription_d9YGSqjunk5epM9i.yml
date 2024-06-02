@@ -1,0 +1,29 @@
+_id: d9YGSqjunk5epM9i
+name: Medical prescription
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    One of a thousand different medical drugs, a prescription like this is often
+    necessary to treat some chronic condition or keep a medical problem from
+    growing worse. Corp employees get their drugs for a pittance, but less
+    fortunate souls need to source their drugs from extortionate corp pharmacies
+    or street docs. Lucky users only need a dose a few times a week, but others
+    must have a daily supply or suffer potentially lethal complications.
+  cost: 20
+  requiredSkills: None
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!d9YGSqjunk5epM9i'
+

@@ -1,0 +1,25 @@
+_id: Hhty1EvwDBMkAwF9
+name: Thermal Optics
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    The drone is equipped with IR optics that can see heat patterns. The drone
+    can function adequately even in complete darkness and grants the pilot a +1
+    bonus to Notice skill checks where thermal imaging might be useful.
+  costPercentage: 20
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!Hhty1EvwDBMkAwF9'
+

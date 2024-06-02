@@ -1,0 +1,28 @@
+_id: HKbBHJfZRpVNgDXN
+name: No Touch Web
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    Most commonly installed on small ground drones, this web can be armed as a
+    Main Action by the pilot. Until disarmed, any attempt to grab or pick up the
+    drone automatically inflicts 2d6 non-lethal electrical damage on the
+    grabber. This shock continues each round as long as the drone is held, with
+    up to 5 discharges total before the battery must be recharged. The firm
+    contact required makes it impractical to use the web as an offensive weapon.
+  costPercentage: 10
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!HKbBHJfZRpVNgDXN'
+

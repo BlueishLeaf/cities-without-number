@@ -1,0 +1,30 @@
+_id: MxaqhkNOGwhyX1pV
+name: Boneshaker
+type: drug
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  description: >-
+    A filthy mix of jailbroken corp industrial chems and amphetamine scrapings,
+    Boneshaker is a popular combat drug among the most impoverished or savage
+    street gangs. On application, the subject is filled with blind aggression,
+    gaining a +2 Morale bonus and a +2 bonus to hit rolls, damage, and Shock.
+    The recklessness induced by Boneshaker leaves them wide open, however, and
+    all attacks against them add +2 to any Trauma Die rolls. Boneshaker lasts
+    for one scene and adds 2 System Strain at the end of it.
+  cost: 10
+  requiredSkills: None
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!drug!MxaqhkNOGwhyX1pV'
+

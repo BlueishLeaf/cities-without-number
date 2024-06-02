@@ -1,0 +1,25 @@
+_id: MuOhhoEPDU66L4LV
+name: Stab
+type: skill
+img: icons/sundries/documents/blueprint-magical.webp
+system:
+  description: >-
+    Use it as a combat skill when wielding melee weapons, whether primitive or
+    complex. It can also be used when throwing weapons.
+  level: -1
+  attribute: str
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!skill!MuOhhoEPDU66L4LV'
+

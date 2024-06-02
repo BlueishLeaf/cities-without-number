@@ -1,0 +1,25 @@
+_id: Xl6BZqdkn36Mbf2J
+name: Telescopic Optics
+type: fitting
+img: icons/tools/smithing/tongs-steel-grey.webp
+system:
+  description: >-
+    The drone can focus on objects up to one kilometer away with a visual acuity
+    sufficient to read a newspaper. Integral low-light sensors allow it to see
+    in all but total darkness.
+  costPercentage: 20
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!fitting!Xl6BZqdkn36Mbf2J'
+

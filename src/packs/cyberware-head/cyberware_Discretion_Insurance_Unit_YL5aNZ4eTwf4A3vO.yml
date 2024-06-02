@@ -1,0 +1,32 @@
+_id: YL5aNZ4eTwf4A3vO
+name: Discretion Insurance Unit
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: Cranial bomb with remote key
+  description: >-
+    A small cranial bomb that can be keyed go off when it receivesor does not
+    receivecertain codes or transmissions. Its unfortunate tendency to misfire
+    its anti-removal protocols makes it an unpopular choice for use in anyone
+    but the most disposable subjects. Removing this cyber is done at a +2
+    difficulty, and failure causes the death of the subject and a Physical save
+    to avoid the death of the physician, with 5d6 damage taken on success.
+  cost: 10000
+  subType: head
+  concealment: medical
+  systemStrain: 0.5
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!YL5aNZ4eTwf4A3vO'
+

@@ -1,0 +1,29 @@
+_id: U2MM3cPN8HF9h7KU
+name: Enhanced Reflexes III
+type: cyberware
+img: icons/equipment/shoulder/pauldron-segmented-red.webp
+system:
+  effect: 2/scene, bonus Main and Move
+  description: >-
+    Twice per scene, as an On Turn action up to once per round, the user gains a
+    bonus non-cyberspace Main Action and bonus Move Action. By accepting one
+    System Strain, this ability can be used as an Instant action.
+  cost: 750000
+  subType: nerve
+  concealment: touch
+  systemStrain: 4
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberware!U2MM3cPN8HF9h7KU'
+

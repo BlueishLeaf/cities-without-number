@@ -1,0 +1,29 @@
+_id: 1j57IyShM9ROT6p3
+name: Cranial Jack
+type: cyberdeck
+img: icons/tools/navigation/sextant-steel-blue.webp
+system:
+  description: >-
+    A discreetly-placed plug socket in the user's head or neck allows
+    interfacing with cyberdecks and gear equipped with a jack line.
+  cost: 1000
+  encumbrance: 0
+  bonusAccess: 0
+  memory: 0
+  shielding: 0
+  cpu: 1
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.0.1
+  coreVersion: 11
+  createdTime: 1694265254
+  modifiedTime: 1694265254
+  lastModifiedBy: cwnBuilder0000
+_key: '!cyberdeck!1j57IyShM9ROT6p3'
+
