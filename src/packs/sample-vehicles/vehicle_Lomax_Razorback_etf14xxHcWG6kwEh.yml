@@ -38,67 +38,6 @@ system:
     value: 4
     max: 14
   size: L
-items:
-  - name: Drone Hub
-    type: mod
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        Install a housing that can hold a portable drone on Small vehicles or a
-        non-portable drone on Medium or larger vehicles. The drone can be
-        deployed while the vehicle is in motion. Onboard signal encryption adds
-        +2 to the difficulty of hacking any drone controlled by someone in or
-        adjacent to this vehicle. This fitting can be installed twice on Large
-        vehicles.
-      costPercentage: 10
-      specialTechRequired: 0
-      requiredSkills: Fix-1/Drive-0
-    flags: {}
-    sort: 0
-  - name: Drone Hub
-    type: mod
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        Install a housing that can hold a portable drone on Small vehicles or a
-        non-portable drone on Medium or larger vehicles. The drone can be
-        deployed while the vehicle is in motion. Onboard signal encryption adds
-        +2 to the difficulty of hacking any drone controlled by someone in or
-        adjacent to this vehicle. This fitting can be installed twice on Large
-        vehicles.
-      costPercentage: 10
-      specialTechRequired: 0
-      requiredSkills: Fix-1/Drive-0
-    flags: {}
-    sort: 0
-  - name: Extra Passengers
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
-        fitting can be taken multiple times, and any vehicle amenities such as
-        crash pods or living quarters extend to these additional Crew as well.
-      cost: 2500
-      power: 0
-      mass: 2
-      minimumSize: small
-    flags: {}
-    sort: 0
-  - name: Extra Passengers
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
-        fitting can be taken multiple times, and any vehicle amenities such as
-        crash pods or living quarters extend to these additional Crew as well.
-      cost: 2500
-      power: 0
-      mass: 2
-      minimumSize: small
-    flags: {}
-    sort: 0
 effects: []
 folder: null
 sort: 0

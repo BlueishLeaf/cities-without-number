@@ -3,8 +3,7 @@
     "build": "sass src/scss/cwn.scss css/cwn.css --style=expanded --no-source-map",
     "watch": "sass src/scss/cwn.scss css/cwn.css --style=expanded --source-map --watch",
     "pushLDBtoYML": "node ./tools/pushLDBtoYML.mjs",
-    "pullYMLtoLDB": "node ./tools/pullYMLtoLDB.mjs",
-    "populateKeys": "node ./tools/populateKeys.mjs"
+    "pullYMLtoLDB": "node ./tools/pullYMLtoLDB.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.2",

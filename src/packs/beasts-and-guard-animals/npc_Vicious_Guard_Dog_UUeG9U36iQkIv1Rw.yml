@@ -37,51 +37,6 @@ system:
   moraleTarget: 9
   dangerValue: 2
   cyberwareMaintenanceCost: null
-items:
-  - _id: jq6K55hSQIIs7TV6
-    name: Bite
-    type: weapon
-    img: icons/weapons/fist/fist-knuckles-spiked-blue.webp
-    system:
-      description: ''
-      encumbrance: 0
-      readied: false
-      quantity: 1
-      cost: 0
-      attribute: str
-      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
-      mods: []
-      skill: punch
-      damageFormula: 1d6 + 1
-      range:
-        effective: 1
-        max: 1
-      isBurstFireable: false
-      magazine: null
-      trauma:
-        die: 1d6
-        rating: 2
-      shock: null
-      mounted:
-        power: 0
-        mass: 0
-        minimumSize: medium
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.melee-and-thrown-weapons.Item.NsILrYHi7I0Qypcb
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.0.1
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717095995110
-      lastModifiedBy: cwnBuilder0000
 effects: []
 flags: {}
 _stats:

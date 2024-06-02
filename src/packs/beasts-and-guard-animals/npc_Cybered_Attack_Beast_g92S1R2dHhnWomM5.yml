@@ -36,51 +36,6 @@ system:
   moraleTarget: 10
   dangerValue: 15
   cyberwareMaintenanceCost: null
-items:
-  - name: Cybernetic Claws
-    type: weapon
-    system:
-      description: ''
-      encumbrance: 0
-      readied: false
-      quantity: 1
-      cost: 0
-      attribute: str
-      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
-      mods: []
-      skill: null
-      damageFormula: 2d6 + 4
-      range:
-        effective: 1
-        max: 1
-      isBurstFireable: false
-      magazine: null
-      trauma:
-        die: 1d8
-        rating: 3
-      shock:
-        damage: 4
-        threshold: 99
-      mounted:
-        power: 0
-        mass: 0
-        minimumSize: medium
-      type: weapon
-    sort: 0
-    _id: aiLkn89tPyhZQBjy
-    img: icons/weapons/fist/fist-knuckles-spiked-blue.webp
-    effects: []
-    folder: null
-    ownership:
-      default: 0
-    flags: {}
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.0.1
-      coreVersion: '11.315'
-      createdTime: 1717095261341
-      modifiedTime: 1717095537180
-      lastModifiedBy: cwnBuilder0000
 effects: []
 flags: {}
 _stats:
