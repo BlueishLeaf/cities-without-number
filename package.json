@@ -2,9 +2,9 @@
   "scripts": {
     "compileCSS": "sass src/scss/cwn.scss css/cwn.css --style=expanded --no-source-map",
     "watchCSS": "sass src/scss/cwn.scss css/cwn.css --style=expanded --source-map --watch",
-    "pushLDBtoYML": "node ./tools/pushLDBtoYML.mjs",
-    "pullYMLtoLDB": "node ./tools/pullYMLtoLDB.mjs",
-    "build": "npm run compileCSS & npm run pullYMLtoLDB"
+    "compileLDBtoYML": "node ./tools/compileLDBtoYML.mjs",
+    "compileYMLtoLDB": "node ./tools/compileYMLtoLDB.mjs",
+    "build": "npm run compileCSS & npm run compileYMLtoLDB"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.2",
