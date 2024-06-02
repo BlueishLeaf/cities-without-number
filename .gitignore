@@ -12,5 +12,8 @@ node_modules/
 # OS Specific
 .DS_Store
 
-# CSS Artifacts
+# Generated CSS Artifacts
 /css/
+
+# Generated LevelDB Artifacts
+/packs/
