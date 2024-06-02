@@ -48,6 +48,25 @@ Hooks.once("init", async function() {
     vehicle: models.VehicleActorData,
     server: models.ServerActorData
   }
+  CONFIG.Item.dataModels = {
+    gear: models.GearItemData,
+    weapon: models.WeaponItemData,
+    armor: models.ArmorItemData,
+    edge: models.EdgeItemData,
+    focus: models.FocusItemData,
+    skill: models.SkillItemData,
+    cyberware: models.CyberwearItemData,
+    mod: models.ModItemData,
+    fitting: models.FittingItemData,
+    vehicleFitting: models.VehicleFittingItemData,
+    drug: models.DrugItemData,
+    cyberdeck: models.CyberdeckItemData,
+    verb: models.VerbItemData,
+    subject: models.SubjectItemData,
+    node: models.NodeItemData,
+    demon: models.DemonItemData,
+    contact: models.ContactItemData
+  }
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
