@@ -112,13 +112,24 @@ select {
 }
 
 .heading-resource {
-  display: flow-root;
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  input {
+  input[type='number'] {
     width: 15%;
-    margin-left: 5px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  input[type='checkbox'] {
+    margin-left: 10px;
+  }
+
+  .checkbox-offset {
+    margin-top: 2px;
   }
 }
 
