@@ -86,7 +86,11 @@
               <h4>{{verb.system.skillCheckMod}}</h4>
             </div>
             <div class="item-stats">
-              <h4>{{verb.system.selfTerminating}}</h4>
+              {{#if verb.system.selfTerminating}}
+                <i class="fas fa-check" title="This program will self-terminate"></i>
+              {{else}}
+                <i class="fas fa-xmark" title="This program will not self-terminate"></i>
+              {{/if}}
             </div>
             <div class="item-stats">
               <h4>{{verb.system.targetTypes}}</h4>
