@@ -180,7 +180,7 @@ export class CitiesWithoutNumberActor extends Actor {
   openNpcWeaponDialog(weapon, useRangedBonus) {
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
-      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable),
+      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage),
       buttons: DialogUtils.rollButtons(html =>
         this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(useRangedBonus, false), html)),
       default: "Roll"
@@ -203,7 +203,7 @@ export class CitiesWithoutNumberActor extends Actor {
   openAutoWeaponDialog(weapon) {
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
-      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable),
+      content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage),
       buttons: DialogUtils.rollButtons(html =>
         this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(false, true), html)),
       default: "Roll"
@@ -259,7 +259,8 @@ export class CitiesWithoutNumberActor extends Actor {
     const burstFireElements = html.find('[name="burstFireInput"]');
     const isBurstFire = burstFireElements.length > 0 ? burstFireElements[0].checked : false;
 
-    const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+    const nonLethalElements = html.find('[name="nonLethalInput"]');
+    const isNonLethal =  nonLethalElements.length > 0 ? nonLethalElements[0].checked : false;
 
     if (!weapon.system.hasMagazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { baseAB, situationalAB });

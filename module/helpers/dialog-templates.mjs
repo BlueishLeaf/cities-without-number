@@ -45,10 +45,10 @@ const addSituationalAttackBonus = `
   </div>
 `;
 
-export const autoWeaponRollDialog = isBurstFireable => `
+export const autoWeaponRollDialog = (isBurstFireable, canDealNonLethalDamage) => `
   <div class="form-group">
     ${addSituationalAttackBonus}
-    ${addNonLethal}
+    ${addNonLethal(canDealNonLethalDamage)}
     ${addBurstFire(isBurstFireable)}
   </div>
 `;
