@@ -1,0 +1,51 @@
+name: Release Creation
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+  
+      - name: Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Populate Version and Download Links in system.json
+        id: populate_system_json
+        uses: microsoft/variable-substitution@v1
+        with:
+          files: "system.json"
+        env:
+          version: ${{github.event.release.tag_name}}
+          manifest: https://github.com/${{github.repository}}/releases/latest/download/system.json
+          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/system.zip
+
+      - run: zip -r ./system.zip -x ./node_modules ./src
+
+      - name: Update Release with Files
+        id: update_release_files
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: ${{ github.event.release.name }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "./system.json, ./system.zip"
+          tag: ${{ github.event.release.tag_name }}
+          body: ${{ github.event.release.body }}
