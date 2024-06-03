@@ -28,13 +28,13 @@ export default class WeaponItemData extends ModifiableItemData {
             hasMagazine: new fields.BooleanField({required: true, initial: true}),
             magazine: resourceField(0, 0),
 
-            dealsTraumaticHits: new fields.BooleanField({required: true, initial: true}),
+            canDealTraumaticHits: new fields.BooleanField({required: true, initial: true}),
             trauma: new fields.SchemaField({
                 die: new fields.StringField({ required: true, initial: '1d6' }),
                 rating: integerField(0)
             }),
 
-            dealsShockDamage: new fields.BooleanField({required: true, initial: true}),
+            canDealShockDamage: new fields.BooleanField({required: true, initial: true}),
             shock: new fields.SchemaField({
                 damage: integerField(0),
                 threshold: integerField(0)
