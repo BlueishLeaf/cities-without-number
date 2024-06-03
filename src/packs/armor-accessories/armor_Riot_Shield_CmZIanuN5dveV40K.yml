@@ -11,8 +11,8 @@ system:
   cost: 1000
   encumbrance: 2
   armorClass:
-    melee: 2
-    ranged: 4
+    melee: 4
+    ranged: 2
   damageSoak: 0
   traumaTargetMod: 0
   concealment: obvious
@@ -29,7 +29,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1717401180652
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 _key: '!items!CmZIanuN5dveV40K'
 
