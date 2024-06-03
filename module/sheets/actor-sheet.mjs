@@ -160,6 +160,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     });
 
     context.system.systemStrain.value = context.system.systemStrain.permanent + context.system.systemStrain.temporary;
+
+    // Assign major injuries to context
+    context.majorInjuries = context.system.majorInjuries;
   }
 
   _prepareDroneData(context) {
@@ -314,15 +317,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     event.preventDefault();
     const listType = event.currentTarget.dataset.listType;
 
-    switch (listType) {
-      case "goals":
-        this.createGoal();
-        break;
-      case "languages":
-        this.createLanguage();
-        break;
-      default:
-        break;
+    if (this.actor.system[listType] instanceof Array) {
+      this.actor.system[listType].push('');
+
+      const systemUpdate = {[listType]: this.actor.system[listType]}
+      Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
     }
   }
 
@@ -330,46 +329,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     event.preventDefault();
     const listType = event.currentTarget.dataset.listType;
 
-    switch (listType) {
-      case "goals":
-        this.deleteGoal(event);
-        break;
-      case "languages":
-        this.deleteLanguage(event);
-        break;
-      default:
-        break;
+    if (this.actor.system[listType] instanceof Array) {
+      const idx = this.actor.system[listType].findIndex(item => item === event.currentTarget.parentNode.children[0].value);
+      if (idx > -1) {
+        this.actor.system[listType].splice(idx, 1);
+
+        const systemUpdate = {[listType]: this.actor.system[listType]}
+        Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
+      }
     }
-  }
-
-  createGoal() {
-    this.actor.system.goals.push('');
-
-    const systemUpdate = {goals: this.actor.system.goals}
-    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
-  }
-
-  deleteGoal(event) {
-    const idx = this.actor.system.goals.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
-    this.actor.system.goals.splice(idx, 1);
-
-    const systemUpdate = {goals: this.actor.system.goals}
-    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
-  }
-
-  createLanguage() {
-    this.actor.system.languages.push('');
-
-    const systemUpdate = {languages: this.actor.system.languages}
-    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
-  }
-
-  deleteLanguage(event) {
-    const idx = this.actor.system.languages.findIndex(item => item.includes(event.currentTarget.parentNode.children[0].value));
-    this.actor.system.languages.splice(idx, 1);
-
-    const systemUpdate = {languages: this.actor.system.languages}
-    Actor.updateDocuments([{_id: this.actor._id, system: systemUpdate}]).then(updates => console.log("Updated actor", updates));
   }
 
   _toggleItemExpand(event) {

@@ -25,6 +25,19 @@
         <input type="number" name="system.savingThrows.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
       {{/each}}
     </div>
+
+    <hr>
+
+    <!-- Major Injuries -->
+    <div class="list-container">
+      <label for="system.majorInjuries" class="resource-label">Major Injuries <span title="Add a Major Injury" class="list-item-create fas fa-plus" data-list-type="majorInjuries"></span></label>
+      {{#each majorInjuries as |majorInjury|}}
+        <div class="list-item-container">
+          <input type="text" name="system.majorInjuries" value="{{majorInjury}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Major Injury" data-list-type="majorInjuries"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
+    </div>
   </div>
 
 </section>
