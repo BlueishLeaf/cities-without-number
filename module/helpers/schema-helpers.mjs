@@ -27,3 +27,7 @@ export function integerField(initialValue) {
     return new fields.NumberField({ required: true, nullable: false, integer: true, initial: initialValue })
 }
 
+export function decimalField(initialValue) {
+    return new fields.NumberField({ required: true, nullable: false, integer: false, initial: initialValue })
+}
+

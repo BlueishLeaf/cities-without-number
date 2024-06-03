@@ -1,4 +1,10 @@
-import {abilityField, integerField, resourceField, savingThrowField} from "../../helpers/schema-helpers.mjs";
+import {
+    abilityField,
+    decimalField,
+    integerField,
+    resourceField,
+    savingThrowField
+} from "../../helpers/schema-helpers.mjs";
 import {HumanoidActorData} from "./templates/humanoid-actor.mjs";
 
 export default class CharacterActorData extends HumanoidActorData {
@@ -17,12 +23,12 @@ export default class CharacterActorData extends HumanoidActorData {
                 cha: abilityField('Charisma', 10),
             }),
             systemStrain: new fields.SchemaField({
-                value: integerField(0),
-                max: integerField(10),
-                permanent: integerField(0),
-                temporary: integerField(0),
-                maxModifier: integerField(0),
-                permanentModifier: integerField(0),
+                value: decimalField(0),
+                max: decimalField(10),
+                permanent: decimalField(0),
+                temporary: decimalField(0),
+                maxModifier: decimalField(0),
+                permanentModifier: decimalField(0),
             }),
             savingThrows: new fields.SchemaField({
                 physical: savingThrowField("Physical", 10),
