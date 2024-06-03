@@ -1,4 +1,4 @@
-export const weaponRollDialog = (isBurstFireable, abilityOptions, skillOptions) => `
+export const weaponRollDialog = (isBurstFireable, canDealNonLethalDamage, abilityOptions, skillOptions) => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="attributeSelect">Choose an attribute: </label>
@@ -15,28 +15,28 @@ export const weaponRollDialog = (isBurstFireable, abilityOptions, skillOptions) 
     </div>
 
     ${addSituationalAttackBonus}
-    ${addNonLethal}
+    ${addNonLethal(canDealNonLethalDamage)}
     ${addBurstFire(isBurstFireable)}
   </div>
 `;
 
 const addBurstFire = isBurstFireable => isBurstFireable ? `
   <div class="dialog-row grid grid-2col">
-    <label for="burstFireInput">Burst-Fire?: </label>
+    <label for="burstFireInput">Burst-Fire? </label>
     <div style="text-align: center">
       <input type="checkbox" name="burstFireInput"/>
     </div>
   </div>
 ` : "";
 
-const addNonLethal = `
+const addNonLethal = canDealNonLethalDamage => canDealNonLethalDamage ? `
   <div class="dialog-row grid grid-2col">
-    <label for="nonLethalInput">Non-Lethal?: </label>
+    <label for="nonLethalInput">Non-Lethal? </label>
     <div style="text-align: center">
       <input type="checkbox" name="nonLethalInput"/>
     </div>
   </div>
-`;
+` : "";
 
 const addSituationalAttackBonus = `
   <div class="dialog-row grid grid-2col">

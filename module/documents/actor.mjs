@@ -217,7 +217,7 @@ export class CitiesWithoutNumberActor extends Actor {
     const skillOptions = skills.map(skill => `<option value="${skill._id}" ${weapon.system.skill === skill.name.toLowerCase() ? "selected" : ""}>${skill.name}</option>\n`);
     const weaponDialog = new Dialog({
       title: `Roll ${weapon.name}`,
-      content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, abilityOptions, skillOptions),
+      content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage, abilityOptions, skillOptions),
       buttons: DialogUtils.rollButtons(html => this.handleWeaponRoll(weapon, html)),
       default: "Roll"
     });
@@ -234,7 +234,9 @@ export class CitiesWithoutNumberActor extends Actor {
     const selectedSkill = this.items.get(html.find('[name="skillSelect"]').val());
     const skillMod = selectedSkill.system.level;
 
-    const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
+    const nonLethalElements = html.find('[name="nonLethalInput"]');
+    const isNonLethal =  nonLethalElements.length > 0 ? nonLethalElements[0].checked : false;
+
     const burstFireElements = html.find('[name="burstFireInput"]');
     const isBurstFire = burstFireElements.length > 0 ? burstFireElements[0].checked : false;
 
@@ -242,7 +244,7 @@ export class CitiesWithoutNumberActor extends Actor {
     weapon.system.attribute = selectedAttributeCode;
     weapon.system.skill = selectedSkill.name;
 
-    if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
+    if (!weapon.system.hasMagazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
       Item.updateDocuments([{ _id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine } }], { parent: weapon.actor }).then(updates => console.log("Updated weapon", updates));
@@ -259,7 +261,7 @@ export class CitiesWithoutNumberActor extends Actor {
 
     const isNonLethal = html.find('[name="nonLethalInput"]')[0].checked;
 
-    if (!weapon.system.magazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
+    if (!weapon.system.hasMagazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
       Item.updateDocuments([{ _id: weapon._id, system: { magazine: updatedMagazine } }], { parent: this }).then(updates => console.log("Updated weapon", updates));
@@ -320,7 +322,7 @@ export class CitiesWithoutNumberActor extends Actor {
     }
 
     // Only roll trauma die if the weapon has one and the attack isn't non-lethal
-    if (!isNonLethal && weapon.system.trauma && weapon.system.damageFormula) {
+    if (!isNonLethal && weapon.system.canDealTraumaticHits && weapon.system.damageFormula) {
       const traumaRoll = new Roll(weapon.system.trauma.die, rollData);
       rollRenderPromises[2] = traumaRoll.render();
     }

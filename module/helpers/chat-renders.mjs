@@ -12,7 +12,7 @@ export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, r
       : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
   }
 
-  if (weapon.system.shock) {
+  if (weapon.system.canDealShockDamage) {
     content += shockDamageRender(weapon);
   }
 
