@@ -43,7 +43,7 @@ export default class WeaponItemData extends ModifiableItemData {
             canBeMounted: new fields.BooleanField({required: true, initial: true}),
             mounted: new fields.SchemaField({
                 power: integerField(0),
-                mass: integerField(0),
+                mass: integerField(1),
                 minimumSize: new fields.StringField({ required: true, initial: 'small' })
             })
         }

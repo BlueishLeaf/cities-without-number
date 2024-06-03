@@ -148,6 +148,32 @@
           {{/if}}
         </section>
       </div>
+
+      <hr>
+
+      {{!-- Mounted Controls --}}
+      <section>
+        <div class="heading-resource">
+          <label class="resource-label checkbox-offset" for="system.canBeMounted">Mountable</label>
+          <input type="checkbox" name="system.canBeMounted" {{isChecked system.canBeMounted}}/>
+        </div>
+        {{#if system.canBeMounted}}
+          <div class="grid grid-3col">
+            <div class="resource">
+              <label class="resource-label">Power</label>
+              <input type="number" name="system.mounted.power" value="{{system.mounted.power}}" data-dtype="Number"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label">Mass</label>
+              <input type="number" name="system.mounted.mass" value="{{system.mounted.mass}}" data-dtype="Number"/>
+            </div>
+            <div class="resource">
+              <label class="resource-label" title="Minimum Size">Min. Size</label>
+              <input type="text" name="system.mounted.minimumSize" value="{{system.mounted.minimumSize}}" data-dtype="String"/>
+            </div>
+          </div>
+        {{/if}}
+      </section>
     </div>
   </header>
 
