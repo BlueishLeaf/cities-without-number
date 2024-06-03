@@ -8,15 +8,15 @@
       <div class="grid grid-3col">
         <div class="resource">
           <label class="resource-label">Quantity</label>
-          <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+          <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
         </div>
         <div class="resource">
           <label class="resource-label">Encumbrance</label>
-          <input type="text" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
+          <input type="number" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
         </div>
         <div class="resource">
           <label class="resource-label">Cost</label>
-          <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+          <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="resource">
           <label class="resource-label">Trauma Rating</label>
-          <input type="text" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
+          <input type="number" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
         </div>
       </div>
       {{/if}}
@@ -51,11 +51,11 @@
       <div class="grid grid-2col">
         <div class="resource">
           <label class="resource-label">Shock Damage</label>
-          <input type="text" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
+          <input type="number" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
         </div>
         <div class="resource">
           <label class="resource-label">Shock AC Threshold</label>
-          <input type="text" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
+          <input type="number" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
         </div>
       </div>
       {{/if}}
@@ -63,18 +63,18 @@
         <div class="resource flex-group-center">
           <label class="resource-label" title="Range (Effective/Maximum)">Range (Eff./Max)</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.range.effective" value="{{system.range.effective}}" data-dtype="Number"/>
+            <input type="number" name="system.range.effective" value="{{system.range.effective}}" data-dtype="Number"/>
             <i class="fas fa-slash-forward"></i>
-            <input type="text" name="system.range.max" value="{{system.range.max}}" data-dtype="Number"/>
+            <input type="number" name="system.range.max" value="{{system.range.max}}" data-dtype="Number"/>
           </div>
         </div>
         {{#if system.magazine}}
         <div class="resource flex-group-center">
           <label class="resource-label">Magazine</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
+            <input type="number" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
             <i class="fas fa-slash-forward"></i>
-            <input type="text" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
+            <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
           </div>
         </div>
         {{/if}}
