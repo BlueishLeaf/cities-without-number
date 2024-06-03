@@ -29,6 +29,7 @@ system:
     max: 1
   shock: null
   mounted: null
+  canDealShockDamage: false
 effects: []
 folder: null
 sort: 0
@@ -40,7 +41,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1717443212351
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 _key: '!items!EkaSk50xo8XXJtcu'
 

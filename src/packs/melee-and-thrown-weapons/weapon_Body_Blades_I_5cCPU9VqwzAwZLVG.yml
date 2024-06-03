@@ -25,6 +25,9 @@ system:
     damage: 2
     threshold: 15
   magazine: null
+  hasRangedAttack: false
+  canBeMounted: false
+  hasMagazine: false
 effects: []
 folder: null
 sort: 0
@@ -36,7 +39,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1717443510786
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 _key: '!items!5cCPU9VqwzAwZLVG'
 

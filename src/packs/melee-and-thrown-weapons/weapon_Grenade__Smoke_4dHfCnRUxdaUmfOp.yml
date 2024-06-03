@@ -13,16 +13,21 @@ system:
     IR or augmented visuals.
   cost: 25
   encumbrance: 1
-  damageFormula: null
+  damageFormula: ''
   attribute: str
   skill: stab
   range:
-    effective: 1
-    max: 1
+    effective: 10
+    max: 30
   isBurstFireable: false
   trauma: null
   shock: null
   magazine: null
+  isThrowable: true
+  canDealShockDamage: false
+  canDealTraumaticHits: false
+  hasMagazine: false
+  canBeMounted: false
 effects: []
 folder: null
 sort: 0
@@ -34,7 +39,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1717443649848
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 _key: '!items!4dHfCnRUxdaUmfOp'
 
