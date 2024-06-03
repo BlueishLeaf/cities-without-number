@@ -19,6 +19,7 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/cities-without-number/templates/actor/parts/actor-character-biography.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-server-programs.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-server-network.hbs",
-    "systems/cities-without-number/templates/actor/parts/actor-stats.hbs"
+    "systems/cities-without-number/templates/actor/parts/actor-stats.hbs",
+    "systems/cities-without-number/templates/actor/parts/actor-limited.hbs"
   ]);
 };

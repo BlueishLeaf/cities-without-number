@@ -76,6 +76,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this.actor.items.filter(item => item._sheet && item._sheet.rendered)
       .forEach(openItem => openItem.sheet._render(openItem));
 
+    console.log('Finished loading context', context);
     return context;
   }
 
