@@ -53,7 +53,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338727665
+  modifiedTime: 1717444012719
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 items:
   - _id: y5MODTuxNc5eDoRV
@@ -265,6 +265,7 @@ items:
       power: 0
       mass: 2
       minimumSize: small
+      quantity: 2
     effects: []
     folder: null
     sort: 0
@@ -280,40 +281,9 @@ items:
       systemVersion: 0.1.0
       coreVersion: '11.315'
       createdTime: 1694265254
-      modifiedTime: 1717338718634
+      modifiedTime: 1717444012719
       lastModifiedBy: 5mIhSmBDXvKVlXKo
     _key: '!actors.items!g7HPBahUABbp7NF2.3W9crzEbVZNeE1EE'
-  - _id: 2CGQtyiR2qWb0ful
-    name: Extra Passengers
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        Small vehicles add 1 Crew, Medium ones add 2, and Large ones add 4. This
-        fitting can be taken multiple times, and any vehicle amenities such as
-        crash pods or living quarters extend to these additional Crew as well.
-      cost: 2500
-      power: 0
-      mass: 2
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338722602
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!g7HPBahUABbp7NF2.2CGQtyiR2qWb0ful'
   - _id: jxFJCg8tfR66578P
     name: Sealed Atmosphere
     type: vehicleFitting

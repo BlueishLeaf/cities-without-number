@@ -37,10 +37,589 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1717098765866
-  modifiedTime: 1717099302108
+  modifiedTime: 1717444916702
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: T2FxPFDmKQCZaO6r
-items: []
+items:
+  - _id: JukgODmt9mqPOu1D
+    name: Body Blades II
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Larger body weaponry
+      description: >-
+        As level one, but the user's body armament includes not only
+        conventional blades, but assorted improvements such as monomolecular
+        edges, cutting vibrations, or thermal augmentation. Their unarmed
+        attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3.
+        Anyone who sees or touches their arms can detect signs of the cyber,
+        however.
+      cost: 25000
+      subType: limb
+      concealment: sight
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.U2aJw0BO8PaejjJU
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444491632
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.JukgODmt9mqPOu1D'
+  - _id: jVo87eqLrkUTIUVL
+    name: Body Blades II
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        As level one, but the user's body armament includes not only
+        conventional blades, but assorted improvements such as monomolecular
+        edges, cutting vibrations, or thermal augmentation. Their unarmed
+        attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3.
+        Anyone who sees or touches their arms can detect signs of the cyber,
+        however.
+      cost: 0
+      encumbrance: 0
+      damageFormula: 2d6 + 1 + @attributeMod
+      range:
+        effective: 1
+        max: 1
+      attribute: str
+      skill: stab
+      isBurstFireable: false
+      trauma:
+        die: 1d10
+        rating: 3
+      shock:
+        damage: 5
+        threshold: 15
+      magazine:
+        value: 0
+        max: 0
+      hasRangedAttack: false
+      hasMagazine: false
+      canBeMounted: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.EpbDNwKGxjkHvLGw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444571228
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.jVo87eqLrkUTIUVL'
+  - _id: OZPV1OnsI1kQF2Gn
+    name: Cybereyes (pair)
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Flash-protected synthetic eyes
+      description: >-
+        While a single cybernetic eye can be implanted, it is recommended that
+        both be replaced at the same time to improve neural adaptation. These
+        cybereyes are clearly artificial, though most are styled in attractive
+        or striking fashions. They all have perfect 20/20 vision and integral
+        flash protectors, but additional functionality must be implanted
+        separately. A user with a pair of cybereyes or syntheyes halves the
+        System Strain cost of cybernetic eye implants.
+      cost: 10000
+      subType: sensory
+      concealment: sight
+      systemStrain: 0
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444500689
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.OZPV1OnsI1kQF2Gn'
+  - _id: 2FR15vqw40fJ6lzD
+    name: Eye Mod/Low Light Vision
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: See in low-light conditions
+      description: >-
+        This mod grants low-light vision, allowing clear sight to normal
+        distances in any light condition better than pitch blackness.
+      cost: 5000
+      subType: sensory
+      concealment: medical
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.719NAbN2y1yqPKQD
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444505147
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.2FR15vqw40fJ6lzD'
+  - _id: 2G2tpY0TnVmfdA99
+    name: Enhanced Reflexes I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: 1/scene, bonus Main Action
+      description: >-
+        Neural acceleration matrices can be deployed to briefly boost the user's
+        reaction speed. Once per scene, as an On Turn action, the user gets a
+        bonus non-cyberspace Main Action.
+      cost: 100000
+      subType: nerve
+      concealment: medical
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444509348
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.2G2tpY0TnVmfdA99'
+  - _id: RMGjeT2gXOBZGTQp
+    name: Muscle Fiber Replacement I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Str 14, or +2 if higher
+      description: >-
+        Artificial muscle fibers are implanted as replacements for the user's
+        own flesh. The subject gains a Strength score of 14, or +2 if already 14
+        or higher.
+      cost: 50000
+      subType: limb
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.m8JdqOuPPuzXU3Ru
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444514514
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.RMGjeT2gXOBZGTQp'
+  - _id: 1NeRglxYVzAbpsvJ
+    name: Stick Pads
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Climb sheer or vertical surfaces
+      description: >-
+        Macroscale van der Waals generators allow the user's hands and feet to
+        stick to vertical or overhanging surfaces, their full weight supported
+        by one arm. They can climb such surfaces at their full movement rate
+        with one free hand.
+      cost: 15000
+      subType: limb
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444518060
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.1NeRglxYVzAbpsvJ'
+  - _id: mA0zxvk1M8JLY0md
+    name: Heavy Armored Suit
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        A head-to-toe suit of interlocking plates and impact absorption units,
+        these suits are reserved for high-end response teams and military
+        operations.
+      cost: 15000
+      encumbrance: 3
+      armorClass:
+        melee: 18
+        ranged: 20
+      damageSoak: 15
+      traumaTargetMod: 3
+      concealment: obvious
+      subType: armor
+      isHeavy: true
+      isSuit: true
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.W2Vr0ReXPLKmaJOO
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444523332
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.mA0zxvk1M8JLY0md'
+  - _id: DiCuYFZdLzBT9owE
+    name: Combat Shotgun
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Shotguns</b> of various stripes can be found under the counter of
+        practically every bar and shop in a slum. Simple double-barrel models
+        can be made by any home gunsmith with a pulse, but the finer tolerances
+        and more elaborate machining of a burst-fire capable combat shotgun
+        leaves them as a more selective product. Ranges and damages given are
+        for shot shells; slugs double their normal and extreme ranges but apply
+        a -1 penalty to hit rolls.
+      cost: 3000
+      encumbrance: 2
+      damageFormula: 3d4 + @attributeMod
+      range:
+        effective: 10
+        max: 30
+      attribute: dex
+      skill: shoot
+      isBurstFireable: true
+      trauma:
+        die: 1d10
+        rating: 3
+      magazine:
+        value: 12
+        max: 12
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.EA8Ct4TndRPSHIoo
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444527076
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.DiCuYFZdLzBT9owE'
+  - _id: 2ryCIWbvYpunqnSZ
+    name: Grenade, Flash
+    type: weapon
+    img: icons/weapons/thrown/grenade-round.webp
+    system:
+      description: >-
+        <b>Flash grenades</b> force victims without eye and ear protection to
+        make a Physical save; on a failure, the victim loses their next Main
+        Action and takes a -2 penalty to hit rolls and AC for the next 1d6
+        rounds. Flashbang effects don't stack, and a target who makes their save
+        cannot be flashbanged again that same round.
+      cost: 50
+      encumbrance: 1
+      damageFormula: ''
+      attribute: dex
+      skill: stab
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 0
+      shock:
+        damage: 0
+        threshold: 0
+      magazine:
+        value: 0
+        max: 0
+      canDealShockDamage: false
+      hasMagazine: false
+      canDealTraumaticHits: false
+      canBeMounted: false
+      isThrowable: true
+      readied: false
+      quantity: 3
+      mods: []
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444542989
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.2ryCIWbvYpunqnSZ'
+  - _id: x0EEPagrs0ghJxmi
+    name: Grenade, Frag
+    type: weapon
+    img: icons/weapons/thrown/grenade-round.webp
+    system:
+      description: >-
+        <b>Frag grenades</b> inflict 2d6 damage on all victims in range, plus
+        the chance for a Traumatic Hit. An Evasion save can halve a frag
+        grenade's damage, and each point of melee AC the target has above 14
+        reduces the final damage total by one point, possibly down to zero.
+      cost: 100
+      encumbrance: 1
+      damageFormula: 2d6 + @attributeMod
+      attribute: dex
+      skill: stab
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      trauma:
+        die: 1d8
+        rating: 3
+      shock:
+        damage: 0
+        threshold: 0
+      magazine:
+        value: 0
+        max: 0
+      isThrowable: true
+      canDealShockDamage: false
+      hasMagazine: false
+      canBeMounted: false
+      readied: false
+      quantity: 3
+      mods: []
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      canDealTraumaticHits: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.ywbzv2FPnELtOe37
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444916702
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!T2FxPFDmKQCZaO6r.x0EEPagrs0ghJxmi'
+prototypeToken:
+  name: Breaching Team Member
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
+folder: null
+ownership:
+  default: 0
 _key: '!actors!T2FxPFDmKQCZaO6r'
 

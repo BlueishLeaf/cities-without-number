@@ -37,10 +37,412 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1717100949482
-  modifiedTime: 1717101080765
+  modifiedTime: 1717445323667
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: AmiuyvAILTmUNbJw
-items: []
+items:
+  - _id: c83gMgpTBT9ANaFD
+    name: Body Blades II
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        As level one, but the user's body armament includes not only
+        conventional blades, but assorted improvements such as monomolecular
+        edges, cutting vibrations, or thermal augmentation. Their unarmed
+        attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3.
+        Anyone who sees or touches their arms can detect signs of the cyber,
+        however.
+      cost: 0
+      encumbrance: 0
+      damageFormula: 2d6 + 4 + @attributeMod
+      range:
+        effective: 1
+        max: 1
+      attribute: str
+      skill: stab
+      isBurstFireable: false
+      trauma:
+        die: 1d10
+        rating: 3
+      shock:
+        damage: 8
+        threshold: 99
+      magazine:
+        value: 0
+        max: 0
+      hasRangedAttack: false
+      hasMagazine: false
+      canBeMounted: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.EpbDNwKGxjkHvLGw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445323667
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.c83gMgpTBT9ANaFD'
+  - _id: 42sHXgvlcRxKD2kH
+    name: Body Blades II
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Larger body weaponry
+      description: >-
+        As level one, but the user's body armament includes not only
+        conventional blades, but assorted improvements such as monomolecular
+        edges, cutting vibrations, or thermal augmentation. Their unarmed
+        attacks do 2d6 damage with a Shock of 4/15, and a Trauma Die 1d10/x3.
+        Anyone who sees or touches their arms can detect signs of the cyber,
+        however.
+      cost: 25000
+      subType: limb
+      concealment: sight
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.U2aJw0BO8PaejjJU
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445283514
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.42sHXgvlcRxKD2kH'
+  - _id: 4Cq5ggqwqQoIHfZe
+    name: Enhanced Reflexes I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: 1/scene, bonus Main Action
+      description: >-
+        Neural acceleration matrices can be deployed to briefly boost the user's
+        reaction speed. Once per scene, as an On Turn action, the user gets a
+        bonus non-cyberspace Main Action.
+      cost: 100000
+      subType: nerve
+      concealment: medical
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445288175
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.4Cq5ggqwqQoIHfZe'
+  - _id: EzPEC9SI7QiZ1aD1
+    name: Muscle Fiber Replacement I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Str 14, or +2 if higher
+      description: >-
+        Artificial muscle fibers are implanted as replacements for the user's
+        own flesh. The subject gains a Strength score of 14, or +2 if already 14
+        or higher.
+      cost: 50000
+      subType: limb
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.m8JdqOuPPuzXU3Ru
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445292133
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.EzPEC9SI7QiZ1aD1'
+  - _id: 23EsIoKfg6qB9gcU
+    name: Veteran's Luck
+    type: edge
+    img: icons/sundries/books/book-backed-blue-gold.webp
+    system:
+      description: >-
+        Once per scene, as an Instant action, trigger this ability to gain one
+        of two effects: an attack roll that just hit you is instead treated as a
+        miss, or an attack roll you just made that missed is instead treated as
+        a hit. This ability can be applied to vehicle weapons used by the
+        operator, but it cannot protect against environmental damage, vehicle
+        crashes, falls, or other harm that doesn't involve an attack roll.
+      costPercentage: 0
+      specialTechRequired: 0
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445296486
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.23EsIoKfg6qB9gcU'
+  - _id: n3d5a4l8bW0OYhDJ
+    name: Armsmaster
+    type: focus
+    img: icons/sundries/books/book-backed-silver-gold.webp
+    system:
+      description: >-
+        You have an unusual competence with thrown weapons and melee attacks.
+        This Focus' benefits do not apply to unarmed attacks or non-thrown
+        projectile weapons. This Focus' bonuses also don't stack with Deadeye or
+        other Foci that add a skill's level to your damage or Shock.
+      level1Benefit: >-
+        Gain Stab as a bonus skill. You can Ready a Stowed melee or thrown
+        weapon as an Instant action. You may add your Stab skill level to a
+        melee or thrown weapon's damage roll or Shock damage, assuming it has
+        any to begin with.
+      level2Benefit: >-
+        The Shock from your melee attacks always treats the target as if they
+        have AC 10. Gain a +1 bonus to hit with all thrown or melee attacks.
+      level: 2
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.foci.Item.LaZxFrU699w9wBnE
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445303353
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.n3d5a4l8bW0OYhDJ'
+  - _id: 9vZHpOtke2Ow6ZVq
+    name: Armored Clothing
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        The bulky plates and heavy ballistic weaves of this outfit are disguised
+        as drapes and fashion elements.
+      cost: 1000
+      encumbrance: 2
+      armorClass:
+        melee: 14
+        ranged: 16
+      damageSoak: 5
+      traumaTargetMod: 1
+      concealment: subtle
+      subType: armor
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+      isHeavy: false
+      isSuit: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.u7p2N9JtUq3CRe0C
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445307883
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.9vZHpOtke2Ow6ZVq'
+  - _id: Pnq8Bb3jKRLSiQoS
+    name: Heavy Pistol
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Light and heavy pistols</b> are categorized by the caliber of the
+        bullet they fire. Some operators prefer the low recoil and high mag
+        capacity possible with a low-caliber round, while others like to have a
+        little more certainty in dropping the targets they hit.
+      cost: 200
+      encumbrance: 1
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 10
+        max: 100
+      attribute: dex
+      skill: shoot
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 3
+      magazine:
+        value: 8
+        max: 8
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445311939
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!AmiuyvAILTmUNbJw.Pnq8Bb3jKRLSiQoS'
+prototypeToken:
+  name: Gang Lieutenant or Minor Boss
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
+folder: null
+ownership:
+  default: 0
 _key: '!actors!AmiuyvAILTmUNbJw'
 

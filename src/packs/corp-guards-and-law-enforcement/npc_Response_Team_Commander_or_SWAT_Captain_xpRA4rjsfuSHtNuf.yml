@@ -37,10 +37,394 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1717098633008
-  modifiedTime: 1717098743853
+  modifiedTime: 1717444473240
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: xpRA4rjsfuSHtNuf
-items: []
+items:
+  - _id: zyUwW9Lhk6l0dDBO
+    name: Medium Armored Suit
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        Heavy security usually sports armor on this level, including police
+        rapid response teams.
+      cost: 10000
+      encumbrance: 3
+      armorClass:
+        melee: 14
+        ranged: 18
+      damageSoak: 10
+      traumaTargetMod: 2
+      concealment: obvious
+      subType: armor
+      isSuit: true
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+      isHeavy: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.iJOLoJSR3gqRo2YW
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444428771
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.zyUwW9Lhk6l0dDBO'
+  - _id: XuftX1sSwT4fCxwl
+    name: Combat Rifle
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Rifles and combat rifles</b> are similar semi-automatic tech, though
+        the latter is equipped with a burst-fire selector and usually trades the
+        range of a heavier caliber for the ability to carry more ammunition.
+      cost: 2500
+      encumbrance: 2
+      damageFormula: 1d12 + 1 + @attributeMod
+      range:
+        effective: 100
+        max: 300
+      attribute: dex
+      skill: shoot
+      isBurstFireable: true
+      trauma:
+        die: 1d8
+        rating: 3
+      magazine:
+        value: 30
+        max: 30
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.kHj6UQw8t0yqkQBj
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444464815
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.XuftX1sSwT4fCxwl'
+  - _id: jOZFhvbildnhnDg6
+    name: Advanced Knife
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        <b>Advanced weapons</b> employ modern polymers, sophisticated
+        metallurgy, fractal edges, electro-stun tech, and a small legion of
+        marketers to sell products that are distinctly superior to the plain
+        steel edges of a prior age. An advanced micro-edged butcher knife can go
+        through bone like bamboo and keep an edge for weeks between sharpenings.
+        The more martial offerings go to even greater lengths in their
+        marketing, with some enterprising serial killers and gang enforcers
+        inking exclusivity deals with particular knife manufacturers. Due to the
+        sheer ubiquity and availability of melee weapons, they're often treated
+        with less suspicion than firearms. A corp cop might bring somebody in
+        for an "illegal knife", but only if he already wanted them for a
+        different and better reason. Nightclubs and bars might expect firearms
+        to go in the locker at the entrance, but they're often disinclined to go
+        combing their patrons for every suspiciously-sharp hair ornament or
+        multipurpose fashion accessory they might carry.
+      cost: 200
+      encumbrance: 1
+      damageFormula: 1d6 + 1 + @attributeMod
+      attribute: str
+      skill: stab
+      range:
+        effective: 10
+        max: 30
+      isBurstFireable: false
+      trauma:
+        die: 1d8
+        rating: 3
+      shock:
+        damage: 2
+        threshold: 15
+      magazine:
+        value: 0
+        max: 0
+      isThrowable: true
+      hasMagazine: false
+      canBeMounted: false
+      readied: false
+      quantity: 1
+      mods: []
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444473240
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.jOZFhvbildnhnDg6'
+  - _id: UY34aGuKQmA5KgF5
+    name: Coordination Augment I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Dex 14, or +2 if higher
+      description: >-
+        The user's natural mind-body interface is tightened. The subject gains a
+        Dexterity score of 14, or +2 if already 14 or higher.
+      cost: 50000
+      subType: nerve
+      concealment: medical
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-nerve.Item.AQMhN551ghGnPTzI
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444441434
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.UY34aGuKQmA5KgF5'
+  - _id: LGDj9tnranEzuFvc
+    name: Cybereyes (pair)
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Flash-protected synthetic eyes
+      description: >-
+        While a single cybernetic eye can be implanted, it is recommended that
+        both be replaced at the same time to improve neural adaptation. These
+        cybereyes are clearly artificial, though most are styled in attractive
+        or striking fashions. They all have perfect 20/20 vision and integral
+        flash protectors, but additional functionality must be implanted
+        separately. A user with a pair of cybereyes or syntheyes halves the
+        System Strain cost of cybernetic eye implants.
+      cost: 10000
+      subType: sensory
+      concealment: sight
+      systemStrain: 0
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444444937
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.LGDj9tnranEzuFvc'
+  - _id: WT1KRw7HdqKCwe2U
+    name: Enhanced Reflexes I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: 1/scene, bonus Main Action
+      description: >-
+        Neural acceleration matrices can be deployed to briefly boost the user's
+        reaction speed. Once per scene, as an On Turn action, the user gets a
+        bonus non-cyberspace Main Action.
+      cost: 100000
+      subType: nerve
+      concealment: medical
+      systemStrain: 2
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444450137
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.WT1KRw7HdqKCwe2U'
+  - _id: tFtbskorWICOjZRa
+    name: Gunlink
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Bonus when using firearms
+      description: >-
+        Hardwired control points interface with the onboard targeting systems of
+        most modern firearms. When using a modern firearm, the PC ignores range
+        penalties and negates up to 2 points of hit penalties for cover,
+        concealment, or prone targets. Once per scene, as an Instant action,
+        they can reroll a missed attack roll with a gun.
+      cost: 25000
+      subType: sensory
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444454958
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!xpRA4rjsfuSHtNuf.tFtbskorWICOjZRa'
+prototypeToken:
+  name: Response Team Commander or SWAT Captain
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
+folder: null
+ownership:
+  default: 0
 _key: '!actors!xpRA4rjsfuSHtNuf'
 

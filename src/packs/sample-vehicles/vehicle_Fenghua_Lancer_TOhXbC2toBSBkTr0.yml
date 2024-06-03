@@ -47,7 +47,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338409934
+  modifiedTime: 1717443903062
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 items:
   - _id: fqYXgr2vYuZdNuAS
@@ -63,6 +63,7 @@ items:
       power: 0
       mass: 1
       minimumSize: small
+      quantity: 5
     effects: []
     folder: null
     sort: 0
@@ -78,133 +79,9 @@ items:
       systemVersion: 0.1.0
       coreVersion: '11.315'
       createdTime: 1694265254
-      modifiedTime: 1717338289669
+      modifiedTime: 1717443898631
       lastModifiedBy: 5mIhSmBDXvKVlXKo
     _key: '!actors.items!TOhXbC2toBSBkTr0.fqYXgr2vYuZdNuAS'
-  - _id: NNeM1u7v3RegnzKu
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338372724
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!TOhXbC2toBSBkTr0.NNeM1u7v3RegnzKu'
-  - _id: ZyjCtQNZYCWBmCms
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338394395
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!TOhXbC2toBSBkTr0.ZyjCtQNZYCWBmCms'
-  - _id: CDOhuDtbJHtsfY2P
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338397154
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!TOhXbC2toBSBkTr0.CDOhuDtbJHtsfY2P'
-  - _id: 1QtHEIl3nybjLsQB
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338399604
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!TOhXbC2toBSBkTr0.1QtHEIl3nybjLsQB'
   - _id: hPloMCMmDVYTLiwF
     name: Extra Passengers
     type: vehicleFitting

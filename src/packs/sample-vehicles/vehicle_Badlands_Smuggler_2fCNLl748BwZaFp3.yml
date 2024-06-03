@@ -47,7 +47,7 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338559220
+  modifiedTime: 1717443984682
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 items:
   - _id: 2Cap8qRQyOShSLgt
@@ -94,6 +94,7 @@ items:
       power: 0
       mass: 1
       minimumSize: small
+      quantity: 6
     effects: []
     folder: null
     sort: 0
@@ -109,164 +110,9 @@ items:
       systemVersion: 0.1.0
       coreVersion: '11.315'
       createdTime: 1694265254
-      modifiedTime: 1717338536973
+      modifiedTime: 1717443979215
       lastModifiedBy: 5mIhSmBDXvKVlXKo
     _key: '!actors.items!2fCNLl748BwZaFp3.ybwOl6ADB80iZx4J'
-  - _id: ddT4IosZuV9nqoHL
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338541102
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!2fCNLl748BwZaFp3.ddT4IosZuV9nqoHL'
-  - _id: F4ubwQRA3UAWj1dT
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338541887
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!2fCNLl748BwZaFp3.F4ubwQRA3UAWj1dT'
-  - _id: nRrz43TnQfzErPW1
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338542581
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!2fCNLl748BwZaFp3.nRrz43TnQfzErPW1'
-  - _id: rBeJeGrcR4cHMjkU
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338543895
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!2fCNLl748BwZaFp3.rBeJeGrcR4cHMjkU'
-  - _id: JOp9sufg2k9RjQft
-    name: Cargo Space
-    type: vehicleFitting
-    img: icons/tools/smithing/tongs-steel-grey.webp
-    system:
-      description: >-
-        This fitting can be taken multiple times. Each time it adds 50 kg of
-        protected cargo space for Small vehicles, 500 kg for Medium ones, and 2
-        metric tons for Large ones.
-      cost: 0
-      power: 0
-      mass: 1
-      minimumSize: small
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      5mIhSmBDXvKVlXKo: 3
-    flags:
-      core:
-        sourceId: >-
-          Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
-    _stats:
-      systemId: cities-without-number
-      systemVersion: 0.1.0
-      coreVersion: '11.315'
-      createdTime: 1694265254
-      modifiedTime: 1717338550168
-      lastModifiedBy: 5mIhSmBDXvKVlXKo
-    _key: '!actors.items!2fCNLl748BwZaFp3.JOp9sufg2k9RjQft'
   - _id: IRZTIXAtxFfKSYss
     name: Smuggler's Hold
     type: vehicleFitting

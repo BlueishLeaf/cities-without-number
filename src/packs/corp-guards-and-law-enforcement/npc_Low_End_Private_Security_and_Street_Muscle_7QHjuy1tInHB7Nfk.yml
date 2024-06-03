@@ -41,8 +41,225 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1717444289517
   lastModifiedBy: 5mIhSmBDXvKVlXKo
-items: []
+items:
+  - _id: FEcu8OR8fTEB0FfZ
+    name: Reinforced Clothing
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        Subtle polymer sheets and reinforced weaves are used to provide a
+        modicum of protection in this clothing without sacrificing taste.
+      cost: 100
+      encumbrance: 0
+      armorClass:
+        melee: 10
+        ranged: 13
+      damageSoak: 2
+      traumaTargetMod: 0
+      concealment: subtle
+      subType: armor
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+      isHeavy: false
+      isSuit: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.QH4eF1PdMH4X5kkZ
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444281717
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7QHjuy1tInHB7Nfk.FEcu8OR8fTEB0FfZ'
+  - _id: pj4CTalPgrhU7HLq
+    name: Heavy Pistol
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Light and heavy pistols</b> are categorized by the caliber of the
+        bullet they fire. Some operators prefer the low recoil and high mag
+        capacity possible with a low-caliber round, while others like to have a
+        little more certainty in dropping the targets they hit.
+      cost: 200
+      encumbrance: 1
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 10
+        max: 100
+      attribute: dex
+      skill: shoot
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 3
+      magazine:
+        value: 8
+        max: 8
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444285296
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7QHjuy1tInHB7Nfk.pj4CTalPgrhU7HLq'
+  - _id: EImRdCxlM5hPpZtw
+    name: Club
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        <b>Knives, clubs, swords, and other simple melee weapons</b> are
+        available almost anywhere on the street. Particularly impoverished
+        gangers sometimes fashion makeshift machetes and improvised shivs when
+        better can't be obtained. Such weapons are effectively free, but have a
+        -1 penalty to hit and damage rolls due to their ungainly make.
+      cost: 0
+      encumbrance: 1
+      damageFormula: 1d4 + @attributeMod
+      attribute: str
+      skill: stab
+      range:
+        effective: 1
+        max: 1
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 2
+      shock:
+        damage: 1
+        threshold: 18
+      magazine:
+        value: 0
+        max: 0
+      canBeMounted: false
+      hasRangedAttack: false
+      hasMagazine: false
+      canDealNonLethalDamage: true
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.rvdFtNnJUNYAIahy
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717444289517
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7QHjuy1tInHB7Nfk.EImRdCxlM5hPpZtw'
+prototypeToken:
+  name: Low-End Private Security and Street Muscle
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
 _key: '!actors!7QHjuy1tInHB7Nfk'
 

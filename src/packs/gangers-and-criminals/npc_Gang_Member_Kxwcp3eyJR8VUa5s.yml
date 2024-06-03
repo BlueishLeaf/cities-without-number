@@ -39,10 +39,552 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1717099910655
-  modifiedTime: 1717100710303
+  modifiedTime: 1717445150059
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: Kxwcp3eyJR8VUa5s
-items: []
+items:
+  - _id: SCHv666Ny55t2APp
+    name: Heavy Pistol
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Light and heavy pistols</b> are categorized by the caliber of the
+        bullet they fire. Some operators prefer the low recoil and high mag
+        capacity possible with a low-caliber round, while others like to have a
+        little more certainty in dropping the targets they hit.
+      cost: 200
+      encumbrance: 1
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 10
+        max: 100
+      attribute: dex
+      skill: shoot
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 3
+      magazine:
+        value: 8
+        max: 8
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445073302
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.SCHv666Ny55t2APp'
+  - _id: 1olCpT0h3lCnTOtl
+    name: Knife
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        <b>Knives, clubs, swords,</b> and other simple melee weapons are
+        available almost anywhere on the street. Particularly impoverished
+        gangers sometimes fashion makeshift machetes and improvised shivs when
+        better can't be obtained. Such weapons are effectively free, but have a
+        -1 penalty to hit and damage rolls due to their ungainly make.
+      cost: 20
+      encumbrance: 1
+      damageFormula: 1d4 + @attributeMod
+      range:
+        effective: 10
+        max: 20
+      attribute: str
+      skill: stab
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 3
+      shock:
+        damage: 1
+        threshold: 15
+      magazine:
+        value: 0
+        max: 0
+      isThrowable: true
+      hasMagazine: false
+      canBeMounted: false
+      readied: false
+      quantity: 1
+      mods: []
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.GrdKLOMDMWxkYTL3
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445076261
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.1olCpT0h3lCnTOtl'
+  - _id: jeULMztuBZz4OLjM
+    name: Street Leathers
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        Fashionable, aggressive, and often mismatched, "street leathers" seldom
+        have any non-synthetic leather in their makeup, but are light and
+        comfortable enough to wear as a habit.
+      cost: 250
+      encumbrance: 0
+      armorClass:
+        melee: 12
+        ranged: 13
+      damageSoak: 3
+      traumaTargetMod: 0
+      concealment: subtle
+      subType: armor
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+      isHeavy: false
+      isSuit: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.7XJjMrOYzvkraVYe
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445079981
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.jeULMztuBZz4OLjM'
+  - _id: MakaGOdwwLUvML6Q
+    name: Body Blades I
+    type: weapon
+    img: icons/weapons/swords/sword-guard.webp
+    system:
+      description: >-
+        Assorted retractable blades and spikes are implanted in the user's
+        limbs. Their unarmed attacks do 1d8 damage, Shock of 2/15, Trauma Die
+        1d8/x3 and can be rolled with either Stab or Punch as the relevant
+        combat skill. The Punch skill does not add damage to Body Blades
+        attacks. When not in use, the blades are perceptible only to a medical
+        scan.
+      cost: 0
+      encumbrance: 0
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 1
+        max: 1
+      attribute: str
+      skill: stab
+      isBurstFireable: false
+      trauma:
+        die: 1d8
+        rating: 3
+      shock:
+        damage: 2
+        threshold: 15
+      magazine:
+        value: 0
+        max: 0
+      hasRangedAttack: false
+      canBeMounted: false
+      hasMagazine: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      canDealTraumaticHits: true
+      canDealShockDamage: true
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.5cCPU9VqwzAwZLVG
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445084869
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.MakaGOdwwLUvML6Q'
+  - _id: YJsZdtVbRnnA4fJd
+    name: Body Blades I
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Integral body weaponry
+      description: >-
+        Assorted retractable blades and spikes are implanted in the user's
+        limbs. Their unarmed attacks do 1d8 damage, Shock of 2/15, Trauma Die
+        1d8/x3 and can be rolled with either Stab or Punch as the relevant
+        combat skill. The Punch skill does not add damage to Body Blades
+        attacks. When not in use, the blades are perceptible only to a medical
+        scan.
+      cost: 10000
+      subType: limb
+      concealment: medical
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.AUeZHyKIfCqbqYD3
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445089919
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.YJsZdtVbRnnA4fJd'
+  - _id: S9UQk5OHQ4e4EUsW
+    name: Cybereyes (pair)
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Flash-protected synthetic eyes
+      description: >-
+        While a single cybernetic eye can be implanted, it is recommended that
+        both be replaced at the same time to improve neural adaptation. These
+        cybereyes are clearly artificial, though most are styled in attractive
+        or striking fashions. They all have perfect 20/20 vision and integral
+        flash protectors, but additional functionality must be implanted
+        separately. A user with a pair of cybereyes or syntheyes halves the
+        System Strain cost of cybernetic eye implants.
+      cost: 10000
+      subType: sensory
+      concealment: sight
+      systemStrain: 0
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445095993
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.S9UQk5OHQ4e4EUsW'
+  - _id: DDRbclhMvRfpi1O7
+    name: Eye Mod/Infrared Vision
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: See heat patterns in the area
+      description: >-
+        The infrared vision this mod allows permits basic navigation in dark
+        areas and makes the presence of heat sources such as humans, engines,
+        and infrared tripwires very obvious. The user gains a +1 bonus on any
+        Notice checks to detect the presence of thermally-unshielded living
+        creatures.
+      cost: 5000
+      subType: sensory
+      concealment: medical
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.CVd1Y2oIbfOvJxkX
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445105682
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.DDRbclhMvRfpi1O7'
+  - _id: RnLOgYoixpMerCDD
+    name: Gunlink
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Bonus when using firearms
+      description: >-
+        Hardwired control points interface with the onboard targeting systems of
+        most modern firearms. When using a modern firearm, the PC ignores range
+        penalties and negates up to 2 points of hit penalties for cover,
+        concealment, or prone targets. Once per scene, as an Instant action,
+        they can reroll a missed attack roll with a gun.
+      cost: 25000
+      subType: sensory
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445109869
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.RnLOgYoixpMerCDD'
+  - _id: foQIHyt5xGLz6T4x
+    name: Shock Fists
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Do electric fist damage
+      description: >-
+        The user's hands are implanted with subdermal electrical webbing. As an
+        Instant action, accept one System Strain; for the rest of the scene, the
+        user's unarmed attacks do an additional 1d8 electrical damage on a
+        successful hit. Unarmed attacks augmented with this mod are non-lethal
+        if desired. This system does not stack with Body Blades.
+      cost: 10000
+      subType: limb
+      concealment: touch
+      systemStrain: 1
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-limb.Item.ppBcNwIG2nim0V00
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445114865
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.foQIHyt5xGLz6T4x'
+  - _id: qHXPMhrNce143SFN
+    name: Shock Fists
+    type: weapon
+    img: icons/weapons/fist/fist-knuckles-spiked-blue.webp
+    system:
+      description: ''
+      damageFormula: 1d2 + 1d8 + @attributeMod
+      attribute: str
+      skill: punch
+      range:
+        effective: 1
+        max: 1
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 1
+      shock:
+        damage: 0
+        threshold: 0
+      magazine:
+        value: 0
+        max: 0
+      canDealShockDamage: false
+      canBeMounted: false
+      hasMagazine: false
+      hasRangedAttack: false
+      canDealNonLethalDamage: true
+      cost: 0
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealTraumaticHits: false
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: small
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: >-
+          Compendium.cities-without-number.melee-and-thrown-weapons.Item.NsILrYHi7I0Qypcb
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445150059
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!Kxwcp3eyJR8VUa5s.qHXPMhrNce143SFN'
+prototypeToken:
+  name: Gang Member
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
+folder: null
+ownership:
+  default: 0
 _key: '!actors!Kxwcp3eyJR8VUa5s'
 

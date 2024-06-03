@@ -37,10 +37,554 @@ _stats:
   systemVersion: 0.1.0
   coreVersion: '11.315'
   createdTime: 1717101987783
-  modifiedTime: 1717102819031
+  modifiedTime: 1717445854321
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: 7ayvgGe6VEwOFpKf
-items: []
+items:
+  - _id: QalbOpdxyrUMgnbu
+    name: Cyberdeck
+    type: cyberdeck
+    img: icons/tools/navigation/sextant-steel-blue.webp
+    system:
+      description: >-
+        A discreetly-placed plug socket in the user's head or neck allows
+        interfacing with cyberdecks and gear equipped with a jack line.
+      cost: 1000
+      encumbrance: 0
+      bonusAccess: 0
+      memory: 10
+      shielding: 10
+      cpu: 3
+      readied: false
+      quantity: 1
+      mods: []
+      verbs:
+        - nmB2fPYS6QZehc5b
+        - 3ipwLmHcQaJI55Gk
+        - sOHjvMLR5jZ30aHX
+        - jYcmxsErNi7DaTDH
+        - IQ5DYJUtBKXJjhwq
+      subjects:
+        - fRP75LibrmF32eYS
+        - iG3AmNJ49sRUYC85
+        - lLUifwfYeNhz0b2n
+        - QCVX3ZTKJpRui63D
+        - fKY4AkjmV3jdUsMh
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberdecks.Item.1j57IyShM9ROT6p3
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445836578
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.QalbOpdxyrUMgnbu'
+  - _id: aR4cHjfOdzMocLDX
+    name: Cranial Jack
+    type: cyberware
+    img: icons/equipment/shoulder/pauldron-segmented-red.webp
+    system:
+      effect: Link to jack-equipped gear
+      description: >-
+        A discreetly-placed plug socket in the user's head or neck allows
+        interfacing with cyberdecks and gear equipped with a jack line.
+      cost: 1000
+      subType: head
+      concealment: touch
+      systemStrain: 0
+      encumbrance: 0
+      readied: false
+      quantity: 1
+      mods: []
+      isDefective: false
+      defect: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.cyberware-head.Item.huifue2xxgC7TJPO
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445773494
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.aR4cHjfOdzMocLDX'
+  - _id: nmB2fPYS6QZehc5b
+    name: Defend
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        A special Verb that can only be targeted at a friendly device or allied
+        cyberware user within range, and costs no Access to use. While the
+        program remains running, any hostile hacking attempts aimed at that
+        device or any of the targets cyber systems must first beat the user in
+        an opposed Int/Program skill check before they can attempt their hack.
+        This Verb cannot negate programs that are already running on the target.
+      targetTypes:
+        - device
+        - cyber
+      accessCost: 0
+      skillCheckMod: 0
+      selfTerminating: true
+      cost: 1000
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.xKBisKXPQT3uAhni
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445794292
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.nmB2fPYS6QZehc5b'
+  - _id: 3ipwLmHcQaJI55Gk
+    name: Paralyze
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        On a successful opposed Int/Program skill check against the target,
+        render a Demon or avatar incapable of moving out of a node or using the
+        Alert the Network or Send Message actions while the program is running.
+        Other cyberspace actions can be taken normally. Human hackers are also
+        physically paralyzed while the program runs, incapable of moving in
+        meatspace until the connection is cut or the program ends.
+      targetTypes:
+        - avatar
+      accessCost: 1
+      skillCheckMod: -1
+      selfTerminating: false
+      cost: 2000
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.P8IREWPDlgSVO4Fs
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445798666
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.3ipwLmHcQaJI55Gk'
+  - _id: sOHjvMLR5jZ30aHX
+    name: Stun
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Disrupt an avatar or Demon with sensory glitching, non-lethal current
+        surges, and code corruption. Make an Int/Program skill check; beat an
+        opposed Int/Program check for a human target, or a static 8+skill bonus
+        target for a Demon. The target takes 1d10 non-lethal damage per Program
+        level, to a minimum of 1d10.
+      targetTypes:
+        - avatar
+      accessCost: 0
+      skillCheckMod: 1
+      selfTerminating: true
+      cost: 1000
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.Rym5SDCx4pDrHCkn
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445800557
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.sOHjvMLR5jZ30aHX'
+  - _id: jYcmxsErNi7DaTDH
+    name: Lock
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Lock a physical device that has some sort of electronic locking
+        mechanism or a currently-unlocked cyberspace node barrier.
+      targetTypes:
+        - device
+        - data
+      accessCost: 1
+      skillCheckMod: 1
+      selfTerminating: false
+      cost: 1000
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.9CZh7uEorNoovVhx
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445804025
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.jYcmxsErNi7DaTDH'
+  - _id: IQ5DYJUtBKXJjhwq
+    name: Terminate
+    type: verb
+    img: icons/sundries/misc/key-angular-white.webp
+    system:
+      description: >-
+        Prematurely end an undesired program. Any damage or changes the program
+        already inflicted are unaffected.
+      targetTypes:
+        - program
+      accessCost: 1
+      skillCheckMod: 0
+      selfTerminating: true
+      cost: 500
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.verbs.Item.yg2IqqFfnCudbEFt
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445810512
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.IQ5DYJUtBKXJjhwq'
+  - _id: fRP75LibrmF32eYS
+    name: Avatar
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A cyberspace avatar, whether one adopted by a hacker who's jacked into
+        the network or a Demon program standing guard there.
+      type: avatar
+      cost: 500
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.QX8yOJ1uZXKoa78h
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445816891
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.fRP75LibrmF32eYS'
+  - _id: iG3AmNJ49sRUYC85
+    name: Barrier
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A network node barrier that blocks avatars from passing through a
+        network connection.
+      type: data
+      cost: 1000
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.2iHGL1OPg1AnR18r
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445824055
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.iG3AmNJ49sRUYC85'
+  - _id: lLUifwfYeNhz0b2n
+    name: Camera
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        Any device that transmits audiovisual information. Some defensive
+        hardware has its own onboard camera, which is susceptible to this
+        target, while others rely on a separate device's input.
+      type: device
+      cost: 500
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.gUUEOMz5Olq5Zn6l
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445829550
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.lLUifwfYeNhz0b2n'
+  - _id: QCVX3ZTKJpRui63D
+    name: Door
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A physical door, shutter, hatch, or other barrier with an electronic
+        lock or opening mechanism.
+      type: device
+      cost: 500
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.c5XjwKmFsHq6j7L7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445832479
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.QCVX3ZTKJpRui63D'
+  - _id: fKY4AkjmV3jdUsMh
+    name: Program
+    type: subject
+    img: icons/sundries/misc/lock-steel-blue.webp
+    system:
+      description: >-
+        A hostile program, used most often with the Terminate verb to end the
+        effects of an enemy hacker's programs prematurely.
+      type: program
+      cost: 500
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.subjects.Item.uIK4Jlhjab0ywcDf
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445836565
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.fKY4AkjmV3jdUsMh'
+  - _id: qE9yT0oHlHvaBz17
+    name: Ordinary Clothing
+    type: armor
+    img: icons/equipment/chest/breastplate-banded-blue.webp
+    system:
+      description: >-
+        Some bold, impoverished, or highly fashionable people still insist on
+        wearing clothing that has no functional use as armor.
+      cost: 25
+      encumbrance: 0
+      armorClass:
+        melee: 10
+        ranged: 10
+      damageSoak: 0
+      traumaTargetMod: 0
+      concealment: subtle
+      subType: armor
+      readied: false
+      quantity: 1
+      mods: []
+      canEquipWithSuit: false
+      isHeavy: false
+      isSuit: false
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.armor.Item.3hxao9U3pCliYiFW
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445849664
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.qE9yT0oHlHvaBz17'
+  - _id: b8GUxsWQp1F3qfWf
+    name: Heavy Pistol
+    type: weapon
+    img: icons/weapons/guns/gun-red.webp
+    system:
+      description: >-
+        <b>Light and heavy pistols</b> are categorized by the caliber of the
+        bullet they fire. Some operators prefer the low recoil and high mag
+        capacity possible with a low-caliber round, while others like to have a
+        little more certainty in dropping the targets they hit.
+      cost: 200
+      encumbrance: 1
+      damageFormula: 1d8 + @attributeMod
+      range:
+        effective: 10
+        max: 100
+      attribute: dex
+      skill: shoot
+      isBurstFireable: false
+      trauma:
+        die: 1d6
+        rating: 3
+      magazine:
+        value: 8
+        max: 8
+      shock:
+        damage: 0
+        threshold: 0
+      mounted:
+        power: 0
+        mass: 1
+        minimumSize: medium
+      canDealShockDamage: false
+      readied: false
+      quantity: 1
+      mods: []
+      isThrowable: false
+      rollFormula: 1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB
+      canDealNonLethalDamage: false
+      hasRangedAttack: true
+      hasMagazine: true
+      canDealTraumaticHits: true
+      canBeMounted: true
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5mIhSmBDXvKVlXKo: 3
+    flags:
+      core:
+        sourceId: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+    _stats:
+      systemId: cities-without-number
+      systemVersion: 0.1.0
+      coreVersion: '11.315'
+      createdTime: 1694265254
+      modifiedTime: 1717445854321
+      lastModifiedBy: 5mIhSmBDXvKVlXKo
+    _key: '!actors.items!7ayvgGe6VEwOFpKf.b8GUxsWQp1F3qfWf'
+prototypeToken:
+  name: Small-Time Corper Code Drone
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: icons/svg/mystery-man.svg
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: health
+  bar2:
+    attribute: systemStrain
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags: {}
+  randomImg: false
+folder: null
+ownership:
+  default: 0
 _key: '!actors!7ayvgGe6VEwOFpKf'
 
