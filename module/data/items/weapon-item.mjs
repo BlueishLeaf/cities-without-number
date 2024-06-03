@@ -11,26 +11,40 @@ export default class WeaponItemData extends ModifiableItemData {
             ...modifiableData,
             ...attributeRequiredData,
             skill: new fields.StringField({ required: true, blank: true }),
+            isThrowable: new fields.BooleanField({required: true, initial: false}),
+
+            isBurstFireable: new fields.BooleanField({required: true, initial: false}),
             rollFormula: new fields.StringField({ required: true, initial: '1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB' }),
-            damageFormula: new fields.StringField({ required: true, blank: true }),
+
+            canDealNonLethalDamage: new fields.BooleanField({required: true, initial: false}),
+            damageFormula: new fields.StringField({ required: true, initial: '1d6 + @attributeMod' }),
+
+            hasRangedAttack: new fields.BooleanField({required: true, initial: true}),
             range: new fields.SchemaField({
                 effective: integerField(0),
                 max: integerField(0)
             }),
-            isBurstFireable: new fields.BooleanField({required: true, initial: false}),
+
+            hasMagazine: new fields.BooleanField({required: true, initial: true}),
             magazine: resourceField(0, 0),
+
+            dealsTraumaticHits: new fields.BooleanField({required: true, initial: true}),
             trauma: new fields.SchemaField({
-                die: new fields.StringField({ required: true, blank: true }),
+                die: new fields.StringField({ required: true, initial: '1d6' }),
                 rating: integerField(0)
             }),
+
+            dealsShockDamage: new fields.BooleanField({required: true, initial: true}),
             shock: new fields.SchemaField({
                 damage: integerField(0),
                 threshold: integerField(0)
             }),
+
+            canBeMounted: new fields.BooleanField({required: true, initial: true}),
             mounted: new fields.SchemaField({
                 power: integerField(0),
                 mass: integerField(0),
-                minimumSize: new fields.StringField({ required: true, blank: true })
+                minimumSize: new fields.StringField({ required: true, initial: 'small' })
             })
         }
     }

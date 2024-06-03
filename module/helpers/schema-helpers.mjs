@@ -1,8 +1,7 @@
 const fields = foundry.data.fields;
 
-export function resourceField(initialValue, maxValue, minValue = 0) {
+export function resourceField(initialValue, maxValue) {
     return new fields.SchemaField({
-        min: integerField(minValue),
         value: integerField(initialValue),
         max: integerField(maxValue),
     });
