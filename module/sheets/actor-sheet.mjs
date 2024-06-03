@@ -318,12 +318,18 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   _prepareCyberware(context) {
+    let totalCyberwareCost = 0;
+
     for (let i of context.items.filter(item => item.type === "cyberware")) {
       if (context[i.system.subType] === undefined) {
         context[i.system.subType] = [];
       }
       context[i.system.subType].push(i);
+
+      totalCyberwareCost += i.system.cost ? i.system.cost : 0;
     }
+
+    context.cyberwareMaintenanceCost = Math.round((totalCyberwareCost / 100) * 5);
   }
 
   _prepareBiographyData(context) {

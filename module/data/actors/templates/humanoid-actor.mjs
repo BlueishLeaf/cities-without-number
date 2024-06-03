@@ -7,7 +7,6 @@ export class HumanoidActorData extends PhysicalActorData {
         const fields = foundry.data.fields;
         return {
             ...physicalData,
-            cyberwareMaintenanceCost: integerField(0),
             armorClass: new fields.SchemaField({
                 baseMelee: integerField(10),
                 melee: integerField(10),
