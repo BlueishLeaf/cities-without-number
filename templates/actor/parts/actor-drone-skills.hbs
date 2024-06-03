@@ -2,11 +2,4 @@
   <label class="resource-label">All drone skills are limited by their operator's Drive skill level <b>({{driveSkill.system.level}})</b></label>
 </div>
 <hr>
-<div class="grid grid-5col">
-  {{#each skills as |skill id|}}
-    <div class="skill">
-      <label class="resource-label rollable skill" data-item-id="{{skill._id}}" data-roll-type="skill">{{skill.name}}</label>
-      <input type="number" disabled data-dtype="Number" value="{{skill.system.level}}" class="skill-level" data-skill-id="{{skill._id}}"/>
-    </div>
-  {{/each}}
-</div>
+{{> "systems/cities-without-number/templates/actor/parts/actor-skills.hbs"}}

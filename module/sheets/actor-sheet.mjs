@@ -29,10 +29,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   /** @override */
   getData() {
-    // Retrieve the data structure from the base sheet. You can inspect or log
-    // the context variable to see the structure, but some key properties for
-    // sheets are the actor object, the data object, whether or not it's
-    // editable, and the items array.
     const context = super.getData();
 
     // Use a safe clone of the actor data for further operations.
@@ -45,39 +41,38 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.config = CONFIG;
 
     // Prepare actor data and items.
-    switch (actorData.type) {
-      case "character":
-        this._prepareItems(context);
-        this._prepareCyberware(context);
-        this._prepareCharacterData(context);
-        this._prepareBiographyData(context);
-        break;
-      case "npc":
-        this._prepareItems(context);
-        this._prepareCyberware(context);
-        break;
-      case "drone":
-        this._prepareOperatorData(context);
-        this._prepareItems(context);
-        this._prepareFittingsAndMods(context);
-        this._prepareOperators(context);
-        this._prepareDroneData(context);
-        break;
-      case "vehicle":
-        this._prepareItems(context);
-        this._prepareFittingsAndMods(context);
-        this._prepareVehicleData(context);
-        break;
-      case "server":
-        this._prepareNetworkItems(context);
-    }
+    this._prepareActorData(actorData.type, context);
 
     // Update open item renders
     this.actor.items.filter(item => item._sheet && item._sheet.rendered)
       .forEach(openItem => openItem.sheet._render(openItem));
 
-    console.log('Finished loading context', context);
+    console.log('Finished preparing sheet context', context);
     return context;
+  }
+
+  _prepareActorData(actorType, context) {
+    this._prepareItems(context);
+    switch (actorType) {
+      case "character":
+        this._prepareCyber(context);
+        this._prepareCharacterData(context);
+        this._prepareBiographyData(context);
+        break;
+      case "npc":
+        this._prepareCyber(context);
+        break;
+      case "drone":
+        this._prepareOperatorData(context);
+        this._prepareOperators(context);
+        this._prepareDroneData(context);
+        break;
+      case "vehicle":
+        this._prepareVehicleData(context);
+        break;
+      default:
+        break;
+    }
   }
 
   async _onDropItem(event, data) {
@@ -117,28 +112,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     cappedSkill.system.level = capSkill.system.level < sourceSkill.system.level
       ? capSkill.system.level
       : sourceSkill.system.level;
-  }
-
-  _prepareFittingsAndMods(context) {
-    // Initialize containers.
-    const fittings = [];
-    const mods = [];
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      // Append to fittings.
-      if (i.type === "fitting" || i.type === "vehicleFitting") {
-        fittings.push(i);
-      }
-      // Append to mods.
-      else if (i.type === "mod") {
-        mods.push(i);
-      }
-    }
-
-    // Assign and return
-    context.fittings = fittings;
-    context.mods = mods;
   }
 
   _prepareOperators(context) {
@@ -205,41 +178,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     });
   }
 
-  _prepareNetworkItems(context) {
-    // Initialize containers.
-    const verbs = [];
-    const subjects = [];
-    const nodes = [];
-    const demons = [];
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to verbs.
-      if (i.type === "verb") {
-        verbs.push(i);
-      }
-      // Append to subjects.
-      else if (i.type === "subject") {
-        subjects.push(i);
-      }
-      // Append to nodes.
-      else if (i.type === "node") {
-        nodes.push(i);
-      }
-      // Append to demons.
-      else if (i.type === "demon") {
-        demons.push(i);
-      }
-    }
-
-    // Assign and return
-    context.verbs = verbs;
-    context.subjects = subjects;
-    context.nodes = nodes;
-    context.demons = demons;
-  }
-
   _prepareVehicleData(context) {
     // Set stowed cargo and hardpoints/fittings
     context.system.hardpoints.value = 0;
@@ -266,70 +204,39 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
    * @returns {undefined}
    */
   _prepareItems(context) {
-    // Initialize containers.
-    const skills = [];
-    const inventory = [];
-    const weapons = [];
-    const armory = [];
-    const foci = [];
-    const edges = [];
-    const contacts = [];
+    context.items.forEach(item => {
+      if (context[item.type] === undefined) {
+        context[item.type] = [];
+      }
+      context[item.type].push(item);
+    });
 
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to skills.
-      if (i.type === "skill") {
-        skills.push(i);
+    // Group inventory items together
+    context.inventory = [];
+    CONFIG.CWN.inventoryItemTypes.forEach(inventoryItemType => {
+      if (context[inventoryItemType] instanceof Array) {
+        context.inventory.push(...context[inventoryItemType]);
       }
-      // Append to inventory.
-      else if (CONFIG.CWN.inventoryItemTypes.includes(i.type)) {
-        inventory.push(i);
-      }
-      // Append to weapons.
-      else if (i.type === "weapon") {
-        weapons.push(i);
-      }
-      // Append to armory.
-      else if (i.type === "armor") {
-        armory.push(i);
-      }
-      // Append to foci.
-      else if (i.type === "focus") {
-        foci.push(i);
-      }
-      // Append to edges.
-      else if (i.type === "edge") {
-        edges.push(i);
-      }
-      else if (i.type === "contact") {
-        contacts.push(i);
-      }
-    }
-
-    // Assign and return
-    context.skills = skills;
-    context.inventory = inventory;
-    context.weapons = weapons;
-    context.armory = armory;
-    context.foci = foci;
-    context.edges = edges;
-    context.contacts = contacts;
+    });
   }
 
-  _prepareCyberware(context) {
-    let totalCyberwareCost = 0;
+  _prepareCyber(context) {
+    let totalCyberCost = 0;
 
-    for (let i of context.items.filter(item => item.type === "cyberware")) {
-      if (context[i.system.subType] === undefined) {
-        context[i.system.subType] = [];
-      }
-      context[i.system.subType].push(i);
-
-      totalCyberwareCost += i.system.cost ? i.system.cost : 0;
+    if (context.cyberware === undefined) {
+      context.cyberware = [];
     }
 
-    context.cyberwareMaintenanceCost = Math.round((totalCyberwareCost / 100) * 5);
+    context.cyberware.forEach(cyberItem => {
+      if (context[cyberItem.system.subType] === undefined) {
+        context[cyberItem.system.subType] = [];
+      }
+      context[cyberItem.system.subType].push(cyberItem);
+
+      totalCyberCost += cyberItem.system.cost ? cyberItem.system.cost : 0;
+    })
+
+    context.cyberwareMaintenanceCost = Math.round((totalCyberCost / 100) * 5);
   }
 
   _prepareBiographyData(context) {

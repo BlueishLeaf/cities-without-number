@@ -6,13 +6,13 @@
       <a class="item-control item-create" title="Create Node" data-type="node"><i class="fas fa-plus"></i> Add</a>
     </div>
   </li>
-  {{#each nodes as |node id|}}
-    <li class="item flexrow" data-item-id="{{node._id}}">
+  {{#each node as |item id|}}
+    <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name">
         <div class="item-image">
-          <a class="rollable" data-roll-type="node"><img class="rollable-img" src="{{node.img}}" title="{{node.name}}" width="24" height="24"/></a>
+          <a class="rollable" data-roll-type="node"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
-        <h4 class="expandable">{{node.name}}</h4>
+        <h4 class="expandable">{{item.name}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Node"><i class="fas fa-edit"></i></a>
@@ -20,11 +20,11 @@
       </div>
     </li>
     <div class="item-description hidden">
-      <p><b>Unblocked Connections:</b> {{node.system.unblockedConnections}}</p>
-      <p><b>Blocked Connections:</b> {{node.system.blockedConnections}}</p>
-      {{#if node.system.description}}
+      <p><b>Unblocked Connections:</b> {{item.system.unblockedConnections}}</p>
+      <p><b>Blocked Connections:</b> {{item.system.blockedConnections}}</p>
+      {{#if item.system.description}}
         <h5>Description</h5>
-        {{{node.system.description}}}
+        {{{item.system.description}}}
       {{/if}}
     </div>
   {{/each}}
@@ -41,22 +41,22 @@
       <a class="item-control item-create" title="Create Demon" data-type="demon"><i class="fas fa-plus"></i> Add</a>
     </div>
   </li>
-  {{#each demons as |demon id|}}
-    <li class="item flexrow" data-item-id="{{demon._id}}">
+  {{#each demon as |item id|}}
+    <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name">
         <div class="item-image">
-          <a class="rollable" data-roll-type="demon"><img class="rollable-img" src="{{demon.img}}" title="{{demon.name}}" width="24" height="24"/></a>
+          <a class="rollable" data-roll-type="demon"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
-        <h4 class="expandable">{{demon.name}}</h4>
+        <h4 class="expandable">{{item.name}}</h4>
       </div>
       <div class="item-stats">
-        <h4>{{demon.system.health.value}}/{{demon.system.health.max}}</h4>
+        <h4>{{item.system.health.value}}/{{item.system.health.max}}</h4>
       </div>
       <div class="item-stats">
-        <h4>{{demon.system.skillMod}}</h4>
+        <h4>{{item.system.skillMod}}</h4>
       </div>
       <div class="item-stats">
-        <h4>{{demon.system.maxCommandLines}}</h4>
+        <h4>{{item.system.maxCommandLines}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Demon"><i class="fas fa-edit"></i></a>
@@ -64,15 +64,15 @@
       </div>
     </li>
     <div class="item-description hidden">
-      {{#if demon.system.commandLines}}
+      {{#if item.system.commandLines}}
         <h5>Command Lines</h5>
-        {{#each demon.commandLine as |commandLine|}}
+        {{#each item.commandLine as |commandLine|}}
           <p>{{commandLine}}</p>
         {{/each}}
       {{/if}}
-      {{#if demon.system.description}}
+      {{#if item.system.description}}
         <h5>Description</h5>
-        {{{demon.system.description}}}
+        {{{item.system.description}}}
       {{/if}}
     </div>
   {{/each}}
