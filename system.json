@@ -2,7 +2,7 @@
   "id": "cities-without-number",
   "title": "Cities Without Number",
   "description": "An unofficial FoundryVTT implementation of Kevin Crawford's Cities Without Number TTRPG.",
-  "version": "0.1.0",
+  "version": "REPLACED BY GITHUB ACTION",
   "compatibility": {
     "minimum": 11,
     "verified": "11.315"
