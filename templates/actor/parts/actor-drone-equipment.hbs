@@ -38,6 +38,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Fittings</div>
+    <div class="item-stats">Quantity</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create Fitting" data-type="fitting"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -49,6 +50,9 @@
           <a class="rollable" data-roll-type="fitting"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
         <h4 class="expandable">{{item.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{item.system.quantity}}</h4>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Fitting"><i class="fas fa-edit"></i></a>

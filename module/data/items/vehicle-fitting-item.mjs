@@ -7,6 +7,7 @@ export default class VehicleFittingItemData extends PurchasableItemData {
         const fields = foundry.data.fields;
         return {
             ...purchasableData,
+            quantity: integerField(1),
             power: integerField(0),
             mass: integerField(0),
             minimumSize: new fields.StringField({ required: false, blank: true })

@@ -38,6 +38,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Vehicle Fittings</div>
+    <div class="item-stats">Quantity</div>
     <div class="item-stats">Power</div>
     <div class="item-stats">Mass</div>
     <div class="item-controls">
@@ -51,6 +52,9 @@
           <a class="rollable" data-roll-type="vehicleFitting"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
         <h4 class="expandable">{{item.name}}</h4>
+      </div>
+      <div class="item-stats">
+        <h4>{{item.system.quantity}}</h4>
       </div>
       <div class="item-stats">
         <h4>{{item.system.power}}</h4>

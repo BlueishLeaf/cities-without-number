@@ -182,7 +182,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       if (CONFIG.CWN.inventoryItemTypes.includes(item.type)) {
         context.system.cargoEncumbrance.stowed.value += item.system.encumbrance * item.system.quantity;
       } else if (item.type === "fitting") {
-        context.system.fittings.value++;
+        context.system.fittings.value += item.system.quantity;
       } else if (item.type === "weapon") {
         context.system.hardpoints.value++;
       }
@@ -196,8 +196,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.system.mass.value = 0;
     context.items.forEach(item => {
       if (item.type === "vehicleFitting") {
-        context.system.power.value += item.system.power;
-        context.system.mass.value += item.system.mass;
+        context.system.power.value += item.system.power * item.system.quantity;
+        context.system.mass.value += item.system.mass * item.system.quantity;
       } else if (item.type === "weapon") {
         context.system.hardpoints.value++;
         context.system.power.value += item.system.mounted.power;
