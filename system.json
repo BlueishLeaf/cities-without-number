@@ -45,7 +45,10 @@
       "label": "Servers",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": false,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -53,7 +56,10 @@
       "label": "Vehicles",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -61,7 +67,10 @@
       "label": "Sample Vehicles",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": true,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -69,7 +78,10 @@
       "label": "Beasts and Guard animals",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": true,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -77,7 +89,10 @@
       "label": "Corp Guards and Law Enforcement",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": true,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -85,7 +100,10 @@
       "label": "Gangers and Criminals",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": true,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -93,7 +111,10 @@
       "label": "Hackers and Pilots",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": true,
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -101,7 +122,10 @@
       "label": "Drones",
       "system": "cities-without-number",
       "type": "Actor",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -109,7 +133,10 @@
       "label": "Edges",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -117,7 +144,10 @@
       "label": "Foci",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -125,7 +155,10 @@
       "label": "Armor",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -133,7 +166,10 @@
       "label": "Armor Accessories",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -141,7 +177,10 @@
       "label": "Cyberdecks",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -149,7 +188,10 @@
       "label": "Drugs",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -157,7 +199,10 @@
       "label": "Drone Fittings",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -165,7 +210,10 @@
       "label": "Vehicle Fittings",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -173,7 +221,10 @@
       "label": "Gear",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -181,7 +232,10 @@
       "label": "Armor Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -189,7 +243,10 @@
       "label": "Weapon Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -197,7 +254,10 @@
       "label": "Drone Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -205,7 +265,10 @@
       "label": "Vehicle Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -213,7 +276,10 @@
       "label": "Vehicle Weapons",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -221,7 +287,10 @@
       "label": "Cyberdeck Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -229,7 +298,10 @@
       "label": "Cyberware Mods",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -237,7 +309,10 @@
       "label": "Firearms",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -245,7 +320,10 @@
       "label": "Melee & Thrown Weapons",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -253,7 +331,10 @@
       "label": "Heavy Weapons",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -261,7 +342,10 @@
       "label": "Skills",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -269,7 +353,10 @@
       "label": "Body Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -277,7 +364,10 @@
       "label": "Head Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -285,7 +375,10 @@
       "label": "Limb Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -293,7 +386,10 @@
       "label": "Medical Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -301,7 +397,10 @@
       "label": "Nerve Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -309,7 +408,10 @@
       "label": "Sensory Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -317,7 +419,10 @@
       "label": "Skin Cyberware",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -325,7 +430,10 @@
       "label": "Network Demons",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -333,7 +441,10 @@
       "label": "Hacking Subjects",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     },
     {
@@ -341,7 +452,10 @@
       "label": "Hacking Verbs",
       "system": "cities-without-number",
       "type": "Item",
-      "private": false,
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
       "flags": {}
     }
   ],
