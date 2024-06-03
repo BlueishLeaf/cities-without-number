@@ -55,7 +55,7 @@ export default class CharacterActorData extends HumanoidActorData {
             lifestyle: new fields.SchemaField({
                 label: new fields.StringField({ required: false, blank: true }),
                 monthlyCost: integerField(0),
-                systemStrainMod: integerField(0)
+                systemStrainMod: decimalField(0)
             }),
             miscMonthlyCosts: integerField(0),
             cyberwareMaintenanceCost: integerField(0)

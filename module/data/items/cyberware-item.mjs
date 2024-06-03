@@ -1,4 +1,4 @@
-import {integerField} from "../../helpers/schema-helpers.mjs";
+import {decimalField} from "../../helpers/schema-helpers.mjs";
 import {ConcealableItemData} from "./templates/concealable-item.mjs";
 
 export default class CyberwearItemData extends ConcealableItemData {
@@ -7,7 +7,7 @@ export default class CyberwearItemData extends ConcealableItemData {
         const concealableData = super.defineSchema();
         return {
             ...concealableData,
-            systemStrain: integerField(0),
+            systemStrain: decimalField(0),
             effect: new fields.StringField({ required: true, blank: true }),
             isDefective: new fields.BooleanField({ required: true, initial: false }),
             defect: new fields.StringField({ required: true, blank: true })
