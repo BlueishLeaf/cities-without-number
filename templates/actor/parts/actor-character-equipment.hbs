@@ -1,5 +1,5 @@
 {{!-- Headers --}}
-<div class="resources grid grid-3col">
+<div class="resources grid grid-4col">
   <div class="resource flex-group-center">
     <label for="system.encumbrance.stowed.value" class="resource-label">Stowed Items</label>
     <div class="resource-content flexrow flex-center flex-between">
@@ -15,6 +15,15 @@
     <input type="number" name="system.encumbrance.readied.value" disabled value="{{system.encumbrance.readied.value}}" data-dtype="Number"/>
     <i class="fas fa-slash-forward"></i>
     <input type="number" name="system.encumbrance.readied.max" disabled value="{{system.encumbrance.readied.max}}" data-dtype="Number"/>
+    </div>
+  </div>
+
+  <div class="resource flex-group-center">
+    <label for="system.encumbrance.readied.value" class="resource-label" title="Maintenance Score">Maint. Score</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input type="number" name="system.maintenanceScore.value" value="{{system.maintenanceScore.value}}" data-dtype="Number"/>
+      <i class="fas fa-slash-forward"></i>
+      <input type="number" name="system.maintenanceScore.max" disabled value="{{system.maintenanceScore.max}}" data-dtype="Number"/>
     </div>
   </div>
 

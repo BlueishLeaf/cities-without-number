@@ -166,8 +166,11 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     context.system.systemStrain.value = context.system.systemStrain.permanent + context.system.systemStrain.temporary;
 
-    // Assign major injuries to context
-    context.majorInjuries = context.system.majorInjuries;
+    // Calculate maintenance score
+    const fixSkill = context.skill.find(skill => skill.name.toLowerCase() === "fix");
+    if (fixSkill) {
+      context.system.maintenanceScore.max = (context.system.abilities['int'].mod + context.system.abilities['con'].mod) * fixSkill.system.level;
+    }
   }
 
   _prepareDroneData(context) {
