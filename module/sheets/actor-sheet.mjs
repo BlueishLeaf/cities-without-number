@@ -168,7 +168,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Calculate maintenance score
     const fixSkill = context.skill.find(skill => skill.name.toLowerCase() === "fix");
     if (fixSkill) {
-      context.system.maintenanceScore.max = (context.system.abilities['int'].mod + context.system.abilities['con'].mod) * fixSkill.system.level;
+      context.system.maintenanceScore.max = (context.system.abilities['int'].mod + context.system.abilities['con'].mod) + (3 * fixSkill.system.level);
     }
   }
 
