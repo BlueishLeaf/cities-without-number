@@ -126,7 +126,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
       // Append to fittings.
       if (i.type === "fitting" || i.type === "vehicleFitting") {
         fittings.push(i);
@@ -319,56 +318,12 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
   }
 
   _prepareCyberware(context) {
-    // Initialize containers.
-    const body = [];
-    const head = [];
-    const skin = [];
-    const limb = [];
-    const sensory = [];
-    const medical = [];
-    const nerve = [];
-
-    // Iterate through items, allocating to containers
     for (let i of context.items.filter(item => item.type === "cyberware")) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to body ware.
-      if (i.system.subType === "body") {
-        body.push(i);
+      if (context[i.system.subType] === undefined) {
+        context[i.system.subType] = [];
       }
-      // Append to head ware.
-      else if (i.system.subType === "head") {
-        head.push(i);
-      }
-      // Append to skin ware.
-      else if (i.system.subType === "skin") {
-        skin.push(i);
-      }
-      // Append to limb ware.
-      else if (i.system.subType === "limb") {
-        limb.push(i);
-      }
-      // Append to sensory ware.
-      else if (i.system.subType === "sensory") {
-        sensory.push(i);
-      }
-      // Append to medical ware.
-      else if (i.system.subType === "medical") {
-        medical.push(i);
-      }
-      // Append to nerve ware.
-      else if (i.system.subType === "nerve") {
-        nerve.push(i);
-      }
+      context[i.system.subType].push(i);
     }
-
-    // Assign and return
-    context.body = body;
-    context.head = head;
-    context.skin = skin;
-    context.limb = limb;
-    context.sensory = sensory;
-    context.medical = medical;
-    context.nerve = nerve;
   }
 
   _prepareBiographyData(context) {
