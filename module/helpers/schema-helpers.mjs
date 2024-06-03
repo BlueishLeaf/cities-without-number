@@ -23,7 +23,7 @@ export function savingThrowField(label, initialValue) {
     });
 }
 
-export function integerField(initialValue, required = true) {
-    return new fields.NumberField({ required, nullable: false, integer: true, initial: initialValue, min: 0 })
+export function integerField(initialValue) {
+    return new fields.NumberField({ required: true, nullable: false, integer: true, initial: initialValue })
 }
 

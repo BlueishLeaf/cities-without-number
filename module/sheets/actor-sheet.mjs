@@ -2,6 +2,8 @@ import * as ChatRenders from "../helpers/chat-renders.mjs";
 import * as ChatUtils from "../helpers/chat-utils.mjs";
 import * as DialogTemplates from "../helpers/dialog-templates.mjs";
 import * as DialogUtils from "../helpers/dialog-utils.mjs";
+import {actorConfigDialogs} from "../helpers/actor-config-dialogs.mjs";
+import {actorConfigHandlers} from "../helpers/actor-config-handlers.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -134,6 +136,9 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     if (context.system.systemStrain.maxModifier) {
       context.system.systemStrain.max += Number(context.system.systemStrain.maxModifier);
     }
+    if (context.system.lifestyle.systemStrainMod) {
+      context.system.systemStrain.max += Number(context.system.lifestyle.systemStrainMod);
+    }
     context.system.systemStrain.permanent = 0;
     if (context.system.systemStrain.permanentModifier) {
       context.system.systemStrain.permanent += Number(context.system.systemStrain.permanentModifier);
@@ -240,11 +245,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     })
 
     context.cyberwareMaintenanceCost = Math.round((totalCyberCost / 100) * 5);
+    this.actor.system.cyberwareMaintenanceCost = context.cyberwareMaintenanceCost;
   }
 
   _prepareBiographyData(context) {
     context.goals = context.system.goals;
     context.languages = context.system.languages;
+    context.totalMonthlyCost = context.cyberwareMaintenanceCost + context.system.lifestyle.monthlyCost + context.system.miscMonthlyCosts;
   }
 
   /* -------------------------------------------- */
@@ -517,98 +524,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
 
-    switch (dataset.configType){
-      case "damageSoak":
-        this.openDamageSoakConfigDialog();
-        break;
-      case "systemStrain":
-        this.openSystemStrainConfigDialog();
-        break;
-      case "armorClass":
-        this.openArmorClassConfigDialog();
-        break;
-      case "traumaTarget":
-        this.openTraumaTargetConfigDialog();
-        break;
-      default:
-        break;
-    }
-  }
-
-  openDamageSoakConfigDialog() {
     const configDialog = new Dialog({
-      title: "Configure Base Damage Soak",
-      content: DialogTemplates.configDialogDamageSoak(this.actor.system.damageSoak.base),
-      buttons: DialogUtils.confirmButtons(html => this.handleDamageSoakConfig(html)),
-      default: "roll"
+      title: `Configure ${dataset.configLabel}`,
+      content: actorConfigDialogs[dataset.configType](this.actor.system),
+      buttons: DialogUtils.confirmButtons(html => actorConfigHandlers[dataset.configType](this.actor, html)),
+      default: 'roll'
     });
     configDialog.render(true);
-  }
-
-  handleDamageSoakConfig(html) {
-    const newBaseDamageSoak = html.find('[name="damageSoakInput"]').val();
-    const damageSoak = {
-      base: newBaseDamageSoak
-    }
-    Actor.updateDocuments([{ _id: this.actor._id, system: { damageSoak } }]).then(updatedActor => console.log("Updated actor", updatedActor));
-  }
-
-  openSystemStrainConfigDialog() {
-    const configDialog = new Dialog({
-      title: "Configure System Strain",
-      content: DialogTemplates.configDialogSystemStrain(this.actor.system.systemStrain),
-      buttons: DialogUtils.confirmButtons(html => this.handleSystemStrainConfig(html)),
-      default: "roll"
-    });
-    configDialog.render(true);
-  }
-
-  handleSystemStrainConfig(html) {
-    const maxModifier = html.find('[name="maxModInput"]').val();
-    const permanentModifier = html.find('[name="permanentModInput"]').val();
-    const systemStrain = {
-      maxModifier: maxModifier,
-      permanentModifier: permanentModifier
-    }
-    Actor.updateDocuments([{ _id: this.actor._id, system: { systemStrain } }]).then(updatedActor => console.log("Updated actor", updatedActor));
-  }
-
-  openArmorClassConfigDialog() {
-    const configDialog = new Dialog({
-      title: "Configure Base Armor Class",
-      content: DialogTemplates.configDialogArmorClass(this.actor.system.armorClass),
-      buttons: DialogUtils.confirmButtons(html => this.handleArmorClassConfig(html)),
-      default: "roll"
-    });
-    configDialog.render(true);
-  }
-
-  handleArmorClassConfig(html) {
-    const baseMelee = html.find('[name="baseMeleeInput"]').val();
-    const baseRanged = html.find('[name="baseRangedInput"]').val();
-    const armorClass = {
-      baseMelee,
-      baseRanged
-    }
-    Actor.updateDocuments([{ _id: this.actor._id, system: { armorClass } }]).then(updatedActor => console.log("Updated actor", updatedActor));
-  }
-
-  openTraumaTargetConfigDialog() {
-    const configDialog = new Dialog({
-      title: "Configure Base Trauma Target",
-      content: DialogTemplates.configDialogTraumaTarget(this.actor.system.traumaTarget.base),
-      buttons: DialogUtils.confirmButtons(html => this.handleTraumaTargetConfig(html)),
-      default: "roll"
-    });
-    configDialog.render(true);
-  }
-
-  handleTraumaTargetConfig(html) {
-    const newBaseTraumaTarget = html.find('[name="traumaTargetInput"]').val();
-    const traumaTarget = {
-      base: newBaseTraumaTarget
-    }
-    Actor.updateDocuments([{ _id: this.actor._id, system: { traumaTarget } }]).then(updatedActor => console.log("Updated actor", updatedActor));
   }
 
   rollHitDice() {

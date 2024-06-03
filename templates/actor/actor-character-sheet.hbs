@@ -29,7 +29,7 @@
           </div>
 
           <div class="resource flex-group-center">
-            <label for="system.damageSoak.value" class="resource-label">Damage Soak <span title="Configure Damage Soak" class="configurable fas fa-gear" data-config-type="damageSoak"></span></label>
+            <label for="system.damageSoak.value" class="resource-label">Damage Soak <span title="Configure Damage Soak" class="configurable fas fa-gear" data-config-type="damageSoak" data-config-label="Damage Soak"></span></label>
             <div class="resource-content flexrow flex-center flex-between">
               <input type="number" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
               <i class="fas fa-slash-forward"></i>
@@ -38,7 +38,7 @@
           </div>
 
           <div class="resource flex-group-center">
-            <label for="system.systemStrain.value" class="resource-label">System Strain <span title="Configure System Strain" class="configurable fas fa-gear" data-config-type="systemStrain"></span></label>
+            <label for="system.systemStrain.value" class="resource-label">System Strain <span title="Configure System Strain" class="configurable fas fa-gear" data-config-type="systemStrain" data-config-label="System Strain"></span></label>
             <div class="resource-content flexrow flex-center flex-between">
               <input type="number" name="system.systemStrain.temporary" value="{{system.systemStrain.temporary}}" data-dtype="Number"/>
               <span id="totalSystemStrain" title="Total Current System Strain">({{system.systemStrain.value}})</span>
@@ -49,7 +49,7 @@
 
 
           <div class="resource flex-group-center">
-            <label class="resource-label">AC (Melee/Ranged) <span title="Configure Armor Class" class="configurable fas fa-gear" data-config-type="armorClass"></span></label>
+            <label class="resource-label">AC (Melee/Ranged) <span title="Configure Armor Class" class="configurable fas fa-gear" data-config-type="armorClass" data-config-label="Armor Class"></span></label>
             <div class="resource-content flexrow flex-center flex-between">
               <input type="number" name="system.armorClass.melee" disabled value="{{system.armorClass.melee}}" data-dtype="Number"/>
               <i class="fas fa-slash-forward"></i>
@@ -58,7 +58,7 @@
           </div>
 
           <div class="resource flex-group-center">
-            <label for="system.traumaTarget.total" class="resource-label">Trauma Target <span title="Configure Trauma Target" class="configurable fas fa-gear" data-config-type="traumaTarget"></span></label>
+            <label for="system.traumaTarget.total" class="resource-label">Trauma Target <span title="Configure Trauma Target" class="configurable fas fa-gear" data-config-type="traumaTarget" data-config-label="Trauma Target"></span></label>
             <div class="resource-content flexrow flex-center flex-between">
               <input type="number" name="system.traumaTarget.total" disabled value="{{system.traumaTarget.total}}" data-dtype="Number"/>
             </div>
@@ -133,7 +133,7 @@
 
       {{!-- Cyberware Tab --}}
       <div class="tab items" data-group="primary" data-tab="cyberware">
-        {{> "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs"}}
+        {{> "systems/cities-without-number/templates/actor/parts/actor-cyberware.hbs" showMaintenanceCost=true}}
       </div>
 
       {{!-- Features Tab --}}

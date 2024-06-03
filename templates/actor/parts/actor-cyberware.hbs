@@ -1,8 +1,10 @@
-<div class="heading-resource">
-  <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
-  <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}"  data-dtype="Number"/>
-</div>
-<hr>
+{{#if showMaintenanceCost}}
+  <div class="heading-resource">
+    <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
+    <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}" data-dtype="Number"/>
+  </div>
+  <hr>
+{{/if}}
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">Body Ware</div>
