@@ -18,7 +18,7 @@
         </div>
         <div class="resource">
           <label class="resource-label">Self-Term</label>
-          <input type="text" name="system.selfTerminating" value="{{system.selfTerminating}}" data-dtype="Boolean"/>
+          <input type="checkbox" name="system.selfTerminating" data-dtype="Boolean" {{isChecked system.selfTerminating}}/>
         </div>
       </div>
     </div>
