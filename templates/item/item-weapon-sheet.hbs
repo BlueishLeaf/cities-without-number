@@ -69,8 +69,8 @@
             <input type="checkbox" name="system.canDealTraumaticHits" {{isChecked system.canDealTraumaticHits}}/>
           </div>
           {{!-- Trauma Conditional Display --}}
-          <div class="grid grid-2col">
-            {{#if system.canDealTraumaticHits}}
+          {{#if system.canDealTraumaticHits}}
+            <div class="grid grid-2col">
               <div class="resource">
                 <label class="resource-label">Trauma Die</label>
                 <input type="text" name="system.trauma.die" value="{{system.trauma.die}}" data-dtype="String"/>
@@ -79,8 +79,8 @@
                 <label class="resource-label">Trauma Rating</label>
                 <input type="number" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
               </div>
-            {{/if}}
-          </div>
+            </div>
+          {{/if}}
         </section>
 
         {{!-- Shock Section --}}
@@ -91,8 +91,8 @@
             <input type="checkbox" name="system.canDealShockDamage" {{isChecked system.canDealShockDamage}}/>
           </div>
           {{!-- Shock Conditional Display --}}
-          <div class="grid grid-2col">
-            {{#if system.canDealShockDamage}}
+          {{#if system.canDealShockDamage}}
+            <div class="grid grid-2col">
               <div class="resource">
                 <label class="resource-label">Shock Damage</label>
                 <input type="number" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
@@ -101,8 +101,8 @@
                 <label class="resource-label">AC Threshold</label>
                 <input type="number" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
               </div>
-            {{/if}}
-          </div>
+            </div>
+          {{/if}}
         </section>
       </div>
 
@@ -118,15 +118,15 @@
             <input type="checkbox" name="system.hasRangedAttack" {{isChecked system.hasRangedAttack}}/>
           </div>
           {{!-- Range Conditional Display --}}
-          <div class="resource flex-group-center">
-            {{#if system.hasRangedAttack}}
+          {{#if system.hasRangedAttack}}
+            <div class="resource flex-group-center">
               <div class="resource-content flexrow flex-center flex-between">
                 <input type="number" name="system.range.effective" value="{{system.range.effective}}" data-dtype="Number"/>
                 <i class="fas fa-slash-forward"></i>
                 <input type="number" name="system.range.max" value="{{system.range.max}}" data-dtype="Number"/>
               </div>
-            {{/if}}
-          </div>
+            </div>
+          {{/if}}
         </section>
 
         {{!-- Magazine Size Section --}}
@@ -137,15 +137,15 @@
             <input type="checkbox" name="system.hasMagazine" {{isChecked system.hasMagazine}}/>
           </div>
           {{!-- Magazine Size Conditional Display --}}
-          <div class="resource flex-group-center">
-            {{#if system.hasMagazine}}
+          {{#if system.hasMagazine}}
+            <div class="resource flex-group-center">
               <div class="resource-content flexrow flex-center flex-between">
                 <input type="number" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
                 <i class="fas fa-slash-forward"></i>
                 <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
               </div>
-            {{/if}}
-          </div>
+            </div>
+          {{/if}}
         </section>
       </div>
     </div>
