@@ -73,9 +73,6 @@
       white-space: nowrap;
       overflow-x: hidden;
     }
-    .item-text-warning {
-      color: red;
-    }
   }
 
   // Control Buttons
@@ -148,4 +145,8 @@
 
 .hidden {
   display: none;
+}
+
+.item-text-warning {
+  color: orangered;
 }

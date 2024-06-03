@@ -1,0 +1,27 @@
+{{#if showMaintenanceCost}}
+  <div class="heading-resource">
+    <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
+    <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}" data-dtype="Number"/>
+  </div>
+  <hr>
+{{/if}}
+{{!-- Body Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='body' sectionLabel='Body' cyber=body}}
+
+{{!-- Head Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='head' sectionLabel='Head' cyber=head}}
+
+{{!-- Skin Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='skin' sectionLabel='Skin' cyber=skin}}
+
+{{!-- Limb Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='limb' sectionLabel='Limb' cyber=limb}}
+
+{{!-- Sensory Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='sensory' sectionLabel='Sensory' cyber=sensory}}
+
+{{!-- Medical Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='medical' sectionLabel='Medical' cyber=medical}}
+
+{{!-- Nerve Ware --}}
+{{> "systems/cities-without-number/templates/actor/parts/actor-cyberware-section.hbs" section='nerve' sectionLabel='Nerve' cyber=nerve}}
