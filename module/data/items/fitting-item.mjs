@@ -6,6 +6,7 @@ export default class FittingItemData extends BaseItemData {
         const baseData = super.defineSchema();
         return {
             ...baseData,
+            quantity: integerField(0),
             costPercentage: integerField(0)
         }
     }

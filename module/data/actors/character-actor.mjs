@@ -43,7 +43,14 @@ export default class CharacterActorData extends HumanoidActorData {
             attackBonus: integerField(0),
             money: integerField(0),
             languages: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
-            goals: new fields.ArrayField(new fields.StringField({ required: false, blank: true }))
+            goals: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
+            maintenanceScore: resourceField(0, 0),
+            majorInjuries: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
+            expenses: new fields.SchemaField({
+                lifestyle: new fields.StringField({ required: false, blank: true }),
+                lifestyleMonthlyCost: integerField(0),
+                otherMonthlyCosts: integerField(0)
+            })
         }
     }
 }

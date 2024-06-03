@@ -8,7 +8,8 @@ export default class CyberwearItemData extends ConcealableItemData {
         return {
             ...concealableData,
             systemStrain: integerField(0),
-            effect: new fields.StringField({ required: true, blank: true })
+            effect: new fields.StringField({ required: true, blank: true }),
+            defect: new fields.StringField({ required: true, blank: true })
         }
     }
 }
