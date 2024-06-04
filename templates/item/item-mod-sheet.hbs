@@ -3,7 +3,7 @@
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-      <div class="grid grid-4col">
+      <div class="grid grid-5col">
         <div class="resource">
           <label class="resource-label">Cost</label>
           <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
@@ -13,11 +13,15 @@
           <input type="number" name="system.costPercentage" value="{{system.costPercentage}}" data-dtype="Number"/>
         </div>
         <div class="resource">
+          <label class="resource-label">Quantity</label>
+          <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
           <label class="resource-label">Install Skill</label>
           <input type="text" name="system.requiredSkills" value="{{system.requiredSkills}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label class="resource-label">Special Tech</label>
+          <label class="resource-label" title="Special Tech Required">Spec. Tech</label>
           <input type="number" name="system.specialTechRequired" value="{{system.specialTechRequired}}" data-dtype="Number"/>
         </div>
       </div>

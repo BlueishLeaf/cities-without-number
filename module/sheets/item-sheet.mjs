@@ -47,7 +47,7 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
 
     // Populate mods if applicable
     if (itemData.system.mods) {
-      context.mods = itemData.system.mods
+      context.mod = itemData.system.mods
         .map(id => this.actor.items.get(id))
         .sort((a, b) => a.sort - b.sort);
     }

@@ -9,6 +9,7 @@ export default class ModItemData extends PurchasableItemData {
         return {
             ...purchasableData,
             ...skillRequiredData,
+            quantity: integerField(1),
             costPercentage: integerField(0),
             specialTechRequired: integerField(0)
         }
