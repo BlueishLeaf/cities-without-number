@@ -53,12 +53,18 @@ export const autoWeaponRollDialog = (isBurstFireable, canDealNonLethalDamage) =>
   </div>
 `;
 
-export const skillRollDialog = abilityOptions => `
+export const skillRollDialog = (abilityOptions, specialistOptions) => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="attributeSelect">Choose an attribute: </label>
       <select name="attributeSelect">
         ${abilityOptions}
+      </select>
+    </div>
+    <div class="dialog-row grid grid-2col">
+      <label for="specialistSelect">Specialisation: </label>
+      <select name="specialistSelect">
+        ${specialistOptions}
       </select>
     </div>
     <div class="dialog-row grid grid-2col">

@@ -33,6 +33,9 @@ CWN.abilityModifiers = {
 CWN.system = {
   burstFireBonus: 2,
   droneNativeBonus: 2,
+  skillRollFormula: "2d6 + @level + @attributeMod + @situationalBonus + @armorPenalty",
+  specialisedLevel1SkillRollFormula: "3d6k2 + @level + @attributeMod + @situationalBonus + @armorPenalty",
+  specialisedLevel2SkillRollFormula: "4d6k2 + @level + @attributeMod + @situationalBonus + @armorPenalty",
   savingThrowFormula: "1d20 + @situationalBonus",
   moraleFormula: "2d6 + @situationalBonus",
   basicSkillCheckFormula: "2d6 + @skillBonus + @situationalBonus"

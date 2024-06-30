@@ -638,9 +638,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openSkillDialog(skill) {
     const abilityOptions = Object.entries(this.actor.system.abilities).map((k, _v) => `<option value="${k[0]}" ${skill.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`);
+    const specialistOptions = ['None (2d6)', 'Level 1 (3d6)', 'Level 2 (4d6)'].map((k, _v) => `<option value="${k}" ${skill.system.specialist === k ? "selected" : ""}>${k}</option>\n`);
     const skillDialog = new Dialog({
       title: `Roll ${skill.name}`,
-      content: DialogTemplates.skillRollDialog(abilityOptions),
+      content: DialogTemplates.skillRollDialog(abilityOptions, specialistOptions),
       buttons: DialogUtils.rollButtons(html => this.handleSkillRoll(skill, html)),
       default: "Roll"
     });
@@ -653,9 +654,12 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const selectedAttributeCode = html.find('[name="attributeSelect"]').val();
     const attributeMod = this.actor.system.abilities[selectedAttributeCode].mod;
 
+    const selectedSpecialistLevel = html.find('[name="specialistSelect"]').val();
+
     // Update default attribute for this skill for next time
     skill.system.attribute = selectedAttributeCode;
-    Item.updateDocuments([{ _id: skill._id, system: { attribute: selectedAttributeCode } }], { parent: this.actor }).then(updates => console.log("Updated skill", updates));
+    skill.system.specialist = selectedSpecialistLevel;
+    Item.updateDocuments([{ _id: skill._id, system: { attribute: selectedAttributeCode, specialist: selectedSpecialistLevel } }], { parent: this.actor }).then(updates => console.log("Updated skill", updates));
 
     // Apply armor penalty if applicable to this skill
     let armorPenalty = 0;
@@ -669,13 +673,25 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   rollSkill(skill, rollData) {
     console.log(`Rolling [${skill.type}] ${skill.name}`, rollData);
-    const roll = new Roll(skill.system.rollFormula, rollData);
+    const roll = new Roll(this.determineSkillRollFormula(skill.system.specialist), rollData);
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
     const flavor = `[${skill.type}] ${skill.name}`;
     roll.toMessage({ speaker, rollMode, flavor }).then(message => console.log(message));
+  }
+
+  determineSkillRollFormula(specialistLevel) {
+    switch (specialistLevel) {
+      case 'Level 1 (3d6)':
+        return CONFIG.CWN.system.specialisedLevel1SkillRollFormula;
+      case 'Level 2 (4d6)':
+        return CONFIG.CWN.system.specialisedLevel2SkillRollFormula;
+      case 'None (2d6)':
+      default:
+        return CONFIG.CWN.system.skillRollFormula;
+    }
   }
 
   openSaveDialog(save) {

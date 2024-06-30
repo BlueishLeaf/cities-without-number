@@ -9,7 +9,7 @@ export default class SkillItemData extends BaseItemData {
         return {
             ...baseData,
             ...attributeRequiredData,
-            rollFormula: new fields.StringField({ required: true, initial: '2d6 + @level + @attributeMod + @situationalBonus + @armorPenalty' }),
+            specialist: new fields.StringField({ required: true, initial: 'None (2d6)' }),
             level: new fields.NumberField({ required: true, nullable: false, integer: true, initial: -1, min: -1 })
         }
     }
