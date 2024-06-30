@@ -14,9 +14,9 @@ system:
     type: ground
   armorClass:
     baseMelee: 10
-    melee: 10
+    melee: 14
     baseRanged: 10
-    ranged: 10
+    ranged: 17
   damageSoak:
     value: 5
     max: 5
@@ -34,10 +34,10 @@ effects: []
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.1.0
+  systemVersion: REPLACED BY GITHUB ACTION
   coreVersion: '11.315'
   createdTime: 1717098474529
-  modifiedTime: 1717444419061
+  modifiedTime: 1719746190712
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 sort: 0
 _id: A9yoS8YSNelMlC2d
