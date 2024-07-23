@@ -9,6 +9,7 @@ import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { CWN } from "./helpers/config.mjs";
 // Import DataModel classes
 import * as models from './data/module.mjs';
+import {registerSettings} from "./helpers/settings.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -67,6 +68,9 @@ Hooks.once("init", async function() {
     demon: models.DemonItemData,
     contact: models.ContactItemData
   }
+
+  // Add system settings
+  registerSettings();
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
