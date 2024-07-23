@@ -242,12 +242,12 @@ export class CitiesWithoutNumberActor extends Actor {
 
     // Update default attribute and skill for this weapon for next time
     weapon.system.attribute = selectedAttributeCode;
-    weapon.system.skill = selectedSkill.name;
+    weapon.system.skill = selectedSkill.name.toLowerCase();
 
     if (!weapon.system.hasMagazine || this.magazineHasEnoughAmmo(weapon.system.magazine, isBurstFire)) {
       this.rollWeapon(weapon, isNonLethal, isBurstFire, { attributeMod, skillMod, baseAB, situationalAB });
       const updatedMagazine = this.getUpdatedMagazine(isBurstFire, weapon.system.magazine);
-      Item.updateDocuments([{ _id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name, magazine: updatedMagazine } }], { parent: weapon.actor }).then(updates => console.log("Updated weapon", updates));
+      Item.updateDocuments([{ _id: weapon._id, system: { attribute: selectedAttributeCode, skill: selectedSkill.name.toLowerCase(), magazine: updatedMagazine } }], { parent: weapon.actor }).then(updates => console.log("Updated weapon", updates));
     } else {
       this.sendReloadMessage(weapon);
     }
