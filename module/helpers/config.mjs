@@ -53,6 +53,12 @@ CWN.movementTypes = {
   swim: "Swim"
 };
 
+CWN.sizeCategories = {
+  small: "Small",
+  medium: "Medium",
+  large: "Large"
+}
+
 CWN.armor = {
   subTypes: {
     armor: "Armor",

@@ -68,7 +68,9 @@
           <div class="resource flex-group-center">
             <label for="system.size" class="resource-label">Size</label>
             <div class="resource-content flexrow flex-center flex-between">
-              <input type="text" name="system.size" value="{{system.size}}" data-dtype="String"/>
+              <select class="block-select between-right" name="system.size">
+                  {{selectOptions config.CWN.sizeCategories selected=system.size}}
+              </select>
             </div>
           </div>
 
