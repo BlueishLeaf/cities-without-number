@@ -37,7 +37,7 @@ system:
   mass:
     value: 4
     max: 14
-  size: L
+  size: large
 effects: []
 folder: null
 sort: 0
@@ -46,10 +46,10 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.1.0
+  systemVersion: 0.1.5
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717443956267
+  modifiedTime: 1721770484262
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 items:
   - _id: BDcg3pknb306vvp4
