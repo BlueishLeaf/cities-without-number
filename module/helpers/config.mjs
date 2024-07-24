@@ -59,6 +59,11 @@ CWN.sizeCategories = {
   large: "Large"
 }
 
+CWN.fociLevels = {
+  1: "Level 1",
+  2: "Level 2"
+}
+
 CWN.armor = {
   subTypes: {
     armor: "Armor",

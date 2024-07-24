@@ -7,7 +7,11 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
       <div class="resource">
         <label class="resource-label">Current Focus Level</label>
-        <input type="number" name="system.level" value="{{system.level}}" data-dtype="Number"/>
+        <div class="resource-content flexrow flex-center flex-between">
+          <select class="block-select" name="system.level">
+              {{selectOptions config.CWN.fociLevels selected=system.level}}
+          </select>
+        </div>
       </div>
     </div>
   </header>
@@ -15,8 +19,8 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="level1Benefit">Level 1</a>
-    <a class="item" data-tab="level2Benefit">Level 2</a>
+    <a class="item" data-tab="level1Benefit">Level 1 Benefit</a>
+    <a class="item" data-tab="level2Benefit">Level 2 Benefit</a>
   </nav>
 
   {{!-- Sheet Body --}}

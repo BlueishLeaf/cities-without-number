@@ -48,7 +48,19 @@
         <a class="item-control item-delete" title="Delete Focus"><i class="fas fa-trash"></i></a>
       </div>
     </li>
-    <div class="item-description hidden">{{{item.system.description}}}</div>
+    <div class="item-description hidden">
+        {{{item.system.description}}}
+        <hr>
+        <b>Level 1 Benefit</b>
+        <br>
+        {{item.system.level1Benefit}}
+        {{#ifEquals item.system.level 2}}
+            <hr>
+            <b>Level 2 Benefit</b>
+            <br>
+            {{item.system.level2Benefit}}
+        {{/ifEquals}}
+    </div>
   {{/each}}
 </ol>
 
