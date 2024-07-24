@@ -82,7 +82,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "chromeSyndrome", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);

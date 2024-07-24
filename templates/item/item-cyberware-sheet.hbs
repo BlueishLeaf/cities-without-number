@@ -52,6 +52,9 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="description">Description</a>
+    {{#isSettingEnabled "useCyberAlienation"}}
+      <a class="item" data-tab="chrome-syndromes">Chrome Syndromes</a>
+    {{/isSettingEnabled}}
     <a class="item" data-tab="mods">Mods</a>
   </nav>
 
@@ -60,6 +63,11 @@
     {{!-- Description Tab --}}
     <div class="tab max-height" data-group="primary" data-tab="description">
       {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+
+    {{!-- Chrome Syndromes Tab --}}
+    <div class="tab" data-group="primary" data-tab="chrome-syndromes">
+      {{> "systems/cities-without-number/templates/item/item-cyberwear-chrome-syndromes.hbs"}}
     </div>
 
     {{!-- Mods Tab --}}

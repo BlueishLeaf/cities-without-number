@@ -23,3 +23,4 @@ export {default as SubjectItemData} from "./items/subject-item.mjs";
 export {default as VehicleFittingItemData} from "./items/vehicle-fitting-item.mjs";
 export {default as VerbItemData} from "./items/verb-item.mjs";
 export {default as WeaponItemData} from "./items/weapon-item.mjs";
+export {default as ChromeSyndromeItemData} from "./items/chrome-syndrome-item.mjs";

@@ -349,6 +349,17 @@
       "flags": {}
     },
     {
+      "name": "chrome-syndromes",
+      "label": "Chrome Syndromes",
+      "system": "cities-without-number",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "name": "cyberware-body",
       "label": "Body Cyberware",
       "system": "cities-without-number",
@@ -463,7 +474,7 @@
     {
       "name": "Cyberware",
       "sorting": "a",
-      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin"],
+      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin", "chrome-syndromes"],
       "folders": []
     },
     {
