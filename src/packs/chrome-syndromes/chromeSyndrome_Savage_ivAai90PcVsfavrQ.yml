@@ -1,0 +1,31 @@
+name: Savage
+type: chromeSyndrome
+_id: ivAai90PcVsfavrQ
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>Your cyber is telling you to kill. It’s constantly reminding you of
+    active enemies or weak points on targets, and you have to keep rejecting
+    confirmation prompts for killing blows. It’s only let- ting you think about
+    trajectories and kill counts, about threats and unfinished terminations. You
+    can’t think with a live enemy around. <strong>Effect: You can’t run from
+    combat after you’ve suffered hit point damage in it. If you choose to flee,
+    check for Alienation.</strong></p>
+  maxAlienationMod: 5
+  effect: unable to retreat
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834688777
+  modifiedTime: 1721835081515
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!ivAai90PcVsfavrQ'
+

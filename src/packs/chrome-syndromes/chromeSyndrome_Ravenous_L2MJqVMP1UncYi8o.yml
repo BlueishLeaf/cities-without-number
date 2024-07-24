@@ -1,0 +1,30 @@
+name: Ravenous
+type: chromeSyndrome
+_id: L2MJqVMP1UncYi8o
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>These senses are incredible; you’re seeing, or hearing, or feeling things
+    human meat was never meant to experience. You want more, you need more, and
+    you’ll do anything to get it. <strong>Effect: Pick a sensory vice. Check for
+    Alienation each time you resist an easy opportunity to indulge it. Pay $100
+    per total permanent Alienation point per week in feeding it or check for
+    Alienation.</strong></p>
+  maxAlienationMod: 4
+  effect: Unable to stop feeling
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834681275
+  modifiedTime: 1721835078115
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!L2MJqVMP1UncYi8o'
+

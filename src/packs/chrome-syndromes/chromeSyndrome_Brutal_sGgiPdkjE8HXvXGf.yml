@@ -1,0 +1,31 @@
+name: Brutal
+type: chromeSyndrome
+_id: sGgiPdkjE8HXvXGf
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>Your hardware isn’t meant to be restrained. It hurts to leave the
+    limiters on; the confirma- tion prompts keep blaring in your brain and it
+    feels like you’re suffocating when you don’t let them work according to
+    spec. Sub-optimal per- formance feels like something sharp digging in your
+    head. <strong>Effect: You cannot engage in non-lethal combat, though you
+    don’t necessarily need to coup de grace downed foes. Check for Alienation
+    each round you attack someone with non-lethal intent.</strong></p>
+  maxAlienationMod: 4
+  effect: Unable to hold back
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834326900
+  modifiedTime: 1721835024754
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!sGgiPdkjE8HXvXGf'
+

@@ -1,0 +1,28 @@
+name: Stressed
+type: chromeSyndrome
+_id: N3uTyDCDO41RTkti
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>The hardware is getting in the way of the wetware. The demands are
+    aggravating an al- ready weakened system, and it can’t take the strain.
+    <strong>Effect: Your lowest attribute suffers a -1 modifier penalty, to a
+    minimum of -3. If multiple attributes tie, pick one.</strong></p>
+  maxAlienationMod: 5
+  effect: unable to endure it
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834703087
+  modifiedTime: 1721835088184
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!N3uTyDCDO41RTkti'
+

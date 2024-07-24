@@ -1,0 +1,31 @@
+name: Cold
+type: chromeSyndrome
+_id: ddvV2LS3wV0KhrMV
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>The hormonal adjustments are fraying your ability to form emotional bonds
+    with others. You intellectually may know they love you and you may have
+    every reason to love them, but it’s a distant abstraction to you. It’s not a
+    real feeling, like the hate, or lust, or longing that still some- times
+    sparks in you. You stick with your friends out of habit or rational
+    calculation. <strong>Effect: You are unable to feel love or affection for
+    others. Lose your closest Contact.</strong></p>
+  maxAlienationMod: 4
+  effect: Unable to feel love
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834626560
+  modifiedTime: 1721835056075
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!ddvV2LS3wV0KhrMV'
+

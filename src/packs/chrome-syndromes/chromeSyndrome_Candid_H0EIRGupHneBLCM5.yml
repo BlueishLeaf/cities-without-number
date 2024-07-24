@@ -1,0 +1,30 @@
+name: Candid
+type: chromeSyndrome
+_id: H0EIRGupHneBLCM5
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>The processors feed you information so quickly and so smoothly that your
+    meat brain barely has time to process it. If you try to slow it down, it
+    hurts, so it’s easier to just let it run. <strong>Effect: You instinctively
+    answer any question with at least one sentence of truthful reply. Check for
+    Alienation if you try to remain silent or avert this instinct for a
+    scene.</strong></p>
+  maxAlienationMod: 3
+  effect: Unable to keep silent
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834618397
+  modifiedTime: 1721835052003
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!H0EIRGupHneBLCM5'
+

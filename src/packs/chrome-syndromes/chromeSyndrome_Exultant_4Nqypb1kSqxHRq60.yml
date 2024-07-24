@@ -1,0 +1,29 @@
+name: Exultant
+type: chromeSyndrome
+_id: 4Nqypb1kSqxHRq60
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>The chrome is perfect. If it breaks, you can just fix it. If you break,
+    you can just get more chrome. You can’t be beaten, not for long, because the
+    metal can do anything. <strong>Effect: Your overconfidence causes an
+    automatic, unavoidable skill failure on a natural skill roll of
+    12.</strong></p>
+  maxAlienationMod: 3
+  effect: Unable to imagine failure
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834643116
+  modifiedTime: 1721835063534
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!4Nqypb1kSqxHRq60'
+

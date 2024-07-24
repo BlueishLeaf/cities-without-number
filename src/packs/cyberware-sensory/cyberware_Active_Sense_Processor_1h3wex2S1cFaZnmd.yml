@@ -11,6 +11,7 @@ system:
   subType: sensory
   concealment: medical
   systemStrain: 1
+  alienationCost: 1
 effects: []
 folder: null
 sort: 0
@@ -19,10 +20,10 @@ ownership:
 flags: {}
 _stats:
   systemId: cities-without-number
-  systemVersion: 0.1.0
+  systemVersion: 0.2.0
   coreVersion: '11.315'
   createdTime: 1694265254
-  modifiedTime: 1717338532512
+  modifiedTime: 1721835520387
   lastModifiedBy: 5mIhSmBDXvKVlXKo
 _key: '!items!1h3wex2S1cFaZnmd'
 

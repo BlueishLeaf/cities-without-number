@@ -1,0 +1,30 @@
+name: Fearless
+type: chromeSyndrome
+_id: l1jCLG0TR83lG5Ln
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>The combat augs are great for suppressing fear. Honestly, it feels so
+    good that you just leave them on all the time. Being able to live your life
+    without worry or anxiety is such a tremendous relief, even if it sometimes
+    makes you overlook some things. <strong>Effect: Your maximum HP is decreased
+    by 20%, rounded down, because your survival instincts are dulled. If an NPC,
+    your Morale is 12.</strong></p>
+  maxAlienationMod: 4
+  effect: Unable to feel dread
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834650848
+  modifiedTime: 1721835067359
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!l1jCLG0TR83lG5Ln'
+

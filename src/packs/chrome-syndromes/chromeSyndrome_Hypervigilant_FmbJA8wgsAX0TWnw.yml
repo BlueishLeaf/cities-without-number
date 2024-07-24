@@ -1,0 +1,26 @@
+name: Hypervigilant
+type: chromeSyndrome
+_id: FmbJA8wgsAX0TWnw
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>Can’t sleep. Wireless push updates will eat me. <strong>Effect: Gain one
+    permanent System Strain point due to persistent insomnia.</strong></p>
+  maxAlienationMod: 3
+  effect: Unable to rest
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834664593
+  modifiedTime: 1721835071252
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!FmbJA8wgsAX0TWnw'
+

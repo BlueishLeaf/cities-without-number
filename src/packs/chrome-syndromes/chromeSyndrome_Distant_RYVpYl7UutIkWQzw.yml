@@ -1,0 +1,28 @@
+name: Distant
+type: chromeSyndrome
+_id: RYVpYl7UutIkWQzw
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>Everything’s so much clearer with the augs. You can see what you need to
+    do, to say, to be, while those around you wallow in weak, fleshly delusion.
+    Dealing with them is so very tiresome. <strong>Effect: Take a -1 penalty to
+    all social skill checks.</strong></p>
+  maxAlienationMod: 3
+  effect: Unable to tolerate people
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834634738
+  modifiedTime: 1721835060061
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!RYVpYl7UutIkWQzw'
+

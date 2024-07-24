@@ -1,0 +1,30 @@
+name: Murderous
+type: chromeSyndrome
+_id: jWwdTNOCK9WcLMAn
+img: icons/skills/wounds/injury-body-pain-gray.webp
+system:
+  description: >-
+    <p>You were wired to kill, and you can’t turn it off. The longer between
+    kills, the more everything starts looking like a weapon, and everyone starts
+    looking like a throat to cut. When it gets really bad, the wires won’t let
+    you think of anything but your real purpose, what you made yourself to be.
+    <strong>Effect: Must personally kill at least one person a week, or check
+    for Alienation for each day beyond without a murder.</strong></p>
+  maxAlienationMod: 6
+  effect: Unable to stop killing
+effects: []
+folder: null
+sort: 0
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  systemId: cities-without-number
+  systemVersion: 0.2.0
+  coreVersion: '11.315'
+  createdTime: 1721834672875
+  modifiedTime: 1721835074686
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!jWwdTNOCK9WcLMAn'
+
