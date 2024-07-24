@@ -3,6 +3,9 @@
     <div class="item-name">{{sectionLabel}} Ware</div>
     <div class="item-stats">Effect</div>
     <div class="item-stats" title="System Strain">Sys. Strain</div>
+    {{#isSettingEnabled "useCyberAlienation"}}
+      <div class="item-stats" title="Alienation Cost">Alienation</div>
+    {{/isSettingEnabled}}
     <div class="item-controls">
       <a class="item-control item-create" title="Create {{sectionLabel}} Ware" data-type="cyberware" data-subType="{{section}}"><i class="fas fa-plus"></i> Add</a>
     </div>
@@ -13,11 +16,13 @@
         <div class="item-image">
           <a class="rollable" data-roll-type="cyberware"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
-        {{#if item.system.isDefective}}
-          <h4 class="expandable item-text-warning" title="This cyberware is defective!">{{item.name}} <i class="fas fa-triangle-exclamation"></i></h4>
-        {{else}}
-          <h4 class="expandable">{{item.name}}</h4>
-        {{/if}}
+        <h4 class="expandable">{{item.name}}
+          {{#if item.system.isDefective}}<i title="This cyberware is defective!" class="item-text-warning fas fa-triangle-exclamation"></i>{{/if}}
+          {{#isSettingEnabled "useCyberAlienation"}}
+            {{#if item.system.chromeSyndromes}}<i title="This cyberware is inducing chrome syndromes!" class="item-text-syndrome fas fa-skull"></i>{{/if}}
+          {{/isSettingEnabled}}
+        </h4>
+
       </div>
       <div class="item-stats">
         <h4>{{item.system.effect}}</h4>
@@ -25,6 +30,11 @@
       <div class="item-stats">
         <h4>{{item.system.systemStrain}}</h4>
       </div>
+      {{#isSettingEnabled "useCyberAlienation"}}
+        <div class="item-stats">
+          <h4>{{item.system.alienationCost}}</h4>
+        </div>
+      {{/isSettingEnabled}}
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit {{sectionLabel}} Ware"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete {{sectionLabel}} Ware"><i class="fas fa-trash"></i></a>
@@ -32,8 +42,17 @@
     </li>
     <div class="item-description hidden">
       {{#if item.system.isDefective}}
-        <h4 class="item-text-warning"><b>{{item.system.defect}}</b></h4>
+        <h4 class="item-text-warning">{{item.system.defect}}</h4>
+        <hr>
       {{/if}}
+      {{#isSettingEnabled "useCyberAlienation"}}
+        {{#if item.system.chromeSyndromes}}
+          {{#each item.system.chromeSyndromes as |syndromeId id|}}
+            {{#formatChromeSyndrome syndromeId ../../chromeSyndrome}}{{/formatChromeSyndrome}}
+          {{/each}}
+          <hr>
+        {{/if}}
+      {{/isSettingEnabled}}
       {{{item.system.description}}}
     </div>
   {{/each}}

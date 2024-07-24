@@ -66,7 +66,8 @@ Hooks.once("init", async function() {
     subject: models.SubjectItemData,
     node: models.NodeItemData,
     demon: models.DemonItemData,
-    contact: models.ContactItemData
+    contact: models.ContactItemData,
+    chromeSyndrome: models.ChromeSyndromeItemData
   }
 
   // Add system settings
@@ -123,6 +124,12 @@ Handlebars.registerHelper("ifEquals", function(arg1, arg2, options) {
 
 Handlebars.registerHelper("isSettingEnabled", function(settingKey, options) {
   return game.settings.get("cities-without-number", settingKey) ? options.fn(this) : options.inverse(this);
+});
+
+Handlebars.registerHelper("formatChromeSyndrome", function(syndromeId, syndromeCollection) {
+  console.info('inside formatChromeSyndrome', syndromeId, syndromeCollection);
+  const syndrome = syndromeCollection.find(s => s.id === syndromeId);
+  return `<h4 class="item-text-syndrome">${syndrome.name}:${syndrome.system.description}</h4>`;
 });
 
 /* -------------------------------------------- */

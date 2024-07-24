@@ -41,7 +41,7 @@
             <label for="system.systemStrain.value" class="resource-label">System Strain <span title="Configure System Strain" class="configurable fas fa-gear" data-config-type="systemStrain" data-config-label="System Strain"></span></label>
             <div class="resource-content flexrow flex-center flex-between">
               <input type="number" name="system.systemStrain.temporary" value="{{system.systemStrain.temporary}}" data-dtype="Number"/>
-              <span id="totalSystemStrain" title="Total Current System Strain">({{system.systemStrain.value}})</span>
+              <span class="total-brackets" title="Total Current System Strain">({{system.systemStrain.value}})</span>
               <i class="fas fa-slash-forward"></i>
               <input type="number" name="system.systemStrain.max" disabled value="{{system.systemStrain.max}}" data-dtype="Number"/>
             </div>

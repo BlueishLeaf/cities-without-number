@@ -38,7 +38,8 @@ CWN.system = {
   specialisedLevel2SkillRollFormula: "4d6k2 + @level + @attributeMod + @situationalBonus + @armorPenalty",
   savingThrowFormula: "1d20 + @situationalBonus",
   moraleFormula: "2d6 + @situationalBonus",
-  basicSkillCheckFormula: "2d6 + @skillBonus + @situationalBonus"
+  basicSkillCheckFormula: "2d6 + @skillBonus + @situationalBonus",
+  alienationCheckFormula: "1d20 + @situationalBonus",
 };
 
 CWN.inventoryItemTypes = [

@@ -30,6 +30,12 @@ export default class CharacterActorData extends HumanoidActorData {
                 maxModifier: decimalField(0),
                 permanentModifier: decimalField(0),
             }),
+            alienationScore: new fields.SchemaField({
+                value: integerField(0),
+                max: integerField(10),
+                permanent: integerField(0),
+                temporary: integerField(0)
+            }),
             savingThrows: new fields.SchemaField({
                 physical: savingThrowField("Physical", 10),
                 evasion: savingThrowField("Evasion", 10),

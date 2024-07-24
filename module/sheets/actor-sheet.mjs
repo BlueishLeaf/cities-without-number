@@ -16,7 +16,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["cwn", "sheet", "actor"],
       template: "systems/cities-without-number/templates/actor/actor-sheet.hbs",
-      width: 600,
+      width: 650,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats" }]
     });
@@ -44,6 +44,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
     // Prepare actor data and items.
     this._prepareActorData(actorData.type, context);
+    this.actor.system = context.system;
 
     // Update open item renders
     this.actor.items.filter(item => item._sheet && item._sheet.rendered)
@@ -82,7 +83,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "chromeSyndrome", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "chrome-syndrome", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
@@ -143,11 +144,17 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       context.system.systemStrain.permanent += Number(context.system.systemStrain.permanentModifier);
     }
 
+    // Set max and permanent alienation score
+    context.system.alienationScore.max = context.system.abilities.wis.value
+    context.system.alienationScore.permanent = 0;
+
     // Set stowed and readied items
     context.system.encumbrance.stowed.max = context.system.abilities.str.value;
     context.system.encumbrance.readied.max = Math.floor(context.system.abilities.str.value / 2);
     context.system.encumbrance.stowed.value = 0;
     context.system.encumbrance.readied.value = 0;
+
+    context.chromeSyndrome = [];
 
     context.items.forEach(item => {
       if (item.system.readied !== undefined) {
@@ -160,10 +167,22 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       // Calculate permanent system strain based on the cyberware equipped
       if (item.type === "cyberware" && item.system.systemStrain) {
         context.system.systemStrain.permanent += item.system.systemStrain;
+        context.system.alienationScore.permanent += item.system.alienationCost;
+
+        if (item.system.chromeSyndromes) {
+          item.system.chromeSyndromes.forEach(id => {
+            const syndrome = this.actor.items.get(id);
+            if (syndrome) {
+              context.system.alienationScore.max += syndrome.system.maxAlienationMod;
+              context.chromeSyndrome.push(syndrome);
+            }
+          });
+        }
       }
     });
 
     context.system.systemStrain.value = context.system.systemStrain.permanent + context.system.systemStrain.temporary;
+    context.system.alienationScore.value = context.system.alienationScore.permanent + context.system.alienationScore.temporary;
 
     // Calculate maintenance score
     const fixSkill = context.skill.find(skill => skill.name.toLowerCase() === "fix");
@@ -499,6 +518,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
         this.openSaveDialog(save);
       } else if (dataset.rollType === "morale") {
         this.openMoraleDialog(this.actor.system.moraleTarget);
+      } else if (dataset.rollType === "alienation") {
+        this.openAlienationDialog(this.actor.system.alienationScore.value);
       } else if (dataset.rollType === "hitdice") {
         this.rollHitDice();
       } else {
@@ -595,6 +616,36 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       const messageData = ChatUtils.initializeChatData(this.actor, moraleCheck);
       const moraleCheckPassed = roll.total < moraleCheck.value;
       const content = ChatRenders.passOrFailRender(rollRender, moraleCheckPassed);
+      ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
+    });
+  }
+
+  openAlienationDialog(alienationScoreValue) {
+    const alienationDialog = new Dialog({
+      title: "Roll Alienation",
+      content: DialogTemplates.basicRollDialog(),
+      buttons: DialogUtils.rollButtons(html => this.handleAlienationRoll(alienationScoreValue, html)),
+      default: "Roll"
+    });
+    alienationDialog.render(true);
+  }
+
+  handleAlienationRoll(alienationScoreValue, html) {
+    const situationalBonus = html.find('[name="situationalBonusInput"]').val();
+
+    this.rollAlienation({value: alienationScoreValue}, { situationalBonus });
+  }
+
+  rollAlienation(alienationCheck, rollData) {
+    console.log("Rolling [alienation]", rollData);
+    const roll = new Roll(CONFIG.CWN.system.alienationCheckFormula, rollData);
+
+    roll.render().then(rollRender => {
+      alienationCheck.type = "alienation";
+      alienationCheck.name = "Alienation Check";
+      const messageData = ChatUtils.initializeChatData(this.actor, alienationCheck);
+      const alienationCheckPassed = roll.total > alienationCheck.value;
+      const content = ChatRenders.passOrFailRender(rollRender, alienationCheckPassed);
       ChatMessage.create({ ...messageData, content }).then(message => console.log(message));
     });
   }

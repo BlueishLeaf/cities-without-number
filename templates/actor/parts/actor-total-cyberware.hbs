@@ -1,8 +1,31 @@
 {{#if showCyberwearHeader}}
-  <div class="heading-resource">
-    <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
-    <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}" data-dtype="Number"/>
-  </div>
+  {{#isSettingEnabled "useCyberAlienation"}}
+    <div class="resources grid grid-2col">
+      {{!-- Maintenance Cost --}}
+      <div class="resource flex-group-center">
+        <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}" data-dtype="Number"/>
+        </div>
+      </div>
+      {{!-- Alienation Score --}}
+      <div class="resource flex-group-center">
+        <label for="system.alienationScore.value" class="resource-label">Cyber Alienation Score</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="number" name="system.alienationScore.temporary" value="{{system.alienationScore.temporary}}" data-dtype="Number"/>
+          <span class="total-brackets" title="Total Alienation Score">({{system.alienationScore.value}})</span>
+          <i class="fas fa-slash-forward"></i>
+          <input type="number" name="system.alienationScore.max" disabled value="{{system.alienationScore.max}}" data-dtype="Number"/>
+          <button class="between-right form-button rollable" data-roll-type="alienation">Roll <i class="fas fa-dice-d20"></i></button>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class="heading-resource">
+      <label class="resource-label" for="system.cyberwareMaintenanceCost">Monthly Maintenance Cost <i class="fas fa-circle-info" title="5% of total base cyberware cost"></i></label>
+      <input type="number" name="system.cyberwareMaintenanceCost" disabled value="{{cyberwareMaintenanceCost}}" data-dtype="Number"/>
+    </div>
+  {{/isSettingEnabled}}
   <hr>
 {{/if}}
 {{!-- Body Ware --}}
