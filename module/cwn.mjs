@@ -127,9 +127,8 @@ Handlebars.registerHelper("isSettingEnabled", function(settingKey, options) {
 });
 
 Handlebars.registerHelper("formatChromeSyndrome", function(syndromeId, syndromeCollection) {
-  console.info('inside formatChromeSyndrome', syndromeId, syndromeCollection);
   const syndrome = syndromeCollection.find(s => s.id === syndromeId);
-  return `<h4 class="item-text-syndrome">${syndrome.name}:${syndrome.system.description}</h4>`;
+  return syndrome ? `<h4 class="item-text-syndrome"><b>${syndrome.name}:</b>${syndrome.system.description}</h4>` : '';
 });
 
 /* -------------------------------------------- */
