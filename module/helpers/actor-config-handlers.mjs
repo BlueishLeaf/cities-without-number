@@ -43,6 +43,40 @@ export const actorConfigHandlers = {
   monthlyExpenses: (actor, html) => {
     const miscMonthlyCosts = html.find('[name="miscMonthlyCostsInput"]').val();
 
-    Actor.updateDocuments([{ _id: actor._id, system: { miscMonthlyCosts } }]).then(updatedActor => console.log("Updated actor", updatedActor));
-  }
+    Actor.updateDocuments([{
+      _id: actor._id,
+      system: {miscMonthlyCosts}
+    }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  },
+
+  stowedItems: (actor, html) => {
+    const stowedItemsBonus = html.find('[name="stowedItemsBonusInput"]').val();
+
+    const encumbrance = actor.system.encumbrance;
+    encumbrance.stowed.maxBonus = stowedItemsBonus;
+    Actor.updateDocuments([{ _id: actor._id, system: { encumbrance } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  },
+
+  readiedItems: (actor, html) => {
+    const readiedItemsBonus = html.find('[name="readiedItemsBonusInput"]').val();
+
+    const encumbrance = actor.system.encumbrance;
+    encumbrance.readied.maxBonus = readiedItemsBonus;
+    Actor.updateDocuments([{ _id: actor._id, system: { encumbrance } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  },
+
+  maintenanceScore: (actor, html) => {
+    const maintenanceScoreBonus = html.find('[name="maintenanceScoreBonusInput"]').val();
+
+    const maintenanceScore = actor.system.maintenanceScore;
+    maintenanceScore.maxBonus = maintenanceScoreBonus;
+    Actor.updateDocuments([{ _id: actor._id, system: { maintenanceScore } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  },
+
+  alienationScore: (actor, html) => {
+    const maxModifier = html.find('[name="maxModInput"]').val();
+    const permanentModifier = html.find('[name="permanentModInput"]').val();
+    const alienationScore = { maxModifier, permanentModifier };
+    Actor.updateDocuments([{ _id: actor._id, system: { alienationScore } }]).then(updatedActor => console.log("Updated actor", updatedActor));
+  },
 }

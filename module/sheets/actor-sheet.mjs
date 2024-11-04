@@ -145,12 +145,13 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
 
     // Set max and permanent alienation score
-    context.system.alienationScore.max = context.system.abilities.wis.value
-    context.system.alienationScore.permanent = 0;
+    console.info(context.system)
+    context.system.alienationScore.max = context.system.abilities.wis.value + context.system.alienationScore.maxModifier
+    context.system.alienationScore.permanent = context.system.alienationScore.permanentModifier;
 
     // Set stowed and readied items
-    context.system.encumbrance.stowed.max = context.system.abilities.str.value;
-    context.system.encumbrance.readied.max = Math.floor(context.system.abilities.str.value / 2);
+    context.system.encumbrance.stowed.max = context.system.abilities.str.value + context.system.encumbrance.stowed.maxBonus;
+    context.system.encumbrance.readied.max = Math.floor(context.system.abilities.str.value / 2) + context.system.encumbrance.readied.maxBonus;
     context.system.encumbrance.stowed.value = 0;
     context.system.encumbrance.readied.value = 0;
 
@@ -187,7 +188,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     // Calculate maintenance score
     const fixSkill = context.skill.find(skill => skill.name.toLowerCase() === "fix");
     if (fixSkill) {
-      context.system.maintenanceScore.max = (context.system.abilities['int'].mod + context.system.abilities['con'].mod) + (3 * fixSkill.system.level);
+      // Floor the value to 0 if fix is -1 or something
+      context.system.maintenanceScore.max = Math.max((context.system.abilities['int'].mod + context.system.abilities['con'].mod) + (3 * fixSkill.system.level) + context.system.maintenanceScore.maxBonus, 0);
     }
   }
 

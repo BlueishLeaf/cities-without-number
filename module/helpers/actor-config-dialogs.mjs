@@ -71,5 +71,45 @@ export const actorConfigDialogs = {
         <input type="number" name="miscMonthlyCostsInput" data-dtype="Number" value="${actorSystemData.miscMonthlyCosts}"/>
       </div>
     </div>
-  `
+  `,
+
+  stowedItems: (actorSystemData) => `
+    <div class="form-group">
+      <div class="dialog-row grid grid-2col">
+        <label for="stowedItemsBonusInput">Max Stowed Mod.: </label>
+        <input type="number" name="stowedItemsBonusInput" data-dtype="Number" value="${actorSystemData.encumbrance.stowed.maxBonus}"/>
+      </div>
+    </div>
+  `,
+
+  readiedItems: (actorSystemData) => `
+    <div class="form-group">
+      <div class="dialog-row grid grid-2col">
+        <label for="readiedItemsBonusInput">Max Readied Mod.: </label>
+        <input type="number" name="readiedItemsBonusInput" data-dtype="Number" value="${actorSystemData.encumbrance.readied.maxBonus}"/>
+      </div>
+    </div>
+  `,
+
+  maintenanceScore: (actorSystemData) => `
+    <div class="form-group">
+      <div class="dialog-row grid grid-2col">
+        <label for="maintenanceScoreBonusInput">Max Maint. Score Mod.: </label>
+        <input type="number" name="maintenanceScoreBonusInput" data-dtype="Number" value="${actorSystemData.maintenanceScore.maxBonus}"/>
+      </div>
+    </div>
+  `,
+
+  alienationScore: (actorSystemData) => `
+    <div class="form-group">
+      <div class="dialog-row grid grid-2col">
+        <label for="permanentModInput">Perm. Alien. Score Modifier: </label>
+        <input type="number" name="permanentModInput" data-dtype="Number" value="${actorSystemData.alienationScore.permanentModifier}"/>
+      </div>
+      <div class="dialog-row grid grid-2col">
+        <label for="maxModInput">Max Alien. Score Modifier: </label>
+        <input type="number" name="maxModInput" data-dtype="Number" value="${actorSystemData.alienationScore.maxModifier}"/>
+      </div>
+    </div>
+  `,
 }

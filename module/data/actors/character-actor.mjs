@@ -34,7 +34,9 @@ export default class CharacterActorData extends HumanoidActorData {
                 value: integerField(0),
                 max: integerField(10),
                 permanent: integerField(0),
-                temporary: integerField(0)
+                temporary: integerField(0),
+                maxModifier: decimalField(0),
+                permanentModifier: decimalField(0),
             }),
             savingThrows: new fields.SchemaField({
                 physical: savingThrowField("Physical", 10),
