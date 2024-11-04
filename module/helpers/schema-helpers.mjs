@@ -3,7 +3,15 @@ const fields = foundry.data.fields;
 export function resourceField(initialValue, maxValue) {
     return new fields.SchemaField({
         value: integerField(initialValue),
+        max: integerField(maxValue)
+    });
+}
+
+export function computedResourceField(initialValue, maxValue) {
+    return new fields.SchemaField({
+        value: integerField(initialValue),
         max: integerField(maxValue),
+        maxBonus: integerField(0)
     });
 }
 

@@ -1,5 +1,5 @@
 import {
-    abilityField,
+    abilityField, computedResourceField,
     decimalField,
     integerField,
     resourceField,
@@ -43,8 +43,8 @@ export default class CharacterActorData extends HumanoidActorData {
                 luck: savingThrowField("Luck", 10),
             }),
             encumbrance: new fields.SchemaField({
-                stowed: resourceField(0, 0),
-                readied: resourceField(0, 0),
+                stowed: computedResourceField(0, 0),
+                readied: computedResourceField(0, 0),
             }),
             level: integerField(1),
             xp: new fields.SchemaField({
@@ -56,7 +56,7 @@ export default class CharacterActorData extends HumanoidActorData {
             money: integerField(0),
             languages: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
             goals: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
-            maintenanceScore: resourceField(0, 0),
+            maintenanceScore: computedResourceField(0, 0),
             majorInjuries: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
             lifestyle: new fields.SchemaField({
                 label: new fields.StringField({ required: false, blank: true }),
