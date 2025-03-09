@@ -1,0 +1,96 @@
+@import url(../utils/_colors.scss);
+@import url(../utils/_mixins.scss);
+
+.ac-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid $border-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 120px;
+
+  &.melee {
+    @include neon-border($neon-red);
+  }
+
+  &.ranged {
+    @include neon-border($neon-cyan);
+  }
+
+  &.trauma {
+    @include neon-border($neon-yellow);
+  }
+}
+
+.ac-icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px; /* Prevent shrinking */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &.melee {
+    @include neon-icon($neon-red);
+  }
+
+  &.ranged {
+    @include neon-icon($neon-cyan);
+  }
+
+  &.trauma {
+    @include neon-icon($neon-yellow);
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    svg.icon-default {
+      display: none;
+    }
+
+    svg.icon-cog {
+      display: block;
+    }
+  }
+
+  svg {
+    &.icon-default, &.icon-cog {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    &.icon-cog {
+      display: none;
+    }
+  }
+}
+
+.ac-value {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: help;
+
+  &.melee {
+    @include neon-glow($neon-red);
+  }
+
+  &.ranged {
+    @include neon-glow($neon-cyan);
+  }
+
+  &.trauma {
+    @include neon-glow($neon-yellow);
+  }
+}

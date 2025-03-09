@@ -1,13 +1,29 @@
-.window-app {
-  font-family: $font-primary;
-}
+@import url(../utils/_typography.scss);;
+@import url(../utils/_colors.scss);
 
-.rollable, .expandable, .configurable, .list-item-create {
-  &:hover,
-  &:focus {
-    color: #000;
-    text-shadow: 0 0 10px red;
-    cursor: pointer;
+.cwn.sheet {
+  font-family: $font-primary;
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    border: 1px solid $border-color;
+    position: relative;
+    background: $panel-bg none;
+    color: $c-white;
+    overflow: visible;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, $neon-cyan, $neon-magenta, $neon-cyan);
+    }
   }
 }
 
@@ -19,3 +35,4 @@
 .max-height {
   height: 100%;
 }
+

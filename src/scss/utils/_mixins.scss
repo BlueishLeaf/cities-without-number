@@ -1,16 +1,18 @@
-@mixin element-invisible {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@mixin neon-glow($color) {
+  color: white;
+  text-shadow: 0 0 5px $color, 0 0 10px $color;
 }
 
-@mixin hide {
-  display: none;
+@mixin neon-border($color) {
+  border-left: 3px solid $color;
+}
+
+@mixin neon-icon($color) {
+  background-color: rgba($color, 0.2);
+  border: 2px solid $color;
+  box-shadow: 0 0 8px $color;
+
+  svg {
+    stroke: $color;
+  }
 }

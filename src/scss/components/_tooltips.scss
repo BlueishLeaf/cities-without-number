@@ -1,0 +1,130 @@
+@import url(../utils/_colors.scss);
+@import url(../utils/_mixins.scss);
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: visible;
+
+  .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    line-height: 1.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid $border-color;
+
+    &.melee {
+      @include neon-border($neon-red);
+    }
+
+    &.ranged {
+      @include neon-border($neon-cyan);
+    }
+
+    &.trauma {
+      @include neon-border($neon-yellow);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+    }
+  }
+
+  &:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &.melee {
+    color: $neon-red;
+  }
+
+  &.ranged {
+    color: $neon-cyan;
+  }
+
+  &.trauma {
+    color: $neon-yellow;
+  }
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.tooltip-label {
+  color: #cccccc;
+}
+
+.tooltip-value {
+  font-weight: bold;
+
+  &.positive {
+    color: $neon-green;
+  }
+
+  &.negative {
+    color: $neon-red;
+  }
+}
+
+.tooltip-total {
+  margin-top: 5px;
+  border-top: 1px dashed #333;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltip-total-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.tooltip-total-value {
+  font-weight: bold;
+  font-size: 14px;
+
+  &.melee {
+    color: $neon-red;
+  }
+
+  &.ranged {
+    color: $neon-cyan;
+  }
+
+  &.trauma {
+    color: $neon-yellow;
+  }
+}

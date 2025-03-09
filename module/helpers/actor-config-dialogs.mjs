@@ -43,6 +43,15 @@ export const actorConfigDialogs = {
     </div>
   `,
 
+  experience: (actorSystemData) => `
+    <div class="form-group">
+      <div class="dialog-row grid grid-2col">
+        <label for="nextLevelXPInput">Next Level XP: </label>
+        <input type="number" name="nextLevelXPInput" data-dtype="Number" value="${actorSystemData.xp.nextLevel}"/>
+      </div>
+    </div>
+  `,
+
   lifestyle: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
