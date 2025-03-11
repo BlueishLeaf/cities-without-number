@@ -36,22 +36,13 @@
         <label class="resource-label">Effect Summary</label>
         <input type="text" name="system.effect" value="{{system.effect}}" data-dtype="String"/>
       </div>
-      <div class="heading-resource">
-        <label class="resource-label checkbox-offset">Defective</label>
-        <input type="checkbox" name="system.isDefective" {{isChecked system.isDefective}}/>
-      </div>
-      {{#if system.isDefective}}
-        <div class="resource">
-          <label class="resource-label">Defect Summary</label>
-          <input type="text" name="system.defect" value="{{system.defect}}" data-dtype="String"/>
-        </div>
-      {{/if}}
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="complications">Complications</a>
     {{#isSettingEnabled "useCyberAlienation"}}
       <a class="item" data-tab="cyber-alienation">Cyber Alienation</a>
     {{/isSettingEnabled}}
@@ -65,9 +56,14 @@
       {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
     </div>
 
+    {{!-- Complications Tab --}}
+    <div class="tab" data-group="primary" data-tab="complications">
+        {{> "systems/cities-without-number/templates/item/item-cyberware-implant-complications.hbs"}}
+    </div>
+
     {{!-- Chrome Syndromes Tab --}}
     <div class="tab" data-group="primary" data-tab="cyber-alienation">
-      {{> "systems/cities-without-number/templates/item/item-cyberwear-cyber-alienation.hbs"}}
+      {{> "systems/cities-without-number/templates/item/item-cyberware-cyber-alienation.hbs"}}
     </div>
 
     {{!-- Mods Tab --}}

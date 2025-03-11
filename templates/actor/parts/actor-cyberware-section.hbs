@@ -17,9 +17,13 @@
           <a class="rollable" data-roll-type="cyberware"><img class="rollable-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
         <h4 class="expandable">{{item.name}}
-          {{#if item.system.isDefective}}<i title="This cyberware is defective!" class="item-text-warning fas fa-triangle-exclamation"></i>{{/if}}
+          {{#if item.system.implantComplications}}
+              <i title="This cyberware has complications!" class="item-text-warning fas fa-triangle-exclamation"></i>
+          {{/if}}
           {{#isSettingEnabled "useCyberAlienation"}}
-            {{#if item.system.chromeSyndromes}}<i title="This cyberware is inducing chrome syndromes!" class="item-text-syndrome fas fa-skull"></i>{{/if}}
+            {{#if item.system.chromeSyndromes}}
+                <i title="This cyberware is inducing chrome syndromes!" class="item-text-syndrome fas fa-skull"></i>
+            {{/if}}
           {{/isSettingEnabled}}
         </h4>
 
@@ -41,14 +45,16 @@
       </div>
     </li>
     <div class="item-description hidden">
-      {{#if item.system.isDefective}}
-        <h4 class="item-text-warning"><b>{{item.system.defect}}</b></h4>
-        <hr>
-      {{/if}}
+        {{#if item.system.implantComplications}}
+            {{#each item.system.implantComplications as |complicationId id|}}
+                {{#formatChromeDefect complicationId ../../implantComplication "item-text-warning"}}{{/formatChromeDefect}}
+            {{/each}}
+            <hr>
+        {{/if}}
       {{#isSettingEnabled "useCyberAlienation"}}
         {{#if item.system.chromeSyndromes}}
           {{#each item.system.chromeSyndromes as |syndromeId id|}}
-            {{#formatChromeSyndrome syndromeId ../../chromeSyndrome}}{{/formatChromeSyndrome}}
+            {{#formatChromeDefect syndromeId ../../chromeSyndrome "item-text-syndrome"}}{{/formatChromeDefect}}
           {{/each}}
           <hr>
         {{/if}}

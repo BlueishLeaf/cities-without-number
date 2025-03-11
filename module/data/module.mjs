@@ -24,3 +24,4 @@ export {default as VehicleFittingItemData} from "./items/vehicle-fitting-item.mj
 export {default as VerbItemData} from "./items/verb-item.mjs";
 export {default as WeaponItemData} from "./items/weapon-item.mjs";
 export {default as ChromeSyndromeItemData} from "./items/chrome-syndrome-item.mjs";
+export {default as ImplantComplicationItemData} from "./items/implant-complication-item.mjs";

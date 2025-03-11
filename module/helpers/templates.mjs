@@ -7,7 +7,8 @@ export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
     // Actor partials.
     "systems/cities-without-number/templates/shared/document-mods.hbs",
-    "systems/cities-without-number/templates/item/item-cyberwear-cyber-alienation.hbs",
+    "systems/cities-without-number/templates/item/item-cyberware-implant-complications.hbs",
+    "systems/cities-without-number/templates/item/item-cyberware-cyber-alienation.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-skills.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-character-skills.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-drone-skills.hbs",

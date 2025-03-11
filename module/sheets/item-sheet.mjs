@@ -51,6 +51,12 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
         .map(id => this.actor.items.get(id))
         .sort((a, b) => a.sort - b.sort);
     }
+    // Populate implant complications if applicable
+    if (itemData.system.implantComplications) {
+      context.implantComplication = itemData.system.implantComplications
+          .map(id => this.actor.items.get(id))
+          .sort((a, b) => a.sort - b.sort);
+    }
     // Populate chrome syndromes if applicable
     if (itemData.system.chromeSyndromes) {
       context.chromeSyndrome = itemData.system.chromeSyndromes
@@ -118,6 +124,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
       if (this.item.system.mods && item.type === "mod") {
         childCollection = this.item.system.mods;
         systemUpdate = { mods: childCollection };
+      } else if (this.item.system.implantComplications && item.type === "implantComplication") {
+        childCollection = this.item.system.implantComplications;
+        systemUpdate = { implantComplications: childCollection };
       } else if (this.item.system.chromeSyndromes && item.type === "chromeSyndrome") {
         childCollection = this.item.system.chromeSyndromes;
         systemUpdate = { chromeSyndromes: childCollection };
@@ -220,6 +229,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     if (this.item.system.mods && itemData[0].type === "mod") {
       childCollection = this.item.system.mods;
       systemUpdate = { mods: this.item.system.mods };
+    } else if (this.item.system.implantComplications && itemData[0].type === "implantComplication") {
+      childCollection = this.item.system.implantComplications;
+      systemUpdate = { implantComplications: this.item.system.implantComplications };
     } else if (this.item.system.chromeSyndromes && itemData[0].type === "chromeSyndrome") {
       childCollection = this.item.system.chromeSyndromes;
       systemUpdate = { chromeSyndromes: this.item.system.chromeSyndromes };
@@ -307,6 +319,9 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     if (this.item.system.mods && createdItem.type === "mod") {
       childCollection = this.item.system.mods;
       systemUpdate = { mods: childCollection };
+    } else if (this.item.system.implantComplications && createdItem.type === "implantComplication") {
+      childCollection = this.item.system.implantComplications;
+      systemUpdate = { implantComplications: childCollection };
     } else if (this.item.system.chromeSyndromes && createdItem.type === "chromeSyndrome") {
       childCollection = this.item.system.chromeSyndromes;
       systemUpdate = { chromeSyndromes: childCollection };

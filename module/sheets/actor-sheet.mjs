@@ -83,7 +83,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     const itemData = item.toObject();
 
     // Ignore mods and other items that are supposed to be attached to a child item
-    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "chrome-syndrome", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
+    if (!["drone", "vehicle", "server"].includes(this.actor.type) && ["mod", "implant-complication", "chrome-syndrome", "verb", "subject", "node", "demon"].includes(itemData.type)) return;
 
     // Handle item sorting within the same Actor
     if (this.actor.uuid === item.parent?.uuid) return this._onSortItem(event, itemData);
@@ -155,6 +155,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.system.encumbrance.stowed.value = 0;
     context.system.encumbrance.readied.value = 0;
 
+    context.implantComplication = [];
     context.chromeSyndrome = [];
 
     context.items.forEach(item => {
@@ -176,6 +177,15 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
             if (syndrome) {
               context.system.alienationScore.max += syndrome.system.maxAlienationMod;
               context.chromeSyndrome.push(syndrome);
+            }
+          });
+        }
+
+        if (item.system.implantComplications) {
+          item.system.implantComplications.forEach(id => {
+            const complication = this.actor.items.get(id);
+            if (complication) {
+              context.implantComplication.push(complication);
             }
           });
         }
