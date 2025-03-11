@@ -16,8 +16,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["cwn", "sheet", "actor"],
       template: "systems/cities-without-number/templates/actor/actor-sheet.hbs",
-      width: 800,
-      height: 700,
+      width: 650,
+      height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats" }]
     });
   }
@@ -57,7 +57,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     this._prepareItems(context);
     switch (actorType) {
       case "character":
-        this._prepareStatusBars(context);
         this._prepareCyber(context);
         this._prepareCharacterData(context);
         this._prepareBiographyData(context);
@@ -146,7 +145,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     }
 
     // Set max and permanent alienation score
-    console.info("Rehydrating context", context.system);
+    console.info(context.system)
     context.system.alienationScore.max = context.system.abilities.wis.value + context.system.alienationScore.maxModifier
     context.system.alienationScore.permanent = context.system.alienationScore.permanentModifier;
 
@@ -276,97 +275,6 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
     context.goals = context.system.goals;
     context.languages = context.system.languages;
     context.totalMonthlyCost = context.cyberwareMaintenanceCost + context.system.lifestyle.monthlyCost + context.system.miscMonthlyCosts;
-  }
-
-  _prepareStatusBars(context) {
-    this._updateHPBarPercentage(context);
-    this._updateDamageSoakBarPercentage(context);
-    this._updateSystemStrainBarPercentage(context);
-    this._updateXPBarPercentage(context);
-  }
-
-  _updateHPBarPercentage(context) {
-    // Only update if there's a valid value
-    if (context.system.health.value === '' || isNaN(parseInt(context.system.health.value))) {
-      context.system.health.percentage = 0;
-      return; // Don't update if empty or not a number
-    }
-
-    const currentValue = parseInt(context.system.health.value);
-    const maxValue = context.system.health.max;
-
-    const percentage = Math.max(0, Math.min(100, (currentValue / maxValue) * 100));
-    context.system.health.percentage = `${percentage}%`;
-
-    // Ensure value stays within bounds
-    if (currentValue > maxValue) {
-      context.system.health.value = maxValue;
-    } else if (currentValue < 0) {
-      context.system.health.value = 0;
-    }
-  }
-
-  _updateDamageSoakBarPercentage(context) {
-    // Only update if there's a valid value
-    if (context.system.damageSoak.value === '' || isNaN(parseInt(context.system.damageSoak.value))) {
-      context.system.damageSoak.percentage = 0;
-      return; // Don't update if empty or not a number
-    }
-
-    const currentValue = parseInt(context.system.damageSoak.value);
-    const maxValue = context.system.damageSoak.max;
-
-    const percentage = Math.max(0, Math.min(100, (currentValue / maxValue) * 100));
-    context.system.damageSoak.percentage = `${percentage}%`;
-
-    // Ensure value stays within bounds
-    if (currentValue > maxValue) {
-      context.system.damageSoak.value = maxValue;
-    } else if (currentValue < 0) {
-      context.system.damageSoak.value = 0;
-    }
-  }
-
-  _updateSystemStrainBarPercentage(context) {
-    // Only update if there's a valid value
-    if (context.system.systemStrain.value === '' || isNaN(parseInt(context.system.systemStrain.value))) {
-      context.system.systemStrain.percentage = 0;
-      return; // Don't update if empty or not a number
-    }
-
-    const currentValue = parseInt(context.system.systemStrain.value);
-    const maxValue = context.system.systemStrain.max;
-
-    const percentage = Math.max(0, Math.min(100, (currentValue / maxValue) * 100));
-    context.system.systemStrain.percentage = `${percentage}%`;
-
-    // Ensure value stays within bounds
-    if (currentValue > maxValue) {
-      context.system.systemStrain.value = maxValue;
-    } else if (currentValue < 0) {
-      context.system.systemStrain.value = 0;
-    }
-  }
-
-  _updateXPBarPercentage(context) {
-    // Only update if there's a valid value
-    if (context.system.xp.value === '' || isNaN(parseInt(context.system.xp.value))) {
-      context.system.xp.percentage = 0;
-      return; // Don't update if empty or not a number
-    }
-
-    const currentValue = parseInt(context.system.xp.value);
-    const maxValue = context.system.xp.nextLevel;
-
-    const percentage = Math.max(0, Math.min(100, (currentValue / maxValue) * 100));
-    context.system.xp.percentage = `${percentage}%`;
-
-    // Ensure value stays within bounds
-    if (currentValue > maxValue) {
-      context.system.xp.value = maxValue;
-    } else if (currentValue < 0) {
-      context.system.xp.value = 0;
-    }
   }
 
   /* -------------------------------------------- */

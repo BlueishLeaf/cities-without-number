@@ -13,7 +13,6 @@ export const preloadHandlebarsTemplates = async function() {
     "systems/cities-without-number/templates/actor/parts/actor-drone-skills.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-weapons.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-inventory.hbs",
-    "systems/cities-without-number/templates/actor/parts/actor-character-header.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-character-equipment.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-humanoid-equipment.hbs",
     "systems/cities-without-number/templates/actor/parts/actor-drone-equipment.hbs",

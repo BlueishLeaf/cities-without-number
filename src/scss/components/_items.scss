@@ -1,6 +1,3 @@
-@import url(../utils/_colors.scss);
-
-
 // Section Header
 .items-header {
   height: 28px;
@@ -41,7 +38,7 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: $c-white;
+  color: $c-tan;
 
   // Child lists
   .item-list {
@@ -97,7 +94,7 @@
     border-bottom: 1px solid $c-faint;
     &:last-child { border-bottom: none; }
     .item-name {
-      color: $c-white;
+      color: $c-dark;
       .item-image {
         flex: 0 0 30px;
         height: 30px;

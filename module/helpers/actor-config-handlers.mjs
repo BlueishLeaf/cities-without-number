@@ -32,14 +32,6 @@ export const actorConfigHandlers = {
     Actor.updateDocuments([{ _id: actor._id, system: { traumaTarget } }]).then(updatedActor => console.log("Updated actor", updatedActor));
   },
 
-  experience: (actor, html) => {
-    const newNextLevelXP = html.find('[name="nextLevelXPInput"]').val();
-    const xp = {
-      nextLevel: newNextLevelXP
-    };
-    Actor.updateDocuments([{ _id: actor._id, system: { xp } }]).then(updatedActor => console.log("Updated actor", updatedActor));
-  },
-
   lifestyle: (actor, html) => {
     const monthlyCost = html.find('[name="monthlyCostInput"]').val();
     const systemStrainMod = html.find('[name="systemStrainModInput"]').val();
