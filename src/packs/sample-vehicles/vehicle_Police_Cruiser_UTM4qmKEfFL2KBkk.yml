@@ -45,10 +45,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.5
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1694265254
   modifiedTime: 1721770504995
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 items:
   - _id: Ft0j7WwTKGEM92E3
     name: Afterburners
@@ -75,10 +77,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338573595
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.79kSGAr0Ri7K5bRf
+      duplicateSource: null
     _key: '!actors.items!UTM4qmKEfFL2KBkk.Ft0j7WwTKGEM92E3'
   - _id: L6hkEooQ00cFlecb
     name: Armor Plating
@@ -105,10 +109,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338578570
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.Q534Uw7jqxdwJdng
+      duplicateSource: null
     _key: '!actors.items!UTM4qmKEfFL2KBkk.L6hkEooQ00cFlecb'
   - _id: Naf7IFYIAesRhhxk
     name: Cargo Space
@@ -136,10 +142,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338582653
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+      duplicateSource: null
     _key: '!actors.items!UTM4qmKEfFL2KBkk.Naf7IFYIAesRhhxk'
   - _id: HMKw410sB787k1pR
     name: Crash Pod
@@ -167,10 +175,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338589102
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.sS0wihdBXSSAHiyP
+      duplicateSource: null
     _key: '!actors.items!UTM4qmKEfFL2KBkk.HMKw410sB787k1pR'
 prototypeToken:
   name: Police Cruiser
@@ -185,6 +195,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -215,6 +230,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -224,8 +242,21 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 _key: '!actors!UTM4qmKEfFL2KBkk'
 

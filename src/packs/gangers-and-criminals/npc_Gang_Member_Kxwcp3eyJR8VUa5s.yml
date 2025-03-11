@@ -37,10 +37,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717099910655
   modifiedTime: 1717445150059
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: Kxwcp3eyJR8VUa5s
 items:
@@ -99,10 +101,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445073302
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.SCHv666Ny55t2APp'
   - _id: 1olCpT0h3lCnTOtl
     name: Knife
@@ -161,10 +165,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445076261
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.GrdKLOMDMWxkYTL3
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.1olCpT0h3lCnTOtl'
   - _id: jeULMztuBZz4OLjM
     name: Street Leathers
@@ -202,10 +209,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445079981
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.7XJjMrOYzvkraVYe
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.jeULMztuBZz4OLjM'
   - _id: MakaGOdwwLUvML6Q
     name: Body Blades I
@@ -265,10 +274,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445084869
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.5cCPU9VqwzAwZLVG
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.MakaGOdwwLUvML6Q'
   - _id: YJsZdtVbRnnA4fJd
     name: Body Blades I
@@ -305,10 +317,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445089919
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.AUeZHyKIfCqbqYD3
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.YJsZdtVbRnnA4fJd'
   - _id: S9UQk5OHQ4e4EUsW
     name: Cybereyes (pair)
@@ -347,10 +361,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445095993
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.S9UQk5OHQ4e4EUsW'
   - _id: DDRbclhMvRfpi1O7
     name: Eye Mod/Infrared Vision
@@ -387,10 +403,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445105682
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.CVd1Y2oIbfOvJxkX
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.DDRbclhMvRfpi1O7'
   - _id: RnLOgYoixpMerCDD
     name: Gunlink
@@ -427,10 +445,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445109869
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.RnLOgYoixpMerCDD'
   - _id: foQIHyt5xGLz6T4x
     name: Shock Fists
@@ -466,10 +486,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445114865
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.ppBcNwIG2nim0V00
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.foQIHyt5xGLz6T4x'
   - _id: qHXPMhrNce143SFN
     name: Shock Fists
@@ -523,10 +545,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445150059
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.NsILrYHi7I0Qypcb
+      duplicateSource: null
     _key: '!actors.items!Kxwcp3eyJR8VUa5s.qHXPMhrNce143SFN'
 prototypeToken:
   name: Gang Member
@@ -541,6 +566,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -571,6 +601,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -580,9 +613,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

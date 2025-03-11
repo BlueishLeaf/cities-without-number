@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717099967795
   modifiedTime: 1717445033360
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: UFKLoqjVBGNq8sR0
 items:
@@ -77,10 +79,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444836396
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.3hxao9U3pCliYiFW
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.gCet7Ku3r7HuBCGm'
   - _id: abAcqbiUnydV6pu9
     name: Light Pistol
@@ -137,10 +141,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444843228
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.apOpDD67EelbF5yE
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.abAcqbiUnydV6pu9'
   - _id: WQsFUFrE27Yb4VSn
     name: Grenade, Flash
@@ -199,10 +205,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444868061
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.WQsFUFrE27Yb4VSn'
   - _id: VvyZIxfy61JEyP5Q
     name: Grenade, Frag
@@ -260,10 +269,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444889160
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.ywbzv2FPnELtOe37
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.VvyZIxfy61JEyP5Q'
   - _id: 48UGaSfI4JNyHN4l
     name: Body Blades II
@@ -300,10 +312,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444932318
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.U2aJw0BO8PaejjJU
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.48UGaSfI4JNyHN4l'
   - _id: DPbbi8EK2wzCeYoY
     name: Body Blades II
@@ -363,10 +377,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444951977
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.EpbDNwKGxjkHvLGw
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.DPbbi8EK2wzCeYoY'
   - _id: PY8Q0hLSVJOAKlSR
     name: Coordination Augment II
@@ -399,10 +416,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444956951
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AK797cDZAi07OwyF
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.PY8Q0hLSVJOAKlSR'
   - _id: jeOdILqZeCLU9iWO
     name: Cyberears (pair)
@@ -439,10 +458,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444961609
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.qEgldPJIsgRa7GSc
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.jeOdILqZeCLU9iWO'
   - _id: WQcnA8TcOy1YcEhe
     name: Cybereyes (pair)
@@ -481,10 +502,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444966130
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.WQcnA8TcOy1YcEhe'
   - _id: wzj0c8T0V6sQPYrx
     name: Dermal Armor III
@@ -518,10 +541,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444970997
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-skin.Item.xkGCRaNj67X9au7Q
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.wzj0c8T0V6sQPYrx'
   - _id: qemP3yfb8aQ1bhQk
     name: Ear Mod/Positional Detection
@@ -558,10 +583,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444990369
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.qpUJhjY7hbn9Y5IE
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.qemP3yfb8aQ1bhQk'
   - _id: AYEauau83jl1wKmZ
     name: Eye Mod/Low Light Vision
@@ -595,10 +622,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444995482
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.719NAbN2y1yqPKQD
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.AYEauau83jl1wKmZ'
   - _id: 6M98OWDqVhWDCRMD
     name: Enhanced Reflexes III
@@ -633,10 +662,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444999870
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.U2MM3cPN8HF9h7KU
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.6M98OWDqVhWDCRMD'
   - _id: frH6YFAEtFaRc7L8
     name: Iron Hand Aegis
@@ -673,10 +704,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445004126
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.aRCMmWhXpzx0i0Tr
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.frH6YFAEtFaRc7L8'
   - _id: R5Fw9qVz0pY8EDf4
     name: Muscle Fiber Replacement II
@@ -709,10 +742,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445009134
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.YmTEQuvCITXbiuVi
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.R5Fw9qVz0pY8EDf4'
   - _id: g8YoS3gyhWzdN0jM
     name: Reaction Booster II
@@ -747,10 +782,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445013996
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.ZMTyA1G1JUgL1WST
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.g8YoS3gyhWzdN0jM'
   - _id: 0ERdjP9etw8gV3Da
     name: Stick Pads
@@ -785,10 +822,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445016743
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.0ERdjP9etw8gV3Da'
   - _id: FM8Cu2rQzlBtVRV7
     name: Killing Blow
@@ -814,10 +853,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445020861
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.RUs83jpRay5tOVON
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.FM8Cu2rQzlBtVRV7'
   - _id: gsQFRu2VedBxVTdk
     name: Veteran's Luck
@@ -845,10 +886,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445027405
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.gsQFRu2VedBxVTdk'
   - _id: GJbRg73wSrPsVq1h
     name: Armsmaster
@@ -881,10 +924,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445033360
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.LaZxFrU699w9wBnE
+      duplicateSource: null
     _key: '!actors.items!UFKLoqjVBGNq8sR0.GJbRg73wSrPsVq1h'
 prototypeToken:
   name: Megacorp CEO's Personal Guard
@@ -899,6 +944,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -929,6 +979,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -938,9 +991,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

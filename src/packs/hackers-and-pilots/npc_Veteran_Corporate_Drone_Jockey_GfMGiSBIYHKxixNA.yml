@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717103806052
   modifiedTime: 1717446839567
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: GfMGiSBIYHKxixNA
 items:
@@ -77,10 +79,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446789399
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.iJOLoJSR3gqRo2YW
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.81p54lhZh9rCxBQv'
   - _id: tIk0977LAFxpQBXQ
     name: Combat Rifle
@@ -136,10 +140,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446832786
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.kHj6UQw8t0yqkQBj
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.tIk0977LAFxpQBXQ'
   - _id: Rz6jFei26d0p4aaZ
     name: Advanced Knife
@@ -208,10 +214,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446839567
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.Rz6jFei26d0p4aaZ'
   - _id: yo3DfdS5Z2auI7rm
     name: Coordination Augment I
@@ -244,10 +253,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446805287
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AQMhN551ghGnPTzI
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.yo3DfdS5Z2auI7rm'
   - _id: m4g6ZTqSnTtP5A2W
     name: Cybereyes (pair)
@@ -286,10 +297,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446811566
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.m4g6ZTqSnTtP5A2W'
   - _id: jPSB0GEUjytkei1F
     name: Enhanced Reflexes I
@@ -323,10 +336,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446814150
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.jPSB0GEUjytkei1F'
   - _id: EOYLAqFy0dNzgCeV
     name: Gunlink
@@ -363,10 +378,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446818174
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.EOYLAqFy0dNzgCeV'
   - _id: XvQBRiRVmHVnS2Eg
     name: Remote Control Unit
@@ -399,10 +416,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446820951
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.80mBx69PMbKGC8KI
+      duplicateSource: null
     _key: '!actors.items!GfMGiSBIYHKxixNA.XvQBRiRVmHVnS2Eg'
 prototypeToken:
   name: Veteran Corporate Drone Jockey
@@ -417,6 +436,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -447,6 +471,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -456,9 +483,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

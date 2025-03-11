@@ -1,0 +1,27 @@
+name: Power Hungry
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>The user needs to supplement the system by plugging into an urban power
+    grid or vehicle power port for a half-hour each day. Without this, the
+    system goes inert until re-powered.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721812029
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: MxCJjilEY2KnLfRo
+sort: 300000
+_key: '!items!MxCJjilEY2KnLfRo'
+

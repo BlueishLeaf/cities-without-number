@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717099512620
   modifiedTime: 1717444810102
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: Ox8Y2IH6259B3MjM
 items:
@@ -73,10 +75,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444721531
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AK797cDZAi07OwyF
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.DjVNiDfMT4fodoIl'
   - _id: xXNxKX72GhjtJaWt
     name: Cybereyes (pair)
@@ -115,10 +119,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444725207
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.xXNxKX72GhjtJaWt'
   - _id: gDEcnCbivOugMwyi
     name: Ehanced Reflexes II
@@ -153,10 +159,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444733584
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.85A9Gx8zeOLYICuQ
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.gDEcnCbivOugMwyi'
   - _id: 2Yn8JHSwQoGb1YWo
     name: Eye Mod/Infrared Vision
@@ -193,10 +201,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444739006
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.CVd1Y2oIbfOvJxkX
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.2Yn8JHSwQoGb1YWo'
   - _id: yYDb7Oh0qd4fVi5A
     name: Gunlink
@@ -233,10 +243,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444743731
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.yYDb7Oh0qd4fVi5A'
   - _id: peDK0AE1yHOlJIlP
     name: Stick Pads
@@ -271,10 +283,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444748064
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.peDK0AE1yHOlJIlP'
   - _id: aC2N05wGLifbQdzA
     name: Veteran's Luck
@@ -302,10 +316,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444751777
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.aC2N05wGLifbQdzA'
   - _id: 3bXuHg0KqctAfmBs
     name: Deadeye
@@ -343,10 +359,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444758493
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.lguRKLCAC7HihF5H
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.3bXuHg0KqctAfmBs'
   - _id: alhdjrVn7yAU9oHQ
     name: Medium Armored Suit
@@ -383,10 +401,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444764660
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.iJOLoJSR3gqRo2YW
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.alhdjrVn7yAU9oHQ'
   - _id: AivFK1JqKaEq1BwC
     name: Modded Sniper Rifle
@@ -442,10 +462,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444792538
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.Zd43hAtjrmJOA5uE
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.AivFK1JqKaEq1BwC'
   - _id: x1Zd4rMB3hYmsg46
     name: Heavy Pistol
@@ -502,10 +524,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444800332
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.x1Zd4rMB3hYmsg46'
   - _id: U9TiHcWPDJDx2dNG
     name: Advanced Knife
@@ -574,10 +598,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444810102
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+      duplicateSource: null
     _key: '!actors.items!Ox8Y2IH6259B3MjM.U9TiHcWPDJDx2dNG'
 prototypeToken:
   name: Corp or LEO Elite Sniper
@@ -592,6 +619,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -622,6 +654,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -631,9 +666,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717099324098
   modifiedTime: 1717444920623
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: T1ILqrUWba7h4rpE
 items:
@@ -77,10 +79,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444588048
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.U2aJw0BO8PaejjJU
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.QwI4lc57BQ28h12I'
   - _id: 9sV5hG15hjEQjSL7
     name: Body Blades II
@@ -140,10 +144,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444857935
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.EpbDNwKGxjkHvLGw
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.9sV5hG15hjEQjSL7'
   - _id: nJFYdPkEFQsPibbQ
     name: Cybereyes (pair)
@@ -182,10 +189,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444600347
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.nJFYdPkEFQsPibbQ'
   - _id: w37HMCg04Ud4R32B
     name: Eye Mod/Low Light Vision
@@ -219,10 +228,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444607575
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.719NAbN2y1yqPKQD
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.w37HMCg04Ud4R32B'
   - _id: 8dUnkF4bX0eFPVTA
     name: Ehanced Reflexes II
@@ -257,10 +268,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444615848
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.85A9Gx8zeOLYICuQ
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.8dUnkF4bX0eFPVTA'
   - _id: JUouxDrN63YUkeVO
     name: Muscle Fiber Replacement II
@@ -293,10 +306,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444620954
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.YmTEQuvCITXbiuVi
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.JUouxDrN63YUkeVO'
   - _id: PJVVgLoefNN9w1a5
     name: Stick Pads
@@ -331,10 +346,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444624157
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.PJVVgLoefNN9w1a5'
   - _id: OvJM3bweMTPJD6Y8
     name: Veteran's Luck
@@ -362,10 +379,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444630458
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.OvJM3bweMTPJD6Y8'
   - _id: Q4Haj1LiJk79IynB
     name: Armsmaster
@@ -398,10 +417,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444639366
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.LaZxFrU699w9wBnE
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.Q4Haj1LiJk79IynB'
   - _id: 3R59OkosvQiXx71H
     name: Heavy Armored Suit
@@ -439,10 +460,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444693496
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.W2Vr0ReXPLKmaJOO
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.3R59OkosvQiXx71H'
   - _id: u3y2okKltbV5awmG
     name: Grenade, Flash
@@ -501,10 +524,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444857935
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.u3y2okKltbV5awmG'
   - _id: nhlTfcc0m2bkpA60
     name: Combat Shotgun
@@ -564,10 +590,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444857935
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.EA8Ct4TndRPSHIoo
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.nhlTfcc0m2bkpA60'
   - _id: my2GncrUVlb0WXsg
     name: Grenade, Frag
@@ -625,10 +653,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444920623
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.ywbzv2FPnELtOe37
+      duplicateSource: null
     _key: '!actors.items!T1ILqrUWba7h4rpE.my2GncrUVlb0WXsg'
 prototypeToken:
   name: Breaching Team Commander
@@ -643,6 +674,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -673,6 +709,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -682,9 +721,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

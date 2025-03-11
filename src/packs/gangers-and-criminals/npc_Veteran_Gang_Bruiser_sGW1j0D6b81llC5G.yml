@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717100771839
   modifiedTime: 1717445263925
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: sGW1j0D6b81llC5G
 items:
@@ -79,10 +81,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445238047
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.U2XkDdUdX1Zpuqid
+      duplicateSource: null
     _key: '!actors.items!sGW1j0D6b81llC5G.GKT5KGICJ9so3USL'
   - _id: t6lagbKY6ZazWIoP
     name: Heavy Pistol
@@ -139,10 +143,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445241537
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!sGW1j0D6b81llC5G.t6lagbKY6ZazWIoP'
   - _id: J8iHW14gXj74F1lh
     name: Body Blades I
@@ -202,10 +208,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445263925
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.5cCPU9VqwzAwZLVG
+      duplicateSource: null
     _key: '!actors.items!sGW1j0D6b81llC5G.J8iHW14gXj74F1lh'
   - _id: v7azGRAvxa5JZCyj
     name: Body Blades I
@@ -242,10 +251,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445249165
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.AUeZHyKIfCqbqYD3
+      duplicateSource: null
     _key: '!actors.items!sGW1j0D6b81llC5G.v7azGRAvxa5JZCyj'
   - _id: uFwIUpUcf1U7xceO
     name: Muscle Fiber Replacement I
@@ -279,10 +290,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445256292
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.m8JdqOuPPuzXU3Ru
+      duplicateSource: null
     _key: '!actors.items!sGW1j0D6b81llC5G.uFwIUpUcf1U7xceO'
 prototypeToken:
   name: Veteran Gang Bruiser
@@ -297,6 +310,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -327,6 +345,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -336,9 +357,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

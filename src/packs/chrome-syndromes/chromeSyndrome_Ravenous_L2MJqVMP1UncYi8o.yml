@@ -22,9 +22,11 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.2.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1721834681275
   modifiedTime: 1721835078115
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 _key: '!items!L2MJqVMP1UncYi8o'
 

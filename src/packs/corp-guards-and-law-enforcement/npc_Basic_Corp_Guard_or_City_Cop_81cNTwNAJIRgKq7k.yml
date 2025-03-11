@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717096324262
   modifiedTime: 1717444349272
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: 81cNTwNAJIRgKq7k
 items:
@@ -79,10 +81,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444326005
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!81cNTwNAJIRgKq7k.wRHgvG401gsOiQj7'
   - _id: vWKAi4kB2tLrmR6X
     name: Gunlink
@@ -119,10 +123,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444331531
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!81cNTwNAJIRgKq7k.vWKAi4kB2tLrmR6X'
   - _id: AVqPjmy9SrogusUA
     name: Light Armored Suit
@@ -159,10 +165,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444337404
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.xYgeQNnvKjHGwMJz
+      duplicateSource: null
     _key: '!actors.items!81cNTwNAJIRgKq7k.AVqPjmy9SrogusUA'
   - _id: QtFUoSsrBhKFNFNX
     name: Heavy Pistol
@@ -219,10 +227,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444343448
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!81cNTwNAJIRgKq7k.QtFUoSsrBhKFNFNX'
   - _id: 5nMHM693y5aPjpL9
     name: Advanced Club
@@ -291,10 +301,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444349272
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.1O5s7vOtYCoXGw18
+      duplicateSource: null
     _key: '!actors.items!81cNTwNAJIRgKq7k.5nMHM693y5aPjpL9'
 prototypeToken:
   name: Basic Corp Guard or City Cop
@@ -309,6 +322,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -339,6 +357,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -348,9 +369,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

@@ -1,0 +1,26 @@
+name: Petty Annoyance
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>It has some small quirk or deficiency of fit that causes no real problem
+    in its functionality.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721837165
+  modifiedTime: 1741721855229
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: ND3gY13bnfgcEXhT
+sort: 200000
+_key: '!items!ND3gY13bnfgcEXhT'
+

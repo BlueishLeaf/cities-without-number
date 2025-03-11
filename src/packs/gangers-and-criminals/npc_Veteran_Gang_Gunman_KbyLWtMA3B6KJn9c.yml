@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717100587589
   modifiedTime: 1717445230706
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: KbyLWtMA3B6KJn9c
 items:
@@ -78,10 +80,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445197493
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.7XJjMrOYzvkraVYe
+      duplicateSource: null
     _key: '!actors.items!KbyLWtMA3B6KJn9c.usbLX42q5NZURkuF'
   - _id: 4ytAVjvVZT3r5Xkw
     name: Combat Rifle
@@ -137,10 +141,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445214328
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.kHj6UQw8t0yqkQBj
+      duplicateSource: null
     _key: '!actors.items!KbyLWtMA3B6KJn9c.4ytAVjvVZT3r5Xkw'
   - _id: AthRBXknaOjwax8q
     name: Knife
@@ -199,10 +205,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445221188
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.GrdKLOMDMWxkYTL3
+      duplicateSource: null
     _key: '!actors.items!KbyLWtMA3B6KJn9c.AthRBXknaOjwax8q'
   - _id: zhmiXGZtVEisKmLU
     name: Coordination Augment I
@@ -235,10 +244,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445226820
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AQMhN551ghGnPTzI
+      duplicateSource: null
     _key: '!actors.items!KbyLWtMA3B6KJn9c.zhmiXGZtVEisKmLU'
   - _id: Ta8AsMYg6Y58VkL0
     name: Gunlink
@@ -275,10 +286,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445230706
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!KbyLWtMA3B6KJn9c.Ta8AsMYg6Y58VkL0'
 prototypeToken:
   name: Veteran Gang Gunman
@@ -293,6 +306,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -323,6 +341,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -332,9 +353,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

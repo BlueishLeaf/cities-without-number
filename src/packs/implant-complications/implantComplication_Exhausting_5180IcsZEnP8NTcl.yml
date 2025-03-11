@@ -1,0 +1,27 @@
+name: Exhausting
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>Maintenance on the system is exceptionally taxing. After it's done, the
+    user needs to spend 24 hours of downtime resting; if they omit this, they
+    gain 2 System Strain immediately.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721780797
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: 5180IcsZEnP8NTcl
+sort: 100000
+_key: '!items!5180IcsZEnP8NTcl'
+

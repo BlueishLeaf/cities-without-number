@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717100949482
   modifiedTime: 1717445323667
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: AmiuyvAILTmUNbJw
 items:
@@ -100,10 +102,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445323667
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.EpbDNwKGxjkHvLGw
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.c83gMgpTBT9ANaFD'
   - _id: 42sHXgvlcRxKD2kH
     name: Body Blades II
@@ -140,10 +145,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445283514
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.U2aJw0BO8PaejjJU
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.42sHXgvlcRxKD2kH'
   - _id: 4Cq5ggqwqQoIHfZe
     name: Enhanced Reflexes I
@@ -177,10 +184,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445288175
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.4Cq5ggqwqQoIHfZe'
   - _id: EzPEC9SI7QiZ1aD1
     name: Muscle Fiber Replacement I
@@ -214,10 +223,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445292133
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.m8JdqOuPPuzXU3Ru
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.EzPEC9SI7QiZ1aD1'
   - _id: 23EsIoKfg6qB9gcU
     name: Veteran's Luck
@@ -245,10 +256,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445296486
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.23EsIoKfg6qB9gcU'
   - _id: n3d5a4l8bW0OYhDJ
     name: Armsmaster
@@ -281,10 +294,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445303353
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.LaZxFrU699w9wBnE
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.n3d5a4l8bW0OYhDJ'
   - _id: 9vZHpOtke2Ow6ZVq
     name: Armored Clothing
@@ -321,10 +336,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445307883
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.u7p2N9JtUq3CRe0C
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.9vZHpOtke2Ow6ZVq'
   - _id: Pnq8Bb3jKRLSiQoS
     name: Heavy Pistol
@@ -381,10 +398,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445311939
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!AmiuyvAILTmUNbJw.Pnq8Bb3jKRLSiQoS'
 prototypeToken:
   name: Gang Lieutenant or Minor Boss
@@ -399,6 +418,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -429,6 +453,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -438,9 +465,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

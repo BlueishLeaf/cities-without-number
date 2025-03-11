@@ -45,10 +45,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.5
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1694265254
   modifiedTime: 1721770471945
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 items:
   - _id: 3jlQyKFMVb5tgY23
     name: Afterburners
@@ -75,10 +77,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338082015
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.79kSGAr0Ri7K5bRf
+      duplicateSource: null
     _key: '!actors.items!a9EChW56ucfEd5fQ.3jlQyKFMVb5tgY23'
 prototypeToken:
   name: Jansen Catalyst
@@ -93,6 +97,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -123,6 +132,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -132,8 +144,21 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 _key: '!actors!a9EChW56ucfEd5fQ'
 

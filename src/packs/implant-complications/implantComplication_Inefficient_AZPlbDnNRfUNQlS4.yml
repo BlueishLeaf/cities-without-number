@@ -1,0 +1,24 @@
+name: Inefficient
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: <p>The ware incurs an additional 0.5 System Strain cost.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721531152
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: AZPlbDnNRfUNQlS4
+sort: 1200000
+_key: '!items!AZPlbDnNRfUNQlS4'
+

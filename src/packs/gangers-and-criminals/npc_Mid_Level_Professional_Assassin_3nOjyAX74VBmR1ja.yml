@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717101292152
   modifiedTime: 1717445572227
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: 3nOjyAX74VBmR1ja
 items:
@@ -73,10 +75,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445486256
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AK797cDZAi07OwyF
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.c2uvtuMntY85Kbw9'
   - _id: 10kI5tzvF4DEozuH
     name: Cybereyes (pair)
@@ -115,10 +119,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445490521
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.10kI5tzvF4DEozuH'
   - _id: rP7peioxDLEMKLJA
     name: Ehanced Reflexes II
@@ -153,10 +159,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445497717
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.85A9Gx8zeOLYICuQ
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.rP7peioxDLEMKLJA'
   - _id: XuDqIdby1drguf7C
     name: Eye Mod/Infrared Vision
@@ -193,10 +201,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445500954
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.CVd1Y2oIbfOvJxkX
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.XuDqIdby1drguf7C'
   - _id: 3XSNcr3vWp0VGUBQ
     name: Gunlink
@@ -233,10 +243,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445504402
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.3XSNcr3vWp0VGUBQ'
   - _id: G2QlobHH2ed4isMk
     name: Stick Pads
@@ -271,10 +283,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445507729
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.G2QlobHH2ed4isMk'
   - _id: j191knjsNDpYEdhC
     name: Veteran's Luck
@@ -302,10 +316,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445512059
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.j191knjsNDpYEdhC'
   - _id: EUayD1Gr6WDsNA6q
     name: Deadeye
@@ -343,10 +359,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445516762
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.lguRKLCAC7HihF5H
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.EUayD1Gr6WDsNA6q'
   - _id: QE4OvMPZiYuADZFq
     name: Armored Clothing
@@ -383,10 +401,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445520286
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.u7p2N9JtUq3CRe0C
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.QE4OvMPZiYuADZFq'
   - _id: LVq5SMe3dgWB3cPY
     name: Modded Light Pistol
@@ -443,10 +463,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445550527
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.apOpDD67EelbF5yE
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.LVq5SMe3dgWB3cPY'
   - _id: duBjv4LNHdoCteJc
     name: Advanced Knife
@@ -515,10 +537,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445572227
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+      duplicateSource: null
     _key: '!actors.items!3nOjyAX74VBmR1ja.duBjv4LNHdoCteJc'
 prototypeToken:
   name: Mid-Level Professional Assassin
@@ -533,6 +558,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -563,6 +593,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -572,9 +605,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717101527939
   modifiedTime: 1717445751421
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: Xfn1fjWFEddTyWTz
 items:
@@ -77,10 +79,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445634846
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.u7p2N9JtUq3CRe0C
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.DohmzG9xNuo5kp76'
   - _id: H0IHUN7xf00o7Wbl
     name: Modded Light Pistol
@@ -137,10 +141,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445670989
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.apOpDD67EelbF5yE
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.H0IHUN7xf00o7Wbl'
   - _id: imLBJ8qLU3ljsHVf
     name: Advanced Knife
@@ -209,10 +215,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445659523
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.imLBJ8qLU3ljsHVf'
   - _id: JoXD7xfjkjv1aQua
     name: Coordination Augment II
@@ -245,10 +254,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445683168
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AK797cDZAi07OwyF
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.JoXD7xfjkjv1aQua'
   - _id: rmkVeVAPUkeDNAFb
     name: Cybereyes (pair)
@@ -287,10 +298,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445687523
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.rmkVeVAPUkeDNAFb'
   - _id: 2YxS8REBvOfMeAvO
     name: Cyberears (pair)
@@ -327,10 +340,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445690746
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.qEgldPJIsgRa7GSc
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.2YxS8REBvOfMeAvO'
   - _id: jv8pClfaTRjSGC4z
     name: Enhanced Reflexes III
@@ -365,10 +380,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445694930
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.U2MM3cPN8HF9h7KU
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.jv8pClfaTRjSGC4z'
   - _id: uIdKzvrYFRqaiEkB
     name: Eye Mod/Flechette Launcher
@@ -406,10 +423,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445700355
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-head.Item.GqYWXSPq67buF9Pm
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.uIdKzvrYFRqaiEkB'
   - _id: TvuX2yJ5OQVeQzC8
     name: Eye Mod/Impostor
@@ -448,10 +467,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445708311
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.bRfnboGMqaoqcK7o
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.TvuX2yJ5OQVeQzC8'
   - _id: vTHZvR8HMxz2oEsJ
     name: Eye Mod/Infrared Vision
@@ -488,10 +509,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445713677
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.CVd1Y2oIbfOvJxkX
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.vTHZvR8HMxz2oEsJ'
   - _id: b5UUaMHURKWEhTdw
     name: Eye Mod/Zoom
@@ -526,10 +549,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445721186
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AZIXuqtiFocFSD6r
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.b5UUaMHURKWEhTdw'
   - _id: 8QpiYPJQz6Csv20m
     name: Reaction Booster II
@@ -564,10 +589,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445727143
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.ZMTyA1G1JUgL1WST
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.8QpiYPJQz6Csv20m'
   - _id: WGs34eU1g4lTzVnR
     name: Stick Pads
@@ -602,10 +629,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445731260
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.WGs34eU1g4lTzVnR'
   - _id: 4Sd78TSPdD4o0ij2
     name: Hard to Kill
@@ -629,10 +658,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445735245
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.cRyAZyWCwSbbL3da
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.4Sd78TSPdD4o0ij2'
   - _id: uDEbtVBRSc51wr30
     name: Killing Blow
@@ -658,10 +689,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445740598
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.RUs83jpRay5tOVON
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.uDEbtVBRSc51wr30'
   - _id: ghQbcmIvNsnm0WpP
     name: Veteran's Luck
@@ -689,10 +722,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445743810
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.ghQbcmIvNsnm0WpP'
   - _id: sC0TuKQwgbzmJeEw
     name: Deadeye
@@ -730,10 +765,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445751421
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.lguRKLCAC7HihF5H
+      duplicateSource: null
     _key: '!actors.items!Xfn1fjWFEddTyWTz.sC0TuKQwgbzmJeEw'
 prototypeToken:
   name: Legendary Hired Killer
@@ -748,6 +785,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -778,6 +820,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -787,9 +832,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

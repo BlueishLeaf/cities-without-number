@@ -1,0 +1,27 @@
+name: Loud
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>When the system is operating, it's loud enough to be heard clearly five
+    meters away, making stealth impossible. Systems that are always on make this
+    noise constantly.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721563506
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: GrLmJH9IoWYGG16q
+sort: 1100000
+_key: '!items!GrLmJH9IoWYGG16q'
+

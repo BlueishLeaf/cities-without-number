@@ -1,0 +1,26 @@
+name: Unreliable
+type: implantComplication
+_id: BbdwnLI6eB1h2h6b
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>The first time each day that it's important that the system function,
+    roll 1d6; on a 1, it's nonfunctional until it receives maintenance.</p>
+effects: []
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721332585
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_key: '!items!BbdwnLI6eB1h2h6b'
+

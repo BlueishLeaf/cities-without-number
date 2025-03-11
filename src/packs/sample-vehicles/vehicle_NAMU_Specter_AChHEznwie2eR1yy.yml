@@ -49,10 +49,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.5
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1694265254
   modifiedTime: 1721770496372
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 items:
   - _id: cPDOdk5qoqwAESFD
     name: Heavy Machine Gun
@@ -101,10 +103,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338471239
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.heavy-weapons.Item.2j1HcUClx8QSSNXP
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.cPDOdk5qoqwAESFD'
   - _id: djk9t2tPxkZ0TW8H
     name: Afterburners
@@ -131,10 +135,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338476056
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.79kSGAr0Ri7K5bRf
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.djk9t2tPxkZ0TW8H'
   - _id: 6uVuFlHSZK9l4LqX
     name: Armor Plating
@@ -161,10 +167,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338482667
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.Q534Uw7jqxdwJdng
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.6uVuFlHSZK9l4LqX'
   - _id: AGKvFRbNOvU3KF4r
     name: Extra Passengers
@@ -192,10 +200,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338493624
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.AGKvFRbNOvU3KF4r'
   - _id: dppjyQW4CXp7xgiA
     name: Jack Control Port
@@ -223,10 +233,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338499046
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.fx3f4mFLKruxqPBw
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.dppjyQW4CXp7xgiA'
   - _id: UGnvhxHgEz0R4E7G
     name: Q-Cladding
@@ -253,10 +265,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338504963
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-mods.Item.zosDb29D0vAtD2MQ
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.UGnvhxHgEz0R4E7G'
   - _id: 0lR7tMAE44KybMmd
     name: Ultralight Components
@@ -283,10 +297,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338509848
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-mods.Item.A2WeQSrqlStYeg2C
+      duplicateSource: null
     _key: '!actors.items!AChHEznwie2eR1yy.0lR7tMAE44KybMmd'
 prototypeToken:
   name: NAMU Specter
@@ -301,6 +317,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -331,6 +352,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -340,8 +364,21 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 _key: '!actors!AChHEznwie2eR1yy'
 

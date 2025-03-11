@@ -51,10 +51,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.5
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1694265254
   modifiedTime: 1721770477451
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 items:
   - _id: y5MODTuxNc5eDoRV
     name: Mounted Autogun
@@ -100,10 +102,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338674207
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-weapons.Item.pT9Q17rdmUs8KqNd
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.y5MODTuxNc5eDoRV'
   - _id: EAsGqko5E8z9Xlsx
     name: Headshot Pod
@@ -153,10 +157,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338678546
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-weapons.Item.vAuOLApYVKjTilzK
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.EAsGqko5E8z9Xlsx'
   - _id: AkZcRNuR6p8jF7Il
     name: Advanced Sensors
@@ -184,10 +190,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338682510
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.vA2ht7lRfFrMXHQF
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.AkZcRNuR6p8jF7Il'
   - _id: HUf8GDCy1wDIyAJc
     name: Cargo Space
@@ -215,10 +223,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338698459
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.jqXhbrBJLO7xEKbz
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.HUf8GDCy1wDIyAJc'
   - _id: FJVfIdKEVQ1DKcO2
     name: ECM Emitter
@@ -247,10 +257,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338714452
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.EqbrigiLUalpjzBu
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.FJVfIdKEVQ1DKcO2'
   - _id: 3W9crzEbVZNeE1EE
     name: Extra Passengers
@@ -279,10 +291,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717444012719
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.w3hLGxxf4dEZQm51
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.3W9crzEbVZNeE1EE'
   - _id: jxFJCg8tfR66578P
     name: Sealed Atmosphere
@@ -312,10 +326,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717338727665
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.vehicle-fittings.Item.CZtYlvYJFJmZdW1s
+      duplicateSource: null
     _key: '!actors.items!g7HPBahUABbp7NF2.jxFJCg8tfR66578P'
 prototypeToken:
   name: Kessler Mjolnir
@@ -330,6 +346,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -360,6 +381,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -369,8 +393,21 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 _key: '!actors!g7HPBahUABbp7NF2'
 

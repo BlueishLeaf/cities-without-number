@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717101109666
   modifiedTime: 1717445477514
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: z9jvSK4MHt1g326M
 items:
@@ -73,10 +75,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445333917
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.AK797cDZAi07OwyF
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.WMCU84Crc4d3Wc9b'
   - _id: jCL3ksJ3AGr96EmO
     name: Ehanced Reflexes II
@@ -111,10 +115,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445343372
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.85A9Gx8zeOLYICuQ
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.jCL3ksJ3AGr96EmO'
   - _id: Egl56vBeMQSLSgrg
     name: Veteran's Luck
@@ -142,10 +148,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445392140
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.edges.Item.hBWdgF3yyYjiu0Jw
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.Egl56vBeMQSLSgrg'
   - _id: WxLKJ3NzjoyAdMiA
     name: Deadeye
@@ -183,10 +191,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445397442
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.foci.Item.lguRKLCAC7HihF5H
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.WxLKJ3NzjoyAdMiA'
   - _id: rfjagO1BkvzDurf9
     name: Reaction Booster II
@@ -221,10 +231,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445403172
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.ZMTyA1G1JUgL1WST
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.rfjagO1BkvzDurf9'
   - _id: WKP1ZtE2XP4VLh5S
     name: Gunlink
@@ -261,10 +273,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445407642
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.HL8MuofbRWaxLrVS
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.WKP1ZtE2XP4VLh5S'
   - _id: iHkK5nmIqOoUURxJ
     name: Modded Armored Clothing
@@ -301,10 +315,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445472994
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.u7p2N9JtUq3CRe0C
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.iHkK5nmIqOoUURxJ'
   - _id: Vz8tsnvWPdhqCuSY
     name: Modded Heavy Pistol
@@ -361,10 +377,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445477514
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.Vz8tsnvWPdhqCuSY'
   - _id: kYxESqHLfViu86UZ
     name: Advanced Knife
@@ -433,10 +451,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445455986
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.UahYnVkt3wVlbkDY
+      duplicateSource: null
     _key: '!actors.items!z9jvSK4MHt1g326M.kYxESqHLfViu86UZ'
 prototypeToken:
   name: Major Gang Boss
@@ -451,6 +472,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -481,6 +507,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -490,9 +519,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

@@ -437,6 +437,17 @@
       "flags": {}
     },
     {
+      "name": "implant-complications",
+      "label": "Implant Complications",
+      "system": "cities-without-number",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "name": "demons",
       "label": "Network Demons",
       "system": "cities-without-number",
@@ -474,7 +485,7 @@
     {
       "name": "Cyberware",
       "sorting": "a",
-      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin", "chrome-syndromes"],
+      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin", "chrome-syndromes", "implant-complications"],
       "folders": []
     },
     {

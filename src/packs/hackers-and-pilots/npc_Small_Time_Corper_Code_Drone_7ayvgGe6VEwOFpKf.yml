@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717101987783
   modifiedTime: 1717445854321
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: 7ayvgGe6VEwOFpKf
 items:
@@ -83,10 +85,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445836578
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberdecks.Item.1j57IyShM9ROT6p3
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.QalbOpdxyrUMgnbu'
   - _id: aR4cHjfOdzMocLDX
     name: Cranial Jack
@@ -119,10 +123,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445773494
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-head.Item.huifue2xxgC7TJPO
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.aR4cHjfOdzMocLDX'
   - _id: nmB2fPYS6QZehc5b
     name: Defend
@@ -155,10 +161,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445794292
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.xKBisKXPQT3uAhni
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.nmB2fPYS6QZehc5b'
   - _id: 3ipwLmHcQaJI55Gk
     name: Paralyze
@@ -190,10 +198,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445798666
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.P8IREWPDlgSVO4Fs
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.3ipwLmHcQaJI55Gk'
   - _id: sOHjvMLR5jZ30aHX
     name: Stun
@@ -224,10 +234,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445800557
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.Rym5SDCx4pDrHCkn
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.sOHjvMLR5jZ30aHX'
   - _id: jYcmxsErNi7DaTDH
     name: Lock
@@ -256,10 +268,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445804025
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.9CZh7uEorNoovVhx
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.jYcmxsErNi7DaTDH'
   - _id: IQ5DYJUtBKXJjhwq
     name: Terminate
@@ -287,10 +301,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445810512
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.yg2IqqFfnCudbEFt
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.IQ5DYJUtBKXJjhwq'
   - _id: fRP75LibrmF32eYS
     name: Avatar
@@ -314,10 +330,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445816891
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.QX8yOJ1uZXKoa78h
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.fRP75LibrmF32eYS'
   - _id: iG3AmNJ49sRUYC85
     name: Barrier
@@ -341,10 +359,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445824055
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.2iHGL1OPg1AnR18r
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.iG3AmNJ49sRUYC85'
   - _id: lLUifwfYeNhz0b2n
     name: Camera
@@ -369,10 +389,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445829550
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.gUUEOMz5Olq5Zn6l
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.lLUifwfYeNhz0b2n'
   - _id: QCVX3ZTKJpRui63D
     name: Door
@@ -396,10 +418,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445832479
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.c5XjwKmFsHq6j7L7
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.QCVX3ZTKJpRui63D'
   - _id: fKY4AkjmV3jdUsMh
     name: Program
@@ -423,10 +447,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445836565
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.uIK4Jlhjab0ywcDf
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.fKY4AkjmV3jdUsMh'
   - _id: qE9yT0oHlHvaBz17
     name: Ordinary Clothing
@@ -463,10 +489,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445849664
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.3hxao9U3pCliYiFW
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.qE9yT0oHlHvaBz17'
   - _id: b8GUxsWQp1F3qfWf
     name: Heavy Pistol
@@ -523,10 +551,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717445854321
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.mUE5Gi0f8h85WvM7
+      duplicateSource: null
     _key: '!actors.items!7ayvgGe6VEwOFpKf.b8GUxsWQp1F3qfWf'
 prototypeToken:
   name: Small-Time Corper Code Drone
@@ -541,6 +571,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -571,6 +606,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -580,9 +618,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0

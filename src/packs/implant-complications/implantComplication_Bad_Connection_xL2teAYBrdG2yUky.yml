@@ -1,0 +1,27 @@
+name: Bad Connection
+type: implantComplication
+img: icons/magic/control/debuff-chains-blue.webp
+system:
+  description: >-
+    <p>Each time the cyberware is triggered, there's a 1 in 6 chance it fails to
+    activate and the action is wasted. Cyberware that is always on is not
+    hindered by this.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  5mIhSmBDXvKVlXKo: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: cities-without-number
+  systemVersion: REPLACED BY GITHUB ACTION
+  createdTime: 1741721611473
+  modifiedTime: 1741721837170
+  lastModifiedBy: 5mIhSmBDXvKVlXKo
+_id: xL2teAYBrdG2yUky
+sort: 900000
+_key: '!items!xL2teAYBrdG2yUky'
+

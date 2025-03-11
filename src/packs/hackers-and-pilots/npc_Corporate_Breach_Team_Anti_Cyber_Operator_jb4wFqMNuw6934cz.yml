@@ -35,10 +35,12 @@ flags: {}
 _stats:
   systemId: cities-without-number
   systemVersion: 0.1.0
-  coreVersion: '11.315'
+  coreVersion: '12.331'
   createdTime: 1717102620802
   modifiedTime: 1717446389522
   lastModifiedBy: 5mIhSmBDXvKVlXKo
+  compendiumSource: null
+  duplicateSource: null
 sort: 0
 _id: jb4wFqMNuw6934cz
 items:
@@ -78,10 +80,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446136821
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.armor.Item.W2Vr0ReXPLKmaJOO
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.u1ybrNKUKekPxmYK'
   - _id: f0ZVZk7Fka4Co9dv
     name: Combat Shotgun
@@ -141,10 +145,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446140420
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.firearms.Item.EA8Ct4TndRPSHIoo
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.f0ZVZk7Fka4Co9dv'
   - _id: NiYAxJhi1POcm3WA
     name: Grenade, Flash
@@ -203,10 +209,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446160287
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.pkahRUvXx3vN3t3e
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.NiYAxJhi1POcm3WA'
   - _id: kONbRoofPLDuVHL6
     name: Grenade, Frag
@@ -264,10 +273,13 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446162938
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: >-
+        Compendium.cities-without-number.melee-and-thrown-weapons.Item.ywbzv2FPnELtOe37
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.kONbRoofPLDuVHL6'
   - _id: JHI6U4OHvqIonhh8
     name: Cyberdeck
@@ -316,10 +328,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446321857
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberdecks.Item.1j57IyShM9ROT6p3
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.JHI6U4OHvqIonhh8'
   - _id: zPfcGHUtzthAxFni
     name: Cranial Jack
@@ -352,10 +366,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446174491
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-head.Item.huifue2xxgC7TJPO
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.zPfcGHUtzthAxFni'
   - _id: kNdq4FbdsKRLoofb
     name: Cybereyes (pair)
@@ -394,10 +410,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446177556
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.AfBFaINGPyMiVBhE
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.kNdq4FbdsKRLoofb'
   - _id: TAET5xjdHoBiWYIO
     name: Eye Mod/Low Light Vision
@@ -431,10 +449,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446181617
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-sensory.Item.719NAbN2y1yqPKQD
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.TAET5xjdHoBiWYIO'
   - _id: BLtiYHTvKb8P7gjd
     name: Enhanced Reflexes I
@@ -468,10 +488,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446186437
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-nerve.Item.dq0CMXahwxEY9DvN
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.BLtiYHTvKb8P7gjd'
   - _id: ovO5ItLmcBZ4nS5l
     name: Stick Pads
@@ -506,10 +528,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446191811
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.cyberware-limb.Item.FbZxnN2mCGqPdIqv
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.ovO5ItLmcBZ4nS5l'
   - _id: M98DSYvoC9fLBLvd
     name: Blind
@@ -542,10 +566,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446244102
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.aFrcnD7FXi1I88FX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.M98DSYvoC9fLBLvd'
   - _id: 3IDKGtppNhcbi5uf
     name: Deactivate
@@ -576,10 +602,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446246248
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.KVYSc7r9jf0ArvRz
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.3IDKGtppNhcbi5uf'
   - _id: cqDJdNJq4YFH6ppZ
     name: Frisk
@@ -608,10 +636,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446249298
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.7fisUkFDe6s2hObF
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.cqDJdNJq4YFH6ppZ'
   - _id: Sf7Wa95stoauDVs5
     name: Glitch
@@ -642,10 +672,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446252953
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.OOM2PCIxk6PEnqSH
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.Sf7Wa95stoauDVs5'
   - _id: EiHuyhfiUD4bfcNm
     name: Sabotage
@@ -679,10 +711,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446257392
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.lrcDrqCz0L6mxgVW
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.EiHuyhfiUD4bfcNm'
   - _id: VkBQaVYolQy3mVmY
     name: Sense
@@ -712,10 +746,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446260878
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.verbs.Item.sAW2wEgoMXI8uKJy
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.VkBQaVYolQy3mVmY'
   - _id: 0dc6GEE5TDUUfIX3
     name: Cyber
@@ -745,10 +781,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446267491
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.0dc6GEE5TDUUfIX3'
   - _id: riscUiiiczOEBEz7
     name: Body Cyber
@@ -778,10 +816,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446332297
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.riscUiiiczOEBEz7'
   - _id: enJIhECKYBQrhc0F
     name: Nerve Cyber
@@ -811,10 +851,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446341153
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.enJIhECKYBQrhc0F'
   - _id: rW1icSpG7VHPgIdO
     name: Limb Cyber
@@ -844,10 +886,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446347823
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.rW1icSpG7VHPgIdO'
   - _id: cPlBMmbMFxXXdK3i
     name: Sensory Cyber
@@ -877,10 +921,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446354083
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.cPlBMmbMFxXXdK3i'
   - _id: BHDUy9wXA0AKfzqB
     name: Skin Cyber
@@ -910,10 +956,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446361339
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.BHDUy9wXA0AKfzqB'
   - _id: 9lyK2yoCxxZC3Xe0
     name: Enhanced Reflexes I
@@ -943,10 +991,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446377649
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.9lyK2yoCxxZC3Xe0'
   - _id: 7lON5RDOn19v3swx
     name: Enhanced Reflexes II
@@ -976,10 +1026,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446385065
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.7lON5RDOn19v3swx'
   - _id: GOCARNyqkNKK3WnS
     name: Enhanced Reflexes III
@@ -1009,10 +1061,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446389522
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.GOCARNyqkNKK3WnS'
   - _id: LCb46xJxITVd454Y
     name: Cyber
@@ -1042,10 +1096,12 @@ items:
     _stats:
       systemId: cities-without-number
       systemVersion: 0.1.0
-      coreVersion: '11.315'
+      coreVersion: '12.331'
       createdTime: 1694265254
       modifiedTime: 1717446321838
       lastModifiedBy: 5mIhSmBDXvKVlXKo
+      compendiumSource: Compendium.cities-without-number.subjects.Item.wpCjEU48Z0mmmQhX
+      duplicateSource: null
     _key: '!actors.items!jb4wFqMNuw6934cz.LCb46xJxITVd454Y'
 prototypeToken:
   name: Corporate Breach Team Anti-Cyber Operator
@@ -1060,6 +1116,11 @@ prototypeToken:
     offsetX: 0
     offsetY: 0
     rotation: 0
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    tint: '#ffffff'
+    alphaThreshold: 0.75
   width: 1
   height: 1
   lockRotation: false
@@ -1090,6 +1151,9 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
+    negative: false
+    priority: 0
+    color: null
   sight:
     enabled: false
     range: 0
@@ -1099,9 +1163,22 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
+    color: null
   detectionModes: []
   flags: {}
   randomImg: false
+  hexagonalShape: 0
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
 folder: null
 ownership:
   default: 0
