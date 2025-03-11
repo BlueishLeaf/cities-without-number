@@ -39,7 +39,7 @@
 
     {{!-- Targets Tab --}}
     <div class="tab max-height" data-group="primary" data-tab="targets">
-      <button class="list-item-create" data-list-type="targetTypes">Add Target</button>
+      <button type="button" class="list-item-create" data-list-type="targetTypes">Add Target</button>
       {{#each targetTypes as |target|}}
         <div class="list-item-container">
           <input type="text" name="system.targetTypes" value="{{target}}" data-dtype="Array"/>
