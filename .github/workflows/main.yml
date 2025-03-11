@@ -47,3 +47,11 @@ jobs:
           artifacts: "./system.json, ./system.zip"
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
+          
+      - name: Post Release to Discord Channel
+        id: post_release_to_discord
+        uses: SethCohen/github-releases-to-discord@v1
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          color: "15277667"
+          content: "A new release of Cities Without Number for Foundry just dropped!"
