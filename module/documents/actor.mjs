@@ -172,7 +172,7 @@ export class CitiesWithoutNumberActor extends Actor {
         _html => this.openNpcWeaponDialog(weapon, false),
         _html => this.openNpcWeaponDialog(weapon, true)
       ),
-      default: "Roll"
+      default: "melee"
     });
     attackBonusDialog.render(true);
   }
@@ -183,7 +183,7 @@ export class CitiesWithoutNumberActor extends Actor {
       content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage),
       buttons: DialogUtils.rollButtons(html =>
         this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(useRangedBonus, false), html)),
-      default: "Roll"
+      default: "roll"
     });
     weaponDialog.render(true);
   }
@@ -195,7 +195,7 @@ export class CitiesWithoutNumberActor extends Actor {
         _html => this.openWeaponDialog(weapon),
         _html => this.openAutoWeaponDialog(weapon)
       ),
-      default: "Manual"
+      default: "manual"
     });
     droneAttackTypeDialog.render(true);
   }
@@ -206,7 +206,7 @@ export class CitiesWithoutNumberActor extends Actor {
       content: DialogTemplates.autoWeaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage),
       buttons: DialogUtils.rollButtons(html =>
         this.handleAutoWeaponRoll(weapon, this.getBaseAttackBonusByActorType(false, true), html)),
-      default: "Roll"
+      default: "roll"
     });
     weaponDialog.render(true);
   }
@@ -219,7 +219,7 @@ export class CitiesWithoutNumberActor extends Actor {
       title: `Roll ${weapon.name}`,
       content: DialogTemplates.weaponRollDialog(weapon.system.isBurstFireable, weapon.system.canDealNonLethalDamage, abilityOptions, skillOptions),
       buttons: DialogUtils.rollButtons(html => this.handleWeaponRoll(weapon, html)),
-      default: "Roll"
+      default: "roll"
     });
     weaponDialog.render(true);
   }

@@ -469,7 +469,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: "Create new item",
       content: DialogTemplates.itemTypeDialog(itemTypeOptions),
       buttons: DialogUtils.createButtons(html => this.handleCreateCustomItem(itemData, html)),
-      default: "Create"
+      default: "create"
     });
     createItemDialog.render(true);
   }
@@ -581,7 +581,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: "Roll Skill",
       content: DialogTemplates.basicRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleBasicSkillRoll(skillBonus, html)),
-      default: "Roll"
+      default: "roll"
     });
     skillDialog.render(true);
   }
@@ -608,7 +608,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: "Roll Morale",
       content: DialogTemplates.basicRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleMoraleRoll(moraleTarget, html)),
-      default: "Roll"
+      default: "roll"
     });
     moraleDialog.render(true);
   }
@@ -638,7 +638,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: "Roll Alienation",
       content: DialogTemplates.basicRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleAlienationRoll(alienationScoreValue, html)),
-      default: "Roll"
+      default: "roll"
     });
     alienationDialog.render(true);
   }
@@ -672,7 +672,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
           _html => this.handleGunnerSelect(weapon),
           _html => currentCharacter.openWeaponDialog(weapon)
         ),
-        default: "Manual"
+        default: "manual"
       });
       vehicleGunnerTypeDialog.render(true);
     } else {
@@ -689,7 +689,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: "Choose a gunner",
       content: DialogTemplates.gunnerSelectDialog(gunnerOptions),
       buttons: DialogUtils.confirmButtons(html => this.handleGunnerConfirmation(html, weapon)),
-      default: "Confirm"
+      default: "confirm"
     });
     vehicleGunnerDialog.render(true);
   }
@@ -707,7 +707,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${skill.name}`,
       content: DialogTemplates.skillRollDialog(abilityOptions, specialistOptions),
       buttons: DialogUtils.rollButtons(html => this.handleSkillRoll(skill, html)),
-      default: "Roll"
+      default: "roll"
     });
     skillDialog.render(true);
   }
@@ -763,7 +763,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       title: `Roll ${save.label}`,
       content: DialogTemplates.basicRollDialog(),
       buttons: DialogUtils.rollButtons(html => this.handleSaveRoll(save, html)),
-      default: "Roll"
+      default: "roll"
     });
     saveDialog.render(true);
   }

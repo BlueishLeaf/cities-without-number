@@ -15,7 +15,7 @@ export const rollButtons = rollCallback => {
 
 export const confirmButtons = confirmCallback => {
   return {
-    roll: {
+    confirm: {
       icon: '<i class="fas fa-check"></i>',
       label: "Confirm",
       callback: confirmCallback
@@ -30,12 +30,12 @@ export const confirmButtons = confirmCallback => {
 
 export const attackModeButtons = (manualCallback, autoCallback) => {
   return {
-    roll: {
+    manual: {
       icon: '<i class="fas fa-bullseye"></i>',
       label: "Manual",
       callback: manualCallback
     },
-    cancel: {
+    auto: {
       icon: '<i class="fas fa-robot"></i>',
       label: "Auto",
       callback: autoCallback
@@ -45,12 +45,12 @@ export const attackModeButtons = (manualCallback, autoCallback) => {
 
 export const attackBonusButtons = (meleeCallback, rangedCallback) => {
   return {
-    roll: {
+    melee: {
       icon: '<i class="fas fa-knife"></i>',
       label: "Melee",
       callback: meleeCallback
     },
-    cancel: {
+    ranged: {
       icon: '<i class="fas fa-gun"></i>',
       label: "Ranged",
       callback: rangedCallback
@@ -60,12 +60,12 @@ export const attackBonusButtons = (meleeCallback, rangedCallback) => {
 
 export const gunnerModeButtons = (otherGunnerCallback, currentGunnerCallback) => {
   return {
-    roll: {
+    other: {
       icon: '<i class="fas fa-people-arrows"></i>',
       label: "Other",
       callback: otherGunnerCallback
     },
-    cancel: {
+    myself: {
       icon: '<i class="fas fa-person-rifle"></i>',
       label: "Myself",
       callback: currentGunnerCallback
@@ -75,7 +75,7 @@ export const gunnerModeButtons = (otherGunnerCallback, currentGunnerCallback) =>
 
 export const createButtons = createCallback => {
   return {
-    roll: {
+    create: {
       icon: '<i class="fas fa-check"></i>',
       label: "Create",
       callback: createCallback
