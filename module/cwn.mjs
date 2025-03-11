@@ -56,7 +56,7 @@ Hooks.once("init", async function() {
     edge: models.EdgeItemData,
     focus: models.FocusItemData,
     skill: models.SkillItemData,
-    cyberware: models.CyberwearItemData,
+    cyberware: models.CyberwareItemData,
     mod: models.ModItemData,
     fitting: models.FittingItemData,
     vehicleFitting: models.VehicleFittingItemData,

@@ -9,7 +9,7 @@ export {default as ServerActorData} from "./actors/server-actor.mjs";
 export {default as ArmorItemData} from "./items/armor-item.mjs";
 export {default as ContactItemData} from "./items/contact-item.mjs";
 export {default as CyberdeckItemData} from "./items/cyberdeck-item.mjs";
-export {default as CyberwearItemData} from "./items/cyberware-item.mjs";
+export {default as CyberwareItemData} from "./items/cyberware-item.mjs";
 export {default as DemonItemData} from "./items/demon-item.mjs";
 export {default as DrugItemData} from "./items/drug-item.mjs";
 export {default as EdgeItemData} from "./items/edge-item.mjs";

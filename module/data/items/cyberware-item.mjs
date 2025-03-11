@@ -1,7 +1,7 @@
 import {decimalField, integerField} from "../../helpers/schema-helpers.mjs";
 import {ConcealableItemData} from "./templates/concealable-item.mjs";
 
-export default class CyberwearItemData extends ConcealableItemData {
+export default class CyberwareItemData extends ConcealableItemData {
     static defineSchema() {
         const fields = foundry.data.fields;
         const concealableData = super.defineSchema();
@@ -11,6 +11,7 @@ export default class CyberwearItemData extends ConcealableItemData {
             effect: new fields.StringField({ required: true, blank: true }),
             isDefective: new fields.BooleanField({ required: true, initial: false }),
             defect: new fields.StringField({ required: true, blank: true }),
+            implantComplications: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
             alienationCost: integerField(0),
             chromeSyndromes: new fields.ArrayField(new fields.StringField({ required: false, blank: true }))
         }
