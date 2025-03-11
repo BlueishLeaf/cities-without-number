@@ -570,9 +570,10 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   rollHitDice() {
     const roll = new Roll(this.actor.system.hitDice);
-    roll.evaluate({async: false});
-    this.actor.system.health.max = roll.total;
-    this._render();
+    roll.evaluate().then(result => {
+      this.actor.system.health.max = result.total;
+      this._render();
+    });
   }
 
   openBasicSkillDialog(skillBonus) {
