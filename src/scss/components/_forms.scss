@@ -1,3 +1,6 @@
+@use '../utils/typography' as *;
+@use '../utils/colors' as *;
+
 .item-form {
   font-family: $font-primary;
 }
