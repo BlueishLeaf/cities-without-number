@@ -5,21 +5,12 @@ export const CWN = {};
  * @type {object}
  */
 CWN.abilities = {
-  str: "CWN.AbilityStr",
-  dex: "CWN.AbilityDex",
-  con: "CWN.AbilityCon",
-  int: "CWN.AbilityInt",
-  wis: "CWN.AbilityWis",
-  cha: "CWN.AbilityCha"
-};
-
-CWN.abilityAbbreviations = {
-  str: "CWN.AbilityStrAbbr",
-  dex: "CWN.AbilityDexAbbr",
-  con: "CWN.AbilityConAbbr",
-  int: "CWN.AbilityIntAbbr",
-  wis: "CWN.AbilityWisAbbr",
-  cha: "CWN.AbilityChaAbbr"
+  str: "Strength",
+  dex: "Dexterity",
+  con: "Constitution",
+  int: "Intelligence",
+  wis: "Wisdom",
+  cha: "Charisma"
 };
 
 CWN.abilityModifiers = {
