@@ -13,7 +13,9 @@ node_modules/
 .DS_Store
 
 # Generated CSS Artifacts
-/css/
+styles/cwn.css
+styles/cwn.css.map
 
 # Generated LevelDB Artifacts
-/packs/
+packs/*/*
+!packs/*/*.yml
