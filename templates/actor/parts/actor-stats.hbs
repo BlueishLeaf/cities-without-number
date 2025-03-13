@@ -1,52 +1,43 @@
 <section class="grid grid-3col">
-    <!-- Abilities -->
-    <div class="right-divider grid-span-2">
-        <div class="abilities flexcol grid grid-4col">
-            <h5>Ability</h5>
-            <h5>Score</h5>
-            <h5 title="Bonus Modifier">Bonus Mod.</h5>
-            <h5 title="Total Modifier">Total Mod.</h5>
-            {{#each system.abilities as |ability key|}}
-                <label for="system.abilities.{{key}}.value" class="resource-label flexlarge align-left"
-                       data-label="{{ability.label}}">{{ability.label}}</label>
-                <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}"
-                       data-dtype="Number"/>
-                <input type="number" name="system.abilities.{{key}}.bonusMod" value="{{ability.bonusMod}}"
-                       data-dtype="Number"/>
-                <span class="ability-mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0
-                                                                                        sign=true}}</span>
-            {{/each}}
-        </div>
+  <!-- Abilities -->
+  <div class="right-divider grid-span-2">
+    <div class="abilities flexcol grid grid-4col">
+      <h5>Ability</h5>
+      <h5>Score</h5>
+      <h5 title="Bonus Modifier">Bonus Mod.</h5>
+      <h5 title="Total Modifier">Total Mod.</h5>
+      {{#each system.abilities as |ability key|}}
+        <label for="system.abilities.{{key}}.value" class="resource-label flexlarge align-left" data-label="{{ability.label}}">{{ability.label}}</label>
+        <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+        <input type="number" name="system.abilities.{{key}}.bonusMod" value="{{ability.bonusMod}}" data-dtype="Number"/>
+        <span class="ability-mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+      {{/each}}
+    </div>
+  </div>
+
+  <!-- Saves -->
+  <div>
+    <div class="abilities flexcol grid grid-2col">
+      <h5>Save</h5>
+      <h5>Target</h5>
+      {{#each system.savingThrows as |save key|}}
+        <label for="system.savingThrows.{{key}}.value" class="resource-label flexlarge align-left rollable" data-roll-type="save" data-save="{{key}}" data-label="{{save.label}}">{{save.label}}</label>
+        <input type="number" name="system.savingThrows.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
+      {{/each}}
     </div>
 
-    <!-- Saves -->
-    <div>
-        <div class="abilities flexcol grid grid-2col">
-            <h5>Save</h5>
-            <h5>Target</h5>
-            {{#each system.savingThrows as |save key|}}
-                <label for="system.savingThrows.{{key}}.value" class="resource-label flexlarge align-left rollable"
-                       data-roll-type="save" data-save="{{key}}" data-label="{{save.label}}">{{save.label}}</label>
-                <input type="number" name="system.savingThrows.{{key}}.value" value="{{save.value}}"
-                       data-dtype="Number"/>
-            {{/each}}
-        </div>
+    <hr>
 
-        <hr>
-
-        <!-- Major Injuries -->
-        <div class="list-container">
-            <label for="system.majorInjuries" class="resource-label">Major Injuries <span title="Add a Major Injury"
-                                                                                          class="list-item-create fas fa-plus"
-                                                                                          data-list-type="majorInjuries"></span></label>
-            {{#each system.majorInjuries as |majorInjury|}}
-                <div class="list-item-container">
-                    <input type="text" name="system.majorInjuries" value="{{majorInjury}}" data-dtype="Array"/>
-                    <a class="item-control list-item-delete" title="Delete Major Injury" data-list-type="majorInjuries"><i
-                            class="fas fa-trash"></i></a>
-                </div>
-            {{/each}}
+    <!-- Major Injuries -->
+    <div class="list-container">
+      <label for="system.majorInjuries" class="resource-label">Major Injuries <span title="Add a Major Injury" class="list-item-create fas fa-plus" data-list-type="majorInjuries"></span></label>
+      {{#each system.majorInjuries as |majorInjury|}}
+        <div class="list-item-container">
+          <input type="text" name="system.majorInjuries" value="{{majorInjury}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Major Injury" data-list-type="majorInjuries"><i class="fas fa-trash"></i></a>
         </div>
+      {{/each}}
     </div>
+  </div>
 
 </section>

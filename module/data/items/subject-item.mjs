@@ -6,7 +6,7 @@ export default class SubjectItemData extends PurchasableItemData {
         const fields = foundry.data.fields;
         return {
             ...purchasableData,
-            type: new fields.StringField({required: false, blank: true})
+            type: new fields.StringField({ required: false, blank: true })
         }
     }
 }

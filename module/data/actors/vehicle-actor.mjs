@@ -11,7 +11,7 @@ export default class VehicleActorData extends MachineActorData {
             maxCrew: integerField(0),
             power: resourceField(0, 0),
             mass: resourceField(0, 0),
-            size: new fields.StringField({required: true, blank: true})
+            size: new fields.StringField({ required: true, blank: true })
         }
     }
 }

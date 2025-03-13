@@ -1,100 +1,95 @@
 {{!-- This template is a fallback for when items don't have more specific templates. --}}
 {{!-- Generally, you'll want to make more specific templates when possible. --}}
 <form class="{{cssClass}} flexcol" autocomplete="off">
-    <header class="sheet-header">
-        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-        <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-            <div class="grid grid-3col">
-                <div class="resource">
-                    <label class="resource-label">Quantity</label>
-                    <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Encumbrance</label>
-                    <input type="number" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Cost</label>
-                    <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
-                </div>
-            </div>
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <div class="grid grid-3col">
+        <div class="resource">
+          <label class="resource-label">Quantity</label>
+          <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
         </div>
-    </header>
-
-    {{!-- Other Header Attributes --}}
-    <header class="sheet-header">
-        <div class="header-fields">
-            <div class="grid grid-4col">
-                <div class="resource">
-                    <label class="resource-label">Sub-Type</label>
-                    <select class="block-select" name="system.subType">
-                        {{selectOptions config.CWN.armor.subTypes selected=system.subType}}
-                    </select>
-                </div>
-                {{#ifEquals system.subType 'armor'}}
-                    <div class="resource">
-                        <label class="resource-label">Armored Suit <i class="fas fa-circle-info"
-                                                                      title="Armored suits cannot be equipped with certain accessories"></i></label>
-                        <input type="checkbox" name="system.isSuit" {{isChecked system.isSuit}}/>
-                    </div>
-                {{/ifEquals}}
-                {{#ifEquals system.subType 'accessory'}}
-                    <div class="resource">
-                        <label class="resource-label">Suit Compatible <i class="fas fa-circle-info"
-                                                                         title="Certain accessories cannot be equipped with armored suits"></i></label>
-                        <input type="checkbox" name="system.canEquipWithSuit" {{isChecked system.canEquipWithSuit}}/>
-                    </div>
-                {{/ifEquals}}
-                <div class="resource">
-                    <label class="resource-label">Melee AC</label>
-                    <input type="number" name="system.armorClass.melee" value="{{system.armorClass.melee}}"
-                           data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Ranged AC</label>
-                    <input type="number" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}"
-                           data-dtype="Number"/>
-                </div>
-                <div class="resource grid-span-2">
-                    <label class="resource-label">Trauma Target Modifier</label>
-                    <input type="number" name="system.traumaTargetMod" value="{{system.traumaTargetMod}}"
-                           data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Damage Soak</label>
-                    <input type="number" name="system.damageSoak" value="{{system.damageSoak}}" data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Concealment</label>
-                    <select class="block-select" name="system.concealment">
-                        {{selectOptions config.CWN.armor.concealmentTypes selected=system.concealment}}
-                    </select>
-                </div>
-            </div>
+        <div class="resource">
+          <label class="resource-label">Encumbrance</label>
+          <input type="number" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
         </div>
-    </header>
-
-    {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
-        {{#unless flags.isAccessory}}
-            <a class="item" data-tab="mods">Mods</a>
-        {{/unless}}
-    </nav>
-
-    {{!-- Sheet Body --}}
-    <section class="sheet-body">
-        {{!-- Description Tab --}}
-        <div class="tab max-height" data-group="primary" data-tab="description">
-            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+        <div class="resource">
+          <label class="resource-label">Cost</label>
+          <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
         </div>
+      </div>
+    </div>
+  </header>
 
-        {{!-- Mods Tab --}}
-        {{#unless flags.isAccessory}}
-            <div class="tab" data-group="primary" data-tab="mods">
-                {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
-            </div>
-        {{/unless}}
-    </section>
+  {{!-- Other Header Attributes --}}
+  <header class="sheet-header">
+    <div class="header-fields">
+      <div class="grid grid-4col">
+        <div class="resource">
+          <label class="resource-label">Sub-Type</label>
+          <select class="block-select" name="system.subType">
+            {{selectOptions config.CWN.armor.subTypes selected=system.subType}}
+          </select>
+        </div>
+        {{#ifEquals system.subType 'armor'}}
+          <div class="resource">
+            <label class="resource-label">Armored Suit <i class="fas fa-circle-info" title="Armored suits cannot be equipped with certain accessories"></i></label>
+            <input type="checkbox" name="system.isSuit" {{isChecked system.isSuit}}/>
+          </div>
+        {{/ifEquals}}
+        {{#ifEquals system.subType 'accessory'}}
+          <div class="resource">
+            <label class="resource-label">Suit Compatible <i class="fas fa-circle-info" title="Certain accessories cannot be equipped with armored suits"></i></label>
+            <input type="checkbox" name="system.canEquipWithSuit" {{isChecked system.canEquipWithSuit}}/>
+          </div>
+        {{/ifEquals}}
+        <div class="resource">
+          <label class="resource-label">Melee AC</label>
+          <input type="number" name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Ranged AC</label>
+          <input type="number" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+        </div>
+        <div class="resource grid-span-2">
+          <label class="resource-label">Trauma Target Modifier</label>
+          <input type="number" name="system.traumaTargetMod" value="{{system.traumaTargetMod}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Damage Soak</label>
+          <input type="number" name="system.damageSoak" value="{{system.damageSoak}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">Concealment</label>
+          <select class="block-select" name="system.concealment">
+            {{selectOptions config.CWN.armor.concealmentTypes selected=system.concealment}}
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    {{#unless flags.isAccessory}}
+    <a class="item" data-tab="mods">Mods</a>
+    {{/unless}}
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    <div class="tab max-height" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+
+    {{!-- Mods Tab --}}
+    {{#unless flags.isAccessory}}
+      <div class="tab" data-group="primary" data-tab="mods">
+        {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
+      </div>
+    {{/unless}}
+  </section>
 </form>

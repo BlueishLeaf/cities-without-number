@@ -1,5 +1,5 @@
-import {extractPack} from "@foundryvtt/foundryvtt-cli";
-import {promises as fs} from "fs";
+import { extractPack } from "@foundryvtt/foundryvtt-cli";
+import { promises as fs } from "fs";
 import path from "path";
 
 const MODULE_ID = process.cwd();
@@ -29,7 +29,6 @@ for (const pack of packs) {
         }
     );
 }
-
 /**
  * Prefaces the document with its type
  * @param {object} doc - The document data

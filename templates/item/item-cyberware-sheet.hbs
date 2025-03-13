@@ -1,75 +1,74 @@
 {{!-- This template is a fallback for when items don't have more specific templates. --}}
 {{!-- Generally, you'll want to make more specific templates when possible. --}}
 <form class="{{cssClass}} flexcol" autocomplete="off">
-    <header class="sheet-header">
-        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-        <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-            <div class="grid grid-4col">
-                <div class="resource">
-                    <label class="resource-label">Sub-Type</label>
-                    <select class="block-select" name="system.subType">
-                        {{selectOptions config.CWN.cyberwear.subTypes selected=system.subType}}
-                    </select>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Cost</label>
-                    <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">System Strain</label>
-                    <input type="number" name="system.systemStrain" value="{{system.systemStrain}}"
-                           data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                    <label class="resource-label">Concealment</label>
-                    <select class="block-select" name="system.concealment">
-                        {{selectOptions config.CWN.cyberwear.concealmentTypes selected=system.concealment}}
-                    </select>
-                </div>
-            </div>
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <div class="grid grid-4col">
+        <div class="resource">
+          <label class="resource-label">Sub-Type</label>
+          <select class="block-select" name="system.subType">
+            {{selectOptions config.CWN.cyberwear.subTypes selected=system.subType}}
+          </select>
         </div>
-    </header>
-
-    <header class="sheet-header">
-        <div class="header-fields">
-            <div class="resource">
-                <label class="resource-label">Effect Summary</label>
-                <input type="text" name="system.effect" value="{{system.effect}}" data-dtype="String"/>
-            </div>
+        <div class="resource">
+          <label class="resource-label">Cost</label>
+          <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
         </div>
-    </header>
-
-    {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
-        <a class="item" data-tab="complications">Complications</a>
-        {{#isSettingEnabled "useCyberAlienation"}}
-            <a class="item" data-tab="cyber-alienation">Cyber Alienation</a>
-        {{/isSettingEnabled}}
-        <a class="item" data-tab="mods">Mods</a>
-    </nav>
-
-    {{!-- Sheet Body --}}
-    <section class="sheet-body">
-        {{!-- Description Tab --}}
-        <div class="tab max-height" data-group="primary" data-tab="description">
-            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+        <div class="resource">
+          <label class="resource-label">System Strain</label>
+          <input type="number" name="system.systemStrain" value="{{system.systemStrain}}" data-dtype="Number"/>
         </div>
-
-        {{!-- Complications Tab --}}
-        <div class="tab" data-group="primary" data-tab="complications">
-            {{> "systems/cities-without-number/templates/item/item-cyberware-implant-complications.hbs"}}
+        <div class="resource">
+          <label class="resource-label">Concealment</label>
+          <select class="block-select" name="system.concealment">
+            {{selectOptions config.CWN.cyberwear.concealmentTypes selected=system.concealment}}
+          </select>
         </div>
+      </div>
+    </div>
+  </header>
 
-        {{!-- Chrome Syndromes Tab --}}
-        <div class="tab" data-group="primary" data-tab="cyber-alienation">
-            {{> "systems/cities-without-number/templates/item/item-cyberware-cyber-alienation.hbs"}}
-        </div>
+  <header class="sheet-header">
+    <div class="header-fields">
+      <div class="resource">
+        <label class="resource-label">Effect Summary</label>
+        <input type="text" name="system.effect" value="{{system.effect}}" data-dtype="String"/>
+      </div>
+    </div>
+  </header>
 
-        {{!-- Mods Tab --}}
-        <div class="tab" data-group="primary" data-tab="mods">
-            {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
-        </div>
-    </section>
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="complications">Complications</a>
+    {{#isSettingEnabled "useCyberAlienation"}}
+      <a class="item" data-tab="cyber-alienation">Cyber Alienation</a>
+    {{/isSettingEnabled}}
+    <a class="item" data-tab="mods">Mods</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    <div class="tab max-height" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+
+    {{!-- Complications Tab --}}
+    <div class="tab" data-group="primary" data-tab="complications">
+        {{> "systems/cities-without-number/templates/item/item-cyberware-implant-complications.hbs"}}
+    </div>
+
+    {{!-- Chrome Syndromes Tab --}}
+    <div class="tab" data-group="primary" data-tab="cyber-alienation">
+      {{> "systems/cities-without-number/templates/item/item-cyberware-cyber-alienation.hbs"}}
+    </div>
+
+    {{!-- Mods Tab --}}
+    <div class="tab" data-group="primary" data-tab="mods">
+      {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
+    </div>
+  </section>
 </form>

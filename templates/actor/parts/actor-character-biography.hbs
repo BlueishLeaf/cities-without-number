@@ -1,53 +1,42 @@
 <div class="resources grid grid-5col">
-    <div class="grid-span-2 bio-section">
-        {{!-- Lifestyle --}}
-        <div class="list-container">
-            <label class="resource-label">Lifestyle <span title="Configure Lifestyle" class="configurable fas fa-gear"
-                                                          data-config-type="lifestyle"
-                                                          data-config-label="Lifestyle"></span></label>
-            <input type="text" name="system.lifestyle.label" value="{{system.lifestyle.label}}" data-dtype="String"/>
-        </div>
-
-        {{!-- Expenses --}}
-        <div class="list-container">
-            <label class="resource-label">Monthly Expenses <span title="Configure Monthly Expenses"
-                                                                 class="configurable fas fa-gear"
-                                                                 data-config-type="monthlyExpenses"
-                                                                 data-config-label="Monthly Expenses"></span></label>
-            <input type="number" name="totalMonthlyCost" disabled value="{{totalMonthlyCost}}" data-dtype="Number"/>
-        </div>
-
-        {{!-- Goals --}}
-        <div class="list-container">
-            <label for="system.goals" class="resource-label">Goals <span title="Add a Goal"
-                                                                         class="list-item-create fas fa-plus"
-                                                                         data-list-type="goals"></span></label>
-            {{#each goals as |goal|}}
-                <div class="list-item-container">
-                    <input type="text" name="system.goals" value="{{goal}}" data-dtype="Array"/>
-                    <a class="item-control list-item-delete" title="Delete Goal" data-list-type="goals"><i
-                            class="fas fa-trash"></i></a>
-                </div>
-            {{/each}}
-        </div>
-
-        {{!-- Languages --}}
-        <div class="list-container">
-            <label for="system.languages" class="resource-label">Languages <span title="Add a Language"
-                                                                                 class="list-item-create fas fa-plus"
-                                                                                 data-list-type="languages"></span></label>
-            {{#each languages as |language|}}
-                <div class="list-item-container">
-                    <input type="text" name="system.languages" value="{{language}}" data-dtype="Array"/>
-                    <a class="item-control list-item-delete" title="Delete Language" data-list-type="languages"><i
-                            class="fas fa-trash"></i></a>
-                </div>
-            {{/each}}
-        </div>
+  <div class="grid-span-2 bio-section">
+    {{!-- Lifestyle --}}
+    <div class="list-container">
+      <label class="resource-label">Lifestyle <span title="Configure Lifestyle" class="configurable fas fa-gear" data-config-type="lifestyle" data-config-label="Lifestyle"></span></label>
+      <input type="text" name="system.lifestyle.label" value="{{system.lifestyle.label}}" data-dtype="String"/>
     </div>
-    <div class="grid-span-3 bio-section">
-        <label for="system.biography" class="resource-label">Description</label>
-        {{editor system.biography target="system.biography" engine="prosemirror" button=true editable=editable}}
+
+    {{!-- Expenses --}}
+    <div class="list-container">
+      <label class="resource-label">Monthly Expenses <span title="Configure Monthly Expenses" class="configurable fas fa-gear" data-config-type="monthlyExpenses" data-config-label="Monthly Expenses"></span></label>
+      <input type="number" name="totalMonthlyCost" disabled value="{{totalMonthlyCost}}" data-dtype="Number"/>
     </div>
+
+    {{!-- Goals --}}
+    <div class="list-container">
+      <label for="system.goals" class="resource-label">Goals <span title="Add a Goal" class="list-item-create fas fa-plus" data-list-type="goals"></span></label>
+      {{#each goals as |goal|}}
+        <div class="list-item-container">
+          <input type="text" name="system.goals" value="{{goal}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Goal" data-list-type="goals"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
+    </div>
+
+    {{!-- Languages --}}
+    <div class="list-container">
+      <label for="system.languages" class="resource-label">Languages <span title="Add a Language" class="list-item-create fas fa-plus" data-list-type="languages"></span></label>
+      {{#each languages as |language|}}
+        <div class="list-item-container">
+          <input type="text" name="system.languages" value="{{language}}" data-dtype="Array"/>
+          <a class="item-control list-item-delete" title="Delete Language" data-list-type="languages"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="grid-span-3 bio-section">
+    <label for="system.biography" class="resource-label">Description</label>
+    {{editor system.biography target="system.biography" engine="prosemirror" button=true editable=editable}}
+  </div>
 </div>
 

@@ -10,17 +10,14 @@ export default class WeaponItemData extends ModifiableItemData {
         return {
             ...modifiableData,
             ...attributeRequiredData,
-            skill: new fields.StringField({required: true, blank: true}),
+            skill: new fields.StringField({ required: true, blank: true }),
             isThrowable: new fields.BooleanField({required: true, initial: false}),
 
             isBurstFireable: new fields.BooleanField({required: true, initial: false}),
-            rollFormula: new fields.StringField({
-                required: true,
-                initial: '1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB'
-            }),
+            rollFormula: new fields.StringField({ required: true, initial: '1d20 + @attributeMod + @skillMod + @baseAB + @situationalAB' }),
 
             canDealNonLethalDamage: new fields.BooleanField({required: true, initial: false}),
-            damageFormula: new fields.StringField({required: true, initial: '1d6 + @attributeMod'}),
+            damageFormula: new fields.StringField({ required: true, initial: '1d6 + @attributeMod' }),
 
             hasRangedAttack: new fields.BooleanField({required: true, initial: true}),
             range: new fields.SchemaField({
@@ -33,7 +30,7 @@ export default class WeaponItemData extends ModifiableItemData {
 
             canDealTraumaticHits: new fields.BooleanField({required: true, initial: true}),
             trauma: new fields.SchemaField({
-                die: new fields.StringField({required: true, initial: '1d6'}),
+                die: new fields.StringField({ required: true, initial: '1d6' }),
                 rating: integerField(0)
             }),
 
@@ -47,7 +44,7 @@ export default class WeaponItemData extends ModifiableItemData {
             mounted: new fields.SchemaField({
                 power: integerField(0),
                 mass: integerField(1),
-                minimumSize: new fields.StringField({required: true, initial: 'small'})
+                minimumSize: new fields.StringField({ required: true, initial: 'small' })
             })
         }
     }

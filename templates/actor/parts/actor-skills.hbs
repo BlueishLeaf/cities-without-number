@@ -1,11 +1,9 @@
 <!-- Skills -->
 <div class="grid grid-5col">
-    {{#each skill as |item id|}}
-        <div class="skill">
-            <label class="resource-label rollable skill" data-item-id="{{item._id}}"
-                   data-roll-type="skill">{{item.name}}</label>
-            <input type="number" data-dtype="Number" value="{{item.system.level}}" class="skill-level"
-                   data-skill-id="{{item._id}}"/>
-        </div>
-    {{/each}}
+  {{#each skill as |item id|}}
+    <div class="skill">
+      <label class="resource-label rollable skill" data-item-id="{{item._id}}" data-roll-type="skill">{{item.name}}</label>
+      <input type="number" data-dtype="Number" value="{{item.system.level}}" class="skill-level" data-skill-id="{{item._id}}"/>
+    </div>
+  {{/each}}
 </div>

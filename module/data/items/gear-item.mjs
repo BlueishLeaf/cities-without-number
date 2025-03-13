@@ -6,7 +6,7 @@ export default class GearItemData extends TransportableItemData {
         const transportableData = super.defineSchema();
         return {
             ...transportableData,
-            wearable: new fields.BooleanField({required: true, initial: false})
+            wearable: new fields.BooleanField({ required: true, initial: false })
         }
     }
 }

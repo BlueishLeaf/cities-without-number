@@ -10,7 +10,7 @@ export default class DemonItemData extends PurchasableItemData {
             health: resourceField(0, 0),
             maxCommandLines: integerField(0),
             skillMod: integerField(0),
-            commandLines: new fields.ArrayField(new fields.StringField({required: false, blank: true}))
+            commandLines: new fields.ArrayField(new fields.StringField({ required: false, blank: true }))
         }
     }
 }

@@ -17,7 +17,7 @@ export default class DroneActorData extends MachineActorData {
             }),
             fittings: resourceField(0, 0),
             encumbrance: integerField(0),
-            operator: new fields.StringField({required: true, blank: true})
+            operator: new fields.StringField({ required: true, blank: true })
         }
     }
 }

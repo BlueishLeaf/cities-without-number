@@ -8,8 +8,8 @@ export default class FocusItemData extends BaseItemData {
         return {
             ...baseData,
             level: integerField(1),
-            level1Benefit: new fields.StringField({required: true, blank: true}),
-            level2Benefit: new fields.StringField({required: true, blank: true})
+            level1Benefit: new fields.StringField({ required: true, blank: true }),
+            level2Benefit: new fields.StringField({ required: true, blank: true })
         }
     }
 }
