@@ -21,13 +21,7 @@
     "css/cwn.css"
   ],
   "scripts": [],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
+  "languages": [],
   "socket": false,
   "gridDistance": 1,
   "gridUnits": "m",
