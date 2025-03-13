@@ -13,7 +13,7 @@ export class PhysicalActorData extends BaseActorData {
             }),
             movement: new fields.SchemaField({
                 speed: integerField(10),
-                type: new fields.StringField({ required: true, initial: 'ground' }),
+                type: new fields.StringField({required: true, initial: 'ground'}),
             })
         }
     }

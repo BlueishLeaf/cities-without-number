@@ -6,7 +6,7 @@ export class BaseActorData extends CWNDataModel {
         const fields = foundry.data.fields;
         return {
             health: resourceField(0, 0),
-            biography: new fields.HTMLField({ initial: '' })
+            biography: new fields.HTMLField({initial: ''})
         }
     }
 }

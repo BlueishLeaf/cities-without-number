@@ -7,7 +7,7 @@ export default class NpcActorData extends HumanoidActorData {
         const fields = foundry.data.fields;
         return {
             ...humanoidData,
-            hitDice: new fields.StringField({ required: true, initial: '1d6' }),
+            hitDice: new fields.StringField({required: true, initial: '1d6'}),
             skillBonus: integerField(0),
             saveTarget: integerField(0),
             attackBonus: new fields.SchemaField({

@@ -11,8 +11,8 @@ export default class CyberdeckItemData extends ModifiableItemData {
             memory: integerField(0),
             shielding: integerField(0),
             cpu: integerField(0),
-            verbs: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
-            subjects: new fields.ArrayField(new fields.StringField({ required: false, blank: true }))
+            verbs: new fields.ArrayField(new fields.StringField({required: false, blank: true})),
+            subjects: new fields.ArrayField(new fields.StringField({required: false, blank: true}))
         }
     }
 }
