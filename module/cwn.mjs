@@ -21,8 +21,7 @@ Hooks.once("init", async function () {
     // accessible in global contexts.
     game.cwn = {
         CitiesWithoutNumberActor,
-        CitiesWithoutNumberItem,
-        rollItemMacro
+        CitiesWithoutNumberItem
     };
 
     // Add custom constants for configuration.
@@ -138,30 +137,6 @@ async function createItemMacro(data, slot) {
     }
     game.user.assignHotbarMacro(macro, slot);
     return false;
-}
-
-/**
- * Create a Macro from an Item drop.
- * Get an existing item macro if one exists, otherwise create a new one.
- * @param {string} itemUuid
- */
-function rollItemMacro(itemUuid) {
-    // Reconstruct the drop data so that we can load the item.
-    const dropData = {
-        type: "Item",
-        uuid: itemUuid
-    };
-    // Load the item from the uuid.
-    Item.fromDropData(dropData).then(item => {
-        // Determine if the item loaded and if it's an owned item.
-        if (!item || !item.parent) {
-            const itemName = item?.name ?? itemUuid;
-            return ui.notifications.warn(`Could not find item ${itemName}. You may need to delete and recreate this macro.`);
-        }
-
-        // Trigger the item roll
-        item.roll();
-    });
 }
 
 /* -------------------------------------------- */
