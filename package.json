@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "compileSCSS": "sass src/scss/cwn.scss css/cwn.css --style=expanded --no-source-map",
-    "watchSCSS": "sass src/scss/cwn.scss css/cwn.css --style=expanded --source-map --watch",
-    "compileLDBtoYML": "node ./tools/compileLDBtoYML.mjs",
-    "compileYMLtoLDB": "node ./tools/compileYMLtoLDB.mjs",
+    "compileSCSS": "sass styles/cwn.scss styles/cwn.css --style=expanded --no-source-map",
+    "watchSCSS": "sass styles/cwn.scss styles/cwn.css --style=expanded --source-map --watch",
+    "compileLDBtoYML": "node ./scripts/compileLDBtoYML.mjs",
+    "compileYMLtoLDB": "node ./scripts/compileYMLtoLDB.mjs",
     "build": "npm run compileSCSS & npm run compileYMLtoLDB"
   },
   "devDependencies": {

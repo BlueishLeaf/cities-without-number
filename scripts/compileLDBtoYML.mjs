@@ -22,7 +22,7 @@ for (const pack of packs) {
     console.log("Extracting pack...")
     await extractPack(
         `${MODULE_ID}/packs/${pack}`,
-        `${MODULE_ID}/src/packs/${pack}`,
+        `${MODULE_ID}/packs/${pack}`,
         {
             yaml,
             transformName,
