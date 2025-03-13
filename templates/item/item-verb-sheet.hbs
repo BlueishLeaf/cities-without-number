@@ -1,51 +1,54 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-      <div class="grid grid-4col">
-        <div class="resource">
-          <label class="resource-label">Cost</label>
-          <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+            <div class="grid grid-4col">
+                <div class="resource">
+                    <label class="resource-label">Cost</label>
+                    <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Access Cost</label>
+                    <input type="number" name="system.accessCost" value="{{system.accessCost}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Skill Mod</label>
+                    <input type="number" name="system.skillCheckMod" value="{{system.skillCheckMod}}"
+                           data-dtype="String"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Self-Term</label>
+                    <input type="checkbox" name="system.selfTerminating" data-dtype="Boolean" {{isChecked
+                            system.selfTerminating}}/>
+                </div>
+            </div>
         </div>
-        <div class="resource">
-          <label class="resource-label">Access Cost</label>
-          <input type="number" name="system.accessCost" value="{{system.accessCost}}" data-dtype="Number"/>
-        </div>
-        <div class="resource">
-          <label class="resource-label">Skill Mod</label>
-          <input type="number" name="system.skillCheckMod" value="{{system.skillCheckMod}}" data-dtype="String"/>
-        </div>
-        <div class="resource">
-          <label class="resource-label">Self-Term</label>
-          <input type="checkbox" name="system.selfTerminating" data-dtype="Boolean" {{isChecked system.selfTerminating}}/>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="targets">Targets</a>
-  </nav>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="targets">Targets</a>
+    </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="tab max-height" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
-
-    {{!-- Targets Tab --}}
-    <div class="tab max-height" data-group="primary" data-tab="targets">
-      <button type="button" class="list-item-create" data-list-type="targetTypes">Add Target</button>
-      {{#each targetTypes as |target|}}
-        <div class="list-item-container">
-          <input type="text" name="system.targetTypes" value="{{target}}" data-dtype="Array"/>
-          <a class="item-control list-item-delete" title="Delete Target" data-list-type="targetTypes"><i class="fas fa-trash"></i></a>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab max-height" data-group="primary" data-tab="description">
+            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
         </div>
-      {{/each}}
-    </div>
-  </section>
+
+        {{!-- Targets Tab --}}
+        <div class="tab max-height" data-group="primary" data-tab="targets">
+            <button type="button" class="list-item-create" data-list-type="targetTypes">Add Target</button>
+            {{#each targetTypes as |target|}}
+                <div class="list-item-container">
+                    <input type="text" name="system.targetTypes" value="{{target}}" data-dtype="Array"/>
+                    <a class="item-control list-item-delete" title="Delete Target" data-list-type="targetTypes"><i
+                            class="fas fa-trash"></i></a>
+                </div>
+            {{/each}}
+        </div>
+    </section>
 </form>

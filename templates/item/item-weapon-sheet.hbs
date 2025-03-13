@@ -1,198 +1,216 @@
 {{!-- This template is a fallback for when items don't have more specific templates. --}}
 {{!-- Generally, you'll want to make more specific templates when possible. --}}
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-      <div class="grid grid-3col">
-        <div class="resource">
-          <label class="resource-label">Quantity</label>
-          <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+            <div class="grid grid-3col">
+                <div class="resource">
+                    <label class="resource-label">Quantity</label>
+                    <input type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Encumbrance</label>
+                    <input type="number" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Cost</label>
+                    <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+                </div>
+            </div>
         </div>
-        <div class="resource">
-          <label class="resource-label">Encumbrance</label>
-          <input type="number" name="system.encumbrance" value="{{system.encumbrance}}" data-dtype="Number"/>
-        </div>
-        <div class="resource">
-          <label class="resource-label">Cost</label>
-          <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  {{!-- Other Header Attributes --}}
-  <header class="sheet-header">
-    <div class="header-fields">
-      <hr>
+    {{!-- Other Header Attributes --}}
+    <header class="sheet-header">
+        <div class="header-fields">
+            <hr>
 
-      {{!-- Weapon Property Flags --}}
-      <div class="grid grid-3col">
-        <div class="heading-resource">
-          <label class="resource-label checkbox-offset">Burst Fire</label>
-          <input type="checkbox" name="system.isBurstFireable" {{isChecked system.isBurstFireable}}/>
-        </div>
-        <div class="heading-resource">
-          <label class="resource-label checkbox-offset">Non-Lethal</label>
-          <input type="checkbox" name="system.canDealNonLethalDamage" {{isChecked system.canDealNonLethalDamage}}/>
-        </div>
-        <div class="heading-resource">
-          <label class="resource-label checkbox-offset">Throwable</label>
-          <input type="checkbox" name="system.isThrowable" {{isChecked system.isThrowable}}/>
-        </div>
-      </div>
+            {{!-- Weapon Property Flags --}}
+            <div class="grid grid-3col">
+                <div class="heading-resource">
+                    <label class="resource-label checkbox-offset">Burst Fire</label>
+                    <input type="checkbox" name="system.isBurstFireable" {{isChecked system.isBurstFireable}}/>
+                </div>
+                <div class="heading-resource">
+                    <label class="resource-label checkbox-offset">Non-Lethal</label>
+                    <input type="checkbox" name="system.canDealNonLethalDamage" {{isChecked
+                            system.canDealNonLethalDamage}}/>
+                </div>
+                <div class="heading-resource">
+                    <label class="resource-label checkbox-offset">Throwable</label>
+                    <input type="checkbox" name="system.isThrowable" {{isChecked system.isThrowable}}/>
+                </div>
+            </div>
 
-      <hr>
+            <hr>
 
-      {{!-- Roll Formulae --}}
-      <div class="grid grid-2col">
-        <div class="resource">
-          <label class="resource-label">Attack Roll Formula</label>
-          <input type="text" name="system.rollFormula" value="{{system.rollFormula}}" data-dtype="String"/>
-        </div>
-        <div class="resource">
-          <label class="resource-label">Damage Roll Formula</label>
-          <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" data-dtype="String"/>
-        </div>
-      </div>
-
-      <hr>
-
-      {{!-- Trauma & Shock Controls --}}
-      <div class="grid grid-2col">
-        {{!-- Trauma Section --}}
-        <section>
-          {{!-- Trauma Header --}}
-          <div class="heading-resource">
-            <label class="resource-label checkbox-offset" for="system.canDealTraumaticHits">Trauma Damage</label>
-            <input type="checkbox" name="system.canDealTraumaticHits" {{isChecked system.canDealTraumaticHits}}/>
-          </div>
-          {{!-- Trauma Conditional Display --}}
-          {{#if system.canDealTraumaticHits}}
+            {{!-- Roll Formulae --}}
             <div class="grid grid-2col">
-              <div class="resource">
-                <label class="resource-label">Trauma Die</label>
-                <input type="text" name="system.trauma.die" value="{{system.trauma.die}}" data-dtype="String"/>
-              </div>
-              <div class="resource">
-                <label class="resource-label">Trauma Rating</label>
-                <input type="number" name="system.trauma.rating" value="{{system.trauma.rating}}" data-dtype="Number"/>
-              </div>
+                <div class="resource">
+                    <label class="resource-label">Attack Roll Formula</label>
+                    <input type="text" name="system.rollFormula" value="{{system.rollFormula}}" data-dtype="String"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Damage Roll Formula</label>
+                    <input type="text" name="system.damageFormula" value="{{system.damageFormula}}"
+                           data-dtype="String"/>
+                </div>
             </div>
-          {{/if}}
-        </section>
 
-        {{!-- Shock Section --}}
-        <section>
-          {{!-- Shock Header --}}
-          <div class="heading-resource">
-            <label class="resource-label checkbox-offset" for="system.availableSkillPoints">Shock Damage</label>
-            <input type="checkbox" name="system.canDealShockDamage" {{isChecked system.canDealShockDamage}}/>
-          </div>
-          {{!-- Shock Conditional Display --}}
-          {{#if system.canDealShockDamage}}
+            <hr>
+
+            {{!-- Trauma & Shock Controls --}}
             <div class="grid grid-2col">
-              <div class="resource">
-                <label class="resource-label">Shock Damage</label>
-                <input type="number" name="system.shock.damage" value="{{system.shock.damage}}" data-dtype="Number"/>
-              </div>
-              <div class="resource">
-                <label class="resource-label">AC Threshold</label>
-                <input type="number" name="system.shock.threshold" value="{{system.shock.threshold}}" data-dtype="Number"/>
-              </div>
+                {{!-- Trauma Section --}}
+                <section>
+                    {{!-- Trauma Header --}}
+                    <div class="heading-resource">
+                        <label class="resource-label checkbox-offset" for="system.canDealTraumaticHits">Trauma
+                            Damage</label>
+                        <input type="checkbox" name="system.canDealTraumaticHits" {{isChecked
+                                system.canDealTraumaticHits}}/>
+                    </div>
+                    {{!-- Trauma Conditional Display --}}
+                    {{#if system.canDealTraumaticHits}}
+                        <div class="grid grid-2col">
+                            <div class="resource">
+                                <label class="resource-label">Trauma Die</label>
+                                <input type="text" name="system.trauma.die" value="{{system.trauma.die}}"
+                                       data-dtype="String"/>
+                            </div>
+                            <div class="resource">
+                                <label class="resource-label">Trauma Rating</label>
+                                <input type="number" name="system.trauma.rating" value="{{system.trauma.rating}}"
+                                       data-dtype="Number"/>
+                            </div>
+                        </div>
+                    {{/if}}
+                </section>
+
+                {{!-- Shock Section --}}
+                <section>
+                    {{!-- Shock Header --}}
+                    <div class="heading-resource">
+                        <label class="resource-label checkbox-offset" for="system.availableSkillPoints">Shock
+                            Damage</label>
+                        <input type="checkbox" name="system.canDealShockDamage" {{isChecked
+                                system.canDealShockDamage}}/>
+                    </div>
+                    {{!-- Shock Conditional Display --}}
+                    {{#if system.canDealShockDamage}}
+                        <div class="grid grid-2col">
+                            <div class="resource">
+                                <label class="resource-label">Shock Damage</label>
+                                <input type="number" name="system.shock.damage" value="{{system.shock.damage}}"
+                                       data-dtype="Number"/>
+                            </div>
+                            <div class="resource">
+                                <label class="resource-label">AC Threshold</label>
+                                <input type="number" name="system.shock.threshold" value="{{system.shock.threshold}}"
+                                       data-dtype="Number"/>
+                            </div>
+                        </div>
+                    {{/if}}
+                </section>
             </div>
-          {{/if}}
-        </section>
-      </div>
 
-      <hr>
+            <hr>
 
-      {{!-- Range & Magazine Size Controls --}}
-      <div class="grid grid-2col">
-        {{!-- Range Section --}}
-        <section>
-          {{!-- Range Header --}}
-          <div class="heading-resource">
-            <label class="resource-label checkbox-offset" title="Range (Effective/Maximum)">Range (Eff./Max)</label>
-            <input type="checkbox" name="system.hasRangedAttack" {{isChecked system.hasRangedAttack}}/>
-          </div>
-          {{!-- Range Conditional Display --}}
-          {{#if system.hasRangedAttack}}
-            <div class="resource flex-group-center">
-              <div class="resource-content flexrow flex-center flex-between">
-                <input type="number" name="system.range.effective" value="{{system.range.effective}}" data-dtype="Number"/>
-                <i class="fas fa-slash-forward"></i>
-                <input type="number" name="system.range.max" value="{{system.range.max}}" data-dtype="Number"/>
-              </div>
+            {{!-- Range & Magazine Size Controls --}}
+            <div class="grid grid-2col">
+                {{!-- Range Section --}}
+                <section>
+                    {{!-- Range Header --}}
+                    <div class="heading-resource">
+                        <label class="resource-label checkbox-offset" title="Range (Effective/Maximum)">Range
+                            (Eff./Max)</label>
+                        <input type="checkbox" name="system.hasRangedAttack" {{isChecked system.hasRangedAttack}}/>
+                    </div>
+                    {{!-- Range Conditional Display --}}
+                    {{#if system.hasRangedAttack}}
+                        <div class="resource flex-group-center">
+                            <div class="resource-content flexrow flex-center flex-between">
+                                <input type="number" name="system.range.effective" value="{{system.range.effective}}"
+                                       data-dtype="Number"/>
+                                <i class="fas fa-slash-forward"></i>
+                                <input type="number" name="system.range.max" value="{{system.range.max}}"
+                                       data-dtype="Number"/>
+                            </div>
+                        </div>
+                    {{/if}}
+                </section>
+
+                {{!-- Magazine Size Section --}}
+                <section>
+                    {{!-- Magazine Size Header --}}
+                    <div class="heading-resource">
+                        <label class="resource-label checkbox-offset">Magazine Size</label>
+                        <input type="checkbox" name="system.hasMagazine" {{isChecked system.hasMagazine}}/>
+                    </div>
+                    {{!-- Magazine Size Conditional Display --}}
+                    {{#if system.hasMagazine}}
+                        <div class="resource flex-group-center">
+                            <div class="resource-content flexrow flex-center flex-between">
+                                <input type="number" name="system.magazine.value" value="{{system.magazine.value}}"
+                                       data-dtype="Number"/>
+                                <i class="fas fa-slash-forward"></i>
+                                <input type="number" name="system.magazine.max" value="{{system.magazine.max}}"
+                                       data-dtype="Number"/>
+                            </div>
+                        </div>
+                    {{/if}}
+                </section>
             </div>
-          {{/if}}
-        </section>
 
-        {{!-- Magazine Size Section --}}
-        <section>
-          {{!-- Magazine Size Header --}}
-          <div class="heading-resource">
-            <label class="resource-label checkbox-offset">Magazine Size</label>
-            <input type="checkbox" name="system.hasMagazine" {{isChecked system.hasMagazine}}/>
-          </div>
-          {{!-- Magazine Size Conditional Display --}}
-          {{#if system.hasMagazine}}
-            <div class="resource flex-group-center">
-              <div class="resource-content flexrow flex-center flex-between">
-                <input type="number" name="system.magazine.value" value="{{system.magazine.value}}" data-dtype="Number"/>
-                <i class="fas fa-slash-forward"></i>
-                <input type="number" name="system.magazine.max" value="{{system.magazine.max}}" data-dtype="Number"/>
-              </div>
-            </div>
-          {{/if}}
-        </section>
-      </div>
+            <hr>
 
-      <hr>
-
-      {{!-- Mounted Controls --}}
-      <section>
-        <div class="heading-resource">
-          <label class="resource-label checkbox-offset" for="system.canBeMounted">Mountable</label>
-          <input type="checkbox" name="system.canBeMounted" {{isChecked system.canBeMounted}}/>
+            {{!-- Mounted Controls --}}
+            <section>
+                <div class="heading-resource">
+                    <label class="resource-label checkbox-offset" for="system.canBeMounted">Mountable</label>
+                    <input type="checkbox" name="system.canBeMounted" {{isChecked system.canBeMounted}}/>
+                </div>
+                {{#if system.canBeMounted}}
+                    <div class="grid grid-3col">
+                        <div class="resource">
+                            <label class="resource-label">Power</label>
+                            <input type="number" name="system.mounted.power" value="{{system.mounted.power}}"
+                                   data-dtype="Number"/>
+                        </div>
+                        <div class="resource">
+                            <label class="resource-label">Mass</label>
+                            <input type="number" name="system.mounted.mass" value="{{system.mounted.mass}}"
+                                   data-dtype="Number"/>
+                        </div>
+                        <div class="resource">
+                            <label class="resource-label" title="Minimum Size">Min. Size</label>
+                            <input type="text" name="system.mounted.minimumSize" value="{{system.mounted.minimumSize}}"
+                                   data-dtype="String"/>
+                        </div>
+                    </div>
+                {{/if}}
+            </section>
         </div>
-        {{#if system.canBeMounted}}
-          <div class="grid grid-3col">
-            <div class="resource">
-              <label class="resource-label">Power</label>
-              <input type="number" name="system.mounted.power" value="{{system.mounted.power}}" data-dtype="Number"/>
-            </div>
-            <div class="resource">
-              <label class="resource-label">Mass</label>
-              <input type="number" name="system.mounted.mass" value="{{system.mounted.mass}}" data-dtype="Number"/>
-            </div>
-            <div class="resource">
-              <label class="resource-label" title="Minimum Size">Min. Size</label>
-              <input type="text" name="system.mounted.minimumSize" value="{{system.mounted.minimumSize}}" data-dtype="String"/>
-            </div>
-          </div>
-        {{/if}}
-      </section>
-    </div>
-  </header>
+    </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="mods">Mods</a>
-  </nav>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="mods">Mods</a>
+    </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="tab max-height" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab max-height" data-group="primary" data-tab="description">
+            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+        </div>
 
-    {{!-- Mods Tab --}}
-    <div class="tab" data-group="primary" data-tab="mods">
-      {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
-    </div>
-  </section>
+        {{!-- Mods Tab --}}
+        <div class="tab" data-group="primary" data-tab="mods">
+            {{> "systems/cities-without-number/templates/shared/document-mods.hbs"}}
+        </div>
+    </section>
 </form>

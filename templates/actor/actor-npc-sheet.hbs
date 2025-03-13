@@ -1,146 +1,167 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
-  {{#if limited}}
-    {{> "systems/cities-without-number/templates/actor/parts/actor-limited.hbs"}}
-  {{else}}
+    {{#if limited}}
+        {{> "systems/cities-without-number/templates/actor/parts/actor-limited.hbs"}}
+    {{else}}
     {{!-- Sheet Header --}}
-    <header class="sheet-header">
-      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-      <div class="header-fields">
-        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-        {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
-        use both the "grid" and "grid-Ncol" class where "N" can be any number
-        from 1 to 12 and will create that number of columns.  --}}
-        <div class="resources grid grid-4col">
+        <header class="sheet-header">
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100"
+                 width="100"/>
+            <div class="header-fields">
+                <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+                {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+                use both the "grid" and "grid-Ncol" class where "N" can be any number
+                from 1 to 12 and will create that number of columns.  --}}
+                <div class="resources grid grid-4col">
 
-          {{!-- "flex-group-center" is also defined in the _grid.scss file
-          and it will add a small amount of padding, a border, and will
-          center all of its child elements content and text. --}}
-          <div class="resource flex-group-center">
-            <label for="system.health.value" class="resource-label">Health</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
-              <i class="fas fa-slash-forward"></i>
-              <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+                    {{!-- "flex-group-center" is also defined in the _grid.scss file
+                    and it will add a small amount of padding, a border, and will
+                    center all of its child elements content and text. --}}
+                    <div class="resource flex-group-center">
+                        <label for="system.health.value" class="resource-label">Health</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.health.value" value="{{system.health.value}}"
+                                   data-dtype="Number"/>
+                            <i class="fas fa-slash-forward"></i>
+                            <input type="number" name="system.health.max" value="{{system.health.max}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.hitDice" class="resource-label">Hit Dice</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input class="between-left" type="text" name="system.hitDice" value="{{system.hitDice}}"
+                                   data-dtype="String"/>
+                            <button type="button" class="between-right form-button rollable" data-roll-type="hitdice"
+                                    title="Roll for HP"><i class="fas fa-dice-d20"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.damageSoak.value" class="resource-label">Damage Soak</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.damageSoak.value" value="{{system.damageSoak.value}}"
+                                   data-dtype="Number"/>
+                            <i class="fas fa-slash-forward"></i>
+                            <input type="number" name="system.damageSoak.max" value="{{system.damageSoak.max}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label class="resource-label" title="Armor Class (Melee/Ranged)">AC (M/R)</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.armorClass.melee" value="{{system.armorClass.melee}}"
+                                   data-dtype="Number"/>
+                            <i class="fas fa-slash-forward"></i>
+                            <input type="number" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.traumaTarget.total" class="resource-label">Trauma Target</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.traumaTarget.total" value="{{system.traumaTarget.total}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.attackBonus.melee" class="resource-label"
+                               title="Attack Bonus (Melee/Ranged)">AB (M/R)</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.attackBonus.melee" value="{{system.attackBonus.melee}}"
+                                   data-dtype="Number"/>
+                            <i class="fas fa-slash-forward"></i>
+                            <input type="number" name="system.attackBonus.ranged" value="{{system.attackBonus.ranged}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.movement.speed" class="resource-label">Movement</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.movement.speed" value="{{system.movement.speed}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.dangerValue" class="resource-label">Danger Value</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="number" name="system.dangerValue" value="{{system.dangerValue}}"
+                                   data-dtype="Number"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resources resources grid grid-3col">
+                    <div class="resource flex-group-center">
+                        <label for="system.skillBonus" class="resource-label">Skill Bonus</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input class="between-left" type="number" name="system.skillBonus"
+                                   value="{{system.skillBonus}}" data-dtype="Number"/>
+                            <button type="button" class="between-right form-button rollable" data-roll-type="skill">Roll
+                                <i class="fas fa-dice-d20"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.saveTarget" class="resource-label">Save Target</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input class="between-left" type="number" name="system.saveTarget"
+                                   value="{{system.saveTarget}}" data-dtype="Number"/>
+                            <button type="button" class="between-right form-button rollable" data-roll-type="save">Roll
+                                <i class="fas fa-dice-d20"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="resource flex-group-center">
+                        <label for="system.moraleTarget" class="resource-label">Morale</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" class="between-left" name="system.moraleTarget"
+                                   value="{{system.moraleTarget}}" data-dtype="Number"/>
+                            <button type="button" class="between-right form-button rollable" data-roll-type="morale">
+                                Roll <i class="fas fa-dice-d20"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </header>
 
-          <div class="resource flex-group-center">
-            <label for="system.hitDice" class="resource-label">Hit Dice</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input class="between-left" type="text" name="system.hitDice" value="{{system.hitDice}}" data-dtype="String"/>
-              <button type="button" class="between-right form-button rollable" data-roll-type="hitdice" title="Roll for HP"><i class="fas fa-dice-d20"></i></button>
+        {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            {{!-- Default tab is specified in actor-sheet.mjs --}}
+            <a class="item" data-tab="inventory">Inventory</a>
+            <a class="item" data-tab="cyberware">Cyberware</a>
+            <a class="item" data-tab="features">Features</a>
+            <a class="item" data-tab="biography">Biography</a>
+        </nav>
+
+        {{!-- Sheet Body --}}
+        <section class="sheet-body">
+
+            {{!-- Biography Tab --}}
+            <div class="tab biography max-height" data-group="primary" data-tab="biography">
+                {{> "systems/cities-without-number/templates/actor/parts/actor-biography.hbs"}}
             </div>
-          </div>
 
-          <div class="resource flex-group-center">
-            <label for="system.damageSoak.value" class="resource-label">Damage Soak</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.damageSoak.value" value="{{system.damageSoak.value}}" data-dtype="Number"/>
-              <i class="fas fa-slash-forward"></i>
-              <input type="number" name="system.damageSoak.max" value="{{system.damageSoak.max}}" data-dtype="Number"/>
+            {{!-- Inventory Tab --}}
+            <div class="tab items" data-group="primary" data-tab="inventory">
+                {{> "systems/cities-without-number/templates/actor/parts/actor-humanoid-equipment.hbs" showReadied=false}}
             </div>
-          </div>
 
-          <div class="resource flex-group-center">
-            <label class="resource-label" title="Armor Class (Melee/Ranged)">AC (M/R)</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.armorClass.melee" value="{{system.armorClass.melee}}" data-dtype="Number"/>
-              <i class="fas fa-slash-forward"></i>
-              <input type="number" name="system.armorClass.ranged" value="{{system.armorClass.ranged}}" data-dtype="Number"/>
+            {{!-- Cyberware Tab --}}
+            <div class="tab items" data-group="primary" data-tab="cyberware">
+                {{> "systems/cities-without-number/templates/actor/parts/actor-total-cyberware.hbs" showCyberwearHeader=false}}
             </div>
-          </div>
 
-          <div class="resource flex-group-center">
-            <label for="system.traumaTarget.total" class="resource-label">Trauma Target</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.traumaTarget.total" value="{{system.traumaTarget.total}}" data-dtype="Number"/>
+            {{!-- Features Tab --}}
+            <div class="tab features" data-group="primary" data-tab="features">
+                {{> "systems/cities-without-number/templates/actor/parts/actor-features.hbs"}}
             </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label for="system.attackBonus.melee" class="resource-label" title="Attack Bonus (Melee/Ranged)">AB (M/R)</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.attackBonus.melee" value="{{system.attackBonus.melee}}" data-dtype="Number"/>
-              <i class="fas fa-slash-forward"></i>
-              <input type="number" name="system.attackBonus.ranged" value="{{system.attackBonus.ranged}}" data-dtype="Number"/>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label for="system.movement.speed" class="resource-label">Movement</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.movement.speed" value="{{system.movement.speed}}" data-dtype="Number"/>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label for="system.dangerValue" class="resource-label">Danger Value</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="number" name="system.dangerValue" value="{{system.dangerValue}}" data-dtype="Number"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="resources resources grid grid-3col">
-          <div class="resource flex-group-center">
-            <label for="system.skillBonus" class="resource-label">Skill Bonus</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input class="between-left" type="number" name="system.skillBonus" value="{{system.skillBonus}}" data-dtype="Number"/>
-              <button type="button" class="between-right form-button rollable" data-roll-type="skill">Roll <i class="fas fa-dice-d20"></i></button>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label for="system.saveTarget" class="resource-label">Save Target</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input class="between-left" type="number" name="system.saveTarget" value="{{system.saveTarget}}" data-dtype="Number"/>
-              <button type="button" class="between-right form-button rollable" data-roll-type="save">Roll <i class="fas fa-dice-d20"></i></button>
-            </div>
-          </div>
-
-          <div class="resource flex-group-center">
-            <label for="system.moraleTarget" class="resource-label">Morale</label>
-            <div class="resource-content flexrow flex-center flex-between">
-              <input type="text" class="between-left" name="system.moraleTarget" value="{{system.moraleTarget}}" data-dtype="Number"/>
-              <button type="button" class="between-right form-button rollable" data-roll-type="morale">Roll <i class="fas fa-dice-d20"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-      {{!-- Default tab is specified in actor-sheet.mjs --}}
-      <a class="item" data-tab="inventory">Inventory</a>
-      <a class="item" data-tab="cyberware">Cyberware</a>
-      <a class="item" data-tab="features">Features</a>
-      <a class="item" data-tab="biography">Biography</a>
-    </nav>
-
-    {{!-- Sheet Body --}}
-    <section class="sheet-body">
-
-      {{!-- Biography Tab --}}
-      <div class="tab biography max-height" data-group="primary" data-tab="biography">
-        {{> "systems/cities-without-number/templates/actor/parts/actor-biography.hbs"}}
-      </div>
-
-      {{!-- Inventory Tab --}}
-      <div class="tab items" data-group="primary" data-tab="inventory">
-        {{> "systems/cities-without-number/templates/actor/parts/actor-humanoid-equipment.hbs" showReadied=false}}
-      </div>
-
-      {{!-- Cyberware Tab --}}
-      <div class="tab items" data-group="primary" data-tab="cyberware">
-        {{> "systems/cities-without-number/templates/actor/parts/actor-total-cyberware.hbs" showCyberwearHeader=false}}
-      </div>
-
-      {{!-- Features Tab --}}
-      <div class="tab features" data-group="primary" data-tab="features">
-        {{> "systems/cities-without-number/templates/actor/parts/actor-features.hbs"}}
-      </div>
-    </section>
-  {{/if}}
+        </section>
+    {{/if}}
 </form>
 

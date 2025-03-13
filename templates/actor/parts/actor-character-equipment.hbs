@@ -1,38 +1,50 @@
 {{!-- Headers --}}
 <div class="resources grid grid-4col">
-  <div class="resource flex-group-center">
-    <label for="system.encumbrance.stowed.value" class="resource-label">Stowed Items <span title="Configure Stowed Items" class="configurable fas fa-gear" data-config-type="stowedItems" data-config-label="Stowed Items"></span></label>
-    <div class="resource-content flexrow flex-center flex-between">
-    <input type="number" name="system.encumbrance.stowed.value" disabled value="{{system.encumbrance.stowed.value}}" data-dtype="Number"/>
-    <i class="fas fa-slash-forward"></i>
-    <input type="number" name="system.encumbrance.stowed.max" disabled value="{{system.encumbrance.stowed.max}}" data-dtype="Number"/>
+    <div class="resource flex-group-center">
+        <label for="system.encumbrance.stowed.value" class="resource-label">Stowed Items <span
+                title="Configure Stowed Items" class="configurable fas fa-gear" data-config-type="stowedItems"
+                data-config-label="Stowed Items"></span></label>
+        <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.encumbrance.stowed.value" disabled
+                   value="{{system.encumbrance.stowed.value}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="number" name="system.encumbrance.stowed.max" disabled value="{{system.encumbrance.stowed.max}}"
+                   data-dtype="Number"/>
+        </div>
     </div>
-  </div>
 
-  <div class="resource flex-group-center">
-    <label for="system.encumbrance.readied.value" class="resource-label">Readied Items <span title="Configure Readied Items" class="configurable fas fa-gear" data-config-type="readiedItems" data-config-label="Readied Items"></span></label>
-    <div class="resource-content flexrow flex-center flex-between">
-    <input type="number" name="system.encumbrance.readied.value" disabled value="{{system.encumbrance.readied.value}}" data-dtype="Number"/>
-    <i class="fas fa-slash-forward"></i>
-    <input type="number" name="system.encumbrance.readied.max" disabled value="{{system.encumbrance.readied.max}}" data-dtype="Number"/>
+    <div class="resource flex-group-center">
+        <label for="system.encumbrance.readied.value" class="resource-label">Readied Items <span
+                title="Configure Readied Items" class="configurable fas fa-gear" data-config-type="readiedItems"
+                data-config-label="Readied Items"></span></label>
+        <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.encumbrance.readied.value" disabled
+                   value="{{system.encumbrance.readied.value}}" data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="number" name="system.encumbrance.readied.max" disabled
+                   value="{{system.encumbrance.readied.max}}" data-dtype="Number"/>
+        </div>
     </div>
-  </div>
 
-  <div class="resource flex-group-center">
-    <label for="system.encumbrance.readied.value" class="resource-label" title="Maintenance Score">Maint. Score <span title="Configure Maintenance Score" class="configurable fas fa-gear" data-config-type="maintenanceScore" data-config-label="Maintenance Score"></span></label>
-    <div class="resource-content flexrow flex-center flex-between">
-      <input type="number" name="system.maintenanceScore.value" value="{{system.maintenanceScore.value}}" data-dtype="Number"/>
-      <i class="fas fa-slash-forward"></i>
-      <input type="number" name="system.maintenanceScore.max" disabled value="{{system.maintenanceScore.max}}" data-dtype="Number"/>
+    <div class="resource flex-group-center">
+        <label for="system.encumbrance.readied.value" class="resource-label" title="Maintenance Score">Maint. Score
+            <span title="Configure Maintenance Score" class="configurable fas fa-gear"
+                  data-config-type="maintenanceScore" data-config-label="Maintenance Score"></span></label>
+        <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.maintenanceScore.value" value="{{system.maintenanceScore.value}}"
+                   data-dtype="Number"/>
+            <i class="fas fa-slash-forward"></i>
+            <input type="number" name="system.maintenanceScore.max" disabled value="{{system.maintenanceScore.max}}"
+                   data-dtype="Number"/>
+        </div>
     </div>
-  </div>
 
-  <div class="resource flex-group-center">
-    <label for="system.encumbrance.currentReadied" class="resource-label">Money</label>
-    <div class="resource-content flexrow flex-center flex-between">
-      <input type="number" name="system.money" value="{{system.money}}" data-dtype="Number"/>
+    <div class="resource flex-group-center">
+        <label for="system.encumbrance.currentReadied" class="resource-label">Money</label>
+        <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.money" value="{{system.money}}" data-dtype="Number"/>
+        </div>
     </div>
-  </div>
 </div>
 <hr>
 {{> "systems/cities-without-number/templates/actor/parts/actor-humanoid-equipment.hbs" showReadied=true}}
