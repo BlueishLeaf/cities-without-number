@@ -10,10 +10,12 @@
   background: rgba(0, 0, 0, 0.05);
   border: $border-groove;
   font-weight: bold;
+
   > * {
     font-size: 14px;
     text-align: center;
   }
+
   .item-name {
     font-weight: bold;
     padding-left: 5px;
@@ -59,6 +61,7 @@
     text-align: left;
     align-items: center;
     display: flex;
+
     h3, h4 {
       margin: 0;
       white-space: nowrap;
@@ -71,6 +74,7 @@
     display: flex;
     flex: 0 0 70px;
     justify-content: center;
+
     h3, h4 {
       margin: 0;
       white-space: nowrap;
@@ -83,6 +87,7 @@
     display: flex;
     flex: 0 0 70px;
     justify-content: flex-end;
+
     a {
       font-size: 12px;
       text-align: center;
@@ -95,9 +100,14 @@
     align-items: center;
     padding: 0 2px; // to align with the header border
     border-bottom: 1px solid $c-faint;
-    &:last-child { border-bottom: none; }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
     .item-name {
       color: $c-dark;
+
       .item-image {
         flex: 0 0 30px;
         height: 30px;
@@ -124,10 +134,12 @@
     background: rgba(0, 0, 0, 0.05);
     border: $border-groove;
     font-weight: bold;
+
     > * {
       font-size: 12px;
       text-align: center;
     }
+
     .item-name {
       padding-left: 5px;
       text-align: left;
