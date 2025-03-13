@@ -13,8 +13,8 @@ node_modules/
 .DS_Store
 
 # Generated CSS Artifacts
-*.css
-*.map
+./styles/*.css
+./styles/*.map
 
 # Generated LevelDB Artifacts
 packs/*/*
