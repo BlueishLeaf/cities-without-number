@@ -1,39 +1,41 @@
 {{!-- This template is a fallback for when items don't have more specific templates. --}}
 {{!-- Generally, you'll want to make more specific templates when possible. --}}
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-      <div class="resource">
-        <label class="resource-label">Current Focus Level</label>
-        <div class="resource-content flexrow flex-center flex-between">
-          <select class="block-select" name="system.level">
-              {{selectOptions config.CWN.fociLevels selected=system.level}}
-          </select>
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+            <div class="resource">
+                <label class="resource-label">Current Focus Level</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <select class="block-select" name="system.level">
+                        {{selectOptions config.CWN.fociLevels selected=system.level}}
+                    </select>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="level1Benefit">Level 1 Benefit</a>
-    <a class="item" data-tab="level2Benefit">Level 2 Benefit</a>
-  </nav>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="level1Benefit">Level 1 Benefit</a>
+        <a class="item" data-tab="level2Benefit">Level 2 Benefit</a>
+    </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="tab max-height" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
-    <div class="tab max-height" data-group="primary" data-tab="level1Benefit">
-      {{editor system.level1Benefit target="system.level1Benefit" engine="prosemirror" button=true editable=editable}}
-    </div>
-    <div class="tab max-height" data-group="primary" data-tab="level2Benefit">
-      {{editor system.level2Benefit target="system.level2Benefit" engine="prosemirror" button=true editable=editable}}
-    </div>
-  </section>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab max-height" data-group="primary" data-tab="description">
+            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+        </div>
+        <div class="tab max-height" data-group="primary" data-tab="level1Benefit">
+            {{editor system.level1Benefit target="system.level1Benefit" engine="prosemirror" button=true
+                     editable=editable}}
+        </div>
+        <div class="tab max-height" data-group="primary" data-tab="level2Benefit">
+            {{editor system.level2Benefit target="system.level2Benefit" engine="prosemirror" button=true
+                     editable=editable}}
+        </div>
+    </section>
 </form>

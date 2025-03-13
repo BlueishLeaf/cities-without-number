@@ -6,7 +6,7 @@ export class ModifiableItemData extends TransportableItemData {
         const transportableData = super.defineSchema();
         return {
             ...transportableData,
-            mods: new fields.ArrayField(new fields.StringField({ required: false, blank: true }))
+            mods: new fields.ArrayField(new fields.StringField({required: false, blank: true}))
         }
     }
 }

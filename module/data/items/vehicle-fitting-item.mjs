@@ -10,7 +10,7 @@ export default class VehicleFittingItemData extends PurchasableItemData {
             quantity: integerField(1),
             power: integerField(0),
             mass: integerField(0),
-            minimumSize: new fields.StringField({ required: false, blank: true })
+            minimumSize: new fields.StringField({required: false, blank: true})
         }
     }
 }

@@ -6,8 +6,8 @@ export default class ContactItemData extends BaseItemData {
         const fields = foundry.data.fields;
         return {
             ...baseData,
-            relationship: new fields.StringField({ required: true, blank: true }),
-            summary: new fields.StringField({ required: true, blank: true })
+            relationship: new fields.StringField({required: true, blank: true}),
+            summary: new fields.StringField({required: true, blank: true})
         }
     }
 }

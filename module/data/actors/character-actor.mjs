@@ -1,8 +1,8 @@
 import {
-    abilityField, computedResourceField,
+    abilityField,
+    computedResourceField,
     decimalField,
     integerField,
-    resourceField,
     savingThrowField
 } from "../../helpers/schema-helpers.mjs";
 import {HumanoidActorData} from "./templates/humanoid-actor.mjs";
@@ -13,7 +13,7 @@ export default class CharacterActorData extends HumanoidActorData {
         const fields = foundry.data.fields;
         return {
             ...humanoidData,
-            background: new fields.StringField({ required: false, blank: true }),
+            background: new fields.StringField({required: false, blank: true}),
             abilities: new fields.SchemaField({
                 str: abilityField('Strength', 10),
                 dex: abilityField('Dexterity', 10),
@@ -56,12 +56,12 @@ export default class CharacterActorData extends HumanoidActorData {
             availableSkillPoints: integerField(0),
             attackBonus: integerField(0),
             money: integerField(0),
-            languages: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
-            goals: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
+            languages: new fields.ArrayField(new fields.StringField({required: false, blank: true})),
+            goals: new fields.ArrayField(new fields.StringField({required: false, blank: true})),
             maintenanceScore: computedResourceField(0, 0),
-            majorInjuries: new fields.ArrayField(new fields.StringField({ required: false, blank: true })),
+            majorInjuries: new fields.ArrayField(new fields.StringField({required: false, blank: true})),
             lifestyle: new fields.SchemaField({
-                label: new fields.StringField({ required: false, blank: true }),
+                label: new fields.StringField({required: false, blank: true}),
                 monthlyCost: integerField(0),
                 systemStrainMod: decimalField(0)
             }),

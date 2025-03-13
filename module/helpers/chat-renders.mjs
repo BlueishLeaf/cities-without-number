@@ -1,22 +1,22 @@
 export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, rollRenders) => {
-  let content = "";
+    let content = "";
 
-  if (rollRenders[0]) {
-    content += attackRender(rollRenders[0])
-  }
+    if (rollRenders[0]) {
+        content += attackRender(rollRenders[0])
+    }
 
-  // Add trauma and shock renders if applicable
-  if (rollRenders[1]) {
-    content += rollRenders[2]
-      ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.trauma.rating, damageRoll.total)
-      : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
-  }
+    // Add trauma and shock renders if applicable
+    if (rollRenders[1]) {
+        content += rollRenders[2]
+            ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.trauma.rating, damageRoll.total)
+            : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
+    }
 
-  if (weapon.system.canDealShockDamage) {
-    content += shockDamageRender(weapon);
-  }
+    if (weapon.system.canDealShockDamage) {
+        content += shockDamageRender(weapon);
+    }
 
-  return content;
+    return content;
 };
 
 export const shockDamageRender = weapon => `

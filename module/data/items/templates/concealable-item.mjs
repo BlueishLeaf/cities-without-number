@@ -6,8 +6,8 @@ export class ConcealableItemData extends ModifiableItemData {
         const modifiableData = super.defineSchema();
         return {
             ...modifiableData,
-            concealment: new fields.StringField({ required: true, blank: true }),
-            subType: new fields.StringField({ required: true, blank: true })
+            concealment: new fields.StringField({required: true, blank: true}),
+            subType: new fields.StringField({required: true, blank: true})
         }
     }
 }

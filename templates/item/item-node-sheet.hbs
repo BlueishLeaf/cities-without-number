@@ -1,29 +1,33 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-      <div class="resource">
-        <label class="resource-label" title="Connections with no barrier between them">Unblocked Connections</label>
-        <input type="text" name="system.unblockedConnections" value="{{system.unblockedConnections}}" data-dtype="String"/>
-      </div>
-      <div class="resource">
-        <label class="resource-label" title="Connections with a barrier between them">Blocked Connections</label>
-        <input type="text" name="system.blockedConnections" value="{{system.blockedConnections}}" data-dtype="String"/>
-      </div>
-    </div>
-  </header>
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+            <div class="resource">
+                <label class="resource-label" title="Connections with no barrier between them">Unblocked
+                    Connections</label>
+                <input type="text" name="system.unblockedConnections" value="{{system.unblockedConnections}}"
+                       data-dtype="String"/>
+            </div>
+            <div class="resource">
+                <label class="resource-label" title="Connections with a barrier between them">Blocked
+                    Connections</label>
+                <input type="text" name="system.blockedConnections" value="{{system.blockedConnections}}"
+                       data-dtype="String"/>
+            </div>
+        </div>
+    </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-  </nav>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+    </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="tab max-height" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
-  </section>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab max-height" data-group="primary" data-tab="description">
+            {{editor system.description target="system.description" engine="prosemirror" button=true editable=editable}}
+        </div>
+    </section>
 </form>
