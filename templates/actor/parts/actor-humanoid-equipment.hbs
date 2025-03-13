@@ -40,7 +40,7 @@
             </div>
             {{#if ../showReadied}}
                 <div class="item-stats">
-                    <input class="readiable" data-item-id="{{item._id}}" type="checkbox" {{{isArmorReadiable item
+                    <input class="readiable" data-item-id="{{item._id}}" type="checkbox" {{{canReadyArmor item
                                                                                                              ../armor}}} {{isChecked
                             item.system.readied}}/>
                 </div>
