@@ -16,7 +16,8 @@ export default defineConfig([
   tseslint.configs.strict,
   tseslint.configs.stylistic,
   {
-    // Temporary measure until TS migration is complete
+    // Temporary rule exclusions until TS migration is complete
+    files: ["**/*.mjs"],
     rules: {
       "no-undef": "off",
       "@typescript-eslint/no-unused-vars": "off",
