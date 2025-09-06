@@ -5,8 +5,8 @@
     "watchSCSS": "sass styles/cwn.scss styles/cwn.css --style=expanded --source-map --watch",
     "compileLDBtoYML": "node ./scripts/compileLDBtoYML.mjs",
     "compileYMLtoLDB": "node ./scripts/compileYMLtoLDB.mjs",
-    "prettier-check": "prettier . --check",
-    "prettier-write": "prettier . --write"
+    "prettierCheck": "prettier . --check",
+    "prettierWrite": "prettier . --write"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.4",
