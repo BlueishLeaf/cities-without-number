@@ -6,12 +6,19 @@
     "compileLDBtoYML": "node ./scripts/compileLDBtoYML.mjs",
     "compileYMLtoLDB": "node ./scripts/compileYMLtoLDB.mjs",
     "prettierCheck": "prettier . --check",
-    "prettierWrite": "prettier . --write"
+    "prettierWrite": "prettier . --write",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.4",
     "fvtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#main",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "3.6.2",
     "sass": "^1.85.1",
     "typescript": "^5.9.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
