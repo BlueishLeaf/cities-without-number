@@ -1,15 +1,7 @@
 @use "sass:meta";
 
 // Import fonts.
-@font-face {
-  font-family: 'JetBrainsMono-Regular';
-  src: url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'JetBrainsMono-Thin';
-  src: url('./fonts/JetBrainsMono-Thin.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 // Import utilities.
 @include meta.load-css('utils/typography');
