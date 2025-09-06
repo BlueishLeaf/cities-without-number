@@ -1,10 +1,12 @@
 {
   "scripts": {
+    "build": "npm run compileSCSS & npm run compileYMLtoLDB",
     "compileSCSS": "sass styles/cwn.scss styles/cwn.css --style=expanded --no-source-map",
     "watchSCSS": "sass styles/cwn.scss styles/cwn.css --style=expanded --source-map --watch",
     "compileLDBtoYML": "node ./scripts/compileLDBtoYML.mjs",
     "compileYMLtoLDB": "node ./scripts/compileYMLtoLDB.mjs",
-    "build": "npm run compileSCSS & npm run compileYMLtoLDB"
+    "prettier-check": "prettier . --check",
+    "prettier-write": "prettier . --write"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.4",

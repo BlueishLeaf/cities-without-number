@@ -1,12 +1,6 @@
 {
   "Actor": {
-    "types": [
-      "character",
-      "npc",
-      "drone",
-      "vehicle",
-      "server"
-    ]
+    "types": ["character", "npc", "drone", "vehicle", "server"]
   },
   "Item": {
     "types": [

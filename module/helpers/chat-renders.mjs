@@ -1,25 +1,35 @@
-export const buildChatContentForAttackRoll = (weapon, isNonLethal, damageRoll, rollRenders) => {
-    let content = "";
+export const buildChatContentForAttackRoll = (
+  weapon,
+  isNonLethal,
+  damageRoll,
+  rollRenders,
+) => {
+  let content = "";
 
-    if (rollRenders[0]) {
-        content += attackRender(rollRenders[0])
-    }
+  if (rollRenders[0]) {
+    content += attackRender(rollRenders[0]);
+  }
 
-    // Add trauma and shock renders if applicable
-    if (rollRenders[1]) {
-        content += rollRenders[2]
-            ? damageRenderWithTrauma(rollRenders[2], rollRenders[1], weapon.system.trauma.rating, damageRoll.total)
-            : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
-    }
+  // Add trauma and shock renders if applicable
+  if (rollRenders[1]) {
+    content += rollRenders[2]
+      ? damageRenderWithTrauma(
+          rollRenders[2],
+          rollRenders[1],
+          weapon.system.trauma.rating,
+          damageRoll.total,
+        )
+      : damageRenderWithoutTrauma(isNonLethal, rollRenders[1]);
+  }
 
-    if (weapon.system.canDealShockDamage) {
-        content += shockDamageRender(weapon);
-    }
+  if (weapon.system.canDealShockDamage) {
+    content += shockDamageRender(weapon);
+  }
 
-    return content;
+  return content;
 };
 
-export const shockDamageRender = weapon => `
+export const shockDamageRender = (weapon) => `
     <h4>Shock Damage</h4>
     <div class="dice-roll">
         <div class="dice-formula">AC <= ${weapon.system.shock.threshold}</div>
@@ -29,7 +39,12 @@ export const shockDamageRender = weapon => `
     </div>
 `;
 
-export const damageRenderWithTrauma = (traumaRollRender, damageRollRender, traumaRating, damageRollTotal) => `
+export const damageRenderWithTrauma = (
+  traumaRollRender,
+  damageRollRender,
+  traumaRating,
+  damageRollTotal,
+) => `
     <h4>Trauma Roll (x${traumaRating} Damage on Traumatic Hit)</h4>
     ${traumaRollRender}
     <div class="grid grid-2col">
@@ -54,7 +69,7 @@ export const damageRenderWithoutTrauma = (isNonLethal, damageRollRender) => `
     ${damageRollRender}
 `;
 
-export const attackRender = attackRollRender => `
+export const attackRender = (attackRollRender) => `
     <div style="margin: 10px 0;">
         <h4>Attack Roll</h4>
         ${attackRollRender}

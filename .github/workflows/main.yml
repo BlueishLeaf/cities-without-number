@@ -10,7 +10,7 @@ jobs:
 
     permissions:
       contents: write
-        
+
     steps:
       - uses: actions/checkout@v4
 
@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
-  
+
       - name: Build
         run: |
           npm install
@@ -47,7 +47,7 @@ jobs:
           artifacts: "./system.json, ./system.zip"
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
-          
+
       - name: Post Release to Discord Channel
         id: post_release_to_discord
         uses: SethCohen/github-releases-to-discord@v1.13.1

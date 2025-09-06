@@ -1,5 +1,5 @@
-@use '../utils/variables' as *;
-@use '../utils/colors' as *;
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
 
 // Section Header
 .items-header {
@@ -62,7 +62,8 @@
     align-items: center;
     display: flex;
 
-    h3, h4 {
+    h3,
+    h4 {
       margin: 0;
       white-space: nowrap;
       overflow-x: hidden;
@@ -75,7 +76,8 @@
     flex: 0 0 70px;
     justify-content: center;
 
-    h3, h4 {
+    h3,
+    h4 {
       margin: 0;
       white-space: nowrap;
       overflow-x: hidden;

@@ -1,4 +1,9 @@
-export const weaponRollDialog = (isBurstFireable, canDealNonLethalDamage, abilityOptions, skillOptions) => `
+export const weaponRollDialog = (
+  isBurstFireable,
+  canDealNonLethalDamage,
+  abilityOptions,
+  skillOptions,
+) => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="attributeSelect">Choose an attribute: </label>
@@ -20,23 +25,29 @@ export const weaponRollDialog = (isBurstFireable, canDealNonLethalDamage, abilit
   </div>
 `;
 
-const addBurstFire = isBurstFireable => isBurstFireable ? `
+const addBurstFire = (isBurstFireable) =>
+  isBurstFireable
+    ? `
   <div class="dialog-row grid grid-2col">
     <label for="burstFireInput">Burst-Fire? </label>
     <div style="text-align: center">
       <input type="checkbox" name="burstFireInput"/>
     </div>
   </div>
-` : "";
+`
+    : "";
 
-const addNonLethal = canDealNonLethalDamage => canDealNonLethalDamage ? `
+const addNonLethal = (canDealNonLethalDamage) =>
+  canDealNonLethalDamage
+    ? `
   <div class="dialog-row grid grid-2col">
     <label for="nonLethalInput">Non-Lethal? </label>
     <div style="text-align: center">
       <input type="checkbox" name="nonLethalInput"/>
     </div>
   </div>
-` : "";
+`
+    : "";
 
 const addSituationalAttackBonus = `
   <div class="dialog-row grid grid-2col">
@@ -45,7 +56,10 @@ const addSituationalAttackBonus = `
   </div>
 `;
 
-export const autoWeaponRollDialog = (isBurstFireable, canDealNonLethalDamage) => `
+export const autoWeaponRollDialog = (
+  isBurstFireable,
+  canDealNonLethalDamage,
+) => `
   <div class="form-group">
     ${addSituationalAttackBonus}
     ${addNonLethal(canDealNonLethalDamage)}
@@ -74,7 +88,7 @@ export const skillRollDialog = (abilityOptions, specialistOptions) => `
   </div>
 `;
 
-export const itemTypeDialog = itemTypeOptions => `
+export const itemTypeDialog = (itemTypeOptions) => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="itemTypeSelect">Choose an item type: </label>
@@ -94,7 +108,7 @@ export const basicRollDialog = () => `
   </div>
 `;
 
-export const gunnerSelectDialog = gunnerOptions => `
+export const gunnerSelectDialog = (gunnerOptions) => `
   <div class="form-group">
     <div class="dialog-row grid grid-2col">
       <label for="gunnerSelect">Choose a gunner: </label>

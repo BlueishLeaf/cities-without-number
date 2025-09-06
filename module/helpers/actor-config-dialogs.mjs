@@ -1,5 +1,5 @@
 export const actorConfigDialogs = {
-    damageSoak: (actorSystemData) => `
+  damageSoak: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="damageSoakInput">Base Damage Soak: </label>
@@ -8,7 +8,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    systemStrain: (actorSystemData) => `
+  systemStrain: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="permanentModInput">Perm. Sys. Strain Modifier: </label>
@@ -21,7 +21,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    armorClass: (actorSystemData) => `
+  armorClass: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="baseMeleeInput">Base Melee AC: </label>
@@ -34,7 +34,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    traumaTarget: (actorSystemData) => `
+  traumaTarget: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="traumaTargetInput">Base Trauma Target: </label>
@@ -43,7 +43,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    lifestyle: (actorSystemData) => `
+  lifestyle: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="monthlyCostInput">Monthly Cost: </label>
@@ -56,7 +56,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    monthlyExpenses: (actorSystemData) => `
+  monthlyExpenses: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="lifestyleMonthlyCostInput">Lifestyle: </label>
@@ -73,7 +73,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    stowedItems: (actorSystemData) => `
+  stowedItems: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="stowedItemsBonusInput">Max Stowed Mod.: </label>
@@ -82,7 +82,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    readiedItems: (actorSystemData) => `
+  readiedItems: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="readiedItemsBonusInput">Max Readied Mod.: </label>
@@ -91,7 +91,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    maintenanceScore: (actorSystemData) => `
+  maintenanceScore: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="maintenanceScoreBonusInput">Max Maint. Score Mod.: </label>
@@ -100,7 +100,7 @@ export const actorConfigDialogs = {
     </div>
   `,
 
-    alienationScore: (actorSystemData) => `
+  alienationScore: (actorSystemData) => `
     <div class="form-group">
       <div class="dialog-row grid grid-2col">
         <label for="permanentModInput">Perm. Alien. Score Modifier: </label>
@@ -112,4 +112,4 @@ export const actorConfigDialogs = {
       </div>
     </div>
   `,
-}
+};

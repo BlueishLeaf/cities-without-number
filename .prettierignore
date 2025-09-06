@@ -1,0 +1,5 @@
+# Ignore compendium packs
+packs
+
+# Ignore Handlebars templates (Prettier does not support partials)
+templates

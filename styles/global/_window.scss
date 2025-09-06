@@ -1,10 +1,13 @@
-@use '../utils/typography' as *;
+@use "../utils/typography" as *;
 
 .window-app {
   font-family: $font-primary;
 }
 
-.rollable, .expandable, .configurable, .list-item-create {
+.rollable,
+.expandable,
+.configurable,
+.list-item-create {
   &:hover,
   &:focus {
     color: #000;

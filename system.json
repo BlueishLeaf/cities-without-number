@@ -14,12 +14,8 @@
       "discord": "BlueishLeaf"
     }
   ],
-  "esmodules": [
-    "module/cwn.mjs"
-  ],
-  "styles": [
-    "styles/cwn.css"
-  ],
+  "esmodules": ["module/cwn.mjs"],
+  "styles": ["styles/cwn.css"],
   "scripts": [],
   "languages": [],
   "socket": false,
@@ -479,19 +475,43 @@
     {
       "name": "Cyberware",
       "sorting": "a",
-      "packs": ["cyberware-body", "cyberware-head", "cyberware-limb", "cyberware-medical", "cyberware-mods", "cyberware-nerve", "cyberware-sensory", "cyberware-skin", "chrome-syndromes", "implant-complications"],
+      "packs": [
+        "cyberware-body",
+        "cyberware-head",
+        "cyberware-limb",
+        "cyberware-medical",
+        "cyberware-mods",
+        "cyberware-nerve",
+        "cyberware-sensory",
+        "cyberware-skin",
+        "chrome-syndromes",
+        "implant-complications"
+      ],
       "folders": []
     },
     {
       "name": "Hacking",
       "sorting": "a",
-      "packs": ["verbs", "subjects", "demons", "cyberdecks", "cyberdeck-mods", "servers"],
+      "packs": [
+        "verbs",
+        "subjects",
+        "demons",
+        "cyberdecks",
+        "cyberdeck-mods",
+        "servers"
+      ],
       "folders": []
     },
     {
       "name": "Vehicles",
       "sorting": "a",
-      "packs": ["vehicles", "vehicle-weapons", "vehicle-mods", "vehicle-fittings", "sample-vehicles"],
+      "packs": [
+        "vehicles",
+        "vehicle-weapons",
+        "vehicle-mods",
+        "vehicle-fittings",
+        "sample-vehicles"
+      ],
       "folders": []
     },
     {
@@ -509,7 +529,12 @@
     {
       "name": "Sample NPCs",
       "sorting": "a",
-      "packs": ["beasts-and-guard-animals", "corp-guards-and-law-enforcement", "gangers-and-criminals", "hackers-and-pilots"],
+      "packs": [
+        "beasts-and-guard-animals",
+        "corp-guards-and-law-enforcement",
+        "gangers-and-criminals",
+        "hackers-and-pilots"
+      ],
       "folders": []
     },
     {
@@ -526,7 +551,12 @@
         {
           "name": "Weapons",
           "sorting": "a",
-          "packs": ["firearms", "melee-and-thrown-weapons", "heavy-weapons", "weapon-mods"],
+          "packs": [
+            "firearms",
+            "melee-and-thrown-weapons",
+            "heavy-weapons",
+            "weapon-mods"
+          ],
           "folders": []
         }
       ]
