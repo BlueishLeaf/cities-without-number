@@ -34,8 +34,6 @@ export class CitiesWithoutNumberActor extends Actor {
    */
   prepareDerivedData() {
     const actorData = this;
-    const systemData = actorData.system;
-    const flags = actorData.flags.cwn || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
@@ -67,7 +65,7 @@ export class CitiesWithoutNumberActor extends Actor {
 
   prepareAbilityModifiers(systemData) {
     // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
+    for (let [, ability] of Object.entries(systemData.abilities)) {
       // Calculate the modifier using CWN rules.
       ability.mod = 0;
       for (let [modifier, range] of Object.entries(
@@ -175,11 +173,7 @@ export class CitiesWithoutNumberActor extends Actor {
     }
   }
 
-  /**
-   * Prepare NPC roll data.
-   * @param data
-   */
-  _getNpcRollData(data) {
+  _getNpcRollData() {
     if (this.type !== "npc") return;
 
     // Process additional NPC data here.
@@ -189,8 +183,8 @@ export class CitiesWithoutNumberActor extends Actor {
     const attackBonusDialog = new Dialog({
       title: "Choose which attack bonus to use",
       buttons: DialogUtils.attackBonusButtons(
-        (_html) => this.openNpcWeaponDialog(weapon, false),
-        (_html) => this.openNpcWeaponDialog(weapon, true),
+        () => this.openNpcWeaponDialog(weapon, false),
+        () => this.openNpcWeaponDialog(weapon, true),
       ),
       default: "melee",
     });
@@ -220,8 +214,8 @@ export class CitiesWithoutNumberActor extends Actor {
     const droneAttackTypeDialog = new Dialog({
       title: "Choose an attack mode",
       buttons: DialogUtils.attackModeButtons(
-        (_html) => this.openWeaponDialog(weapon),
-        (_html) => this.openAutoWeaponDialog(weapon),
+        () => this.openWeaponDialog(weapon),
+        () => this.openAutoWeaponDialog(weapon),
       ),
       default: "manual",
     });
@@ -249,7 +243,7 @@ export class CitiesWithoutNumberActor extends Actor {
 
   openWeaponDialog(weapon) {
     const abilityOptions = Object.entries(this.system.abilities).map(
-      (k, _v) =>
+      (k) =>
         `<option value="${k[0]}" ${weapon.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`,
     );
     const skills = this.items.filter((item) => item.type === "skill");

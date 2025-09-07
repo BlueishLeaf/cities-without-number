@@ -587,7 +587,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openCreateItemDialog(itemData) {
     const itemTypeOptions = CONFIG.CWN.inventoryItemTypes.map(
-      (k, _v) => `<option value="${k}"}>${k}</option>\n`,
+      (k) => `<option value="${k}"}>${k}</option>\n`,
     );
     const createItemDialog = new Dialog({
       title: "Create new item",
@@ -818,8 +818,8 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       const vehicleGunnerTypeDialog = new Dialog({
         title: "Choose a gunner",
         buttons: DialogUtils.gunnerModeButtons(
-          (_html) => this.handleGunnerSelect(weapon),
-          (_html) => currentCharacter.openWeaponDialog(weapon),
+          () => this.handleGunnerSelect(weapon),
+          () => currentCharacter.openWeaponDialog(weapon),
         ),
         default: "manual",
       });
@@ -859,7 +859,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
 
   openSkillDialog(skill) {
     const abilityOptions = Object.entries(this.actor.system.abilities).map(
-      (k, _v) =>
+      (k) =>
         `<option value="${k[0]}" ${skill.system.attribute === k[0] ? "selected" : ""}>${k[1].label}</option>\n`,
     );
     const specialistOptions = [
@@ -867,7 +867,7 @@ export class CitiesWithoutNumberActorSheet extends ActorSheet {
       "Level 1 (3d6)",
       "Level 2 (4d6)",
     ].map(
-      (k, _v) =>
+      (k) =>
         `<option value="${k}" ${skill.system.specialist === k ? "selected" : ""}>${k}</option>\n`,
     );
     const skillDialog = new Dialog({

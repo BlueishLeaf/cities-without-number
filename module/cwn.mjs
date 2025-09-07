@@ -93,7 +93,7 @@ Hooks.once("init", async function () {
 /* -------------------------------------------- */
 /*  Create Actor Hook                           */
 /* -------------------------------------------- */
-Hooks.on("createActor", async (actor, _options, _userId) => {
+Hooks.on("createActor", async (actor) => {
   if (!CONFIG.CWN.actorsWithSkills.includes(actor.type)) return;
   const skillPack = game.packs.get("cities-without-number.skills");
   const skills = await skillPack.getDocuments({

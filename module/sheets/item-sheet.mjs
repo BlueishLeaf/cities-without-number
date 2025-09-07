@@ -197,11 +197,11 @@ export class CitiesWithoutNumberItemSheet extends ItemSheet {
     }
   }
 
-  _canDragStart(_selector) {
+  _canDragStart() {
     return this.isEditable;
   }
 
-  _canDragDrop(_selector) {
+  _canDragDrop() {
     return this.isEditable;
   }
 
